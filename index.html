@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Tool-Analysen | Wöchentliche Reviews</title>
+    <meta name="description" content="Wöchentliche Analysen der Top 5 KI-Tools mit detaillierten Reviews, Pricing und Datenschutz-Bewertungen.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cyberpunk Background Effects -->
+    <div class="cyber-grid"></div>
+    <div class="cyber-scanline"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L35 12.5V27.5L20 35L5 27.5V12.5L20 5Z" stroke="#00ff9d" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="8" fill="#00ff9d"/>
+                            <path d="M20 12V28M12 20H28" stroke="#ffffff" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>KI-TOOL-ANALYSEN</h1>
+                        <p class="tagline">Weekly Deep Dive Reviews</p>
+                    </div>
+                </div>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="weekNumber">KW 48</span>
+                        <span class="stat-label">Kalenderwoche</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Tools/Woche</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Latest Analysis Section -->
+            <section class="latest-section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">▶</span>
+                        Aktuelle Analyse
+                    </h2>
+                    <div class="section-meta">
+                        <span class="date" id="currentDate">01.12.2025</span>
+                        <span class="badge badge-live">LIVE</span>
+                    </div>
+                </div>
+
+                <!-- Summary Card -->
+                <div class="summary-card">
+                    <h3 class="summary-title">Wöchentliche Zusammenfassung</h3>
+                    <p class="summary-text">
+                        Diese Woche stehen revolutionäre Entwicklungen im Fokus: <strong>DeepSeek v3.2</strong> definiert mit seinem Open-Source-Ansatz und extrem günstigen Preisen den Markt für Reasoning-Modelle neu. <strong>Taskade Genesis</strong> revolutioniert den No-Code-Markt durch die Erstellung "lebender" Anwendungen aus einem einzigen Prompt, während <strong>TwelveLabs Marengo 3.0</strong> neue Massstäbe im Enterprise-Video-Verständnis setzt.
+                    </p>
+                    <div class="summary-highlights">
+                        <div class="highlight">
+                            <span class="highlight-icon">⭐</span>
+                            <span class="highlight-text">Star der Woche: DeepSeek v3.2 (10/10)</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">🚀</span>
+                            <span class="highlight-text">Trend: Autonomie & Reasoning</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">💰</span>
+                            <span class="highlight-text">Demokratisierung von High-End-KI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Grid -->
+                <div class="tools-grid" id="toolsGrid">
+                    <!-- Tool 1: Contenov -->
+                    <div class="tool-card" data-category="text">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">📝</span>
+                                <span class="category-label">TEXT</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">7</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">Contenov</h3>
+                        <p class="tool-tagline">SEO-Content-Brief-Automatisierung</p>
+                        <p class="tool-description">
+                            Automatische Erstellung umfassender SEO-Blog-Briefs durch KI-Analyse der Top 10-20 Google-Suchergebnisse. Reduziert manuelle Wettbewerbsanalyse von Stunden auf Minuten.
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag">
+                                <span class="price">$97</span>
+                                <span class="price-period">/Monat</span>
+                            </div>
+                            <span class="price-note">Starter Plan</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>20 Briefs/Monat</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Wettbewerbsanalyse</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚠</span>
+                                <span>DSGVO unklar</span>
+                            </div>
+                        </div>
+                        <button class="btn-details" onclick="showToolDetails('contenov')">
+                            Details anzeigen
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Tool 2: Alai -->
+                    <div class="tool-card" data-category="design">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">🎨</span>
+                                <span class="category-label">DESIGN</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">8</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">Alai</h3>
+                        <p class="tool-tagline">AI-Präsentationstool mit 4 Design-Optionen</p>
+                        <p class="tool-description">
+                            Y-Combinator-gestütztes Tool, das vier verschiedene Design-Optionen pro Folie bietet und den Kontext des gesamten Decks versteht. Ideal für Tech-Profis und Gründer.
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag">
+                                <span class="price">$16</span>
+                                <span class="price-period">/Monat</span>
+                            </div>
+                            <span class="price-note">Plus Plan (jährlich)</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>4 Layouts pro Folie</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>PowerPoint-Export</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚠</span>
+                                <span>Privacy Policy fehlt</span>
+                            </div>
+                        </div>
+                        <button class="btn-details" onclick="showToolDetails('alai')">
+                            Details anzeigen
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Tool 3: TwelveLabs Marengo 3.0 -->
+                    <div class="tool-card" data-category="data">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">📊</span>
+                                <span class="category-label">DATA</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">9</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">TwelveLabs Marengo 3.0</h3>
+                        <p class="tool-tagline">Enterprise Video-Understanding</p>
+                        <p class="tool-description">
+                            Leistungsstärkstes Embedding-Modell für Video-Verständnis. Analysiert visuelle Frames, zeitliche Beziehungen, Sprache und Sound für "Any-to-Any"-Suchen.
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag">
+                                <span class="price">$0.042</span>
+                                <span class="price-period">/Minute</span>
+                            </div>
+                            <span class="price-note">Pay-as-you-go</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>On-Premise möglich</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>AWS Bedrock</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>DSGVO-konform</span>
+                            </div>
+                        </div>
+                        <button class="btn-details" onclick="showToolDetails('twelvelabs')">
+                            Details anzeigen
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Tool 4: DeepSeek v3.2 -->
+                    <div class="tool-card tool-card-featured" data-category="research">
+                        <div class="featured-badge">STAR DER WOCHE</div>
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <div class="tool-category">
+                                <span class="category-icon">🔍</span>
+                                <span class="category-label">RECHERCHE</span>
+                            </div>
+                            </div>
+                            <div class="tool-rating tool-rating-perfect">
+                                <span class="rating-value">10</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">DeepSeek v3.2</h3>
+                        <p class="tool-tagline">Open-Source Reasoning AI</p>
+                        <p class="tool-description">
+                            Game-Changer: 100% kostenloser Web-Zugang, extrem günstige API und vollständig Open Source (MIT-Lizenz). Reasoning-First Design mit transparentem "Denken".
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag price-tag-free">
+                                <span class="price">KOSTENLOS</span>
+                            </div>
+                            <span class="price-note">Web & App</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Open Source (MIT)</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Self-Hosting</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>163.8K Context</span>
+                            </div>
+                        </div>
+                        <button class="btn-details btn-details-featured" onclick="showToolDetails('deepseek')">
+                            Details anzeigen
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Tool 5: Taskade Genesis -->
+                    <div class="tool-card" data-category="agents">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">🤖</span>
+                                <span class="category-label">AGENTS</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">9</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">Taskade Genesis</h3>
+                        <p class="tool-tagline">"One Prompt = One App" Plattform</p>
+                        <p class="tool-description">
+                            Revolutionäre No-Code-Plattform, die aus einem Prompt vollständige "lebende" Anwendungen erstellt. Unbegrenzte AI Agents & Automationen ab $19/Monat.
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag">
+                                <span class="price">$19</span>
+                                <span class="price-period">/Monat</span>
+                            </div>
+                            <span class="price-note">Pro Plan</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Unbegrenzte Agents</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>100+ Integrationen</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>GDPR-konform</span>
+                            </div>
+                        </div>
+                        <button class="btn-details" onclick="showToolDetails('taskade')">
+                            Details anzeigen
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categories Filter -->
+            <section class="filter-section">
+                <h3 class="filter-title">Nach Kategorie filtern</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Alle Tools</button>
+                    <button class="filter-btn" data-filter="text">📝 Text</button>
+                    <button class="filter-btn" data-filter="design">🎨 Design</button>
+                    <button class="filter-btn" data-filter="data">📊 Data</button>
+                    <button class="filter-btn" data-filter="research">🔍 Recherche</button>
+                    <button class="filter-btn" data-filter="agents">🤖 Agents</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KI-Tool-Analysen</h4>
+                    <p>Wöchentliche Deep-Dive-Reviews der interessantesten KI-Tools mit detaillierten Analysen zu Pricing, Features und Datenschutz.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategorien</h4>
+                    <ul>
+                        <li>Text & SEO</li>
+                        <li>Design & Präsentationen</li>
+                        <li>Data & Wissen</li>
+                        <li>Recherche & Reasoning</li>
+                        <li>Agents & Automation</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Updates</h4>
+                    <p>Neue Analysen jeden Sonntag um 6:00 Uhr</p>
+                    <div class="footer-badge">
+                        <span class="badge badge-auto">AUTO-UPDATE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 KI-Tool-Analysen | Powered by Manus AI</p>
+                <p class="footer-tech">Cyberpunk Design • GitHub Pages • Automated Weekly</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
