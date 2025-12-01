@@ -1,0 +1,44 @@
+{
+  "analysen": [
+    {
+      "kw": 49,
+      "jahr": 2025,
+      "datum": "2025-12-01",
+      "url": "archiv/2025/kw49-2025-12-01.html",
+      "tools": [
+        {
+          "name": "Contenov",
+          "kategorie": "Text",
+          "bewertung": 7,
+          "kurzbeschreibung": "SEO-Content-Brief-Automatisierung"
+        },
+        {
+          "name": "Alai",
+          "kategorie": "Design",
+          "bewertung": 8,
+          "kurzbeschreibung": "AI-Präsentationstool mit 4 Design-Optionen"
+        },
+        {
+          "name": "TwelveLabs Marengo 3.0",
+          "kategorie": "Data",
+          "bewertung": 9,
+          "kurzbeschreibung": "Enterprise Video-Understanding"
+        },
+        {
+          "name": "DeepSeek v3.2",
+          "kategorie": "Recherche",
+          "bewertung": 10,
+          "kurzbeschreibung": "Open-Source Reasoning AI"
+        },
+        {
+          "name": "Taskade Genesis",
+          "kategorie": "Agents",
+          "bewertung": 9,
+          "kurzbeschreibung": "One Prompt = One App Plattform"
+        }
+      ],
+      "highlights": "DeepSeek v3.2 (10/10) - Star der Woche",
+      "trend": "Autonomie & Reasoning"
+    }
+  ]
+}

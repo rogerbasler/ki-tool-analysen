@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiv | KI-Tool-Analysen</title>
+    <meta name="description" content="Archiv aller wöchentlichen KI-Tool-Analysen - Durchsuche vergangene Reviews und Trends">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Archive-specific styles */
+        .archive-header {
+            text-align: center;
+            padding: 4rem 2rem 2rem;
+            background: linear-gradient(135deg, rgba(0,255,157,0.05) 0%, rgba(0,217,255,0.05) 100%);
+            border-bottom: 2px solid var(--cyber-primary);
+            margin-bottom: 3rem;
+        }
+        
+        .archive-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--cyber-primary);
+            text-shadow: 0 0 20px rgba(0,255,157,0.5);
+        }
+        
+        .archive-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-box {
+            background: rgba(0,255,157,0.05);
+            border: 2px solid var(--cyber-primary);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cyber-primary);
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .archive-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-select {
+            background: rgba(0,255,157,0.05);
+            border: 2px solid var(--cyber-primary);
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            color: var(--text-primary);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-select:hover {
+            background: rgba(0,255,157,0.1);
+            box-shadow: 0 0 15px rgba(0,255,157,0.3);
+        }
+        
+        .archive-timeline {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+        
+        .timeline-item {
+            background: var(--bg-primary);
+            border: 2px solid var(--cyber-primary);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--cyber-primary), var(--cyber-secondary));
+        }
+        
+        .timeline-item:hover {
+            transform: translateX(8px);
+            box-shadow: 0 8px 30px rgba(0,255,157,0.2);
+        }
+        
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .timeline-date {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--cyber-primary);
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .timeline-kw {
+            background: var(--cyber-primary);
+            color: var(--bg-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        
+        .timeline-tools {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .timeline-tool {
+            background: rgba(0,255,157,0.05);
+            border: 1px solid var(--cyber-primary);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .timeline-tool-name {
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .timeline-tool-category {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-tool-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .rating-stars {
+            color: var(--cyber-accent);
+            font-size: 0.9rem;
+        }
+        
+        .timeline-highlights {
+            background: rgba(0,217,255,0.05);
+            border-left: 3px solid var(--cyber-secondary);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        
+        .timeline-link {
+            display: inline-block;
+            background: var(--cyber-primary);
+            color: var(--bg-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-link:hover {
+            background: var(--cyber-secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,255,157,0.3);
+        }
+        
+        .back-to-home {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: var(--cyber-primary);
+            color: var(--bg-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'Roboto Mono', monospace;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            border: 2px solid var(--cyber-primary);
+        }
+        
+        .back-to-home:hover {
+            background: var(--bg-primary);
+            color: var(--cyber-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,255,157,0.3);
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .archive-header h1 {
+                font-size: 2rem;
+            }
+            
+            .archive-stats {
+                gap: 1.5rem;
+            }
+            
+            .stat-box {
+                min-width: 120px;
+                padding: 1rem 1.5rem;
+            }
+            
+            .timeline-tools {
+                grid-template-columns: 1fr;
+            }
+            
+            .back-to-home {
+                top: 1rem;
+                right: 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-to-home">← Zur aktuellen Woche</a>
+    
+    <div class="archive-header">
+        <h1>📚 ARCHIV</h1>
+        <p style="font-size: 1.2rem; color: var(--text-secondary); margin-top: 0.5rem;">
+            Alle wöchentlichen KI-Tool-Analysen im Überblick
+        </p>
+        
+        <div class="archive-stats">
+            <div class="stat-box">
+                <div class="stat-number" id="totalWeeks">0</div>
+                <div class="stat-label">Wochen</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="totalTools">0</div>
+                <div class="stat-label">Tools analysiert</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="avgRating">0.0</div>
+                <div class="stat-label">Ø Bewertung</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="archive-filters">
+        <select class="filter-select" id="yearFilter">
+            <option value="all">Alle Jahre</option>
+            <option value="2025" selected>2025</option>
+            <option value="2026">2026</option>
+        </select>
+        
+        <select class="filter-select" id="categoryFilter">
+            <option value="all">Alle Kategorien</option>
+            <option value="Text">📝 Text</option>
+            <option value="Design">🎨 Design</option>
+            <option value="Data">📊 Data</option>
+            <option value="Recherche">🔍 Recherche</option>
+            <option value="Agents">🤖 Agents</option>
+        </select>
+        
+        <input type="text" class="filter-select" id="searchInput" placeholder="🔍 Tool suchen..." style="min-width: 250px;">
+    </div>
+    
+    <div class="archive-timeline" id="archiveTimeline">
+        <!-- Timeline items will be loaded here -->
+    </div>
+    
+    <div class="no-results" id="noResults" style="display: none;">
+        Keine Analysen gefunden. Versuche andere Filter.
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>KI-Tool-Analysen</h3>
+                <p>Wöchentliche Deep-Dive-Reviews der interessantesten KI-Tools mit detaillierten Analysen zu Pricing, Features und Datenschutz.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Updates</h3>
+                <p>Neue Analysen jeden Sonntag um 6:00 Uhr</p>
+                <div class="footer-badge">AUTO-UPDATE</div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 KI-Tool-Analysen | Powered by Manus AI</p>
+            <p class="footer-tech">CYBERPUNK DESIGN • GITHUB PAGES • AUTOMATED WEEKLY</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Load archive data
+        async function loadArchive() {
+            try {
+                const response = await fetch('archiv/data/archive-index.json');
+                const data = await response.json();
+                
+                renderArchive(data.analysen);
+                updateStats(data.analysen);
+                setupFilters(data.analysen);
+            } catch (error) {
+                console.error('Error loading archive:', error);
+                document.getElementById('archiveTimeline').innerHTML = '<p class="no-results">Fehler beim Laden des Archivs.</p>';
+            }
+        }
+        
+        function renderArchive(analysen) {
+            const timeline = document.getElementById('archiveTimeline');
+            timeline.innerHTML = '';
+            
+            if (analysen.length === 0) {
+                document.getElementById('noResults').style.display = 'block';
+                return;
+            }
+            
+            document.getElementById('noResults').style.display = 'none';
+            
+            // Sort by date (newest first)
+            analysen.sort((a, b) => new Date(b.datum) - new Date(a.datum));
+            
+            analysen.forEach(analyse => {
+                const item = document.createElement('div');
+                item.className = 'timeline-item';
+                item.dataset.year = analyse.jahr;
+                item.dataset.categories = analyse.tools.map(t => t.kategorie).join(',');
+                item.dataset.tools = analyse.tools.map(t => t.name.toLowerCase()).join(',');
+                
+                const toolsHTML = analyse.tools.map(tool => `
+                    <div class="timeline-tool">
+                        <div class="timeline-tool-name">${tool.name}</div>
+                        <div class="timeline-tool-category">${getCategoryIcon(tool.kategorie)} ${tool.kategorie}</div>
+                        <div class="timeline-tool-rating">
+                            <span class="rating-stars">${'⭐'.repeat(Math.round(tool.bewertung / 2))}</span>
+                            <span>${tool.bewertung}/10</span>
+                        </div>
+                    </div>
+                `).join('');
+                
+                item.innerHTML = `
+                    <div class="timeline-header">
+                        <div class="timeline-date">${formatDate(analyse.datum)}</div>
+                        <div class="timeline-kw">KW ${analyse.kw}</div>
+                    </div>
+                    
+                    <div class="timeline-highlights">
+                        ${analyse.highlights}
+                    </div>
+                    
+                    <div class="timeline-tools">
+                        ${toolsHTML}
+                    </div>
+                    
+                    <a href="${analyse.url}" class="timeline-link">Vollständige Analyse anzeigen →</a>
+                `;
+                
+                timeline.appendChild(item);
+            });
+        }
+        
+        function updateStats(analysen) {
+            const totalWeeks = analysen.length;
+            const totalTools = analysen.reduce((sum, a) => sum + a.tools.length, 0);
+            const avgRating = analysen.reduce((sum, a) => {
+                const weekAvg = a.tools.reduce((s, t) => s + t.bewertung, 0) / a.tools.length;
+                return sum + weekAvg;
+            }, 0) / totalWeeks;
+            
+            document.getElementById('totalWeeks').textContent = totalWeeks;
+            document.getElementById('totalTools').textContent = totalTools;
+            document.getElementById('avgRating').textContent = avgRating.toFixed(1);
+        }
+        
+        function setupFilters(analysen) {
+            const yearFilter = document.getElementById('yearFilter');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const searchInput = document.getElementById('searchInput');
+            
+            function applyFilters() {
+                const year = yearFilter.value;
+                const category = categoryFilter.value;
+                const search = searchInput.value.toLowerCase();
+                
+                const items = document.querySelectorAll('.timeline-item');
+                let visibleCount = 0;
+                
+                items.forEach(item => {
+                    const matchYear = year === 'all' || item.dataset.year === year;
+                    const matchCategory = category === 'all' || item.dataset.categories.includes(category);
+                    const matchSearch = search === '' || item.dataset.tools.includes(search);
+                    
+                    if (matchYear && matchCategory && matchSearch) {
+                        item.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
+            }
+            
+            yearFilter.addEventListener('change', applyFilters);
+            categoryFilter.addEventListener('change', applyFilters);
+            searchInput.addEventListener('input', applyFilters);
+        }
+        
+        function getCategoryIcon(category) {
+            const icons = {
+                'Text': '📝',
+                'Design': '🎨',
+                'Data': '📊',
+                'Recherche': '🔍',
+                'Agents': '🤖'
+            };
+            return icons[category] || '📌';
+        }
+        
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('de-DE', options);
+        }
+        
+        // Load archive on page load
+        loadArchive();
+    </script>
+</body>
+</html>
