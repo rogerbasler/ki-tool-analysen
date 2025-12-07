@@ -72,30 +72,30 @@ function showToolDetails(toolId) {
     
     // Tool details mapping
     const toolDetails = {
-        'contenov': {
-            name: 'Contenov',
-            url: 'https://contenov.com',
-            description: 'SEO-Content-Brief-Automatisierung'
+        'proofly': {
+            name: 'Proofly',
+            url: 'https://chromewebstore.google.com/detail/proofly',
+            description: 'On-Device AI Proofreader'
         },
-        'alai': {
-            name: 'Alai',
-            url: 'https://getalai.com',
-            description: 'AI-Präsentationstool'
+        'bloom': {
+            name: 'Bloom',
+            url: 'https://www.trybloom.ai/',
+            description: 'AI Brand Asset Generator'
         },
-        'twelvelabs': {
-            name: 'TwelveLabs Marengo 3.0',
-            url: 'https://www.twelvelabs.io',
-            description: 'Enterprise Video-Understanding'
+        'nume': {
+            name: 'Nume',
+            url: 'https://www.nume.ai/',
+            description: 'AI CFO für Startups'
         },
-        'deepseek': {
-            name: 'DeepSeek v3.2',
-            url: 'https://www.deepseek.com',
-            description: 'Open-Source Reasoning AI'
+        'exa': {
+            name: 'Exa',
+            url: 'https://exa.ai/',
+            description: 'AI Search Engine für Agents'
         },
-        'taskade': {
-            name: 'Taskade Genesis',
-            url: 'https://www.taskade.com',
-            description: 'One Prompt = One App'
+        'notis': {
+            name: 'Notis',
+            url: 'https://notis.ai/',
+            description: 'Autonomous AI Agent'
         }
     };
     

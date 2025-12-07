@@ -3,8 +3,48 @@
     {
       "kw": 49,
       "jahr": 2025,
+      "datum": "2025-12-07",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "Proofly",
+          "kategorie": "Text",
+          "bewertung": 9,
+          "kurzbeschreibung": "On-Device AI Proofreader"
+        },
+        {
+          "name": "Bloom",
+          "kategorie": "Design",
+          "bewertung": 8,
+          "kurzbeschreibung": "AI Brand Asset Generator"
+        },
+        {
+          "name": "Nume",
+          "kategorie": "Data",
+          "bewertung": 9,
+          "kurzbeschreibung": "AI CFO für Startups"
+        },
+        {
+          "name": "Exa",
+          "kategorie": "Data",
+          "bewertung": 9,
+          "kurzbeschreibung": "AI Search Engine für Agents"
+        },
+        {
+          "name": "Notis",
+          "kategorie": "Produktivität",
+          "bewertung": 7,
+          "kurzbeschreibung": "Autonomous AI Agent"
+        }
+      ],
+      "highlights": "Proofly & Nume (9/10) - Stars der Woche",
+      "trend": "On-Device AI & EU-Tools"
+    },
+    {
+      "kw": 48,
+      "jahr": 2025,
       "datum": "2025-12-01",
-      "url": "archiv/2025/kw49-2025-12-01.html",
+      "url": "archiv/2025/kw48-2025-12-01.html",
       "tools": [
         {
           "name": "Contenov",
