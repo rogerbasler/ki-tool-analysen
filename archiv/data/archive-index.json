@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 51,
+      "jahr": 2025,
+      "datum": "2025-12-21",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "Tonemark",
+          "kategorie": "Text",
+          "bewertung": 8,
+          "kurzbeschreibung": "Authentische KI-Texte in Ihrem persönlichen Stil"
+        },
+        {
+          "name": "Reve AI",
+          "kategorie": "Design",
+          "bewertung": 7,
+          "kurzbeschreibung": "Layout Representation für präzise Bildbearbeitung"
+        },
+        {
+          "name": "DocsRouter",
+          "kategorie": "Data",
+          "bewertung": 8,
+          "kurzbeschreibung": "Unified API für 100+ OCR-Modelle"
+        },
+        {
+          "name": "SiteSignal",
+          "kategorie": "Recherche",
+          "bewertung": 9,
+          "kurzbeschreibung": "AI Search Visibility & AEO-Monitoring"
+        },
+        {
+          "name": "Incredible.one",
+          "kategorie": "Agents",
+          "bewertung": 9,
+          "kurzbeschreibung": "Autonome Agenten für Deep Work mit Agent MAX"
+        }
+      ],
+      "highlights": "SiteSignal & Incredible.one (9/10) - Stars der Woche",
+      "trend": "Autonomie & Spezialisierung"
+    },
+    {
       "kw": 49,
       "jahr": 2025,
       "datum": "2025-12-07",
-      "url": "index.html",
+      "url": "archiv/2025/kw49-2025-12-07.html",
       "tools": [
         {
           "name": "Proofly",
