@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Tool-Analysen | Wöchentliche Reviews</title>
+    <meta name="description" content="Wöchentliche Analysen der Top 5 KI-Tools mit detaillierten Reviews, Pricing und Datenschutz-Bewertungen.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cyberpunk Background Effects -->
+    <div class="cyber-grid"></div>
+    <div class="cyber-scanline"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L35 12.5V27.5L20 35L5 27.5V12.5L20 5Z" stroke="#00ff9d" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="8" fill="#00ff9d"/>
+                            <path d="M20 12V28M12 20H28" stroke="#ffffff" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>KI-TOOL-ANALYSEN</h1>
+                        <p class="tagline">Weekly Deep Dive Reviews</p>
+                    </div>
+                </div>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="weekNumber">KW 51</span>
+                        <span class="stat-label">Kalenderwoche</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Tools/Woche</span>
+                    </div>
+                    <a href="archiv.html" class="stat" style="text-decoration: none; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 15px rgba(0,255,157,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                        <span class="stat-value">📚</span>
+                        <span class="stat-label">Archiv</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Latest Analysis Section -->
+            <section class="latest-section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">▶</span>
+                        Aktuelle Analyse
+                    </h2>
+                    <div class="section-meta">
+                        <span class="date" id="currentDate">21.12.2025</span>
+                        <span class="badge badge-live">LIVE</span>
+                    </div>
+                </div>
+
+                <!-- Summary Card -->
+                <div class="summary-card">
+                    <h3 class="summary-title">Wöchentliche Zusammenfassung</h3>
+                    <p class="summary-text">
+                        Diese Woche markiert einen Wendepunkt: <strong>Von Assistenten zu autonomen Systemen</strong>. KI wird erwachsen und übernimmt komplexe Aufgaben selbstständig. <strong>Tonemark</strong> zeigt, wie KI authentisch klingen kann, <strong>Reve AI</strong> revolutioniert Bildbearbeitung mit präziser Kontrolle, <strong>DocsRouter</strong> vereinfacht OCR-Integration drastisch, <strong>SiteSignal</strong> definiert eine neue Disziplin (AEO), und <strong>Incredible.one</strong> repräsentiert die Zukunft mit autonomen Agenten.
+                    </p>
+                    <div class="summary-highlights">
+                        <div class="highlight">
+                            <span class="highlight-icon">⭐</span>
+                            <span class="highlight-text">Stars der Woche: SiteSignal & Incredible.one (9/10)</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">🚀</span>
+                            <span class="highlight-text">Trend: Autonomie & Spezialisierung</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">💡</span>
+                            <span class="highlight-text">Paradigmenwechsel: Von Automation zu Autonomy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Grid -->
+                <div class="tools-grid" id="toolsGrid">
+                    <!-- Tool 1: Tonemark -->
+                    <div class="tool-card" data-category="text">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">📝</span>
+                                <span class="category-label">TEXT</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">8</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">Tonemark</h3>
+                        <p class="tool-tagline">Authentische KI-Texte in Ihrem persönlichen Stil</p>
+                        <p class="tool-description">
+                            Lernt Ihren einzigartigen Schreibstil aus Ihren Posts und erstellt authentische Social-Media-Inhalte. Knowledge Grounding verhindert Halluzinationen durch Quellenangaben aus Ihren Dokumenten.
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag">
+                                <span class="price">$29</span>
+                                <span class="price-period">/Monat</span>
+                            </div>
+                            <span class="price-note">Pro Plan (150 Posts)</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Style Learning</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Free Tier (25 Posts)</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚠</span>
+                                <span>DSGVO unklar (6/10)</span>
+                            </div>
+                        </div>
+                        <a href="https://tonemark.ai/" target="_blank" rel="noopener noreferrer" class="btn-details" style="text-decoration: none; display: inline-block;">
+                            Zum Tool
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+
+                    <!-- Tool 2: Reve AI -->
+                    <div class="tool-card" data-category="design">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">🎨</span>
+                                <span class="category-label">DESIGN</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">7</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">Reve AI</h3>
+                        <p class="tool-tagline">Layout Representation für präzise Bildbearbeitung</p>
+                        <p class="tool-description">
+                            Bahnbrechende "Layout Representation" - eine interne visuelle Sprache für objektbasierte Bildbearbeitung. Kombiniert natürliche Sprache mit Drag-and-Drop für präzise Kontrolle statt "Black Box".
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag">
+                                <span class="price">Beta</span>
+                            </div>
+                            <span class="price-note">Noch nicht öffentlich</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Object-Based Editing</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Developer API (Beta)</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚠</span>
+                                <span>Datenschutz ungeklärt (0/10)</span>
+                            </div>
+                        </div>
+                        <a href="https://reve.ai/" target="_blank" rel="noopener noreferrer" class="btn-details" style="text-decoration: none; display: inline-block;">
+                            Zum Tool
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+
+                    <!-- Tool 3: DocsRouter -->
+                    <div class="tool-card" data-category="data">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">📄</span>
+                                <span class="category-label">DATA</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">8</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">DocsRouter</h3>
+                        <p class="tool-tagline">Unified API für 100+ OCR-Modelle</p>
+                        <p class="tool-description">
+                            Ein API-Schlüssel für alle OCR- und Vision-LLM-Provider (Google, OpenAI, Anthropic). OpenAI SDK kompatibel, 5% Aufschlag, intelligentes Routing spart ~90% Kosten.
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag">
+                                <span class="price">$0.105</span>
+                                <span class="price-period">/1k Seiten</span>
+                            </div>
+                            <span class="price-note">Mistral OCR (5% Aufschlag)</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>100+ Modelle</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>OpenAI SDK Compatible</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚠</span>
+                                <span>DSGVO unklar (5/10)</span>
+                            </div>
+                        </div>
+                        <a href="https://docs.docsrouter.com/" target="_blank" rel="noopener noreferrer" class="btn-details" style="text-decoration: none; display: inline-block;">
+                            Zum Tool
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+
+                    <!-- Tool 4: SiteSignal -->
+                    <div class="tool-card" data-category="recherche">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">🔍</span>
+                                <span class="category-label">RECHERCHE</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">9</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">SiteSignal</h3>
+                        <p class="tool-tagline">AI Search Visibility & AEO-Monitoring</p>
+                        <p class="tool-description">
+                            Erstes Tool für Answer Engine Optimization (AEO). Überwacht Markensichtbarkeit in ChatGPT, Perplexity, Google AI Overviews. Definiert neue Disziplin neben SEO.
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag">
+                                <span class="price">$49-99</span>
+                                <span class="price-period">/Monat</span>
+                            </div>
+                            <span class="price-note">Starter bis Growth</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>AI Visibility Tracking</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>6 AEO-Artikel/Monat (Growth)</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚠</span>
+                                <span>DSGVO unklar (7/10)</span>
+                            </div>
+                        </div>
+                        <a href="https://sitesignal.app/" target="_blank" rel="noopener noreferrer" class="btn-details" style="text-decoration: none; display: inline-block;">
+                            Zum Tool
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+
+                    <!-- Tool 5: Incredible.one -->
+                    <div class="tool-card" data-category="agents">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">🤖</span>
+                                <span class="category-label">AGENTS</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">9</span>
+                                <span class="rating-max">/10</span>
+                            </div>
+                        </div>
+                        <h3 class="tool-name">Incredible.one</h3>
+                        <p class="tool-tagline">Autonome Agenten für Deep Work mit Agent MAX</p>
+                        <p class="tool-description">
+                            Agent MAX Engine: 20+ Steps, 10x Memory, Near-Zero Hallucinations, 90% günstiger. Autonome Agenten statt starrer Wenn-Dann-Regeln. Natural Language Workflows über 100+ Business-Apps.
+                        </p>
+                        <div class="tool-pricing">
+                            <div class="price-tag">
+                                <span class="price">Early Access</span>
+                            </div>
+                            <span class="price-note">Pricing noch nicht öffentlich</span>
+                        </div>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>Self-Heal™ bei Fehlern</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>100+ App-Integrationen</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚠</span>
+                                <span>DSGVO unklar (6/10)</span>
+                            </div>
+                        </div>
+                        <a href="https://incredible.one/" target="_blank" rel="noopener noreferrer" class="btn-details" style="text-decoration: none; display: inline-block;">
+                            Zum Tool
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Über diese Analyse</h3>
+                    <p>Wöchentliche Tiefenanalyse der Top 5 KI-Tools aus 10 führenden Quellen. Fokus auf Praxistauglichkeit für europäische Unternehmen und Schweizer KMUs.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Methodik</h3>
+                    <p>Bewertung nach Innovation, Praxisnutzen, Datenschutz, Zugänglichkeit und Reife. Alle Analysen sind unabhängig und nicht gesponsert.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Powered by <a href="https://www.ki-update.com" target="_blank">KI-Update.com</a></p>
+                    <p class="footer-tagline">„Deine Community für soziale Medien, Unternehmertum und KI"</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KI-Tool-Analysen | Letzte Aktualisierung: 21.12.2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
