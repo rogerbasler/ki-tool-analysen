@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 1,
+      "jahr": 2026,
+      "datum": "2026-01-04",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "Punchd",
+          "kategorie": "Text",
+          "bewertung": 8,
+          "kurzbeschreibung": "Conversion-optimierte Headlines auf Knopfdruck"
+        },
+        {
+          "name": "Nano Banana",
+          "kategorie": "Design",
+          "bewertung": 9,
+          "kurzbeschreibung": "Revolutionäre Bildgenerierung mit Character Consistency"
+        },
+        {
+          "name": "Yonoo",
+          "kategorie": "Data",
+          "bewertung": 7,
+          "kurzbeschreibung": "Der Smart-Router für 8 Frontier-Modelle"
+        },
+        {
+          "name": "Quantera.ai",
+          "kategorie": "Recherche",
+          "bewertung": 8,
+          "kurzbeschreibung": "Enterprise-Grade Finanzrecherche für Institutionen"
+        },
+        {
+          "name": "Mnexium AI",
+          "kategorie": "Agents",
+          "bewertung": 9,
+          "kurzbeschreibung": "Das persistente Gedächtnis für KI-Agenten"
+        }
+      ],
+      "highlights": "Nano Banana & Mnexium AI (9/10) - Stars der Woche",
+      "trend": "Spezialisierung, Infrastruktur & User Experience"
+    },
+    {
       "kw": 51,
       "jahr": 2025,
       "datum": "2025-12-21",

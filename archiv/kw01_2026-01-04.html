@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Tool-Analysen | Wöchentliche Reviews</title>
+    <meta name="description" content="Wöchentliche Analysen der Top 5 KI-Tools mit detaillierten Reviews, Pricing und Datenschutz-Bewertungen.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cyberpunk Background Effects -->
+    <div class="cyber-grid"></div>
+    <div class="cyber-scanline"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L35 12.5V27.5L20 35L5 27.5V12.5L20 5Z" stroke="#00ff9d" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="8" fill="#00ff9d"/>
+                            <path d="M20 12V28M12 20H28" stroke="#ffffff" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>KI-TOOL-ANALYSEN</h1>
+                        <p class="tagline">Weekly Deep Dive Reviews</p>
+                    </div>
+                </div>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="weekNumber">KW 52</span>
+                        <span class="stat-label">Kalenderwoche</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Tools/Woche</span>
+                    </div>
+                    <a href="archiv.html" class="stat" style="text-decoration: none; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 15px rgba(0,255,157,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                        <span class="stat-value">📚</span>
+                        <span class="stat-label">Archiv</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Latest Analysis Section -->
+            <section class="latest-section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">▶</span>
+                        Aktuelle Analyse
+                    </h2>
+                    <div class="section-meta">
+                        <span class="date" id="currentDate">28.12.2025</span>
+                        <span class="badge badge-live">LIVE</span>
+                    </div>
+                </div>
+
+                <!-- Summary Card -->
+                <div class="summary-card">
+                    <h3 class="summary-title">Wöchentliche Zusammenfassung</h3>
+                    <p class="summary-text">
+                        Die letzte Woche des Jahres 2025 war geprägt von <strong>hochinnovativen KI-Tools</strong>, die weit über inkrementelle Verbesserungen hinausgehen. Statt einzelner Features stehen nun <strong>voll integrierte, autonome Systeme</strong> im Fokus, die ganze Arbeitsabläufe transformieren. <strong>Reve AI</strong> revolutioniert Bildbearbeitung mit Layout Representation, <strong>Sequenzy</strong> ist "Cursor für Email-Marketing", <strong>FireCrawl /agent</strong> macht URLs optional, <strong>Macroscope</strong> reviewed Code autonom, und <strong>Scanned.to</strong> rekonstruiert Dokument-Layouts perfekt.
+                    </p>
+                    <div class="summary-highlights">
+                        <div class="highlight">
+                            <span class="highlight-icon">⭐</span>
+                            <span class="highlight-text">Star der Woche: Reve AI (9/10)</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">🚀</span>
+                            <span class="highlight-text">Trend: AI-Native Plattformen als Infrastruktur</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">💡</span>
+                            <span class="highlight-text">Paradigmenwechsel: Intention zu Resultat ohne technische Barrieren</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Grid -->
+                <div class="tools-grid" id="toolsGrid">
+                    <!-- Tool 1: Reve AI -->
+                    <div class="tool-card" data-category="design">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">🎨</span>
+                                <span class="category-label">DESIGN</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">9/10</span>
+                                <div class="rating-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-name"><a href="https://www.reve.com/" target="_blank" rel="noopener">Reve AI</a></h3>
+                            <p class="tool-tagline">Die Revolution der Bildbearbeitung</p>
+                            <p class="tool-description">
+                                AI-native Plattform für Bildgenerierung und -bearbeitung mit bahnbrechender <strong>"Layout Representation"</strong>-Technologie. Dekomponiert Bilder in code-ähnliche Zwischendarstellung für pixel-genaue Kontrolle. Vereint Image Generator, Drag-and-Drop Object-Editor, AI-Assistent und Developer API.
+                            </p>
+                            <div class="tool-features">
+                                <div class="feature-tag">Object-Based Editing</div>
+                                <div class="feature-tag">Character Consistency</div>
+                                <div class="feature-tag">Video Generation</div>
+                                <div class="feature-tag">Developer API</div>
+                            </div>
+                            <div class="tool-pricing">
+                                <div class="pricing-item">
+                                    <span class="pricing-label">Free:</span>
+                                    <span class="pricing-value">$0 - Basic Features</span>
+                                </div>
+                                <div class="pricing-item">
+                                    <span class="pricing-label">Pro:</span>
+                                    <span class="pricing-value">$20/mo - 100x Kapazität + Video</span>
+                                </div>
+                            </div>
+                            <div class="tool-verdict">
+                                <strong>Fazit:</strong> Game-Changer für professionelle Kreative. Layout Representation ist fundamentaler Fortschritt, der Präzision und Editierbarkeit auf Systemebene löst. Trotz Datenschutz-Schwächen für EU-Markt setzt es neuen Standard.
+                            </div>
+                            <div class="tool-tags">
+                                <span class="tag tag-strength">Breakthrough-Tech</span>
+                                <span class="tag tag-strength">Precision Editing</span>
+                                <span class="tag tag-weakness">US-Server</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool 2: Sequenzy -->
+                    <div class="tool-card" data-category="text">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">📝</span>
+                                <span class="category-label">TEXT</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">8/10</span>
+                                <div class="rating-stars">★★★★☆</div>
+                            </div>
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-name"><a href="https://www.sequenzy.com/" target="_blank" rel="noopener">Sequenzy</a></h3>
+                            <p class="tool-tagline">"Cursor" für Email-Marketing</p>
+                            <p class="tool-description">
+                                AI-native Email-Marketing-Plattform für SaaS-Gründer. Erstellt automatisierte Email-Sequenzen in Sekunden statt Stunden. Kombiniert AI-Template-Generierung, automatische Sequenz-Erstellung und Developer-First API mit tiefer Stripe-Integration.
+                            </p>
+                            <div class="tool-features">
+                                <div class="feature-tag">AI Sequence Builder</div>
+                                <div class="feature-tag">Stripe Integration</div>
+                                <div class="feature-tag">Transactional Emails</div>
+                                <div class="feature-tag">Developer API</div>
+                            </div>
+                            <div class="tool-pricing">
+                                <div class="pricing-item">
+                                    <span class="pricing-label">Free:</span>
+                                    <span class="pricing-value">100 Subscriber, 2k Emails/mo</span>
+                                </div>
+                                <div class="pricing-item">
+                                    <span class="pricing-label">Paid:</span>
+                                    <span class="pricing-value">Skaliert ab 101 Subscribern</span>
+                                </div>
+                            </div>
+                            <div class="tool-verdict">
+                                <strong>Fazit:</strong> Trifft den Nerv technisch versierter Gründer. AI-Automatisierung + Developer-First + faires Pricing (nur aktive Subscriber zählen) macht es zum vielversprechendsten Marketing-Tool für 2026.
+                            </div>
+                            <div class="tool-tags">
+                                <span class="tag tag-strength">Developer-First</span>
+                                <span class="tag tag-strength">Faires Pricing</span>
+                                <span class="tag tag-neutral">Made in Ukraine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool 3: FireCrawl /agent -->
+                    <div class="tool-card" data-category="research">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">🔍</span>
+                                <span class="category-label">RECHERCHE</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">8/10</span>
+                                <div class="rating-stars">★★★★☆</div>
+                            </div>
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-name"><a href="https://www.firecrawl.dev/agent" target="_blank" rel="noopener">FireCrawl /agent</a></h3>
+                            <p class="tool-tagline">Web Scraping ohne URLs</p>
+                            <p class="tool-description">
+                                "Magic API" die das Web durchsucht, navigiert und Daten von komplexesten Websites sammelt - <strong>ohne spezifische URLs</strong>. Nutzer beschreiben einfach, welche Daten sie benötigen, und der Agent findet sie autonom. Evolution von /extract mit optionalen URLs.
+                            </p>
+                            <div class="tool-features">
+                                <div class="feature-tag">URL-Optional</div>
+                                <div class="feature-tag">Autonomous Navigation</div>
+                                <div class="feature-tag">Structured JSON Output</div>
+                                <div class="feature-tag">Python/Node SDKs</div>
+                            </div>
+                            <div class="tool-pricing">
+                                <div class="pricing-item">
+                                    <span class="pricing-label">Free:</span>
+                                    <span class="pricing-value">5 daily Agent runs + 500 credits</span>
+                                </div>
+                                <div class="pricing-item">
+                                    <span class="pricing-label">Standard:</span>
+                                    <span class="pricing-value">$107/mo - 100k credits</span>
+                                </div>
+                            </div>
+                            <div class="tool-verdict">
+                                <strong>Fazit:</strong> Revolutioniert Datengewinnung durch Abstraktion von URLs und Website-Strukturen. Senkt Einstiegshürde für komplexe Recherchen dramatisch. Potenzial zum Standard für AI-Anwendungen mit Web-Daten.
+                            </div>
+                            <div class="tool-tags">
+                                <span class="tag tag-strength">URL-Optional</span>
+                                <span class="tag tag-strength">Autonomous</span>
+                                <span class="tag tag-weakness">Research Preview</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool 4: Macroscope -->
+                    <div class="tool-card" data-category="agents">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">🤖</span>
+                                <span class="category-label">AGENTS</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">8/10</span>
+                                <div class="rating-stars">★★★★☆</div>
+                            </div>
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-name">Macroscope</h3>
+                            <p class="tool-tagline">Der autonome Code-Reviewer</p>
+                            <p class="tool-description">
+                                AI-powered Code-Review-Plattform mit <strong>Abstract Syntax Trees (ASTs)</strong> für tiefes kontextuelles Verständnis. Detektiert Bugs, schlägt Fixes vor und kann autonom Fixes implementieren (mit Approval). Lernt kontinuierlich von Team-Feedback und Issue Trackern.
+                            </p>
+                            <div class="tool-features">
+                                <div class="feature-tag">AST-basiert</div>
+                                <div class="feature-tag">Autonomous Fixes</div>
+                                <div class="feature-tag">Jira/Linear Integration</div>
+                                <div class="feature-tag">Slack Q&A</div>
+                            </div>
+                            <div class="tool-pricing">
+                                <div class="pricing-item">
+                                    <span class="pricing-label">Pricing:</span>
+                                    <span class="pricing-value">Nicht öffentlich verfügbar</span>
+                                </div>
+                            </div>
+                            <div class="tool-verdict">
+                                <strong>Fazit:</strong> Evolution von AI Code Review zu "Autonomous Engineering Assistant". AST-basierte Analyse + autonome Fixes + Business Context (Issue Tracker) sind signifikante Fortschritte. Repräsentiert nächste Stufe der AI im Dev-Zyklus.
+                            </div>
+                            <div class="tool-tags">
+                                <span class="tag tag-strength">AST-basiert</span>
+                                <span class="tag tag-strength">Continuous Learning</span>
+                                <span class="tag tag-weakness">Kein Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool 5: Scanned.to -->
+                    <div class="tool-card" data-category="data">
+                        <div class="tool-header">
+                            <div class="tool-category">
+                                <span class="category-icon">📊</span>
+                                <span class="category-label">DATA</span>
+                            </div>
+                            <div class="tool-rating">
+                                <span class="rating-value">7/10</span>
+                                <div class="rating-stars">★★★★☆</div>
+                            </div>
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-name"><a href="https://scanned.to/" target="_blank" rel="noopener">Scanned.to</a></h3>
+                            <p class="tool-tagline">OCR mit perfektem Layout</p>
+                            <p class="tool-description">
+                                AI-OCR-Service, der über Text-Extraktion hinausgeht: <strong>Rekonstruiert das gesamte Dokument mit identischem Layout</strong> als editierbare Word/Text-Datei. Unterstützt gedruckten Text, Handschrift und Übersetzung in 50+ Sprachen. Erst 2 Tage alt (26.12.2025)!
+                            </p>
+                            <div class="tool-features">
+                                <div class="feature-tag">Layout-Preservation</div>
+                                <div class="feature-tag">Handschrift-Support</div>
+                                <div class="feature-tag">50+ Sprachen</div>
+                                <div class="feature-tag">API verfügbar</div>
+                            </div>
+                            <div class="tool-pricing">
+                                <div class="pricing-item">
+                                    <span class="pricing-label">Pay-as-you-go:</span>
+                                    <span class="pricing-value">$5 für 10 Pages (never expire)</span>
+                                </div>
+                                <div class="pricing-item">
+                                    <span class="pricing-label">Pro:</span>
+                                    <span class="pricing-value">$35/mo - 200 Pages + Priority Support</span>
+                                </div>
+                            </div>
+                            <div class="tool-verdict">
+                                <strong>Fazit:</strong> Vielversprechend für alle, die regelmäßig Scans digitalisieren. Layout-Preservation unterscheidet es von Standard-OCR. Bewertung zurückhaltend wegen extrem jungem Alter (2 Tage) - Potenzial für 9/10 nach Track Record.
+                            </div>
+                            <div class="tool-tags">
+                                <span class="tag tag-strength">Layout-Preservation</span>
+                                <span class="tag tag-strength">Faires Pricing</span>
+                                <span class="tag tag-weakness">Sehr neu (2 Tage)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Methodology Section -->
+            <section class="methodology-section">
+                <h2 class="section-title">
+                    <span class="title-icon">▶</span>
+                    Unsere Methodik
+                </h2>
+                <div class="methodology-grid">
+                    <div class="methodology-card">
+                        <div class="methodology-icon">🔍</div>
+                        <h3>10+ Quellen</h3>
+                        <p>Product Hunt, Ben's Bites, The AI Citizen, FutureTools.io, There's An AI For That und mehr</p>
+                    </div>
+                    <div class="methodology-card">
+                        <div class="methodology-icon">📊</div>
+                        <h3>5 Kategorien</h3>
+                        <p>Text, Design, Data, Recherche, Agents - je 1 Tool pro Kategorie für Diversität</p>
+                    </div>
+                    <div class="methodology-card">
+                        <div class="methodology-icon">🔬</div>
+                        <h3>Tiefenanalyse</h3>
+                        <p>Features, Pricing, Privacy Policy, Reviews, Use Cases und praktische Einschätzung</p>
+                    </div>
+                    <div class="methodology-card">
+                        <div class="methodology-icon">⭐</div>
+                        <h3>Bewertungskriterien</h3>
+                        <p>Innovationsgrad, praktischer Nutzen, Marktpotenzial, Datenschutz und Neuheitswert</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KI-Tool-Analysen</h3>
+                    <p>Wöchentliche Deep-Dive Reviews der innovativsten KI-Tools</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Aktuelle Analyse</a></li>
+                        <li><a href="archiv.html">Archiv</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Über</h3>
+                    <p>Kuratiert und analysiert von Manus AI</p>
+                    <p class="footer-meta">Letzte Aktualisierung: 28.12.2025</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KI-Tool-Analysen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
