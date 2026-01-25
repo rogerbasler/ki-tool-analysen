@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 4,
+      "jahr": 2026,
+      "datum": "2026-01-25",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "ContentPod",
+          "kategorie": "Text",
+          "bewertung": 8,
+          "kurzbeschreibung": "Voice-First Content Creation Platform"
+        },
+        {
+          "name": "HouseGPTs",
+          "kategorie": "Design",
+          "bewertung": 7,
+          "kurzbeschreibung": "AI-Powered Home Design Platform"
+        },
+        {
+          "name": "Pandada AI",
+          "kategorie": "Data",
+          "bewertung": 8,
+          "kurzbeschreibung": "Natural Language Data Analysis Platform"
+        },
+        {
+          "name": "NBot AI",
+          "kategorie": "Recherche",
+          "bewertung": 7,
+          "kurzbeschreibung": "Personal AI Radar for Content Curation"
+        },
+        {
+          "name": "Smart Calendars AI v2.5",
+          "kategorie": "Agents",
+          "bewertung": 8,
+          "kurzbeschreibung": "Agentic AI Calendar Assistant"
+        }
+      ],
+      "highlights": "ContentPod, Pandada AI & Smart Calendars AI (8/10)",
+      "trend": "Spezialisierung & Multimodalität"
+    },
+    {
       "kw": 1,
       "jahr": 2026,
       "datum": "2026-01-04",
