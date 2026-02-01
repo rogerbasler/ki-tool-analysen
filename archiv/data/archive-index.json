@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 5,
+      "jahr": 2026,
+      "datum": "2026-02-01",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "OpenAI Prism",
+          "kategorie": "Text",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "KI-nativer Workspace für wissenschaftliches Schreiben mit GPT-5.2"
+        },
+        {
+          "name": "AirMusic v1.1",
+          "kategorie": "Design",
+          "bewertung": 7.5,
+          "kurzbeschreibung": "KI-Musikgenerator mit royalty-free Lizenzierung"
+        },
+        {
+          "name": "Pandada AI",
+          "kategorie": "Data",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "KI-gestützte Datenanalyse ohne Programmierkenntnisse"
+        },
+        {
+          "name": "The Prompting Company",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "SEO für das KI-Zeitalter - Optimierung für ChatGPT-Zitate"
+        },
+        {
+          "name": "Agentic Vision in Gemini",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Google Major Update für agentenähnliche visuelle Interaktion"
+        }
+      ],
+      "highlights": "OpenAI Prism & Agentic Vision in Gemini (9/10)",
+      "trend": "KI-native Arbeitsumgebungen und agentenähnliche Systeme"
+    },
+    {
       "kw": 4,
       "jahr": 2026,
       "datum": "2026-01-25",
