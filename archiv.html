@@ -339,7 +339,7 @@
         // Load archive data
         async function loadArchive() {
             try {
-                const response = await fetch('archiv/data/archive-index.json');
+                const response = await fetch('archiv/data/archive-index.json?v=' + Date.now());
                 const data = await response.json();
                 
                 renderArchive(data.analysen);
