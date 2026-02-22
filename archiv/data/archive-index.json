@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 8,
+      "jahr": 2026,
+      "datum": "2026-02-22",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "Claude Sonnet 4.6",
+          "kategorie": "Text",
+          "bewertung": 9.5,
+          "kurzbeschreibung": "Opus-Level-Intelligenz zum Sonnet-Preis — neues Standardmodell"
+        },
+        {
+          "name": "Moda",
+          "kategorie": "Design",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "KI-Design mit vollständig editierbarem Canvas"
+        },
+        {
+          "name": "Boost.space v5",
+          "kategorie": "Data",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Shared Context Layer für KI-Agenten & Automatisierungen"
+        },
+        {
+          "name": "Figr AI",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Product-aware KI für UX-Research und Design"
+        },
+        {
+          "name": "Clawi.ai",
+          "kategorie": "Agents",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "OpenClaw in der Cloud — Zero-Setup KI-Agent"
+        }
+      ],
+      "highlights": "Claude Sonnet 4.6 (9.5/10) — Opus-Intelligenz zum Sonnet-Preis",
+      "trend": "Leistung wird demokratisiert, Tools werden spezialisierter"
+    },
+    {
       "kw": 5,
       "jahr": 2026,
       "datum": "2026-02-01",
-      "url": "index.html",
+      "url": "archiv/kw05-2026.html",
       "tools": [
         {
           "name": "OpenAI Prism",
