@@ -84,7 +84,7 @@
       "kw": 4,
       "jahr": 2026,
       "datum": "2026-01-25",
-      "url": "index.html",
+      "url": "archiv/kw04-2026-correct.html",
       "tools": [
         {
           "name": "ContentPod",
@@ -121,10 +121,90 @@
       "trend": "Spezialisierung & Multimodalität"
     },
     {
+      "kw": 3,
+      "jahr": 2026,
+      "datum": "2026-01-18",
+      "url": "archiv/kw03-2026.html",
+      "tools": [
+        {
+          "name": "TranslateGemma",
+          "kategorie": "Text",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Googles Open-Source-Übersetzungsmodelle (55 Sprachen)"
+        },
+        {
+          "name": "GLM-Image",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Hybrid-Bildgenerator mit präzisem Text-Rendering"
+        },
+        {
+          "name": "NotebookLM Data Tables",
+          "kategorie": "Data",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Automatische Tabellenextraktion aus Notizen"
+        },
+        {
+          "name": "Xpoz MCP",
+          "kategorie": "Recherche",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Claude AI Direktzugriff auf Social-Media-Plattformen"
+        },
+        {
+          "name": "Claude Code MCP Tool Search",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Löst Skalierungsproblem für KI-Agenten mit Tool-Discovery"
+        }
+      ],
+      "highlights": "Claude Code MCP Tool Search (9/10) — Skalierungsdurchbruch für KI-Agenten",
+      "trend": "Open Source & Agenten-Skalierung"
+    },
+    {
+      "kw": 2,
+      "jahr": 2026,
+      "datum": "2026-01-11",
+      "url": "archiv/index_kw02_2026.html",
+      "tools": [
+        {
+          "name": "Gemini 3 in Gmail",
+          "kategorie": "Text",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Gemini 3 Integration für 3 Milliarden Gmail-Nutzer"
+        },
+        {
+          "name": "ConceptViz",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "KI-gestützte Konzept-Visualisierung"
+        },
+        {
+          "name": "ChatGPT Health",
+          "kategorie": "Data",
+          "bewertung": 7.5,
+          "kurzbeschreibung": "Gesundheitsassistent auf GPT-Basis"
+        },
+        {
+          "name": "TubeYakker",
+          "kategorie": "Recherche",
+          "bewertung": 7.5,
+          "kurzbeschreibung": "YouTube-Content-Analyse und Zusammenfassung"
+        },
+        {
+          "name": "Owl Browser",
+          "kategorie": "Agents",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "KI-gesteuerter autonomer Browser-Agent"
+        }
+      ],
+      "highlights": "Gemini 3 in Gmail (8.5/10) — KI für 3 Milliarden Nutzer",
+      "trend": "KI-Integration in bestehende Produktivitätstools"
+    },
+    {
       "kw": 1,
       "jahr": 2026,
       "datum": "2026-01-04",
-      "url": "index.html",
+      "url": "archiv/2026/kw01-2026-01-04.html",
       "tools": [
         {
           "name": "Punchd",
@@ -164,7 +244,7 @@
       "kw": 51,
       "jahr": 2025,
       "datum": "2025-12-21",
-      "url": "index.html",
+      "url": "archiv/kw51_2025-12-28.html",
       "tools": [
         {
           "name": "Tonemark",
