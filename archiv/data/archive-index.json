@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 9,
+      "jahr": 2026,
+      "datum": "2026-03-01",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "Mercury 2",
+          "kategorie": "Text",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Weltschnellstes Reasoning-LLM — Diffusion-Architektur, 1.009 Token/Sek"
+        },
+        {
+          "name": "QuiverAI (Arrow-1)",
+          "kategorie": "Design",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Erstes KI-Modell für Vektorgrafiken — editierbare SVGs, Platz 1 SVG Arena"
+        },
+        {
+          "name": "Supaboard",
+          "kategorie": "Data",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "#1 Product Hunt Feb 2026 — Datenanalyse auf Englisch, 600+ Integrationen"
+        },
+        {
+          "name": "Perplexity Computer",
+          "kategorie": "Recherche",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "19 KI-Modelle orchestriert — autonomer Multi-Modell-Agent"
+        },
+        {
+          "name": "Notion Custom Agents",
+          "kategorie": "Agents",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "24/7 autonome KI-Agenten in Notion — kostenlos bis Mai 2026"
+        }
+      ],
+      "highlights": "Mercury 2 (9/10) — Weltschnellstes Reasoning-Modell mit Diffusion-Architektur",
+      "trend": "Orchestrierung von Modellen und Demokratisierung von KI-Agenten"
+    },
+    {
       "kw": 8,
       "jahr": 2026,
       "datum": "2026-02-22",
-      "url": "index.html",
+      "url": "archiv/kw08-2026.html",
       "tools": [
         {
           "name": "Claude Sonnet 4.6",
