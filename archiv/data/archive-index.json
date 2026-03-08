@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 10,
+      "jahr": 2026,
+      "datum": "2026-03-08",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "GPT-5.4",
+          "kategorie": "Text",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "OpenAIs neues Flaggschiff — \"Thinking\"-Layer, 83% GDPval, 1.05M Token Kontext"
+        },
+        {
+          "name": "Variant",
+          "kategorie": "Design",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Endlose Designs per Scroll — kein Canvas, kein Figma, kein Prompt-Engineering nötig"
+        },
+        {
+          "name": "Parsewise",
+          "kategorie": "Data",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Cursor für Dokumente — KI-Agenten analysieren tausende PDFs mit Quellennachweis"
+        },
+        {
+          "name": "Heywa",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Visuelle Stories statt Text-Wände — KI-Recherche als interaktive Mini-App"
+        },
+        {
+          "name": "Luma Agents",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "$15M-Kampagne in 40h für $20K — kreative End-to-End-Agents mit Unified Intelligence"
+        }
+      ],
+      "highlights": "GPT-5.4 & Luma Agents (9.0/10) — Stars der Woche",
+      "trend": "Kreative Agents übernehmen End-to-End-Workflows, Paradigmenwechsel in Design und Recherche-UX"
+    },
+    {
       "kw": 9,
       "jahr": 2026,
       "datum": "2026-03-01",
-      "url": "index.html",
+      "url": "archiv/kw09-2026.html",
       "tools": [
         {
           "name": "Mercury 2",
