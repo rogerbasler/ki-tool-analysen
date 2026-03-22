@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 12,
+      "jahr": 2026,
+      "datum": "2026-03-22",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "Fathom Commentary Writer",
+          "kategorie": "Text",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "KI-Finanzkommentar mit symbolischer Attribution — jede Zahl bis zur Quelle nachverfolgbar"
+        },
+        {
+          "name": "Gamma Imagine",
+          "kategorie": "Design",
+          "bewertung": 9.5,
+          "kurzbeschreibung": "KI-natives Design-Canvas für Infografiken, Logos und Marketing-Assets via Texteingabe"
+        },
+        {
+          "name": "Genie by Databox",
+          "kategorie": "Data",
+          "bewertung": 8.8,
+          "kurzbeschreibung": "KI-Analyst für Business-Daten — Natural Language Queries über eigene Metriken und KPIs"
+        },
+        {
+          "name": "Perplexity Comet iOS",
+          "kategorie": "Recherche",
+          "bewertung": 9.2,
+          "kurzbeschreibung": "KI-nativer Browser jetzt auf iPhone — Deep Research, Voice Mode und Agentic Browsing"
+        },
+        {
+          "name": "Skyvern",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Open-Source Browser-Automatisierung mit LLMs und Computer Vision — selbst hostbar"
+        }
+      ],
+      "highlights": "Gamma Imagine (9.5/10) führt eine Woche an, in der KI-Tools tief in bestehende Workflows integriert werden",
+      "trend": "Agentic Workflows und kontextbewusste KI-Tools ersetzen allgemeine Chatbots in spezialisierten Anwendungsfällen"
+    },
+    {
       "kw": 11,
       "jahr": 2026,
       "datum": "2026-03-15",
-      "url": "index.html",
+      "url": "archiv/2026/kw11-2026-03-15.html",
       "tools": [
         {
           "name": "Teract",
