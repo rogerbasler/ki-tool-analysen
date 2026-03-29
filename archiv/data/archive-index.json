@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 13,
+      "jahr": 2026,
+      "datum": "2026-03-29",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "Pendium",
+          "kategorie": "Text",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "AI Visibility Platform — Sichtbarkeit in ChatGPT, Claude und Gemini monitoren und optimieren"
+        },
+        {
+          "name": "Omma by Spline",
+          "kategorie": "Design",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Parallele KI-Agenten erstellen 3D-Websites und Apps aus Text-Prompts"
+        },
+        {
+          "name": "Littlebird",
+          "kategorie": "Data",
+          "bewertung": 8.8,
+          "kurzbeschreibung": "Kontextbezogener Mac-KI-Assistent — versteht kontinuierlich Bildschirm und Meetings"
+        },
+        {
+          "name": "Claude Computer Use",
+          "kategorie": "Recherche",
+          "bewertung": 9.5,
+          "kurzbeschreibung": "Anthropic gibt Claude direkten Computer-Zugriff — KI steuert Desktop-Apps autonom"
+        },
+        {
+          "name": "Agentplace",
+          "kategorie": "Agents",
+          "bewertung": 8.7,
+          "kurzbeschreibung": "No-Code Plattform für spezialisierte KI-Agenten in realen Unternehmens-Workflows"
+        }
+      ],
+      "highlights": "Claude Computer Use (9.5/10) setzt einen Meilenstein: KI verlässt den Chat und steuert direkt den Computer",
+      "trend": "Autonome Agenten mit Computer-Zugriff und parallele Agenten-Architekturen dominieren KW 13"
+    },
+    {
       "kw": 12,
       "jahr": 2026,
       "datum": "2026-03-22",
-      "url": "index.html",
+      "url": "archiv/2026/kw13-2026-03-29.html",
       "tools": [
         {
           "name": "Fathom Commentary Writer",
@@ -314,7 +354,7 @@
           "name": "Claude Code MCP Tool Search",
           "kategorie": "Agents",
           "bewertung": 9.0,
-          "kurzbeschreibung": "Löst Skalierungsproblem für KI-Agenten mit Tool-Discovery"
+          "kurzbeschreibung": "Skalierungsdurchbruch für KI-Agenten"
         }
       ],
       "highlights": "Claude Code MCP Tool Search (9/10) — Skalierungsdurchbruch für KI-Agenten",
