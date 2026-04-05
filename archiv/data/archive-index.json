@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 14,
+      "jahr": 2026,
+      "datum": "2026-04-05",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "Atomic Chat",
+          "kategorie": "Text",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Open-Source ChatGPT-Alternative — 1.000+ KI-Modelle vollständig offline auf dem Mac, zero data exfiltration"
+        },
+        {
+          "name": "Noon",
+          "kategorie": "Design",
+          "bewertung": 7.5,
+          "kurzbeschreibung": "Das erste KI-native Design-Tool auf Production-Code — $44M Funding, aus dem Stealth-Modus"
+        },
+        {
+          "name": "Google Gemma 4",
+          "kategorie": "Data",
+          "bewertung": 9.5,
+          "kurzbeschreibung": "Frontier Open-Source-KI unter Apache 2.0 — von Raspberry Pi bis H100, DSGVO-konform on-premise"
+        },
+        {
+          "name": "Perplexity Computer for Taxes",
+          "kategorie": "Recherche",
+          "bewertung": 7.8,
+          "kurzbeschreibung": "Erster agentischer Steuer-Assistent — IRS-Formulare ausfüllen, Erklärungen prüfen, Abzüge optimieren"
+        },
+        {
+          "name": "Holo3 by H Company",
+          "kategorie": "Agents",
+          "bewertung": 9.2,
+          "kurzbeschreibung": "State-of-the-Art Computer-Use-Agent — 78,85% OSWorld, Open Source Apache 2.0, europäisches Unternehmen"
+        }
+      ],
+      "highlights": "Google Gemma 4 (9.5/10): Historischer Meilenstein — Frontier Open-Source-KI unter Apache 2.0, vollständig DSGVO-konform on-premise betreibbar",
+      "trend": "Open-Source überholt Cloud-KI: Gemma 4 und Holo3 zeigen, dass frontier-nahe KI-Qualität jetzt on-premise, kostenlos und ohne Lizenzrisiko verfügbar ist"
+    },
+    {
       "kw": 13,
       "jahr": 2026,
       "datum": "2026-03-29",
-      "url": "index.html",
+      "url": "archiv/2026/kw13-2026-03-29.html",
       "tools": [
         {
           "name": "Pendium",
