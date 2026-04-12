@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 15,
+      "jahr": 2026,
+      "datum": "2026-04-12",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "UPDF 2.5",
+          "kategorie": "Text",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Welterster PDF-Editor mit autonomen KI-Agenten — 10+ spezialisierte Agenten für Research, Legal, Finance"
+        },
+        {
+          "name": "Google Veo 3.1 Lite",
+          "kategorie": "Design",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "KI-Video für $0.05 pro Clip — 50% günstiger als Vorgänger, 720p, via Gemini API"
+        },
+        {
+          "name": "Gemini Notebooks + NotebookLM",
+          "kategorie": "Data",
+          "bewertung": 9.5,
+          "kurzbeschreibung": "Persönliche Wissensdatenbank direkt in Gemini — persistente Projekte, Quellen-Sync, kein Modell-Training"
+        },
+        {
+          "name": "Gemini Interactive Simulations",
+          "kategorie": "Recherche",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "3D-Modelle und interaktive Physik-Simulationen direkt im Chat — show me statt statischer Diagramme"
+        },
+        {
+          "name": "Claude Managed Agents",
+          "kategorie": "Agents",
+          "bewertung": 9.5,
+          "kurzbeschreibung": "Vollständig gehostete Agent-Infrastruktur von Anthropic — Public Beta, $0.08/Session-Stunde, 10x schnellere Entwicklung"
+        }
+      ],
+      "highlights": "Gemini Notebooks + NotebookLM (9.5/10) & Claude Managed Agents (9.5/10): Google revolutioniert Wissensmanagement, Anthropic revolutioniert Agent-Infrastruktur",
+      "trend": "KI-Video wird erschwinglich (Veo 3.1 Lite $0.05/Clip) & Paradigmenwechsel zu dynamischen, generativen Interfaces"
+    },
+    {
       "kw": 14,
       "jahr": 2026,
       "datum": "2026-04-05",
-      "url": "index.html",
+      "url": "archiv/2026/kw14-2026-04-05.html",
       "tools": [
         {
           "name": "Atomic Chat",
