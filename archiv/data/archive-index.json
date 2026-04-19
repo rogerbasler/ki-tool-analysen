@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 16,
+      "jahr": 2026,
+      "datum": "2026-04-19",
+      "url": "index.html",
+      "tools": [
+        {
+          "name": "Fathom 3.0",
+          "kategorie": "Text",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Bot-freie Meeting-KI — Aufzeichnung ohne sichtbaren Teilnehmer, CRM-Sync, Account-weite Insights"
+        },
+        {
+          "name": "Figma for Agents",
+          "kategorie": "Design",
+          "bewertung": 10.0,
+          "kurzbeschreibung": "MCP-Server verbindet KI-Agenten mit Design-Systemen — bidirektionale Code-Canvas-Workflows"
+        },
+        {
+          "name": "Google Gemma 4",
+          "kategorie": "Data",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Multimodales Open-Source-Modell lokal — 256K Kontext, Text/Bild/Audio/Video, 100% DSGVO-konform"
+        },
+        {
+          "name": "Perplexity Computer (Personal CFO)",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "KI-Agent mit Echtzeit-Bankdaten — Ausgabenanalyse, Budget-Planung, Net-Worth-Tracking via Plaid"
+        },
+        {
+          "name": "Claude Opus 4.7",
+          "kategorie": "Agents",
+          "bewertung": 10.0,
+          "kurzbeschreibung": "87.6% SWE-bench Verified, 1M Token Kontext ohne Aufpreis, 3.3x bessere Vision — der neue Massstab"
+        }
+      ],
+      "highlights": "Figma for Agents (10/10) & Claude Opus 4.7 (10/10): Figma schliesst die Design-Code-Lücke, Anthropic setzt den neuen Massstab für Agentic Coding",
+      "trend": "Agentic Workflows werden produktionsreif — KI-Agenten greifen auf Design-Systeme, Bankkonten und Codebases zu und liefern deploybare Ergebnisse"
+    },
+    {
       "kw": 15,
       "jahr": 2026,
       "datum": "2026-04-12",
-      "url": "index.html",
+      "url": "archiv/2026/kw15-2026-04-12.html",
       "tools": [
         {
           "name": "UPDF 2.5",
