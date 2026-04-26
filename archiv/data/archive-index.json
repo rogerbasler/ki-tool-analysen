@@ -1,10 +1,50 @@
 {
   "analysen": [
     {
+      "kw": 17,
+      "jahr": 2026,
+      "datum": "2026-04-26",
+      "url": "archiv/2026/kw17-2026-04-26.html",
+      "tools": [
+        {
+          "name": "Chronicle",
+          "kategorie": "Text",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Cursor für Slides — KI-Präsentationen auf Enterprise-Niveau mit Agentic Workflows"
+        },
+        {
+          "name": "ChatGPT Images 2.0",
+          "kategorie": "Design",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Erstes Bildgenerierungsmodell mit Thinking — fehlerfreier Text, Web-Browsing, präzise Kontrolle"
+        },
+        {
+          "name": "DeepSeek V4",
+          "kategorie": "Data",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "1,6T Open-Source-Parameter, 1M Kontext als Standard — Frontier-Qualität zu Bruchteilspreisen"
+        },
+        {
+          "name": "Gemini Deep Research Max",
+          "kategorie": "Recherche",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "MCP-Support + native Charts + Gemini 3.1 Pro — autonome Recherche auf Enterprise-Niveau"
+        },
+        {
+          "name": "OpenAI Workspace Agents",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Codex-Agenten für Teams — dauerhaft laufend, Slack-integriert, Enterprise-Controls"
+        }
+      ],
+      "highlights": "ChatGPT Images 2.0 (9/10) & DeepSeek V4 (9/10): Thinking-Bildgenerierung trifft Open-Source-Frontier — zwei Releases, die den Markt neu kalibrieren",
+      "trend": "KI-Agenten werden Teaminfrastruktur — OpenAI Workspace Agents, Gemini Deep Research Max und DeepSeek V4 zeigen: Autonome Systeme laufen jetzt dauerhaft, nicht nur auf Abruf"
+    },
+    {
       "kw": 16,
       "jahr": 2026,
       "datum": "2026-04-19",
-      "url": "index.html",
+      "url": "archiv/2026/kw16-2026-04-19.html",
       "tools": [
         {
           "name": "Fathom 3.0",
