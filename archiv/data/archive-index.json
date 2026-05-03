@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 18,
+      "jahr": 2026,
+      "datum": "2026-05-03",
+      "url": "archiv/2026/kw18-2026-05-03.html",
+      "tools": [
+        {
+          "name": "Genspark for Word",
+          "kategorie": "Text",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "KI-Agenten nativ in Microsoft 365 — Draften, Editieren und Recherchieren direkt in Word"
+        },
+        {
+          "name": "Bitgrain",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Leichtgewichtiges Design-Studio im Browser — Fokus auf Texturen und Dithering"
+        },
+        {
+          "name": "TrafficClaw",
+          "kategorie": "Data",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Google Analytics Alternative mit KI-Chat und Echtzeit-3D-Globus"
+        },
+        {
+          "name": "Claude Creative Connectors",
+          "kategorie": "Recherche",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Anthropic integriert Claude direkt in professionelle Kreativ-Software"
+        },
+        {
+          "name": "Buda",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Cloud-native Plattform zum Aufbau und Management einer KI-Belegschaft"
+        }
+      ],
+      "highlights": "Genspark for Word (9/10) & Buda (9/10): KI-Agenten werden nahtlos in den Arbeitsalltag integriert und übernehmen komplexe, mehrstufige Aufgaben.",
+      "trend": "Agentic Workflows in Standard-Tools — KI verlässt die isolierten Chat-Interfaces und wird direkt in Microsoft Office, Design-Software und Analytics-Dashboards eingebettet."
+    },
+    {
       "kw": 17,
       "jahr": 2026,
       "datum": "2026-04-26",
