@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 19,
+      "jahr": 2026,
+      "datum": "2026-05-10",
+      "url": "archiv/2026/kw19-2026-05-10.html",
+      "tools": [
+        {
+          "name": "Postwise AI",
+          "kategorie": "Text",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Social-Writing und Scheduling für X, LinkedIn und Threads"
+        },
+        {
+          "name": "Flowstep 1.0",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "AI Design Engineer für editierbare UI-Flows und Figma-Übergabe"
+        },
+        {
+          "name": "Exmergo Viz",
+          "kategorie": "Data",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "KI-Dashboards aus CSV, Excel und Datenbanken per natürlicher Sprache"
+        },
+        {
+          "name": "Web of Science Research Intelligence",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "AI-native Research Intelligence für Funding, Strategie und Impact"
+        },
+        {
+          "name": "Claude Financial Services Agents",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Zehn Agent-Templates für Pitchbooks, KYC, Marktanalyse und Finance Operations"
+        }
+      ],
+      "highlights": "Claude Financial Services Agents (9/10): Agenten werden regulierungstauglicher durch Templates, Connectors, Auditability und Human-in-the-Loop.",
+      "trend": "Von Chatbot zu Workflow-Schicht: KI-Tools docken direkt an Social Publishing, UI-Design, Datenanalyse, Research Intelligence und Finanzprozesse an."
+    },
+    {
       "kw": 18,
       "jahr": 2026,
       "datum": "2026-05-03",
