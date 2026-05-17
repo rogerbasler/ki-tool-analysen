@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 20,
+      "jahr": 2026,
+      "datum": "2026-05-17",
+      "url": "archiv/2026/kw20-2026-05-17.html",
+      "tools": [
+        {
+          "name": "Shadow",
+          "kategorie": "Text",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Echtzeit-Assistent für Calls, Follow-ups und Meeting-To-dos"
+        },
+        {
+          "name": "Aaavatar",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Local-first Mac-App für konsistente Team-Portraits"
+        },
+        {
+          "name": "Kanwas",
+          "kategorie": "Data",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Gemeinsamer Kontext-Workspace für Produktteams und Agenten"
+        },
+        {
+          "name": "AnySearch",
+          "kategorie": "Recherche",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Search-API-Infrastruktur für KI-Agenten und vertikale Datenquellen"
+        },
+        {
+          "name": "Mindra",
+          "kategorie": "Agents",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Multi-Agent-Orchestrierung für operative Workflows"
+        }
+      ],
+      "highlights": "Aaavatar und Shadow (8/10): Local-first Datenschutz trifft Echtzeit-Ausführung in Meetings.",
+      "trend": "Von isolierten Prompts zu kontextfähigen Arbeitssystemen: Echtzeit-Ausführung, Teamwissen, agentische Recherche und operative Orchestrierung."
+    },
+    {
       "kw": 19,
       "jahr": 2026,
       "datum": "2026-05-10",
