@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 29,
+      "jahr": 2026,
+      "datum": "2026-07-19",
+      "url": "archiv/2026/kw29-2026-07-19.html",
+      "tools": [
+        {
+          "name": "Inkling von Thinking Machines",
+          "kategorie": "Text",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Open-Weights-Modell für multimodale Text-, Bild- und Audio-Workflows"
+        },
+        {
+          "name": "Google Vids",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Workspace-Videoeditor mit Gemini Omni Flash und Personal Avatars"
+        },
+        {
+          "name": "NVIDIA Nemotron 3 Embed",
+          "kategorie": "Data",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Offene Embedding-Modelle für RAG, semantische Suche und Agent Memory"
+        },
+        {
+          "name": "Context.dev",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Web-Kontext-API für Scraping, Crawling und strukturierte Extraktion"
+        },
+        {
+          "name": "Osaurus",
+          "kategorie": "Agents",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Native macOS-Agenten mit lokalen Modellen und optionalen Cloud-Providern"
+        }
+      ],
+      "highlights": "NVIDIA Nemotron 3 Embed (9/10): Offene Retrieval-Modelle machen aus Dokumenten und Code eine steuerbare Wissensschicht.",
+      "trend": "Von der KI-Funktion zur kontrollierbaren Infrastruktur: Open Weights, lokale Ausführung, Retrieval und nachvollziehbare Datenzugänge werden zur operativen Grundlage."
+    },
+    {
       "kw": 20,
       "jahr": 2026,
       "datum": "2026-05-17",
