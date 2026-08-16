@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 33,
+      "jahr": 2026,
+      "datum": "2026-08-16",
+      "url": "archiv/2026/kw33-2026-08-16.html",
+      "tools": [
+        {
+          "name": "Writer Agent + effizientes Harness",
+          "kategorie": "Text",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Agentische Textarbeit mit Fokus auf Kostenkontrolle, Kontext und Governance"
+        },
+        {
+          "name": "Grok Imagine Image 2.0",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Bildgenerierung und präzise Editierung für produktionsnahe Kreativarbeit"
+        },
+        {
+          "name": "Muse Glimmer",
+          "kategorie": "Data / Wissen",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Open-Weights-Modell für lokale Wissensassistenten, Tool Use und agentische Workflows"
+        },
+        {
+          "name": "Perplexity Computer for Builders",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Recherche- und Ausführungsworkflow über Code, Produktdaten, Zahlungen und Telemetrie"
+        },
+        {
+          "name": "Claude Code Auto Mode",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Länger laufende Coding-Agents mit risikobasierter Sicherheitsprüfung"
+        }
+      ],
+      "highlights": "Muse Glimmer & Claude Code Auto Mode (9/10): Lokale Souveränität und kontrollierte Agentenautonomie werden produktionsreif.",
+      "trend": "Von Einzelausgaben zu kontrollierbaren Workflows: Kosten, Rechte, Kontext und Sicherheitsmechanismen werden zur eigentlichen Produktqualität."
+    },
+    {
       "kw": 29,
       "jahr": 2026,
       "datum": "2026-07-19",
