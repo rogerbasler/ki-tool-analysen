@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 34,
+      "jahr": 2026,
+      "datum": "2026-08-23",
+      "url": "archiv/2026/kw34-2026-08-23.html",
+      "tools": [
+        {
+          "name": "ChatGPT for Teens",
+          "kategorie": "Text",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Lernorientierte Text-KI mit zusätzlichen Schutzmechanismen für Jugendliche"
+        },
+        {
+          "name": "ElevenLabs AI Caption Generator",
+          "kategorie": "Design",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Zeitlich synchronisierte Untertitel als schneller, editierbarer Produktionsschritt"
+        },
+        {
+          "name": "Databricks Genie One",
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Governte Antworten und Folgeaktionen auf Unternehmensdaten in natürlicher Sprache"
+        },
+        {
+          "name": "ChatPlayground AI",
+          "kategorie": "Recherche",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Mehrere KI-Modelle vergleichen, Widersprüche sehen und Recherchefragen besser stellen"
+        },
+        {
+          "name": "Berd",
+          "kategorie": "Agents",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Quelloffener Desktop-Workspace für lokale Projekte, Skills und spezialisierte Agenten"
+        }
+      ],
+      "highlights": "ElevenLabs AI Caption Generator (9/10): Produktionsreife Untertitelung trifft auf den Wochenfokus kontrollierbarer KI-Kontexte.",
+      "trend": "Kontext, Rechte, Datenflüsse und Review-Schleifen werden zum eigentlichen Qualitätsmerkmal von KI-Tools."
+    },
+    {
       "kw": 33,
       "jahr": 2026,
       "datum": "2026-08-16",
