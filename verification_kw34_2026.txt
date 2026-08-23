@@ -1,0 +1,18 @@
+Live-Verifikation KW 34/2026
+Datum der Prüfung: 2026-08-23
+Commit: 1684c04
+URL: https://rogerbasler.github.io/ki-tool-analysen/?v=1684c04
+
+Ergebnis:
+- Die ausgelieferte Seite zeigt den Titel «KI-Tool-Analysen | Wöchentliche Reviews KW 34/2026».
+- Die Kopfzeile zeigt KW 34 und den 23.08.2026.
+- Es sind fünf Tool-Karten sichtbar.
+- Die fünf Toolnamen stimmen mit der neuen Analyse überein: ChatGPT for Teens, ElevenLabs AI Caption Generator, Databricks Genie One, ChatPlayground AI und Berd.
+- Das bewährte Cyber-Design, die Archivverlinkung und externe Tool-Links sind sichtbar.
+- Vier von fünf externen Toolseiten lieferten beim technischen Linktest HTTP 200. Die OpenAI-Seite lieferte per Kommandozeilen-Abruf HTTP 403, war jedoch zuvor über die Inhaltsprüfung vollständig erreichbar. Das deutet auf Bot-Schutz hin, nicht auf einen defekten Ziel-Link.
+
+Archiv-Verifikation:
+- URL: https://rogerbasler.github.io/ki-tool-analysen/archiv.html?v=1684c04
+- Der neue Eintrag für KW 34 vom 23.08.2026 erscheint an erster Stelle.
+- Alle fünf neuen Tools sind im Archiv sichtbar.
+- Databricks Genie One wird mit dem Data-Icon und der Beschriftung «Data / Wissen» angezeigt.
