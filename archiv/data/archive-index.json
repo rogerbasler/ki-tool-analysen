@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 35,
+      "jahr": 2026,
+      "datum": "2026-08-30",
+      "url": "archiv/2026/kw35-2026-08-30.html",
+      "tools": [
+        {
+          "name": "Claude mit Memory",
+          "kategorie": "Text",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Kontrollierbarer, geteilter Arbeitskontext über Claude Chat und Cowork hinweg"
+        },
+        {
+          "name": "Midjourney V8.2 Edit Model",
+          "kategorie": "Design",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Instruktionsbasierte Bildbearbeitung mit bis zu vier Referenzbildern"
+        },
+        {
+          "name": "PageIndex SDK Local",
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Lokal ausführbares, reasoning-basiertes Dokumentenretrieval mit Seitenzitaten"
+        },
+        {
+          "name": "Lenz",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Mehrstufige, quellenbasierte Faktenprüfung für KI-generierte Behauptungen"
+        },
+        {
+          "name": "Construct Computer",
+          "kategorie": "Agents",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Agentischer Arbeitsbereich mit persistentem Cloud-Computer und nachvollziehbaren Abläufen"
+        }
+      ],
+      "highlights": "PageIndex SDK Local (8.5/10): Private Dokumentenarbeit wird durch lokalen Index, eigene Modellschlüssel und Seitenzitate deutlich steuerbarer.",
+      "trend": "KI-Tools verlagern ihren Wert von der einzelnen Antwort in den kontrollierbaren Arbeitskontext: editierbarer Speicher, nachvollziehbare Quellen, lokale Datenhaltung und persistente Workspaces."
+    },
+    {
       "kw": 34,
       "jahr": 2026,
       "datum": "2026-08-23",
