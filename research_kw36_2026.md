@@ -60,3 +60,7 @@
 ## Visuelle Qualitätskontrolle
 
 Die lokale Vorschau der aktualisierten Homepage wurde am 6. September 2026 geprüft. KW 36, Datum, Wochenzusammenfassung, Link zur Markdown-Analyse und alle fünf Karten wurden korrekt dargestellt. Die Karten folgen der vorgesehenen Reihenfolge Text, Design, Data / Wissen, Recherche und Agents. Die bestehende Cyber-Grid- und Kartenstruktur blieb erhalten.
+
+## Veröffentlichungsprüfung
+
+Der GitHub-Pages-Build für Commit `5a9cad7` wurde erfolgreich abgeschlossen. Die öffentliche Seite lieferte anschliessend mit einem Cache-Parameter korrekt **KW 36**, das Datum **06.09.2026**, den Link zur Analyse vom **2026-09-06** sowie die fünf neuen Tool-Karten aus.
