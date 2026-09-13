@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 37,
+      "jahr": 2026,
+      "datum": "2026-09-13",
+      "url": "archiv/2026/kw37-2026-09-13.html",
+      "tools": [
+        {
+          "name": "Typewise Nova",
+          "kategorie": "Text",
+          "bewertung": 8,
+          "kurzbeschreibung": "KI-Operator für kontrollierte End-to-End-Bearbeitung im Kundenservice"
+        },
+        {
+          "name": "Suno v6",
+          "kategorie": "Design",
+          "bewertung": 8,
+          "kurzbeschreibung": "Generative Musik mit Edit-, Mashup- und Multimodal-Workflows"
+        },
+        {
+          "name": "AI Toolbox 3.0",
+          "kategorie": "Data / Wissen",
+          "bewertung": 8,
+          "kurzbeschreibung": "Volltextsuche, Ordner und Export für ChatGPT, Gemini, Claude und Grok"
+        },
+        {
+          "name": "Scira",
+          "kategorie": "Recherche",
+          "bewertung": 8,
+          "kurzbeschreibung": "Quellengestützte Recherche mit vielen Suchmodi und offenem Code"
+        },
+        {
+          "name": "OpenAI Agents API",
+          "kategorie": "Agents",
+          "bewertung": 8,
+          "kurzbeschreibung": "Verwaltete Agenten-Infrastruktur für Sessions, Tools und Sub-Agenten"
+        }
+      ],
+      "highlights": "Typewise Nova, Suno v6, AI Toolbox 3.0, Scira und OpenAI Agents API (je 8/10): Steuerbarkeit von Datenfluss, Kosten und Freigaben wird zum Produktmerkmal.",
+      "trend": "Vom einzelnen KI-Output zum kontrollierbaren Arbeitssystem: Quellen, Rechte, Kostenlimiten und menschliche Freigaben entscheiden über den realen Wert."
+    },
+    {
       "kw": 36,
       "jahr": 2026,
       "datum": "2026-09-06",
