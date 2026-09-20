@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 38,
+      "jahr": 2026,
+      "datum": "2026-09-20",
+      "url": "archiv/2026/kw38-2026-09-20.html",
+      "tools": [
+        {
+          "name": "Claude Docs",
+          "kategorie": "Text",
+          "bewertung": 8.5,
+          "kurzbeschreibung": "Dokumentmodus im Claude-Workspace mit direkter Bearbeitung und Export"
+        },
+        {
+          "name": "Arrow 2 von QuiverAI",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Editierbare SVG-Generierung, Vektorisierung und Animation mit produktionsnaher API"
+        },
+        {
+          "name": "Jev von TypeSafe AI",
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Schnelle typisierte Entscheidungen mit Konfidenz für Software-Automatisierung"
+        },
+        {
+          "name": "Sakana Marlin",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Deep-Research-Agent mit Belegprüfung und editierbarem PowerPoint-Export"
+        },
+        {
+          "name": "Octop",
+          "kategorie": "Agents",
+          "bewertung": 8.2,
+          "kurzbeschreibung": "MIT-lizenzierte, selbstgehostete Multi-Agent-Plattform für kontrollierte Workflows"
+        }
+      ],
+      "highlights": "Claude Docs (8,5/10) und Octop (8,2/10): Dokumente und Agenten werden dort interessant, wo Kontext, Rechte und Datenpfade steuerbar bleiben.",
+      "trend": "Von KI-Ausgabe zu überprüfbarer Arbeitsoberfläche: Editierbare Artefakte, Quellenzugang, Konfidenzwerte und selbstbestimmter Betrieb werden zur eigentlichen Produktqualität."
+    },
+    {
       "kw": 37,
       "jahr": 2026,
       "datum": "2026-09-13",
