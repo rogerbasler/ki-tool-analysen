@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 40,
+      "jahr": 2026,
+      "datum": "2026-10-04",
+      "url": "archiv/2026/kw40-2026-10-04.html",
+      "tools": [
+        {
+          "name": "Claude Sonnet 5.5",
+          "kategorie": "Text",
+          "bewertung": 8.8,
+          "kurzbeschreibung": "Schnelleres Modell für klar abgegrenzte Wissens- und Umsetzungsarbeit"
+        },
+        {
+          "name": "Suno Speech Beta",
+          "kategorie": "Design",
+          "bewertung": 7.4,
+          "kurzbeschreibung": "Gesprochene Audios mit passendem, originärem Musikbett als ein Track"
+        },
+        {
+          "name": "Strands Decider 2B",
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.2,
+          "kurzbeschreibung": "Open-Source-Entscheidungsmodell für lokale Triage, Routing und Guardrails"
+        },
+        {
+          "name": "Slashspace 3.3",
+          "kategorie": "Recherche",
+          "bewertung": 7.8,
+          "kurzbeschreibung": "Local-first Canvas für Multi-Modell-Recherche, Quellen und Orchestrierung"
+        },
+        {
+          "name": "Dots by OpenAI",
+          "kategorie": "Agents",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Dauerhafte Cloud-Agenten mit App-Verbindungen, Regeln und Aktivitätsansicht"
+        }
+      ],
+      "highlights": "Claude Sonnet 5.5 (8,8/10) und Strands Decider 2B (8,2/10): Kontrollierbare Ausführung entsteht aus schnellen Modellen, klaren Entscheidungsgrenzen und prüfbaren Konfidenzen.",
+      "trend": "Der Wert verlagert sich von der einmaligen Antwort in die kontrollierbare Ausführung: lokale Routineentscheidungen, lokale Datenhaltung, klare Rechte und menschliche Freigaben werden zur Produktqualität."
+    },
+    {
       "kw": 38,
       "jahr": 2026,
       "datum": "2026-09-20",
