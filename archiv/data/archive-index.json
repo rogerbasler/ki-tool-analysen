@@ -1,6 +1,46 @@
 {
   "analysen": [
     {
+      "kw": 42,
+      "jahr": 2026,
+      "datum": "2026-10-18",
+      "url": "archiv/2026/kw42-2026-10-18.html",
+      "tools": [
+        {
+          "name": "Talanoa",
+          "kategorie": "Text",
+          "bewertung": 8.2,
+          "kurzbeschreibung": "Lokaler E-Mail-Client mit KI für Suche, Zusammenfassungen und Antwortentwürfe"
+        },
+        {
+          "name": "Canvora",
+          "kategorie": "Design",
+          "bewertung": 7.8,
+          "kurzbeschreibung": "Markenkonforme Visuals und Slides aus Text, URLs und Dokumenten mit MCP-Anbindung"
+        },
+        {
+          "name": "Caldera",
+          "kategorie": "Data / Wissen",
+          "bewertung": 7.9,
+          "kurzbeschreibung": "Open-Source-Obsidian-Plugin für lokalen Vault, gezieltes Publizieren und Digital Gardens"
+        },
+        {
+          "name": "Articos v3.2",
+          "kategorie": "Recherche",
+          "bewertung": 7.4,
+          "kurzbeschreibung": "Synthetische Nutzerforschung mit MCP-Server, Credit-Logik und Zielgruppen-Workflow"
+        },
+        {
+          "name": "WEXTL",
+          "kategorie": "Agents",
+          "bewertung": 7.7,
+          "kurzbeschreibung": "Visueller Builder für KI-Agenten und Freigabe-gesteuerte Workflow-Automation"
+        }
+      ],
+      "highlights": "Talanoa (8,2/10) und Caldera (7,9/10): Lokale Datenhaltung und gezielte Veröffentlichung machen Produktivität ohne zusätzliche Inhalts-Cloud greifbar.",
+      "trend": "Die neue KI-Produktqualität liegt nicht nur im Output, sondern im kontrollierbaren Kontext: lokale Daten, sichtbare Freigaben, präzise Datenwege und ein klarer Ausstiegsweg werden zum Entscheidungskriterium."
+    },
+    {
       "kw": 40,
       "jahr": 2026,
       "datum": "2026-10-04",
