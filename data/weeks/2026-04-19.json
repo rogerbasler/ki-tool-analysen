@@ -2,7 +2,7 @@
   "kw": 16,
   "jahr": 2026,
   "datum": "2026-04-19",
-  "zusammenfassung": "",
+  "zusammenfassung": "Diese Woche stand ganz im Zeichen von Agentic Workflows und der Integration von KI in bestehende Systeme. Anthropic hat mit Claude Opus 4.7 sein stärkstes Modell für autonome Aufgaben veröffentlicht, während Figma mit seinem neuen MCP-Server die Lücke zwischen KI-generiertem Code und Design-Systemen schliesst. Perplexity erweitert seinen Computer-Agenten zum \"Personal CFO\" und Google bringt mit Gemma 4 ein extrem leistungsfähiges, lokales Open-Source-Modell. Fathom 3.0 zeigt derweil, wie Meeting-KI ohne störende Bots funktionieren kann.",
   "highlights": [
     "Figma for Agents (10/10) & Claude Opus 4.7 (10/10): Figma schliesst die Design-Code-Lücke, Anthropic setzt den neuen Massstab für Agentic Coding"
   ],

@@ -1,8 +1,9 @@
 # KI-Tool-Analysen: Wochenlauf
 
-Dieses Repo ist die Website https://rogerbasler.github.io/ki-tool-analysen/ (GitHub Pages, Branch `master`).
+Dieses Repo ist die Website https://tools.fragroger.ai (Deutsch) und https://tools.fragroger.ai/en/ (Englisch),
+ausgeliefert über GitHub Pages (Branch `master`, Datei `CNAME`).
 Jeden Sonntagmorgen erscheint eine neue Ausgabe mit fünf KI-Tools. Herausgeber ist Roger Basler de Roca (#fragRoger).
-Die Website wird ausschliesslich aus `data/weeks/*.json` gebaut. Generierte HTML-Dateien nie von Hand bearbeiten.
+Die Website wird ausschliesslich aus `data/weeks/*.json` (DE) und `data/weeks/en/*.json` (EN) gebaut. Generierte HTML-Dateien nie von Hand bearbeiten.
 
 ## Ablauf eines Wochenlaufs
 
@@ -34,11 +35,15 @@ Die Website wird ausschliesslich aus `data/weeks/*.json` gebaut. Generierte HTML
 
 5. **Wochendatei schreiben**: `data/weeks/$DATUM.json` nach dem Schema unten.
 
-6. **Prüfen**: `python3 pipeline/validate_week.py data/weeks/$DATUM.json` so lange korrigieren, bis `OK` erscheint.
+5b. **Englische Fassung schreiben**: `data/weeks/en/$DATUM.json` nach dem EN-Schema unten. Vollständige,
+   sinngetreue Übersetzung aller Textfelder in britischem Englisch, gleiche Tool-Namen, gleiche Anzahl Listeneinträge.
+   Preise, Zahlen und Namen unverändert übernehmen, Dezimalpunkt statt Komma ("8.4/10").
+
+6. **Prüfen**: `python3 pipeline/validate_week.py data/weeks/$DATUM.json` (prüft DE und EN) so lange korrigieren, bis `OK` erscheint.
    Warnungen ernst nehmen und wo möglich beheben.
 
 7. **Bauen**: `python3 pipeline/build_site.py`. Das erzeugt Startseite, Wochenseite, Archiv, Feed, Sitemap und
-   die vollständige Markdown-Analyse unter `archiv/data/ki-tool-analysen-$DATUM.md`. Die Vorwoche bleibt automatisch im Archiv.
+   die vollständigen Markdown-Analysen unter `archiv/data/ki-tool-analysen-$DATUM.md` und `...-$DATUM.en.md`. Die Vorwoche bleibt automatisch im Archiv.
 
 8. **Veröffentlichen**
    ```bash
@@ -47,7 +52,7 @@ Die Website wird ausschliesslich aus `data/weeks/*.json` gebaut. Generierte HTML
    git push origin master    # bei Konflikt: git pull --rebase origin master, neu bauen, erneut pushen
    ```
 
-9. **Abschluss**: kurze Meldung mit KW, den fünf Tools samt Bewertung und dem Link zur Seite.
+9. **Abschluss**: kurze Meldung mit KW, den fünf Tools samt Bewertung und den Links https://tools.fragroger.ai und https://tools.fragroger.ai/en/.
 
 ## Schema `data/weeks/YYYY-MM-DD.json`
 
@@ -88,6 +93,33 @@ Die Website wird ausschliesslich aus `data/weeks/*.json` gebaut. Generierte HTML
 }
 ```
 
+## Schema `data/weeks/en/YYYY-MM-DD.json`
+
+Nur die Textfelder, Struktur (Kategorie, Bewertung, URL, Quellen) kommt aus der deutschen Datei:
+
+```json
+{
+  "umfang": "voll",
+  "zeitraum": "18 to 25 October 2026",
+  "zusammenfassung": "3 to 5 sentences ...",
+  "highlights": ["Toolname (8.6/10): ...", "Rule of thumb: ..."],
+  "trend": "...",
+  "tools": [
+    {
+      "name": "Toolname (identisch zur DE-Datei)",
+      "signal": "...", "kurzbeschreibung": "...", "beschreibung": "...",
+      "nutzungsszenarien": ["Label: ..."], "pricing": "...", "datenschutz": "...",
+      "staerken": ["..."], "schwaechen": ["..."], "einschaetzung": "..."
+    }
+  ]
+}
+```
+
+Englische Schreibregeln: gleicher Ton (analytisch, ruhig, ohne Buzzwords), keine Gedankenstriche, gerade Anführungszeichen,
+kein "according to", kein "[1]", keine Konstruktion "not only ..., but", keine deutschen Umlaute im Text.
+Archivwochen vor KW 43/2026 haben `"umfang": "uebersicht"`: nur Zusammenfassung und Kurzbeschreibungen sind übersetzt,
+die englische Seite verweist für die Details auf die deutsche Fassung.
+
 Reihenfolge der Tools: Text, Design, Data / Wissen, Recherche, Agents. `bewertung` ist eine Zahl von 1 bis 10 (eine Nachkommastelle erlaubt).
 In Listen wird ein Präfix bis zum ersten Doppelpunkt fett dargestellt ("Vertrieb: ...").
 
@@ -105,9 +137,11 @@ In Listen wird ein Präfix bis zum ersten Doppelpunkt fett dargestellt ("Vertrie
 ## Aufbau des Repos
 
 ```
-data/weeks/YYYY-MM-DD.json     eine Datei pro Ausgabe (einzige Quelle der Website)
+data/weeks/YYYY-MM-DD.json     eine Datei pro Ausgabe (Quelle der deutschen Seite und der Struktur)
+data/weeks/en/YYYY-MM-DD.json  englische Texte zur selben Ausgabe
 data/legacy-redirects.json     alte, unregelmässig benannte Archiv-URLs -> neue Wochenseiten
-pipeline/build_site.py         baut die statische Website
+pipeline/build_site.py         baut die statische Website (DE im Wurzelverzeichnis, EN unter en/)
+pipeline/i18n.py               Pfade und Oberflächentexte DE/EN
 pipeline/validate_week.py      prüft Pflichtfelder, Kategorien, Stil und Wiederholungen
 pipeline/legal.py              Texte für Methode, Impressum, Datenschutz
 templates/, assets/            Vorlagen und CSS im fragRoger-CI

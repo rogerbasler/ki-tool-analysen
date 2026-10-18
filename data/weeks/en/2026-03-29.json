@@ -1,0 +1,31 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 13 of 2026 shows a strong trend towards autonomous agents and their safe integration into existing workflows. While Anthropic enables AI to control computers directly with \"Claude Computer Use\", platforms such as Agentplace provide the infrastructure to deploy such agents with clear guardrails. In marketing, tools like Pendium shift the focus from classic SEO to \"AI visibility\", so that brands appear in the answers of AI models. In design, Omma by Spline sets new standards by using parallel agents to create 3D worlds and interactive websites.",
+  "highlights": [
+    "Claude Computer Use (9.5/10) sets a milestone: AI leaves the chat and controls the computer directly"
+  ],
+  "trend": "Autonomous agents with computer access and parallel agent architectures dominate week 13",
+  "tools": [
+    {
+      "name": "Pendium",
+      "kurzbeschreibung": "AI visibility platform: monitor and optimise visibility in ChatGPT, Claude and Gemini"
+    },
+    {
+      "name": "Omma by Spline",
+      "kurzbeschreibung": "Parallel AI agents create 3D websites and apps from text prompts"
+    },
+    {
+      "name": "Littlebird",
+      "kurzbeschreibung": "Context-aware Mac AI assistant that continuously understands screen and meetings"
+    },
+    {
+      "name": "Claude Computer Use",
+      "kurzbeschreibung": "Anthropic gives Claude direct computer access: AI operates desktop apps autonomously"
+    },
+    {
+      "name": "Agentplace",
+      "kurzbeschreibung": "No-code platform for specialised AI agents in real business workflows"
+    }
+  ]
+}

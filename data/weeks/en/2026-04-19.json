@@ -1,0 +1,31 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week was all about agentic workflows and integrating AI into existing systems. Anthropic released Claude Opus 4.7, its strongest model for autonomous tasks, while Figma closes the gap between AI-generated code and design systems with its new MCP server. Perplexity extends its Computer agent into a \"personal CFO\", and Google brings a very capable local open-source model with Gemma 4. Fathom 3.0 shows how meeting AI can work without intrusive bots.",
+  "highlights": [
+    "Figma for Agents (10/10) and Claude Opus 4.7 (10/10): Figma closes the design-code gap, Anthropic sets the new standard for agentic coding"
+  ],
+  "trend": "Agentic workflows become production-ready: AI agents access design systems, bank accounts and codebases and deliver deployable results",
+  "tools": [
+    {
+      "name": "Fathom 3.0",
+      "kurzbeschreibung": "Bot-free meeting AI: recording without a visible participant, CRM sync, account-wide insights"
+    },
+    {
+      "name": "Figma for Agents",
+      "kurzbeschreibung": "MCP server connects AI agents with design systems, bidirectional code-canvas workflows"
+    },
+    {
+      "name": "Google Gemma 4",
+      "kurzbeschreibung": "Multimodal open-source model running locally, 256K context, text, image, audio and video, fully GDPR-compliant"
+    },
+    {
+      "name": "Perplexity Computer (Personal CFO)",
+      "kurzbeschreibung": "AI agent with real-time bank data: spending analysis, budget planning and net-worth tracking via Plaid"
+    },
+    {
+      "name": "Claude Opus 4.7",
+      "kurzbeschreibung": "87.6% on SWE-bench Verified, 1M token context at no extra charge, 3.3x better vision, the new benchmark"
+    }
+  ]
+}

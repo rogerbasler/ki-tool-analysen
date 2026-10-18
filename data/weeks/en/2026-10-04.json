@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week AI becomes valuable where an answer turns into controllable execution. Claude Sonnet 5.5 speeds up clearly bounded knowledge work, while Strands Decider 2B carries out small routine decisions locally and with a confidence score. Suno Speech lowers the barrier for audio prototypes, Slashspace connects research in a local canvas and Dots shows the potential of persistent cloud agents. Data flows, permissions, regional availability and human approval remain decisive.",
+  "highlights": [
+    "Claude Sonnet 5.5 (8.8/10): strong for clearly bounded work, but only with a clean data and review process.",
+    "Trend: from the single answer to controllable execution with local decisions, permissions and escalations.",
+    "Rule of thumb: start with test data, minimal permissions, measurable quality criteria and a human approval point."
+  ],
+  "trend": "Value shifts from the one-off answer to controllable execution: local routine decisions, local data storage, clear permissions and human approvals become product quality.",
+  "tools": [
+    {
+      "name": "Claude Sonnet 5.5",
+      "kurzbeschreibung": "Faster model for clearly bounded knowledge and implementation work."
+    },
+    {
+      "name": "Suno Speech Beta",
+      "kurzbeschreibung": "Spoken audio with an original music bed as one continuous track."
+    },
+    {
+      "name": "Strands Decider 2B",
+      "kurzbeschreibung": "Open-source decision model for local triage, routing and guardrails."
+    },
+    {
+      "name": "Slashspace 3.3",
+      "kurzbeschreibung": "Local-first canvas for multi-model research, sources and orchestration."
+    },
+    {
+      "name": "Dots by OpenAI",
+      "kurzbeschreibung": "Persistent cloud agents with app connections, rules and an activity view."
+    }
+  ]
+}

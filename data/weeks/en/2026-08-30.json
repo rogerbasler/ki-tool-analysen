@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week the value of AI shifts from the single answer to the controllable work context. Claude makes memory editable, Midjourney makes image changes more targeted, PageIndex makes document knowledge executable locally, Lenz makes claims verifiable and Construct makes multi-step work persistent. The productive question is not \"What can the AI do?\" but \"What can I trace, limit and reuse?\"",
+  "highlights": [
+    "PageIndex SDK Local (8.5/10): local indexes, your own model keys and page citations bring document AI closer to verifiable knowledge work.",
+    "Trend: editable memory, visible sources, local storage and transparent agent work become the real quality criterion.",
+    "Rule of thumb: data protection is not a footer link. Visibility, data flow, permissions and approvals must be settled before the first production test."
+  ],
+  "trend": "AI tools shift their value from the single answer to the controllable work context: editable memory, traceable sources, local data storage and persistent workspaces.",
+  "tools": [
+    {
+      "name": "Claude mit Memory",
+      "kurzbeschreibung": "Editable work context across chat and Cowork."
+    },
+    {
+      "name": "Midjourney V8.2 Edit Model",
+      "kurzbeschreibung": "Targeted image editing with instructions and up to four references."
+    },
+    {
+      "name": "PageIndex SDK Local",
+      "kurzbeschreibung": "Locally executable document retrieval with traceable page citations."
+    },
+    {
+      "name": "Lenz",
+      "kurzbeschreibung": "Multi-step fact-checking with a source trail for AI-generated claims."
+    },
+    {
+      "name": "Construct Computer",
+      "kurzbeschreibung": "Persistent agent workspace with a cloud computer and activity log."
+    }
+  ]
+}

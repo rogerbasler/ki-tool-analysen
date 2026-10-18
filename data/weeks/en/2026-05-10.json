@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week the market visibly shifts from isolated generators to AI systems embedded in real work processes. Postwise and Flowstep show how individuals and small teams publish and visualise faster. Exmergo Viz opens up data analysis but demands clean governance. Web of Science Research Intelligence and Claude Financial Services Agents show the enterprise side: curated data, traceable workflows and controllable agents are becoming standard. The question is no longer whether AI can do something, but whether it may do it responsibly in the right process.",
+  "highlights": [
+    "Claude Financial Services Agents (9/10): agents become more suitable for regulated work because templates, connectors, auditability and human-in-the-loop are designed together.",
+    "Trend: from chatbot to workflow layer. AI tools connect directly to social publishing, UI design, data analysis, research intelligence and finance processes.",
+    "Checkpoint of the week: data protection is not an appendix. Data residency, use for training and review processes decide practical suitability."
+  ],
+  "trend": "From chatbot to workflow layer: AI tools connect directly to social publishing, UI design, data analysis, research intelligence and finance processes.",
+  "tools": [
+    {
+      "name": "Postwise AI",
+      "kurzbeschreibung": "Social writing and scheduling for X, LinkedIn and Threads"
+    },
+    {
+      "name": "Flowstep 1.0",
+      "kurzbeschreibung": "AI design engineer for editable UI flows and Figma handover"
+    },
+    {
+      "name": "Exmergo Viz",
+      "kurzbeschreibung": "AI dashboards from CSV, Excel and databases via natural language"
+    },
+    {
+      "name": "Web of Science Research Intelligence",
+      "kurzbeschreibung": "AI-native research intelligence for funding, strategy and impact"
+    },
+    {
+      "name": "Claude Financial Services Agents",
+      "kurzbeschreibung": "Ten agent templates for pitchbooks, KYC, market analysis and finance operations"
+    }
+  ]
+}

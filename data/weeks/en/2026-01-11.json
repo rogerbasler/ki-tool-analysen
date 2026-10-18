@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "The second calendar week of 2026 brings new tools across sectors, from productivity boosts in everyday applications to highly specialised tools for developers and scientists. Google and OpenAI extend their lead with significant updates to their flagship products, while independent developers launch strong niche solutions.",
+  "highlights": [
+    "Star of the week: Gemini 3 in Gmail (9/10)",
+    "Trend: specialisation and niche solutions",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "AI integration into existing productivity tools",
+  "tools": [
+    {
+      "name": "Gemini 3 in Gmail",
+      "kurzbeschreibung": "AI-powered email productivity for three billion users"
+    },
+    {
+      "name": "ConceptViz",
+      "kurzbeschreibung": "AI diagram generator for STEM education"
+    },
+    {
+      "name": "ChatGPT Health",
+      "kurzbeschreibung": "Personalised health guidance with AI"
+    },
+    {
+      "name": "TubeYakker",
+      "kurzbeschreibung": "Turning YouTube playlists into searchable knowledge"
+    },
+    {
+      "name": "Owl Browser",
+      "kurzbeschreibung": "Undetectable browser automation"
+    }
+  ]
+}

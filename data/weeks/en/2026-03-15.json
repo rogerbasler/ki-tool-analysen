@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 11/2026 marks the move from general AI assistants to vertical work tools with clear ROI logic. Naoma AI shows how AI agents step directly into the sales process and turn website traffic into personalised product demos. Citable makes a new growth vector visible: the presence of brands in answers from ChatGPT, Perplexity and other AI systems. OrangeLabs opens up access to data, documents and web research through an affordable analysis workspace. Teract professionalises building personal visibility across several networks, and Canva Magic Layers shows how established platforms integrate AI as a natural extension of the existing creative workflow rather than an add-on.",
+  "highlights": [
+    "Naoma AI: strongest tool of the week, an AI video sales agent with clear revenue logic and solid data protection communication (8.8/10)",
+    "Trend: vertical AI tools displace generalists; the winners are products with direct impact on revenue or productivity",
+    "Market signal: data protection transparency becomes a real product feature in 2026, especially for DACH teams and B2B procurement"
+  ],
+  "trend": "Specialised AI products with clear revenue or productivity logic prevail over general assistants",
+  "tools": [
+    {
+      "name": "Teract",
+      "kurzbeschreibung": "AI reputation coach for LinkedIn, X, Reddit and other platforms"
+    },
+    {
+      "name": "Canva Magic Layers",
+      "kurzbeschreibung": "Context-aware AI image editing directly in the Canva workflow"
+    },
+    {
+      "name": "OrangeLabs",
+      "kurzbeschreibung": "Talk to your data: documents, CSVs and web search in one analysis workspace"
+    },
+    {
+      "name": "Citable",
+      "kurzbeschreibung": "GEO / AI visibility platform for brand presence in AI answers"
+    },
+    {
+      "name": "Naoma AI",
+      "kurzbeschreibung": "AI video sales agent for personalised product demos and lead qualification"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "The last week of 2025 brought AI tools that go well beyond incremental improvements. Instead of single features, fully integrated, autonomous systems that transform entire workflows are now in focus. Reve AI rethinks image editing with layout representation, Sequenzy is \"Cursor for email marketing\", FireCrawl /agent makes URLs optional, Macroscope reviews code autonomously, and Scanned.to reconstructs document layouts accurately.",
+  "highlights": [
+    "Star of the week: Reve AI (9/10)",
+    "Trend: AI-native platforms as infrastructure",
+    "Shift: from intention to result without technical barriers"
+  ],
+  "trend": "",
+  "tools": [
+    {
+      "name": "Sequenzy",
+      "kurzbeschreibung": "\"Cursor\" for email marketing"
+    },
+    {
+      "name": "Reve AI",
+      "kurzbeschreibung": "A new approach to image editing"
+    },
+    {
+      "name": "Scanned.to",
+      "kurzbeschreibung": "OCR with accurate layout"
+    },
+    {
+      "name": "FireCrawl /agent",
+      "kurzbeschreibung": "Web scraping without URLs"
+    },
+    {
+      "name": "Macroscope",
+      "kurzbeschreibung": "The autonomous code reviewer"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week is less about the next model showcase than about controllable work contexts. ChatGPT for Teens shows how text AI can encourage learning paths instead of shortcuts. ElevenLabs reduces subtitling to an editable production step, while Genie One ties answers to governance and company data. ChatPlayground makes contradictions visible, and Berd brings agents back closer to local projects and one's own rules.",
+  "highlights": [
+    "ElevenLabs AI Caption Generator (9/10) and controllable AI contexts",
+    "Trend: from individual AI answers to bounded contexts, verifiable data flows and clear permissions",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "Context, permissions, data flows and review loops become the real quality criterion of AI tools.",
+  "tools": [
+    {
+      "name": "ChatGPT for Teens",
+      "kurzbeschreibung": "Learning-oriented text AI with additional safeguards for young people."
+    },
+    {
+      "name": "ElevenLabs AI Caption Generator",
+      "kurzbeschreibung": "Time-synchronised subtitles as a fast, editable production step."
+    },
+    {
+      "name": "Databricks Genie One",
+      "kurzbeschreibung": "Governed answers and follow-up actions on company data in natural language."
+    },
+    {
+      "name": "ChatPlayground AI",
+      "kurzbeschreibung": "Compare several AI models, see contradictions and ask better research questions."
+    },
+    {
+      "name": "Berd",
+      "kurzbeschreibung": "Open-source desktop workspace for local projects, skills and specialised agents."
+    }
+  ]
+}

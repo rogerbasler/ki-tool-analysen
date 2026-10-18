@@ -1,0 +1,31 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 18 shows a clear trend towards deep integration of AI agents into existing workflows. Genspark for Word brings capable AI directly into Microsoft 365, while Buda offers a complete platform for building an AI company. TrafficClaw rethinks web analytics with an AI chat interface, and Bitgrain positions itself as a lightweight, flexible design alternative. Anthropic also greatly extends Claude's creative options with new connectors. Trend of the week: agentic workflows inside standard tools. AI leaves isolated chat interfaces and is embedded directly in Microsoft Office, design software and analytics dashboards.",
+  "highlights": [
+    "Genspark for Word (9/10) and Buda (9/10): AI agents integrate seamlessly into everyday work and take on complex, multi-step tasks."
+  ],
+  "trend": "Agentic workflows in standard tools: AI leaves isolated chat interfaces and is embedded directly in Microsoft Office, design software and analytics dashboards.",
+  "tools": [
+    {
+      "name": "Genspark for Word",
+      "kurzbeschreibung": "AI agents native to Microsoft 365: drafting, editing and research directly in Word"
+    },
+    {
+      "name": "Bitgrain",
+      "kurzbeschreibung": "Lightweight browser-based design studio focused on textures and dithering"
+    },
+    {
+      "name": "TrafficClaw",
+      "kurzbeschreibung": "Google Analytics alternative with AI chat and a real-time 3D globe"
+    },
+    {
+      "name": "Claude Creative Connectors",
+      "kurzbeschreibung": "Anthropic integrates Claude directly into professional creative software"
+    },
+    {
+      "name": "Buda",
+      "kurzbeschreibung": "Cloud-native platform for building and managing an AI workforce"
+    }
+  ]
+}

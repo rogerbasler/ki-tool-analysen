@@ -1,4 +1,4 @@
-"""Prüft eine Wochendatei vor dem Build.
+"""Prüft eine Wochendatei (DE) und ihre englische Fassung (data/weeks/en/) vor dem Build.
 
 Aufruf: python3 pipeline/validate_week.py data/weeks/YYYY-MM-DD.json
 Exit-Code 0 = in Ordnung, 1 = Fehler. Warnungen brechen nicht ab.
@@ -32,6 +32,59 @@ FORBIDDEN = [
     (r"(?i)disruptiv", "Buzzword 'disruptiv'"),
     (r"(?i)\bnicht nur\b.{0,80}\bsondern\b", "Konstruktion 'nicht nur ..., sondern'"),
 ]
+
+
+FORBIDDEN_EN = [
+    (r"[\u2014\u2013]", "dash (— or –); use a comma, colon or 'to'"),
+    (r"[„“”«»‚‘’]", "typographic quotes; use straight quotes"),
+    (r"\[\d+\]", "inline citation such as [1]; sources only in 'quellen'"),
+    (r"(?i)\baccording to\b", "inline attribution 'according to'; state it directly, source in 'quellen'"),
+    (r"(?i)game[- ]?changer", "buzzword 'game changer'"),
+    (r"(?i)revolution", "buzzword 'revolutionary'"),
+    (r"(?i)groundbreaking", "buzzword 'groundbreaking'"),
+    (r"(?i)disruptive", "buzzword 'disruptive'"),
+    (r"(?i)the real problem (is|isn)", "phrase 'the real problem is'"),
+    (r"(?i)often underestimated", "phrase 'often underestimated'"),
+    (r"(?i)\bnot (just|only)\b.{0,80}\bbut\b", "construction 'not only ..., but'"),
+    (r"[äöüÄÖÜß]", "German characters in the English text"),
+]
+EN_TOOL_FIELDS = ["kurzbeschreibung", "signal", "beschreibung", "nutzungsszenarien", "pricing", "datenschutz",
+                  "staerken", "schwaechen", "einschaetzung"]
+
+
+def validate_en(de, path, E, W):
+    en_path = os.path.join(os.path.dirname(path), "en", os.path.basename(path))
+    if not os.path.exists(en_path):
+        E(f"Englische Fassung fehlt: {en_path}")
+        return
+    en = json.load(open(en_path, encoding="utf-8"))
+    if en.get("umfang", "voll") != "voll":
+        E("EN: neue Wochen brauchen eine vollständige Übersetzung (umfang: voll)")
+    for k in ("zusammenfassung", "highlights", "trend"):
+        if not en.get(k):
+            E(f"EN: Feld fehlt: {k}")
+    n = len(sentences(en.get("zusammenfassung", "")))
+    if not 3 <= n <= 5:
+        E(f"EN: summary has {n} sentences, 3 to 5 required")
+    names = [t.get("name") for t in en.get("tools", [])]
+    for t in de.get("tools", []):
+        if t.get("name") not in names:
+            E(f"EN: Tool {t.get('name')!r} fehlt (Name muss identisch zur DE-Fassung sein)")
+    for t in en.get("tools", []):
+        for k in EN_TOOL_FIELDS:
+            if not t.get(k):
+                E(f"EN {t.get('name')}: Feld fehlt: {k}")
+        de_t = next((x for x in de.get("tools", []) if x.get("name") == t.get("name")), {})
+        for k in ("nutzungsszenarien", "staerken", "schwaechen"):
+            if len(t.get(k) or []) != len(de_t.get(k) or []):
+                W(f"EN {t.get('name')}: {k} hat eine andere Anzahl Einträge als DE")
+    for p, txt in texts(en, "en"):
+        if p.endswith(".name"):
+            continue
+        for pat, msg in FORBIDDEN_EN:
+            m = re.search(pat, txt)
+            if m:
+                E(f"{p}: {msg} -> \"...{txt[max(0, m.start() - 30):m.end() + 30]}...\"")
 
 
 def texts(obj, path=""):
@@ -128,6 +181,8 @@ def main(path):
             E(f"{t['name']} war bereits am {recent[k]} dabei; anderes Tool wählen")
         elif any(k[:6] and r.startswith(k[:6]) for r in recent):
             W(f"{t['name']}: ähnlicher Name in den letzten Wochen; nur zulässig, wenn es ein signifikantes Update ist (im Feld 'signal' benennen)")
+
+    validate_en(w, path, E, W)
 
     for x in warnings:
         print("WARNUNG:", x)

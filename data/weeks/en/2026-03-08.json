@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 10/2026 is defined by leaps in performance and new approaches: GPT-5.4 sets new standards for professional workflows with its \"thinking\" architecture and scores 83% on GDPval, ahead of all predecessors. Variant changes the design process with an endless, scrollable feed of UI designs: no empty canvas, no prompt engineering. Parsewise brings Cursor-like intelligence to documents and addresses the large market of insurance and finance. Heywa replaces the wall of text in ChatGPT with interactive, visual stories, a shift in research UX. Luma Agents shows that a complete advertising campaign worth 15 million dollars can be produced in 40 hours for 20,000 dollars.",
+  "highlights": [
+    "GPT-5.4: OpenAI's new flagship, 83% on GDPval, \"thinking\" layer, 20 dollars per month (Plus) (9/10)",
+    "Trend: creative agents take over end-to-end workflows, Luma Agents compresses a 15M dollar campaign to 20K dollars",
+    "Shift: from the blank canvas to an endless design feed (Variant) and from walls of text to visual stories (Heywa)"
+  ],
+  "trend": "Creative agents take over end-to-end workflows, a shift in design and research UX",
+  "tools": [
+    {
+      "name": "GPT-5.4",
+      "kurzbeschreibung": "OpenAI's new flagship: \"thinking\" layer, 83% GDPval, 1.05M token context"
+    },
+    {
+      "name": "Variant",
+      "kurzbeschreibung": "Endless designs by scrolling: no canvas, no Figma, no prompt engineering needed"
+    },
+    {
+      "name": "Parsewise",
+      "kurzbeschreibung": "Cursor for documents: AI agents analyse thousands of PDFs at once with source references"
+    },
+    {
+      "name": "Heywa",
+      "kurzbeschreibung": "Visual stories instead of walls of text: AI research as an interactive mini app"
+    },
+    {
+      "name": "Luma Agents",
+      "kurzbeschreibung": "A 15M dollar campaign in 40 hours for 20K dollars: creative end-to-end agents with unified intelligence"
+    }
+  ]
+}

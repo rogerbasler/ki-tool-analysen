@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 4/2026 brought tools that focus on simplifying complex tasks, from content creation to data analysis. ContentPod rethinks content production with a voice-first approach, while HouseGPTs delivers photorealistic home designs in seconds. Pandada AI opens up data analysis through natural language, NBot AI monitors the web around the clock for free, and Smart Calendars AI v2.5 brings agentic AI into everyday scheduling.",
+  "highlights": [
+    "ContentPod, Pandada AI and Smart Calendars AI (8/10)",
+    "Trend: specialisation and multimodality",
+    "Voice-first content creation as a new approach"
+  ],
+  "trend": "Specialisation and multimodality",
+  "tools": [
+    {
+      "name": "ContentPod",
+      "kurzbeschreibung": "Voice-first content creation platform: speak instead of write"
+    },
+    {
+      "name": "HouseGPTs",
+      "kurzbeschreibung": "AI-powered home design platform, photorealistic interiors in seconds"
+    },
+    {
+      "name": "Pandada AI",
+      "kurzbeschreibung": "Natural language data analysis platform: ask your data in plain language"
+    },
+    {
+      "name": "NBot AI",
+      "kurzbeschreibung": "Personal AI radar for content curation, free 24/7 web monitoring"
+    },
+    {
+      "name": "Smart Calendars AI v2.5",
+      "kurzbeschreibung": "Agentic AI calendar assistant: create appointments by speaking, photographing or pasting"
+    }
+  ]
+}

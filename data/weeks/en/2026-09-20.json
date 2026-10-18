@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week AI becomes valuable where an answer turns into an editable and verifiable work result. Claude Docs makes documents the context of a conversation, Arrow 2 delivers editable SVGs and Jev translates uncertainty into structured software decisions. Sakana Marlin leads from research results back to the sources, while Octop brings agents onto your own infrastructure. Data residency, approval rights, cost limits and the ability not only to generate results but also to check them remain decisive.",
+  "highlights": [
+    "Claude Docs (8.5/10): a strong document workflow in AI chat, but productive only with clear data and review governance.",
+    "Trend: editable artefacts, access to sources, confidence scores and self-determined operation become the real product quality.",
+    "Rule of thumb: start with a bounded pilot using test data, role permissions, a budget limit and clear human approval."
+  ],
+  "trend": "From AI output to verifiable work surface: editable artefacts, access to sources, confidence scores and self-determined operation become the real product quality.",
+  "tools": [
+    {
+      "name": "Claude Docs",
+      "kurzbeschreibung": "Document mode in the Claude workspace with direct editing and export."
+    },
+    {
+      "name": "Arrow 2",
+      "kurzbeschreibung": "Editable SVG generation, vectorisation and animation with a production-grade API."
+    },
+    {
+      "name": "Jev",
+      "kurzbeschreibung": "Typed decisions with confidence scores for software automation."
+    },
+    {
+      "name": "Sakana Marlin",
+      "kurzbeschreibung": "Deep research agent with evidence checks and editable PowerPoint export."
+    },
+    {
+      "name": "Octop",
+      "kurzbeschreibung": "MIT-licensed, self-hosted multi-agent platform for controlled workflows."
+    }
+  ]
+}

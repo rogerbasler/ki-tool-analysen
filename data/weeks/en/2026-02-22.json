@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 8/2026 followed a clear trend: top performance is becoming more accessible, and tools are becoming more precisely specialised. The biggest event was the release of Claude Sonnet 4.6, which brings Opus-level intelligence at Sonnet prices and resets the price-performance ratio for AI models. Moda addresses one of the biggest frustrations with AI design tools: the lack of editability. Boost.space v5 tackles a fundamental problem for companies working with several AI agents through its \"shared context\" approach. Figr AI and Clawi.ai complete the week with specialised solutions for UX research and broader access to AI agents.",
+  "highlights": [
+    "Claude Sonnet 4.6: Opus intelligence at Sonnet prices (9.5/10)",
+    "Trend: performance becomes accessible, tools become more specialised",
+    "Shift: from static AI outputs to fully editable results"
+  ],
+  "trend": "Performance becomes accessible, tools become more specialised",
+  "tools": [
+    {
+      "name": "Claude Sonnet 4.6",
+      "kurzbeschreibung": "Opus-level intelligence at Sonnet prices, Anthropic's new default model"
+    },
+    {
+      "name": "Moda",
+      "kurzbeschreibung": "AI design with a fully editable canvas, no restart for every change"
+    },
+    {
+      "name": "Boost.space v5",
+      "kurzbeschreibung": "Shared context for AI agents: a common brain for all automations"
+    },
+    {
+      "name": "Figr AI",
+      "kurzbeschreibung": "Product-aware AI for UX that analyses real apps and reasons through design decisions"
+    },
+    {
+      "name": "Clawi.ai",
+      "kurzbeschreibung": "OpenClaw in the cloud: a capable AI agent without server setup, controllable via WhatsApp"
+    }
+  ]
+}

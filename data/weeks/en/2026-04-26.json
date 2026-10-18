@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 17 marks a concentration of autonomous workflows: OpenAI, Google and DeepSeek simultaneously ship products that move from single prompts to agents that run continuously. ChatGPT Images 2.0 sets a new standard in design with thinking-based image generation. DeepSeek V4 again delivers open-source quality at frontier level for a fraction of the price. Chronicle establishes itself as a serious PowerPoint competitor for teams. The message of the week: AI agents are becoming team infrastructure, no longer just individual tools.",
+  "highlights": [
+    "ChatGPT Images 2.0 (9/10) and DeepSeek V4 (9/10): thinking-based image generation meets the open-source frontier, two releases that recalibrate the market",
+    "Trend: AI agents become team infrastructure. OpenAI Workspace Agents, Gemini Deep Research Max and DeepSeek V4 show that autonomous systems now run continuously, not just on demand",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "AI agents become team infrastructure: OpenAI Workspace Agents, Gemini Deep Research Max and DeepSeek V4 show that autonomous systems now run continuously, not just on demand",
+  "tools": [
+    {
+      "name": "Chronicle",
+      "kurzbeschreibung": "Cursor for slides: enterprise-grade AI presentations with agentic workflows"
+    },
+    {
+      "name": "ChatGPT Images 2.0",
+      "kurzbeschreibung": "First image generation model with thinking: error-free text, web browsing, precise control"
+    },
+    {
+      "name": "DeepSeek V4",
+      "kurzbeschreibung": "1.6T open-source parameters, 1M context as standard, frontier quality at a fraction of the price"
+    },
+    {
+      "name": "Gemini Deep Research Max",
+      "kurzbeschreibung": "MCP support, native charts and Gemini 3.1 Pro: autonomous research at enterprise level"
+    },
+    {
+      "name": "OpenAI Workspace Agents",
+      "kurzbeschreibung": "Codex agents for teams: always running, Slack-integrated, enterprise controls"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de-CH">
+<html lang="{{ T.html_lang }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,14 +7,16 @@
 <meta name="description" content="{{ page_description }}">
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="{{ canonical }}">
-<link rel="alternate" type="application/rss+xml" title="KI-Tool-Analysen" href="{{ root }}feed.xml">
+{% for l, u in alt_urls.items() %}<link rel="alternate" hreflang="{{ l }}" href="{{ u }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ alt_urls.de }}">
+<link rel="alternate" type="application/rss+xml" title="{{ T.feed_title }}" href="{{ nav.feed }}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="KI-Tool-Analysen">
+<meta property="og:site_name" content="{{ T.site }}">
 <meta property="og:title" content="{{ page_title }}">
 <meta property="og:description" content="{{ page_description }}">
 <meta property="og:url" content="{{ canonical }}">
-<meta property="og:locale" content="de_CH">
-<meta property="og:image" content="{{ site_url }}/assets/og-image.svg">
+<meta property="og:locale" content="{{ T.locale }}">
+<meta property="og:image" content="{{ site_url }}/assets/og-image-{{ lang }}.svg">
 <meta name="twitter:card" content="summary_large_image">
 {% if noindex %}<meta name="robots" content="noindex">
 {% endif %}<link rel="icon" href="{{ root }}assets/favicon.svg" type="image/svg+xml">
@@ -22,18 +24,21 @@
 {% block head %}{% endblock %}
 </head>
 <body>
-<a class="skip" href="#main">Zum Inhalt</a>
+<a class="skip" href="#main">{{ T.skip }}</a>
 <header class="site-header">
   <div class="wrap bar">
-    <a class="brand" href="{{ root }}" aria-label="KI-Tool-Analysen, Startseite">
+    <a class="brand" href="{{ nav.home }}" aria-label="{{ T.home_label }}">
       <span class="brand-mark"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></span>
-      <span class="brand-sub">KI-Tool-Analysen</span>
+      <span class="brand-sub">{{ T.site }}</span>
     </a>
     <nav class="nav" aria-label="Navigation">
-      <a href="{{ root }}" {% if section == 'current' %}class="active" aria-current="page"{% endif %}>Diese Woche</a>
-      <a href="{{ root }}archiv.html" {% if section == 'archive' %}class="active" aria-current="page"{% endif %}>Archiv</a>
-      <a href="{{ root }}methode.html" {% if section == 'method' %}class="active" aria-current="page"{% endif %}>Methode</a>
+      <a href="{{ nav.home }}" {% if section == 'current' %}class="active" aria-current="page"{% endif %}>{{ T.nav_current }}</a>
+      <a href="{{ nav.archive }}" {% if section == 'archive' %}class="active" aria-current="page"{% endif %}>{{ T.nav_archive }}</a>
+      <a href="{{ nav.method }}" {% if section == 'method' %}class="active" aria-current="page"{% endif %}>{{ T.nav_method }}</a>
     </nav>
+    <div class="langs" aria-label="Sprache / Language">
+      {% for l, u in alt_links.items() %}<a href="{{ u }}" hreflang="{{ l }}" lang="{{ l }}" {% if l == lang %}class="on" aria-current="true"{% endif %}>{{ l|upper }}</a>{% endfor %}
+    </div>
   </div>
 </header>
 <main id="main" class="wrap">
@@ -44,21 +49,21 @@
     <div class="foot-grid">
       <div>
         <p class="foot-brand"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></p>
-        <p class="foot-line">Jeden Sonntag fünf KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz.</p>
-        <p class="foot-small">Eine Publikation von <a href="https://fragroger.ai" rel="noopener">Roger Basler de Roca</a>. Weitere wöchentliche Einordnung: <a href="https://news.fragroger.ai" rel="noopener">KI Power Update</a>.</p>
+        <p class="foot-line">{{ T.footer_line }}</p>
+        <p class="foot-small">{{ T.footer_by }} <a href="https://fragroger.ai" rel="noopener">Roger Basler de Roca</a>. {{ T.footer_more }} <a href="{{ T.news_url }}" rel="noopener">KI Power Update</a>.</p>
       </div>
       <div class="foot-disclaimer">
-        <p class="foot-title">Hinweis</p>
-        <p>Recherche, Auswahl und Texte entstehen mit Unterstützung von KI-Systemen und werden automatisiert veröffentlicht. Preise, Funktionen und Datenschutzangaben ändern sich laufend; massgebend sind die aktuellen Unterlagen der Anbieter. Die Analysen sind keine Rechts- oder Kaufberatung.</p>
+        <p class="foot-title">{{ T.disclaimer_title }}</p>
+        <p>{{ T.disclaimer }}</p>
       </div>
     </div>
     <div class="foot-bottom">
-      <nav class="foot-nav" aria-label="Weitere Seiten">
-        <a href="{{ root }}archiv.html">Archiv</a>
-        <a href="{{ root }}methode.html">Methode</a>
-        <a href="{{ root }}feed.xml">RSS</a>
-        <a href="{{ root }}impressum.html">Impressum</a>
-        <a href="{{ root }}datenschutz.html">Datenschutz</a>
+      <nav class="foot-nav" aria-label="{{ T.more_pages }}">
+        <a href="{{ nav.archive }}">{{ T.nav_archive }}</a>
+        <a href="{{ nav.method }}">{{ T.nav_method }}</a>
+        <a href="{{ nav.feed }}">RSS</a>
+        <a href="{{ nav.imprint }}">{{ T.imprint }}</a>
+        <a href="{{ nav.privacy }}">{{ T.privacy }}</a>
       </nav>
       <p>&copy; {{ year }} Roger Basler de Roca</p>
     </div>

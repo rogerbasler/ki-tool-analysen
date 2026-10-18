@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week the value of AI shifts from the single output to the controllable work system. Typewise Nova operates customer service, AI Toolbox 3.0 organises scattered chat knowledge, Scira makes research sources more visible and the OpenAI Agents API puts managed agent infrastructure within reach. Suno v6 delivers more creative control but also shows clearly that generating is not the same as ready to publish. Rights, data flow, cost limits and human approvals remain decisive.",
+  "highlights": [
+    "OpenAI Agents API (8.0/10): managed sessions, sandbox and sub-agents reduce infrastructure effort, but remain US-resident and without zero data retention.",
+    "Trend: value does not come from more AI output but from visible sources, limited permissions and verifiable operating costs.",
+    "Rule of thumb: pilot new tools first with test data, clear stop criteria and human approval for external actions."
+  ],
+  "trend": "From single AI output to controllable work system: sources, permissions, cost limits and human approvals decide the real value.",
+  "tools": [
+    {
+      "name": "Typewise Nova",
+      "kurzbeschreibung": "AI operator for customer service with controlled end-to-end handling."
+    },
+    {
+      "name": "Suno v6",
+      "kurzbeschreibung": "Generative music with more targeted edit, mashup and multimodal workflows."
+    },
+    {
+      "name": "AI Toolbox 3.0",
+      "kurzbeschreibung": "Full-text search, folders and export for ChatGPT, Gemini, Claude and Grok."
+    },
+    {
+      "name": "Scira",
+      "kurzbeschreibung": "Source-based research with many search modes and open code."
+    },
+    {
+      "name": "OpenAI Agents API",
+      "kurzbeschreibung": "Managed agent infrastructure for long-running sessions, tools and sub-agents."
+    }
+  ]
+}

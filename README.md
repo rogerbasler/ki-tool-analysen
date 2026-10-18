@@ -3,16 +3,22 @@
 Jeden Sonntag fünf KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz. Eine Publikation von
 Roger Basler de Roca (#fragRoger).
 
-- Website: https://rogerbasler.github.io/ki-tool-analysen/
-- Archiv: https://rogerbasler.github.io/ki-tool-analysen/archiv.html
-- RSS: https://rogerbasler.github.io/ki-tool-analysen/feed.xml
+- Website: https://tools.fragroger.ai (Deutsch) und https://tools.fragroger.ai/en/ (English)
+- Archiv: https://tools.fragroger.ai/archiv.html und https://tools.fragroger.ai/en/archive.html
+- RSS: https://tools.fragroger.ai/feed.xml und https://tools.fragroger.ai/en/feed.xml
+
+## Domain
+
+`CNAME` enthält `tools.fragroger.ai`. Im DNS von fragroger.ai braucht es einen CNAME-Record `tools` auf
+`rogerbasler.github.io`. Danach leitet GitHub die alte Adresse rogerbasler.github.io/ki-tool-analysen/ automatisch
+um. In den Pages-Einstellungen "Enforce HTTPS" aktivieren, sobald das Zertifikat ausgestellt ist.
 
 ## Inhalt
 
 Pro Woche genau ein Tool in jeder der fünf Kategorien Text, Design, Data / Wissen, Recherche und Agents.
 Jede Analyse enthält Kurzbeschreibung, Nutzungsszenarien, Pricing, Datenschutz (Serverstandort, DSGVO/DSG,
 Self-Hosting), Stärken, Schwächen, Einschätzung für die Praxis und eine Relevanzbewertung von 1 bis 10.
-Das Archiv reicht zurück bis KW 48/2025 und ist nach Tool, Kategorie, Jahr und Bewertung durchsuchbar.
+Jede Ausgabe erscheint auf Deutsch und Englisch. Das Archiv reicht zurück bis KW 48/2025 und ist nach Tool, Kategorie, Jahr und Bewertung durchsuchbar.
 
 ## Betrieb
 

@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 30 is about transparency, efficiency and the maturity of AI agents. Substack brings an important tool for content authenticity with Pangram, Black Forest Labs advances multimodal generation with FLUX 3, and Google makes agent workflows much cheaper with Gemini 3.6 Flash. Perplexity addresses the fundamental amnesia problem of current AI tools, while HubSpot Agent Hub shows what agent infrastructure looks like in day-to-day business.",
+  "highlights": [
+    "Perplexity Brain (10/10): self-improving memory turns AI research into a real digital co-worker.",
+    "FLUX 3 (9/10): German start-up Black Forest Labs sets new standards with multimodal video, audio and action generation.",
+    "Trend: AI transparency becomes mandatory. Substack, the EU AI Act and platforms focus on labelling and traceability."
+  ],
+  "trend": "",
+  "tools": [
+    {
+      "name": "Substack Pangram AI Detection",
+      "kurzbeschreibung": "A tool integrated into Substack for detecting AI-generated text."
+    },
+    {
+      "name": "FLUX 3 (Black Forest Labs)",
+      "kurzbeschreibung": "FLUX 3 is the new multimodal foundation model from the German start-up Black Forest Labs."
+    },
+    {
+      "name": "Gemini 3.6 Flash (Google)",
+      "kurzbeschreibung": "Google's new efficiency model with 1M token context, 17% fewer output tokens and a lower price."
+    },
+    {
+      "name": "Perplexity Computer Brain",
+      "kurzbeschreibung": "Self-improving memory system for the Perplexity Computer agent."
+    },
+    {
+      "name": "HubSpot Agent Hub & Agent Builder",
+      "kurzbeschreibung": "Central workspace in HubSpot for AI agents in marketing, sales and service."
+    }
+  ]
+}

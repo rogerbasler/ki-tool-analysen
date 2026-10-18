@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "The first calendar week of 2026 brings a wave of new AI tools. A systematic review of more than ten leading sources identified over 80 new AI tools. The five most promising were selected for in-depth analysis. The week is defined by specialisation, infrastructure and user experience.",
+  "highlights": [
+    "Stars of the week: Nano Banana and Mnexium AI (9/10)",
+    "Trend: character consistency and persistent memory",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "Specialisation, infrastructure and user experience",
+  "tools": [
+    {
+      "name": "Punchd",
+      "kurzbeschreibung": "Conversion-optimised headlines at the push of a button"
+    },
+    {
+      "name": "Nano Banana",
+      "kurzbeschreibung": "Image generation with character consistency"
+    },
+    {
+      "name": "Yonoo",
+      "kurzbeschreibung": "The smart router for eight frontier models"
+    },
+    {
+      "name": "Quantera.ai",
+      "kurzbeschreibung": "Enterprise-grade financial research for institutions"
+    },
+    {
+      "name": "Mnexium AI",
+      "kurzbeschreibung": "Persistent memory for AI agents"
+    }
+  ]
+}

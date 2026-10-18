@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week AI shifts from individual outputs to controllable execution. Writer optimises the cost structure of agentic text work, Claude Code combines autonomy with an additional safety mechanism. For visual teams, precise editing becomes more important than another prompt lottery ticket. Muse Glimmer shows how local open weights put data protection and control back into one's own hands.",
+  "highlights": [
+    "Muse Glimmer and Claude Code Auto Mode (9/10)",
+    "Trend: from generated single results to controllable, context-aware workflows",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "From single outputs to controllable workflows: cost, permissions, context and safety mechanisms become the real product quality.",
+  "tools": [
+    {
+      "name": "Writer Agent + effizientes Harness",
+      "kurzbeschreibung": "Agentic text work focused on cost control, context and governance."
+    },
+    {
+      "name": "Grok Imagine Image 2.0",
+      "kurzbeschreibung": "Image generation and precise editing for production-grade creative work."
+    },
+    {
+      "name": "Muse Glimmer",
+      "kurzbeschreibung": "Open-weights model for local knowledge assistants, tool use and agentic workflows."
+    },
+    {
+      "name": "Perplexity Computer for Builders",
+      "kurzbeschreibung": "Research and execution workflow across code, product data, payments and telemetry."
+    },
+    {
+      "name": "Claude Code Auto Mode",
+      "kurzbeschreibung": "Longer-running coding agents with risk-based safety checks instead of endless clicking."
+    }
+  ]
+}

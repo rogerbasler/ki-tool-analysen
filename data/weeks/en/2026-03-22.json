@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 12/2026 marks the move from general AI assistants to deeply integrated, context-aware workflow tools. Gamma Imagine shows how a design tool with almost 100 million users redefines the field: no more templates and manual editing, but prompt-to-design in seconds with automatic brand consistency. Skyvern shows that browser automation is finally becoming reliable, thanks to computer vision instead of fragile DOM selectors. Genie by Databox opens up data access for management, Perplexity Comet brings deep research to the iPhone, and Fathom Commentary Writer addresses hallucinations in financial reporting through symbolic attribution.",
+  "highlights": [
+    "Gamma Imagine (9.5/10): the biggest design AI launch of the year, 100M users, 2.1B dollar valuation, now a full design canvas via text input",
+    "Trend: agentic workflows and context-aware AI tools replace general chatbots; the winners integrate deeply into existing workflows and have clear ROI logic",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "Agentic workflows and context-aware AI tools replace general chatbots in specialised use cases",
+  "tools": [
+    {
+      "name": "Fathom Commentary Writer",
+      "kurzbeschreibung": "AI financial commentary with symbolic attribution: every number traceable to its source"
+    },
+    {
+      "name": "Gamma Imagine",
+      "kurzbeschreibung": "AI-native design canvas for infographics, logos and marketing assets via text input"
+    },
+    {
+      "name": "Genie by Databox",
+      "kurzbeschreibung": "AI analyst for business data: natural language queries over your own metrics and KPIs"
+    },
+    {
+      "name": "Perplexity Comet für iOS",
+      "kurzbeschreibung": "AI-native browser now on iPhone: deep research, voice mode and agentic browsing"
+    },
+    {
+      "name": "Skyvern",
+      "kurzbeschreibung": "Open-source browser automation with LLMs and computer vision, self-hostable"
+    }
+  ]
+}

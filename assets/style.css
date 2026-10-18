@@ -46,6 +46,11 @@ a:hover { text-decoration-color: var(--pink); }
 .nav a:hover { background: var(--blue-soft); }
 .nav a.active { background: var(--blue); color: #fff; }
 
+.langs { display: flex; gap: 2px; border: 1px solid var(--line); border-radius: 999px; padding: 2px; }
+.langs a { text-decoration: none; font-size: 0.78rem; font-weight: 700; padding: 5px 9px; border-radius: 999px; color: var(--muted); }
+.langs a:hover { color: var(--white); }
+.langs a.on { background: var(--white); color: #000; }
+
 /* Hero */
 .hero { padding: 56px 0 18px; }
 .hero.small { padding: 40px 0 6px; }
@@ -206,6 +211,10 @@ mark { background: rgba(255,20,144,0.35); color: #fff; border-radius: 3px; paddi
   .wt-desc { grid-column: 2 / 3; }
   .foot-grid { grid-template-columns: 1fr 1.2fr; }
   .hero { padding-top: 72px; }
+}
+@media (max-width: 719px) {
+  .langs { order: 1; }
+  .nav { order: 2; width: 100%; }
 }
 @media (max-width: 480px) {
   .rating { min-width: 70px; }

@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week shows that the value of AI lies less in individual demo features than in control over model, knowledge and execution. Inkling and NVIDIA Nemotron 3 Embed open up central model and retrieval layers, Google Vids integrates video more closely into existing workflows, Context.dev structures web data and Osaurus brings agents locally to the Mac. For decision-makers the order stays sober: clarify the data flow, choose a narrowly scoped pilot, measure quality and cost.",
+  "highlights": [
+    "NVIDIA Nemotron 3 Embed (9/10): open retrieval models turn documents and code into a controllable knowledge layer.",
+    "Trend: from AI feature to controllable infrastructure. Open weights, local execution, retrieval and traceable data access become the operational foundation.",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "From AI feature to controllable infrastructure: open weights, local execution, retrieval and traceable data access become the operational foundation.",
+  "tools": [
+    {
+      "name": "Inkling von Thinking Machines",
+      "kurzbeschreibung": "Open-weights model for multimodal text, image and audio workflows"
+    },
+    {
+      "name": "Google Vids",
+      "kurzbeschreibung": "Workspace video editor with Gemini Omni Flash and personal avatars"
+    },
+    {
+      "name": "NVIDIA Nemotron 3 Embed",
+      "kurzbeschreibung": "Open embedding models for RAG, semantic search and agent memory"
+    },
+    {
+      "name": "Context.dev",
+      "kurzbeschreibung": "Web context API for scraping, crawling and structured extraction"
+    },
+    {
+      "name": "Osaurus",
+      "kurzbeschreibung": "Native macOS agents with local models and optional cloud providers"
+    }
+  ]
+}

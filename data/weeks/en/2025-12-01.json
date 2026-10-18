@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week centres on major shifts: DeepSeek v3.2 resets the market for reasoning models with its open-source approach and very low prices. Taskade Genesis changes no-code by creating \"living\" applications from a single prompt, while TwelveLabs Marengo 3.0 sets new standards in enterprise video understanding.",
+  "highlights": [
+    "Star of the week: DeepSeek v3.2 (10/10)",
+    "Trend: autonomy and reasoning",
+    "High-end AI becomes widely accessible"
+  ],
+  "trend": "",
+  "tools": [
+    {
+      "name": "Contenov",
+      "kurzbeschreibung": "SEO content brief automation"
+    },
+    {
+      "name": "Alai",
+      "kurzbeschreibung": "AI presentation tool with four design options per slide"
+    },
+    {
+      "name": "TwelveLabs Marengo 3.0",
+      "kurzbeschreibung": "Enterprise video understanding"
+    },
+    {
+      "name": "DeepSeek v3.2",
+      "kurzbeschreibung": "Open-source reasoning AI"
+    },
+    {
+      "name": "Taskade Genesis",
+      "kurzbeschreibung": "\"One prompt = one app\" platform"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "The most interesting development this week is that AI tools connect context and execution. Shadow handles meeting follow-ups during the call, Kanwas organises product knowledge for people and agents, and Mindra builds operational agent teams from it. Aaavatar shows that data protection can be a real advantage in design tools when processing is local-first. AnySearch makes clear that good agents need better access to information, not only better models.",
+  "highlights": [
+    "Aaavatar and Shadow (8/10): Aaavatar sets a strong data protection benchmark with local-first portrait editing, Shadow moves meeting AI from notes to real execution.",
+    "Trend: from isolated prompts to context-aware work systems. AI tools move towards real-time execution, team knowledge, agentic research and operational orchestration.",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "From isolated prompts to context-aware work systems: real-time execution, team knowledge, agentic research and operational orchestration.",
+  "tools": [
+    {
+      "name": "Shadow",
+      "kurzbeschreibung": "Real-time assistant for calls, follow-ups and meeting to-dos"
+    },
+    {
+      "name": "Aaavatar",
+      "kurzbeschreibung": "Local-first Mac app for consistent team portraits"
+    },
+    {
+      "name": "Kanwas",
+      "kurzbeschreibung": "Shared context workspace for product teams and agents"
+    },
+    {
+      "name": "AnySearch",
+      "kurzbeschreibung": "Search API infrastructure for AI agents and vertical data sources"
+    },
+    {
+      "name": "Mindra",
+      "kurzbeschreibung": "Multi-agent orchestration for operational workflows"
+    }
+  ]
+}

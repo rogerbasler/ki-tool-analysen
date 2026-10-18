@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week marks a turning point: from assistants to autonomous systems. AI is maturing and taking on complex tasks on its own. Tonemark shows how AI can sound authentic, Reve AI brings precise control to image editing, DocsRouter greatly simplifies OCR integration, SiteSignal defines a new discipline (AEO), and Incredible.one stands for autonomous agents.",
+  "highlights": [
+    "Stars of the week: SiteSignal and Incredible.one (9/10)",
+    "Trend: autonomy and specialisation",
+    "Shift: from automation to autonomy"
+  ],
+  "trend": "",
+  "tools": [
+    {
+      "name": "Tonemark",
+      "kurzbeschreibung": "Authentic AI texts in your personal style"
+    },
+    {
+      "name": "Reve AI",
+      "kurzbeschreibung": "Layout representation for precise image editing"
+    },
+    {
+      "name": "DocsRouter",
+      "kurzbeschreibung": "Unified API for 100+ OCR models"
+    },
+    {
+      "name": "SiteSignal",
+      "kurzbeschreibung": "AI search visibility and AEO monitoring"
+    },
+    {
+      "name": "Incredible.one",
+      "kurzbeschreibung": "Autonomous agents for deep work with Agent MAX"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 15/2026 was about productivity gains and agent infrastructure. Google dominated the headlines with three major releases: integrating NotebookLM directly into the Gemini app creates a new model for personal knowledge management, while the new interactive 3D simulations in Gemini change how complex concepts are researched and visualised. Google also cut the cost of AI video generation to just 5 cents per clip with Veo 3.1 Lite. In the enterprise sector, Anthropic set a new standard for deploying AI agents in production with the launch of \"Claude Managed Agents\" (public beta). UPDF 2.5, presented as the first PDF editor built entirely on autonomous AI agents, rounds off the week.",
+  "highlights": [
+    "Gemini Notebooks + NotebookLM (9.5/10) and Claude Managed Agents (9.5/10): two equal top picks, Google reshapes knowledge management, Anthropic reshapes agent infrastructure",
+    "Trend: AI video becomes affordable, Veo 3.1 Lite (0.05 dollars per clip) makes AI video generation viable for mass use for the first time",
+    "Shift: from static chatbots to dynamic, generative interfaces, Gemini Interactive Simulations shows where AI interaction is heading"
+  ],
+  "trend": "AI video becomes affordable (Veo 3.1 Lite, 0.05 dollars per clip) and a shift towards dynamic, generative interfaces",
+  "tools": [
+    {
+      "name": "UPDF 2.5",
+      "kurzbeschreibung": "PDF editor with autonomous AI agents: 10+ specialised agents for research, legal and finance"
+    },
+    {
+      "name": "Google Veo 3.1 Lite",
+      "kurzbeschreibung": "AI video for 0.05 dollars per clip, 50% cheaper than its predecessor, 720p, via the Gemini API"
+    },
+    {
+      "name": "Gemini Notebooks + NotebookLM",
+      "kurzbeschreibung": "Personal knowledge base directly in Gemini: persistent projects, source sync, no model training"
+    },
+    {
+      "name": "Gemini Interactive Simulations",
+      "kurzbeschreibung": "3D models and interactive physics simulations directly in the chat, \"show me\" instead of static diagrams"
+    },
+    {
+      "name": "Claude Managed Agents",
+      "kurzbeschreibung": "Fully hosted agent infrastructure from Anthropic, public beta, 0.08 dollars per session hour, much faster development"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Calendar week 3 of 2026 was shaped by significant releases from the major AI players. Google and Anthropic sent clear signals with new open-source models and fundamental updates to their agent frameworks. The trend towards more efficiency, data protection through local execution and scaling AI agents through smart tool integration continues.",
+  "highlights": [
+    "TranslateGemma, GLM-Image and Claude Code MCP Tool Search (9/10)",
+    "Trend: open source and agent scalability",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "Open source and agent scaling",
+  "tools": [
+    {
+      "name": "TranslateGemma",
+      "kurzbeschreibung": "Google's open-source answer to DeepL"
+    },
+    {
+      "name": "GLM-Image",
+      "kurzbeschreibung": "Open-source progress in text rendering"
+    },
+    {
+      "name": "NotebookLM Data Tables",
+      "kurzbeschreibung": "Google's automatic data structurer"
+    },
+    {
+      "name": "Xpoz MCP",
+      "kurzbeschreibung": "Social media intelligence for AI agents"
+    },
+    {
+      "name": "Claude Code MCP Tool Search",
+      "kurzbeschreibung": "A solution to the scaling problem of AI agents"
+    }
+  ]
+}

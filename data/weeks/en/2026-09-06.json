@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week AI improves where it makes the work context more controllable. Claude Fable 5.1 combines text work with a relevant retention architecture; Atlas turns space and camera into controllable design parameters. HubSpot AEO, Articos and Ritto show three different paths: measurability, hypothesis testing and demonstrated automation. The productive question is not \"What can the AI do?\" but \"What can I clearly limit, check and take responsibility for?\"",
+  "highlights": [
+    "Claude Fable 5.1 (8.7/10): higher performance, cheaper cache reads and customer-controlled retention bring text AI closer to controllable knowledge work.",
+    "Trend: value does not come from more AI output but from control over data flow, spatial context, sources and approvals.",
+    "Rule of thumb: pilot beta tools only with approved test data, reversible steps and measurable quality criteria."
+  ],
+  "trend": "AI quality increasingly comes from controllability: data flow, spatial context, sources and human approvals become the real product feature.",
+  "tools": [
+    {
+      "name": "Claude Fable 5.1",
+      "kurzbeschreibung": "Demanding text and knowledge work with cheaper reusable context."
+    },
+    {
+      "name": "Atlas von World Labs",
+      "kurzbeschreibung": "Spatially controlled image, video and 3D generation for creative concept work."
+    },
+    {
+      "name": "HubSpot AEO + AI Search Sensor",
+      "kurzbeschreibung": "Measurable visibility in AI answers with source, prompt and industry context."
+    },
+    {
+      "name": "Articos",
+      "kurzbeschreibung": "Synthetic user research for quick hypotheses on messaging, UX and offering."
+    },
+    {
+      "name": "Ritto AI",
+      "kurzbeschreibung": "Demonstrate recurring screen work once, repeat it in a controlled batch."
+    }
+  ]
+}

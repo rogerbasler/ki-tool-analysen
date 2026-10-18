@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 14/2026 marks a landmark week for open-source AI: Google released Gemma 4 under the Apache 2.0 licence for the first time, a shift that directly challenges proprietary cloud models. H Company's Holo3 sets a new standard for computer-use agents with 78.85% on the OSWorld benchmark, ahead of GPT-5.4 and Claude Opus 4.6, as a European company under Apache 2.0. In data protection, Atomic Chat stands out: the open-source tool runs completely offline on the Mac, without a single byte leaving the device. The week is rounded off by Noon leaving stealth mode with 44 million dollars for the first AI-native design tool on production code, and by Perplexity Computer's new tax module for US tax returns.",
+  "highlights": [
+    "Google Gemma 4 (9.5/10): a milestone, frontier open-source AI under Apache 2.0, from Raspberry Pi to H100, fully GDPR-compliant on-premise",
+    "Trend: open source overtakes cloud AI. Gemma 4 (Apache 2.0) and Holo3 (Apache 2.0, EU) show that near-frontier AI quality is now available on-premise, free and without licence risk",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "Open source overtakes cloud AI: Gemma 4 and Holo3 show that near-frontier AI quality is now available on-premise, free and without licence risk",
+  "tools": [
+    {
+      "name": "Atomic Chat",
+      "kurzbeschreibung": "Open-source ChatGPT alternative: 1,000+ AI models fully offline on the Mac, zero data exfiltration"
+    },
+    {
+      "name": "Noon",
+      "kurzbeschreibung": "The first AI-native design tool on production code, 44M dollars in funding, out of stealth mode"
+    },
+    {
+      "name": "Google Gemma 4",
+      "kurzbeschreibung": "Frontier open-source AI under Apache 2.0, from Raspberry Pi to H100, GDPR-compliant on-premise"
+    },
+    {
+      "name": "Perplexity Computer for Taxes",
+      "kurzbeschreibung": "First agentic tax assistant: fills in IRS forms, checks returns, optimises deductions"
+    },
+    {
+      "name": "Holo3 by H Company",
+      "kurzbeschreibung": "State-of-the-art computer-use agent, 78.85% on OSWorld, open source Apache 2.0, European company"
+    }
+  ]
+}

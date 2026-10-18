@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week shows a clear trend: on-device AI and EU-based tools are gaining ground. Proofly shows that professional AI features are possible without the cloud, while Nume, an EU start-up, stands out with GDPR compliance. At the same time, several innovative US tools (Bloom, Exa, Notis) show gaps in data protection.",
+  "highlights": [
+    "Stars of the week: Proofly and Nume (9/10)",
+    "Trend: on-device AI and EU tools",
+    "Caution: US tools with data protection gaps"
+  ],
+  "trend": "",
+  "tools": [
+    {
+      "name": "Proofly",
+      "kurzbeschreibung": "On-device AI proofreader"
+    },
+    {
+      "name": "Bloom",
+      "kurzbeschreibung": "AI brand asset generator"
+    },
+    {
+      "name": "Nume",
+      "kurzbeschreibung": "AI CFO for start-ups"
+    },
+    {
+      "name": "Exa",
+      "kurzbeschreibung": "AI search engine for agents"
+    },
+    {
+      "name": "Notis",
+      "kurzbeschreibung": "Autonomous AI agent"
+    }
+  ]
+}

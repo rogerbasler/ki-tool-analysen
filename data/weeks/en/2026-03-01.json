@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "Week 9/2026 marks a break in AI development: speed, accessibility and orchestration take centre stage. The standout event was the launch of Mercury 2 by Inception Labs, the first diffusion-based reasoning model, which opens up a new speed dimension at more than 1,000 tokens per second. QuiverAI entered the stage with Arrow-1, the first dedicated AI model for vector graphics, which immediately topped the SVG Arena leaderboard and raised 8.3 million dollars from a16z. Perplexity Computer redefines the AI agent by orchestrating 19 different models into one autonomous workflow system. Notion Custom Agents brings 24/7 AI automation into one of the most widely used workspaces, without programming, and Supaboard shows that data analysis no longer requires expert knowledge when you can simply ask in English.",
+  "highlights": [
+    "Mercury 2: the fastest reasoning model, 1,009 tokens per second, four times cheaper than Claude Haiku (9/10)",
+    "Trend: model orchestration becomes the new approach, Perplexity Computer coordinates 19 models",
+    "Shift: from pixel images to real, editable vector graphics through AI (QuiverAI Arrow-1)"
+  ],
+  "trend": "Model orchestration and broader access to AI agents",
+  "tools": [
+    {
+      "name": "Mercury 2",
+      "kurzbeschreibung": "Fastest reasoning LLM, diffusion architecture with 1,009 tokens per second and four times lower prices"
+    },
+    {
+      "name": "QuiverAI (Arrow-1)",
+      "kurzbeschreibung": "First AI model for vector graphics: editable SVGs from text prompts, number one on SVG Arena"
+    },
+    {
+      "name": "Supaboard",
+      "kurzbeschreibung": "Ask your data in plain English: #1 on Product Hunt in February 2026, 600+ integrations, no SQL needed"
+    },
+    {
+      "name": "Perplexity Computer",
+      "kurzbeschreibung": "19 AI models orchestrated: an autonomous multi-model agent for complex workflows, 200 dollars per month"
+    },
+    {
+      "name": "Notion Custom Agents",
+      "kurzbeschreibung": "24/7 autonomous AI agents directly in Notion, free until May 2026, no coding required"
+    }
+  ]
+}

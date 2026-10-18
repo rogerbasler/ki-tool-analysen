@@ -1,31 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
 <section class="hero small">
-  <p class="kicker">Archiv</p>
-  <h1 class="page-title">Alle Wochen, alle Tools</h1>
-  <p class="hero-sub">Seit Dezember 2025 jede Woche fünf Tools. Suche nach Namen, Einsatzzweck oder Stichwort, filtere nach Kategorie und Jahr.</p>
+  <p class="kicker">{{ T.archive_kicker }}</p>
+  <h1 class="page-title">{{ T.archive_title }}</h1>
+  <p class="hero-sub">{{ T.archive_sub }}</p>
 </section>
 
 <div class="stats">
-  <div class="stat"><b>{{ stats.weeks }}</b><span>Wochen</span></div>
-  <div class="stat"><b>{{ stats.tools }}</b><span>Tool-Analysen</span></div>
-  <div class="stat"><b>{{ stats.avg|score }}</b><span>Ø Relevanz</span></div>
+  <div class="stat"><b>{{ stats.weeks }}</b><span>{{ T.stat_weeks }}</span></div>
+  <div class="stat"><b>{{ stats.tools }}</b><span>{{ T.stat_tools }}</span></div>
+  <div class="stat"><b>{{ fmt(stats.avg) }}</b><span>{{ T.stat_avg }}</span></div>
 </div>
 
 <div class="search">
-  <label for="q" class="sr-only" style="position:absolute;left:-999px">Suche</label>
-  <input id="q" type="search" placeholder="Tool oder Stichwort suchen, z. B. Agent, lokal, Präsentation" autocomplete="off">
-  <div class="filters" role="group" aria-label="Filter">
-    <button class="chip" type="button" data-cat="" aria-pressed="true">Alle</button>
-    {% for c in categories %}<button class="chip" type="button" data-cat="{{ c }}" aria-pressed="false">{{ c }}</button>{% endfor %}
-    <select id="year" aria-label="Jahr">
-      <option value="">Alle Jahre</option>
+  <label for="q" class="sr-only" style="position:absolute;left:-999px">{{ T.search }}</label>
+  <input id="q" type="search" placeholder="{{ T.search_ph }}" autocomplete="off">
+  <div class="filters" role="group" aria-label="{{ T.filter }}">
+    <button class="chip" type="button" data-cat="" aria-pressed="true">{{ T.all }}</button>
+    {% for c, label in categories %}<button class="chip" type="button" data-cat="{{ c }}" aria-pressed="false">{{ label }}</button>{% endfor %}
+    <select id="year" aria-label="{{ T.year }}">
+      <option value="">{{ T.all_years }}</option>
       {% for y in years %}<option value="{{ y }}">{{ y }}</option>{% endfor %}
     </select>
-    <select id="minscore" aria-label="Mindestbewertung">
-      <option value="0">Jede Bewertung</option>
-      <option value="8">ab 8/10</option>
-      <option value="9">ab 9/10</option>
+    <select id="minscore" aria-label="{{ T.min_score }}">
+      <option value="0">{{ T.any_score }}</option>
+      <option value="8">{{ T.from_8 }}</option>
+      <option value="9">{{ T.from_9 }}</option>
     </select>
   </div>
 </div>
@@ -35,21 +35,21 @@
 {% for w in weeks %}
   <li class="week-item" data-year="{{ w.jahr }}">
     <div class="week-head">
-      <a href="{{ root }}{{ w.page }}">KW {{ '%02d' % w.kw }}/{{ w.jahr }}</a>
+      <a href="{{ root }}{{ w.page }}">{{ T.week }} {{ '%02d' % w.kw }}/{{ w.jahr }}</a>
       <span class="date">{{ w.date_text }}</span>
-      {% if w.avg %}<span class="avg">Ø {{ w.avg|score }}/10</span>{% endif %}
+      {% if w.avg %}<span class="avg">Ø {{ fmt(w.avg) }}/10</span>{% endif %}
     </div>
     <ul class="week-tools">
     {% for t in w.tools %}
       <li data-cat="{{ t.kategorie }}" data-score="{{ t.bewertung or 0 }}" data-text="{{ t.search }}">
-        <span class="wt-cat">{{ t.kategorie }}</span>
+        <span class="wt-cat">{{ cat(t.kategorie) }}</span>
         <a class="wt-name" href="{{ root }}{{ w.page }}#{{ t.anchor }}">{{ t.name }}</a>
-        {% if t.bewertung is not none %}<span class="wt-score">{{ t.bewertung|score }}</span>{% else %}<span></span>{% endif %}
+        {% if t.bewertung is not none %}<span class="wt-score">{{ fmt(t.bewertung) }}</span>{% else %}<span></span>{% endif %}
         {% if t.kurzbeschreibung %}<span class="wt-desc">{{ t.kurzbeschreibung }}</span>{% endif %}
       </li>
     {% endfor %}
     </ul>
-    {% if w.trend %}<p class="week-trend">Trend: {{ w.trend }}</p>{% endif %}
+    {% if w.trend %}<p class="week-trend">{{ T.trend }}: {{ w.trend }}</p>{% endif %}
   </li>
 {% endfor %}
 </ul>
@@ -82,7 +82,7 @@
       if (visible) { nWeeks++; nTools += visible; }
     });
     var filtered = terms.length || cat || y || min;
-    count.textContent = filtered ? nTools + ' Tools in ' + nWeeks + ' Wochen' : weeks.length + ' Wochen im Archiv';
+    count.textContent = filtered ? {{ T.count_filtered|tojson }}.replace('{t}', nTools).replace('{w}', nWeeks) : {{ T.count_all|tojson }}.replace('{w}', weeks.length);
   }
   chips.forEach(function (c) {
     c.addEventListener('click', function () {

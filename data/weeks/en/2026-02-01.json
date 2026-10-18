@@ -1,0 +1,33 @@
+{
+  "umfang": "uebersicht",
+  "zeitraum": "",
+  "zusammenfassung": "This week focused on fundamental developments and new platforms that aim less at single features than at new ways of working. OpenAI launched Prism, a free AI-assisted platform for scientific writing with the potential to change academic collaboration. Google moved image recognition towards an agentic, interactive process with Agentic Vision in Gemini. In data analysis, Pandada AI stood out on Product Hunt by making unstructured data usable for professional reports.",
+  "highlights": [
+    "OpenAI Prism and Agentic Vision in Gemini (9/10)",
+    "Trend: AI-native work environments and agent-like systems",
+    "Shift: from all-in-one to specialised solutions"
+  ],
+  "trend": "AI-native work environments and agent-like systems",
+  "tools": [
+    {
+      "name": "OpenAI Prism",
+      "kurzbeschreibung": "AI-native workspace for scientific writing with GPT-5.2"
+    },
+    {
+      "name": "AirMusic v1.1",
+      "kurzbeschreibung": "AI music generator with royalty-free licensing"
+    },
+    {
+      "name": "Pandada AI",
+      "kurzbeschreibung": "AI-assisted data analysis without programming skills"
+    },
+    {
+      "name": "The Prompting Company",
+      "kurzbeschreibung": "SEO for the AI era: optimising for citations in ChatGPT"
+    },
+    {
+      "name": "Agentic Vision in Gemini",
+      "kurzbeschreibung": "Major Google update for agent-like visual interaction"
+    }
+  ]
+}
