@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vollanalyse KW 14/2026 | KI-Tool-Analysen</title>
+<meta name="description" content="Ausführliche Analyse der KI-Tools der KW 14/2026.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://rogerbasler.github.io/ki-tool-analysen/archiv/2026/kw14-2026-04-05-analyse.html">
+<link rel="alternate" type="application/rss+xml" title="KI-Tool-Analysen" href="../../feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KI-Tool-Analysen">
+<meta property="og:title" content="Vollanalyse KW 14/2026 | KI-Tool-Analysen">
+<meta property="og:description" content="Ausführliche Analyse der KI-Tools der KW 14/2026.">
+<meta property="og:url" content="https://rogerbasler.github.io/ki-tool-analysen/archiv/2026/kw14-2026-04-05-analyse.html">
+<meta property="og:locale" content="de_CH">
+<meta property="og:image" content="https://rogerbasler.github.io/ki-tool-analysen/assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css?v=202610180633">
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../../" aria-label="KI-Tool-Analysen, Startseite">
+      <span class="brand-mark"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></span>
+      <span class="brand-sub">KI-Tool-Analysen</span>
+    </a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="../../" >Diese Woche</a>
+      <a href="../../archiv.html" class="active" aria-current="page">Archiv</a>
+      <a href="../../methode.html" >Methode</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+<section class="hero small">
+<p class="kicker">Vollanalyse · KW 14/2026 · 5. April 2026</p>  <h1 class="page-title">Die ausführliche Fassung</h1>
+<p class="hero-sub">Atomic Chat, Noon, Google Gemma 4, Perplexity Computer for Taxes, Holo3 by H Company</p><div class="hero-actions"><a class="btn" href="../../archiv/2026/kw14-2026-04-05.html">Zur Wochenübersicht</a><a class="btn ghost" href="../../archiv/data/ki-tool-analysen-2026-04-05.md">Markdown herunterladen</a></div></section>
+<p class="legacy-note">Diese Fassung stammt aus dem Archiv und wird unverändert wiedergegeben.</p><div class="prose" style="margin-top:24px">
+<p><strong>Datum:</strong> 5. April 2026<br />
+<strong>Kalenderwoche:</strong> KW 14 / 2026<br />
+<strong>Autor:</strong> KI-Tool-Research-Agent<br />
+<strong>Quellen:</strong> Product Hunt, The Neuron, Ben's Bites, Futurepedia, There's An AI For That, Google Blog, HuggingFace, Neowin, SecurityToday, GitHub</p>
+<hr />
+<h2>Wochenzusammenfassung</h2>
+<p>KW 14 markiert eine historische Woche für Open-Source-KI: Google veröffentlichte Gemma 4 erstmals unter der Apache-2.0-Lizenz — ein Paradigmenwechsel, der proprietäre Cloud-Modelle direkt herausfordert. Gleichzeitig trat Cursor 3 den Schritt vom Code-Editor zum vollständigen Agenten-Orchestrierungswerkzeug an, während H Companys Holo3 mit 78,85 % auf dem OSWorld-Benchmark einen neuen Massstab für Computer-Use-Agenten setzte. Im Bereich Datenschutz und Privatsphäre sticht Atomic Chat hervor: Das Open-Source-Tool läuft vollständig offline auf dem Mac, ohne dass auch nur ein Byte das Gerät verlässt. Abgerundet wird die Woche durch Noons Stealth-Exit mit $44 Millionen Finanzierung für das erste KI-native Design-Tool, das direkt auf Production-Code arbeitet.</p>
+<hr />
+<h2 id="atomic-chat">1. Atomic Chat — Kategorie: Text</h2>
+<p><strong>Offizielle Website:</strong> <a href="https://atomic.chat">atomic.chat</a> | <strong>GitHub:</strong> <a href="https://github.com/AtomicBot-ai/Atomic-Chat">AtomicBot-ai/Atomic-Chat</a></p>
+<h3>Kurzbeschreibung</h3>
+<p>Atomic Chat ist eine Open-Source-Desktop-Applikation für macOS (und Linux/Windows über Build-from-Source), die es ermöglicht, über 1.000 KI-Modelle vollständig offline zu betreiben. Die App basiert auf dem Fork des bekannten Jan-Projekts (janhq/jan) und wurde in dieser Woche stark in The Neuron Daily, Ben's Bites und auf Product Hunt erwähnt. Zielgruppe sind datenschutzbewusste Einzelpersonen, Unternehmen mit sensiblen Daten sowie Entwicklerinnen und Entwickler, die Cloud-Kosten eliminieren möchten.</p>
+<h3>Nutzungsszenarien</h3>
+<ol>
+<li><strong>Datenschutzkritische Textverarbeitung:</strong> Anwälte, Ärzte oder HR-Verantwortliche können vertrauliche Dokumente analysieren, ohne Daten an externe Server zu übermitteln.</li>
+<li><strong>Kostenoptimierung für Entwickler:</strong> Wer täglich mit LLMs arbeitet und monatlich $5–6.000 an API-Kosten zahlt, kann mit einem Mac Studio und Gemma 4 31B lokal auf $0 Tokenkosten kommen (dokumentierter Anwendungsfall von Jesse Genet, April 2026).</li>
+<li><strong>Offline-Einsatz ohne Internetverbindung:</strong> Feldarbeit, Reisen in Regionen mit schlechter Konnektivität oder Air-Gap-Umgebungen.</li>
+<li><strong>Unternehmensinternes Wissensmanagement:</strong> Sensible interne Dokumente mit eigenem Modell durchsuchen und zusammenfassen.</li>
+<li><strong>Modell-Benchmarking:</strong> Entwickler können verschiedene Modelle (Llama, Gemma, Qwen, Mistral) direkt vergleichen, ohne API-Kosten.</li>
+</ol>
+<h3>Pricing</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Plan</th>
+<th>Preis</th>
+<th>Inhalt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Free (Open Source)</strong></td>
+<td>$0</td>
+<td>Vollständiger Funktionsumfang, Apache 2.0</td>
+</tr>
+<tr>
+<td><strong>Cloud-Modelle</strong></td>
+<td>API-Kosten der Anbieter</td>
+<td>Optional: OpenAI, Anthropic, Mistral, Groq</td>
+</tr>
+</tbody>
+</table></div>
+<p>Atomic Chat selbst ist <strong>dauerhaft kostenlos</strong>. Wer Cloud-Modelle via API einbinden möchte, zahlt die jeweiligen API-Kosten der Anbieter. Lokale Modelle sind komplett gratis.</p>
+<h3>Datenschutz</h3>
+<ul>
+<li><strong>Serverstandort:</strong> Keiner — alle Daten verbleiben lokal auf dem Gerät</li>
+<li><strong>DSGVO-Konformität:</strong> Vollständig DSGVO-konform, da keine Datenübermittlung an Dritte stattfindet</li>
+<li><strong>Self-Hosting:</strong> Das Produkt <em>ist</em> das Self-Hosting; kein Cloud-Dienst involviert</li>
+<li><strong>Lizenz:</strong> Apache 2.0 — vollständig Open Source, kommerziell nutzbar</li>
+<li><strong>Datenpolitik:</strong> Zero-Data-Exfiltration by Design; kein Telemetrie-Tracking im Standardbetrieb</li>
+</ul>
+<h3>Stärken</h3>
+<ul>
+<li>Absolut datenschutzkonform — kein Byte verlässt das Gerät</li>
+<li>Kostenlos und Open Source unter Apache 2.0</li>
+<li>Unterstützt über 1.000 Modelle von HuggingFace</li>
+<li>MCP-Integration für agentenbasierte Workflows</li>
+<li>OpenAI-kompatibler lokaler API-Server (localhost:1337) für andere Anwendungen</li>
+<li>Aktive Entwicklung (57 Tags, 7.976 Commits, wöchentliche Releases)</li>
+</ul>
+<h3>Schwächen</h3>
+<ul>
+<li>Aktuell primär für macOS optimiert (Universal Binary); Windows/Linux via Build-from-Source</li>
+<li>Hardwareanforderungen: Mindestens 8 GB RAM für 3B-Modelle, 16 GB für 7B, 32 GB für 13B+</li>
+<li>Kein offizieller Enterprise-Support oder SLA</li>
+<li>Für sehr grosse Modelle (31B+) benötigt man leistungsstarke Hardware (Mac Studio M4 Ultra oder besser)</li>
+</ul>
+<h3>Einschätzung für die Praxis</h3>
+<p>Atomic Chat ist die konsequenteste Antwort auf die Datenschutzproblematik von Cloud-KI. Für Schweizer und europäische Unternehmen, die unter DSGVO und dem revidierten DSG operieren, ist dieses Tool besonders relevant: Es eliminiert die gesamte Komplexität von Datenverarbeitungsverträgen, Drittlandtransfers und Datenschutz-Folgeabschätzungen. Die Kombination mit Gemma 4 (Apache 2.0, läuft auf Consumer-Hardware) macht 2026 zum Jahr, in dem lokale KI erstmals wirklich praxistauglich wird.</p>
+<h3>Relevanzbewertung</h3>
+<p><strong>8.5 / 10</strong> — Herausragendes Datenschutz-Profil, kostenlos und Open Source. Einschränkung durch Hardware-Anforderungen für grosse Modelle.</p>
+<hr />
+<h2 id="noon">2. Noon — Kategorie: Design</h2>
+<p><strong>Offizielle Website:</strong> <a href="https://noon.design">noon.design</a><br />
+<strong>Funding:</strong> $44 Millionen (Chemistry, First Round Capital, Scribble Ventures, Elevation Capital)</p>
+<h3>Kurzbeschreibung</h3>
+<p>Noon ist das erste KI-native Produktdesign-Tool, das direkt auf dem Production-Code des Teams arbeitet — nicht auf statischen Mockups. Gegründet 2024 von Aditya Bandi (ex-Bookpad CEO) und Kushagra Sinha (ex-Leap Co-Founder), trat Noon in dieser Woche aus dem Stealth-Modus heraus und veröffentlichte gleichzeitig seine $44-Millionen-Finanzierungsrunde. Das Tool richtet sich an Produktdesigner und Entwicklungsteams, die den Gap zwischen Design und Code schliessen wollen.</p>
+<h3>Nutzungsszenarien</h3>
+<ol>
+<li><strong>Design auf Live-Code:</strong> Designer arbeiten direkt auf dem laufenden Produktcode, nicht auf einem separaten Figma-Mockup, das anschliessend manuell implementiert werden muss.</li>
+<li><strong>KI-gestützte Komponenten-Iteration:</strong> Änderungen an UI-Komponenten werden sofort im echten Code sichtbar, ohne Export-Import-Zyklen.</li>
+<li><strong>Kollaboratives Design-Engineering:</strong> Designer und Entwickler arbeiten im selben Workspace auf derselben Codebasis.</li>
+<li><strong>Rapid Prototyping mit sofortigem Deployment:</strong> Ideen können in Sekunden von der Visualisierung in produktionsreife Änderungen überführt werden.</li>
+<li><strong>Redesign bestehender Produkte:</strong> Bestehende Codebases können visuell überarbeitet werden, ohne den Code manuell zu analysieren.</li>
+</ol>
+<h3>Pricing</h3>
+<p>Noon ist noch in der Early-Access-Phase; öffentliche Preispläne wurden noch nicht kommuniziert. Die Website zeigt ein Waitlist-/Early-Access-Modell. Basierend auf der Positionierung ist ein SaaS-Modell im Bereich $20–50/Monat/Nutzer zu erwarten.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Plan</th>
+<th>Preis</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Early Access</strong></td>
+<td>Auf Anfrage / Waitlist</td>
+<td>Aktuell verfügbar</td>
+</tr>
+<tr>
+<td><strong>Paid Plans</strong></td>
+<td>Noch nicht kommuniziert</td>
+<td>Erwartet Q2/Q3 2026</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Datenschutz</h3>
+<ul>
+<li><strong>Serverstandort:</strong> USA (San Francisco; Vercel-Hosting)</li>
+<li><strong>DSGVO-Konformität:</strong> Noch keine öffentliche DSGVO-Erklärung; Terms of Service vorhanden</li>
+<li><strong>Self-Hosting:</strong> Nicht verfügbar (Cloud-only)</li>
+<li><strong>Datenpolitik:</strong> Unklar; da das Tool auf dem Produktionscode des Unternehmens arbeitet, ist eine sorgfältige Prüfung vor dem Einsatz mit sensiblem Code empfehlenswert</li>
+</ul>
+<h3>Stärken</h3>
+<ul>
+<li>Revolutionärer Ansatz: Design direkt auf Production-Code statt auf statischen Mockups</li>
+<li>Eliminiert den klassischen "Handoff"-Prozess zwischen Design und Entwicklung</li>
+<li>Starkes Investoren-Backing ($44M von Top-VCs)</li>
+<li>Gründerteam mit nachgewiesener Erfolgsbilanz (Bookpad, Leap)</li>
+<li>KI-nativ von Grund auf gebaut — kein nachträgliches KI-Feature-Bolting</li>
+</ul>
+<h3>Schwächen</h3>
+<ul>
+<li>Noch in der Early-Access-Phase; kein öffentliches Pricing</li>
+<li>DSGVO-Status unklar; für Unternehmen mit sensiblem Code problematisch</li>
+<li>Cloud-only; kein Self-Hosting</li>
+<li>Noch keine öffentlichen Reviews oder unabhängigen Tests verfügbar</li>
+<li>Abhängigkeit von der Codebasis-Kompatibilität (welche Frameworks werden unterstützt?)</li>
+</ul>
+<h3>Einschätzung für die Praxis</h3>
+<p>Noon adressiert einen echten Pain Point: Der Bruch zwischen Design-Tools (Figma, Sketch) und der tatsächlichen Codebasis kostet Teams täglich Stunden. Wenn Noon hält, was es verspricht, könnte es den Design-Workflow fundamental verändern. Für den sofortigen Einsatz ist es noch zu früh — kein öffentliches Pricing, keine DSGVO-Klarheit, keine unabhängigen Reviews. In 6–12 Monaten könnte Noon jedoch einer der wichtigsten Tools für Produktteams werden.</p>
+<h3>Relevanzbewertung</h3>
+<p><strong>7.5 / 10</strong> — Hochinteressanter Ansatz mit starkem Backing, aber noch zu früh im Lifecycle für eine uneingeschränkte Empfehlung.</p>
+<hr />
+<h2 id="google-gemma-4">3. Google Gemma 4 — Kategorie: Data / Wissen</h2>
+<p><strong>Offizielle Website:</strong> <a href="https://deepmind.google/models/gemma/gemma-4">deepmind.google/models/gemma/gemma-4</a><br />
+<strong>Veröffentlicht:</strong> 2. April 2026<br />
+<strong>Lizenz:</strong> Apache 2.0</p>
+<h3>Kurzbeschreibung</h3>
+<p>Google DeepMind veröffentlichte am 2. April 2026 Gemma 4 — die bisher fähigste Open-Source-Modellfamilie von Google, erstmals unter der kommerziell permissiven Apache-2.0-Lizenz. Die Familie umfasst vier Modelle (E2B, E4B, 26B MoE, 31B Dense) für unterschiedliche Hardware-Anforderungen, von Raspberry Pi bis zum Rechenzentrum. Gemma 4 unterstützt nativ Text, Bild und Audio und ist für agentenbasierte Workflows optimiert. Zielgruppe sind Entwickler, Forscher und Unternehmen, die frontier-nahe KI ohne Cloud-Abhängigkeit betreiben möchten.</p>
+<h3>Nutzungsszenarien</h3>
+<ol>
+<li><strong>On-Premise Unternehmens-KI:</strong> Unternehmen können Gemma 4 31B auf einem einzigen NVIDIA H100 (80 GB) oder quantisiert auf Consumer-GPUs (24 GB) betreiben — vollständig DSGVO-konform, ohne Drittlandtransfer.</li>
+<li><strong>Mobile und Edge-Anwendungen:</strong> Die E2B/E4B-Modelle laufen auf Smartphones (Android AICore Developer Preview), Raspberry Pi und NVIDIA Jetson Orin Nano mit nahezu null Latenz.</li>
+<li><strong>Multimodale Dokumentenanalyse:</strong> Gemma 4 verarbeitet Text, Bilder und Audio in einem einzigen Modell — ideal für die Analyse von Berichten, Präsentationen und Meetings.</li>
+<li><strong>Agentenbasierte Workflows:</strong> Dank 128K–256K Kontext und nativem Reasoning-Support können komplexe mehrstufige Aufgaben autonom abgearbeitet werden.</li>
+<li><strong>Kostenersatz für Cloud-APIs:</strong> Entwickler, die bisher $20/Monat für ChatGPT Plus oder Claude Pro zahlen, können Gemma 4 31B lokal für $0 betreiben (nach Hardware-Investition).</li>
+</ol>
+<h3>Pricing</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Zugang</th>
+<th>Preis</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Modell-Weights (lokal)</strong></td>
+<td>Kostenlos</td>
+<td>Apache 2.0, HuggingFace, Ollama, Kaggle</td>
+</tr>
+<tr>
+<td><strong>Google AI Studio API</strong></td>
+<td>Kostenlos</td>
+<td>1.500 Anfragen/Tag für Gemma 4 31B</td>
+</tr>
+<tr>
+<td><strong>Gemini API (Pay-as-you-go)</strong></td>
+<td>Ab $0,03/1M Token</td>
+<td>Für höhere Volumina</td>
+</tr>
+<tr>
+<td><strong>Vertex AI</strong></td>
+<td>Auf Anfrage</td>
+<td>Enterprise-Deployment auf Google Cloud</td>
+</tr>
+<tr>
+<td><strong>Cloudflare Workers AI</strong></td>
+<td>Kostenlos im Free Tier</td>
+<td>256K Kontext, Vision, Function Calling</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Datenschutz</h3>
+<ul>
+<li><strong>Serverstandort (lokal):</strong> Kein Server — vollständig on-premise möglich</li>
+<li><strong>Serverstandort (Cloud-API):</strong> USA (Google-Rechenzentren); EU-Region via Vertex AI Sovereign Cloud verfügbar</li>
+<li><strong>DSGVO-Konformität:</strong> Bei lokalem Betrieb vollständig DSGVO-konform (keine Datenübermittlung); bei Cloud-API: Standard-Contractual-Clauses mit Google erforderlich</li>
+<li><strong>Self-Hosting:</strong> Vollständig unterstützt (Ollama, LM Studio, llama.cpp, Docker, Hugging Face)</li>
+<li><strong>Lizenz:</strong> Apache 2.0 — kommerzielle Nutzung ohne Einschränkungen, kein Nutzungsverbot für bestimmte Anwendungsfälle</li>
+</ul>
+<h3>Stärken</h3>
+<ul>
+<li>Erstmals Apache 2.0 — vollständige kommerzielle Freiheit ohne Nutzungsbeschränkungen</li>
+<li>Vier Modellgrössen für jede Hardware-Situation (Raspberry Pi bis H100)</li>
+<li>Nativ multimodal (Text, Bild, Audio) in einem Modell</li>
+<li>128K–256K Kontext — für lange Dokumente und komplexe Agenten-Workflows</li>
+<li>Bereits 400M+ Downloads auf HuggingFace (historischer Wert der Gemma-Familie)</li>
+<li>Läuft auf Ollama, LM Studio, MLX, NVIDIA NIM, LiteRT und mehr</li>
+<li>Starke DSGVO-Relevanz durch On-Premise-Option</li>
+</ul>
+<h3>Schwächen</h3>
+<ul>
+<li>Für die grossen Modelle (26B/31B) wird leistungsstarke Hardware benötigt (H100 oder quantisiert auf 24 GB GPU)</li>
+<li>Kein offizieller Enterprise-Support für die Open-Source-Weights</li>
+<li>Auf Arena.ai rangiert Gemma 4 31B auf Platz 27 — leicht unterhalb von Gemini 3 Flash in der Qualität</li>
+<li>Multimodale Fähigkeiten (Audio) noch in der Entwicklung</li>
+</ul>
+<h3>Einschätzung für die Praxis</h3>
+<p>Gemma 4 unter Apache 2.0 ist das wichtigste Open-Source-KI-Ereignis des Jahres 2026 bis dato. Für europäische Unternehmen, die unter DSGVO operieren, öffnet sich damit eine neue Tür: Frontier-nahe KI-Qualität, vollständig on-premise, ohne Drittlandtransfer, ohne Lizenzrisiko. Die Kombination mit Atomic Chat (lokal, kostenlos) oder Ollama macht den Einstieg denkbar einfach. Besonders die E2B/E4B-Modelle für Edge-Geräte sind ein Gamechanger für mobile Anwendungen.</p>
+<h3>Relevanzbewertung</h3>
+<p><strong>9.5 / 10</strong> — Historischer Meilenstein: Frontier-nahe Open-Source-KI unter Apache 2.0, on-premise-fähig, DSGVO-konform, kostenlos. Minimaler Abzug wegen Hardware-Anforderungen für die grossen Modelle.</p>
+<hr />
+<h2 id="perplexity-computer-for-taxes">4. Perplexity Computer for Taxes — Kategorie: Recherche</h2>
+<p><strong>Offizielle Website:</strong> <a href="https://www.perplexity.ai/computer">perplexity.ai/computer</a><br />
+<strong>Veröffentlicht:</strong> 3. April 2026<br />
+<strong>Verfügbarkeit:</strong> Perplexity Pro-Abonnenten ($17/Monat)</p>
+<h3>Kurzbeschreibung</h3>
+<p>Perplexity Computer ist ein agentischer KI-Dienst, der seit Februar 2026 End-to-End-Aufgaben für Nutzer ausführen kann. In dieser Woche erweiterte Perplexity die Plattform um ein umfassendes Steuer-Modul ("Navigate My Taxes"), das auf dem Agent-Skills-Protokoll basiert. Das System kann US-Bundessteuererklärungen auf offiziellen IRS-Formularen ausfüllen, professionell erstellte Steuererklärungen prüfen, Dashboards und Tools für komplexe Steuerszenarien bauen und beliebige Steuer-Workflows automatisieren. Zielgruppe sind US-amerikanische Steuerpflichtige sowie Steuerberater, die ihre Arbeit durch KI-Unterstützung beschleunigen möchten.</p>
+<h3>Nutzungsszenarien</h3>
+<ol>
+<li><strong>Automatische Steuererklärung:</strong> Dokumente hochladen, Perplexity Computer füllt die offiziellen IRS-Formulare korrekt aus — inklusive aktueller Gesetzesänderungen (z.B. No Tax on Overtime 2025).</li>
+<li><strong>Prüfung professionell erstellter Erklärungen:</strong> Im Test fand das System in einer anwaltlich erstellten Erklärung nicht geltend gemachte Abzüge von mehreren Tausend Dollar.</li>
+<li><strong>Steuer-Dashboard für Unternehmen:</strong> Automatischer Aufbau eines Tracking-Tools für Abschreibungen und Ausgaben.</li>
+<li><strong>Equity-Modellierung für Startups:</strong> Laden von Startup-Equity-Daten in ein Tool, das Ausübungsentscheidungen modelliert.</li>
+<li><strong>Mietportfolio-Verwaltung:</strong> Dashboard zur Verwaltung von Abzügen über ein Mietportfolio unter Passive-Loss-Regeln.</li>
+</ol>
+<h3>Pricing</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Plan</th>
+<th>Preis/Monat</th>
+<th>Zugang zu Computer/Taxes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Free</strong></td>
+<td>$0</td>
+<td>Kein Zugang zu Computer</td>
+</tr>
+<tr>
+<td><strong>Pro</strong></td>
+<td>$17</td>
+<td>Perplexity Computer inkl. Tax-Modul</td>
+</tr>
+<tr>
+<td><strong>Max</strong></td>
+<td>$200</td>
+<td>Erweiterte Nutzung, Priority Access</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Datenschutz</h3>
+<ul>
+<li><strong>Serverstandort:</strong> USA (Perplexity AI, San Francisco)</li>
+<li><strong>DSGVO-Konformität:</strong> Eingeschränkt — Daten werden an US-Server übermittelt; für EU-Nutzer mit sensiblen Finanzdaten problematisch</li>
+<li><strong>Self-Hosting:</strong> Nicht verfügbar</li>
+<li><strong>Datenpolitik:</strong> Steuerdaten sind hochsensibel; Perplexity verarbeitet diese auf US-Servern; DPA mit Perplexity für EU-Unternehmen erforderlich</li>
+<li><strong>Hinweis:</strong> Das Tax-Feature ist primär auf US-Steuerrecht (IRS) ausgerichtet; für Schweizer/EU-Steuern nicht direkt anwendbar</li>
+</ul>
+<h3>Stärken</h3>
+<ul>
+<li>Erster vollständig agentischer Steuer-Assistent auf dem Markt</li>
+<li>Basiert auf dem Agent-Skills-Protokoll — erweiterbar für eigene Workflows</li>
+<li>Nachweislich bessere Ergebnisse als manche professionellen Steuerberater in Tests</li>
+<li>Günstig: $17/Monat für Pro-Zugang</li>
+<li>Kann nicht nur Formulare ausfüllen, sondern auch Software und Dashboards bauen</li>
+</ul>
+<h3>Schwächen</h3>
+<ul>
+<li>Ausschliesslich US-Steuerrecht (IRS); für Schweizer/EU-Nutzer nur bedingt relevant</li>
+<li>Hochsensible Finanzdaten auf US-Servern — DSGVO-Bedenken für EU-Nutzer</li>
+<li>Kein Self-Hosting; Cloud-only</li>
+<li>Noch keine unabhängigen Audits der Steuer-Genauigkeit</li>
+<li>Haftungsfragen bei Fehlern in der Steuererklärung ungeklärt</li>
+</ul>
+<h3>Einschätzung für die Praxis</h3>
+<p>Für US-amerikanische Nutzer ist Perplexity Computer for Taxes ein echter Gamechanger — $17/Monat für einen KI-Steuerberater, der aktuelle Gesetzesänderungen kennt und professionell erstellte Erklärungen prüfen kann, ist ein ausserordentliches Preis-Leistungs-Verhältnis. Für Schweizer und EU-Nutzer ist das Tool aufgrund des US-Fokus und der Datenschutzbedenken weniger relevant. Die zugrundeliegende Technologie (Agent Skills für komplexe Fachdomänen) ist jedoch wegweisend und wird in den nächsten Monaten auf weitere Bereiche ausgeweitet werden.</p>
+<h3>Relevanzbewertung</h3>
+<p><strong>7.8 / 10</strong> — Revolutionär für den US-Markt, aber begrenzte Relevanz für Schweizer/EU-Nutzer aufgrund des IRS-Fokus und der Datenschutzbedenken.</p>
+<hr />
+<h2 id="holo3-by-h-company">5. Holo3 by H Company — Kategorie: Agents</h2>
+<p><strong>Offizielle Website:</strong> <a href="https://hcompany.ai">hcompany.ai</a><br />
+<strong>HuggingFace:</strong> <a href="https://huggingface.co/Hcompany/Holo3-35B-A3B">Hcompany/Holo3-35B-A3B</a><br />
+<strong>Veröffentlicht:</strong> 1. April 2026<br />
+<strong>Lizenz:</strong> Apache 2.0 (Holo3-35B-A3B Weights)</p>
+<h3>Kurzbeschreibung</h3>
+<p>Holo3 ist die neueste Generation der Computer-Use-Agenten von H Company (Paris, Frankreich) und setzt mit <strong>78,85 % auf dem OSWorld-Verified-Benchmark</strong> einen neuen State-of-the-Art für Desktop-Computer-Use. Das Modell übertrifft GPT-5.4 und Claude Opus 4.6 bei Desktop-Aufgaben und erreicht dies mit nur 10 Milliarden aktiven Parametern (122B total, Mixture-of-Experts-Architektur). Die Gewichte des 35B-A3B-Modells sind unter Apache 2.0 frei verfügbar; ein kostenloser API-Zugang wird über HuggingFace angeboten. Zielgruppe sind Unternehmen, die repetitive Desktop-Workflows automatisieren möchten.</p>
+<h3>Nutzungsszenarien</h3>
+<ol>
+<li><strong>Automatisierung von Enterprise-Workflows:</strong> Holo3 kann mehrstufige Aufgaben ausführen, die mehrere Anwendungen umfassen — z.B. Preise aus einem PDF extrahieren, mit Mitarbeiterbudgets abgleichen und personalisierte Genehmigungs-E-Mails versenden.</li>
+<li><strong>E-Commerce-Automatisierung:</strong> Bestellverwaltung, Lagerüberwachung und Kundenkommunikation über bestehende Weboberflächen.</li>
+<li><strong>Business-Software-Automatisierung:</strong> Dateneingabe, Berichterstellung und Workflow-Management in ERP- und CRM-Systemen ohne API-Integration.</li>
+<li><strong>Kollaborations-Tool-Automatisierung:</strong> Automatisches Erstellen, Aktualisieren und Verteilen von Dokumenten in Confluence, Notion oder SharePoint.</li>
+<li><strong>Qualitätssicherung und Testing:</strong> Automatisiertes UI-Testing über echte Browser-Interaktionen statt Mock-Umgebungen.</li>
+</ol>
+<h3>Pricing</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Zugang</th>
+<th>Preis</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inference API (Free Tier)</strong></td>
+<td>Kostenlos</td>
+<td>Über HuggingFace, limitierte Anfragen</td>
+</tr>
+<tr>
+<td><strong>Holo3-35B-A3B Weights</strong></td>
+<td>Kostenlos</td>
+<td>Apache 2.0, Self-Hosting möglich</td>
+</tr>
+<tr>
+<td><strong>H Company API (Open-Source)</strong></td>
+<td>$0,25/1M Input-Token</td>
+<td>$1,80/1M Output-Token</td>
+</tr>
+<tr>
+<td><strong>Enterprise</strong></td>
+<td>Auf Anfrage</td>
+<td>Dedicated Deployment, SLA</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Datenschutz</h3>
+<ul>
+<li><strong>Serverstandort:</strong> Frankreich/EU (H Company, Paris) — starker DSGVO-Vorteil gegenüber US-Anbietern</li>
+<li><strong>DSGVO-Konformität:</strong> Sehr gut — europäisches Unternehmen, EU-Serverstandort, kein Drittlandtransfer bei API-Nutzung</li>
+<li><strong>Self-Hosting:</strong> Vollständig unterstützt (Apache 2.0 Weights, HuggingFace)</li>
+<li><strong>Datenpolitik:</strong> Bei Self-Hosting: vollständige Datensouveränität; bei API: EU-Datenschutzrecht anwendbar</li>
+</ul>
+<h3>Stärken</h3>
+<ul>
+<li><strong>78,85 % auf OSWorld-Verified</strong> — neuer State-of-the-Art, übertrifft GPT-5.4 und Opus 4.6</li>
+<li>Nur 10B aktive Parameter bei 122B total — extrem kosteneffizient</li>
+<li>Apache 2.0 Lizenz — vollständig Open Source, kommerziell nutzbar</li>
+<li><strong>Europäisches Unternehmen (Paris)</strong> — starker DSGVO-Vorteil</li>
+<li>Speziell für Enterprise-Workflows trainiert (Synthetic Environment Factory)</li>
+<li>Kostenloser API-Zugang über HuggingFace</li>
+<li>Unterstützt komplexe Multi-App-Workflows mit Zustandserhaltung</li>
+</ul>
+<h3>Schwächen</h3>
+<ul>
+<li>Computer-Use-Agenten sind generell noch fehleranfällig bei unerwarteten UI-Änderungen</li>
+<li>Für produktiven Einsatz sind klare Rollback-Mechanismen und menschliche Überwachung erforderlich</li>
+<li>Noch keine breite Community oder öffentliche Case Studies aus dem Enterprise-Einsatz</li>
+<li>Self-Hosting erfordert leistungsstarke Hardware (35B-Modell)</li>
+</ul>
+<h3>Einschätzung für die Praxis</h3>
+<p>Holo3 ist der überzeugendste Computer-Use-Agent, der bisher veröffentlicht wurde — und das von einem europäischen Unternehmen unter Apache 2.0. Für Schweizer und EU-Unternehmen, die Desktop-Automatisierung ohne US-Cloud-Abhängigkeit suchen, ist dies ein ausserordentlich relevantes Tool. Die Kombination aus SOTA-Performance, Open-Source-Lizenz, EU-Serverstandort und kostenlosem Einstieg macht Holo3 zur ersten ernsthaften Alternative zu proprietären Computer-Use-Lösungen wie Claude Computer Use. Für Pilotprojekte in kontrollierten Umgebungen ist der Einsatz bereits heute empfehlenswert.</p>
+<h3>Relevanzbewertung</h3>
+<p><strong>9.2 / 10</strong> — State-of-the-Art Computer-Use-Agent, Open Source, europäisches Unternehmen, DSGVO-konform. Minimaler Abzug wegen noch früher Reife der Computer-Use-Kategorie insgesamt.</p>
+<hr />
+<h2>Übersichtstabelle KW 14 / 2026</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Kategorie</th>
+<th>Bewertung</th>
+<th>Preis (Einstieg)</th>
+<th>DSGVO</th>
+<th>Highlight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Atomic Chat</strong></td>
+<td>Text</td>
+<td>8.5/10</td>
+<td>Kostenlos (Open Source)</td>
+<td>Excellent</td>
+<td>Vollständig offline, zero data exfiltration</td>
+</tr>
+<tr>
+<td><strong>Noon</strong></td>
+<td>Design</td>
+<td>7.5/10</td>
+<td>Waitlist (Early Access)</td>
+<td>Unklar</td>
+<td>Design direkt auf Production-Code</td>
+</tr>
+<tr>
+<td><strong>Google Gemma 4</strong></td>
+<td>Data/Wissen</td>
+<td>9.5/10</td>
+<td>Kostenlos (Apache 2.0)</td>
+<td>Excellent (lokal)</td>
+<td>Frontier Open-Source unter Apache 2.0</td>
+</tr>
+<tr>
+<td><strong>Perplexity Computer for Taxes</strong></td>
+<td>Recherche</td>
+<td>7.8/10</td>
+<td>$17/Monat (Pro)</td>
+<td>Eingeschränkt (US)</td>
+<td>Erster agentischer Steuer-Assistent</td>
+</tr>
+<tr>
+<td><strong>Holo3 by H Company</strong></td>
+<td>Agents</td>
+<td>9.2/10</td>
+<td>Kostenlos (Free Tier)</td>
+<td>Excellent (EU)</td>
+<td>78.85% OSWorld, EU-Unternehmen, Apache 2.0</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Trend der Woche</h2>
+<p><strong>"Open-Source überholt Cloud-KI"</strong> — KW 14 markiert den Wendepunkt, an dem Open-Source-Modelle (Gemma 4, Holo3) in Qualität und Lizenzfreiheit mit proprietären Cloud-Diensten gleichziehen oder diese übertreffen. Für europäische Unternehmen unter DSGVO ist dies ein historischer Moment: Frontier-KI ist jetzt on-premise, kostenlos und ohne Lizenzrisiko verfügbar.</p>
+<hr />
+<p><em>Analyse erstellt am 5. April 2026 | KW 14 | Nächste Analyse: KW 15 (12. April 2026)</em></p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></p>
+        <p class="foot-line">Jeden Sonntag fünf KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz.</p>
+        <p class="foot-small">Eine Publikation von <a href="https://fragroger.ai" rel="noopener">Roger Basler de Roca</a>. Weitere wöchentliche Einordnung: <a href="https://news.fragroger.ai" rel="noopener">KI Power Update</a>.</p>
+      </div>
+      <div class="foot-disclaimer">
+        <p class="foot-title">Hinweis</p>
+        <p>Recherche, Auswahl und Texte entstehen mit Unterstützung von KI-Systemen und werden automatisiert veröffentlicht. Preise, Funktionen und Datenschutzangaben ändern sich laufend; massgebend sind die aktuellen Unterlagen der Anbieter. Die Analysen sind keine Rechts- oder Kaufberatung.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <nav class="foot-nav" aria-label="Weitere Seiten">
+        <a href="../../archiv.html">Archiv</a>
+        <a href="../../methode.html">Methode</a>
+        <a href="../../feed.xml">RSS</a>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
+      </nav>
+      <p>&copy; 2026 Roger Basler de Roca</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

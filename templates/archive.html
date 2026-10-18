@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small">
+  <p class="kicker">Archiv</p>
+  <h1 class="page-title">Alle Wochen, alle Tools</h1>
+  <p class="hero-sub">Seit Dezember 2025 jede Woche fünf Tools. Suche nach Namen, Einsatzzweck oder Stichwort, filtere nach Kategorie und Jahr.</p>
+</section>
+
+<div class="stats">
+  <div class="stat"><b>{{ stats.weeks }}</b><span>Wochen</span></div>
+  <div class="stat"><b>{{ stats.tools }}</b><span>Tool-Analysen</span></div>
+  <div class="stat"><b>{{ stats.avg|score }}</b><span>Ø Relevanz</span></div>
+</div>
+
+<div class="search">
+  <label for="q" class="sr-only" style="position:absolute;left:-999px">Suche</label>
+  <input id="q" type="search" placeholder="Tool oder Stichwort suchen, z. B. Agent, lokal, Präsentation" autocomplete="off">
+  <div class="filters" role="group" aria-label="Filter">
+    <button class="chip" type="button" data-cat="" aria-pressed="true">Alle</button>
+    {% for c in categories %}<button class="chip" type="button" data-cat="{{ c }}" aria-pressed="false">{{ c }}</button>{% endfor %}
+    <select id="year" aria-label="Jahr">
+      <option value="">Alle Jahre</option>
+      {% for y in years %}<option value="{{ y }}">{{ y }}</option>{% endfor %}
+    </select>
+    <select id="minscore" aria-label="Mindestbewertung">
+      <option value="0">Jede Bewertung</option>
+      <option value="8">ab 8/10</option>
+      <option value="9">ab 9/10</option>
+    </select>
+  </div>
+</div>
+<p id="count" aria-live="polite"></p>
+
+<ul class="week-list" id="weeks">
+{% for w in weeks %}
+  <li class="week-item" data-year="{{ w.jahr }}">
+    <div class="week-head">
+      <a href="{{ root }}{{ w.page }}">KW {{ '%02d' % w.kw }}/{{ w.jahr }}</a>
+      <span class="date">{{ w.date_text }}</span>
+      {% if w.avg %}<span class="avg">Ø {{ w.avg|score }}/10</span>{% endif %}
+    </div>
+    <ul class="week-tools">
+    {% for t in w.tools %}
+      <li data-cat="{{ t.kategorie }}" data-score="{{ t.bewertung or 0 }}" data-text="{{ t.search }}">
+        <span class="wt-cat">{{ t.kategorie }}</span>
+        <a class="wt-name" href="{{ root }}{{ w.page }}#{{ t.anchor }}">{{ t.name }}</a>
+        {% if t.bewertung is not none %}<span class="wt-score">{{ t.bewertung|score }}</span>{% else %}<span></span>{% endif %}
+        {% if t.kurzbeschreibung %}<span class="wt-desc">{{ t.kurzbeschreibung }}</span>{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+    {% if w.trend %}<p class="week-trend">Trend: {{ w.trend }}</p>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}
+{% block scripts %}
+<script>
+(function () {
+  var q = document.getElementById('q'), year = document.getElementById('year'), minscore = document.getElementById('minscore');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var weeks = Array.prototype.slice.call(document.querySelectorAll('.week-item'));
+  var count = document.getElementById('count');
+  var cat = '';
+  function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  function apply() {
+    var terms = norm(q.value).split(/\s+/).filter(Boolean), y = year.value, min = parseFloat(minscore.value) || 0;
+    var nTools = 0, nWeeks = 0;
+    weeks.forEach(function (w) {
+      var visible = 0;
+      var yearOk = !y || w.getAttribute('data-year') === y;
+      w.querySelectorAll('.week-tools li').forEach(function (li) {
+        var ok = yearOk && (!cat || li.getAttribute('data-cat') === cat) && (parseFloat(li.getAttribute('data-score')) || 0) >= min;
+        if (ok && terms.length) {
+          var hay = norm(li.getAttribute('data-text'));
+          ok = terms.every(function (t) { return hay.indexOf(t) !== -1; });
+        }
+        li.hidden = !ok;
+        if (ok) visible++;
+      });
+      w.hidden = visible === 0;
+      if (visible) { nWeeks++; nTools += visible; }
+    });
+    var filtered = terms.length || cat || y || min;
+    count.textContent = filtered ? nTools + ' Tools in ' + nWeeks + ' Wochen' : weeks.length + ' Wochen im Archiv';
+  }
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      cat = c.getAttribute('data-cat');
+      chips.forEach(function (x) { x.setAttribute('aria-pressed', x === c ? 'true' : 'false'); });
+      apply();
+    });
+  });
+  q.addEventListener('input', apply); year.addEventListener('change', apply); minscore.addEventListener('change', apply);
+  var params = new URLSearchParams(location.search);
+  if (params.get('q')) q.value = params.get('q');
+  apply();
+})();
+</script>
+{% endblock %}

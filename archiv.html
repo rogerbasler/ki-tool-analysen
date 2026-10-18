@@ -1,476 +1,1246 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archiv | KI-Tool-Analysen</title>
-    <meta name="description" content="Archiv aller wöchentlichen KI-Tool-Analysen - Durchsuche vergangene Reviews und Trends">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    
-    <style>
-        /* Archive-specific styles */
-        .archive-header {
-            text-align: center;
-            padding: 4rem 2rem 2rem;
-            background: linear-gradient(135deg, rgba(0,255,157,0.05) 0%, rgba(0,217,255,0.05) 100%);
-            border-bottom: 2px solid var(--cyber-primary);
-            margin-bottom: 3rem;
-        }
-        
-        .archive-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: var(--cyber-primary);
-            text-shadow: 0 0 20px rgba(0,255,157,0.5);
-        }
-        
-        .archive-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
-        
-        .stat-box {
-            background: rgba(0,255,157,0.05);
-            border: 2px solid var(--cyber-primary);
-            border-radius: 12px;
-            padding: 1.5rem 2rem;
-            text-align: center;
-            min-width: 150px;
-        }
-        
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--cyber-primary);
-            font-family: 'Orbitron', sans-serif;
-        }
-        
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .archive-filters {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-        }
-        
-        .filter-select {
-            background: rgba(0,255,157,0.05);
-            border: 2px solid var(--cyber-primary);
-            border-radius: 8px;
-            padding: 0.75rem 1.5rem;
-            color: var(--text-primary);
-            font-family: 'Roboto Mono', monospace;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .filter-select:hover {
-            background: rgba(0,255,157,0.1);
-            box-shadow: 0 0 15px rgba(0,255,157,0.3);
-        }
-        
-        .archive-timeline {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem 4rem;
-        }
-        
-        .timeline-item {
-            background: var(--bg-primary);
-            border: 2px solid var(--cyber-primary);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--cyber-primary), var(--cyber-secondary));
-        }
-        
-        .timeline-item:hover {
-            transform: translateX(8px);
-            box-shadow: 0 8px 30px rgba(0,255,157,0.2);
-        }
-        
-        .timeline-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .timeline-date {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--cyber-primary);
-            font-family: 'Orbitron', sans-serif;
-        }
-        
-        .timeline-kw {
-            background: var(--cyber-primary);
-            color: var(--bg-primary);
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            font-weight: 700;
-            font-size: 0.9rem;
-        }
-        
-        .timeline-tools {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .timeline-tool {
-            background: rgba(0,255,157,0.05);
-            border: 1px solid var(--cyber-primary);
-            border-radius: 8px;
-            padding: 1rem;
-        }
-        
-        .timeline-tool-name {
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.25rem;
-        }
-        
-        .timeline-tool-category {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-        
-        .timeline-tool-rating {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .rating-stars {
-            color: var(--cyber-accent);
-            font-size: 0.9rem;
-        }
-        
-        .timeline-highlights {
-            background: rgba(0,217,255,0.05);
-            border-left: 3px solid var(--cyber-secondary);
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-            color: var(--text-secondary);
-        }
-        
-        .timeline-link {
-            display: inline-block;
-            background: var(--cyber-primary);
-            color: var(--bg-primary);
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-        
-        .timeline-link:hover {
-            background: var(--cyber-secondary);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,255,157,0.3);
-        }
-        
-        .back-to-home {
-            position: fixed;
-            top: 2rem;
-            right: 2rem;
-            background: var(--cyber-primary);
-            color: var(--bg-primary);
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 700;
-            font-family: 'Roboto Mono', monospace;
-            z-index: 1000;
-            transition: all 0.3s ease;
-            border: 2px solid var(--cyber-primary);
-        }
-        
-        .back-to-home:hover {
-            background: var(--bg-primary);
-            color: var(--cyber-primary);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,255,157,0.3);
-        }
-        
-        .no-results {
-            text-align: center;
-            padding: 4rem 2rem;
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-        }
-        
-        @media (max-width: 768px) {
-            .archive-header h1 {
-                font-size: 2rem;
-            }
-            
-            .archive-stats {
-                gap: 1.5rem;
-            }
-            
-            .stat-box {
-                min-width: 120px;
-                padding: 1rem 1.5rem;
-            }
-            
-            .timeline-tools {
-                grid-template-columns: 1fr;
-            }
-            
-            .back-to-home {
-                top: 1rem;
-                right: 1rem;
-                padding: 0.5rem 1rem;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archiv | KI-Tool-Analysen</title>
+<meta name="description" content="Alle wöchentlichen KI-Tool-Analysen seit Dezember 2025, durchsuchbar nach Tool, Kategorie und Jahr.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://rogerbasler.github.io/ki-tool-analysen/archiv.html">
+<link rel="alternate" type="application/rss+xml" title="KI-Tool-Analysen" href="feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KI-Tool-Analysen">
+<meta property="og:title" content="Archiv | KI-Tool-Analysen">
+<meta property="og:description" content="Alle wöchentlichen KI-Tool-Analysen seit Dezember 2025, durchsuchbar nach Tool, Kategorie und Jahr.">
+<meta property="og:url" content="https://rogerbasler.github.io/ki-tool-analysen/archiv.html">
+<meta property="og:locale" content="de_CH">
+<meta property="og:image" content="https://rogerbasler.github.io/ki-tool-analysen/assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css?v=202610180633">
 </head>
 <body>
-    <a href="index.html" class="back-to-home">← Zur aktuellen Woche</a>
-    
-    <div class="archive-header">
-        <h1>📚 ARCHIV</h1>
-        <p style="font-size: 1.2rem; color: var(--text-secondary); margin-top: 0.5rem;">
-            Alle wöchentlichen KI-Tool-Analysen im Überblick
-        </p>
-        
-        <div class="archive-stats">
-            <div class="stat-box">
-                <div class="stat-number" id="totalWeeks">0</div>
-                <div class="stat-label">Wochen</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number" id="totalTools">0</div>
-                <div class="stat-label">Tools analysiert</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number" id="avgRating">0.0</div>
-                <div class="stat-label">Ø Bewertung</div>
-            </div>
-        </div>
+<a class="skip" href="#main">Zum Inhalt</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="" aria-label="KI-Tool-Analysen, Startseite">
+      <span class="brand-mark"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></span>
+      <span class="brand-sub">KI-Tool-Analysen</span>
+    </a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="" >Diese Woche</a>
+      <a href="archiv.html" class="active" aria-current="page">Archiv</a>
+      <a href="methode.html" >Methode</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+<section class="hero small">
+  <p class="kicker">Archiv</p>
+  <h1 class="page-title">Alle Wochen, alle Tools</h1>
+  <p class="hero-sub">Seit Dezember 2025 jede Woche fünf Tools. Suche nach Namen, Einsatzzweck oder Stichwort, filtere nach Kategorie und Jahr.</p>
+</section>
+
+<div class="stats">
+  <div class="stat"><b>32</b><span>Wochen</span></div>
+  <div class="stat"><b>160</b><span>Tool-Analysen</span></div>
+  <div class="stat"><b>8,3</b><span>Ø Relevanz</span></div>
+</div>
+
+<div class="search">
+  <label for="q" class="sr-only" style="position:absolute;left:-999px">Suche</label>
+  <input id="q" type="search" placeholder="Tool oder Stichwort suchen, z. B. Agent, lokal, Präsentation" autocomplete="off">
+  <div class="filters" role="group" aria-label="Filter">
+    <button class="chip" type="button" data-cat="" aria-pressed="true">Alle</button>
+<button class="chip" type="button" data-cat="Text" aria-pressed="false">Text</button><button class="chip" type="button" data-cat="Design" aria-pressed="false">Design</button><button class="chip" type="button" data-cat="Data / Wissen" aria-pressed="false">Data / Wissen</button><button class="chip" type="button" data-cat="Recherche" aria-pressed="false">Recherche</button><button class="chip" type="button" data-cat="Agents" aria-pressed="false">Agents</button>    <select id="year" aria-label="Jahr">
+      <option value="">Alle Jahre</option>
+<option value="2026">2026</option><option value="2025">2025</option>    </select>
+    <select id="minscore" aria-label="Mindestbewertung">
+      <option value="0">Jede Bewertung</option>
+      <option value="8">ab 8/10</option>
+      <option value="9">ab 9/10</option>
+    </select>
+  </div>
+</div>
+<p id="count" aria-live="polite"></p>
+
+<ul class="week-list" id="weeks">
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw42-2026-10-18.html">KW 42/2026</a>
+      <span class="date">18. Oktober 2026</span>
+<span class="avg">Ø 7,8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.2" data-text="Talanoa Text Lokaler E-Mail-Client mit KI für Suche, Zusammenfassungen und Antwortentwürfe. Talanoa ist ein lokaler E-Mail-Client für macOS, Windows und Linux. Er formt E-Mail-Threads in eine chatähnliche Oberfläche um und setzt KI für Suche, Zusammenfassungen und Antwortentwürfe ein. Die Zielgruppe sind Personen und kleine Teams, die viel korrespondieren, aber ihre Maildaten nicht in einen zusätzlichen Cloud-Workspace kopieren wollen. Gmail, Outlook, Yahoo, iCloud und generisches IMAP w">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw42-2026-10-18.html#talanoa">Talanoa</a>
+<span class="wt-score">8,2</span><span class="wt-desc">Lokaler E-Mail-Client mit KI für Suche, Zusammenfassungen und Antwortentwürfe.</span>      </li>
+      <li data-cat="Design" data-score="7.8" data-text="Canvora Design Markenkonforme Visuals und Slides aus Text, URLs und Dokumenten mit MCP-Anbindung. Canvora erzeugt aus Text, URLs, PDFs und vorhandenen ChatGPT- oder Claude-Inhalten markenkonforme Visuals. Dazu zählen Social Posts, Anzeigen, Infografiken, Karussells, Präsentationen und Dokumente. Das Update dieser Woche erweitert die direkte Nutzung über ChatGPT und Claude via MCP, ergänzt einen visuellen Editor und stellt Exporte bis zu 4K in PNG, JPG, WebP, PDF und PPTX in Aussicht.
+
+Die Ziel">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw42-2026-10-18.html#canvora">Canvora</a>
+<span class="wt-score">7,8</span><span class="wt-desc">Markenkonforme Visuals und Slides aus Text, URLs und Dokumenten mit MCP-Anbindung.</span>      </li>
+      <li data-cat="Data / Wissen" data-score="7.9" data-text="Caldera Data / Wissen Open-Source-Obsidian-Plugin für lokalen Vault, gezieltes Publizieren und Digital Gardens. Caldera ist ein Open-Source-Plugin für Obsidian mit einem gehosteten Hub. Es verwandelt einen lokalen Vault in ein fortlaufend aktualisiertes Profil und einen verknüpften Digital Garden. Notizen können gezielt veröffentlicht oder Ende-zu-Ende-verschlüsselt mit bestimmten Personen geteilt werden. Zusätzlich lässt sich GitHub als Aktivitäts- und Projektquelle anbinden. Der Launch erreichte am 17. Ok">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw42-2026-10-18.html#caldera">Caldera</a>
+<span class="wt-score">7,9</span><span class="wt-desc">Open-Source-Obsidian-Plugin für lokalen Vault, gezieltes Publizieren und Digital Gardens.</span>      </li>
+      <li data-cat="Recherche" data-score="7.4" data-text="Articos v3.2 Recherche Synthetische Nutzerforschung mit MCP-Server, Credit-Logik und Zielgruppen-Workflow. Articos führt synthetische Nutzerforschung für Interviews, Message Tests, A/B-Tests und Zielgruppenfragen durch. Version 3.2 bringt einen MCP-Server für Claude, ChatGPT, Cursor und andere kompatible Clients, stellt die Abrechnung auf Credits um und zieht die Zielgruppendefinition vor das Studiendesign. Die Zielgruppe sind Gründer:innen, Produktteams, Agenturen und Beratungen, die Hypothesen vor ei">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw42-2026-10-18.html#articos-v3-2">Articos v3.2</a>
+<span class="wt-score">7,4</span><span class="wt-desc">Synthetische Nutzerforschung mit MCP-Server, Credit-Logik und Zielgruppen-Workflow.</span>      </li>
+      <li data-cat="Agents" data-score="7.7" data-text="WEXTL Agents Visueller Builder für KI-Agenten und Freigabe-gesteuerte Workflow-Automation. WEXTL ist eine visuelle Plattform für KI-Agenten und mehrstufige Workflow-Automationen. Laut Produktseite verbindet sie mehr als 1&#39;300 Apps, bietet Canvas-Design, einen KI-Builder, Webhooks, MCP-Tools, JavaScript-Schritte, Freigaben durch Menschen und Laufzeitansichten. FutureTools nahm WEXTL am 15. Oktober als neues Automations- und Agenten-Tool auf.
+
+Die Zielgruppe sind operative Teams, die wied">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw42-2026-10-18.html#wextl">WEXTL</a>
+<span class="wt-score">7,7</span><span class="wt-desc">Visueller Builder für KI-Agenten und Freigabe-gesteuerte Workflow-Automation.</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Die neue KI-Produktqualität liegt nicht nur im Output, sondern im kontrollierbaren Kontext: lokale Daten, sichtbare Freigaben, präzise Datenwege und ein klarer Ausstiegsweg werden zum Entscheidungskriterium.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw40-2026-10-04.html">KW 40/2026</a>
+      <span class="date">4. Oktober 2026</span>
+<span class="avg">Ø 7,8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.8" data-text="Claude Sonnet 5.5 Text Schnelleres Modell für klar abgegrenzte Wissens- und Umsetzungsarbeit. • Kategorie: Text
+
+• Status: Neues Modellrelease vom 29. September 2026.
+
+• Kurzbeschreibung: Schnelleres Claude-Modell für klar abgegrenzte Wissensarbeit, Dokumente, Tabellen, Slides und technische Umsetzungsaufgaben.
+
+• Zielgruppe: Wissensarbeiter:innen, Produkt- und Operations-Teams sowie Entwickler:innen mit wiederkehrenden, klar spezifizierten Aufgaben.
+
+• Relevanzbewertung: 8,8/10
+
+• Teststa">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw40-2026-10-04.html#claude-sonnet-5-5">Claude Sonnet 5.5</a>
+<span class="wt-score">8,8</span><span class="wt-desc">Schnelleres Modell für klar abgegrenzte Wissens- und Umsetzungsarbeit.</span>      </li>
+      <li data-cat="Design" data-score="7.4" data-text="Suno Speech Beta Design Gesprochene Audios mit originärem Musikbett als zusammenhängender Track. • Kategorie: Design
+
+• Status: Öffentliche Beta seit 1. Oktober 2026.
+
+• Kurzbeschreibung: Generiert gesprochene Audios mit passendem, originärem Musikbett als zusammenhängenden Track.
+
+• Zielgruppe: Creator, Marketing- und Kommunikationsteams sowie Bildungsanbieter mit Bedarf an schnellen Audio-Prototypen.
+
+• Relevanzbewertung: 7,4/10
+
+• Teststatus: Kein Account-Test durchgeführt. Die Analyse bas">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw40-2026-10-04.html#suno-speech-beta">Suno Speech Beta</a>
+<span class="wt-score">7,4</span><span class="wt-desc">Gesprochene Audios mit originärem Musikbett als zusammenhängender Track.</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.2" data-text="Strands Decider 2B Data / Wissen Open-Source-Entscheidungsmodell für lokale Triage, Routing und Guardrails. • Kategorie: Data / Wissen
+
+• Status: Open-Source-Release vom 1. Oktober 2026.
+
+• Kurzbeschreibung: Kleines Entscheidungsmodell, das zwischen vorgegebenen Optionen auswählt oder Skalenwerte und Konfidenzen ausgibt.
+
+• Zielgruppe: Engineering-, Data- und Plattformteams, die Agenten-Workflows, Triage oder Guardrails selbst betreiben wollen.
+
+• Relevanzbewertung: 8,2/10
+
+• Teststatus: Kein lokaler Mo">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw40-2026-10-04.html#strands-decider-2b">Strands Decider 2B</a>
+<span class="wt-score">8,2</span><span class="wt-desc">Open-Source-Entscheidungsmodell für lokale Triage, Routing und Guardrails.</span>      </li>
+      <li data-cat="Recherche" data-score="7.8" data-text="Slashspace 3.3 Recherche Local-first Canvas für Multi-Modell-Recherche, Quellen und Orchestrierung. • Kategorie: Recherche
+
+• Status: Umbenennung von RabbitHoles AI zu Slashspace und aktuelle Version 3.3.0 im untersuchten Wochenfenster.
+
+• Kurzbeschreibung: Desktop-Canvas für Multi-Modell-Recherche, verknüpfte Quellen, Social-Transkripte, lokale Dateien und orchestrierte Hilfsagenten.
+
+• Zielgruppe: Research-intensive Einzelpersonen, Studios und kleine Teams mit mehreren Modellabos oder lokalen ">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw40-2026-10-04.html#slashspace-3-3">Slashspace 3.3</a>
+<span class="wt-score">7,8</span><span class="wt-desc">Local-first Canvas für Multi-Modell-Recherche, Quellen und Orchestrierung.</span>      </li>
+      <li data-cat="Agents" data-score="7.0" data-text="Dots by OpenAI Agents Dauerhafte Cloud-Agenten mit App-Verbindungen, Regeln und Aktivitätsansicht. • Kategorie: Agents
+
+• Status: Rollout seit 29. September 2026.
+
+• Kurzbeschreibung: Dauerhaft arbeitende Cloud-Agenten in ChatGPT mit eigener Cloud-Umgebung, App-Verbindungen, Regeln und Aktivitätsansicht.
+
+• Zielgruppe: Pro- und Business-Premium-Nutzer:innen in unterstützten Regionen sowie Enterprise-Teams im Beta-Zugang.
+
+• Relevanzbewertung: 7,0/10
+
+• Teststatus: Kein Test möglich: Zum Stichta">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw40-2026-10-04.html#dots-by-openai">Dots by OpenAI</a>
+<span class="wt-score">7</span><span class="wt-desc">Dauerhafte Cloud-Agenten mit App-Verbindungen, Regeln und Aktivitätsansicht.</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Der Wert verlagert sich von der einmaligen Antwort in die kontrollierbare Ausführung: lokale Routineentscheidungen, lokale Datenhaltung, klare Rechte und menschliche Freigaben werden zur Produktqualität.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw38-2026-09-20.html">KW 38/2026</a>
+      <span class="date">20. September 2026</span>
+<span class="avg">Ø 8,1/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.5" data-text="Claude Docs Text Dokumentmodus im Claude-Workspace mit direkter Bearbeitung und Export. • Kategorie: Text
+
+• Kurzbeschreibung: Dokumentmodus innerhalb von Claude: Textdokumente entstehen, werden bearbeitet und exportiert direkt aus dem Gespräch. Zielgruppe sind Wissensarbeiter:innen, Berater:innen, kleine Teams und Organisationen, die einen Entwurf nicht bloss erzeugen, sondern im Kontext iterieren wollen.
+
+• Website: claude.com
+
+• Wochenanlass: Am 16. September vereinte Anthropic Cl">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw38-2026-09-20.html#claude-docs">Claude Docs</a>
+<span class="wt-score">8,5</span><span class="wt-desc">Dokumentmodus im Claude-Workspace mit direkter Bearbeitung und Export.</span>      </li>
+      <li data-cat="Design" data-score="8.0" data-text="Arrow 2 Design Editierbare SVG-Generierung, Vektorisierung und Animation mit produktionsnaher API. • Kategorie: Design
+
+• Kurzbeschreibung: KI-Modell und Design-App für Vektorillustrationen, Vektorisierung und SVG-Animationen. Zielgruppe sind Designer:innen, Produktteams und Entwickler:innen, die editierbare Assets statt statischer Rasterbilder brauchen.
+
+• Website: quiver.ai
+
+• Wochenanlass: In der Analysewoche erhielt Arrow 2 die Open-Responses-Schnittstelle, Sandbox-Keys, tokenbasierte Abrec">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw38-2026-09-20.html#arrow-2">Arrow 2</a>
+<span class="wt-score">8</span><span class="wt-desc">Editierbare SVG-Generierung, Vektorisierung und Animation mit produktionsnaher API.</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.0" data-text="Jev Data / Wissen Typisierte Entscheidungen mit Konfidenz für Software-Automatisierung. • Kategorie: Data / Wissen
+
+• Kurzbeschreibung: Modell für schnelle, typisierte Entscheidungen mit Wahrscheinlichkeiten und Konfidenz. Zielgruppe sind Entwickler:innen und Data-/Automation-Teams, die Klassifikation, Routing, Scoring oder Extraktion in robuste Softwarelogik übersetzen wollen.
+
+• Website: typesafe.ai
+
+• Wochenanlass: TypeSafe veröffentlichte Jev im Early Access als erstes System-One">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw38-2026-09-20.html#jev">Jev</a>
+<span class="wt-score">8</span><span class="wt-desc">Typisierte Entscheidungen mit Konfidenz für Software-Automatisierung.</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Sakana Marlin Recherche Deep-Research-Agent mit Belegprüfung und editierbarem PowerPoint-Export. • Kategorie: Recherche
+
+• Kurzbeschreibung: Autonomer Research-Agent für komplexe Strategiefragen, mit bis zu achtstündigen Rechercheläufen und jetzt einer interaktiven Prüfung der Quellengrundlage. Zielgruppe sind Strategie-, Beratungs-, Analyse- und Forschungsorganisationen.
+
+• Website: sakana.ai/marlin
+
+• Wochenanlass: Sakana AI veröffentlichte am 15. September Interactive Reading und editierba">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw38-2026-09-20.html#sakana-marlin">Sakana Marlin</a>
+<span class="wt-score">8</span><span class="wt-desc">Deep-Research-Agent mit Belegprüfung und editierbarem PowerPoint-Export.</span>      </li>
+      <li data-cat="Agents" data-score="8.2" data-text="Octop Agents MIT-lizenzierte, selbstgehostete Multi-Agent-Plattform für kontrollierte Workflows. • Kategorie: Agents
+
+• Kurzbeschreibung: Open-Source- und selbstgehostete Plattform für Multi-User- und Multi-Agent-Workflows mit Web-Dashboard, CLI, lokalen Workspaces, Wissensbasis, Konnektoren und Automatisierung. Zielgruppe sind technisch versierte Einzelpersonen, Teams und Organisationen mit hohen Anforderungen an Datenkontrolle.
+
+• Website: github.com/TencentCloud/Octop
+
+• Wochenanlass: In d">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw38-2026-09-20.html#octop">Octop</a>
+<span class="wt-score">8,2</span><span class="wt-desc">MIT-lizenzierte, selbstgehostete Multi-Agent-Plattform für kontrollierte Workflows.</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Von KI-Ausgabe zu überprüfbarer Arbeitsoberfläche: Editierbare Artefakte, Quellenzugang, Konfidenzwerte und selbstbestimmter Betrieb werden zur eigentlichen Produktqualität.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw37-2026-09-13.html">KW 37/2026</a>
+      <span class="date">13. September 2026</span>
+<span class="avg">Ø 8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Typewise Nova Text KI-Operator für Kundenservice mit kontrollierter End-to-End-Bearbeitung. • Kategorie: Text
+
+• Kurzbeschreibung: KI-Operator für Kundenservice-Teams, der Agenten aufsetzt, überwacht und innerhalb festgelegter Regeln end-to-end Anfragen bearbeitet. Zielgruppe sind Support-, Customer-Experience- und Operations-Teams, die nicht nur Antworten, sondern sauber abgewickelte Vorgänge wollen.
+
+• Website: typewise.app
+
+• Wochenanlass: Nova wurde am 10. September als KI-Operator f">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw37-2026-09-13.html#typewise-nova">Typewise Nova</a>
+<span class="wt-score">8</span><span class="wt-desc">KI-Operator für Kundenservice mit kontrollierter End-to-End-Bearbeitung.</span>      </li>
+      <li data-cat="Design" data-score="8.0" data-text="Suno v6 Design Generative Musik mit gezielteren Edit-, Mashup- und Multimodal-Workflows. • Kategorie: Design
+
+• Kurzbeschreibung: Generative Musikplattform mit drei v6-Modellen für Ideenfindung, Bearbeitung und Produktion aus Text, Audio, Bild oder Video. Zielgruppe sind Creator, Musiker:innen, Marketing- und Videoteams.
+
+• Website: suno.com
+
+• Wochenanlass: Suno stellte v6 als neue Modellgeneration mit v6, v6-wild und v6-mini vor; Product Hunt führt den Launch als Veröffentlichung di">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw37-2026-09-13.html#suno-v6">Suno v6</a>
+<span class="wt-score">8</span><span class="wt-desc">Generative Musik mit gezielteren Edit-, Mashup- und Multimodal-Workflows.</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.0" data-text="AI Toolbox 3.0 Data / Wissen Volltextsuche, Ordner und Export für ChatGPT, Gemini, Claude und Grok. • Kategorie: Data / Wissen
+
+• Kurzbeschreibung: Browser-Erweiterung für ChatGPT, Gemini, Claude und Grok, die Chatverläufe mit Volltextsuche, Ordnern, Prompt-Bibliothek und Export wieder nutzbar macht. Zielgruppe sind Vielnutzer:innen, Wissensarbeiter:innen und kleine Teams.
+
+• Website: ai-toolbox.co
+
+• Wochenanlass: Product Hunt dokumentierte AI Toolbox 3.0 als Launch in der Woche; die Erweiterun">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw37-2026-09-13.html#ai-toolbox-3-0">AI Toolbox 3.0</a>
+<span class="wt-score">8</span><span class="wt-desc">Volltextsuche, Ordner und Export für ChatGPT, Gemini, Claude und Grok.</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Scira Recherche Quellengestützte Recherche mit vielen Suchmodi und offenem Code. • Kategorie: Recherche
+
+• Kurzbeschreibung: Quellengestützte Rechercheplattform mit agentischer Planung, vielen Suchmodi und offenem Code. Zielgruppe sind Research-intensive Einzelpersonen, Entwickler:innen und Teams, die Quellen sichtbar prüfen wollen.
+
+• Website: scira.ai
+
+• Wochenanlass: Im Quellen-Screening wurde Scira als stark erwähntes Recherchetool geführt; der öffentliche Eintrag bei Ther">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw37-2026-09-13.html#scira">Scira</a>
+<span class="wt-score">8</span><span class="wt-desc">Quellengestützte Recherche mit vielen Suchmodi und offenem Code.</span>      </li>
+      <li data-cat="Agents" data-score="8.0" data-text="OpenAI Agents API Agents Verwaltete Agenten-Infrastruktur für langlebige Sessions, Tools und Sub-Agenten. • Kategorie: Agents
+
+• Kurzbeschreibung: Verwaltete API für langlebige Agenten mit Codex-Harness, Sessions, Sandbox, Tools, Kontextkompaktierung und parallelen Sub-Agenten. Zielgruppe sind Entwicklungsteams, die agentische Anwendungen bauen wollen, ohne die Grundinfrastruktur selbst zu betreiben.
+
+• Website: OpenAI Agents API
+
+• Wochenanlass: OpenAI stellte die Agents API in dieser Woche als Publi">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw37-2026-09-13.html#openai-agents-api">OpenAI Agents API</a>
+<span class="wt-score">8</span><span class="wt-desc">Verwaltete Agenten-Infrastruktur für langlebige Sessions, Tools und Sub-Agenten.</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Vom einzelnen KI-Output zum kontrollierbaren Arbeitssystem: Quellen, Rechte, Kostenlimiten und menschliche Freigaben entscheiden über den realen Wert.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw36-2026-09-06.html">KW 36/2026</a>
+      <span class="date">6. September 2026</span>
+<span class="avg">Ø 7,8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.7" data-text="Claude Fable 5.1 Text Anspruchsvolle Text- und Wissensarbeit mit günstigerem wiederverwendbarem Kontext. Claude Fable 5.1 ist das neue allgemein verfügbare Spitzenmodell von Anthropic für Textarbeit, Wissenstätigkeiten, Coding und länger laufende Aufgaben. Im Zentrum steht nicht bloss eine bessere Formulierung, sondern die Verbindung aus höherer Modellleistung, geringeren Cache-Read-Kosten und einer angekündigten Enterprise-Architektur für Datenaufbewahrung. Ben&#39;s Bites und The Batch ordneten den Rel">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw36-2026-09-06.html#claude-fable-5-1">Claude Fable 5.1</a>
+<span class="wt-score">8,7</span><span class="wt-desc">Anspruchsvolle Text- und Wissensarbeit mit günstigerem wiederverwendbarem Kontext.</span>      </li>
+      <li data-cat="Design" data-score="7.8" data-text="Atlas von World Labs Design Räumlich gesteuerte Bild-, Video- und 3D-Generierung für kreative Konzeptarbeit. Atlas ist ein von World Labs am 1. September vorgestelltes multimodales World Model für räumliche Kreativarbeit. Es verarbeitet Text, Bilder, Video und 3D-Kontext, um Szenen zu generieren, aus wenigen Aufnahmen räumlich zu rekonstruieren und neue Kameraansichten zu erstellen. Der Zugang erfolgt zurzeit über Early Access mit ausgewählten Partnern. Ein breiter Self-Serve-Rollout ist nicht angekündig">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw36-2026-09-06.html#atlas-von-world-labs">Atlas von World Labs</a>
+<span class="wt-score">7,8</span><span class="wt-desc">Räumlich gesteuerte Bild-, Video- und 3D-Generierung für kreative Konzeptarbeit.</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.2" data-text="HubSpot AEO + AI Search Sensor Data / Wissen Messbare Sichtbarkeit in KI-Antworten mit Quellen-, Prompt- und Branchenkontext. HubSpot AEO ist ein Analysewerkzeug für die Sichtbarkeit einer Marke in KI-Antwortsystemen wie ChatGPT, Gemini und Perplexity. Es verfolgt Prompts, nennt Quellen und Zitate, zeigt Wettbewerbsbezüge und leitet priorisierte Empfehlungen ab. Der kostenlose AI Search Sensor ergänzt diesen Produktbereich mit Markt- und Branchenindikatoren für KI-vermittelten Traffic, Sichtbarkeit, Zitationsanteil und V">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw36-2026-09-06.html#hubspot-aeo-ai-search-sensor">HubSpot AEO + AI Search Sensor</a>
+<span class="wt-score">8,2</span><span class="wt-desc">Messbare Sichtbarkeit in KI-Antworten mit Quellen-, Prompt- und Branchenkontext.</span>      </li>
+      <li data-cat="Recherche" data-score="7.5" data-text="Articos Recherche Synthetische User-Research für schnelle Hypothesen zu Messaging, UX und Angebot. Articos ist eine KI-gestützte Plattform für frühe User-Research. Sie lässt Teams Forschungsfragen mit synthetischen Personas untersuchen, Interviews und A/B-Tests strukturieren, Folgefragen stellen und Berichte mit Evidenzketten erzeugen. Der Anbieter bezeichnet die Methodik als gegen Forschungsergebnisse von Baymard Institute und Nielsen Norman Group validiert und nennt 86 Prozent Theme Recall üb">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw36-2026-09-06.html#articos">Articos</a>
+<span class="wt-score">7,5</span><span class="wt-desc">Synthetische User-Research für schnelle Hypothesen zu Messaging, UX und Angebot.</span>      </li>
+      <li data-cat="Agents" data-score="6.8" data-text="Ritto AI Agents Wiederkehrende Bildschirmarbeit einmal vormachen, kontrolliert als Batch wiederholen. Ritto AI ist eine neue Automatisierungs-Beta für wiederkehrende Bildschirm- und Webaufgaben. Die Grundidee ist verständlich: Eine Person zeigt eine reale Arbeit einmal, Ritto erfasst die Schritte, identifiziert variable Felder und schlägt anschliessend ähnliche Vorgänge als Batch vor. Vor der Ausführung soll der Nutzer Umfang und Schlüsselaktionen bestätigen.
+
+Der Ansatz adressiert einen verbreite">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw36-2026-09-06.html#ritto-ai">Ritto AI</a>
+<span class="wt-score">6,8</span><span class="wt-desc">Wiederkehrende Bildschirmarbeit einmal vormachen, kontrolliert als Batch wiederholen.</span>      </li>
+    </ul>
+<p class="week-trend">Trend: KI-Qualität entsteht zunehmend durch Steuerbarkeit: Datenfluss, Raumkontext, Quellen und menschliche Freigaben werden zum eigentlichen Produktmerkmal.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw35-2026-08-30.html">KW 35/2026</a>
+      <span class="date">30. August 2026</span>
+<span class="avg">Ø 8,3/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.5" data-text="Claude mit Memory Text Editierbarer Arbeitskontext über Chat und Cowork hinweg. Anthropic hat am 25. August die Memory-Funktion von Claude über Chat und Cowork hinweg zusammengeführt. Claude kann damit Arbeitskontext zwischen diesen Oberflächen behalten. Entscheidend ist nicht das Erinnern allein, sondern die Kontrollschicht: Gespeicherte Themen sind unter &#34;Settings &gt; Memory&#34; sichtbar, editierbar und löschbar. Themen wie Gesundheit oder Überzeugungen werden nur einbezogen, we">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw35-2026-08-30.html#claude-mit-memory">Claude mit Memory</a>
+<span class="wt-score">8,5</span><span class="wt-desc">Editierbarer Arbeitskontext über Chat und Cowork hinweg.</span>      </li>
+      <li data-cat="Design" data-score="8.5" data-text="Midjourney V8.2 Edit Model Design Gezielte Bildbearbeitung mit Anweisungen und bis zu vier Referenzen. Midjourney hat am 27. August den öffentlichen Test seines ersten V8.2-Edit-Modells gestartet und zwei Tage später ein Qualitätsupdate dafür veröffentlicht. Das Edit-Modell bearbeitet Bilder anhand natürlicher Anweisungen, kann bis zu vier Bildreferenzen einbeziehen, bestimmte Bildbereiche verändern und die Arbeitsfläche erweitern. Zudem lässt es sich mit Personalisierung, Moodboards und Style Refe">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw35-2026-08-30.html#midjourney-v8-2-edit-model">Midjourney V8.2 Edit Model</a>
+<span class="wt-score">8,5</span><span class="wt-desc">Gezielte Bildbearbeitung mit Anweisungen und bis zu vier Referenzen.</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.5" data-text="PageIndex SDK Local Data / Wissen Lokal ausführbares Dokumentenretrieval mit nachvollziehbaren Seitenzitaten. PageIndex hat am 27. August eine wesentliche Erweiterung seines SDK angekündigt: Der vollständige reasoning-basierte RAG-Workflow kann lokal laufen. Teams können Baumindizes erstellen, Dokumente lokal speichern, lange Dokumente abfragen und Seitenzitate erzeugen. Der lokale Modus verwendet den eigenen Modellanbieter und API-Schlüssel und benötigt keine Vektordatenbank.
+
+RAG bezeichnet einen Abrufp">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw35-2026-08-30.html#pageindex-sdk-local">PageIndex SDK Local</a>
+<span class="wt-score">8,5</span><span class="wt-desc">Lokal ausführbares Dokumentenretrieval mit nachvollziehbaren Seitenzitaten.</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Lenz Recherche Mehrstufige Faktenprüfung mit Quellenpfad für KI-generierte Behauptungen. Lenz ist eine KI-gestützte Faktenprüfungsplattform für Aussagen, die nicht unbelegt im Arbeitsprozess stehen bleiben dürfen. Das Tool extrahiert überprüfbare Behauptungen aus Text, prüft sie über mehrere Schritte und liefert einen dokumentierten Befund. Laut Produktseite kommen acht Modelle über fünf Stufen zum Einsatz, ergänzt durch eine konträre Modell-Debatte, drei unabhängige Prüfer und einen ">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw35-2026-08-30.html#lenz">Lenz</a>
+<span class="wt-score">8</span><span class="wt-desc">Mehrstufige Faktenprüfung mit Quellenpfad für KI-generierte Behauptungen.</span>      </li>
+      <li data-cat="Agents" data-score="8.0" data-text="Construct Computer Agents Persistenter Agenten-Workspace mit Cloud-Computer und Aktivitätsprotokoll. Construct Computer positioniert sich als KI-Arbeitskraft für Einzelunternehmer:innen und kleine Teams. Nach eigener Beschreibung erhält jeder Nutzer einen realen Linux-Cloud-Computer. Die Plattform verbindet Agenten, Dateien, Workflows, Tools, App-Anbindungen und einen einsehbaren Speicher in einem Workspace. Sie kann Hintergrund- und geplante Aufgaben ausführen, Arbeitsschritte protokollieren und">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw35-2026-08-30.html#construct-computer">Construct Computer</a>
+<span class="wt-score">8</span><span class="wt-desc">Persistenter Agenten-Workspace mit Cloud-Computer und Aktivitätsprotokoll.</span>      </li>
+    </ul>
+<p class="week-trend">Trend: KI-Tools verlagern ihren Wert von der einzelnen Antwort in den kontrollierbaren Arbeitskontext: editierbarer Speicher, nachvollziehbare Quellen, lokale Datenhaltung und persistente Workspaces.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw34-2026-08-23.html">KW 34/2026</a>
+      <span class="date">23. August 2026</span>
+<span class="avg">Ø 8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="ChatGPT for Teens Text Lernorientierte Text-KI mit zusätzlichen Schutzmechanismen für Jugendliche. OpenAI bündelt Study Mode, Quizze, Lernvisualisierungen und Elternfunktionen in einer automatisch zugewiesenen Erfahrung für 13- bis 17-Jährige. Der Wert liegt nicht in der schnellen Antwort, sondern im schrittweisen Lernen und kritischen Prüfen.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw34-2026-08-23.html#chatgpt-for-teens">ChatGPT for Teens</a>
+<span class="wt-score">8</span><span class="wt-desc">Lernorientierte Text-KI mit zusätzlichen Schutzmechanismen für Jugendliche.</span>      </li>
+      <li data-cat="Design" data-score="9.0" data-text="ElevenLabs AI Caption Generator Design Zeitlich synchronisierte Untertitel als schneller, editierbarer Produktionsschritt. ElevenLabs erstellt aus MP4, MOV und MKV präzise Untertitel mit Wort-Timing, Sprecherzuordnung und Unterstützung für mehr als 90 Sprachen. Für Content-Teams wird aus einem mühsamen Nachgang ein kontrollierbarer Workflow.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw34-2026-08-23.html#elevenlabs-ai-caption-generator">ElevenLabs AI Caption Generator</a>
+<span class="wt-score">9</span><span class="wt-desc">Zeitlich synchronisierte Untertitel als schneller, editierbarer Produktionsschritt.</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.0" data-text="Databricks Genie One Data / Wissen Governte Antworten und Folgeaktionen auf Unternehmensdaten in natürlicher Sprache. Genie One verbindet Fragen, Daten- und Wissenszugriff sowie agentische Folgeaktionen. Über Unity Catalog sollen bestehende Berechtigungen bis auf Zeilen- und Spaltenebene respektiert werden. Das ist für Unternehmen relevanter als ein weiterer hübscher Prompt.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw34-2026-08-23.html#databricks-genie-one">Databricks Genie One</a>
+<span class="wt-score">8</span><span class="wt-desc">Governte Antworten und Folgeaktionen auf Unternehmensdaten in natürlicher Sprache.</span>      </li>
+      <li data-cat="Recherche" data-score="7.0" data-text="ChatPlayground AI Recherche Mehrere KI-Modelle vergleichen, Widersprüche sehen und Recherchefragen besser stellen. ChatPlayground sendet einen Prompt parallel an ausgewählte Modelle und stellt die Antworten nebeneinander. Diese Perspektivvielfalt hilft, Gegenargumente und offene Punkte sichtbar zu machen. Modellmehrheit ist keine Wahrheit, aber sie ist ein brauchbarer Warnhinweis.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw34-2026-08-23.html#chatplayground-ai">ChatPlayground AI</a>
+<span class="wt-score">7</span><span class="wt-desc">Mehrere KI-Modelle vergleichen, Widersprüche sehen und Recherchefragen besser stellen.</span>      </li>
+      <li data-cat="Agents" data-score="8.0" data-text="Berd Agents Quelloffener Desktop-Workspace für lokale Projekte, Skills und spezialisierte Agenten. Berd von Block organisiert Projekte, Chats, Agenten und Skills in einem lokalen Workspace. Eigene Ordner, Repositories und Modellanbieter lassen sich anbinden. Damit rückt die Datensouveränität wieder näher an den Rechner, vorausgesetzt die Rechte sind sauber gesetzt.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw34-2026-08-23.html#berd">Berd</a>
+<span class="wt-score">8</span><span class="wt-desc">Quelloffener Desktop-Workspace für lokale Projekte, Skills und spezialisierte Agenten.</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Kontext, Rechte, Datenflüsse und Review-Schleifen werden zum eigentlichen Qualitätsmerkmal von KI-Tools.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw33-2026-08-16.html">KW 33/2026</a>
+      <span class="date">16. August 2026</span>
+<span class="avg">Ø 8,4/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Writer Agent + effizientes Harness Text Agentische Textarbeit mit Fokus auf Kostenkontrolle, Kontext und Governance. Writer Agent ist eine Enterprise-Plattform für textbasierte, wiederkehrende Arbeitsabläufe. Der aktuelle Impuls ist nicht bloss ein neues Modell, sondern ein verbessertes Harness, also die technische Schicht aus Kontext, Tools, Zuständen und Regeln rund um das Modell. Writer berichtet für seinen optimierten Ansatz über mehr als 40 Prozent weniger Kosten und Laufzeit bei vergleichbarer Qualität sow">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw33-2026-08-16.html#writer-agent-effizientes-harness">Writer Agent + effizientes Harness</a>
+<span class="wt-score">8</span><span class="wt-desc">Agentische Textarbeit mit Fokus auf Kostenkontrolle, Kontext und Governance.</span>      </li>
+      <li data-cat="Design" data-score="8.0" data-text="Grok Imagine Image 2.0 Design Bildgenerierung und präzise Editierung für produktionsnahe Kreativarbeit. Grok Imagine Image 2.0 ist xAIs neues Bildgenerierungs- und Bildbearbeitungsmodell im Quality Mode von Grok. Es richtet sich an Kreativteams, Marketing und Produktkommunikation, die nicht nur ein Bild generieren, sondern Details gezielt verändern wollen. Kernfunktionen sind selektive Bereichsbearbeitung, Hintergrundentfernung, Smart Resize und bis zu fünf Referenzbilder in einem Durchlauf.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw33-2026-08-16.html#grok-imagine-image-2-0">Grok Imagine Image 2.0</a>
+<span class="wt-score">8</span><span class="wt-desc">Bildgenerierung und präzise Editierung für produktionsnahe Kreativarbeit.</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9.0" data-text="Muse Glimmer Data / Wissen Open-Weights-Modell für lokale Wissensassistenten, Tool Use und agentische Workflows. Muse Glimmer ist ein offenes, 30-Milliarden-Parameter-Modell für lokal laufende agentische Workflows. Meta veröffentlicht die Gewichte unter Apache 2.0. Das Modell ist für Funktionsaufrufe, lokale Codearbeit, lokale Wissensassistenten und multimodale Dokumentinterpretation ausgelegt. Laut Meta läuft eine quantisierte Variante in einem Speicherfenster von 24 bis 32 GB und kann auf Mac, PC oder eine">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw33-2026-08-16.html#muse-glimmer">Muse Glimmer</a>
+<span class="wt-score">9</span><span class="wt-desc">Open-Weights-Modell für lokale Wissensassistenten, Tool Use und agentische Workflows.</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Perplexity Computer for Builders Recherche Recherche- und Ausführungsworkflow über Code, Produktdaten, Zahlungen und Telemetrie. Computer for Builders erweitert Perplexity Computer um vorbereitete Abläufe für Gründer:innen und kleine Engineering-Teams. Das System kann laut Perplexity über Connectoren Informationen aus GitHub, Datadog, Stripe, Supabase, Slack und weiteren Apps zusammenführen, Pull Requests vorbereiten, Produktionssignale lesen, Daten abfragen und regelmässige Wachstumsberichte erzeugen. Das macht es zu einem">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw33-2026-08-16.html#perplexity-computer-for-builders">Perplexity Computer for Builders</a>
+<span class="wt-score">8</span><span class="wt-desc">Recherche- und Ausführungsworkflow über Code, Produktdaten, Zahlungen und Telemetrie.</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="Claude Code Auto Mode Agents Länger laufende Coding-Agents mit risikobasierter Sicherheitsprüfung statt Klick-Marathon. Claude Code setzt ab 14. August Auto Mode standardmässig für neue Sessions auf Pro-, Max- und Team-Plänen ein. Statt jede Tool-Aktion einzeln bestätigen zu lassen, prüft ein Klassifikator, ob Aktionen irreversibel, destruktiv oder ausserhalb der vorgesehenen Umgebung sind. Bei einer Blockade versucht Claude einen sicheren Weg oder fordert Freigabe an. Nach wiederholten Blockaden fällt das System a">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw33-2026-08-16.html#claude-code-auto-mode">Claude Code Auto Mode</a>
+<span class="wt-score">9</span><span class="wt-desc">Länger laufende Coding-Agents mit risikobasierter Sicherheitsprüfung statt Klick-Marathon.</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Von Einzelausgaben zu kontrollierbaren Workflows: Kosten, Rechte, Kontext und Sicherheitsmechanismen werden zur eigentlichen Produktqualität.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw30-2026-07-26.html">KW 30/2026</a>
+      <span class="date">26. Juli 2026</span>
+<span class="avg">Ø 9/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Substack Pangram AI Detection Text Ein in Substack integriertes Tool zur Erkennung von KI-generierten Texten. Ein in Substack integriertes Tool zur Erkennung von KI-generierten Texten. Es schätzt für Leser und Autoren ein, wie viel Prozent eines Newsletters von einer KI verfasst wurde.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw30-2026-07-26.html#substack-pangram-ai-detection">Substack Pangram AI Detection</a>
+<span class="wt-score">8</span><span class="wt-desc">Ein in Substack integriertes Tool zur Erkennung von KI-generierten Texten.</span>      </li>
+      <li data-cat="Design" data-score="9.0" data-text="FLUX 3 (Black Forest Labs) Design FLUX 3 ist das neue multimodale Foundation-Modell des deutschen Start-ups Black Forest Labs. FLUX 3 ist das neue multimodale Foundation-Modell des deutschen Start-ups Black Forest Labs. Es generiert Bilder, Audio und Videos (bis zu 20 Sekunden) aus einem einzigen Prompt.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw30-2026-07-26.html#flux-3-black-forest-labs">FLUX 3 (Black Forest Labs)</a>
+<span class="wt-score">9</span><span class="wt-desc">FLUX 3 ist das neue multimodale Foundation-Modell des deutschen Start-ups Black Forest Labs.</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9.0" data-text="Gemini 3.6 Flash (Google) Data / Wissen Googles neues Effizienz-Modell mit 1M Token Kontext, 17% weniger Output-Token und gesenktem Preis. Googles neues Effizienz-Modell mit 1M Token Kontext, 17% weniger Output-Token und gesenktem Preis.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw30-2026-07-26.html#gemini-3-6-flash-google">Gemini 3.6 Flash (Google)</a>
+<span class="wt-score">9</span><span class="wt-desc">Googles neues Effizienz-Modell mit 1M Token Kontext, 17% weniger Output-Token und gesenktem Preis.</span>      </li>
+      <li data-cat="Recherche" data-score="10.0" data-text="Perplexity Computer Brain Recherche Selbstverbesserndes Gedächtnis-System für den Perplexity Computer-Agenten. Selbstverbesserndes Gedächtnis-System für den Perplexity Computer-Agenten. Merkt sich Kontext über Projekte und Vorlieben hinweg.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw30-2026-07-26.html#perplexity-computer-brain">Perplexity Computer Brain</a>
+<span class="wt-score">10</span><span class="wt-desc">Selbstverbesserndes Gedächtnis-System für den Perplexity Computer-Agenten.</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="HubSpot Agent Hub &amp; Agent Builder Agents Zentraler Workspace in HubSpot für KI-Agenten in Marketing, Sales und Service. Zentraler Workspace in HubSpot für KI-Agenten in Marketing, Sales und Service. No-Code Builder mit direktem CRM-Zugriff.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw30-2026-07-26.html#hubspot-agent-hub-agent-builder">HubSpot Agent Hub &amp; Agent Builder</a>
+<span class="wt-score">9</span><span class="wt-desc">Zentraler Workspace in HubSpot für KI-Agenten in Marketing, Sales und Service.</span>      </li>
+    </ul>
+  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw29-2026-07-19.html">KW 29/2026</a>
+      <span class="date">19. Juli 2026</span>
+<span class="avg">Ø 8,2/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Inkling von Thinking Machines Text Open-Weights-Modell für multimodale Text-, Bild- und Audio-Workflows Inkling ist ein am 15.07.2026 veröffentlichtes Mixture-of-Experts-Modell mit offenen Gewichten, bis zu 1 Million Tokens Kontext und Text-, Bild- sowie Audioeingaben. Es richtet sich an Teams, die Modelle für Fachdomänen, Tool-Nutzung und agentisches Coding anpassen wollen.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw29-2026-07-19.html#inkling-von-thinking-machines">Inkling von Thinking Machines</a>
+<span class="wt-score">8</span><span class="wt-desc">Open-Weights-Modell für multimodale Text-, Bild- und Audio-Workflows</span>      </li>
+      <li data-cat="Design" data-score="8.0" data-text="Google Vids Design Workspace-Videoeditor mit Gemini Omni Flash und Personal Avatars Google Vids erhielt am 16.07.2026 Gemini Omni Flash und Personal Avatars. Teams können Videos mit Text- und Bildreferenzen erstellen, per natürlicher Sprache überarbeiten und wiederkehrende Schulungs-, Produkt- oder Enablement-Inhalte effizienter produzieren.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw29-2026-07-19.html#google-vids">Google Vids</a>
+<span class="wt-score">8</span><span class="wt-desc">Workspace-Videoeditor mit Gemini Omni Flash und Personal Avatars</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9.0" data-text="NVIDIA Nemotron 3 Embed Data / Wissen Offene Embedding-Modelle für RAG, semantische Suche und Agent Memory NVIDIA veröffentlichte Nemotron 3 Embed am 16.07.2026. Die Modellfamilie liefert Embeddings für RAG, Code Retrieval, mehrsprachige Suche und Agent Memory, damit Dokumente, Code und Wissensbestände zuverlässiger auffindbar werden.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw29-2026-07-19.html#nvidia-nemotron-3-embed">NVIDIA Nemotron 3 Embed</a>
+<span class="wt-score">9</span><span class="wt-desc">Offene Embedding-Modelle für RAG, semantische Suche und Agent Memory</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Context.dev Recherche Web-Kontext-API für Scraping, Crawling und strukturierte Extraktion Context.dev liefert Webdaten als Markdown, validiertes JSON, Crawlergebnis oder Brand-Information für KI-Anwendungen. Der Product-Hunt-Launch vom 02.07.2026 erreichte Rang 1 des Tages und Rang 2 der Woche; die aktuelle Auswahl beruht auf dieser frühen, positiven Rezeption und klar veröffentlichten Preisen.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw29-2026-07-19.html#context-dev">Context.dev</a>
+<span class="wt-score">8</span><span class="wt-desc">Web-Kontext-API für Scraping, Crawling und strukturierte Extraktion</span>      </li>
+      <li data-cat="Agents" data-score="8.0" data-text="Osaurus Agents Native macOS-Agenten mit lokalen Modellen und optionalen Cloud-Providern Osaurus 0.22.6 erschien am 18.07.2026 und erweitert die native Apple-Silicon-App um bessere Tool- und Installationsabläufe. Die App verbindet lokale Modelle mit Agenten, Dateioperationen, Folder Watchers, Wissenskollektionen und optionalen Cloud-Modellen.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw29-2026-07-19.html#osaurus">Osaurus</a>
+<span class="wt-score">8</span><span class="wt-desc">Native macOS-Agenten mit lokalen Modellen und optionalen Cloud-Providern</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Von der KI-Funktion zur kontrollierbaren Infrastruktur: Open Weights, lokale Ausführung, Retrieval und nachvollziehbare Datenzugänge werden zur operativen Grundlage.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw20-2026-05-17.html">KW 20/2026</a>
+      <span class="date">17. Mai 2026</span>
+<span class="avg">Ø 7,8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Shadow Text Echtzeit-Assistent für Calls, Follow-ups und Meeting-To-dos Shadow ist ein Echtzeit-Assistent für Meetings und Sales-Calls. Das Tool positioniert sich nicht als weiterer Notizbot, sondern als System, das während des Gesprächs Aufgaben erkennt und erledigt. Die offizielle Website nennt Beispiele wie Dokumente erstellen, Daten abrufen, Follow-ups planen und sogar Slides bauen, während die Unterhaltung noch läuft. Product Hunt beschreibt Shadow als &#34;real-time">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw20-2026-05-17.html#shadow">Shadow</a>
+<span class="wt-score">8</span><span class="wt-desc">Echtzeit-Assistent für Calls, Follow-ups und Meeting-To-dos</span>      </li>
+      <li data-cat="Design" data-score="8.0" data-text="Aaavatar Design Local-first Mac-App für konsistente Team-Portraits Aaavatar ist eine macOS-App für konsistente Team-Portraits. Das Tool entfernt Hintergründe automatisch, erlaubt Brand-Farben oder eigene Hintergründe, retuschiert Portraits in einem Klick, richtet Gesichter aus und exportiert Bilder für LinkedIn, Slack, E-Mail und weitere Kanäle. Die App wird von Square One aus den Niederlanden veröffentlicht.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw20-2026-05-17.html#aaavatar">Aaavatar</a>
+<span class="wt-score">8</span><span class="wt-desc">Local-first Mac-App für konsistente Team-Portraits</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.0" data-text="Kanwas Data / Wissen Gemeinsamer Kontext-Workspace für Produktteams und Agenten Kanwas ist ein gemeinsamer Kontext-Workspace für Teams und Agenten. Die Plattform bündelt Produktwissen, Research, Entscheidungen und Daten in einem bearbeitbaren Arbeitsraum, der sowohl Menschen als auch AI-Agenten zugänglich ist. Die Website positioniert Kanwas als Alternative zum Zerfasern von Kontext über Claude-Chats, lokale Ordner, Obsidian, VS Code, Git und Docs.
+
+Product Hunt beschreibt Ka">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw20-2026-05-17.html#kanwas">Kanwas</a>
+<span class="wt-score">8</span><span class="wt-desc">Gemeinsamer Kontext-Workspace für Produktteams und Agenten</span>      </li>
+      <li data-cat="Recherche" data-score="7.0" data-text="AnySearch Recherche Search-API-Infrastruktur für KI-Agenten und vertikale Datenquellen AnySearch ist eine Suchinfrastruktur für KI-Agenten und Enterprise-Systeme. Laut Dokumentation stellt AnySearch eine Search API unter `https://api.anysearch.com` bereit und unterstützt sowohl anonyme Requests mit täglichem Free-Kontingent als auch authentifizierte Requests mit API Key und bezahltem Kontingent. Eine unabhängige Quelle beschreibt AnySearch als einheitliche API für vertikale und auth">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw20-2026-05-17.html#anysearch">AnySearch</a>
+<span class="wt-score">7</span><span class="wt-desc">Search-API-Infrastruktur für KI-Agenten und vertikale Datenquellen</span>      </li>
+      <li data-cat="Agents" data-score="8.0" data-text="Mindra Agents Multi-Agent-Orchestrierung für operative Workflows Mindra ist ein Orchestrator für spezialisierte Agententeams. Nutzer beschreiben eine Aufgabe in natürlicher Sprache, Mindra erstellt daraus ein Team spezialisierter Agenten, das rund um die Uhr arbeitet, intern kommuniziert und Aktionen über bestehende Tools ausführt. Die Website nennt Use Cases in Performance Marketing, Supply Chain Ops, GTM / Sales Ops und Product Intelligence. Product Hunt best">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw20-2026-05-17.html#mindra">Mindra</a>
+<span class="wt-score">8</span><span class="wt-desc">Multi-Agent-Orchestrierung für operative Workflows</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Von isolierten Prompts zu kontextfähigen Arbeitssystemen: Echtzeit-Ausführung, Teamwissen, agentische Recherche und operative Orchestrierung.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw19-2026-05-10.html">KW 19/2026</a>
+      <span class="date">10. Mai 2026</span>
+<span class="avg">Ø 8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Postwise AI Text Social-Writing und Scheduling für X, LinkedIn und Threads • Name des Tools: Postwise AI
+
+• Kategorie: Text
+
+• URL: https://postwise.ai
+
+• Kurzbeschreibung: Postwise AI ist ein Schreib- und Scheduling-Tool für X, LinkedIn und Threads. Es richtet sich an Creator, Berater:innen, Gründer:innen und B2B-Marketing-Teams, die kontinuierlich veröffentlichen wollen, ohne jeden Post manuell aufzubauen.
+
+• Relevanzbewertung: 8/10
+
+Postwise wurde im ToolCrush-Roundup">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw19-2026-05-10.html#postwise-ai">Postwise AI</a>
+<span class="wt-score">8</span><span class="wt-desc">Social-Writing und Scheduling für X, LinkedIn und Threads</span>      </li>
+      <li data-cat="Design" data-score="8.0" data-text="Flowstep 1.0 Design AI Design Engineer für editierbare UI-Flows und Figma-Übergabe • Name des Tools: Flowstep 1.0
+
+• Kategorie: Design
+
+• URL: https://flowstep.ai
+
+• Kurzbeschreibung: Flowstep ist ein AI Design Engineer, der aus Prompts, Referenzen oder Produktanforderungen editierbare UI-Screens erzeugt, diese auf einer Canvas weiterbearbeiten lässt und Designs nach Figma kopierbar macht.
+
+• Relevanzbewertung: 8/10
+
+Flowstep 1.0 wurde am 5. Mai 2026 auf Product Hunt als &#34;AI des">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw19-2026-05-10.html#flowstep-1-0">Flowstep 1.0</a>
+<span class="wt-score">8</span><span class="wt-desc">AI Design Engineer für editierbare UI-Flows und Figma-Übergabe</span>      </li>
+      <li data-cat="Data / Wissen" data-score="7.0" data-text="Exmergo Viz Data / Wissen KI-Dashboards aus CSV, Excel und Datenbanken per natürlicher Sprache • Name des Tools: Exmergo Viz
+
+• Kategorie: Data / Wissen
+
+• URL: https://www.exmergo.com
+
+• Kurzbeschreibung: Exmergo Viz ist ein KI-gestütztes Datenvisualisierungs-Tool, das Rohdaten aus Dateien und Datenbanken in interaktive Dashboards übersetzt und per natürlicher Sprache abfragbar macht.
+
+• Relevanzbewertung: 7/10
+
+Exmergo Viz wurde auf There’s An AI For That mit Initial Release am 7. Mai 202">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw19-2026-05-10.html#exmergo-viz">Exmergo Viz</a>
+<span class="wt-score">7</span><span class="wt-desc">KI-Dashboards aus CSV, Excel und Datenbanken per natürlicher Sprache</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Web of Science Research Intelligence Recherche AI-native Research Intelligence für Funding, Strategie und Impact • Name des Tools: Web of Science Research Intelligence
+
+• Kategorie: Recherche
+
+• URL: Produktseite bei Clarivate
+
+• Kurzbeschreibung: Eine AI-native Research-Intelligence-Plattform für Forschungseinrichtungen, Research Offices und Bibliotheken, die Funding, Kooperationen, Emerging Topics und Impact-Analysen auf kuratierten Daten verbindet.
+
+• Relevanzbewertung: 8/10
+
+Clarivate kündigte den global">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw19-2026-05-10.html#web-of-science-research-intelligence">Web of Science Research Intelligence</a>
+<span class="wt-score">8</span><span class="wt-desc">AI-native Research Intelligence für Funding, Strategie und Impact</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="Claude Financial Services Agents Agents Zehn Agent-Templates für Pitchbooks, KYC, Marktanalyse und Finance Operations • Name des Tools: Claude Financial Services Agents
+
+• Kategorie: Agents
+
+• URL: Anthropic: Agents for financial services
+
+• Kurzbeschreibung: Anthropic veröffentlichte zehn ready-to-run Agent Templates für Finanzdienstleister, darunter Pitch Builder, KYC Screener, Market Researcher und Month-End Closer. Die Agents laufen als Plugins in Claude Cowork / Claude Code oder als Cookbooks für Claude Mana">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw19-2026-05-10.html#claude-financial-services-agents">Claude Financial Services Agents</a>
+<span class="wt-score">9</span><span class="wt-desc">Zehn Agent-Templates für Pitchbooks, KYC, Marktanalyse und Finance Operations</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Von Chatbot zu Workflow-Schicht: KI-Tools docken direkt an Social Publishing, UI-Design, Datenanalyse, Research Intelligence und Finanzprozesse an.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw18-2026-05-03.html">KW 18/2026</a>
+      <span class="date">3. Mai 2026</span>
+<span class="avg">Ø 8,6/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="9" data-text="Genspark for Word Text KI-Agenten nativ in Microsoft 365, Draften, Editieren und Recherchieren direkt in Word KI-Agenten nativ in Microsoft 365, Draften, Editieren und Recherchieren direkt in Word.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw18-2026-05-03.html#genspark-for-word">Genspark for Word</a>
+<span class="wt-score">9</span><span class="wt-desc">KI-Agenten nativ in Microsoft 365, Draften, Editieren und Recherchieren direkt in Word</span>      </li>
+      <li data-cat="Design" data-score="8" data-text="Bitgrain Design Leichtgewichtiges Design-Studio im Browser, Fokus auf Texturen und Dithering Leichtgewichtiges Design-Studio im Browser, Fokus auf Texturen und Dithering.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw18-2026-05-03.html#bitgrain">Bitgrain</a>
+<span class="wt-score">8</span><span class="wt-desc">Leichtgewichtiges Design-Studio im Browser, Fokus auf Texturen und Dithering</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8" data-text="TrafficClaw Data / Wissen Google Analytics Alternative mit KI-Chat und Echtzeit-3D-Globus Google Analytics Alternative mit KI-Chat und Echtzeit-3D-Globus.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw18-2026-05-03.html#trafficclaw">TrafficClaw</a>
+<span class="wt-score">8</span><span class="wt-desc">Google Analytics Alternative mit KI-Chat und Echtzeit-3D-Globus</span>      </li>
+      <li data-cat="Recherche" data-score="9" data-text="Claude Creative Connectors Recherche Anthropic integriert Claude direkt in professionelle Kreativ-Software Anthropic integriert Claude direkt in professionelle Kreativ-Software.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw18-2026-05-03.html#claude-creative-connectors">Claude Creative Connectors</a>
+<span class="wt-score">9</span><span class="wt-desc">Anthropic integriert Claude direkt in professionelle Kreativ-Software</span>      </li>
+      <li data-cat="Agents" data-score="9" data-text="Buda Agents Cloud-native Plattform zum Aufbau und Management einer KI-Belegschaft Cloud-native Plattform zum Aufbau und Management einer KI-Belegschaft.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw18-2026-05-03.html#buda">Buda</a>
+<span class="wt-score">9</span><span class="wt-desc">Cloud-native Plattform zum Aufbau und Management einer KI-Belegschaft</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Agentic Workflows in Standard-Tools, KI verlässt die isolierten Chat-Interfaces und wird direkt in Microsoft Office, Design-Software und Analytics-Dashboards eingebettet.</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw17-2026-04-26.html">KW 17/2026</a>
+      <span class="date">26. April 2026</span>
+<span class="avg">Ø 8,8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Chronicle Text Cursor für Slides, KI-Präsentationen auf Enterprise-Niveau mit Agentic Workflows Chronicle ist ein KI-gestützter Präsentations-Maker, der sich explizit als &#34;Cursor für Slides&#34; positioniert. Das Tool generiert hochwertige, on-brand Präsentationen aus Texteingaben, URLs, PDFs oder bestehenden PowerPoint-Dateien. Im Gegensatz zu Gamma, das auf schnelle Generierung setzt, fokussiert Chronicle auf Qualität und Markenkonsistenz für Teams. Zielgruppe sind Sales-, Marketing- und Execu">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw17-2026-04-26.html#chronicle">Chronicle</a>
+<span class="wt-score">8</span><span class="wt-desc">Cursor für Slides, KI-Präsentationen auf Enterprise-Niveau mit Agentic Workflows</span>      </li>
+      <li data-cat="Design" data-score="9.0" data-text="ChatGPT Images 2.0 Design Erstes Bildgenerierungsmodell mit Thinking, fehlerfreier Text, Web-Browsing, präzise Kontrolle ChatGPT Images 2.0 ist OpenAIs neues Bildgenerierungsmodell, das am 21. April 2026 lanciert wurde. Es ist das erste Bildgenerierungsmodell mit integrierter Thinking-Fähigkeit: Das Modell kann vor der Generierung reflektieren, Code ausführen, Websuchen durchführen und Logos aus dem Web abrufen, um sie als Referenz zu verwenden. Das Ergebnis ist eine drastisch verbesserte Text-in-Bild-Genauigkeit un">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw17-2026-04-26.html#chatgpt-images-2-0">ChatGPT Images 2.0</a>
+<span class="wt-score">9</span><span class="wt-desc">Erstes Bildgenerierungsmodell mit Thinking, fehlerfreier Text, Web-Browsing, präzise Kontrolle</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9.0" data-text="DeepSeek V4 Data / Wissen 1,6T Open-Source-Parameter, 1M Kontext als Standard, Frontier-Qualität zu Bruchteilspreisen DeepSeek V4 ist das neueste Open-Source-Sprachmodell des chinesischen KI-Labors DeepSeek, veröffentlicht am 24. April 2026. Es erscheint in zwei Varianten: V4-Pro (1,6 Billionen Parameter total, 49 Milliarden aktiv) und V4-Flash (284 Milliarden total, 13 Milliarden aktiv). Beide Varianten unterstützen standardmässig 1 Million Token Kontext und kombinieren Thinking- und Non-Thinking-Modus. Laut Ben">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw17-2026-04-26.html#deepseek-v4">DeepSeek V4</a>
+<span class="wt-score">9</span><span class="wt-desc">1,6T Open-Source-Parameter, 1M Kontext als Standard, Frontier-Qualität zu Bruchteilspreisen</span>      </li>
+      <li data-cat="Recherche" data-score="9.0" data-text="Gemini Deep Research Max Recherche MCP-Support + native Charts + Gemini 3.1 Pro, autonome Recherche auf Enterprise-Niveau Google hat am 21. April 2026 zwei neue Versionen seines autonomen Recherche-Agenten lanciert: Deep Research (für interaktive Oberflächen, optimiert auf Geschwindigkeit) und Deep Research Max (für asynchrone, maximale Tiefe). Beide basieren auf Gemini 3.1 Pro und bringen drei entscheidende Neuerungen: MCP-Support (Anbindung an beliebige Datenquellen), native Chart-Generierung und kollaborative Plan">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw17-2026-04-26.html#gemini-deep-research-max">Gemini Deep Research Max</a>
+<span class="wt-score">9</span><span class="wt-desc">MCP-Support + native Charts + Gemini 3.1 Pro, autonome Recherche auf Enterprise-Niveau</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="OpenAI Workspace Agents Agents Codex-Agenten für Teams, dauerhaft laufend, Slack-integriert, Enterprise-Controls OpenAI hat am 22. April 2026 Workspace Agents in ChatGPT lanciert, die Nachfolger der Custom GPTs für Teams und Unternehmen. Workspace Agents sind Codex-gestützte Agenten, die dauerhaft in der Cloud laufen, auf externe Tools zugreifen, Workflows automatisieren und in Slack integriert werden können. Sie sind explizit für die gemeinsame Nutzung im Team konzipiert: einmal konfiguriert, von allen genu">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw17-2026-04-26.html#openai-workspace-agents">OpenAI Workspace Agents</a>
+<span class="wt-score">9</span><span class="wt-desc">Codex-Agenten für Teams, dauerhaft laufend, Slack-integriert, Enterprise-Controls</span>      </li>
+    </ul>
+<p class="week-trend">Trend: KI-Agenten werden Teaminfrastruktur, OpenAI Workspace Agents, Gemini Deep Research Max und DeepSeek V4 zeigen: Autonome Systeme laufen jetzt dauerhaft, nicht nur auf Abruf</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw16-2026-04-19.html">KW 16/2026</a>
+      <span class="date">19. April 2026</span>
+<span class="avg">Ø 9,2/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="9" data-text="Fathom 3.0 Text Bot-freie Meeting-KI, Aufzeichnung ohne sichtbaren Teilnehmer, CRM-Sync, Account-weite Insights Fathom 3.0 ist ein KI-gestützter Meeting-Assistent, der Gespräche aufzeichnet, transkribiert und zusammenfasst. Das Major-Update vom 15. April 2026 führt eine &#34;bot-freie&#34; Aufzeichnungsoption ein, die Meetings ohne sichtbaren Teilnehmer-Bot dokumentiert, und integriert sich tief in LLMs wie Claude und ChatGPT.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw16-2026-04-19.html#fathom-3-0">Fathom 3.0</a>
+<span class="wt-score">9</span><span class="wt-desc">Bot-freie Meeting-KI, Aufzeichnung ohne sichtbaren Teilnehmer, CRM-Sync, Account-weite Insights</span>      </li>
+      <li data-cat="Design" data-score="10" data-text="Figma for Agents Design MCP-Server verbindet KI-Agenten mit Design-Systemen, bidirektionale Code-Canvas-Workflows Figma for Agents ist ein neues Model Context Protocol (MCP) Tool, das es KI-Agenten (wie Claude Code oder Cursor) ermöglicht, direkt in Figma-Dateien zu arbeiten. Es verbindet KI-generierten Code mit dem tatsächlichen Design-System eines Unternehmens.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw16-2026-04-19.html#figma-for-agents">Figma for Agents</a>
+<span class="wt-score">10</span><span class="wt-desc">MCP-Server verbindet KI-Agenten mit Design-Systemen, bidirektionale Code-Canvas-Workflows</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9" data-text="Google Gemma 4 Data / Wissen Multimodales Open-Source-Modell lokal, 256K Kontext, Text/Bild/Audio/Video, 100% DSGVO-konform Gemma 4 ist Googles neueste Familie von offenen, multimodalen KI-Modellen. Sie bieten eine Kontextlänge von bis zu 256K Tokens und sind in verschiedenen Grössen (von 2B bis 31B Parametern) verfügbar, optimiert für den lokalen Einsatz auf Laptops bis hin zu Servern.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw16-2026-04-19.html#google-gemma-4">Google Gemma 4</a>
+<span class="wt-score">9</span><span class="wt-desc">Multimodales Open-Source-Modell lokal, 256K Kontext, Text/Bild/Audio/Video, 100% DSGVO-konform</span>      </li>
+      <li data-cat="Recherche" data-score="8" data-text="Perplexity Computer (Personal CFO) Recherche KI-Agent mit Echtzeit-Bankdaten, Ausgabenanalyse, Budget-Planung, Net-Worth-Tracking via Plaid Perplexity hat seinen Desktop-Agenten &#34;Computer&#34; um eine &#34;Personal CFO&#34;-Funktion erweitert. Durch eine tiefe Integration mit Plaid kann die KI nun sicher auf Bankkonten, Kreditkarten und Kredite zugreifen, um personalisierte Finanzanalysen und Recherchen durchzuführen.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw16-2026-04-19.html#perplexity-computer-personal-cfo">Perplexity Computer (Personal CFO)</a>
+<span class="wt-score">8</span><span class="wt-desc">KI-Agent mit Echtzeit-Bankdaten, Ausgabenanalyse, Budget-Planung, Net-Worth-Tracking via Plaid</span>      </li>
+      <li data-cat="Agents" data-score="10" data-text="Claude Opus 4.7 Agents 87.6% SWE-bench Verified, 1M Token Kontext ohne Aufpreis, 3.3x bessere Vision, der neue Massstab Claude Opus 4.7 ist das neueste und stärkste Modell von Anthropic, das speziell für &#34;Agentic Coding&#34;, komplexe Systemarchitekturen und langlaufende, autonome Aufgaben entwickelt wurde. Es bietet ein 1-Million-Token-Kontextfenster und verbesserte visuelle Fähigkeiten.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw16-2026-04-19.html#claude-opus-4-7">Claude Opus 4.7</a>
+<span class="wt-score">10</span><span class="wt-desc">87.6% SWE-bench Verified, 1M Token Kontext ohne Aufpreis, 3.3x bessere Vision, der neue Massstab</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Agentic Workflows werden produktionsreif, KI-Agenten greifen auf Design-Systeme, Bankkonten und Codebases zu und liefern deploybare Ergebnisse</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw15-2026-04-12.html">KW 15/2026</a>
+      <span class="date">12. April 2026</span>
+<span class="avg">Ø 9,1/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.5" data-text="UPDF 2.5 Text Welterster PDF-Editor mit autonomen KI-Agenten, 10+ spezialisierte Agenten für Research, Legal, Finance UPDF 2.5 ist der weltweit erste PDF-Editor, der vollständig von autonomen KI-Agenten angetrieben wird. Das Tool integriert über 10 spezialisierte KI-Agenten direkt in den Dokumenten-Workflow, um Aufgaben wie semantische Suche, automatische Lesezeichen-Erstellung, juristische Analysen und Finanzdaten-Extraktion zu automatisieren. Zielgruppe sind Wissensarbeiter, Studierende, Anwälte und Finanzexper">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw15-2026-04-12.html#updf-2-5">UPDF 2.5</a>
+<span class="wt-score">8,5</span><span class="wt-desc">Welterster PDF-Editor mit autonomen KI-Agenten, 10+ spezialisierte Agenten für Research, Legal, Finance</span>      </li>
+      <li data-cat="Design" data-score="9.0" data-text="Google Veo 3.1 Lite Design KI-Video für $0.05 pro Clip, 50% günstiger als Vorgänger, 720p, via Gemini API Google Veo 3.1 Lite ist das neue, budgetfreundliche KI-Videogenerierungsmodell von Google. Es wurde speziell für Entwickler und Content-Ersteller entwickelt, die hohe Volumina an Videos benötigen und bei denen Geschwindigkeit und Kosteneffizienz wichtiger sind als absolute Premium-Qualität. Das Modell generiert stumme 720p-Videos zu einem Bruchteil der Kosten bisheriger Modelle.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw15-2026-04-12.html#google-veo-3-1-lite">Google Veo 3.1 Lite</a>
+<span class="wt-score">9</span><span class="wt-desc">KI-Video für $0.05 pro Clip, 50% günstiger als Vorgänger, 720p, via Gemini API</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9.5" data-text="Gemini Notebooks + NotebookLM Data / Wissen Persönliche Wissensdatenbank direkt in Gemini, persistente Projekte, Quellen-Sync, kein Modell-Training Google hat in dieser Woche &#34;Notebooks&#34; direkt in die Gemini-App integriert. Diese Funktion verbindet den KI-Chatbot Gemini nahtlos mit NotebookLM, Googles spezialisiertem KI-Recherche-Tool. Nutzer können nun dedizierte Projektbereiche (Notebooks) erstellen, in denen Chats, hochgeladene Dokumente (PDFs, Docs) und Web-Recherchen zentral organisiert und synchronisiert werden, ohne den Kontext bei jed">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw15-2026-04-12.html#gemini-notebooks-notebooklm">Gemini Notebooks + NotebookLM</a>
+<span class="wt-score">9,5</span><span class="wt-desc">Persönliche Wissensdatenbank direkt in Gemini, persistente Projekte, Quellen-Sync, kein Modell-Training</span>      </li>
+      <li data-cat="Recherche" data-score="9.0" data-text="Gemini Interactive Simulations Recherche 3D-Modelle und interaktive Physik-Simulationen direkt im Chat, &#34;show me&#34; statt statischer Diagramme Zusätzlich zu den Notebooks hat Google die Gemini-App um die Fähigkeit erweitert, interaktive 3D-Modelle und funktionale Simulationen direkt im Chat zu generieren. Anstatt komplexe Sachverhalte nur durch Text oder statische Bilder zu erklären, erstellt Gemini nun dynamische Visualisierungen, bei denen Nutzer Parameter über Schieberegler anpassen und die Auswirkungen in Echtzeit beobachten können.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw15-2026-04-12.html#gemini-interactive-simulations">Gemini Interactive Simulations</a>
+<span class="wt-score">9</span><span class="wt-desc">3D-Modelle und interaktive Physik-Simulationen direkt im Chat, &#34;show me&#34; statt statischer Diagramme</span>      </li>
+      <li data-cat="Agents" data-score="9.5" data-text="Claude Managed Agents Agents Vollständig gehostete Agent-Infrastruktur von Anthropic, Public Beta, $0.08/Session-Stunde, 10x schnellere Entwicklung Anthropic hat mit &#34;Claude Managed Agents&#34; (Public Beta) eine vollständig gehostete Infrastruktur für KI-Agenten vorgestellt. Bisher mussten Unternehmen, die Agenten auf Basis von Claude entwickeln wollten, die gesamte Infrastruktur (Sandboxing, Authentifizierung, State-Management) selbst bauen. Managed Agents abstrahiert diese Komplexität und ermöglicht es Entwicklern, produktionsreife Agenten in ">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw15-2026-04-12.html#claude-managed-agents">Claude Managed Agents</a>
+<span class="wt-score">9,5</span><span class="wt-desc">Vollständig gehostete Agent-Infrastruktur von Anthropic, Public Beta, $0.08/Session-Stunde, 10x schnellere Entwicklung</span>      </li>
+    </ul>
+<p class="week-trend">Trend: KI-Video wird erschwinglich (Veo 3.1 Lite $0.05/Clip) &amp; Paradigmenwechsel zu dynamischen, generativen Interfaces</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw14-2026-04-05.html">KW 14/2026</a>
+      <span class="date">5. April 2026</span>
+<span class="avg">Ø 8,5/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.5" data-text="Atomic Chat Text Open-Source ChatGPT-Alternative, 1.000+ KI-Modelle vollständig offline auf dem Mac, zero data exfiltration Atomic Chat ist eine Open-Source-Desktop-Applikation für macOS (und Linux/Windows über Build-from-Source), die es ermöglicht, über 1.000 KI-Modelle vollständig offline zu betreiben. Die App basiert auf dem Fork des bekannten Jan-Projekts (janhq/jan) und wurde in dieser Woche stark in The Neuron Daily, Ben&#39;s Bites und auf Product Hunt erwähnt. Zielgruppe sind datenschutzbewusste Einzelpersonen, Unt">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw14-2026-04-05.html#atomic-chat">Atomic Chat</a>
+<span class="wt-score">8,5</span><span class="wt-desc">Open-Source ChatGPT-Alternative, 1.000+ KI-Modelle vollständig offline auf dem Mac, zero data exfiltration</span>      </li>
+      <li data-cat="Design" data-score="7.5" data-text="Noon Design Das erste KI-native Design-Tool auf Production-Code, $44M Funding, aus dem Stealth-Modus Noon ist das erste KI-native Produktdesign-Tool, das direkt auf dem Production-Code des Teams arbeitet, nicht auf statischen Mockups. Gegründet 2024 von Aditya Bandi (ex-Bookpad CEO) und Kushagra Sinha (ex-Leap Co-Founder), trat Noon in dieser Woche aus dem Stealth-Modus heraus und veröffentlichte gleichzeitig seine $44-Millionen-Finanzierungsrunde. Das Tool richtet sich an Produktdesigner und Ent">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw14-2026-04-05.html#noon">Noon</a>
+<span class="wt-score">7,5</span><span class="wt-desc">Das erste KI-native Design-Tool auf Production-Code, $44M Funding, aus dem Stealth-Modus</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9.5" data-text="Google Gemma 4 Data / Wissen Frontier Open-Source-KI unter Apache 2.0, von Raspberry Pi bis H100, DSGVO-konform on-premise Google DeepMind veröffentlichte am 2. April 2026 Gemma 4, die bisher fähigste Open-Source-Modellfamilie von Google, erstmals unter der kommerziell permissiven Apache-2.0-Lizenz. Die Familie umfasst vier Modelle (E2B, E4B, 26B MoE, 31B Dense) für unterschiedliche Hardware-Anforderungen, von Raspberry Pi bis zum Rechenzentrum. Gemma 4 unterstützt nativ Text, Bild und Audio und ist für agentenbasiert">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw14-2026-04-05.html#google-gemma-4">Google Gemma 4</a>
+<span class="wt-score">9,5</span><span class="wt-desc">Frontier Open-Source-KI unter Apache 2.0, von Raspberry Pi bis H100, DSGVO-konform on-premise</span>      </li>
+      <li data-cat="Recherche" data-score="7.8" data-text="Perplexity Computer for Taxes Recherche Erster agentischer Steuer-Assistent, IRS-Formulare ausfüllen, Erklärungen prüfen, Abzüge optimieren Perplexity Computer ist ein agentischer KI-Dienst, der seit Februar 2026 End-to-End-Aufgaben für Nutzer ausführen kann. In dieser Woche erweiterte Perplexity die Plattform um ein umfassendes Steuer-Modul (&#34;Navigate My Taxes&#34;), das auf dem Agent-Skills-Protokoll basiert. Das System kann US-Bundessteuererklärungen auf offiziellen IRS-Formularen ausfüllen, professionell erstellte Steuererklärungen pr">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw14-2026-04-05.html#perplexity-computer-for-taxes">Perplexity Computer for Taxes</a>
+<span class="wt-score">7,8</span><span class="wt-desc">Erster agentischer Steuer-Assistent, IRS-Formulare ausfüllen, Erklärungen prüfen, Abzüge optimieren</span>      </li>
+      <li data-cat="Agents" data-score="9.2" data-text="Holo3 by H Company Agents State-of-the-Art Computer-Use-Agent, 78,85% OSWorld, Open Source Apache 2.0, europäisches Unternehmen Holo3 ist die neueste Generation der Computer-Use-Agenten von H Company (Paris, Frankreich) und setzt mit 78,85 % auf dem OSWorld-Verified-Benchmark einen neuen State-of-the-Art für Desktop-Computer-Use. Das Modell übertrifft GPT-5.4 und Claude Opus 4.6 bei Desktop-Aufgaben und erreicht dies mit nur 10 Milliarden aktiven Parametern (122B total, Mixture-of-Experts-Architektur). Die Gewichte des 35B">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw14-2026-04-05.html#holo3-by-h-company">Holo3 by H Company</a>
+<span class="wt-score">9,2</span><span class="wt-desc">State-of-the-Art Computer-Use-Agent, 78,85% OSWorld, Open Source Apache 2.0, europäisches Unternehmen</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Open-Source überholt Cloud-KI: Gemma 4 und Holo3 zeigen, dass frontier-nahe KI-Qualität jetzt on-premise, kostenlos und ohne Lizenzrisiko verfügbar ist</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw13-2026-03-29.html">KW 13/2026</a>
+      <span class="date">29. März 2026</span>
+<span class="avg">Ø 8,9/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.5" data-text="Pendium Text AI Visibility Platform, Sichtbarkeit in ChatGPT, Claude und Gemini monitoren und optimieren Pendium ist eine &#34;AI Visibility&#34;-Plattform, die Unternehmen dabei hilft, ihre Sichtbarkeit in den Antworten von KI-Agenten und Chatbots (wie ChatGPT, Claude, Gemini) zu analysieren und zu optimieren. Die Zielgruppe sind Marketing-Teams, SEO-Experten und Unternehmen, die sicherstellen wollen, dass sie von KI-Modellen als Lösung empfohlen werden.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw13-2026-03-29.html#pendium">Pendium</a>
+<span class="wt-score">8,5</span><span class="wt-desc">AI Visibility Platform, Sichtbarkeit in ChatGPT, Claude und Gemini monitoren und optimieren</span>      </li>
+      <li data-cat="Design" data-score="9" data-text="Omma by Spline Design Parallele KI-Agenten erstellen 3D-Websites und Apps aus Text-Prompts Omma ist ein KI-gestütztes Design-Tool von Spline, das parallele KI-Agenten nutzt, um aus einfachen Text-Prompts produktionsreife 3D-Modelle, interaktive Apps und Websites zu generieren. Es richtet sich an Designer, Entwickler und Kreativteams, die komplexe 3D-Erlebnisse ohne tiefgehende Programmier- oder 3D-Modellierungs-Kenntnisse erstellen möchten.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw13-2026-03-29.html#omma-by-spline">Omma by Spline</a>
+<span class="wt-score">9</span><span class="wt-desc">Parallele KI-Agenten erstellen 3D-Websites und Apps aus Text-Prompts</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.8" data-text="Littlebird Data / Wissen Kontextbezogener Mac-KI-Assistent, versteht kontinuierlich Bildschirm und Meetings Littlebird ist ein kontextbezogener KI-Assistent für den Mac, der kontinuierlich den Bildschirminhalt und Meetings analysiert, um Antworten zu liefern, die auf der tatsächlichen Arbeit des Nutzers basieren. Die Zielgruppe sind Knowledge Worker, Manager und Teams, die eine &#34;Second Brain&#34;-Lösung suchen, ohne manuell Daten pflegen zu müssen.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw13-2026-03-29.html#littlebird">Littlebird</a>
+<span class="wt-score">8,8</span><span class="wt-desc">Kontextbezogener Mac-KI-Assistent, versteht kontinuierlich Bildschirm und Meetings</span>      </li>
+      <li data-cat="Recherche" data-score="9.5" data-text="Claude Computer Use Recherche Anthropic gibt Claude direkten Computer-Zugriff, KI steuert Desktop-Apps autonom Anthropic hat für seine KI Claude die Fähigkeit eingeführt, Computer direkt zu steuern (&#34;Computer Use&#34;). Claude kann nun den Bildschirm sehen, den Cursor bewegen, klicken und Text eingeben, um komplexe Aufgaben autonom über verschiedene Desktop-Anwendungen hinweg auszuführen. Zielgruppe sind Entwickler, Researcher und Power-User, die plattformübergreifende Workflows automatisieren wollen.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw13-2026-03-29.html#claude-computer-use">Claude Computer Use</a>
+<span class="wt-score">9,5</span><span class="wt-desc">Anthropic gibt Claude direkten Computer-Zugriff, KI steuert Desktop-Apps autonom</span>      </li>
+      <li data-cat="Agents" data-score="8.7" data-text="Agentplace Agents No-Code Plattform für spezialisierte KI-Agenten in realen Unternehmens-Workflows Agentplace ist eine Plattform, die es Teams ermöglicht, spezialisierte KI-Agenten für reale Arbeitsabläufe zu erstellen, zu nutzen und kontinuierlich zu verbessern. Ohne Programmierkenntnisse können Nutzer Agenten bauen, die als &#34;KI-Teammitglieder&#34; fungieren, beispielsweise für Lead-Routing, Dokumentenanalyse oder HR-Support.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw13-2026-03-29.html#agentplace">Agentplace</a>
+<span class="wt-score">8,7</span><span class="wt-desc">No-Code Plattform für spezialisierte KI-Agenten in realen Unternehmens-Workflows</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Autonome Agenten mit Computer-Zugriff und parallele Agenten-Architekturen dominieren KW 13</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw12-2026-03-22.html">KW 12/2026</a>
+      <span class="date">22. März 2026</span>
+<span class="avg">Ø 9/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.5" data-text="Fathom Commentary Writer Text KI-Finanzkommentar mit symbolischer Attribution, jede Zahl bis zur Quelle nachverfolgbar Fathom Commentary Writer richtet sich an Buchhalter, CFOs und Finance-Teams, die Finanzberichte mit kontextbewussten und nachvollziehbaren KI-Kommentaren anreichern wollen. Das Besondere: Jede von der KI generierte Aussage ist durch &#34;symbolische Attribution&#34; bis zur Rohdatenquelle zurückverfolgbar, ein Durchbruch für den Einsatz von KI in regulierten Finanzumgebungen. Das Tool berücksichtigt strat">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw12-2026-03-22.html#fathom-commentary-writer">Fathom Commentary Writer</a>
+<span class="wt-score">8,5</span><span class="wt-desc">KI-Finanzkommentar mit symbolischer Attribution, jede Zahl bis zur Quelle nachverfolgbar</span>      </li>
+      <li data-cat="Design" data-score="9.5" data-text="Gamma Imagine Design KI-natives Design-Canvas für Infografiken, Logos und Marketing-Assets via Texteingabe Am 17. März 2026 lancierte Gamma sein bisher grösstes Update: Gamma Imagine, eine KI-native Design-Plattform, die Logos, Infografiken, Social-Media-Grafiken und Poster aus einfachen Textbeschreibungen generiert. Gamma hat bereits fast 100 Millionen Nutzer und eine Bewertung von $2.1 Milliarden (Series B, a16z). Das Update positioniert Gamma als direkte Konkurrenz zu Canva und Adobe, mit einem ents">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw12-2026-03-22.html#gamma-imagine">Gamma Imagine</a>
+<span class="wt-score">9,5</span><span class="wt-desc">KI-natives Design-Canvas für Infografiken, Logos und Marketing-Assets via Texteingabe</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.8" data-text="Genie by Databox Data / Wissen KI-Analyst für Business-Daten, Natural Language Queries über eigene Metriken und KPIs Genie ist der integrierte KI-Analyst von Databox, der natürliche Sprachabfragen zu Unternehmensdaten ermöglicht. Statt auf den Data-Analysten zu warten, können Führungskräfte direkt mit ihren KPIs &#34;chatten&#34;: &#34;Warum sind die Leads diese Woche um 20% gesunken?&#34; oder &#34;Erstelle ein Dashboard für CAC nach Akquisitionskanal.&#34; Genie verbindet Daten aus HubSpot, Google Analytics, Stripe und über 100 weite">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw12-2026-03-22.html#genie-by-databox">Genie by Databox</a>
+<span class="wt-score">8,8</span><span class="wt-desc">KI-Analyst für Business-Daten, Natural Language Queries über eigene Metriken und KPIs</span>      </li>
+      <li data-cat="Recherche" data-score="9.2" data-text="Perplexity Comet für iOS Recherche KI-nativer Browser jetzt auf iPhone, Deep Research, Voice Mode und Agentic Browsing Am 18. März 2026 lancierte Perplexity den Comet-Browser für iOS. Comet kombiniert traditionelle Websuche mit KI-nativer Recherche: Statt blauer Links erhält man zitierte Antworten, Deep-Research-Reports und einen Agenten, der Formulare ausfüllt und Termine bucht. Die iOS-Version bringt Voice Mode (Fragen einsprechen), Hybrid-Suche (traditionell für lokale Anfragen, KI für komplexe Recherchen) und ">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw12-2026-03-22.html#perplexity-comet-fuer-ios">Perplexity Comet für iOS</a>
+<span class="wt-score">9,2</span><span class="wt-desc">KI-nativer Browser jetzt auf iPhone, Deep Research, Voice Mode und Agentic Browsing</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="Skyvern Agents Open-Source Browser-Automatisierung mit LLMs und Computer Vision, selbst hostbar Skyvern ist eine Open-Source-Plattform für KI-gestützte Browser-Automatisierung, die LLMs mit Computer Vision kombiniert. Im Gegensatz zu traditionellen RPA-Tools wie Playwright oder Selenium, die auf fragile DOM-Selektoren angewiesen sind, &#34;sieht&#34; Skyvern Websites wie ein Mensch und navigiert sie entsprechend. Das bedeutet: Wenn sich ein Button verschiebt oder eine Website ihr Design ändert, bric">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw12-2026-03-22.html#skyvern">Skyvern</a>
+<span class="wt-score">9</span><span class="wt-desc">Open-Source Browser-Automatisierung mit LLMs und Computer Vision, selbst hostbar</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Agentic Workflows und kontextbewusste KI-Tools ersetzen allgemeine Chatbots in spezialisierten Anwendungsfällen</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw11-2026-03-15.html">KW 11/2026</a>
+      <span class="date">15. März 2026</span>
+<span class="avg">Ø 8,3/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.3" data-text="Teract Text AI Reputation Coach für LinkedIn, X, Reddit und weitere Plattformen Teract nennt sich selbst einen AI Reputation Coach und richtet sich an Gründer, Berater und Führungskräfte, die auf Plattformen wie LinkedIn, X, Reddit, Medium oder Product Hunt systematisch Sichtbarkeit aufbauen wollen. Das Tool lernt den Tonfall des Nutzers, identifiziert relevante Diskussionen und generiert Vorschläge für Kommentare oder Posts. Anders als viele Social-AI-Tools setzt Teract bewu">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw11-2026-03-15.html#teract">Teract</a>
+<span class="wt-score">8,3</span><span class="wt-desc">AI Reputation Coach für LinkedIn, X, Reddit und weitere Plattformen</span>      </li>
+      <li data-cat="Design" data-score="8.4" data-text="Canva Magic Layers Design Kontextbezogene KI-Bildbearbeitung direkt im Canva-Workflow Mit Magic Layers zeigt Canva, dass Innovation im KI-Markt nicht nur von Start-ups kommt. Das Update erweitert die bestehende Canva-Umgebung um eine kontextbezogene Bildbearbeitung, bei der Objekte und Ebenen intelligenter erkannt, verändert und in kreative Workflows eingebunden werden. Gerade für Marketer, Content-Teams und kleine Unternehmen ist das relevant, weil es keine neue Plattform erforder">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw11-2026-03-15.html#canva-magic-layers">Canva Magic Layers</a>
+<span class="wt-score">8,4</span><span class="wt-desc">Kontextbezogene KI-Bildbearbeitung direkt im Canva-Workflow</span>      </li>
+      <li data-cat="Data / Wissen" data-score="7.9" data-text="OrangeLabs Data / Wissen Talk to your data, Dokumente, CSVs und Websuche in einem Analyse-Workspace OrangeLabs verspricht mit dem Slogan &#34;Talk to your data&#34; eine niedrigschwellige Schnittstelle zu Dokumenten, CSVs und Webrecherche. Funktional liegt das Produkt zwischen leichtgewichtiger BI, Dokumenten-Chat und AI-Analyst. Die Preisstruktur wirkt zunächst attraktiv: Ein kostenloser Plan, dazu Starter für $12, Pro für $49 und Enterprise für $299 pro Monat. Gerade der Starter-Einstieg ist bemerkens">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw11-2026-03-15.html#orangelabs">OrangeLabs</a>
+<span class="wt-score">7,9</span><span class="wt-desc">Talk to your data, Dokumente, CSVs und Websuche in einem Analyse-Workspace</span>      </li>
+      <li data-cat="Recherche" data-score="8.1" data-text="Citable Recherche GEO-/AI-Visibility-Plattform für Markenpräsenz in KI-Antworten Citable besetzt eine der derzeit spannendsten neuen Kategorien: Generative Engine Optimization (GEO) beziehungsweise AI Visibility Tracking. Das Tool verspricht, sichtbar zu machen, wie ChatGPT, Perplexity, Gemini, Claude oder Grok eine Marke in Antworten darstellen, in welchen Persona-Kontexten sie auftaucht und wo inhaltliche Lücken gegenüber Wettbewerbern bestehen. In einer Welt, in der Kaufent">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw11-2026-03-15.html#citable">Citable</a>
+<span class="wt-score">8,1</span><span class="wt-desc">GEO-/AI-Visibility-Plattform für Markenpräsenz in KI-Antworten</span>      </li>
+      <li data-cat="Agents" data-score="8.8" data-text="Naoma AI Agents AI Video Sales Agent für personalisierte Produktdemos und Lead-Qualifizierung Naoma AI positioniert sich als AI Video Sales Agent, der personalisierte Produktdemos in Echtzeit durchführt, Leads qualifiziert und die gewonnenen Erkenntnisse automatisch in CRM-Prozesse zurückführt. Auf der Produktseite betont das Unternehmen insbesondere 24/7-Verfügbarkeit, Mehrsprachigkeit, Hyperpersonalisierung und CRM-Integration. Das ist für B2B-SaaS-Teams interessant, die zwar bereits Nac">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw11-2026-03-15.html#naoma-ai">Naoma AI</a>
+<span class="wt-score">8,8</span><span class="wt-desc">AI Video Sales Agent für personalisierte Produktdemos und Lead-Qualifizierung</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Spezialisierte KI-Produkte mit klarer Umsatz- oder Produktivitätslogik setzen sich gegenüber allgemeinen Assistenten durch</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw10-2026-03-08.html">KW 10/2026</a>
+      <span class="date">8. März 2026</span>
+<span class="avg">Ø 8,6/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="9.0" data-text="GPT-5.4 Text OpenAIs neues Flaggschiff, &#34;Thinking&#34;-Layer, 83% GDPval, 1.05M Token Kontext OpenAI hat mit GPT-5.4 sein neuestes Flaggschiff-Modell vorgestellt. Es verspricht eine noch höhere Genauigkeit und Effizienz, insbesondere bei komplexen Aufgaben. GPT-5.4 ist nicht nur ein reines Sprachmodell, sondern eine umfassende Arbeitsplattform, die auf professionelle Anwender in den Bereichen Codierung, Dokumentenanalyse und Finanzwesen abzielt. Das neue &#34;Thinking&#34;-Layer soll dabei für ein">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw10-2026-03-08.html#gpt-5-4">GPT-5.4</a>
+<span class="wt-score">9</span><span class="wt-desc">OpenAIs neues Flaggschiff, &#34;Thinking&#34;-Layer, 83% GDPval, 1.05M Token Kontext</span>      </li>
+      <li data-cat="Design" data-score="8.5" data-text="Variant Design Endlose Designs per Scroll, kein Canvas, kein Figma, kein Prompt-Engineering nötig Variant ist ein revolutionäres KI-Design-Tool, das den Designprozess auf den Kopf stellt. Anstatt mit einer leeren Leinwand zu beginnen, gibt man eine Idee ein und erhält einen endlosen Feed von fertigen UI-Designs. Das Tool ist ideal für die frühe Phase eines Projekts, in der es darum geht, schnell verschiedene visuelle Richtungen zu erkunden. Mit der &#34;Style Dropper&#34;-Funktion kann man den Stil ei">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw10-2026-03-08.html#variant">Variant</a>
+<span class="wt-score">8,5</span><span class="wt-desc">Endlose Designs per Scroll, kein Canvas, kein Figma, kein Prompt-Engineering nötig</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.5" data-text="Parsewise Data / Wissen Cursor für Dokumente, KI-Agenten analysieren tausende PDFs auf einmal mit Quellennachveis Parsewise ist eine KI-gestützte Plattform zur Analyse grosser Dokumentenmengen. Das Tool richtet sich an Unternehmen in den Bereichen Versicherungen, Vermögensverwaltung und Brokerage, die komplexe Risikobewertungen durchführen müssen. Parsewise verspricht, den manuellen Aufwand um bis zu 80% zu reduzieren und gleichzeitig die Entscheidungsqualität zu verbessern. Das Tool ist GDPR- und SOC 2-konfo">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw10-2026-03-08.html#parsewise">Parsewise</a>
+<span class="wt-score">8,5</span><span class="wt-desc">Cursor für Dokumente, KI-Agenten analysieren tausende PDFs auf einmal mit Quellennachveis</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Heywa Recherche Visuelle Stories statt Text-Wände, KI-Recherche als interaktive Mini-App Heywa ist ein visuelles Recherche-Tool, das anstelle von langen Textantworten interaktive, &#34;tappable&#34; Stories generiert. Das Tool passt die Darstellung der Ergebnisse an die Suchanfrage an, was die Recherche intuitiver und ansprechender macht. Heywa eignet sich besonders für alltägliche Fragen und schnelle Recherchen. Das Tool ist derzeit kostenlos und befindet sich in der Beta-Phase.
+
+• Free: Kos">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw10-2026-03-08.html#heywa">Heywa</a>
+<span class="wt-score">8</span><span class="wt-desc">Visuelle Stories statt Text-Wände, KI-Recherche als interaktive Mini-App</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="Luma Agents Agents $15M-Kampagne in 40h für $20K, kreative End-to-End-Agents mit Unified Intelligence Luma AI hat mit Luma Agents eine neue Klasse von KI-Kollaborateuren vorgestellt, die in der Lage sind, kreative End-to-End-Workflows über Text, Bild, Video und Audio hinweg auszuführen. Die Agents basieren auf der &#34;Unified Intelligence&#34;-Architektur, die ein einziges multimodales Reasoning-System trainiert. Luma Agents können komplexe kreative Kampagnen autonom erstellen und dabei auf eine Vielzahl">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw10-2026-03-08.html#luma-agents">Luma Agents</a>
+<span class="wt-score">9</span><span class="wt-desc">$15M-Kampagne in 40h für $20K, kreative End-to-End-Agents mit Unified Intelligence</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Kreative Agents übernehmen End-to-End-Workflows, Paradigmenwechsel in Design und Recherche-UX</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw09-2026-03-01.html">KW 09/2026</a>
+      <span class="date">1. März 2026</span>
+<span class="avg">Ø 8,5/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="9.0" data-text="Mercury 2 Text Weltschnellstes Reasoning-LLM, Diffusion-Architektur mit 1.009 Token/Sek und 4x günstigeren Preisen Mercury 2 ist das weltweit schnellste Reasoning-Sprachmodell, entwickelt von Inception Labs (Stanford-Ausgründung). Im Gegensatz zu herkömmlichen autogressiven Modellen, die Text Token für Token generieren, nutzt Mercury 2 eine Diffusion-basierte Architektur: Es verfeinert ganze Textpassagen parallel, ähnlich wie ein Lektor, der einen vollständigen Entwurf auf einmal überarbeitet. Das Ergebnis ist">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw09-2026-03-01.html#mercury-2">Mercury 2</a>
+<span class="wt-score">9</span><span class="wt-desc">Weltschnellstes Reasoning-LLM, Diffusion-Architektur mit 1.009 Token/Sek und 4x günstigeren Preisen</span>      </li>
+      <li data-cat="Design" data-score="8.5" data-text="QuiverAI (Arrow-1) Design Erstes KI-Modell für Vektorgrafiken, editierbare SVGs aus Text-Prompts, Platz 1 auf SVG Arena QuiverAI ist ein neues KI-Labor und Produktunternehmen, das sich auf Vektorgrafik-Design spezialisiert hat. Ihr erstes Modell, Arrow-1, ist das weltweit erste dedizierte KI-Modell für die Generierung von SVG-Vektorgrafiken aus Text-Prompts und Referenzbildern. Anders als Bildgeneratoren wie Midjourney oder DALL-E, die Pixel-Bilder erzeugen, generiert Arrow-1 echte, editierbare SVG-Dateien, struktu">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw09-2026-03-01.html#quiverai-arrow-1">QuiverAI (Arrow-1)</a>
+<span class="wt-score">8,5</span><span class="wt-desc">Erstes KI-Modell für Vektorgrafiken, editierbare SVGs aus Text-Prompts, Platz 1 auf SVG Arena</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.0" data-text="Supaboard Data / Wissen Daten auf Englisch befragen, #1 Product Hunt Februar 2026, 600+ Integrationen, kein SQL nötig Supaboard ist eine KI-gestützte Echtzeit-Analyseplattform, die es ermöglicht, Geschäftsdaten auf Englisch zu befragen und sofort präzise Antworten, Dashboards und Berichte zu erhalten, ohne SQL-Kenntnisse oder Data-Science-Hintergrund. Die Plattform verbindet sich mit über 600 Datenquellen (Google Analytics, Stripe, PostgreSQL, Salesforce u.v.m.) und setzt KI-Agenten ein, um natürlichsprachliche F">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw09-2026-03-01.html#supaboard">Supaboard</a>
+<span class="wt-score">8</span><span class="wt-desc">Daten auf Englisch befragen, #1 Product Hunt Februar 2026, 600+ Integrationen, kein SQL nötig</span>      </li>
+      <li data-cat="Recherche" data-score="8.5" data-text="Perplexity Computer Recherche 19 KI-Modelle orchestriert, autonomer Multi-Modell-Agent für komplexe Workflows, $200/Monat Perplexity Computer ist ein autonomes Multi-Modell-Orchestrierungssystem, das am 25. Februar 2026 lanciert wurde. Es ist mehr als ein Recherche-Tool, es ist ein vollständiger digitaler Mitarbeiter, der komplexe, mehrstufige Workflows selbstständig plant und ausführt. Perplexity Computer koordiniert 19 verschiedene KI-Modelle (darunter Claude Opus 4.6, Gemini für Deep Research, Nano Banana für Bild">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw09-2026-03-01.html#perplexity-computer">Perplexity Computer</a>
+<span class="wt-score">8,5</span><span class="wt-desc">19 KI-Modelle orchestriert, autonomer Multi-Modell-Agent für komplexe Workflows, $200/Monat</span>      </li>
+      <li data-cat="Agents" data-score="8.5" data-text="Notion Custom Agents Agents 24/7 autonome KI-Agenten direkt in Notion, kostenlos bis Mai 2026, kein Coding nötig Notion Custom Agents, lanciert am 24. Februar 2026 als Teil von Notion 3.3, sind autonome KI-Bots, die direkt im Notion-Workspace laufen und komplette Workflows 24/7 selbstständig ausführen, ohne dass der Nutzer anwesend sein muss. Sie können Aufgaben triagieren, Fragen beantworten, Berichte erstellen, Slack-Nachrichten senden, E-Mails verschicken und auf Datenbanken zugreifen. Das Besondere: Noti">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw09-2026-03-01.html#notion-custom-agents">Notion Custom Agents</a>
+<span class="wt-score">8,5</span><span class="wt-desc">24/7 autonome KI-Agenten direkt in Notion, kostenlos bis Mai 2026, kein Coding nötig</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Orchestrierung von Modellen und Demokratisierung von KI-Agenten</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw08-2026-02-22.html">KW 08/2026</a>
+      <span class="date">22. Februar 2026</span>
+<span class="avg">Ø 8,4/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="9.5" data-text="Claude Sonnet 4.6 Text Opus-Level-Intelligenz zum Sonnet-Preis, neues Standardmodell von Anthropic Claude Sonnet 4.6 ist das neueste und leistungsfähigste Modell der Sonnet-Familie von Anthropic, das am 17. Februar 2026 veröffentlicht wurde. Es positioniert sich als das neue Standardmodell für die kostenlosen und Pro-Pläne auf claude.ai und ersetzt damit seinen Vorgänger. Die zentrale Neuerung ist, dass Sonnet 4.6 eine Intelligenz und Leistungsfähigkeit erreicht, die an das teurere Flaggschiff-">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw08-2026-02-22.html#claude-sonnet-4-6">Claude Sonnet 4.6</a>
+<span class="wt-score">9,5</span><span class="wt-desc">Opus-Level-Intelligenz zum Sonnet-Preis, neues Standardmodell von Anthropic</span>      </li>
+      <li data-cat="Design" data-score="8.5" data-text="Moda Design KI-Design mit vollständig editierbarem Canvas, endlich kein Neustart bei jeder Änderung Moda ist ein neues KI-gestütztes Design-Tool, das sich durch einen entscheidenden Vorteil von der Konkurrenz wie Canva oder Gamma abhebt: Es generiert vollständig editierbare Designs. Anstatt statischer Bilder, die bei jeder Änderung einen neuen Prompt erfordern, erstellt Moda Entwürfe auf einem ebenenbasierten Canvas, auf dem jedes Element, Texte, Formen, Bilder, nachträglich frei verschoben, ang">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw08-2026-02-22.html#moda">Moda</a>
+<span class="wt-score">8,5</span><span class="wt-desc">KI-Design mit vollständig editierbarem Canvas, endlich kein Neustart bei jeder Änderung</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.0" data-text="Boost.space v5 Data / Wissen Shared Context für KI-Agenten, das gemeinsame Gehirn für alle Automatisierungen Boost.space v5 ist eine zentrale Daten- und Wissensplattform, die als &#34;Shared Brain&#34; für KI-Agenten und Automatisierungstools wie Make.com oder Zapier fungiert. Anstatt dass jeder Agent isoliert arbeitet, schafft Boost.space eine vereinheitlichte Kontextebene, auf die alle Systeme zugreifen können. Das tschechische Unternehmen hat seine Plattform als &#34;AI-Ready Data Sync Platform&#34; konzipiert, die D">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw08-2026-02-22.html#boost-space-v5">Boost.space v5</a>
+<span class="wt-score">8</span><span class="wt-desc">Shared Context für KI-Agenten, das gemeinsame Gehirn für alle Automatisierungen</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Figr AI Recherche Product-aware KI für UX, analysiert echte Apps und denkt durch Design-Entscheidungen Figr AI ist ein spezialisiertes KI-Tool für den Bereich User Experience (UX) Research und Design. Im Gegensatz zu allgemeinen Design-Tools analysiert Figr bestehende Produkte und Anwendungen. Es kann Live-Websites über eine Chrome-Extension, Figma-Dateien oder sogar Bildschirmaufnahmen als Kontext aufnehmen, um den Nutzerfluss zu verstehen, Edge Cases zu identifizieren und fundierte UX-Verbesserun">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw08-2026-02-22.html#figr-ai">Figr AI</a>
+<span class="wt-score">8</span><span class="wt-desc">Product-aware KI für UX, analysiert echte Apps und denkt durch Design-Entscheidungen</span>      </li>
+      <li data-cat="Agents" data-score="8.0" data-text="Clawi.ai Agents OpenClaw in der Cloud, leistungsstarker KI-Agent ohne Server-Setup, über WhatsApp steuerbar Clawi.ai ist ein Cloud-Service, der den leistungsstarken, aber technisch anspruchsvollen Open-Source-KI-Agenten OpenClaw für jedermann zugänglich macht. Der Dienst eliminiert die Notwendigkeit, eigene Server zu konfigurieren und zu warten. Nutzer erhalten innerhalb von Minuten einen voll funktionsfähigen, privaten OpenClaw-Assistenten, der rund um die Uhr in der Cloud läuft und über Messenger wie ">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw08-2026-02-22.html#clawi-ai">Clawi.ai</a>
+<span class="wt-score">8</span><span class="wt-desc">OpenClaw in der Cloud, leistungsstarker KI-Agent ohne Server-Setup, über WhatsApp steuerbar</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Leistung wird demokratisiert, Tools werden spezialisierter</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw05-2026-02-01.html">KW 05/2026</a>
+      <span class="date">1. Februar 2026</span>
+<span class="avg">Ø 8,4/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="9.0" data-text="OpenAI Prism Text KI-nativer Workspace für wissenschaftliches Schreiben mit GPT-5.2 • Name des Tools: OpenAI Prism
+
+• Kategorie: Text
+
+• Kurzbeschreibung: Ein kostenloser, KI-nativer Workspace für Wissenschaftler, um Forschungsarbeiten in einer kollaborativen LaTeX-Umgebung zu schreiben, unterstützt von GPT-5.2.
+
+• Zielgruppe: Wissenschaftler, Forscher, Akademiker, Studenten und alle, die wissenschaftliche Paper in LaTeX verfassen.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw05-2026-02-01.html#openai-prism">OpenAI Prism</a>
+<span class="wt-score">9</span><span class="wt-desc">KI-nativer Workspace für wissenschaftliches Schreiben mit GPT-5.2</span>      </li>
+      <li data-cat="Design" data-score="7.5" data-text="AirMusic v1.1 Design KI-Musikgenerator mit royalty-free Lizenzierung • Highlights:
+
+• Erlaubt Gemini, wie ein menschlicher Agent zu agieren, der nicht nur sieht, was auf einem Bildschirm passiert, sondern auch Aktionen ausführt.
+
+• Kann komplexe Aufgaben in Web-Interfaces automatisieren.
+
+• Bietet Entwicklern neue Möglichkeiten zur Erstellung von KI-Agenten.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw05-2026-02-01.html#airmusic-v1-1">AirMusic v1.1</a>
+<span class="wt-score">7,5</span><span class="wt-desc">KI-Musikgenerator mit royalty-free Lizenzierung</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.5" data-text="Pandada AI Data / Wissen KI-gestützte Datenanalyse ohne Programmierkenntnisse Pandada AI ist eine Datenanalyse-Plattform, die es Benutzern ermöglicht, strukturierte und unstrukturierte Daten zu analysieren und zu visualisieren, ohne Code schreiben zu müssen. Die Plattform bietet eine intuitive Drag-and-Drop-Oberfläche und automatisierte Dashboard-Erstellung.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw05-2026-02-01.html#pandada-ai">Pandada AI</a>
+<span class="wt-score">8,5</span><span class="wt-desc">KI-gestützte Datenanalyse ohne Programmierkenntnisse</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="The Prompting Company Recherche SEO für das KI-Zeitalter - Optimierung für ChatGPT-Zitate • Highlights:
+
+• SEO für das KI-Zeitalter.
+
+• Analysiert, wie und warum bestimmte Quellen in KI-Antworten zitiert werden.
+
+• Bietet Tools zur Optimierung von Inhalten für eine bessere Sichtbarkeit in KI-Systemen.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw05-2026-02-01.html#the-prompting-company">The Prompting Company</a>
+<span class="wt-score">8</span><span class="wt-desc">SEO für das KI-Zeitalter - Optimierung für ChatGPT-Zitate</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="Agentic Vision in Gemini Agents Google Major Update für agentenähnliche visuelle Interaktion • Highlights:
+
+• Erlaubt Gemini, wie ein menschlicher Agent zu agieren, der nicht nur sieht, was auf einem Bildschirm passiert, sondern auch Aktionen ausführt.
+
+• Kann komplexe Aufgaben in Web-Interfaces automatisieren.
+
+• Bietet Entwicklern neue Möglichkeiten zur Erstellung von KI-Agenten.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw05-2026-02-01.html#agentic-vision-in-gemini">Agentic Vision in Gemini</a>
+<span class="wt-score">9</span><span class="wt-desc">Google Major Update für agentenähnliche visuelle Interaktion</span>      </li>
+    </ul>
+<p class="week-trend">Trend: KI-native Arbeitsumgebungen und agentenähnliche Systeme</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw04-2026-01-25.html">KW 04/2026</a>
+      <span class="date">25. Januar 2026</span>
+<span class="avg">Ø 7,6/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="ContentPod Text Voice-First Content Creation Platform, Sprechen statt Schreiben ContentPod ist eine KI-gestützte Content-Erstellungsplattform, die Voice-Interviews in über 8 verschiedene Content-Formate umwandelt. Die Plattform bietet sowohl Voice-First-Creation als auch 15+ direkte Generatoren für verschiedene Content-Typen.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw04-2026-01-25.html#contentpod">ContentPod</a>
+<span class="wt-score">8</span><span class="wt-desc">Voice-First Content Creation Platform, Sprechen statt Schreiben</span>      </li>
+      <li data-cat="Design" data-score="7.0" data-text="HouseGPTs Design AI-Powered Home Design Platform, fotorealistische Innendesigns in Sekunden HouseGPTs ist eine KI-gestützte Home-Design-Plattform, die Fotos in fotorealistische Innen- und Aussendesigns in Sekunden verwandelt. Die Plattform wird von über 78.000 Nutzern weltweit vertraut und hat bereits 2,3 Millionen Designs generiert.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw04-2026-01-25.html#housegpts">HouseGPTs</a>
+<span class="wt-score">7</span><span class="wt-desc">AI-Powered Home Design Platform, fotorealistische Innendesigns in Sekunden</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.0" data-text="Pandada AI Data / Wissen Natural Language Data Analysis Platform, Daten in Sprache fragen Pandada AI ist eine KI-gestützte Datenanalyse-Plattform, die es Nutzern ermöglicht, beliebige Dateien hochzuladen, Fragen in natürlicher Sprache zu stellen und sofortige Charts und Insights zu erhalten.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw04-2026-01-25.html#pandada-ai">Pandada AI</a>
+<span class="wt-score">8</span><span class="wt-desc">Natural Language Data Analysis Platform, Daten in Sprache fragen</span>      </li>
+      <li data-cat="Recherche" data-score="7.0" data-text="NBot AI Recherche Personal AI Radar for Content Curation, 24/7 Web-Monitoring kostenlos NBot AI ist ein persönlicher KI-Radar, der das Web kontinuierlich nach nutzerdefinierten Themen durchsucht, Rauschen filtert und relevante Inhalte kuratiert.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw04-2026-01-25.html#nbot-ai">NBot AI</a>
+<span class="wt-score">7</span><span class="wt-desc">Personal AI Radar for Content Curation, 24/7 Web-Monitoring kostenlos</span>      </li>
+      <li data-cat="Agents" data-score="8.0" data-text="Smart Calendars AI v2.5 Agents Agentic AI Calendar Assistant, Termine durch Sprechen, Fotografieren oder Einfügen Smart Calendars AI ist ein agentic AI-Kalender-Assistent, der Termine durch Sprechen, Fotografieren oder Einfügen erstellt. Die v2.5 fügt Email- und webbasierten AI-Assistenten hinzu, der Web-Suchen durchführen kann.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw04-2026-01-25.html#smart-calendars-ai-v2-5">Smart Calendars AI v2.5</a>
+<span class="wt-score">8</span><span class="wt-desc">Agentic AI Calendar Assistant, Termine durch Sprechen, Fotografieren oder Einfügen</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Spezialisierung &amp; Multimodalität</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw03-2026-01-18.html">KW 03/2026</a>
+      <span class="date">18. Januar 2026</span>
+<span class="avg">Ø 8,8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="9.0" data-text="TranslateGemma Text Googles Open-Source-Antwort auf DeepL Google DeepMind hat mit TranslateGemma eine neue Familie von Open-Source-Übersetzungsmodellen veröffentlicht, die auf der Gemma-3-Architektur basieren. Die Modelle, die in den Grössen 4B, 12B und 27B Parameter verfügbar sind, ermöglichen Übersetzungen in 55 Sprachen und sind für verschiedene Anwendungsfälle optimiert, von mobilen Geräten bis hin zu Cloud-Servern. Damit tritt Google in direkte Konk">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw03-2026-01-18.html#translategemma">TranslateGemma</a>
+<span class="wt-score">9</span><span class="wt-desc">Googles Open-Source-Antwort auf DeepL</span>      </li>
+      <li data-cat="Design" data-score="9.0" data-text="GLM-Image Design Die Open-Source-Revolution im Text-Rendering Z.AI hat mit GLM-Image das erste industrietaugliche Open-Source-Bildgenerierungsmodell mit einer diskreten autoregressiven Architektur vorgestellt. Dieses Hybrid-Modell kombiniert ein 9-Milliarden-Parameter-autoregressives Modul mit einem 7-Milliarden-Parameter-Diffusions-Decoder. Das Ergebnis ist eine beeindruckende Fähigkeit, Text präzise in Bildern zu rendern, eine notorische Schwachstelle selb">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw03-2026-01-18.html#glm-image">GLM-Image</a>
+<span class="wt-score">9</span><span class="wt-desc">Die Open-Source-Revolution im Text-Rendering</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9.0" data-text="NotebookLM Data Tables Data / Wissen Googles automatischer Daten-Strukturierer Google Labs hat sein KI-gestütztes Notiz-Tool NotebookLM mit einem mächtigen neuen Feature ausgestattet: Data Tables. Diese Funktion, die seit Januar 2026 für alle Nutzer kostenlos verfügbar ist, wandelt unstrukturierte Notizen, Dokumente und sogar Audio-Transkripte automatisch in saubere, strukturierte Tabellen um. Die Ergebnisse können direkt nach Google Sheets exportiert werden, was die Analyse">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw03-2026-01-18.html#notebooklm-data-tables">NotebookLM Data Tables</a>
+<span class="wt-score">9</span><span class="wt-desc">Googles automatischer Daten-Strukturierer</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Xpoz MCP Recherche Social Media Intelligence für KI-Agenten Xpoz Inc. hat mit Xpoz MCP einen Model Context Protocol (MCP) Server veröffentlicht, der KI-Agenten wie Claude AI direkten Zugriff auf Social-Media-Daten von Twitter/X, Instagram, TikTok und Reddit ermöglicht. Anstatt auf teure und limitierte offizielle APIs angewiesen zu sein, können Nutzer über natürliche Sprache auf einen Pool von 1,5 Milliarden indexierten Posts zugreifen. Dies demokratisiert ">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw03-2026-01-18.html#xpoz-mcp">Xpoz MCP</a>
+<span class="wt-score">8</span><span class="wt-desc">Social Media Intelligence für KI-Agenten</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="Claude Code MCP Tool Search Agents Die Lösung für das Skalierungsproblem von KI-Agenten Anthropic hat mit dem Tool Search-Feature in Claude Code 2.1.7 ein fundamentales Problem bei der Entwicklung von KI-Agenten gelöst. Bisher mussten alle verfügbaren Tools eines MCP-Servers beim Start in das Kontextfenster des KI-Modells geladen werden. Bei einer grossen Anzahl von Tools (30-50+) führte dies zu einem massiven Verbrauch von Kontext-Tokens (oft 20-30% des gesamten Fensters) und einer ">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw03-2026-01-18.html#claude-code-mcp-tool-search">Claude Code MCP Tool Search</a>
+<span class="wt-score">9</span><span class="wt-desc">Die Lösung für das Skalierungsproblem von KI-Agenten</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Open Source &amp; Agenten-Skalierung</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw02-2026-01-11.html">KW 02/2026</a>
+      <span class="date">11. Januar 2026</span>
+<span class="avg">Ø 7,8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="9.0" data-text="Gemini 3 in Gmail Text AI-Powered E-Mail-Produktivität für 3 Milliarden Nutzer Die Integration von Googles neuestem Sprachmodell, Gemini 3, in Gmail markiert einen Wendepunkt für die E-Mail-Produktivität und betrifft potenziell 3 Milliarden Nutzer weltweit. Das Update, das am 8. Januar 2026 ausgerollt wurde, bringt eine Reihe von kostenlosen und Premium-Funktionen, die den Umgang mit der täglichen E-Mail-Flut revolutionieren sollen.
+
+Die neuen Funktionen lassen sich in zwei ">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw02-2026-01-11.html#gemini-3-in-gmail">Gemini 3 in Gmail</a>
+<span class="wt-score">9</span><span class="wt-desc">AI-Powered E-Mail-Produktivität für 3 Milliarden Nutzer</span>      </li>
+      <li data-cat="Design" data-score="7.0" data-text="ConceptViz Design KI-Diagramm-Generator für STEM-Bildung ConceptViz ist ein neuer, KI-gestützter Diagramm-Generator, der sich auf eine spezifische, aber wichtige Nische konzentriert: die Erstellung von wissenschaftlichen Diagrammen für den Bildungs- und Forschungssektor. Das Tool, das von einem unabhängigen Entwickler stammt, ermöglicht es Lehrern und Forschern, komplexe Konzepte durch einfache Texteingaben in klare, publikationsreife Visualisierungen z">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw02-2026-01-11.html#conceptviz">ConceptViz</a>
+<span class="wt-score">7</span><span class="wt-desc">KI-Diagramm-Generator für STEM-Bildung</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.0" data-text="ChatGPT Health Data / Wissen Personalisierte Gesundheitsberatung mit KI OpenAI hat mit ChatGPT Health einen dedizierten und sicheren Bereich innerhalb von ChatGPT für Gesundheits- und Wellness-Themen geschaffen. Das am 7. Januar 2026 vorgestellte Tool ermöglicht es Nutzern, persönliche Gesundheitsdaten wie elektronische Patientenakten (EHR) und Daten von Fitness-Apps zu verbinden, um kontextbezogene und personalisierte Antworten zu erhalten. Entwickelt in Zusammenarbe">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw02-2026-01-11.html#chatgpt-health">ChatGPT Health</a>
+<span class="wt-score">8</span><span class="wt-desc">Personalisierte Gesundheitsberatung mit KI</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="TubeYakker Recherche YouTube-Playlists in durchsuchbares Wissen verwandeln TubeYakker ist ein neues, unabhängiges Tool, das sich dem Problem der &#34;YouTube-Infobesity&#34; widmet, der Überflutung mit Videoinhalten, die oft mehr Zeit kosten, als sie an Wissen bringen. Das Tool verwandelt YouTube-Playlists in eine durchsuchbare Wissensdatenbank, indem es stundenlange Videos in prägnante 5-Minuten-Zusammenfassungen komprimiert und es Nutzern ermöglicht, per Chat gezielte Fragen a">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw02-2026-01-11.html#tubeyakker">TubeYakker</a>
+<span class="wt-score">8</span><span class="wt-desc">YouTube-Playlists in durchsuchbares Wissen verwandeln</span>      </li>
+      <li data-cat="Agents" data-score="7.0" data-text="Owl Browser Agents Undetectable Browser-Automatisierung Der Owl Browser ist ein hochspezialisiertes und technologisch beeindruckendes Werkzeug, das für die anspruchsvollsten Automatisierungsaufgaben entwickelt wurde. Es handelt sich um einen benutzerdefinierten Chromium-Browser, dessen Hauptzweck darin besteht, Bot-Erkennungssysteme vollständig zu umgehen. Mit einer behaupteten Erfolgsquote von 100 % bei der Umgehung von 16 verschiedenen Erkennungskate">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw02-2026-01-11.html#owl-browser">Owl Browser</a>
+<span class="wt-score">7</span><span class="wt-desc">Undetectable Browser-Automatisierung</span>      </li>
+    </ul>
+<p class="week-trend">Trend: KI-Integration in bestehende Produktivitätstools</p>  </li>
+  <li class="week-item" data-year="2026">
+    <div class="week-head">
+      <a href="archiv/2026/kw01-2026-01-04.html">KW 01/2026</a>
+      <span class="date">4. Januar 2026</span>
+<span class="avg">Ø 8,2/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Punchd Text Conversion-optimierte Headlines auf Knopfdruck Punchd ist ein AI-powered Headline Generator, der sich auf die Erstellung von psychologisch überzeugenden und conversion-starken Überschriften spezialisiert hat. Das Tool generiert aus einem einfachen Briefing 20 strategisch optimierte Headline-Varianten und richtet sich primär an Marketer, Copywriter und Content-Ersteller.
+
+Das herausragendste Merkmal von Punchd ist sein Preismodell: eine Einmalz">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2026/kw01-2026-01-04.html#punchd">Punchd</a>
+<span class="wt-score">8</span><span class="wt-desc">Conversion-optimierte Headlines auf Knopfdruck</span>      </li>
+      <li data-cat="Design" data-score="9.0" data-text="Nano Banana Design Revolutionäre Bildgenerierung mit Character Consistency Nano Banana ist ein AI Image Generator, der auf Googles neuem Gemini 2.5 Flash Image Modell basiert. Das Tool sorgt für Aufsehen durch seine Fähigkeit, konsistente Charaktere über mehrere Bilder hinweg zu generieren, ein lang erwartetes Feature in der AI-Bildgenerierung. Es kombiniert Text-to-Image-Generierung mit leistungsstarker Bildbearbeitung.
+
+Die Character Consistency ist das absolute Allein">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2026/kw01-2026-01-04.html#nano-banana">Nano Banana</a>
+<span class="wt-score">9</span><span class="wt-desc">Revolutionäre Bildgenerierung mit Character Consistency</span>      </li>
+      <li data-cat="Data / Wissen" data-score="7.0" data-text="Yonoo Data / Wissen Der Smart-Router für 8 Frontier-Modelle Yonoo positioniert sich als AI-powered Smart-Router und Multi-AI-Workspace. Die Plattform vereint acht führende KI-Modelle (ChatGPT, Claude, Gemini, Grok, Perplexity, DeepSeek, Llama) unter einer Oberfläche. Anstatt manuell zwischen den Diensten zu wechseln, routet Yonoo die Anfrage des Nutzers automatisch an das für die jeweilige Aufgabe am besten geeignete Modell.
+
+Das Konzept, die Fragmentierun">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2026/kw01-2026-01-04.html#yonoo">Yonoo</a>
+<span class="wt-score">7</span><span class="wt-desc">Der Smart-Router für 8 Frontier-Modelle</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="Quantera.ai Recherche Enterprise-Grade Finanzrecherche für Institutionen Quantera.ai ist eine hochspezialisierte KI-Plattform für die Automatisierung von Finanzrecherchen, die sich an Equity Professionals, Analysten und Asset Manager richtet. Das in Schweden ansässige Unternehmen verspricht, tagelange Due-Diligence-Prozesse auf Minuten zu reduzieren, indem es auf verifizierte, institutionelle Daten zugreift und diese mit leistungsstarken Analyse-Agenten kombiniert.
+
+Di">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2026/kw01-2026-01-04.html#quantera-ai">Quantera.ai</a>
+<span class="wt-score">8</span><span class="wt-desc">Enterprise-Grade Finanzrecherche für Institutionen</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="Mnexium AI Agents Das persistente Gedächtnis für KI-Agenten Mnexium AI löst eines der fundamentalsten Probleme bei der Entwicklung von KI-Agenten: den Kontextverlust. Die Plattform bietet eine Memory-Infrastruktur, die es KI-Anwendungen ermöglicht, sich Informationen über Sessions hinweg zu merken. Mit nur wenigen Zeilen Code können Entwickler ihren Agenten ein persistentes, strukturiertes und durchsuchbares Gedächtnis verleihen.
+
+Die Integration ist denkb">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2026/kw01-2026-01-04.html#mnexium-ai">Mnexium AI</a>
+<span class="wt-score">9</span><span class="wt-desc">Das persistente Gedächtnis für KI-Agenten</span>      </li>
+    </ul>
+<p class="week-trend">Trend: Spezialisierung, Infrastruktur &amp; User Experience</p>  </li>
+  <li class="week-item" data-year="2025">
+    <div class="week-head">
+      <a href="archiv/2025/kw52-2025-12-28.html">KW 52/2025</a>
+      <span class="date">28. Dezember 2025</span>
+<span class="avg">Ø 8/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Sequenzy Text &#34;Cursor&#34; für Email-Marketing AI-native Email-Marketing-Plattform für SaaS-Gründer. Erstellt automatisierte Email-Sequenzen in Sekunden statt Stunden. Kombiniert AI-Template-Generierung, automatische Sequenz-Erstellung und Developer-First API mit tiefer Stripe-Integration.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2025/kw52-2025-12-28.html#sequenzy">Sequenzy</a>
+<span class="wt-score">8</span><span class="wt-desc">&#34;Cursor&#34; für Email-Marketing</span>      </li>
+      <li data-cat="Design" data-score="9.0" data-text="Reve AI Design Die Revolution der Bildbearbeitung AI-native Plattform für Bildgenerierung und -bearbeitung mit bahnbrechender &#34;Layout Representation&#34; -Technologie. Dekomponiert Bilder in code-ähnliche Zwischendarstellung für pixel-genaue Kontrolle. Vereint Image Generator, Drag-and-Drop Object-Editor, AI-Assistent und Developer API.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2025/kw52-2025-12-28.html#reve-ai">Reve AI</a>
+<span class="wt-score">9</span><span class="wt-desc">Die Revolution der Bildbearbeitung</span>      </li>
+      <li data-cat="Data / Wissen" data-score="7.0" data-text="Scanned.to Data / Wissen OCR mit perfektem Layout AI-OCR-Service, der über Text-Extraktion hinausgeht: Rekonstruiert das gesamte Dokument mit identischem Layout als editierbare Word/Text-Datei. Unterstützt gedruckten Text, Handschrift und Übersetzung in 50+ Sprachen. Erst 2 Tage alt (26.12.2025)!">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2025/kw52-2025-12-28.html#scanned-to">Scanned.to</a>
+<span class="wt-score">7</span><span class="wt-desc">OCR mit perfektem Layout</span>      </li>
+      <li data-cat="Recherche" data-score="8.0" data-text="FireCrawl /agent Recherche Web Scraping ohne URLs &#34;Magic API&#34; die das Web durchsucht, navigiert und Daten von komplexesten Websites sammelt - ohne spezifische URLs. Nutzer beschreiben einfach, welche Daten sie benötigen, und der Agent findet sie autonom. Evolution von /extract mit optionalen URLs.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2025/kw52-2025-12-28.html#firecrawl-agent">FireCrawl /agent</a>
+<span class="wt-score">8</span><span class="wt-desc">Web Scraping ohne URLs</span>      </li>
+      <li data-cat="Agents" data-score="8.0" data-text="Macroscope Agents Der autonome Code-Reviewer AI-powered Code-Review-Plattform mit Abstract Syntax Trees (ASTs) für tiefes kontextuelles Verständnis. Detektiert Bugs, schlägt Fixes vor und kann autonom Fixes implementieren (mit Approval). Lernt kontinuierlich von Team-Feedback und Issue Trackern.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2025/kw52-2025-12-28.html#macroscope">Macroscope</a>
+<span class="wt-score">8</span><span class="wt-desc">Der autonome Code-Reviewer</span>      </li>
+    </ul>
+  </li>
+  <li class="week-item" data-year="2025">
+    <div class="week-head">
+      <a href="archiv/2025/kw51-2025-12-21.html">KW 51/2025</a>
+      <span class="date">21. Dezember 2025</span>
+<span class="avg">Ø 8,2/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="8.0" data-text="Tonemark Text Authentische KI-Texte in Ihrem persönlichen Stil Tonemark löst eines der grössten Probleme von KI-generierten Inhalten: Sie klingen oft generisch und unpersönlich. Dieser KI-Schreibassistent lernt Ihren individuellen Schreibstil und erstellt authentische Social-Media-Inhalte, die klingen, als kämen sie direkt von Ihnen.
+
+Im Gegensatz zu ChatGPT, das auf allgemeinen Daten trainiert ist, nutzt Tonemark zwei innovative Ansätze:
+
+• Style Learning: S">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2025/kw51-2025-12-21.html#tonemark">Tonemark</a>
+<span class="wt-score">8</span><span class="wt-desc">Authentische KI-Texte in Ihrem persönlichen Stil</span>      </li>
+      <li data-cat="Design" data-score="7.0" data-text="Reve AI Design Layout Representation für präzise Bildbearbeitung Reve AI verspricht einen Paradigmenwechsel in der KI-gestützten Bildbearbeitung. Während Tools wie Midjourney auf reinen Text-Prompts basieren und oft unvorhersehbare Ergebnisse liefern, führt Reve AI eine &#34;Layout Representation&#34; ein, eine interne, code-ähnliche visuelle Sprache, die präzise Kontrolle über die Bildkomposition ermöglicht.
+
+Die Kerninnovation von Reve AI ist die Fähigkeit, Bilder in">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2025/kw51-2025-12-21.html#reve-ai">Reve AI</a>
+<span class="wt-score">7</span><span class="wt-desc">Layout Representation für präzise Bildbearbeitung</span>      </li>
+      <li data-cat="Data / Wissen" data-score="8.0" data-text="DocsRouter Data / Wissen Unified API für 100+ OCR-Modelle Die Verarbeitung von Dokumenten mittels OCR und Vision-LLMs ist oft komplex und teuer, da jeder Anbieter (Google, OpenAI, Anthropic) eine eigene API hat. DocsRouter löst dieses Problem, indem es als einheitliches API-Gateway fungiert und Zugriff auf über 100 Vision-Modelle über einen einzigen API-Schlüssel ermöglicht.
+
+DocsRouter ist ein &#34;OpenRouter für OCR&#34;. Anstatt für jeden Dienst eine eigene I">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2025/kw51-2025-12-21.html#docsrouter">DocsRouter</a>
+<span class="wt-score">8</span><span class="wt-desc">Unified API für 100+ OCR-Modelle</span>      </li>
+      <li data-cat="Recherche" data-score="9.0" data-text="SiteSignal Recherche AI Search Visibility &amp; AEO-Monitoring Mit dem Aufstieg von ChatGPT, Perplexity und Google AI Overviews verlagert sich die Online-Suche. SiteSignal ist das erste Tool, das sich auf die Messung und Optimierung der Sichtbarkeit von Marken in diesen neuen &#34;Answer Engines&#34; spezialisiert hat.
+
+SiteSignal überwacht kontinuierlich, wie Ihre Marke und Ihre Wettbewerber in den Antworten von KI-Suchmaschinen auf relevante Prompts erscheinen. Das">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2025/kw51-2025-12-21.html#sitesignal">SiteSignal</a>
+<span class="wt-score">9</span><span class="wt-desc">AI Search Visibility &amp; AEO-Monitoring</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="Incredible.one Agents Autonome Agenten für Deep Work mit Agent MAX Incredible.one repräsentiert die nächste Stufe der Workflow-Automatisierung. Während Tools wie Zapier auf starren &#34;Wenn-Dann-Regeln&#34; basieren, setzt Incredible.one auf autonome KI-Agenten, die komplexe, mehrstufige Aufgaben selbstständig planen und ausführen. Angetrieben wird die Plattform von der &#34;Agent MAX&#34; Engine.
+
+Der Ansatz ist radikal einfach: Sie beschreiben in natürlicher Sprache, was geta">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2025/kw51-2025-12-21.html#incredible-one">Incredible.one</a>
+<span class="wt-score">9</span><span class="wt-desc">Autonome Agenten für Deep Work mit Agent MAX</span>      </li>
+    </ul>
+  </li>
+  <li class="week-item" data-year="2025">
+    <div class="week-head">
+      <a href="archiv/2025/kw49-2025-12-07.html">KW 49/2025</a>
+      <span class="date">7. Dezember 2025</span>
+<span class="avg">Ø 8,4/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="9.0" data-text="Proofly Text On-Device AI Proofreader Erste wirklich private AI-Schreibhilfe. 100% On-Device-Verarbeitung mit Chrome&#39;s Gemini Nano. Keine Cloud, perfekte DSGVO-Konformität, Open Source (MIT-Lizenz).">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2025/kw49-2025-12-07.html#proofly">Proofly</a>
+<span class="wt-score">9</span><span class="wt-desc">On-Device AI Proofreader</span>      </li>
+      <li data-cat="Design" data-score="8.0" data-text="Bloom Design AI Brand Asset Generator Scannt Website, extrahiert Markenelemente (Farben, Typografie, Logos) und generiert automatisch konsistente Brand Assets. &#34;Living brand system&#34; für Startups ohne Designer.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2025/kw49-2025-12-07.html#bloom">Bloom</a>
+<span class="wt-score">8</span><span class="wt-desc">AI Brand Asset Generator</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9.0" data-text="Nume Data / Wissen AI CFO für Startups Weltweit erster AI CFO. EU-basiert (Dänemark), DSGVO-konform, 24/7 proaktives Monitoring. 10x günstiger als traditionelle CFOs. Automatische Board-Reports und Cashflow-Analysen.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2025/kw49-2025-12-07.html#nume">Nume</a>
+<span class="wt-score">9</span><span class="wt-desc">AI CFO für Startups</span>      </li>
+      <li data-cat="Recherche" data-score="9.0" data-text="Exa Recherche AI Search Engine für Agents Schnellste Search API (&lt;1s), semantische Suche statt Keywords. Eigener Search Index, Benchmark-Leader (übertrifft Perplexity, Brave). Genutzt von Notion, Vercel, Databricks.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2025/kw49-2025-12-07.html#exa">Exa</a>
+<span class="wt-score">9</span><span class="wt-desc">AI Search Engine für Agents</span>      </li>
+      <li data-cat="Agents" data-score="7.0" data-text="Notis Agents Autonomous AI Agent Arbeitet in WhatsApp/Telegram/iMessage. Voice-First Delegation, erledigt komplette Workflows autonom. 800+ App-Integrationen, Notion &#34;Second Brain System&#34;.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2025/kw49-2025-12-07.html#notis">Notis</a>
+<span class="wt-score">7</span><span class="wt-desc">Autonomous AI Agent</span>      </li>
+    </ul>
+  </li>
+  <li class="week-item" data-year="2025">
+    <div class="week-head">
+      <a href="archiv/2025/kw48-2025-12-01.html">KW 48/2025</a>
+      <span class="date">1. Dezember 2025</span>
+<span class="avg">Ø 8,6/10</span>    </div>
+    <ul class="week-tools">
+      <li data-cat="Text" data-score="7.0" data-text="Contenov Text SEO-Content-Brief-Automatisierung Automatische Erstellung umfassender SEO-Blog-Briefs durch KI-Analyse der Top 10-20 Google-Suchergebnisse. Reduziert manuelle Wettbewerbsanalyse von Stunden auf Minuten.">
+        <span class="wt-cat">Text</span>
+        <a class="wt-name" href="archiv/2025/kw48-2025-12-01.html#contenov">Contenov</a>
+<span class="wt-score">7</span><span class="wt-desc">SEO-Content-Brief-Automatisierung</span>      </li>
+      <li data-cat="Design" data-score="8.0" data-text="Alai Design AI-Präsentationstool mit 4 Design-Optionen Y-Combinator-gestütztes Tool, das vier verschiedene Design-Optionen pro Folie bietet und den Kontext des gesamten Decks versteht. Ideal für Tech-Profis und Gründer.">
+        <span class="wt-cat">Design</span>
+        <a class="wt-name" href="archiv/2025/kw48-2025-12-01.html#alai">Alai</a>
+<span class="wt-score">8</span><span class="wt-desc">AI-Präsentationstool mit 4 Design-Optionen</span>      </li>
+      <li data-cat="Data / Wissen" data-score="9.0" data-text="TwelveLabs Marengo 3.0 Data / Wissen Enterprise Video-Understanding Leistungsstärkstes Embedding-Modell für Video-Verständnis. Analysiert visuelle Frames, zeitliche Beziehungen, Sprache und Sound für &#34;Any-to-Any&#34;-Suchen.">
+        <span class="wt-cat">Data / Wissen</span>
+        <a class="wt-name" href="archiv/2025/kw48-2025-12-01.html#twelvelabs-marengo-3-0">TwelveLabs Marengo 3.0</a>
+<span class="wt-score">9</span><span class="wt-desc">Enterprise Video-Understanding</span>      </li>
+      <li data-cat="Recherche" data-score="10.0" data-text="DeepSeek v3.2 Recherche Open-Source Reasoning AI Game-Changer: 100% kostenloser Web-Zugang, extrem günstige API und vollständig Open Source (MIT-Lizenz). Reasoning-First Design mit transparentem &#34;Denken&#34;.">
+        <span class="wt-cat">Recherche</span>
+        <a class="wt-name" href="archiv/2025/kw48-2025-12-01.html#deepseek-v3-2">DeepSeek v3.2</a>
+<span class="wt-score">10</span><span class="wt-desc">Open-Source Reasoning AI</span>      </li>
+      <li data-cat="Agents" data-score="9.0" data-text="Taskade Genesis Agents &#34;One Prompt = One App&#34; Plattform Revolutionäre No-Code-Plattform, die aus einem Prompt vollständige &#34;lebende&#34; Anwendungen erstellt. Unbegrenzte AI Agents &amp; Automationen ab $19/Monat.">
+        <span class="wt-cat">Agents</span>
+        <a class="wt-name" href="archiv/2025/kw48-2025-12-01.html#taskade-genesis">Taskade Genesis</a>
+<span class="wt-score">9</span><span class="wt-desc">&#34;One Prompt = One App&#34; Plattform</span>      </li>
+    </ul>
+  </li>
+</ul>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></p>
+        <p class="foot-line">Jeden Sonntag fünf KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz.</p>
+        <p class="foot-small">Eine Publikation von <a href="https://fragroger.ai" rel="noopener">Roger Basler de Roca</a>. Weitere wöchentliche Einordnung: <a href="https://news.fragroger.ai" rel="noopener">KI Power Update</a>.</p>
+      </div>
+      <div class="foot-disclaimer">
+        <p class="foot-title">Hinweis</p>
+        <p>Recherche, Auswahl und Texte entstehen mit Unterstützung von KI-Systemen und werden automatisiert veröffentlicht. Preise, Funktionen und Datenschutzangaben ändern sich laufend; massgebend sind die aktuellen Unterlagen der Anbieter. Die Analysen sind keine Rechts- oder Kaufberatung.</p>
+      </div>
     </div>
-    
-    <div class="archive-filters">
-        <select class="filter-select" id="yearFilter">
-            <option value="all">Alle Jahre</option>
-            <option value="2025">2025</option>
-            <option value="2026" selected>2026</option>
-        </select>
-        
-        <select class="filter-select" id="categoryFilter">
-            <option value="all">Alle Kategorien</option>
-            <option value="Text">📝 Text</option>
-            <option value="Design">🎨 Design</option>
-            <option value="Data">📊 Data</option>
-            <option value="Recherche">🔍 Recherche</option>
-            <option value="Agents">🤖 Agents</option>
-        </select>
-        
-        <input type="text" class="filter-select" id="searchInput" placeholder="🔍 Tool suchen..." style="min-width: 250px;">
+    <div class="foot-bottom">
+      <nav class="foot-nav" aria-label="Weitere Seiten">
+        <a href="archiv.html">Archiv</a>
+        <a href="methode.html">Methode</a>
+        <a href="feed.xml">RSS</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+      <p>&copy; 2026 Roger Basler de Roca</p>
     </div>
-    
-    <div class="archive-timeline" id="archiveTimeline">
-        <!-- Timeline items will be loaded here -->
-    </div>
-    
-    <div class="no-results" id="noResults" style="display: none;">
-        Keine Analysen gefunden. Versuche andere Filter.
-    </div>
-    
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>KI-Tool-Analysen</h3>
-                <p>Wöchentliche Deep-Dive-Reviews der interessantesten KI-Tools mit detaillierten Analysen zu Pricing, Features und Datenschutz.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Updates</h3>
-                <p>Neue Analysen jeden Sonntag um 6:00 Uhr</p>
-                <div class="footer-badge">AUTO-UPDATE</div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>© 2025 KI-Tool-Analysen | Powered by Manus AI</p>
-            <p class="footer-tech">CYBERPUNK DESIGN • GITHUB PAGES • AUTOMATED WEEKLY</p>
-        </div>
-    </footer>
-    
-    <script>
-        // Load archive data
-        async function loadArchive() {
-            try {
-                const response = await fetch('archiv/data/archive-index.json?v=' + Date.now());
-                const data = await response.json();
-                
-                renderArchive(data.analysen);
-                updateStats(data.analysen);
-                setupFilters(data.analysen);
-            } catch (error) {
-                console.error('Error loading archive:', error);
-                document.getElementById('archiveTimeline').innerHTML = '<p class="no-results">Fehler beim Laden des Archivs.</p>';
-            }
+  </div>
+</footer>
+<script>
+(function () {
+  var q = document.getElementById('q'), year = document.getElementById('year'), minscore = document.getElementById('minscore');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var weeks = Array.prototype.slice.call(document.querySelectorAll('.week-item'));
+  var count = document.getElementById('count');
+  var cat = '';
+  function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  function apply() {
+    var terms = norm(q.value).split(/\s+/).filter(Boolean), y = year.value, min = parseFloat(minscore.value) || 0;
+    var nTools = 0, nWeeks = 0;
+    weeks.forEach(function (w) {
+      var visible = 0;
+      var yearOk = !y || w.getAttribute('data-year') === y;
+      w.querySelectorAll('.week-tools li').forEach(function (li) {
+        var ok = yearOk && (!cat || li.getAttribute('data-cat') === cat) && (parseFloat(li.getAttribute('data-score')) || 0) >= min;
+        if (ok && terms.length) {
+          var hay = norm(li.getAttribute('data-text'));
+          ok = terms.every(function (t) { return hay.indexOf(t) !== -1; });
         }
-        
-        function renderArchive(analysen) {
-            const timeline = document.getElementById('archiveTimeline');
-            timeline.innerHTML = '';
-            
-            if (analysen.length === 0) {
-                document.getElementById('noResults').style.display = 'block';
-                return;
-            }
-            
-            document.getElementById('noResults').style.display = 'none';
-            
-            // Sort by date (newest first)
-            analysen.sort((a, b) => new Date(b.datum) - new Date(a.datum));
-            
-            analysen.forEach(analyse => {
-                const item = document.createElement('div');
-                item.className = 'timeline-item';
-                item.dataset.year = analyse.jahr;
-                item.dataset.categories = analyse.tools.map(t => t.kategorie).join(',');
-                item.dataset.tools = analyse.tools.map(t => t.name.toLowerCase()).join(',');
-                
-                const toolsHTML = analyse.tools.map(tool => `
-                    <div class="timeline-tool">
-                        <div class="timeline-tool-name">${tool.name}</div>
-                        <div class="timeline-tool-category">${getCategoryIcon(tool.kategorie)} ${tool.kategorie}</div>
-                        <div class="timeline-tool-rating">
-                            <span class="rating-stars">${'⭐'.repeat(Math.round(tool.bewertung / 2))}</span>
-                            <span>${tool.bewertung}/10</span>
-                        </div>
-                    </div>
-                `).join('');
-                
-                item.innerHTML = `
-                    <div class="timeline-header">
-                        <div class="timeline-date">${formatDate(analyse.datum)}</div>
-                        <div class="timeline-kw">KW ${analyse.kw}</div>
-                    </div>
-                    
-                    <div class="timeline-highlights">
-                        ${analyse.highlights}
-                    </div>
-                    
-                    <div class="timeline-tools">
-                        ${toolsHTML}
-                    </div>
-                    
-                    <a href="${analyse.url}" class="timeline-link">Vollständige Analyse anzeigen →</a>
-                `;
-                
-                timeline.appendChild(item);
-            });
-        }
-        
-        function updateStats(analysen) {
-            const totalWeeks = analysen.length;
-            const totalTools = analysen.reduce((sum, a) => sum + a.tools.length, 0);
-            const avgRating = analysen.reduce((sum, a) => {
-                const weekAvg = a.tools.reduce((s, t) => s + t.bewertung, 0) / a.tools.length;
-                return sum + weekAvg;
-            }, 0) / totalWeeks;
-            
-            document.getElementById('totalWeeks').textContent = totalWeeks;
-            document.getElementById('totalTools').textContent = totalTools;
-            document.getElementById('avgRating').textContent = avgRating.toFixed(1);
-        }
-        
-        function setupFilters(analysen) {
-            const yearFilter = document.getElementById('yearFilter');
-            const categoryFilter = document.getElementById('categoryFilter');
-            const searchInput = document.getElementById('searchInput');
-            
-            function applyFilters() {
-                const year = yearFilter.value;
-                const category = categoryFilter.value;
-                const search = searchInput.value.toLowerCase();
-                
-                const items = document.querySelectorAll('.timeline-item');
-                let visibleCount = 0;
-                
-                items.forEach(item => {
-                    const matchYear = year === 'all' || item.dataset.year === year;
-                    const matchCategory = category === 'all' || item.dataset.categories.includes(category);
-                    const matchSearch = search === '' || item.dataset.tools.includes(search);
-                    
-                    if (matchYear && matchCategory && matchSearch) {
-                        item.style.display = 'block';
-                        visibleCount++;
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-                
-                document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
-            }
-            
-            yearFilter.addEventListener('change', applyFilters);
-            categoryFilter.addEventListener('change', applyFilters);
-            searchInput.addEventListener('input', applyFilters);
-        }
-        
-        function getCategoryIcon(category) {
-            const icons = {
-                'Text': '📝',
-                'Design': '🎨',
-                'Data': '📊',
-                'Data / Wissen': '📊',
-                'Recherche': '🔍',
-                'Agents': '🤖'
-            };
-            return icons[category] || '📌';
-        }
-        
-        function formatDate(dateStr) {
-            const date = new Date(dateStr);
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            return date.toLocaleDateString('de-DE', options);
-        }
-        
-        // Load archive on page load
-        loadArchive();
-    </script>
+        li.hidden = !ok;
+        if (ok) visible++;
+      });
+      w.hidden = visible === 0;
+      if (visible) { nWeeks++; nTools += visible; }
+    });
+    var filtered = terms.length || cat || y || min;
+    count.textContent = filtered ? nTools + ' Tools in ' + nWeeks + ' Wochen' : weeks.length + ' Wochen im Archiv';
+  }
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      cat = c.getAttribute('data-cat');
+      chips.forEach(function (x) { x.setAttribute('aria-pressed', x === c ? 'true' : 'false'); });
+      apply();
+    });
+  });
+  q.addEventListener('input', apply); year.addEventListener('change', apply); minscore.addEventListener('change', apply);
+  var params = new URLSearchParams(location.search);
+  if (params.get('q')) q.value = params.get('q');
+  apply();
+})();
+</script>
 </body>
 </html>

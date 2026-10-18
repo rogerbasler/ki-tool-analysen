@@ -1,0 +1,166 @@
+{
+  "kw": 20,
+  "jahr": 2026,
+  "datum": "2026-05-17",
+  "zusammenfassung": "Die interessanteste Entwicklung dieser Woche ist nicht, dass KI-Tools mehr können, sondern dass sie Kontext und Ausführung verbinden. Shadow erledigt Meeting-Follow-ups während des Gesprächs, Kanwas organisiert Produktwissen für Menschen und Agenten, und Mindra baut daraus operative Agententeams. Aaavatar zeigt, dass Datenschutz auch bei Design-Tools ein echter Vorteil sein kann, wenn Verarbeitung local-first gedacht wird. AnySearch macht sichtbar, dass gute Agenten nicht nur bessere Modelle brauchen, sondern bessere Informationszugänge.",
+  "highlights": [
+    "Aaavatar und Shadow (8/10): Aaavatar setzt mit local-first Portraitbearbeitung einen starken Datenschutz-Massstab, Shadow verschiebt Meeting-KI von Notizen zu echter Ausführung.",
+    "Trend: Von isolierten Prompts zu kontextfähigen Arbeitssystemen: KI-Tools bewegen sich in Richtung Echtzeit-Ausführung, Teamwissen, agentische Recherche und operative Orchestrierung.",
+    "Paradigmenwechsel: Von All-in-One zu spezialisierten Lösungen"
+  ],
+  "trend": "Von isolierten Prompts zu kontextfähigen Arbeitssystemen: Echtzeit-Ausführung, Teamwissen, agentische Recherche und operative Orchestrierung.",
+  "tools": [
+    {
+      "name": "Shadow",
+      "kategorie": "Text",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Echtzeit-Assistent für Calls, Follow-ups und Meeting-To-dos",
+      "beschreibung": "Shadow ist ein Echtzeit-Assistent für Meetings und Sales-Calls. Das Tool positioniert sich nicht als weiterer Notizbot, sondern als System, das während des Gesprächs Aufgaben erkennt und erledigt. Die offizielle Website nennt Beispiele wie Dokumente erstellen, Daten abrufen, Follow-ups planen und sogar Slides bauen, während die Unterhaltung noch läuft. Product Hunt beschreibt Shadow als \"real-time AI wingman\" für High-Stakes-Calls und bestätigt Shadow 2.0 als #2 Product of the Day sowie #4 Product of the Week für den 6. Mai 2026.\n\n\"Shadow completes your to-dos before you finish the call.\" > Quelle: Shadow Website",
+      "nutzungsszenarien": [
+        "Sales-Calls: Shadow erkennt Zusagen, erstellt Follow-up-Entwürfe und kann CRM-Aktualisierungen vorbereiten.",
+        "Kundenmeetings: Recaps, nächste Schritte und Kalendereinladungen entstehen direkt aus dem Gespräch.",
+        "Gründer- und Investorencalls: Kritische Fragen, Faktenchecks und Gesprächsnotizen werden live unterstützt.",
+        "Interne Projektmeetings: Action Items werden während des Calls dokumentiert und anschlussfähig gemacht.",
+        "Mehrsprachige Teams: Shadow unterstützt laut Website über 60 Sprachen."
+      ],
+      "staerken": [
+        "Shadow trifft einen wunden Punkt: Meeting-Tools haben jahrelang Zusammenfassungen geliefert, aber die operative Arbeit blieb bei Menschen hängen. Der entscheidende Unterschied liegt in der Echtzeit-Ausführung. Wenn Shadow zuverlässig To-dos, Kalender, CRM und Dokumente bedient, reduziert es nicht nur Schreibarbeit, sondern auch Kontextverlust nach Meetings."
+      ],
+      "schwaechen": [
+        "Die grösste Schwäche ist die noch dünne öffentliche Transparenz bei Pricing und Infrastruktur. Für Unternehmen ist ausserdem relevant, dass Meeting-Transkripte und AI-generierte Inhalte verarbeitet werden. Ohne klaren Serverstandort, Subprozessorenliste und DPA-Prüfung bleibt Shadow für regulierte Branchen ein Tool mit Prüfbedarf."
+      ],
+      "pricing": "Die öffentliche Website bietet einen direkten Download der Mac-App und verweist in den FAQs auf eine Testmöglichkeit, zeigt aber keine vollständige Pricing-Seite mit Planvergleich. Futurepedia klassifiziert Shadow als Freemium. Für die Praxis bedeutet das: Es gibt offenbar einen niedrigen Einstieg, aber Budgetsicherheit für Teams ist erst nach direkter Prüfung im Produkt oder beim Anbieter möglich.\n\n• Test / Freemium: Nicht öffentlich exakt ausgewiesen\n\n• Bezahlpläne: Nicht öffentlich ausgewiesen",
+      "datenschutz": "Die Privacy Policy wurde am 30. März 2026 aktualisiert. Shadow sammelt Google-Account-Daten, Calendar Events mit read-only Zugriff, Meeting-Transkripte, AI-generierte Inhalte und anonyme Nutzungsdaten. Google User Data wird laut Policy nicht für Werbung, Verkauf an Dritte oder Training von AI-Modellen verwendet. Daten werden verschlüsselt gespeichert und per HTTPS übertragen. Eine Löschung kann per E-Mail verlangt werden und soll innerhalb von 30 Tagen erfolgen.\n\n• Serverstandort: Nicht öffentlich klar ausgewiesen.\n\n• DSGVO: Keine explizite DSGVO-Erklärung gefunden.\n\n• Training auf Nutzerdaten: Für Google User Data laut Policy ausgeschlossen.\n\n• Subprozessoren: Genannt, aber nicht im Detail aufgelistet.\n\n• Self-Hosting: Nicht gefunden.",
+      "einschaetzung": "Für Sales, Recruiting, Beratung und Gründerteams ist Shadow sehr interessant. Besonders dort, wo Gesprächsqualität und Anschlussgeschwindigkeit über Umsatz entscheiden, kann das Tool echten Hebel haben. Für Enterprise-Setups gilt: Erst Datenschutz und Integrationen prüfen, dann Pilot starten. Wildes Installieren im Vertrieb wäre wieder einmal die schnellste Route zur Schatten-IT. Der Name wäre dann wenigstens ehrlich.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Der Hebel liegt in Echtzeit-Ausführung: Action Items, Recaps und Follow-ups entstehen direkt im Gespräch, nicht erst danach."
+        }
+      ],
+      "url": "https://shadowlabs.ai"
+    },
+    {
+      "name": "Aaavatar",
+      "kategorie": "Design",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Local-first Mac-App für konsistente Team-Portraits",
+      "beschreibung": "Aaavatar ist eine macOS-App für konsistente Team-Portraits. Das Tool entfernt Hintergründe automatisch, erlaubt Brand-Farben oder eigene Hintergründe, retuschiert Portraits in einem Klick, richtet Gesichter aus und exportiert Bilder für LinkedIn, Slack, E-Mail und weitere Kanäle. Die App wird von Square One aus den Niederlanden veröffentlicht.",
+      "nutzungsszenarien": [
+        "Teamseite: Uneinheitliche Mitarbeitendenfotos werden in eine konsistente visuelle Sprache gebracht.",
+        "LinkedIn-Profile: Portraits lassen sich markenkonform und schnell für Social Profiles aufbereiten.",
+        "Pitch Decks: Gründer- und Teamfotos wirken professioneller, ohne Fotoshooting.",
+        "Onboarding: Neue Mitarbeitende können schnell in ein bestehendes Portraitsystem integriert werden.",
+        "Agentur- und Beratungsteams: Einheitlicher Auftritt über Website, Signaturen und Plattformen."
+      ],
+      "staerken": [
+        "Aaavatar löst ein sehr konkretes Problem: Corporate Portraits sind oft eine wilde Ausstellung persönlicher Lichtverhältnisse, Kamerawinkel und Hintergrundentscheidungen. Aaavatar standardisiert dieses Chaos schnell und ohne schwere Designprozesse. Was oft unterschätzt wird: Der local-first Ansatz reduziert Risiko, weil biometrisch sensible Bilddaten nicht automatisch an einen Headshot-Cloudanbieter gehen."
+      ],
+      "schwaechen": [
+        "Die App ist aktuell auf macOS beschränkt. Pricing ist nicht transparent, und der optionale Google-Drive-Scope ist technisch breit, auch wenn die Policy die Nutzung klar auf Avatar-Workspaces begrenzt. Für grössere Unternehmen fehlen sichtbare Admin-, Audit- und Rollout-Funktionen."
+      ],
+      "pricing": "Die Website zeigt einen direkten Mac-Download über GitHub und keine sichtbare Pricing-Seite. Futurepedia nennt Aaavatar als Freemium. Für die aktuelle Praxis ist relevant: Das Tool wirkt derzeit wie ein kostenloser oder sehr niedrigschwelliger Mac-Download. Ein verbindlicher Planvergleich wurde nicht gefunden.\n\n• Mac-App Download: Öffentlich ohne Preisbarriere sichtbar\n\n• Bezahlpläne: Nicht öffentlich ausgewiesen",
+      "datenschutz": "Aaavatar ist datenschutzseitig das sauberste Tool dieser Woche. Laut Privacy Policy ist die App local-first, betreibt kein Backend und sammelt keine Daten auf Servern von Square One. Portraits und Hintergründe bleiben lokal auf dem Mac, ausser Nutzer aktivieren freiwillig einen geteilten Workspace in Google Drive. In diesem Fall liegen Dateien im eigenen Google Drive der Nutzer und werden über Google APIs synchronisiert. OAuth-Tokens bleiben in der macOS Keychain.\n\n• Anbieterstandort: Square One, Niederlande.\n\n• Serverstandort: Kein eigenes Backend laut Policy.\n\n• DSGVO: Starke EU-Nähe durch Anbieterstandort und local-first Ansatz, aber keine explizite vollständige DSGVO-Zertifizierung.\n\n• Self-Hosting: Nicht nötig, da local-first, kein Backend.\n\n• Drittanbieter: Optional Google Drive, Sparkle-Update-Framework über GitHub.",
+      "einschaetzung": "Für kleine Teams, Agenturen, HR und Personal Brands ist Aaavatar sehr empfehlenswert. Es ist kein \"AI Magic\"-Spielzeug, sondern ein konkretes Design-Werkzeug mit guter Datenschutzarchitektur. Besonders für europäische Teams ist das ein Vorteil. Die Konsequenz daraus ist: Für standardisierte Teamkommunikation kann Aaavatar mehr bringen als der nächste grosse generative Bildgenerator mit dramatischem Namen und Datenschutznebelmaschine.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Sehr konkretes Designproblem, sehr konkrete Lösung: einheitliche Portraits ohne Fotoshooting und ohne komplexen Creative-Prozess."
+        }
+      ],
+      "url": "https://aaavatar.nl"
+    },
+    {
+      "name": "Kanwas",
+      "kategorie": "Data / Wissen",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Gemeinsamer Kontext-Workspace für Produktteams und Agenten",
+      "beschreibung": "Kanwas ist ein gemeinsamer Kontext-Workspace für Teams und Agenten. Die Plattform bündelt Produktwissen, Research, Entscheidungen und Daten in einem bearbeitbaren Arbeitsraum, der sowohl Menschen als auch AI-Agenten zugänglich ist. Die Website positioniert Kanwas als Alternative zum Zerfasern von Kontext über Claude-Chats, lokale Ordner, Obsidian, VS Code, Git und Docs.\n\nProduct Hunt beschreibt Kanwas als \"open-source brain for your team\", nennt 1.7K Follower, ein Free-Label, ein 5.0 Rating bei 1 Review, #1 Day Rank und 506 Punkte. Das GitHub-Repository wurde am 22. April 2026 erstellt, hatte zum Prüfzeitpunkt 655 Stars und wurde am 16. Mai 2026 aktualisiert.",
+      "nutzungsszenarien": [
+        "Produktstrategie: Entscheidungen, Annahmen, PRDs und Research bleiben verbunden statt verstreut.",
+        "Wettbewerbsanalyse: Agenten können auf historisches Research und neue Inputs zugreifen.",
+        "Roadmap-Arbeit: Trade-offs und technische Constraints werden nachvollziehbarer.",
+        "GTM-Planung: Positionierung, Kundensegmente und Marktdaten können in einem Kontextgraphen verdichtet werden.",
+        "Teamübergaben: Wissen bleibt im Workspace und verschwindet nicht in Chatverläufen."
+      ],
+      "staerken": [
+        "Kanwas greift ein Kernproblem moderner KI-Arbeit auf: Modelle können vieles erzeugen, aber sie scheitern oft an organisiertem Kontext. Der Workspace-Ansatz ist stark, weil produktbezogene Entscheidungen, Research und Trade-offs nicht in Chatfenstern sterben. Für Produktteams ist das relevant, weil gute Strategie selten aus einem Prompt entsteht, sondern aus akkumuliertem Kontext plus Urteilsvermögen."
+      ],
+      "schwaechen": [
+        "Die Schwäche liegt in der Reife und Transparenz. Datenschutz, Hosting, Lizenz und Pricing sind noch nicht ausreichend klar. Für Teams mit sensiblen Produkt-, Kunden- oder Marktdaten ist das kein Detail, sondern die Eintrittskarte. Ohne klare Governance wird aus dem \"Team Brain\" schnell eine sehr hübsche Blackbox für interne Strategieinformationen."
+      ],
+      "pricing": "Product Hunt markiert Kanwas als Free. Futurepedia nennt Freemium. Die Homepage zeigt keinen vollständigen Planvergleich. Für Teams ist deshalb unklar, welche Limits, Hostingmodelle oder Enterprise-Funktionen später kostenpflichtig werden.\n\n• Free: Auf Product Hunt sichtbar\n\n• Freemium / spätere Pläne: Nicht öffentlich klar ausgewiesen",
+      "datenschutz": "Auf der Homepage war keine Privacy Policy prominent auffindbar. Das GitHub-Repository ist öffentlich, die Lizenz wird von GitHub jedoch als \"Other\" angezeigt. Das ist wichtig: \"Open-source brain\" im Marketing heisst nicht automatisch klassische Open-Source-Lizenz mit klaren Nutzungsrechten. Serverstandort, DPA, Subprozessoren und DSGVO-Status konnten öffentlich nicht vollständig verifiziert werden.\n\n• Serverstandort: Nicht gefunden.\n\n• DSGVO: Nicht verifiziert.\n\n• Self-Hosting: Durch GitHub-Nähe möglich zu prüfen, aber nicht sauber bestätigt.\n\n• Lizenz: GitHub zeigt \"Other\", daher Vorsicht bei Open-Source-Interpretation.\n\n• Datenrisiko: Hochrelevanter Produktkontext, deshalb Governance nötig.",
+      "einschaetzung": "Kanwas ist ein sehr spannendes Werkzeug für Produktteams, Founder und kleine Growth-Teams. Es eignet sich besonders für Teams, die bereits intensiv mit AI-Agenten, Research und Produktdokumentation arbeiten. Für Enterprise-Kontexte würde ich Kanwas zuerst mit nicht-sensiblen Projektdaten testen und parallel Datenschutz, Lizenz und Exportfähigkeit prüfen.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Stark für Produktteams, weil Kontext nicht in Chats, Docs und lokalen Ordnern zerfällt, sondern für Menschen und Agenten nutzbar bleibt."
+        }
+      ],
+      "url": "https://kanwas.ai"
+    },
+    {
+      "name": "AnySearch",
+      "kategorie": "Recherche",
+      "bewertung": 7.0,
+      "kurzbeschreibung": "Search-API-Infrastruktur für KI-Agenten und vertikale Datenquellen",
+      "beschreibung": "AnySearch ist eine Suchinfrastruktur für KI-Agenten und Enterprise-Systeme. Laut Dokumentation stellt AnySearch eine Search API unter `https://api.anysearch.com` bereit und unterstützt sowohl anonyme Requests mit täglichem Free-Kontingent als auch authentifizierte Requests mit API Key und bezahltem Kontingent. Eine unabhängige Quelle beschreibt AnySearch als einheitliche API für vertikale und authentifizierte Datenquellen, darunter Finance, Legal, akademische Repositories, Code-Hosts und strukturierte APIs.",
+      "nutzungsszenarien": [
+        "Agenten-Recherche: AI-Agenten erhalten strukturiertere Suchergebnisse statt nur Public-Web-Snippets.",
+        "Entwicklerprodukte: Eine API kann verschiedene Such- und Datenquellen abstrahieren.",
+        "Fachrecherche: Legal-, Finance- oder Academic-Quellen lassen sich perspektivisch integrieren.",
+        "Knowledge-Workflows: Rechercheergebnisse können in Agentenketten oder interne Tools eingebunden werden.",
+        "Prototyping: Das anonyme Free-Kontingent erleichtert schnelle Tests ohne sofortige API-Key-Pflicht."
+      ],
+      "staerken": [
+        "AnySearch adressiert ein unterschätztes Infrastrukturproblem: Agenten sind nur so gut wie ihre Informationszugänge. Klassische Websuche liefert oft unvollständige oder schlecht strukturierte Resultate. Eine API, die Quellen aggregiert, dedupliziert und in agententaugliche Form bringt, kann Recherche-Workflows massiv verbessern."
+      ],
+      "schwaechen": [
+        "Der Anspruch ist gross, die öffentliche Transparenz noch begrenzt. Pricing, Datenschutzdetails und reale Provider-Abdeckung müssen vor produktiver Nutzung geprüft werden. Auch Benchmarks aus Anbieterumfeld sind nützlich, aber kein Ersatz für eigene Tests mit relevanten Suchaufgaben."
+      ],
+      "pricing": "Die Dokumentation bestätigt zwei Modi: anonym ohne Authorization Header, limitiert pro Client-IP und gegen ein tägliches Free-Kontingent, sowie authentifiziert mit Bearer API Key, bezahltem Kontingent und höheren Concurrency Limits. Eine externe Quelle nennt 1'000 kostenlose API-Calls pro Tag. Ein vollständiger öffentlicher Planvergleich wurde nicht gefunden.\n\n• Anonymous Free Quota: Laut externer Quelle 1'000 API-Calls pro Tag\n\n• Authenticated / Paid Quota: Preis nicht öffentlich klar ausgewiesen",
+      "datenschutz": "Die externe Quelle verweist auf Privacy-Claims wie \"no tracking, no telemetry, no logging\". Die Dokumentation verlinkt Privacy, Terms und Cookie Policy, aber im extrahierten Inhalt waren keine vollständigen Datenschutzdetails sichtbar. Serverstandort, Subprozessoren, DSGVO-Status und Löschkonzept sind daher nicht ausreichend verifiziert.\n\n• Serverstandort: Nicht verifiziert.\n\n• DSGVO: Nicht verifiziert.\n\n• Logging: Claim: no tracking, no telemetry, no logging.\n\n• Self-Hosting: Nicht gefunden.\n\n• Hauptrisiko: Suchanfragen können sensible Absichten, Quellen und Geschäftskontexte enthalten.",
+      "einschaetzung": "AnySearch ist für Entwickler, AI-Produktteams und Research-Agenten interessant. Für klassische Endnutzer ist es eher Infrastruktur als fertiges Tool. Für Roger-relevante Workflows liegt der Nutzen dort, wo eigene Agenten bessere Quellenarbeit leisten sollen. Die Konsequenz daraus ist: AnySearch ist kein hübsches Interface, sondern eher ein Rohrsystem. Und bei Rohrsystemen merkt man erst beim Wasserschaden, ob jemand Governance ernst genommen hat.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Relevant, weil Agenten bessere Informationszugänge brauchen. Eine einheitliche API kann Rechercheketten stabiler und reproduzierbarer machen."
+        }
+      ],
+      "url": "https://www.anysearch.com/home"
+    },
+    {
+      "name": "Mindra",
+      "kategorie": "Agents",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Multi-Agent-Orchestrierung für operative Workflows",
+      "beschreibung": "Mindra ist ein Orchestrator für spezialisierte Agententeams. Nutzer beschreiben eine Aufgabe in natürlicher Sprache, Mindra erstellt daraus ein Team spezialisierter Agenten, das rund um die Uhr arbeitet, intern kommuniziert und Aktionen über bestehende Tools ausführt. Die Website nennt Use Cases in Performance Marketing, Supply Chain Ops, GTM / Sales Ops und Product Intelligence. Product Hunt bestätigt #1 Day Rank und 369 Punkte.",
+      "nutzungsszenarien": [
+        "Performance Marketing: Google- und Meta-Ads-Ausgaben auditieren und verschwendetes Budget markieren.",
+        "Support Ops: Eingehende Support-E-Mails nach Dringlichkeit triagieren und routen.",
+        "Sales Ops: Inbound-Leads mit Unternehmenskontext anreichern, bevor sie in den Vertrieb gehen.",
+        "Supply Chain: Operative Signale überwachen und Workflows anstossen.",
+        "Product Intelligence: Markt- und Produktinformationen in wiederkehrende Agentenprozesse einbinden."
+      ],
+      "staerken": [
+        "Mindra macht den nächsten logischen Schritt: Weg vom einzelnen Agenten, hin zu koordinierten Agententeams. Der Ansatz ist plausibel, weil operative Arbeit selten eindimensional ist. Ein Marketing-Audit braucht Datenzugriff, Analyse, Priorisierung, Kommunikation und manchmal Ausführung. Genau hier kann Multi-Agent-Orchestrierung sinnvoll sein."
+      ],
+      "schwaechen": [
+        "Das Tool ist eindeutig anspruchsvoller als ein klassisches SaaS-Produkt. Je mehr ein Agent ausführt, desto wichtiger werden Rechte, Audit Logs, Freigaben, Rollbacks und Verantwortlichkeiten. Die Privacy Policy ist vergleichsweise kurz und lässt Fragen zu Subprozessoren, Datenresidenz und internationalen Transfers offen. Ausgerechnet bei Agenten ist das kein Nebenschauplatz, sondern Betriebshaftung mit schöner UI."
+      ],
+      "pricing": "Mindra setzt sichtbar auf Book a Demo und Contact-for-pricing. Eine öffentliche Preisliste oder ein Free Tier wurden nicht gefunden. Product Hunt markiert \"Payment Required\".\n\n• Demo / Sales-led: Nicht öffentlich\n\n• Free Tier: Nicht gefunden\n\n• Enterprise: Vermutlich Custom Pricing",
+      "datenschutz": "Die Privacy Policy wurde am 14. Mai 2026 aktualisiert. Mindra sammelt Account-Informationen, Zahlungsinformationen über Drittanbieter, API-Nutzungsdaten, Agent-Konfigurationen, Transaction Logs und Performance Metrics. Daten werden laut Policy in transit und at rest verschlüsselt, mit Access Controls und regelmässigen Security Audits geschützt. Die Website zeigt GDPR-Compliant-, ZDR-Enterprise-Security- und SOC-2-Type-II-in-Progress-Badges.\n\n• Serverstandort: Nicht öffentlich klar ausgewiesen.\n\n• DSGVO: GDPR-Compliant-Badge sichtbar, Details nicht vollständig in Policy ausgeführt.\n\n• SOC 2: Type II Compliance in Progress.\n\n• Self-Hosting: Nicht gefunden.\n\n• Datenrisiko: Hoch, weil Agenten operative Systeme und Logs berühren.",
+      "einschaetzung": "Mindra ist für Teams spannend, die wiederkehrende operative Prozesse mit klar messbaren Outputs haben. Für KMU ist der Nutzen hoch, wenn die Daten sauber angebunden sind und Freigaben gut geregelt werden. Für unstrukturierte \"macht mal alles automatisch\"-Fantasien ist Mindra ungeeignet. Agents sind keine Praktikanten mit WLAN, sondern Systeme, die Führung, Grenzen und Messgrössen brauchen.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Der Fokus liegt nicht auf einem einzelnen Agenten, sondern auf spezialisierten Agententeams mit Rollen, Übergaben und operativer Ausführung."
+        }
+      ],
+      "url": "https://mindra.co"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-05-17.md"
+}

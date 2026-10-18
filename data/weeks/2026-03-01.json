@@ -1,0 +1,216 @@
+{
+  "kw": 9,
+  "jahr": 2026,
+  "datum": "2026-03-01",
+  "zusammenfassung": "KW 09/2026 markiert eine Zäsur in der KI-Entwicklung: Geschwindigkeit, Zugänglichkeit und Orchestrierung stehen im Mittelpunkt. Das herausragendste Ereignis war der Launch von Mercury 2 durch Inception Labs, das erste Diffusion-basierte Reasoning-Modell der Welt, das mit über 1.000 Token pro Sekunde eine völlig neue Geschwindigkeitsdimension eröffnet. Gleichzeitig betrat QuiverAI mit Arrow-1 die Bühne: das erste dedizierte KI-Modell für Vektorgrafiken, das sofort die Spitze des SVG Arena-Leaderboards erklomm und $8,3 Millionen von a16z einsammelte. Perplexity Computer redefiniert den Begriff des KI-Agenten, indem es 19 verschiedene Modelle zu einem einzigen, autonomen Workflow-System orchestriert. Notion Custom Agents bringt 24/7-KI-Automatisierung direkt in den meistgenutzten Workspace der Welt, ohne Programmierkenntnisse. Und Supaboard beweist, dass Datenanalyse kein Expertenwissen mehr erfordert, wenn man einfach auf Englisch fragen kann.",
+  "highlights": [
+    "Mercury 2: Weltschnellstes Reasoning-Modell, 1.009 Token/Sek, 4x günstiger als Claude Haiku (9/10)",
+    "Trend: Orchestrierung von Modellen wird zum neuen Paradigma, Perplexity Computer koordiniert 19 Modelle",
+    "Paradigmenwechsel: Von Pixel-Bildern zu echten, editierbaren Vektorgrafiken durch KI (QuiverAI Arrow-1)"
+  ],
+  "trend": "Orchestrierung von Modellen und Demokratisierung von KI-Agenten",
+  "tools": [
+    {
+      "name": "Mercury 2",
+      "kategorie": "Text",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "Weltschnellstes Reasoning-LLM, Diffusion-Architektur mit 1.009 Token/Sek und 4x günstigeren Preisen",
+      "beschreibung": "Mercury 2 ist das weltweit schnellste Reasoning-Sprachmodell, entwickelt von Inception Labs (Stanford-Ausgründung). Im Gegensatz zu herkömmlichen autogressiven Modellen, die Text Token für Token generieren, nutzt Mercury 2 eine Diffusion-basierte Architektur: Es verfeinert ganze Textpassagen parallel, ähnlich wie ein Lektor, der einen vollständigen Entwurf auf einmal überarbeitet. Das Ergebnis ist eine Generierungsgeschwindigkeit von über 1.009 Token pro Sekunde auf NVIDIA Blackwell GPUs, mehr als 5x schneller als vergleichbare Speed-optimierte Modelle. Zielgruppe sind Entwickler, Unternehmen und alle, die KI in latenzempfindlichen Produktionsumgebungen einsetzen: Agenten-Loops, Echtzeit-Voice-Interfaces, Code-Autocomplete und RAG-Pipelines.",
+      "nutzungsszenarien": [
+        "Echtzeit-Code-Autocomplete: Entwickler erhalten Vorschläge, die schnell genug sind, um den eigenen Denkfluss nicht zu unterbrechen, Mercury 2 fühlt sich an wie eine Erweiterung des eigenen Denkens, nicht wie ein Warteprozess.",
+        "Agentenbasierte Workflows: In mehrstufigen Agenten-Loops, wo Dutzende von Inferenz-Aufrufen pro Aufgabe anfallen, reduziert Mercury 2 die Gesamtlatenz dramatisch und ermöglicht komplexere, qualitativ bessere Ergebnisse.",
+        "Voice-AI-Interfaces: Sprachassistenten haben das engste Latenz-Budget aller KI-Anwendungen. Mercury 2 macht Reasoning-Qualität innerhalb natürlicher Sprachkadenz möglich.",
+        "Echtzeit-Transkription und -Bereinigung: Für Tools wie Wispr Flow, die Live-Transkripte bereinigen müssen, ist die Geschwindigkeit ein entscheidender Faktor.",
+        "Multi-Hop-RAG-Pipelines: Retrieval, Reranking und Zusammenfassung stapeln sich schnell, Mercury 2 erlaubt es, Reasoning in den Suchloop einzubauen, ohne das Latenz-Budget zu sprengen."
+      ],
+      "staerken": [
+        "Revolutionäre Diffusion-Architektur: erste ihrer Art für Reasoning-Modelle",
+        "Überlegene Geschwindigkeit: 1.009 Token/Sek vs. <200 bei Konkurrenten",
+        "Sehr günstige API-Preise: 4x günstiger als Claude Haiku",
+        "OpenAI API-kompatibel: Drop-in-Replacement ohne Code-Änderungen",
+        "128K Kontextfenster, native Tool-Use, JSON-Schema-Output",
+        "Tunable Reasoning: Qualitäts-Geschwindigkeits-Tradeoff steuerbar"
+      ],
+      "schwaechen": [
+        "Noch kein EU-Serverstandort oder DSGVO-Dokumentation",
+        "Qualität bei komplexen Reasoning-Aufgaben noch hinter GPT-5.2 und Claude Sonnet 4.6",
+        "Kein Self-Hosting oder On-Premise-Option",
+        "Noch keine breite Community oder Ökosystem-Integration",
+        "Early Access für Mercury 2, noch nicht für alle verfügbar"
+      ],
+      "pricing": "• API (Input): $0.25 / 1M Token\n\n• API (Output): $0.75 / 1M Token\n\n• Chat (Mercury Chat): Kostenlos\n\n• Enterprise: Auf Anfrage\n\nVergleich: GPT-5.2 kostet ca. $0.50/$1.50 pro 1M Token bei deutlich niedrigerer Geschwindigkeit. Gemini 3 Flash liegt bei $0.50/$1.50. Mercury 2 ist damit das günstigste und schnellste Reasoning-Modell auf dem Markt.",
+      "datenschutz": "• Datenverwendung: Keine öffentliche Aussage zu Training auf Nutzerdaten\n\n• Self-Hosting: Nicht verfügbar (Cloud-only API)\n\n• Datenschutz-Bewertung: 5/10, US-Unternehmen ohne klare DSGVO-Dokumentation; für europäische Unternehmen mit Compliance-Anforderungen kritisch zu prüfen",
+      "einschaetzung": "Mercury 2 ist ein technologischer Durchbruch, der die Grundannahme des KI-Feldes, sequentielle Token-Generierung, in Frage stellt. Für Entwickler, die latenzempfindliche Anwendungen bauen (Voice-AI, Code-Tools, Agenten-Loops), ist Mercury 2 bereits heute ein ernstzunehmender Kandidat. Die API-Preise sind unschlagbar. Der Hauptvorbehalt für europäische Nutzer ist die fehlende DSGVO-Dokumentation. Für Nicht-Compliance-kritische Anwendungen: sofort ausprobieren.\n\nTechnologischer Durchbruch mit sofortiger Praxisrelevanz. Einziger Abzug: fehlende DSGVO-Dokumentation und noch nicht GA für alle.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Erste Diffusion-Architektur für Reasoning-Modelle weltweit; 1.009 Token/Sek; OpenAI-API-kompatibel (Drop-in-Replacement); 128K Kontextfenster; tunable Reasoning-Qualität"
+        }
+      ],
+      "url": "https://www.inceptionlabs.ai"
+    },
+    {
+      "name": "QuiverAI (Arrow-1)",
+      "kategorie": "Design",
+      "bewertung": 8.5,
+      "kurzbeschreibung": "Erstes KI-Modell für Vektorgrafiken, editierbare SVGs aus Text-Prompts, Platz 1 auf SVG Arena",
+      "beschreibung": "QuiverAI ist ein neues KI-Labor und Produktunternehmen, das sich auf Vektorgrafik-Design spezialisiert hat. Ihr erstes Modell, Arrow-1, ist das weltweit erste dedizierte KI-Modell für die Generierung von SVG-Vektorgrafiken aus Text-Prompts und Referenzbildern. Anders als Bildgeneratoren wie Midjourney oder DALL-E, die Pixel-Bilder erzeugen, generiert Arrow-1 echte, editierbare SVG-Dateien, strukturierten Code, der sich verlustfrei skalieren, in jedem Vektorprogramm bearbeiten und direkt in Produktionscode integrieren lässt. Das Unternehmen wurde von Pascal Wichmann (PhD-Arbeit zu Vektorgrafiken) gegründet und hat $8,3 Millionen Seed-Kapital von Andreessen Horowitz (a16z) erhalten. Arrow-1 belegt bereits Platz 1 auf dem SVG Arena Leaderboard mit einem Elo von 1583, das erste Modell, das je die 1500-Marke überschritten hat.",
+      "nutzungsszenarien": [
+        "Logo-Generierung: Marken und Designer können skalierbare, editierbare Logos aus Text-Beschreibungen oder Referenzbildern generieren, ohne Illustrator-Kenntnisse.",
+        "Icon-Sets: Entwickler und Produktteams erstellen konsistente Icon-Bibliotheken für Apps und Websites direkt aus Prompts.",
+        "Illustrationen für Marketing: Vollständig vektorielle Illustrationen für Landing Pages, Präsentationen oder Social Media, editierbar in Figma, Illustrator oder direkt im Code.",
+        "UI-Komponenten: Frontend-Entwickler generieren SVG-Elemente wie Buttons, Badges oder Dekorationselemente direkt als produktionsreifen Code.",
+        "Brand-Asset-Erstellung: Startups und KMUs erstellen ihre gesamte visuelle Identität (Logo, Icons, Illustrationen) ohne Designagentur."
+      ],
+      "staerken": [
+        "Erstes dediziertes KI-Modell für Vektorgrafiken weltweit",
+        "Platz 1 auf SVG Arena Leaderboard (Elo 1583, erstmals über 1500)",
+        "Generiert echte, editierbare SVG-Dateien, kein Pixel-Raster",
+        "Direkte Integration in Figma, Illustrator, Code-Workflows",
+        "Starke Investoren-Unterstützung (a16z, $8,3M Seed)",
+        "Kostenlos in der Public Beta"
+      ],
+      "schwaechen": [
+        "Noch in der Beta-Phase, Qualität und Konsistenz variieren",
+        "Kein Support für fotorealistische Bilder (SVG-Limitation)",
+        "Pricing nach Beta noch unklar",
+        "Keine DSGVO-Dokumentation oder EU-Serverstandort",
+        "Noch keine Animations- und Typografie-Features (angekündigt)",
+        "Kleines Team, noch kein etabliertes Ökosystem"
+      ],
+      "pricing": "• Public Beta: Kostenlos\n\n• API: Auf Anfrage\n\n• Zukünftige Pläne: Noch nicht kommuniziert\n\nHinweis: QuiverAI befindet sich in der öffentlichen Beta-Phase. Die Nutzung ist derzeit kostenlos. Ein Preismodell nach der Beta-Phase wurde noch nicht kommuniziert.",
+      "datenschutz": "• Datenverwendung: Beta-Phase, Nutzungsdaten werden wahrscheinlich für Modell-Verbesserungen verwendet\n\n• Self-Hosting: Nicht verfügbar\n\n• Datenschutz-Bewertung: 5/10, Junges US-Startup in Beta-Phase; Datenschutz-Dokumentation noch minimal",
+      "einschaetzung": "QuiverAI löst ein echtes Problem: KI-Bildgeneratoren erzeugen Pixel, aber Designer und Entwickler brauchen Vektoren. Arrow-1 ist der erste ernstzunehmende Ansatz, dieses Problem zu lösen. Für Logos, Icons und einfache Illustrationen ist es bereits heute beeindruckend. Wer regelmässig SVG-Assets erstellt, sollte die kostenlose Beta unbedingt testen. Das a16z-Investment signalisiert hohes Vertrauen in die Technologie.\n\nPionierleistung in einer wichtigen Nische. Beta-Status und fehlende Datenschutz-Dokumentation sind die einzigen Vorbehalte.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Erstes dediziertes KI-Modell für SVG-Vektorgrafiken weltweit; Platz 1 auf SVG Arena (Elo 1583); $8,3M a16z-Investition; Logos, Icons, Illustrationen, Animationen (coming soon)"
+        }
+      ],
+      "url": "https://app.quiver.ai"
+    },
+    {
+      "name": "Supaboard",
+      "kategorie": "Data / Wissen",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Daten auf Englisch befragen, #1 Product Hunt Februar 2026, 600+ Integrationen, kein SQL nötig",
+      "beschreibung": "Supaboard ist eine KI-gestützte Echtzeit-Analyseplattform, die es ermöglicht, Geschäftsdaten auf Englisch zu befragen und sofort präzise Antworten, Dashboards und Berichte zu erhalten, ohne SQL-Kenntnisse oder Data-Science-Hintergrund. Die Plattform verbindet sich mit über 600 Datenquellen (Google Analytics, Stripe, PostgreSQL, Salesforce u.v.m.) und setzt KI-Agenten ein, um natürlichsprachliche Fragen in präzise Datenbankabfragen zu übersetzen. Supaboard wurde im Februar 2026 auf Product Hunt gelauncht und erreichte dort Platz 1 für den Monat Februar 2026 mit 728 Upvotes. Zielgruppe sind Gründer, Marketing-Teams, Product Manager und Revenue-Teams, die schnell Daten-Insights brauchen, ohne auf Data Engineers warten zu müssen.",
+      "nutzungsszenarien": [
+        "Marketing-Performance: Ein Marketing-Manager fragt: \"Welcher Kanal hat im letzten Quartal die meisten qualifizierten Leads gebracht?\", Supaboard analysiert Google Analytics, CRM und Ad-Daten und liefert eine klare Antwort mit Visualisierung.",
+        "Revenue-Analyse: Ein Gründer fragt: \"Wie entwickelt sich unser MRR nach Kundensegment?\", Supaboard verbindet Stripe-Daten mit dem CRM und erstellt automatisch ein Dashboard.",
+        "Risiko-Monitoring: Ein Produktteam fragt: \"Welche Risiken sehen wir für das nächste Quartal?\", Supaboard analysiert historische Trends und identifiziert Anomalien.",
+        "Automatisierte Reports: Wöchentliche KPI-Reports werden automatisch generiert und per Slack oder E-Mail versendet (Feature in Entwicklung).",
+        "Ad-hoc-Datenexploration: Statt auf einen Data Analyst zu warten, können Business-Nutzer selbst Fragen stellen und Zusammenhänge erkunden."
+      ],
+      "staerken": [
+        "Platz 1 auf Product Hunt Februar 2026, starke Community-Validierung",
+        "600+ Datenquellen-Integrationen",
+        "Keine SQL- oder Programmierkenntnisse erforderlich",
+        "KI-Agenten für spezifische Business-Rollen (Marketing, Revenue, Product)",
+        "Saubere, intuitive Benutzeroberfläche",
+        "SOC2 und HIPAA verfügbar (Enterprise)"
+      ],
+      "schwaechen": [
+        "Kein Free Tier, hohe Einstiegshürde für Einzelnutzer",
+        "US-Unternehmen ohne klare DSGVO-Dokumentation",
+        "Kein Self-Hosting in Standard-Plänen",
+        "Scheduled Reports und Alerting noch \"Coming in Feb\" (nicht live)",
+        "Junges Unternehmen, Langzeit-Stabilität noch nicht bewiesen",
+        "Konkurrenz von etablierten Tools wie Tableau, Power BI und Metabase"
+      ],
+      "pricing": "• Individual: $85/Monat\n\n• Business (Popular): $229/Monat\n\n• Enterprise: Auf Anfrage\n\nKein Free Tier, nur kostenlose Testphase (Dauer nicht kommuniziert). Für Einzelnutzer und kleine Teams ist der Einstiegspreis von $71-85/Monat vergleichsweise hoch.",
+      "datenschutz": "• Datenverwendung: Daten werden für die Analyse verwendet, nicht für Modell-Training (laut Privacy Policy)\n\n• Self-Hosting: Nicht verfügbar in Standard-Plänen; Enterprise-Plan mit Custom Deployment Region\n\n• Datenschutz-Bewertung: 6/10, SOC2 und HIPAA sind positiv, aber kein EU-Serverstandort und keine explizite DSGVO-Zertifizierung",
+      "einschaetzung": "Supaboard adressiert einen realen Schmerz: Business-Teams warten zu lange auf Daten-Insights, weil sie von Data Engineers abhängig sind. Die natürlichsprachliche Schnittstelle ist intuitiv und die 600+ Integrationen sind beeindruckend. Für Teams, die bereit sind, $71-229/Monat zu investieren, und deren Daten in US-Cloud-Diensten liegen, ist Supaboard ein starker Kandidat. Für DSGVO-kritische europäische Unternehmen ist Vorsicht geboten.\n\nStarkes Produkt mit klarer Marktvalidierung. Fehlender Free Tier und DSGVO-Lücken sind die Hauptschwächen.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "#1 Product Hunt Februar 2026 (728 Upvotes); 600+ Datenquellen-Integrationen; KI-Agenten für Marketing, Revenue und Product; natürlichsprachliche Datenanalyse ohne SQL"
+        }
+      ],
+      "url": "https://supaboard.ai"
+    },
+    {
+      "name": "Perplexity Computer",
+      "kategorie": "Recherche",
+      "bewertung": 8.5,
+      "kurzbeschreibung": "19 KI-Modelle orchestriert, autonomer Multi-Modell-Agent für komplexe Workflows, $200/Monat",
+      "beschreibung": "Perplexity Computer ist ein autonomes Multi-Modell-Orchestrierungssystem, das am 25. Februar 2026 lanciert wurde. Es ist mehr als ein Recherche-Tool, es ist ein vollständiger digitaler Mitarbeiter, der komplexe, mehrstufige Workflows selbstständig plant und ausführt. Perplexity Computer koordiniert 19 verschiedene KI-Modelle (darunter Claude Opus 4.6, Gemini für Deep Research, Nano Banana für Bilder, Veo 3.1 für Video, Grok für schnelle Aufgaben und ChatGPT 5.2 für Long-Context) und setzt sie intelligent für spezifische Teilaufgaben ein. Ein Nutzer beschreibt ein Ziel, Perplexity Computer zerlegt es in Aufgaben, erstellt Sub-Agenten, führt parallele Workflows aus und liefert ein Ergebnis. Das System kann stunden- oder sogar monatelang autonom laufen. Zielgruppe sind Power-User, Researcher, Unternehmen und alle, die komplexe Informationsarbeit automatisieren wollen.",
+      "nutzungsszenarien": [
+        "Marktforschung: \"Erstelle einen vollständigen Wettbewerbsanalysebericht für unser SaaS-Produkt im DACH-Markt\", Perplexity Computer recherchiert, analysiert, strukturiert und schreibt den Bericht autonom.",
+        "Content-Produktion: \"Erstelle 10 LinkedIn-Posts für den nächsten Monat basierend auf unseren letzten Blogartikeln\", das System liest die Artikel, generiert Posts und passt Ton und Format an.",
+        "Code-und-Deploy-Workflows: \"Baue eine Landing Page für unser neues Produkt\", Computer recherchiert Best Practices, schreibt Code, testet und deployt.",
+        "Datenerhebung und -analyse: \"Sammle alle öffentlich verfügbaren Preise unserer Top-10-Konkurrenten und erstelle eine Vergleichstabelle\", vollständig automatisiert.",
+        "Komplexe Recherche-Aufgaben: Wissenschaftliche Literaturrecherche, Due Diligence, Policy-Analyse, Aufgaben, die normalerweise Stunden dauern, werden in Minuten erledigt."
+      ],
+      "staerken": [
+        "Einzigartiger Ansatz: 19 Modelle intelligent orchestriert",
+        "Vollständig autonome, asynchrone Workflow-Ausführung",
+        "Parallele Sub-Agenten für maximale Effizienz",
+        "Modell-agnostisch: wechselt automatisch zu den besten Modellen je Aufgabe",
+        "Echte Filesystem- und Browser-Integration",
+        "Basiert auf Perplexitys bewährter Deep-Research-Infrastruktur"
+      ],
+      "schwaechen": [
+        "Sehr hoher Preis: $200/Monat (nur für Max-Abonnenten)",
+        "Noch in früher Phase, Zuverlässigkeit bei komplexen Aufgaben variiert",
+        "Kein EU-Serverstandort",
+        "Kein Self-Hosting",
+        "Erste User-Reviews berichten von Credit-Verbrauch bei fehlgeschlagenen Aufgaben",
+        "Keine Transparenz über welche Modelle für welche Aufgaben eingesetzt werden"
+      ],
+      "pricing": "• Free: $0\n\n• Pro: $20/Monat\n\n• Max (Individual): $200/Monat ($2.000/Jahr)\n\n• Enterprise Pro: $40/Nutzer/Monat\n\nPerplexity Computer Credits: Max-Abonnenten erhalten 10.000 Credits/Monat + 20.000 Bonus-Credits (Limited-Time). Jede Computer-Aufgabe verbraucht Credits basierend auf Komplexität. Normale Perplexity-Suchen bleiben unberührt.",
+      "datenschutz": "• Datenverwendung: Laut Privacy Policy werden Daten nicht für Modell-Training verwendet (opt-out möglich)\n\n• Self-Hosting: Nicht verfügbar\n\n• Datenschutz-Bewertung: 6/10, DSGVO-Anfragen werden unterstützt, aber keine EU-Server; für Enterprise-Kunden mit Compliance-Anforderungen kritisch",
+      "einschaetzung": "Perplexity Computer ist das ambitionierteste Produkt der Woche, und möglicherweise das wichtigste. Die Idee, 19 spezialisierte KI-Modelle zu einem einzigen, autonomen System zu orchestrieren, ist der logische nächste Schritt nach Chatbots und einfachen Agenten. Für Power-User und Unternehmen, die bereit sind, $200/Monat zu investieren, und komplexe Informationsarbeit automatisieren wollen, ist es ein Game-Changer. Die ersten Reviews sind gemischt, die Technologie ist beeindruckend, aber noch nicht perfekt zuverlässig.\n\nParadigmenwechsel in der KI-Orchestrierung. Hoher Preis und frühe Reife sind die Hauptvorbehalte.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "19 Modelle intelligent orchestriert (Claude, Gemini, Grok, GPT u.v.m.); vollständig autonome, asynchrone Workflow-Ausführung; parallele Sub-Agenten; Filesystem- und Browser-Integration"
+        }
+      ],
+      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-computer"
+    },
+    {
+      "name": "Notion Custom Agents",
+      "kategorie": "Agents",
+      "bewertung": 8.5,
+      "kurzbeschreibung": "24/7 autonome KI-Agenten direkt in Notion, kostenlos bis Mai 2026, kein Coding nötig",
+      "beschreibung": "Notion Custom Agents, lanciert am 24. Februar 2026 als Teil von Notion 3.3, sind autonome KI-Bots, die direkt im Notion-Workspace laufen und komplette Workflows 24/7 selbstständig ausführen, ohne dass der Nutzer anwesend sein muss. Sie können Aufgaben triagieren, Fragen beantworten, Berichte erstellen, Slack-Nachrichten senden, E-Mails verschicken und auf Datenbanken zugreifen. Das Besondere: Notion hat ein \"Build-from-Nothing\"-Sicherheitsmodell entwickelt, bei dem Agenten ohne jegliche Berechtigungen starten und nur explizit freigegebene Ressourcen nutzen können, ein fundamentaler Unterschied zu anderen Agenten-Systemen. Während der Alpha-Phase haben interne Notion-Teams über 3.000 Custom Agents erstellt, externe Alpha-Kunden über 25.000. Zielgruppe sind alle Notion Business- und Enterprise-Nutzer, die repetitive Workflows automatisieren wollen.",
+      "nutzungsszenarien": [
+        "Aufgaben-Triage: Ein Agent überwacht den Notion-Inbox, priorisiert neue Aufgaben nach definierten Kriterien und weist sie automatisch den richtigen Teammitgliedern zu.",
+        "Wöchentliche Status-Reports: Jeden Freitagabend erstellt ein Agent automatisch einen Projektbericht aus allen Notion-Datenbanken und postet ihn in den Team-Slack-Channel.",
+        "Kundensupport-Vorbereitung: Ein Agent überwacht eingehende Support-Anfragen, recherchiert relevante Informationen in der Wissensdatenbank und erstellt Antwort-Entwürfe für das Support-Team.",
+        "Content-Kalender-Management: Ein Agent überwacht den Content-Kalender, erinnert Autoren an Deadlines und erstellt automatisch Briefings für neue Artikel.",
+        "Security-Monitoring: Notions eigenes Security-Team nutzt einen Agenten (\"Scruff Bot\"), um Security-Alerts zu triagieren, anzureichern und Code-Fixes zu generieren."
+      ],
+      "staerken": [
+        "Direkt in Notion integriert, kein separates Tool nötig",
+        "\"Build-from-Nothing\"-Sicherheitsmodell: sicherster Agenten-Ansatz im Vergleich",
+        "Kostenlos bis Mai 2026 für alle Business/Enterprise-Nutzer",
+        "Granulare Berechtigungen auf Seiten-Ebene",
+        "Prompt-Injection-Schutz eingebaut",
+        "Erste-Party-Slack-Integration mit granularen Berechtigungen",
+        "Bewährt: 25.000+ Agenten in Alpha-Phase erstellt"
+      ],
+      "schwaechen": [
+        "Nur für Business- und Enterprise-Nutzer ($20+/Monat)",
+        "Noch in der Beta-Phase, Zuverlässigkeit noch nicht für alle Use Cases bewiesen",
+        "Kein Self-Hosting",
+        "Pricing ab Mai 2026 noch unklar (Credits-Modell)",
+        "Begrenzt auf Notion-Ökosystem, externe Integrationen über MCP (noch eingeschränkt)",
+        "US-Unternehmen ohne EU-Server in Standard-Plänen"
+      ],
+      "pricing": "• Free: $0\n\n• Plus: $10/Nutzer/Monat\n\n• Business: $20/Nutzer/Monat\n\n• Enterprise: Custom\n\nAb 4. Mai 2026: Custom Agents laufen auf Notion Credits ($10 pro 1.000 Credits, Add-on für Business/Enterprise). Credits werden basierend auf Aufgaben-Komplexität verbraucht und monatlich zurückgesetzt. Bis zum 3. Mai 2026 ist die Nutzung für alle Business- und Enterprise-Nutzer vollständig kostenlos und unbegrenzt.",
+      "datenschutz": "• Datenverwendung: Notion AI trainiert nicht auf Nutzerdaten (opt-out standard). Vertragliche Vereinbarungen mit AI-Subprozessoren verbieten Modell-Training auf Kundendaten.\n\n• Self-Hosting: Nicht verfügbar\n\n• Datenschutz-Bewertung: 7/10, Gute DSGVO-Dokumentation, EU-Server für Enterprise, Zero Data Retention im Enterprise-Plan. Kein Self-Hosting.",
+      "einschaetzung": "Notion Custom Agents ist das zugänglichste Agenten-System, das je lanciert wurde. Wer bereits Notion Business nutzt, kann sofort und kostenlos starten, ohne Programmierkenntnisse, ohne Server-Setup, ohne komplexe Konfiguration. Das Sicherheitsmodell ist durchdacht und der Ansatz, Agenten direkt in den bestehenden Workspace zu integrieren, ist der richtige. Für europäische Unternehmen ist der Enterprise-Plan mit EU-Servern und Zero Data Retention empfehlenswert.\n\nDemokratisierung von KI-Agenten auf höchstem Niveau. Kostenlos bis Mai 2026, jetzt ausprobieren.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "\"Build-from-Nothing\"-Sicherheitsmodell (sicherster Agenten-Ansatz im Vergleich); direkt in Notion integriert; Prompt-Injection-Schutz; granulare Seitenberechtigungen; First-Party-Slack-Integration"
+        }
+      ],
+      "url": "https://www.notion.com/blog/introducing-custom-agents"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-03-01.md"
+}

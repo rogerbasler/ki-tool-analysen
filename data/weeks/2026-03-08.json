@@ -1,0 +1,101 @@
+{
+  "kw": 10,
+  "jahr": 2026,
+  "datum": "2026-03-08",
+  "zusammenfassung": "KW 10/2026 steht im Zeichen von Leistungssprüngen und neuen Paradigmen: GPT-5.4 setzt mit seiner \"Thinking\"-Architektur neue Massstäbe für professionelle Workflows und übertrifft mit 83% auf GDPval alle Vorgänger. Variant revolutioniert den Design-Prozess durch einen endlosen, scrollbaren Feed von UI-Designs, kein leeres Canvas mehr, kein Prompt-Engineering. Parsewise bringt Cursor-ähnliche Intelligenz in die Welt der Dokumente und adressiert damit den riesigen Markt der Versicherungs- und Finanzbranche. Heywa ersetzt die Text-Wand von ChatGPT durch interaktive, visuelle Stories, ein Paradigmenwechsel in der Recherche-UX. Und Luma Agents beweist, dass eine vollständige Werbekampagne im Wert von $15 Millionen in 40 Stunden für $20.000 produziert werden kann.",
+  "highlights": [
+    "GPT-5.4: Neues Flaggschiff von OpenAI, 83% auf GDPval, \"Thinking\"-Layer, $20/Monat (Plus) (9.0/10)",
+    "Trend: Kreative Agents übernehmen End-to-End-Workflows, Luma Agents komprimiert $15M-Kampagne auf $20K",
+    "Paradigmenwechsel: Von der leeren Leinwand zum endlosen Design-Feed (Variant) und von Text-Wänden zu visuellen Stories (Heywa)"
+  ],
+  "trend": "Kreative Agents übernehmen End-to-End-Workflows, Paradigmenwechsel in Design und Recherche-UX",
+  "tools": [
+    {
+      "name": "GPT-5.4",
+      "kategorie": "Text",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "OpenAIs neues Flaggschiff, \"Thinking\"-Layer, 83% GDPval, 1.05M Token Kontext",
+      "beschreibung": "OpenAI hat mit GPT-5.4 sein neuestes Flaggschiff-Modell vorgestellt. Es verspricht eine noch höhere Genauigkeit und Effizienz, insbesondere bei komplexen Aufgaben. GPT-5.4 ist nicht nur ein reines Sprachmodell, sondern eine umfassende Arbeitsplattform, die auf professionelle Anwender in den Bereichen Codierung, Dokumentenanalyse und Finanzwesen abzielt. Das neue \"Thinking\"-Layer soll dabei für eine tiefere logische Verarbeitung sorgen.\n\n• Plus: $20\n\n• Pro: $200\n\n• Business: $25/Benutzer\n\nGPT-5.4",
+      "einschaetzung": "GPT-5.4 ist ein echter Leistungssprung, nicht nur ein inkrementelles Update. Das \"Thinking\"-Layer macht es zum stärksten Reasoning-Modell von OpenAI. Für professionelle Anwender, die komplexe Analysen, Coding oder langfristige Agenten-Workflows benötigen, ist der Plus-Plan ($20/Monat) ein klares Upgrade. Europäische Unternehmen sollten die Datenschutzlage prüfen, DSGVO-Compliance ist möglich, aber nicht automatisch gegeben.",
+      "pricing": "ChatGPT Plus: $20/Monat (80 Nachrichten/3h). ChatGPT Pro: $200/Monat (unlimitiert). API Standard: $2.50/$15.00 pro 1M Tokens (Input/Output). API Pro: $30.00/$180.00 pro 1M Tokens. Achtung: Long-Context-Surcharge ab 272K Tokens (Input verdoppelt sich auf $5.00/1M).",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Neues \"Thinking\"-Layer für tiefes Reasoning; 1.05M Token Kontextfenster; 83% auf GDPval (+12% vs. GPT-5.2); Native Computer Use (NCU); OpenAI Atlas MCP-Integration; Multimodal (Text, Bild, Code, Browsing, Tools)"
+        }
+      ],
+      "datenschutz": "US-Unternehmen (OpenAI, Inc.), Datenverarbeitung primär in USA, EU-Datenschutzrichtlinie verfügbar, SCCs für EU-Transfers, kein Training auf API-Daten (opt-out für Chat-Nutzer möglich). DPO: dpo@openai.com. (6/10)",
+      "url": "https://openai.com/index/introducing-gpt-5-4/"
+    },
+    {
+      "name": "Variant",
+      "kategorie": "Design",
+      "bewertung": 8.5,
+      "kurzbeschreibung": "Endlose Designs per Scroll, kein Canvas, kein Figma, kein Prompt-Engineering nötig",
+      "beschreibung": "Variant ist ein revolutionäres KI-Design-Tool, das den Designprozess auf den Kopf stellt. Anstatt mit einer leeren Leinwand zu beginnen, gibt man eine Idee ein und erhält einen endlosen Feed von fertigen UI-Designs. Das Tool ist ideal für die frühe Phase eines Projekts, in der es darum geht, schnell verschiedene visuelle Richtungen zu erkunden. Mit der \"Style Dropper\"-Funktion kann man den Stil eines Designs auf ein anderes übertragen.\n\n• Free: Kostenlos\n\n• Pro: $15\n\nVariant",
+      "einschaetzung": "Variant ist eine der frischesten Design-Innovationen seit Jahren. Der Ansatz, Design-Exploration durch Scrollen statt durch Prompting zu ermöglichen, ist intuitiv und produktiv. Für frühe Projektphasen, Inspiration und schnelle Prototypen ist es bereits heute ein starkes Tool. Der HTML/React-Export schliesst den Kreis vom Konzept zur Implementierung. Für datenschutzsensible Projekte noch abwarten.",
+      "pricing": "Free Options verfügbar (kostenlos). Pro-Pläne in Entwicklung. Aktuell: Registrierung auf variant.com, kostenloser Zugang.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Endloser Design-Feed statt leerer Canvas; \"Style Dropper\" für visuellen Stil-Transfer; HTML/React-Export; kein Figma-Wissen nötig; Y Combinator-Backed; Launched 2026"
+        }
+      ],
+      "datenschutz": "US-Unternehmen (San Francisco), Frühphase, Datenschutzrichtlinie noch minimal dokumentiert. Für sensible Projekte Vorsicht geboten. (4/10)",
+      "url": "https://variant.com"
+    },
+    {
+      "name": "Parsewise",
+      "kategorie": "Data / Wissen",
+      "bewertung": 8.5,
+      "kurzbeschreibung": "Cursor für Dokumente, KI-Agenten analysieren tausende PDFs auf einmal mit Quellennachveis",
+      "beschreibung": "Parsewise ist eine KI-gestützte Plattform zur Analyse grosser Dokumentenmengen. Das Tool richtet sich an Unternehmen in den Bereichen Versicherungen, Vermögensverwaltung und Brokerage, die komplexe Risikobewertungen durchführen müssen. Parsewise verspricht, den manuellen Aufwand um bis zu 80% zu reduzieren und gleichzeitig die Entscheidungsqualität zu verbessern. Das Tool ist GDPR- und SOC 2-konform und verspricht, keine Kundendaten für das Training von Modellen zu verwenden.\n\n• Free: Kostenlos\n\n• Growth: $249\n\n• Enterprise: Individuell\n\nParsewise",
+      "einschaetzung": "Parsewise adressiert einen riesigen, bisher kaum digitalisierten Markt: die manuelle Dokumentenanalyse in Versicherungen, Finanzwesen und Compliance. Der starke Datenschutzfokus macht es für europäische Unternehmen besonders attraktiv.",
+      "pricing": "Free: $0/Monat (25 Chat-Nachrichten, 50 Dokumentseiten). Growth: $249/Monat (200 Nachrichten, 750 Seiten). Enterprise: Custom (unlimitiert, VPC/On-Prem, SSO/SAML, SharePoint/GDrive-Integration).",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Agenten analysieren ganze Dokumentenkorpora; vollständige Quellennachverfolgung; Konflikt-Erkennung zwischen Dokumenten; 70+ Sprachen; Handschrift-Unterstützung; GDPR + SOC 2 Type II"
+        }
+      ],
+      "datenschutz": "GDPR-konform, SOC 2 Type II zertifiziert, kein Training auf Kundendaten, VPC/On-Prem im Enterprise-Plan verfügbar. (8/10)",
+      "url": "https://www.parsewise.ai"
+    },
+    {
+      "name": "Heywa",
+      "kategorie": "Recherche",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Visuelle Stories statt Text-Wände, KI-Recherche als interaktive Mini-App",
+      "beschreibung": "Heywa ist ein visuelles Recherche-Tool, das anstelle von langen Textantworten interaktive, \"tappable\" Stories generiert. Das Tool passt die Darstellung der Ergebnisse an die Suchanfrage an, was die Recherche intuitiver und ansprechender macht. Heywa eignet sich besonders für alltägliche Fragen und schnelle Recherchen. Das Tool ist derzeit kostenlos und befindet sich in der Beta-Phase.\n\n• Free: Kostenlos\n\nHeywa",
+      "einschaetzung": "Heywa ist eine der interessantesten UX-Innovationen im KI-Bereich seit langem. Der Ansatz, die Darstellung an die Absicht der Frage anzupassen, ist intuitiv und macht Recherche wirklich Spass.",
+      "pricing": "Kostenlos (Free). Aktuell in der Beta-Phase, kein bezahlter Plan angekündigt. App Store verfügbar.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "\"Generative UX\", Interface passt sich an Fragetyp an; visuelle Stories mit Bildern, Videos und TikToks; App Store verfügbar"
+        }
+      ],
+      "datenschutz": "Heywa Labs, Frühphase, Datenschutzrichtlinie noch minimal. Für sensible Recherchen Vorsicht geboten. (4/10)",
+      "url": "https://heywa.com"
+    },
+    {
+      "name": "Luma Agents",
+      "kategorie": "Agents",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "$15M-Kampagne in 40h für $20K, kreative End-to-End-Agents mit Unified Intelligence",
+      "beschreibung": "Luma AI hat mit Luma Agents eine neue Klasse von KI-Kollaborateuren vorgestellt, die in der Lage sind, kreative End-to-End-Workflows über Text, Bild, Video und Audio hinweg auszuführen. Die Agents basieren auf der \"Unified Intelligence\"-Architektur, die ein einziges multimodales Reasoning-System trainiert. Luma Agents können komplexe kreative Kampagnen autonom erstellen und dabei auf eine Vielzahl von KI-Modellen zugreifen.\n\n• Plus: $30\n\n• Pro: $90\n\n• Ultra: $300\n\nLuma Agents",
+      "einschaetzung": "Luma Agents ist ein überzeugender Beweis, dass KI kreative Produktion fundamental transformiert. Für Kreativagenturen, Marken und Medienproduzenten ist das ein Game-Changer.",
+      "pricing": "Plus: $30/Monat. Pro: $90/Monat. Ultra: $300/Monat. Team: Coming soon. Enterprise: auf Anfrage.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Unified Intelligence für Text, Bild, Video und Audio; orchestriert mehrere Modelle; persistenter Kontext über Assets und Iterationen."
+        }
+      ],
+      "datenschutz": "US-Unternehmen (Luma AI, Palo Alto), dedizierte Vereinbarungen für Enterprise verfügbar. Kein explizites DSGVO-Zertifikat dokumentiert. (5/10)",
+      "url": "https://lumalabs.ai"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-03-08.md"
+}

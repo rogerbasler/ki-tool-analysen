@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block head %}
+<script type="application/ld+json">{{ jsonld|safe }}</script>
+{% endblock %}
+{% block content %}
+<section class="hero">
+  <p class="kicker">{% if is_latest %}<span class="badge">Neu</span>{% else %}<span class="badge quiet">Archiv</span>{% endif %}KW {{ '%02d' % week.kw }}/{{ week.jahr }} · {{ date_text }}</p>
+  <h1 class="hero-title"><span class="line">5 KI-Tools</span><span class="line outline">der Woche</span></h1>
+  <p class="hero-sub">Text, Design, Data / Wissen, Recherche und Agents: je ein Tool, geprüft auf Nutzen, Kosten und Datenschutz.</p>
+  {% if not is_latest %}<div class="hero-actions"><a class="btn ghost" href="{{ root }}">Zur aktuellen Woche →</a><a class="btn ghost" href="{{ root }}archiv.html">Alle Wochen</a></div>{% endif %}
+</section>
+
+{% if week.zusammenfassung or week.highlights %}
+<section class="summary" aria-labelledby="summary-title">
+  <h2 class="section-label" id="summary-title">Die Woche in Kürze</h2>
+  {{ week.zusammenfassung|rich }}
+  {% if week.highlights %}<ul class="highlights">{% for h in week.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}
+  {% if week.show_trend %}<p class="trend"><strong>Trend:</strong> {{ week.trend }}</p>{% endif %}
+</section>
+{% endif %}
+
+<nav class="jump" aria-label="Zu den Tools springen">
+  {% for t in week.tools %}<a href="#{{ t.anchor }}">{{ t.kategorie }}: {{ t.name }}{% if t.bewertung is not none %}<span class="score">{{ t.bewertung|score }}</span>{% endif %}</a>{% endfor %}
+</nav>
+
+{% for t in week.tools %}
+<article class="tool" id="{{ t.anchor }}">
+  <div class="tool-head">
+    <p class="tool-cat"><span class="cat-num">{{ '%02d' % loop.index }}</span>{{ t.kategorie }}</p>
+    <h2>{% if t.url %}<a href="{{ t.url }}" target="_blank" rel="noopener">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}</h2>
+    {% if t.bewertung is not none %}
+    <div class="rating{% if t.bewertung == top_score %} top{% endif %}" aria-label="Relevanz {{ t.bewertung|score }} von 10">
+      <span class="rating-num">{{ t.bewertung|score }}<small>/10</small></span>
+      <span class="rating-bar"><span style="width: {{ (t.bewertung * 10)|round(0) }}%"></span></span>
+      <span class="rating-label">Relevanz</span>
+    </div>
+    {% endif %}
+  </div>
+  {% if t.kurzbeschreibung %}<p class="tool-lead">{{ t.kurzbeschreibung }}</p>{% endif %}
+  {% if t.signal %}<p class="tool-signal"><span>Diese Woche:</span> {{ t.signal }}</p>{% endif %}
+  {% if t.beschreibung %}<div class="tool-desc">{{ t.beschreibung|rich }}</div>{% endif %}
+
+  {% if t.nutzungsszenarien %}
+  <div class="block">
+    <h3>Nutzungsszenarien</h3>
+    <ul>{% for s in t.nutzungsszenarien %}<li>{{ s|lead_bold }}</li>{% endfor %}</ul>
+  </div>
+  {% endif %}
+
+  {% if t.pricing or t.datenschutz or t.felder %}
+  <div class="facts">
+    {% if t.pricing %}<div class="fact"><h3>Pricing</h3>{{ t.pricing|rich }}</div>{% endif %}
+    {% if t.datenschutz %}<div class="fact"><h3>Datenschutz</h3>{{ t.datenschutz|rich }}</div>{% endif %}
+    {% for f in t.felder or [] %}<div class="fact"><h3>{{ f.label }}</h3>{{ f.text|rich }}</div>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if t.staerken or t.schwaechen %}
+  <div class="pros-cons">
+    {% if t.staerken %}<div class="block pros"><h3>Stärken</h3><ul>{% for s in t.staerken %}<li>{{ s|lead_bold }}</li>{% endfor %}</ul></div>{% endif %}
+    {% if t.schwaechen %}<div class="block cons"><h3>Schwächen</h3><ul>{% for s in t.schwaechen %}<li>{{ s|lead_bold }}</li>{% endfor %}</ul></div>{% endif %}
+  </div>
+  {% endif %}
+
+  {% if t.einschaetzung %}
+  <div class="verdict"><h3>Einschätzung für die Praxis</h3>{{ t.einschaetzung|rich }}</div>
+  {% endif %}
+
+  <div class="tool-links">
+    {% if t.url %}<a class="btn" href="{{ t.url }}" target="_blank" rel="noopener">{{ t.name }} öffnen →</a>{% endif %}
+    {% if analysis_href %}<a class="more" href="{{ analysis_href }}{% if t.anchor in (week.analysis_anchors or []) %}#{{ t.anchor }}{% endif %}">In der Vollanalyse lesen</a>{% endif %}
+  </div>
+  {% if t.quellen %}
+  <details class="tool-sources">
+    <summary>Quellen ({{ t.quellen|length }})</summary>
+    <ol>{% for q in t.quellen %}<li>{{ q|source }}</li>{% endfor %}</ol>
+  </details>
+  {% endif %}
+</article>
+{% endfor %}
+
+{% if analysis_href or week.markdown %}
+<section class="full-analysis">
+  <p>{% if analysis_href %}Die ausführliche Fassung mit allen Recherchenotizen.{% else %}Die komplette Analyse dieser Woche als Markdown, inklusive Quellen nach APA 7.{% endif %}</p>
+  <div class="hero-actions" style="margin:0">
+    {% if analysis_href %}<a class="btn" href="{{ analysis_href }}">Vollanalyse lesen</a>{% endif %}
+    {% if week.markdown %}<a class="btn ghost" href="{{ root }}{{ week.markdown }}">Markdown herunterladen</a>{% endif %}
+  </div>
+</section>
+{% endif %}
+
+<nav class="week-nav" aria-label="Weitere Wochen">
+  {% if prev_week %}<a href="{{ root }}{{ prev_week.page }}">← KW {{ '%02d' % prev_week.kw }}/{{ prev_week.jahr }}</a>{% else %}<span></span>{% endif %}
+  {% if next_week %}<a href="{{ root }}{{ next_week.page }}">KW {{ '%02d' % next_week.kw }}/{{ next_week.jahr }} →</a>{% endif %}
+</nav>
+{% endblock %}

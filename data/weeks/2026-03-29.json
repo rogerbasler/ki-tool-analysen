@@ -1,0 +1,133 @@
+{
+  "kw": 13,
+  "jahr": 2026,
+  "datum": "2026-03-29",
+  "zusammenfassung": "In der KW 13 des Jahres 2026 zeigt sich ein starker Trend hin zu autonomen Agenten und deren sicherer Integration in bestehende Workflows. Während Anthropic mit \"Claude Computer Use\" die direkte Steuerung von Computern durch KI ermöglicht, bieten Plattformen wie Agentplace die nötige Infrastruktur, um solche Agenten zielgerichtet und mit klaren Leitplanken einzusetzen. Gleichzeitig verschiebt sich der Fokus im Marketing mit Tools wie Pendium von klassischem SEO hin zu \"AI Visibility\", um in den Antworten von KI-Modellen stattzufinden. Im Design-Bereich setzt Omma by Spline neue Massstäbe durch den Einsatz paralleler Agenten für die Erstellung von 3D-Welten und interaktiven Websites. ---",
+  "highlights": [
+    "Claude Computer Use (9.5/10) setzt einen Meilenstein: KI verlässt den Chat und steuert direkt den Computer"
+  ],
+  "trend": "Autonome Agenten mit Computer-Zugriff und parallele Agenten-Architekturen dominieren KW 13",
+  "tools": [
+    {
+      "name": "Pendium",
+      "kategorie": "Text",
+      "bewertung": 8.5,
+      "kurzbeschreibung": "AI Visibility Platform, Sichtbarkeit in ChatGPT, Claude und Gemini monitoren und optimieren",
+      "nutzungsszenarien": [
+        "Sichtbarkeits-Monitoring: Kontinuierliche Überwachung, wie oft und in welchem Kontext die eigene Marke von verschiedenen KI-Modellen im Vergleich zur Konkurrenz erwähnt wird.",
+        "Content-Generierung für KI: Erstellung von Inhalten, die speziell darauf ausgerichtet sind, von RAG-Systemen (Retrieval-Augmented Generation) und KI-Crawlern erfasst und positiv bewertet zu werden.",
+        "Persona-Simulation: Testen von Suchanfragen aus der Perspektive verschiedener Käufer-Personas, um zu verstehen, wie die KI ihre Antworten anpasst."
+      ],
+      "staerken": [
+        "Pionier im aufstrebenden Bereich der \"AI Search Optimization\" (AIO/GEO).",
+        "Bietet messbare Metriken für einen bisher schwer greifbaren Kanal.",
+        "Kontinuierliches Monitoring über 7 verschiedene KI-Plattformen hinweg."
+      ],
+      "schwaechen": [
+        "Der tatsächliche ROI von KI-optimiertem Content ist oft schwerer zu belegen als bei klassischem Performance-Marketing.",
+        "Hoher Preissprung vom Starter- zum Pro-Plan."
+      ],
+      "pricing": "• Free Tier: $0/Monat (Einmaliger Sichtbarkeits-Report, 150k Credits).\n\n• Starter: $30/Monat (Wöchentliche Scans, tägliche Content-Generierung).\n\n• Pro: $296/Monat (24/7 Monitoring, 500 redaktionelle Seiten/Monat, technisches Site-Audit).\n\n• Enterprise: Custom Pricing für Multi-Brand-Management und dedizierte Strategie-Teams.",
+      "datenschutz": "Pendium agiert als SaaS-Plattform. Die Datenschutzerklärung (Privacy Policy) umfasst Standard-Klauseln zur Datenverarbeitung. Da das Tool primär öffentlich zugängliche Website-Daten und Suchanfragen analysiert, ist die Verarbeitung personenbezogener Daten minimal. Eine explizite DSGVO-Konformität für europäische Kunden sollte bei Enterprise-Nutzung individuell geprüft werden.",
+      "einschaetzung": "Da immer mehr Nutzer für Recherchen direkt zu ChatGPT oder Perplexity gehen statt zu Google, löst Pendium ein hochaktuelles Problem. Für zukunftsorientierte Marketing-Teams ist es ein essenzielles Tool, um den Übergang von SEO zu AIO (AI Optimization) strategisch zu begleiten.",
+      "beschreibung": "Pendium ist eine \"AI Visibility\"-Plattform, die Unternehmen dabei hilft, ihre Sichtbarkeit in den Antworten von KI-Agenten und Chatbots (wie ChatGPT, Claude, Gemini) zu analysieren und zu optimieren. Die Zielgruppe sind Marketing-Teams, SEO-Experten und Unternehmen, die sicherstellen wollen, dass sie von KI-Modellen als Lösung empfohlen werden."
+    },
+    {
+      "name": "Omma by Spline",
+      "kategorie": "Design",
+      "bewertung": 9,
+      "kurzbeschreibung": "Parallele KI-Agenten erstellen 3D-Websites und Apps aus Text-Prompts",
+      "nutzungsszenarien": [
+        "Rapid Prototyping: Schnelle Erstellung von interaktiven 3D-Websites für Produktpräsentationen.",
+        "Asset-Generierung: Erstellung von 3D-Modellen und Texturen für Spiele oder Web-Anwendungen durch KI-Agenten.",
+        "Code & Design parallel: Gleichzeitige Generierung von Frontend-Code und den dazugehörigen 3D-Assets in einem einzigen Workflow."
+      ],
+      "staerken": [
+        "Revolutionärer Ansatz durch den Einsatz von drei parallel arbeitenden Agenten (Code, 3D-Mesh, Bilder).",
+        "Senkt die Einstiegshürde für die Erstellung hochwertiger 3D-Web-Erlebnisse drastisch.",
+        "Nahtlose Integration in das bestehende Spline-Ökosystem."
+      ],
+      "schwaechen": [
+        "KI-generierte 3D-Modelle benötigen oft noch manuelle Nachbearbeitung für perfekte Topologie.",
+        "Hoher Credit-Verbrauch bei komplexen, iterativen Generierungen."
+      ],
+      "pricing": "• Free: $0/Monat (100 Credits/Monat, perfekt für persönliche Projekte).\n\n• Pro: $39/Monat (2.000 Credits, unlimitierte Chats, Custom Domains).\n\n• Max: $129/Sitzplatz/Monat (7.000 Credits, erweiterte Kollaboration).\n\n• Enterprise: Custom Pricing für unlimitierte Kapazitäten und Custom Infrastructure.",
+      "datenschutz": "Als Cloud-basiertes Design-Tool speichert Omma die generierten Inhalte, Prompts und 3D-Modelle auf seinen Servern. Die Plattform richtet sich nach den allgemeinen Datenschutzrichtlinien von Spline. Für sensible Unternehmensdaten im Enterprise-Bereich werden massgeschneiderte Sicherheitsinfrastrukturen angeboten.",
+      "einschaetzung": "Omma zeigt eindrucksvoll, wie Agenten-Architekturen im kreativen Bereich eingesetzt werden können. Es ist ein Game-Changer für Webdesigner, die 3D-Elemente in ihre Projekte integrieren wollen, ohne sich in komplexe Software wie Blender einarbeiten zu müssen.",
+      "beschreibung": "Omma ist ein KI-gestütztes Design-Tool von Spline, das parallele KI-Agenten nutzt, um aus einfachen Text-Prompts produktionsreife 3D-Modelle, interaktive Apps und Websites zu generieren. Es richtet sich an Designer, Entwickler und Kreativteams, die komplexe 3D-Erlebnisse ohne tiefgehende Programmier- oder 3D-Modellierungs-Kenntnisse erstellen möchten."
+    },
+    {
+      "name": "Littlebird",
+      "kategorie": "Data / Wissen",
+      "bewertung": 8.8,
+      "kurzbeschreibung": "Kontextbezogener Mac-KI-Assistent, versteht kontinuierlich Bildschirm und Meetings",
+      "nutzungsszenarien": [
+        "Automatisches Meeting-Follow-up: Der Assistent nimmt an Meetings teil, erstellt Notizen in über 10 Sprachen und leitet automatisch nächste Schritte ab.",
+        "Kontextbezogene Recherche: Beantwortung von Fragen basierend auf Dokumenten, E-Mails oder Slack-Nachrichten, die der Nutzer kürzlich auf dem Bildschirm hatte.",
+        "App-übergreifende Suche: Schnelles Finden von Informationen, die über verschiedene lokale und Cloud-Anwendungen verstreut sind."
+      ],
+      "staerken": [
+        "Beseitigt das Problem fehlenden Kontexts bei Standard-LLMs.",
+        "Sehr starke Datenschutz-Zusagen (kein Modell-Training mit Nutzerdaten).",
+        "Reibungslose Integration in den Mac-Workflow ohne komplexe Setups."
+      ],
+      "schwaechen": [
+        "Derzeit nur für Mac verfügbar (Windows-Version auf Warteliste).",
+        "Die ständige Bildschirmüberwachung erfordert ein hohes Mass an Vertrauen seitens des Nutzers und des Arbeitgebers."
+      ],
+      "pricing": "• Basic: $0/Monat (Voller Kontext, limitierte Chats und Meeting-Notizen).\n\n• Plus: $17/Monat bei jährlicher Zahlung (Erweiterte Intelligenz, unlimitierte Meeting-Notizen, Bildgenerierung).\n\n• Pro: Ab $100/Monat (5x bis 12x mehr Nutzung, Premium-Features).",
+      "datenschutz": "Littlebird legt grossen Wert auf Datenschutz: Die Plattform ist SOC 2 zertifiziert und vollständig DSGVO- sowie CCPA-konform. Nutzerdaten werden durch AES-256-Verschlüsselung (At-Rest und In-Transit) geschützt und explizit nicht für das Training von KI-Modellen verwendet. Nutzer haben die Möglichkeit, die Datenerfassung jederzeit zu pausieren.",
+      "einschaetzung": "Littlebird ist ein hervorragendes Beispiel für die nächste Generation von KI-Assistenten, die proaktiv mitdenken. Für Einzelpersonen auf dem Mac ist es ein massiver Produktivitäts-Boost, im Unternehmenskontext müssen jedoch interne Compliance-Richtlinien bezüglich der Bildschirmaufzeichnung geklärt werden.",
+      "beschreibung": "Littlebird ist ein kontextbezogener KI-Assistent für den Mac, der kontinuierlich den Bildschirminhalt und Meetings analysiert, um Antworten zu liefern, die auf der tatsächlichen Arbeit des Nutzers basieren. Die Zielgruppe sind Knowledge Worker, Manager und Teams, die eine \"Second Brain\"-Lösung suchen, ohne manuell Daten pflegen zu müssen."
+    },
+    {
+      "name": "Claude Computer Use",
+      "kategorie": "Recherche",
+      "bewertung": 9.5,
+      "kurzbeschreibung": "Anthropic gibt Claude direkten Computer-Zugriff, KI steuert Desktop-Apps autonom",
+      "nutzungsszenarien": [
+        "Datenextraktion und -übertragung: Claude kann Daten aus einem proprietären CRM-System auslesen und in eine lokale Excel-Tabelle übertragen.",
+        "Automatisierte Web-Recherche: Die KI öffnet selbstständig einen Browser, navigiert durch verschiedene Quellen, sammelt Informationen und fasst diese in einem Dokument zusammen.",
+        "Software-Testing: Automatisches Durchklicken von Benutzeroberflächen, um Fehler zu finden oder Prozesse zu verifizieren."
+      ],
+      "staerken": [
+        "Durchbricht die Grenzen textbasierter APIs und ermöglicht die Interaktion mit jeder Software, die eine grafische Benutzeroberfläche hat.",
+        "Enormes Potenzial für die Automatisierung von Legacy-Systemen ohne eigene API."
+      ],
+      "schwaechen": [
+        "Noch im Beta-Stadium; Aktionen können fehleranfällig oder langsam sein.",
+        "Erhebliche Sicherheitsrisiken, wenn der KI unbeschränkter Zugriff auf das Hauptsystem gewährt wird."
+      ],
+      "pricing": "• Integriert in die bestehenden Claude-Abonnements (Claude Pro für $20/Monat) sowie über die Anthropic API nach nutzungsbasiertem Tarif (Pay-per-Token).",
+      "datenschutz": "Die Nutzung erfolgt über die Infrastruktur von Anthropic. Bei der API-Nutzung werden Daten standardmässig nicht für das Modelltraining verwendet. Da die KI jedoch potenziell Zugriff auf den gesamten Computer hat, ist der Einsatz in sensiblen Unternehmensumgebungen streng zu überwachen. Anthropic empfiehlt den Einsatz in isolierten virtuellen Maschinen oder Containern.",
+      "einschaetzung": "\"Computer Use\" ist ein Meilenstein in der KI-Entwicklung. Es verwandelt Claude von einem Chatbot in einen echten digitalen Mitarbeiter. Für die Recherche und Automatisierung von Routineaufgaben ist es bahnbrechend, erfordert aber technisches Know-how für ein sicheres Setup.",
+      "beschreibung": "Anthropic hat für seine KI Claude die Fähigkeit eingeführt, Computer direkt zu steuern (\"Computer Use\"). Claude kann nun den Bildschirm sehen, den Cursor bewegen, klicken und Text eingeben, um komplexe Aufgaben autonom über verschiedene Desktop-Anwendungen hinweg auszuführen. Zielgruppe sind Entwickler, Researcher und Power-User, die plattformübergreifende Workflows automatisieren wollen."
+    },
+    {
+      "name": "Agentplace",
+      "kategorie": "Agents",
+      "bewertung": 8.7,
+      "kurzbeschreibung": "No-Code Plattform für spezialisierte KI-Agenten in realen Unternehmens-Workflows",
+      "nutzungsszenarien": [
+        "Lead-Routing-Agent: Erfasst Leads aus Formularen und E-Mails, strukturiert die Daten und leitet sie an das richtige Vertriebsteam weiter.",
+        "Dokumenten-Analyst: Überprüft Verträge oder lange Berichte, extrahiert Kerninformationen und hebt Risiken für die manuelle Überprüfung hervor.",
+        "HR-Policy-Assistent: Beantwortet Mitarbeiterfragen basierend auf internen Richtlinien und eskaliert komplexe Fälle an menschliche HR-Mitarbeiter."
+      ],
+      "staerken": [
+        "Sehr zugängliche Benutzeroberfläche (\"Vibe Coding\"), die es auch Nicht-Entwicklern erlaubt, mächtige Agenten zu bauen.",
+        "Fokus auf die Zusammenarbeit von Mensch und KI (Human-in-the-loop), bei der Agenten Aufgaben zur Freigabe vorlegen.",
+        "Flexibilität durch die Unterstützung verschiedener Frontier-Modelle (OpenAI, Anthropic, Gemini)."
+      ],
+      "schwaechen": [
+        "Der Markt für Agenten-Plattformen ist stark umkämpft und fragmentiert.",
+        "Komplexe Workflows erfordern trotz No-Code-Ansatz ein gutes Verständnis für Systemarchitekturen."
+      ],
+      "pricing": "• Free: $0 (Bauen und Nutzen von Agenten, Zugriff auf OpenAI, Anthropic, Gemini Modelle).\n\n• Pro: Monatliche Abrechnung (Skalierung der Nutzung).\n\n• Business: Custom Plans (Erweiterte Sicherheitskontrollen, dedizierter Support).",
+      "datenschutz": "Agentplace bietet eine sichere Umgebung, in der Agenten privat, öffentlich oder eingeschränkt zugänglich gemacht werden können. Im Business-Plan stehen erweiterte Sicherheitskontrollen zur Verfügung. Nutzer können eigene API-Keys (Bring Your Own Key) verwenden, was zusätzliche Kontrolle über den Datenfluss zu den LLM-Anbietern gibt.",
+      "einschaetzung": "Agentplace schliesst die Lücke zwischen experimentellen KI-Skripten und produktionsreifen Unternehmenslösungen. Die Plattform ist ideal für KMUs und Abteilungen, die spezifische, wiederkehrende Prozesse automatisieren wollen, ohne ein eigenes Entwicklerteam abzustellen.",
+      "beschreibung": "Agentplace ist eine Plattform, die es Teams ermöglicht, spezialisierte KI-Agenten für reale Arbeitsabläufe zu erstellen, zu nutzen und kontinuierlich zu verbessern. Ohne Programmierkenntnisse können Nutzer Agenten bauen, die als \"KI-Teammitglieder\" fungieren, beispielsweise für Lead-Routing, Dokumentenanalyse oder HR-Support."
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-03-29.md"
+}

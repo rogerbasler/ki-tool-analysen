@@ -1,0 +1,136 @@
+{
+  "kw": 37,
+  "jahr": 2026,
+  "datum": "2026-09-13",
+  "zusammenfassung": "Diese Woche verschiebt sich der KI-Wert vom einzelnen Output zum kontrollierbaren Arbeitssystem. Typewise Nova operiert Kundenservice, AI Toolbox 3.0 ordnet verstreutes Chatwissen, Scira macht Recherchequellen sichtbarer und die OpenAI Agents API bringt verwaltete Agenten-Infrastruktur in Reichweite. Suno v6 liefert mehr kreative Kontrolle, zeigt aber ebenso klar: Generieren ist nicht dasselbe wie publikationsreif. Entscheidend bleiben Rechte, Datenfluss, Kostenlimiten und menschliche Freigaben.",
+  "highlights": [
+    "OpenAI Agents API (8,0/10): Verwaltete Sessions, Sandbox und Sub-Agenten senken den Infrastrukturaufwand, bleiben aber US-resident und ohne Zero Data Retention.",
+    "Trend: Wert entsteht nicht durch mehr KI-Ausgaben, sondern durch sichtbare Quellen, begrenzte Rechte und überprüfbare Betriebskosten.",
+    "Praxisregel: Neue Tools zuerst mit Testdaten, klaren Abbruchkriterien und menschlicher Freigabe für externe Aktionen pilotieren."
+  ],
+  "trend": "Vom einzelnen KI-Output zum kontrollierbaren Arbeitssystem: Quellen, Rechte, Kostenlimiten und menschliche Freigaben entscheiden über den realen Wert.",
+  "tools": [
+    {
+      "name": "Typewise Nova",
+      "kategorie": "Text",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "KI-Operator für Kundenservice mit kontrollierter End-to-End-Bearbeitung.",
+      "beschreibung": "• Kategorie: Text\n\n• Kurzbeschreibung: KI-Operator für Kundenservice-Teams, der Agenten aufsetzt, überwacht und innerhalb festgelegter Regeln end-to-end Anfragen bearbeitet. Zielgruppe sind Support-, Customer-Experience- und Operations-Teams, die nicht nur Antworten, sondern sauber abgewickelte Vorgänge wollen.\n\n• Website: typewise.app\n\n• Wochenanlass: Nova wurde am 10. September als KI-Operator für Aufbau, Betrieb und laufende Verbesserung von Customer-Experience-Agenten vorgestellt.\n\nTypewise Nova ist kein allgemeiner Schreibassistent. Das System soll Kundenanfragen über E-Mail, Chat, WhatsApp und Social Media entgegennehmen, Informationen in angebundenen Systemen nachschlagen, nach definierten Policies handeln und bei Unsicherheit an Menschen übergeben. Der entscheidende Unterschied liegt in der Betriebslogik: Nova soll Agenten beobachten, Änderungen testen und Verbesserungen zur Freigabe vorschlagen.",
+      "nutzungsszenarien": [
+        "Bestell- und Lieferanfragen: Bestellstatus nachschlagen, eine zulässige Auskunft geben und den Fall dokumentieren.",
+        "Rückerstattungen und Planwechsel: Eine Anfrage gegen hinterlegte Regeln prüfen und nur bei klar freigegebenen Fällen ausführen.",
+        "Omnichannel-Support: Eine Konversation zwischen Chat, E-Mail und WhatsApp mit konsistentem Kontext weiterführen.",
+        "Qualitätskontrolle: Häufige Übergaben, Fehlantworten oder Wissenslücken erkennen und Änderungsvorschläge zur Prüfung vorlegen.",
+        "Pre-Sales-Qualifizierung: Produktfragen beantworten, Interessenten einordnen und bei komplexen Fällen an Sales übergeben."
+      ],
+      "staerken": [
+        "Typewise Nova verbindet Textproduktion mit geregelter Ausführung, Qualitätsüberwachung und menschlicher Übergabe. Die Preislogik macht den Wert pro erledigtem Fall sichtbar und reduziert das Risiko, für unproduktive Automatisierung zu bezahlen. Die europäische Ausrichtung, EU/CH-Verarbeitung und die dokumentierten Maskierungs- sowie Retentionsoptionen sind für regulierte Teams besonders relevant."
+      ],
+      "schwaechen": [
+        "Nova ist auf Kundenservice fokussiert und kein universeller Textarbeitsplatz. Die Anbieterkommunikation verweist auf schnelle Inbetriebnahme, jedoch hängt echte Zuverlässigkeit von Policies, Wissensbasis, Integrationen und Freigabelogik ab. Die Veröffentlichung ist frisch, daher sind unabhängige Langzeiterfahrungen begrenzt. Auch die Kombination aus Grundpreis und Auflösungskosten verlangt ein aktives Kostenmonitoring."
+      ],
+      "pricing": "Typewise rechnet mit einem Grundpreis plus nutzungsabhängiger Auflösung ab. Der Small-Team-Plan liegt bei 99 USD/Monat beziehungsweise 999 USD/Jahr, der wachsende Team-Plan bei 599 USD/Monat beziehungsweise 5'999 USD/Jahr und der höhere Plan bei 2'000 USD/Monat mit Jahresabrechnung. Für grosse Organisationen gilt ein individuelles Angebot. Eine vollständig gelöste Anfrage wird zusätzlich ab 2 USD berechnet, mit Mengenpaketen bis 1 USD; ungelöste Fälle kosten laut Anbieter nichts. Zum Launch nennt Typewise 1'000 kostenlose Auflösungen und drei Monate ohne Basisgebühr, ohne Kreditkarte.\n\nDas ist kein klassischer Free Tier für den Dauerbetrieb, aber ein klar abgegrenzter Testzugang. Für die Budgetierung zählt nicht nur das Ticketvolumen: Jede vermeintliche Lösung muss qualitativ korrekt und policy-konform sein. Günstig gelöste Fehler sind immer noch Fehler, nur eben effizient skaliert.",
+      "datenschutz": "Typewise AG sitzt in Zürich. Die Privacy Policy nennt für Website-, Account- und Fehlerlog-Daten AWS in Frankfurt; Kundendaten werden laut Datenverarbeitungsbedingungen in der EU und/oder der Schweiz verarbeitet. Die Sicherheitsseite nennt ISO 27001, EU-Datenhaltung, Verschlüsselung, PII-Masking und die Zusage, Kundendaten nicht zum Training von Modellen anderer Kunden zu verwenden.\n\nTypewise bezeichnet sich als DSGVO-konform und am EU AI Act ausgerichtet. Das ist ein starkes Signal, ersetzt aber keine Prüfung des konkreten Vertrags: Die Privacy Policy verweist zugleich auf Modell-Inferenzanbieter und mögliche internationale Transfers bei Unterauftragnehmern. Für sensible Daten sind DPA, Subprozessoren, Aufbewahrungsfristen und die tatsächlich gewählte Datenregion vor dem Produktivstart verbindlich zu prüfen. Self-Hosting wird nicht angeboten.",
+      "einschaetzung": "Für Teams mit hohem, standardisierbarem Supportvolumen ist Nova ein ernstzunehmender Pilotkandidat. Der richtige Start ist ein einzelner, reversibler Intent, etwa Statusauskünfte oder klar begrenzte Rückerstattungen. Dabei sollten drei Kennzahlen vorab fixiert werden: korrekte Lösung, Eskalationsquote und Kosten pro geprüfter Lösung. Was oft unterschätzt wird: Eine Automatisierung ohne sauber definierte Ausnahmefälle ist kein Agentensystem, sondern ein Vertrauensvorschuss mit API-Zugang.\n\nSehr guter, praxisnaher Release für Customer Experience. Die Kombination aus operativer Tiefe und europäischen Datenschutzoptionen überzeugt, während der kurze Markttrackrecord und die notwendige Governance den Sprung auf 9/10 verhindern.",
+      "url": "https://www.typewise.app/"
+    },
+    {
+      "name": "Suno v6",
+      "kategorie": "Design",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Generative Musik mit gezielteren Edit-, Mashup- und Multimodal-Workflows.",
+      "beschreibung": "• Kategorie: Design\n\n• Kurzbeschreibung: Generative Musikplattform mit drei v6-Modellen für Ideenfindung, Bearbeitung und Produktion aus Text, Audio, Bild oder Video. Zielgruppe sind Creator, Musiker:innen, Marketing- und Videoteams.\n\n• Website: suno.com\n\n• Wochenanlass: Suno stellte v6 als neue Modellgeneration mit v6, v6-wild und v6-mini vor; Product Hunt führt den Launch als Veröffentlichung dieser Woche.\n\nSuno v6 ist ein Designwerkzeug für Musik, nicht bloss ein Prompt-Generator für Jingles. Suno beschreibt drei Modi: v6 als kontrollierteres Flaggschiff, v6-wild für bewusst unvorhersehbare Exploration und v6-mini als schnellere, frei verfügbare Option. Neu sind unter anderem die Bearbeitung einzelner Songabschnitte oder Lyrics, Mashups eigener Quellen, Sampling- und Isolationsworkflows sowie multimodale Eingaben.",
+      "nutzungsszenarien": [
+        "Video- und Podcast-Entwürfe: Eine temporäre musikalische Skizze für einen Schnitt oder ein Storyboard erzeugen.",
+        "Kreative Ideation: Verschiedene Energie-, Genre- oder Strukturansätze vor dem Studio- oder Lizenzentscheid erkunden.",
+        "Social Content: Kurzformate mit eigener Klangidee erstellen und nur nach Rechteprüfung publizieren.",
+        "Song-Revision: Einen Chorus, einzelne Lyrics oder eine Instrumentierung variieren, ohne den ganzen Entwurf neu zu beginnen.",
+        "Moodboard für Kampagnen: Eine Klangrichtung als internes Briefing-Artefakt erstellen, bevor Produktion und Lizenzierung beauftragt werden."
+      ],
+      "staerken": [
+        "v6 erweitert Suno von der Einmalgenerierung hin zu gezielteren Musik-Workflows. Bearbeitung auf Abschnitts- und Lyric-Ebene, Mashups aus eigenen Quellen sowie multimodale Startpunkte schaffen praktischen Spielraum. Product Hunt hebt insbesondere die niedrigere Einstiegshürde für Nicht-Musiker:innen und die schnellere Ideation hervor."
+      ],
+      "schwaechen": [
+        "Die aktuelle Preisansicht ist weniger transparent, als sie sein sollte. Die Community-Reaktion ist gemischt: Ein Produzent lobt Bass, Räumlichkeit und Klangfülle, kritisiert aber die geringere Steuerbarkeit von Vocals, Arrangement und Cover-Ergebnissen. Das bedeutet: v6 kann starke Ergebnisse liefern, ist aber kein Ersatz für Richtung, Auswahl und Produktionserfahrung."
+      ],
+      "pricing": "Suno bietet eine Free-Option, während v6 und v6-wild laut Hersteller dem Pro- und Premier-Zugang vorbehalten sind; Product Hunt bestätigt die freie Option für den Launch. Die öffentlich auffindbare, zeitnahe Preisaufbereitung nennt Free mit v6-mini, Pro für 10 USD/Monat und Premier für 30 USD/Monat. Die offizielle Pricing-Seite lieferte zum Stichtag ohne Login keine maschinenlesbare Tarifaufstellung. Deshalb gelten die Beträge als Preisstand zum Gegencheck beim Checkout, nicht als Vertragszusage.\n\nFür die Kostenrechnung gehört ausserdem die Lizenzfrage in die erste Zeile des Briefings. Ein günstiger Song ist nicht automatisch ein rechtssicher nutzbarer Song. Das eigentliche Problem ist nicht das Generieren, sondern die eindeutige Klärung von Nutzungsrecht, Quelle und Freigabe.",
+      "datenschutz": "Suno Inc. ist in den USA ansässig und speichert Informationen laut Privacy Notice grundsätzlich auf Servern in den USA. Die Policy erfasst Konto-, Nutzungs- und Inhaltsdaten, einschliesslich Prompts, Uploads, generierter Medien und interaktiver Kreativinputs. Suno kann bestimmte Nutzungs- und Inhaltsdaten zur Weiterentwicklung der Dienste und Modelle verwenden. Für EEA-/UK-Daten beschreibt Suno Transfers in die USA unter Verweis auf geeignete Schutzmechanismen.\n\nEine pauschale DSGVO-Konformität, EU-Datenresidenz oder Self-Hosting-Option ist nicht zugesagt. Kreativteams sollten keine unveröffentlichten Kundenspots, Stimmen, Rohspuren oder personenbezogenen Aufnahmen hochladen, bevor Datenverarbeitung und Rechtekette intern freigegeben sind. Die Ankündigung von Partnerschaften mit Warner Music Group, BMG und Believe ist relevant, ersetzt aber keine Prüfung der konkreten Nutzungsbedingungen für den individuellen Output.",
+      "einschaetzung": "Suno v6 eignet sich hervorragend für kreative Vorarbeit, Formate mit klarer menschlicher Endredaktion und interne Sound-Exploration. Für externe Kampagnen oder kommerzielle Veröffentlichungen braucht es einen dokumentierten Freigabeschritt: Rechte, Markenbezug, Text, Stimmen, Ähnlichkeitsrisiko und finale Lizenz. Ohne diesen Prozess wird aus der kreativen Abkürzung schnell eine juristische Nachspielzeit. Niemand bestellt freiwillig eine solche Zugabe.\n\nSehr starkes kreatives Update mit echten Bearbeitungsfortschritten. Der Wert liegt in Tempo und Exploration; Datenschutz, Rechtekette und ungleichmässige Kontrollierbarkeit begrenzen die Empfehlung für produktionskritische Musik.",
+      "url": "https://suno.com/"
+    },
+    {
+      "name": "AI Toolbox 3.0",
+      "kategorie": "Data / Wissen",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Volltextsuche, Ordner und Export für ChatGPT, Gemini, Claude und Grok.",
+      "beschreibung": "• Kategorie: Data / Wissen\n\n• Kurzbeschreibung: Browser-Erweiterung für ChatGPT, Gemini, Claude und Grok, die Chatverläufe mit Volltextsuche, Ordnern, Prompt-Bibliothek und Export wieder nutzbar macht. Zielgruppe sind Vielnutzer:innen, Wissensarbeiter:innen und kleine Teams.\n\n• Website: ai-toolbox.co\n\n• Wochenanlass: Product Hunt dokumentierte AI Toolbox 3.0 als Launch in der Woche; die Erweiterung bündelt die bisher getrennten Module für mehrere KI-Plattformen.\n\nAI Toolbox 3.0 löst ein unspektakuläres, aber teures Problem: Gespräche mit KI-Systemen wachsen schnell zu einem unauffindbaren Wissenslager. Die Erweiterung ergänzt in mehreren Chat-Oberflächen Ordner, Lesezeichen, Volltextsuche, Prompt-Management, Bulk-Aktionen und Exporte. Damit wird aus einer chronologischen Chatliste eine minimale Wissensstruktur.",
+      "nutzungsszenarien": [
+        "Chat-Archiv durchsuchbar machen: Eine frühere Analyse, ein Briefing oder eine Code-Entscheidung über Volltext wiederfinden.",
+        "Prompt-Standards sichern: Wiederkehrende Analyse- oder Schreibprompts als Bibliothek speichern und versionieren.",
+        "Projektarbeit strukturieren: Gespräche je Kunde, Thema oder Arbeitsphase in Ordnern organisieren.",
+        "Wissensübergabe: Ausgewählte Chats als Markdown, JSON, PDF oder ZIP exportieren und dokumentieren.",
+        "Multi-Modell-Arbeit: Themen über ChatGPT, Gemini, Claude und Grok hinweg auffinden, ohne vier Silos manuell zu durchsuchen."
+      ],
+      "staerken": [
+        "AI Toolbox schafft sofortigen Nutzen, ohne eine neue Wissensplattform einzuführen. Die lokale Volltextsuche, die vier unterstützten KI-Oberflächen und der Export reduzieren Suchzeit und Medienbrüche. Auf der öffentlichen Chrome-Web-Store-Referenz nennt der Anbieter 40'000+ Nutzer:innen und eine Bewertung von 4.7/5; in den dort zitierten Rückmeldungen werden insbesondere Ordner, Suche, Bulk-Export und Support hervorgehoben."
+      ],
+      "schwaechen": [
+        "Die Erweiterung ist an Chromium-Browser gebunden; Firefox und Safari bleiben aussen vor. Sie greift tief in KI-Chat-Oberflächen ein, die sich ändern können. Zudem sollte man die Datenschutzaussage nicht romantisieren: lokal gespeicherte Chats bedeuten nicht, dass alle Metadaten ausschliesslich lokal bleiben. Gerade gespeicherte Unternehmensprompts und Tags sind Teil der serverseitigen Synchronisierung."
+      ],
+      "pricing": "Der Free Plan ist dauerhaft kostenlos und umfasst unter anderem zwei Ordner, zwei Lesezeichen, zwei gespeicherte Prompts, bis zu fünf Suchresultate je Abfrage und drei tägliche Exporte. Pro Plattform kosten der Monatsplan 9.99 USD, der Jahresplan 59 USD und die Lifetime-Lizenz 99 USD. Das All-Access-Lifetime-Paket für ChatGPT, Gemini, Claude und Grok kostet 199 USD. Für Teams beginnt der Preis bei 12 USD pro Sitz und Monat bei Jahreszahlung und mindestens zwei Sitzen. Eine 14-tägige Geld-zurück-Garantie wird genannt.\n\nDie Preislogik ist für Einzelpersonen transparent. Teams müssen zusätzlich die Kosten und Regeln der vier zugrunde liegenden KI-Plattformen berücksichtigen. AI Toolbox ersetzt diese Abonnemente nicht; es organisiert ihren Kontext.",
+      "datenschutz": "AI Toolbox trennt nach eigener Policy lokale Gesprächsinhalte und synchronisierte Metadaten. Gesprächsinhalte liegen im Browser; gespeichert und geräteübergreifend synchronisiert werden laut Privacy Policy hingegen unter anderem Ordnernamen, gespeicherte Prompt-Inhalte, IDs, Labels, Tag-Regeln und Nutzungsdaten. Diese Daten sind laut Anbieter serverseitig verschlüsselt, allerdings nicht Ende-zu-Ende beziehungsweise Zero Knowledge. Der ChatGPT-Session-Token wird zur Authentifizierung übertragen, laut Policy aber nicht gespeichert oder geloggt. Bestimmte Funktionen können einen ausgewählten Chat temporär serverseitig verarbeiten.\n\nDer Anbieter nennt EU-Speicherung und DSGVO-Rechte. Die Marketingaussage \"Zero data collection\" auf der Pricing-Seite ist jedoch enger zu lesen als sie klingt: Die ausführliche Privacy Policy beschreibt ausdrücklich serverseitig gespeicherte, verschlüsselte Metadaten und Prompt-Inhalte. Das ist kein K.o.-Kriterium, aber eine wichtige Unterscheidung für Compliance und sensible Prompt-Bibliotheken. Self-Hosting gibt es nicht.",
+      "einschaetzung": "Für Einzelpersonen und kleine Teams mit vielen verstreuten KI-Gesprächen ist AI Toolbox 3.0 ein sehr sinnvoller Ordnungshelfer. Zuerst mit dem Free Plan und nicht sensiblen Chats testen. Anschliessend eine klare Regel definieren, welche Prompts synchronisiert werden dürfen und welche im device-only-Modus bleiben müssen. Der entscheidende Unterschied liegt in der Datenklassifikation: Ein Tool, das Kontext besser sortiert, darf nicht versehentlich auch vertrauliche Zusammenhänge besser verteilen.\n\nSehr nützliches Update für den KI-Arbeitsalltag. Funktionsumfang und Preis sind stark; die privacy-relevante Trennung zwischen lokalem Chatinhalt und synchronisierten Metadaten muss vor Team-Rollouts verstanden werden.",
+      "url": "https://www.ai-toolbox.co/"
+    },
+    {
+      "name": "Scira",
+      "kategorie": "Recherche",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Quellengestützte Recherche mit vielen Suchmodi und offenem Code.",
+      "beschreibung": "• Kategorie: Recherche\n\n• Kurzbeschreibung: Quellengestützte Rechercheplattform mit agentischer Planung, vielen Suchmodi und offenem Code. Zielgruppe sind Research-intensive Einzelpersonen, Entwickler:innen und Teams, die Quellen sichtbar prüfen wollen.\n\n• Website: scira.ai\n\n• Wochenanlass: Im Quellen-Screening wurde Scira als stark erwähntes Recherchetool geführt; der öffentliche Eintrag bei There's An AI For That beschreibt die faktenprüfende Suche mit Quellenangaben und Free-Onboarding.\n\nScira plant mehrstufige Recherche, ruft Quellen ab und liefert zitierte Antworten. Unterstützt werden unter anderem Web-, Academic-, Reddit-, X-, GitHub-, YouTube-, Finanz-, Krypto- und Recherchemodi. Die technische Besonderheit ist die offene Umsetzung: Der Code steht unter AGPL-3.0, und das Repository dokumentiert Self-Hosting mit Docker sowie die Einbindung eigener API-Schlüssel und Modelle.",
+      "nutzungsszenarien": [
+        "Quellenbasierte Marktübersicht: Eine Frage in Teilfragen zerlegen, Webquellen sammeln und belastbare Aussagen mit Links prüfen.",
+        "Technische Due Diligence: GitHub-Repositories, Dokumentation und aktuelle Diskussionen zusammenführen.",
+        "Akademische Vorrecherche: Papers suchen, Quellenketten dokumentieren und offene Behauptungen markieren.",
+        "Monitoring: Wiederkehrende \"Lookouts\" für Themen, Änderungen und Updates anlegen.",
+        "Eigene Instanz: Die Open-Source-Variante mit eigenen Providern und eigenen Datenzugängen betreiben."
+      ],
+      "staerken": [
+        "Scira macht Quellenprüfung zum sichtbaren Teil der Recherche statt zum optionalen Nachgedanken. Die Bandbreite der Modi ist ungewöhnlich gross, und der offene Code schafft eine reale Alternative zum reinen SaaS-Black-Box-Modell. The There’s An AI For That beschreibt die Plattform ebenfalls als Suchtool mit Fact Check und Quellenangaben."
+      ],
+      "schwaechen": [
+        "Die breite Funktionspalette schafft Komplexität: Je nach Modus greifen unterschiedliche Datenquellen, Modelle und Drittanbieter. Eine klare Datenresidenz und belastbare EU-/CH-Compliance-Aussage fehlt in der öffentlichen Privacy Policy. Für Teams ohne technische Kapazität bleibt Self-Hosting eher eine Option auf dem Papier als ein Komfortfeature."
+      ],
+      "pricing": "Scira bietet einen kostenlosen Zugang mit laut offizieller About-/Terms-Dokumentation drei Ausführungen pro Tag. Der Pro Plan liegt bei 15 USD/Monat, für verifizierte Bildungs-E-Mail-Adressen bei 9 USD/Monat; der Max Plan kostet 60 USD/Monat. Die Limits richten sich teilweise nach Modell und können angepasst werden.\n\nDas Free Tier reicht für einen ehrlichen Funktionscheck. Für intensive Recherche muss aber nicht nur das Abo kalkuliert werden: Beim Self-Hosting fallen Provider-, Such- und Infrastrukturkosten an. Offenheit ist ein Vorteil, aber keine kostenlose Betriebsgarantie.",
+      "datenschutz": "Scira sammelt laut Privacy Policy Chatinhalte, Anhänge, Einstellungen, Nutzungs-, Geräte- und Accountdaten. Für Antworten übermittelt der Dienst relevante Eingaben je nach gewähltem Modell oder Feature an Scira und an Inferenzanbieter wie OpenAI, Anthropic, Google oder xAI. Scira nennt Vercel als Hosting-Anbieter; die Policy benennt keinen spezifischen EU- oder Schweizer Serverstandort und keine explizite DSGVO-Zusage.\n\nDie Policy erklärt, dass Inferenzanbieter im Rahmen einer Zero-Data-Retention-Verarbeitung arbeiten sollen, Scira selbst aber Chatverlauf, Projekte und Kontodaten speichert, ausser bei temporären Threads oder nach Löschung. Die AGPL-3.0-Variante ermöglicht Self-Hosting, doch dafür braucht es eigene Schlüssel und die gewählten externen Provider bleiben datenschutzrelevant.",
+      "einschaetzung": "Scira passt zu Forschenden, Analyst:innen und Entwickler:innen, die Recherchefragen in überprüfbare Teilaufgaben zerlegen wollen. Für vertrauliche Unternehmensrecherche erst eine Provider-Matrix erstellen: Welche Daten gehen an welchen Suchdienst oder Modellanbieter, welche Logs entstehen, und welche Quellen dürfen abgefragt werden? Das ist keine Bürokratie, sondern die Differenz zwischen \"wir haben gesucht\" und \"wir können den Suchweg erklären\".\n\nSehr stark für quellengestützte, technische Recherche. Der offene Code und Self-Hosting heben den strategischen Wert; fehlende Datensouveränitätsangaben im gehosteten Angebot begrenzen die Empfehlung für sensible Daten.",
+      "url": "https://scira.ai/"
+    },
+    {
+      "name": "OpenAI Agents API",
+      "kategorie": "Agents",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Verwaltete Agenten-Infrastruktur für langlebige Sessions, Tools und Sub-Agenten.",
+      "beschreibung": "• Kategorie: Agents\n\n• Kurzbeschreibung: Verwaltete API für langlebige Agenten mit Codex-Harness, Sessions, Sandbox, Tools, Kontextkompaktierung und parallelen Sub-Agenten. Zielgruppe sind Entwicklungsteams, die agentische Anwendungen bauen wollen, ohne die Grundinfrastruktur selbst zu betreiben.\n\n• Website: OpenAI Agents API\n\n• Wochenanlass: OpenAI stellte die Agents API in dieser Woche als Public Beta vor.\n\nDie Agents API abstrahiert einen wesentlichen Teil der Agenten-Infrastruktur: Session-Verwaltung, Orchestrierung, Kontextkompaktierung und Wiederaufnahme von Arbeit. Entwickler:innen definieren Modell, Instruktionen, Tools und Ausführungsumgebung. Agenten können Code in einer Sandbox ausführen, Dateien bearbeiten, MCP-Server anbinden und Aufgaben an Sub-Agenten delegieren.",
+      "nutzungsszenarien": [
+        "Incident Response: Warnungen untersuchen, Belege sammeln und vor einer Reparatur explizite Freigabe anfordern.",
+        "Dokumentenreview: Richtlinien, Verträge oder technische Dokumente mit definierten Skills prüfen und Belege sammeln.",
+        "Datenanalyse: Read-only-Abfragen gegen ein Warehouse ausführen, Resultate erklären und eine nachvollziehbare Antwort liefern.",
+        "Engineering-Triage: GitHub-Issues reproduzieren, Code analysieren und einen strukturierten Vorschlag erstellen.",
+        "Research-Workflow: Teilfragen parallel recherchieren, Quellen verdichten und Resultate in einer Session weiterführen."
+      ],
+      "staerken": [
+        "Die Agents API bringt zuvor aufwendige Infrastruktur in eine einheitliche Programmierschnittstelle. Kontextkompaktierung, Tool-Suche, langlebige Sessions, Sub-Agenten und verschiedene Umgebungsoptionen verringern den Eigenbau-Aufwand erheblich. Für Teams mit klaren Workflows kann das die Zeit von einem Agenten-Prototyp zu einem prüfbaren Produkt stark verkürzen."
+      ],
+      "schwaechen": [
+        "Das Angebot ist Public Beta und damit bewusst in Bewegung. Die Kosten entstehen an mehreren Stellen, etwa Modell, Websuche und Container, weshalb eine einfache \"Preis pro Agent\"-Aussage unseriös wäre. Dazu kommen die gegenwärtig US-beschränkte Datenresidenz und fehlende ZDR-Unterstützung. Diese Punkte sind für manche Organisationen keine Randnotiz, sondern ein Stoppsignal."
+      ],
+      "pricing": "Für die Agents API selbst wird keine separate Gebühr ausgewiesen. Kosten entstehen über das gewählte Modell, Tools und Sandbox-Container. Als Preisanker nennt OpenAI für gpt-6-astra bei kurzem Kontext 10 USD pro 1 Mio. Input-Token und 50 USD pro 1 Mio. Output-Token. Websuche kostet 10 USD pro 1'000 Aufrufe; gehostete Container kosten je nach Grösse zwischen 0.03 und 1.92 USD pro 20-Minuten-Session. Regionale Datenverarbeitung wird bei berechtigten Modellen mit 10 % Aufschlag berechnet.\n\nDas ist ein nutzungsbasiertes Modell ohne Free Tier für produktive Agentenläufe. Preisgünstig wird der Einstieg erst, wenn Aufgaben klar begrenzt, Tools sparsam geladen und Abbruchkriterien definiert werden. Ein Agent, der zehn Minuten elegant im Kreis denkt, ist technisch faszinierend und ökonomisch leider auch sehr konsequent.",
+      "datenschutz": "OpenAI dokumentiert für die Agents API derzeit Datenresidenz nur in den USA. Zugleich wird klar festgehalten, dass die Agents API keine Zero Data Retention unterstützt; das bleibt auch so, wenn die Sandbox selbst gehostet wird. Die allgemeine Privacy Policy gilt nicht für API-Kundendaten, deren Nutzung in den Kundenverträgen geregelt wird. Für reguläre Dienste beschreibt OpenAI Datenverarbeitung unter anderem in den USA und weiteren Jurisdiktionen.\n\nEin selbstgehosteter Ausführungsraum kann die Kontrolle über Dateien und Code erhöhen, macht aber die Agents API nicht zu einer vollständig isolierten, ZDR-fähigen Lösung. Für hochsensible oder stark regulierte EU-/CH-Daten ist das aktuell die entscheidende Einschränkung. Eine produktive Einführung braucht Datenklassifikation, restriktive Toolrechte, Audit-Logs und explizite menschliche Freigaben für jede externe Aktion.",
+      "einschaetzung": "Die API ist ein sehr starker Kandidat für Entwicklungsteams, die klar abgegrenzte, belegbare Agenten-Workflows bauen wollen. Starten sollte man mit Read-only-Tools, einer kleinen Datenklasse und einem Budgetlimit pro Session. Erst wenn Fehlerraten, Kosten und Übergaben sauber gemessen sind, dürfen Schreibrechte oder produktive Freigaben folgen. Agenten ohne Grenzen sind keine Automatisierung. Sie sind eine Ausrede mit Laufzeit.\n\nTechnisch ausserordentlich relevant und für professionelle Agentenentwicklung ein wichtiger Infrastruktur-Schritt. Beta-Status, mehrdimensionale Kosten und die derzeitigen Datenschutzgrenzen verhindern eine höhere Bewertung.",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-09-13.md"
+}

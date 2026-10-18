@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_description }}">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="{{ canonical }}">
+<link rel="alternate" type="application/rss+xml" title="KI-Tool-Analysen" href="{{ root }}feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KI-Tool-Analysen">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:locale" content="de_CH">
+<meta property="og:image" content="{{ site_url }}/assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+{% if noindex %}<meta name="robots" content="noindex">
+{% endif %}<link rel="icon" href="{{ root }}assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{{ root }}assets/style.css?v={{ build_id }}">
+{% block head %}{% endblock %}
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="{{ root }}" aria-label="KI-Tool-Analysen, Startseite">
+      <span class="brand-mark"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></span>
+      <span class="brand-sub">KI-Tool-Analysen</span>
+    </a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="{{ root }}" {% if section == 'current' %}class="active" aria-current="page"{% endif %}>Diese Woche</a>
+      <a href="{{ root }}archiv.html" {% if section == 'archive' %}class="active" aria-current="page"{% endif %}>Archiv</a>
+      <a href="{{ root }}methode.html" {% if section == 'method' %}class="active" aria-current="page"{% endif %}>Methode</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></p>
+        <p class="foot-line">Jeden Sonntag fünf KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz.</p>
+        <p class="foot-small">Eine Publikation von <a href="https://fragroger.ai" rel="noopener">Roger Basler de Roca</a>. Weitere wöchentliche Einordnung: <a href="https://news.fragroger.ai" rel="noopener">KI Power Update</a>.</p>
+      </div>
+      <div class="foot-disclaimer">
+        <p class="foot-title">Hinweis</p>
+        <p>Recherche, Auswahl und Texte entstehen mit Unterstützung von KI-Systemen und werden automatisiert veröffentlicht. Preise, Funktionen und Datenschutzangaben ändern sich laufend; massgebend sind die aktuellen Unterlagen der Anbieter. Die Analysen sind keine Rechts- oder Kaufberatung.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <nav class="foot-nav" aria-label="Weitere Seiten">
+        <a href="{{ root }}archiv.html">Archiv</a>
+        <a href="{{ root }}methode.html">Methode</a>
+        <a href="{{ root }}feed.xml">RSS</a>
+        <a href="{{ root }}impressum.html">Impressum</a>
+        <a href="{{ root }}datenschutz.html">Datenschutz</a>
+      </nav>
+      <p>&copy; {{ year }} Roger Basler de Roca</p>
+    </div>
+  </div>
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

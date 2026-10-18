@@ -1,0 +1,136 @@
+{
+  "kw": 34,
+  "jahr": 2026,
+  "datum": "2026-08-23",
+  "zusammenfassung": "Diese Woche geht es weniger um den nächsten Modell-Showcase als um kontrollierbare Arbeitskontexte. ChatGPT for Teens zeigt, wie Text-KI Lernpfade statt Abkürzungen fördern kann. ElevenLabs reduziert die Untertitelung auf einen editierbaren Produktionsschritt, während Genie One Antworten an Governance und Unternehmensdaten bindet. ChatPlayground macht Widersprüche sichtbar, Berd bringt Agenten wieder näher an lokale Projekte und eigene Regeln.",
+  "highlights": [
+    "ElevenLabs AI Caption Generator (9/10) & kontrollierbare KI-Kontexte",
+    "Trend: Von einzelnen KI-Antworten zu begrenzten Kontexten, überprüfbaren Datenflüssen und klaren Berechtigungen",
+    "Paradigmenwechsel: Von All-in-One zu spezialisierten Lösungen"
+  ],
+  "trend": "Kontext, Rechte, Datenflüsse und Review-Schleifen werden zum eigentlichen Qualitätsmerkmal von KI-Tools.",
+  "tools": [
+    {
+      "name": "ChatGPT for Teens",
+      "kategorie": "Text",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Lernorientierte Text-KI mit zusätzlichen Schutzmechanismen für Jugendliche.",
+      "beschreibung": "OpenAI bündelt Study Mode, Quizze, Lernvisualisierungen und Elternfunktionen in einer automatisch zugewiesenen Erfahrung für 13- bis 17-Jährige. Der Wert liegt nicht in der schnellen Antwort, sondern im schrittweisen Lernen und kritischen Prüfen.",
+      "nutzungsszenarien": [
+        "Prüfungsvorbereitung: Lernende lassen sich durch eine Algebraaufgabe oder ein naturwissenschaftliches Konzept führen und beantworten Zwischenschritte selbst.",
+        "Verständnischecks: Aus Unterrichtsmaterial werden Fragen, kurze Wissenschecks und Erklärungen auf unterschiedlichem Niveau erzeugt.",
+        "Schreibprozess: Ein Entwurf wird auf Struktur, Argumentation und Verständlichkeit geprüft, ohne dass die eigene Autorenschaft vollständig ausgelagert wird.",
+        "Projektarbeit: Jugendliche entwickeln eine erste Gliederung, Risiken oder Recherchefragen für ein Schul- oder Freizeitprojekt.",
+        "Digitale Mündigkeit: Nutzende lernen, Antworten zu hinterfragen, Quellen einzufordern und Unsicherheit zu erkennen."
+      ],
+      "staerken": [
+        "Die Lernlogik ist der überzeugendste Teil: Study Mode, Wissenschecks und Erinnerungen fördern eine schrittweise Auseinandersetzung. Hinzu kommen standardmässig stärkere Schutzvorkehrungen für Minderjährige und nachvollziehbare Elternfunktionen."
+      ],
+      "schwaechen": [
+        "Auch ein sicherer Lernmodus kann fehlerhafte Inhalte produzieren. Quellenprüfung, Fachbegleitung und eine klare Schulregelung bleiben notwendig. Dazu kommt die US-Cloud-Verarbeitung, die bei sensiblen personenbezogenen Schul- oder Gesundheitsdaten restriktiv bewertet werden muss."
+      ],
+      "pricing": "Für ChatGPT for Teens veröffentlicht OpenAI keinen separaten Preisplan. Die Erfahrung ist an ein reguläres ChatGPT-Konto gekoppelt. Der Standardzugang ist kostenlos. Für höhere Limits und zusätzliche Modellfunktionen verweist OpenAI auf die allgemeinen ChatGPT-Pläne, deren Verfügbarkeit und Preis regional variieren können. Der in der Produktkommunikation eindeutig belegte Punkt: Minderjährigen wird in dieser Erfahrung keine Werbung ausgespielt.\n\n• Free: 0 USD\n\n• Bezahlte ChatGPT-Pläne: Gemäss regionaler allgemeiner Preisübersicht\n\n• Education / Enterprise: Auf Anfrage",
+      "datenschutz": "OpenAI ist ein US-Anbieter. Für europäische Nutzende gilt die europäische Datenschutzerklärung; sie erläutert Datenverarbeitung, Rechte auf Auskunft und Löschung sowie Übermittlungsmechanismen. Eine lokale Installation oder Self-Hosting-Option für ChatGPT for Teens gibt es nicht. Für persönliche Konten müssen Nutzende die Datenkontrollen aktiv prüfen, insbesondere die Option zur Deaktivierung der Modellverbesserung durch Chats.\n\nElternkontrollen erlauben unter anderem Ruhezeiten und ausgewählte Sicherheitsbenachrichtigungen. Sie geben Eltern jedoch nicht einfach den Chatverlauf frei. Das ist ein sinnvolles Spannungsfeld zwischen Schutz und Privatsphäre, löst aber die grundsätzliche Cloud-Abhängigkeit nicht auf.\n\n• Betreiber / Standort: OpenAI, USA; spezielle Datenschutzerklärung für Europa vorhanden.\n\n• DSGVO: Rechte und Übermittlungsmechanismen sind dokumentiert; die konkrete datenschutzrechtliche Verantwortung bleibt bei Schule, Eltern und Nutzenden.\n\n• Training mit Inhalten: Für persönliche Konten müssen Datenkontrollen aktiv geprüft und bei Bedarf angepasst werden.\n\n• Self-Hosting: Nicht verfügbar.",
+      "einschaetzung": "Für Familien und Schulen ist das Tool sinnvoll, wenn es als Lernbegleiter mit klaren Regeln eingesetzt wird: keine vertraulichen Daten in Prompts, überprüfbare Quellenpflicht und sichtbare Eigenleistung. Wer eine souveräne Lernkultur will, sollte nicht nur den Zugang freigeben, sondern erklären, wann KI hilft und wann sie Denkfaulheit elegant tarnt.",
+      "url": "https://openai.com/index/chatgpt-for-teens/"
+    },
+    {
+      "name": "ElevenLabs AI Caption Generator",
+      "kategorie": "Design",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "Zeitlich synchronisierte Untertitel als schneller, editierbarer Produktionsschritt.",
+      "beschreibung": "ElevenLabs erstellt aus MP4, MOV und MKV präzise Untertitel mit Wort-Timing, Sprecherzuordnung und Unterstützung für mehr als 90 Sprachen. Für Content-Teams wird aus einem mühsamen Nachgang ein kontrollierbarer Workflow.",
+      "nutzungsszenarien": [
+        "Reels und Kurzvideos: Untertitel für tonloses Scrollen erstellen, anschliessend im Schnittsystem gestalten.",
+        "Podcast-Repurposing: Aus einer Gesprächsaufzeichnung entstehen lesbare, sprechergetrennte Textspuren für Clips.",
+        "Barrierefreiheit: Bildungs-, Recruiting- oder Eventvideos erhalten zeitlich präzise Untertitel.",
+        "Mehrsprachige Distribution: Teams bereiten eine Transkriptgrundlage für Übersetzung und Lokalisierung vor.",
+        "Archivierung: Interviews oder Video-Meetings werden als durchsuchbarer Textbestand dokumentiert."
+      ],
+      "staerken": [
+        "Die Kombination aus wortgenauem Timing, Sprecherzuordnung, Textbearbeitung und breiter Sprachabdeckung reduziert Reibung im Schnitt. Der Workflow ist erfreulich konkret: Datei laden, Transkript bereinigen, Untertitel exportieren. Kein magischer Kreativnebel, sondern ein sauberer Produktionsschritt."
+      ],
+      "schwaechen": [
+        "Der Upload ist im Web-Interface auf zehn Minuten oder 50 MB beschränkt. Bei grossem Volumen muss die Credit-Logik laufend kontrolliert werden. Zudem bleibt die Verarbeitung für viele Teams ein US-Cloud-Fall, der bei vertraulichen Gesprächsaufzeichnungen nicht einfach übergangen werden darf."
+      ],
+      "pricing": "ElevenLabs rechnet über ein gemeinsames Credit-System ab. Der Caption Generator nutzt laut Produktkommunikation rund 1'000 Credits je Videominute. Die folgende Übersicht basiert auf der öffentlichen Preisübersicht vom 23.08.2026 und kann sich bei Credits sowie Promotions ändern.\n\n• Free: 0 USD\n\n• Starter: 6 USD\n\n• Creator: 22 USD\n\n• Pro: 99 USD\n\n• Scale: 299 USD\n\n• Business: 990 USD\n\n• Enterprise: Auf Anfrage",
+      "datenschutz": "Eleven Labs Inc. hat seinen Sitz in New York. Die Datenschutzerklärung und ein Data Processing Addendum sind öffentlich erreichbar. Für Datenübermittlungen aus dem EWR verweist der Anbieter auf die in seinen Vertragsunterlagen beschriebenen Garantien. Self-Hosting ist im normalen Self-Serve-Angebot nicht vorgesehen; private Betriebsmodelle werden nur im Enterprise-Kontext genannt.\n\n• Betreiber / Standort: Eleven Labs Inc., USA.\n\n• DSGVO: DPA und Informationen zu internationalen Transfers sind dokumentiert.\n\n• Trainingsnutzung: Datenkontrollen und Vertragsbedingungen vor produktiver Nutzung prüfen; keine pauschale Freigabe sensibler Audio- oder Videodaten.\n\n• Self-Hosting: Nicht im regulären Angebot; private Deployments nur für Enterprise beschrieben.",
+      "einschaetzung": "Für Marketing, Bildung und Medien ist der Generator besonders wertvoll, wenn das Transkript als zentrale Qualitätsstufe verstanden wird. Empfehlenswert ist ein verbindlicher Review von Namen, Fachbegriffen und Sprecherwechseln vor Veröffentlichung. Die KI spart Tipparbeit, nicht Verantwortung.",
+      "url": "https://elevenlabs.io/caption-generator"
+    },
+    {
+      "name": "Databricks Genie One",
+      "kategorie": "Data / Wissen",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Governte Antworten und Folgeaktionen auf Unternehmensdaten in natürlicher Sprache.",
+      "beschreibung": "Genie One verbindet Fragen, Daten- und Wissenszugriff sowie agentische Folgeaktionen. Über Unity Catalog sollen bestehende Berechtigungen bis auf Zeilen- und Spaltenebene respektiert werden. Das ist für Unternehmen relevanter als ein weiterer hübscher Prompt.",
+      "nutzungsszenarien": [
+        "Self-Service-Analyse: Fachbereiche fragen nach Umsatz, Pipeline oder Kosten, ohne jedes Mal ein SQL-Ticket zu eröffnen.",
+        "Governte Wissensabfrage: Mitarbeitende erhalten Antworten aus freigegebenen Daten- und Dokumentenquellen.",
+        "Regelmässige Briefings: Teams entwerfen wiederkehrende Statusberichte und bereiten sie aus vorhandenen Daten vor.",
+        "Operative Arbeit in Kollaborationstools: Kennzahlen oder Sachverhalte werden in Slack oder Teams abgefragt.",
+        "Datenorientierte Agenten: Organisationen verknüpfen Erkenntnisse mit klar abgegrenzten Folgeaktionen."
+      ],
+      "staerken": [
+        "Genie One verbindet natürliche Sprache mit einer ernstzunehmenden Daten-Governance-Schicht. Die Integration in Kollaborationstools senkt die Einstiegshürde für Fachbereiche. Für Entscheidungen mit hoher Tragweite ist besonders relevant, dass Datenzugriff nicht bloss bequemer, sondern kontrollierbarer werden kann."
+      ],
+      "schwaechen": [
+        "Die Qualität steht und fällt mit sauberer Datenmodellierung, gepflegten Begriffen und eindeutigen Zugriffsrechten. Das Kostenmodell ist für ungeübte Teams schwerer zu überblicken als ein fixes SaaS-Abo. Zudem ist die Lösung deutlich auf etablierte Databricks-Umgebungen ausgerichtet."
+      ],
+      "pricing": "Databricks arbeitet nutzungsbasiert. Eine einzelne, allgemein gültige Monatspauschale für Genie One veröffentlicht der Anbieter nicht, denn relevante Kosten hängen von Datenplattform, Compute und gewählten Services ab. Die Produktseite nennt eine kostenlose Testmöglichkeit; die Preisübersicht verweist auf nutzungsbasierte Abrechnung in Sekundenschritten. Vor einem Roll-out braucht es daher einen verbindlichen Usage- und Budget-Plan.\n\n• Testzugang: Kostenloser Einstieg laut Produktseite\n\n• Genie One: Nutzungsbasiert\n\n• Enterprise: Vertraglich",
+      "datenschutz": "Databricks ist ein US-Anbieter und betreibt seine Plattform auf AWS, Azure und Google Cloud. Die Sicherheits- und Datenschutzhinweise beschreiben Governance über Unity Catalog, die Durchsetzung von Zeilen- und Spaltenberechtigungen sowie Mechanismen zum Schutz von Databricks-AI-Workloads. Klassisches Self-Hosting ist für Genie One nicht vorgesehen. Für regulierte Fälle sind Cloud-Region, Datenresidenz, Modellendpunkt und Vertragsunterlagen bereits vor dem Pilot zu bestimmen.\n\n• Betreiber / Standort: Databricks, Inc., USA.\n\n• DSGVO: Datenschutzerklärung und DPA-/Vertragsprüfung sind verfügbar; konkrete Konfiguration ist entscheidend.\n\n• Zugriffssteuerung: Unity Catalog respektiert laut Produktseite vorhandene Berechtigungen bis auf Zeilen- und Spaltenebene.\n\n• Self-Hosting: Nicht als Standardmodell verfügbar.",
+      "einschaetzung": "Ein guter Start ist ein einzelner, messbarer Use Case, etwa eine Vertriebs- oder Operationsfrage mit klarer Datenquelle und Eigentümerschaft. Erst wenn Begriffe, Berechtigungen und Qualitätskontrollen stimmen, sollten Agenten Folgeaktionen erhalten. Sonst automatisiert man vor allem Missverständnisse, nur schneller.",
+      "url": "https://www.databricks.com/product/genie"
+    },
+    {
+      "name": "ChatPlayground AI",
+      "kategorie": "Recherche",
+      "bewertung": 7.0,
+      "kurzbeschreibung": "Mehrere KI-Modelle vergleichen, Widersprüche sehen und Recherchefragen besser stellen.",
+      "beschreibung": "ChatPlayground sendet einen Prompt parallel an ausgewählte Modelle und stellt die Antworten nebeneinander. Diese Perspektivvielfalt hilft, Gegenargumente und offene Punkte sichtbar zu machen. Modellmehrheit ist keine Wahrheit, aber sie ist ein brauchbarer Warnhinweis.",
+      "nutzungsszenarien": [
+        "Hypothesen prüfen: Mehrere Modelle beantworten dieselbe Frage, damit strittige Annahmen sichtbar werden.",
+        "Dokumentensichtung: Ein hochgeladenes Dokument wird aus verschiedenen Blickwinkeln zusammengefasst und nach offenen Fragen geprüft.",
+        "Entscheidungsvorlagen: Teams lassen Risiken, Gegenargumente und fehlende Informationen für ein Briefing ausarbeiten.",
+        "Prompt-Qualität testen: Ein Arbeitsauftrag wird auf Klarheit und Konsistenz gegen mehrere Antworten geprüft.",
+        "Recherche-Backlog: Widersprüche werden als konkrete Prüfpunkte für Primärquellen weiterverarbeitet."
+      ],
+      "staerken": [
+        "Der direkte Modellvergleich ist nützlich, weil er scheinbare Gewissheit aufbricht. Die Oberfläche verbindet Vergleich, Kollaboration und Dokumentarbeit in einem pragmatischen Ablauf. Für Einzelpersonen und kleine Teams ist die Preisschwelle niedrig."
+      ],
+      "schwaechen": [
+        "Die Datenschutz- und Enterprise-Dokumentation ist für eine Rechercheplattform mit potenziell sensiblen Inputs zu dünn. Zudem haben öffentliche Erfahrungsberichte ein uneinheitliches Bild: Auf Trustpilot finden sich sowohl Lob für Funktionsumfang als auch Kritik an Support und Abrechnung. Das ist kein Urteil über jeden Einzelfall, aber ein klarer Grund für einen begrenzten Test vor einer Jahresbindung."
+      ],
+      "pricing": "Die öffentliche Produktkommunikation beschreibt eine kostenlose Testphase sowie Pro- und Unlimited-Pläne. Die Preise und Grenzen werden im Checkout angezeigt und können sich je nach Abrechnungsrhythmus ändern. Am Stichtag nennt der Anbieter Pro ab 15 USD pro Monat bei jährlicher Zahlung und Unlimited ab 25 USD pro Monat bei jährlicher Zahlung. Für zeitkritische Beschaffungen ist der Checkout verbindlich, nicht eine alte Bloggrafik.\n\n• Testzugang: Kostenlos für begrenzte Zeit\n\n• Pro: Ab 15 USD / Monat bei Jahreszahlung\n\n• Unlimited: Ab 25 USD / Monat bei Jahreszahlung\n\n• Enterprise: Nicht öffentlich dokumentiert",
+      "datenschutz": "ChatPlayground beschreibt sich als datenschutzorientiert und erklärt auf der Produktseite, Inhalte und Unterhaltungen nicht auf eigenen Servern zu speichern oder für Modelltraining zu verwenden. Die rechtliche Dokumentation verweist auf Yaseen AI in Delaware. Eine öffentlich erkennbare DPA- oder Self-Hosting-Option ist jedoch nicht ersichtlich. Gerade weil die Plattform Anfragen an mehrere Modellanbieter weiterreichen kann, müssen Unternehmen den Datenfluss und die jeweils aktivierten Modelle sorgfältig prüfen.\n\n• Betreiber / Standort: Yaseen AI, Delaware, USA, gemäss Nutzungsbedingungen.\n\n• DSGVO: Marketingaussage vorhanden, aber keine klar auffindbare DPA-Dokumentation. Für regulierte Nutzung nicht ausreichend.\n\n• Datenverwendung: Anbieter kommuniziert keine Speicherung auf eigenen Servern und kein Training mit Inhalten; externe Modellpfade bleiben relevant.\n\n• Self-Hosting: Nicht öffentlich dokumentiert.",
+      "einschaetzung": "ChatPlayground eignet sich für nicht vertrauliche Recherche, Redaktionsarbeit und Prompt-Qualitätssicherung. Für Entscheider:innen ist der Wert nicht \"mehr KI\", sondern bessere Widerspruchserkennung. Es sollte immer eine Quellenprüfung folgen. Modellmehrheit ist keine Wahrheit, höchstens ein Hinweis.",
+      "url": "https://www.chatplayground.ai/"
+    },
+    {
+      "name": "Berd",
+      "kategorie": "Agents",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Quelloffener Desktop-Workspace für lokale Projekte, Skills und spezialisierte Agenten.",
+      "beschreibung": "Berd von Block organisiert Projekte, Chats, Agenten und Skills in einem lokalen Workspace. Eigene Ordner, Repositories und Modellanbieter lassen sich anbinden. Damit rückt die Datensouveränität wieder näher an den Rechner, vorausgesetzt die Rechte sind sauber gesetzt.",
+      "nutzungsszenarien": [
+        "Projekt-Workspace: Ein Agent arbeitet mit einem klar abgegrenzten lokalen Projektordner und wiederkehrenden Arbeitsanweisungen.",
+        "Code- und Designaufgaben: Teams lassen spezialisierte Agenten Entwürfe, kleine Prototypen oder Recherchen vorbereiten.",
+        "Wiederverwendbare Skills: Häufige Aufgaben werden als Skills definiert, statt jedes Mal neu beschrieben zu werden.",
+        "Multi-Provider-Arbeit: Je nach Aufgabe wird ein geeigneter Modellanbieter gewählt und technisch eingebunden.",
+        "Kritische Gegenlese: Ein spezialisierter Agent prüft Annahmen, Lücken oder Entscheidungsalternativen vor einem nächsten Arbeitsschritt."
+      ],
+      "staerken": [
+        "Berd kombiniert lokale Projektanbindung, Anbieterwahl und wiederverwendbare Agentenrollen in einem verständlichen Workspace. Der Quellcode ist ein Pluspunkt für Transparenz und technisch versierte Teams. Die Idee, nicht jedes Problem in einem austauschbaren Chatfenster zu lösen, trifft einen echten Praxisnerv."
+      ],
+      "schwaechen": [
+        "Die Einstiegshürde ist höher als bei einer reinen Web-App. API-Schlüssel, Providerwahl, Berechtigungen und lokale Dateizugriffe müssen sauber eingerichtet werden. Für nichttechnische Teams fehlen möglicherweise Kollaborations-, Governance- und Supportstrukturen, die sie aus etablierten SaaS-Angeboten erwarten."
+      ],
+      "pricing": "Berd selbst ist Open Source und auf der offiziellen Website zum Download sowie auf GitHub verfügbar. Für die Anwendung veröffentlicht Block keinen klassischen Monatsplan. Die tatsächlichen Kosten entstehen über angeschlossene Modellanbieter, eigene API-Schlüssel, Infrastruktur und gegebenenfalls Support beziehungsweise interne Betriebszeit.\n\n• Open Source: 0 USD für die App\n\n• Modellanbieter: Verbrauchsabhängig\n\n• Selbstbetrieb: Eigene Infrastrukturkosten",
+      "datenschutz": "Berds lokaler Charakter und offener Quellcode sind ein klarer Vorteil für datensensible Teams. Die offizielle Seite kommuniziert, dass Projekte an eigene Ordner und Repositories angeschlossen werden können. Dennoch gilt: Sobald externe Modellanbieter oder Tools verbunden sind, verlassen Daten möglicherweise das Gerät. Eine pauschale DSGVO-Zusage oder eine separat bepreiste Enterprise-DPA für Berd ist öffentlich nicht dokumentiert.\n\n• Betreiber / Standort: Block, ein US-Unternehmen; Produkt und Quellcode sind öffentlich zugänglich.\n\n• DSGVO: Für den konkreten Betrieb durch eigenes Verzeichnis, Modellanbieter und Berechtigungen bewerten.\n\n• Datenfluss: Lokal kontrollierbar, aber abhängig von aktivierten Providern und Tools.\n\n• Self-Hosting: Der Open-Source-Charakter ermöglicht eigene Betriebsformen; Aufwand und Verantwortung liegen beim Betreiber.",
+      "einschaetzung": "Berd ist ein sinnvoller Kandidat für kleine technische Teams, die Agenten bewusst an klar abgegrenzte lokale Kontexte binden wollen. Starten sollte man mit Leserechten, einem Testordner und einem begrenzten Skill. Erst wenn Datenflüsse, Kosten und Reviewprozess nachvollziehbar sind, darf ein Agent Dateien ändern oder externe Aktionen anstossen. Ein schickes Gloopie ersetzt kein Berechtigungskonzept. Schade eigentlich, es wäre deutlich niedlicher.",
+      "url": "https://berd.xyz/"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-08-23.md"
+}

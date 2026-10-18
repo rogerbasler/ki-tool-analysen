@@ -1,0 +1,89 @@
+{
+  "kw": 48,
+  "jahr": 2025,
+  "datum": "2025-12-01",
+  "zusammenfassung": "Diese Woche stehen revolutionäre Entwicklungen im Fokus: DeepSeek v3.2 definiert mit seinem Open-Source-Ansatz und extrem günstigen Preisen den Markt für Reasoning-Modelle neu. Taskade Genesis revolutioniert den No-Code-Markt durch die Erstellung \"lebender\" Anwendungen aus einem einzigen Prompt, während TwelveLabs Marengo 3.0 neue Massstäbe im Enterprise-Video-Verständnis setzt.",
+  "highlights": [
+    "Star der Woche: DeepSeek v3.2 (10/10)",
+    "Trend: Autonomie & Reasoning",
+    "Demokratisierung von High-End-KI"
+  ],
+  "trend": "",
+  "tools": [
+    {
+      "name": "Contenov",
+      "kategorie": "Text",
+      "bewertung": 7.0,
+      "kurzbeschreibung": "SEO-Content-Brief-Automatisierung",
+      "beschreibung": "Automatische Erstellung umfassender SEO-Blog-Briefs durch KI-Analyse der Top 10-20 Google-Suchergebnisse. Reduziert manuelle Wettbewerbsanalyse von Stunden auf Minuten.",
+      "pricing": "$97/Monat Starter Plan",
+      "staerken": [
+        "20 Briefs/Monat",
+        "Wettbewerbsanalyse"
+      ],
+      "schwaechen": [
+        "DSGVO unklar"
+      ],
+      "url": "https://contenov.com"
+    },
+    {
+      "name": "Alai",
+      "kategorie": "Design",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "AI-Präsentationstool mit 4 Design-Optionen",
+      "beschreibung": "Y-Combinator-gestütztes Tool, das vier verschiedene Design-Optionen pro Folie bietet und den Kontext des gesamten Decks versteht. Ideal für Tech-Profis und Gründer.",
+      "pricing": "$16/Monat Plus Plan (jährlich)",
+      "staerken": [
+        "4 Layouts pro Folie",
+        "PowerPoint-Export"
+      ],
+      "schwaechen": [
+        "Privacy Policy fehlt"
+      ],
+      "url": "https://getalai.com"
+    },
+    {
+      "name": "TwelveLabs Marengo 3.0",
+      "kategorie": "Data / Wissen",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "Enterprise Video-Understanding",
+      "beschreibung": "Leistungsstärkstes Embedding-Modell für Video-Verständnis. Analysiert visuelle Frames, zeitliche Beziehungen, Sprache und Sound für \"Any-to-Any\"-Suchen.",
+      "pricing": "$0.042 /Minute Pay-as-you-go",
+      "staerken": [
+        "On-Premise möglich",
+        "AWS Bedrock",
+        "DSGVO-konform"
+      ],
+      "url": "https://www.twelvelabs.io"
+    },
+    {
+      "name": "DeepSeek v3.2",
+      "kategorie": "Recherche",
+      "bewertung": 10.0,
+      "kurzbeschreibung": "Open-Source Reasoning AI",
+      "beschreibung": "Game-Changer: 100% kostenloser Web-Zugang, extrem günstige API und vollständig Open Source (MIT-Lizenz). Reasoning-First Design mit transparentem \"Denken\".",
+      "pricing": "KOSTENLOS Web & App",
+      "staerken": [
+        "Open Source (MIT)",
+        "Self-Hosting",
+        "163.8K Context"
+      ],
+      "url": "https://www.deepseek.com"
+    },
+    {
+      "name": "Taskade Genesis",
+      "kategorie": "Agents",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "\"One Prompt = One App\" Plattform",
+      "beschreibung": "Revolutionäre No-Code-Plattform, die aus einem Prompt vollständige \"lebende\" Anwendungen erstellt. Unbegrenzte AI Agents & Automationen ab $19/Monat.",
+      "pricing": "$19/Monat Pro Plan",
+      "staerken": [
+        "Unbegrenzte Agents",
+        "100+ Integrationen",
+        "GDPR-konform"
+      ],
+      "url": "https://www.taskade.com"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)"
+}

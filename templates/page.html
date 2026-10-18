@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small">
+  {% if kicker %}<p class="kicker">{{ kicker|safe }}</p>{% endif %}
+  <h1 class="page-title">{{ heading }}</h1>
+  {% if lead %}<p class="hero-sub">{{ lead }}</p>{% endif %}
+  {% if actions %}<div class="hero-actions">{% for a in actions %}<a class="btn{% if not loop.first %} ghost{% endif %}" href="{{ a.href }}">{{ a.label }}</a>{% endfor %}</div>{% endif %}
+</section>
+{% if note %}<p class="legacy-note">{{ note }}</p>{% endif %}
+<div class="prose" style="margin-top:24px">
+{{ body|safe }}
+</div>
+{% endblock %}

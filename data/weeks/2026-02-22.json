@@ -1,0 +1,101 @@
+{
+  "kw": 8,
+  "jahr": 2026,
+  "datum": "2026-02-22",
+  "zusammenfassung": "KW 8/2026 stand im Zeichen eines klaren Trends: Spitzenleistung wird zugänglicher, und Werkzeuge werden präziser spezialisiert. Das grösste Ereignis war der Release von Claude Sonnet 4.6, das Opus-Level-Intelligenz zu Sonnet-Preisen bringt und damit das Preis-Leistungs-Verhältnis für KI-Modelle neu definiert. Gleichzeitig löst Moda eines der grössten Frustrations-Probleme bei KI-Design-Tools: die mangelnde Editierbarkeit. Boost.space v5 adressiert mit seinem \"Shared Context\"-Ansatz ein fundamentales Problem für Unternehmen, die mit mehreren KI-Agenten arbeiten. Figr AI und Clawi.ai komplettieren die Woche mit spezialisierten Lösungen für UX-Research und die Demokratisierung von KI-Agenten.",
+  "highlights": [
+    "Claude Sonnet 4.6: Opus-Intelligenz zum Sonnet-Preis (9.5/10)",
+    "Trend: Leistung wird demokratisiert, Tools werden spezialisierter",
+    "Paradigmenwechsel: Von statischen KI-Outputs zu vollständig editierbaren Ergebnissen"
+  ],
+  "trend": "Leistung wird demokratisiert, Tools werden spezialisierter",
+  "tools": [
+    {
+      "name": "Claude Sonnet 4.6",
+      "kategorie": "Text",
+      "bewertung": 9.5,
+      "kurzbeschreibung": "Opus-Level-Intelligenz zum Sonnet-Preis, neues Standardmodell von Anthropic",
+      "beschreibung": "Claude Sonnet 4.6 ist das neueste und leistungsfähigste Modell der Sonnet-Familie von Anthropic, das am 17. Februar 2026 veröffentlicht wurde. Es positioniert sich als das neue Standardmodell für die kostenlosen und Pro-Pläne auf claude.ai und ersetzt damit seinen Vorgänger. Die zentrale Neuerung ist, dass Sonnet 4.6 eine Intelligenz und Leistungsfähigkeit erreicht, die an das teurere Flaggschiff-Modell Opus 4.6 heranreicht, jedoch zu den deutlich günstigeren Preisen der Sonnet-Reihe angeboten wird. Das Modell wurde in den Bereichen Codierung, Computerbedienung, logisches Denken über lange Kontexte, Agentenplanung und Wissensarbeit erheblich verbessert und verfügt über ein Kontextfenster von 1 Million Token (in Beta).\n\nZielgruppe: Das Tool richtet sich an eine breite Nutzerbasis, von Einzelanwendern, die alltägliche Produktivitätsaufgaben erledigen, bis hin zu Entwicklern und Unternehmen, die komplexe, agentenbasierte Workflows und umfangreiche Codierungsaufgaben umsetzen. Durch das hervorragende Preis-Leistungs-Verhältnis wird es zur ersten Wahl für Volumenanwendungen.",
+      "pricing": "Die API-Nutzung von Sonnet 4.6 bleibt preislich auf dem Niveau des Vorgängers und startet bei $3 pro 1 Million Input-Token und $15 pro 1 Million Output-Token. Für Endnutzer ist das Modell die neue Basis in den Free- und Pro-Plänen ($20/Monat) von Claude.ai.",
+      "datenschutz": "Anthropic ist ein US-Unternehmen und verarbeitet Daten primär in den USA. Obwohl sich das Unternehmen zur Einhaltung von EU-Standards bekennt und Standardvertragsklauseln (SCCs) anbietet, findet die Datenverarbeitung ausserhalb der EU statt. Für Unternehmen mit strengen Datenschutzanforderungen ist daher eine genaue Prüfung des Data Processing Addendums (DPA) unerlässlich.",
+      "einschaetzung": "Claude Sonnet 4.6 ist ein Game-Changer. Die Tatsache, dass Anthropic es geschafft hat, die Leistungskluft zu seinem Spitzenmodell Opus bei gleichbleibenden Kosten signifikant zu verringern, demokratisiert den Zugang zu KI auf höchstem Niveau. Besonders die Fortschritte in der Computerbedienung und im agentenhaften Verhalten sind beeindruckend und eröffnen neue Automatisierungsmöglichkeiten. Für die meisten Anwendungsfälle bietet Sonnet 4.6 nun den optimalen Kompromiss aus Leistung, Geschwindigkeit und Kosten.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "1M Token Kontextfenster (Beta), stark verbesserte Computer-Use-Fähigkeiten, neues Standardmodell für Free & Pro"
+        }
+      ],
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6"
+    },
+    {
+      "name": "Moda",
+      "kategorie": "Design",
+      "bewertung": 8.5,
+      "kurzbeschreibung": "KI-Design mit vollständig editierbarem Canvas, endlich kein Neustart bei jeder Änderung",
+      "beschreibung": "Moda ist ein neues KI-gestütztes Design-Tool, das sich durch einen entscheidenden Vorteil von der Konkurrenz wie Canva oder Gamma abhebt: Es generiert vollständig editierbare Designs. Anstatt statischer Bilder, die bei jeder Änderung einen neuen Prompt erfordern, erstellt Moda Entwürfe auf einem ebenenbasierten Canvas, auf dem jedes Element, Texte, Formen, Bilder, nachträglich frei verschoben, angepasst und verfeinert werden kann. Das Tool ist darauf spezialisiert, markenkonsistente Inhalte wie Präsentationen, Social-Media-Posts, Anzeigen und UI-Mockups zu erstellen.\n\nZielgruppe: Moda richtet sich an Marketing-Teams, Start-ups und Einzelunternehmer, die schnell hochwertige und markenkonforme Designs benötigen, aber nicht bei jeder kleinen Anpassung von vorne anfangen wollen. Es ist ideal für alle, denen die Flexibilität eines echten Design-Programms bei KI-Generatoren bisher gefehlt hat.",
+      "pricing": "Moda bietet einen grosszügigen kostenlosen Plan mit 1.000 AI-Credits pro Monat. Der Pro-Plan für Power-User kostet $30 pro Monat und enthält 6.000 Credits. Der Ultra-Plan für Teams startet bei $100 pro Monat mit 20.000 Credits.",
+      "datenschutz": "Moda.app wird von einem US-Unternehmen betrieben. Die Datenschutzrichtlinie erwähnt die Einhaltung der DSGVO, was darauf hindeutet, dass sie sich der europäischen Vorschriften bewusst sind und entsprechende Mechanismen wie Datenverarbeitungsanhänge (DPAs) anbieten. Der Serverstandort ist jedoch voraussichtlich in den USA.",
+      "einschaetzung": "Moda löst eines der grössten Probleme aktueller KI-Design-Tools: die mangelnde Editierbarkeit. Der Ansatz, einen echten, ebenenbasierten Canvas mit einer Design-KI zu kombinieren, ist extrem vielversprechend und könnte den Workflow für viele Kreativ- und Marketingteams erheblich beschleunigen. Die Möglichkeit, KI-generierte Entwürfe wie in einem klassischen Grafikprogramm zu verfeinern, macht Moda zu einem der spannendsten neuen Tools im Design-Bereich.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Vollständig editierbarer, ebenenbasierter Canvas, KI-generierte Designs wie in einem echten Grafikprogramm bearbeiten"
+        }
+      ],
+      "url": "https://moda.app"
+    },
+    {
+      "name": "Boost.space v5",
+      "kategorie": "Data / Wissen",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Shared Context für KI-Agenten, das gemeinsame Gehirn für alle Automatisierungen",
+      "beschreibung": "Boost.space v5 ist eine zentrale Daten- und Wissensplattform, die als \"Shared Brain\" für KI-Agenten und Automatisierungstools wie Make.com oder Zapier fungiert. Anstatt dass jeder Agent isoliert arbeitet, schafft Boost.space eine vereinheitlichte Kontextebene, auf die alle Systeme zugreifen können. Das tschechische Unternehmen hat seine Plattform als \"AI-Ready Data Sync Platform\" konzipiert, die Daten aus über 2.600 Tools in Echtzeit verbinden kann.\n\nZielgruppe: Das Tool ist für Unternehmen konzipiert, die intensiv mit KI-Agenten und Automatisierungs-Workflows arbeiten und dabei an die Grenzen von isolierten Datensilos stossen. Es richtet sich an Agenturen, wachsende Unternehmen und Tech-Teams, die eine skalierbare und konsistente Datenbasis für ihre KI-gesteuerten Prozesse benötigen.",
+      "pricing": "Boost.space bietet ein Freemium-Modell. Der kostenlose Plan umfasst 500 Datensätze. Der Pro-Plan startet bei $29 pro Monat (aktuell mit 50% Rabatt für $15) für 20.000 Datensätze. Der Business-Plan für 150.000 Datensätze kostet $199 pro Monat (aktuell $100).",
+      "datenschutz": "Als tschechisches Unternehmen unterliegt Boost.space direkt der DSGVO. Die Server stehen in der EU, und das Unternehmen bietet erweiterte Sicherheitsfunktionen wie HIPAA-Konformität und On-Premise-Lösungen im Enterprise-Plan an. Dies macht es zu einer datenschutzfreundlichen Wahl für europäische Kunden.",
+      "einschaetzung": "Die Idee eines zentralen \"Gehirns\" für KI-Agenten ist der logische nächste Schritt in der Evolution der Automatisierung. Boost.space v5 adressiert ein Kernproblem: die Fragmentierung von Wissen über verschiedene Tools hinweg. Indem es einen persistenten, geteilten Kontext schafft, ermöglicht es komplexere und zuverlässigere KI-Workflows. Die europäische Herkunft und der starke Fokus auf Datenschutz sind weitere entscheidende Vorteile.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "MCP-Integration für ChatGPT, DeepSeek & Gemini; verbindet 2.600+ Tools; Shared Context Layer für alle Agenten"
+        }
+      ],
+      "url": "https://boost.space"
+    },
+    {
+      "name": "Figr AI",
+      "kategorie": "Recherche",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Product-aware KI für UX, analysiert echte Apps und denkt durch Design-Entscheidungen",
+      "beschreibung": "Figr AI ist ein spezialisiertes KI-Tool für den Bereich User Experience (UX) Research und Design. Im Gegensatz zu allgemeinen Design-Tools analysiert Figr bestehende Produkte und Anwendungen. Es kann Live-Websites über eine Chrome-Extension, Figma-Dateien oder sogar Bildschirmaufnahmen als Kontext aufnehmen, um den Nutzerfluss zu verstehen, Edge Cases zu identifizieren und fundierte UX-Verbesserungen vorzuschlagen, die auf über 200.000 bewährten Design-Mustern basieren.\n\nZielgruppe: Figr AI ist für Produktmanager und Produktdesigner gedacht, die datengestützte Entscheidungen treffen und ihre UX-Prozesse beschleunigen wollen. Es hilft Teams, schneller von der Idee zum Prototyp zu gelangen, indem es einen Grossteil der initialen Recherche- und Analysearbeit automatisiert.",
+      "pricing": "Figr AI hat einen kostenlosen Plan mit 10 monatlichen Credits. Der Starter-Plan für Einzelpersonen kostet $16 pro Monat (jährliche Abrechnung) für 100 Credits. Der Team-Plan liegt bei $20 pro Nutzer/Monat.",
+      "datenschutz": "Figr AI wird von einem indischen Unternehmen entwickelt. Die Website erwähnt SOC-2-Zertifizierung und eine \"Zero data retention\"-Option, was auf ein hohes Sicherheitsbewusstsein hindeutet. In der Datenschutzrichtlinie wird die Einhaltung der DSGVO erwähnt, aber wie bei den meisten aussereuropäischen Anbietern ist eine genaue Prüfung der Datenverarbeitungspraktiken für EU-Kunden ratsam.",
+      "einschaetzung": "Figr AI füllt eine wichtige Nische. Während viele KI-Tools bei Null anfangen, setzt Figr auf bestehenden Produkten auf und agiert wie ein erfahrener UX-Consultant. Die Fähigkeit, eine Live-App zu analysieren und konkrete, auf Best Practices basierende Verbesserungsvorschläge zu generieren, ist ein enormer Mehrwert. Es ist ein Werkzeug, das nicht nur Designs erstellt, sondern das Denken hinter dem Design verbessert.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Analysiert echte Live-Apps via Chrome Extension; denkt UX-Entscheidungen durch, bevor es designt; SOC-2-zertifiziert"
+        }
+      ],
+      "url": "https://figr.design"
+    },
+    {
+      "name": "Clawi.ai",
+      "kategorie": "Agents",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "OpenClaw in der Cloud, leistungsstarker KI-Agent ohne Server-Setup, über WhatsApp steuerbar",
+      "beschreibung": "Clawi.ai ist ein Cloud-Service, der den leistungsstarken, aber technisch anspruchsvollen Open-Source-KI-Agenten OpenClaw für jedermann zugänglich macht. Der Dienst eliminiert die Notwendigkeit, eigene Server zu konfigurieren und zu warten. Nutzer erhalten innerhalb von Minuten einen voll funktionsfähigen, privaten OpenClaw-Assistenten, der rund um die Uhr in der Cloud läuft und über Messenger wie WhatsApp, Telegram oder Discord gesteuert werden kann.\n\nZielgruppe: Clawi.ai richtet sich an alle, die die Power eines autonomen KI-Agenten wie OpenClaw nutzen möchten, aber vor der technischen Hürde der Installation und Wartung zurückschrecken. Es ist ideal für technisch nicht versierte Nutzer, Enthusiasten und kleine Teams, die einen persönlichen KI-Assistenten für Recherche, Aufgabenmanagement und Automatisierung einsetzen wollen.",
+      "pricing": "Der Einstieg erfolgt über den Basic-Plan für $30 pro Monat. Der Pro-Plan für Power-User kostet $60 pro Monat und bietet mehr Leistung. Für Teams gibt es den Ultra-Plan für $200 pro Monat, der bis zu drei parallele Agenten umfasst.",
+      "datenschutz": "Clawi.ai ist ein US-basierter Dienst. Die Website betont stark den Datenschutz und wirbt mit \"Zero Logging\" der Konversationen. Dennoch werden die Daten auf US-Servern verarbeitet. Für sensible Unternehmensdaten ist daher Vorsicht geboten, aber für den persönlichen Gebrauch bietet das Versprechen, keine Logs zu speichern, ein gewisses Mass an Privatsphäre.",
+      "einschaetzung": "Clawi.ai ist ein Paradebeispiel für die Demokratisierung von Hochtechnologie. Es nimmt ein extrem leistungsfähiges Open-Source-Projekt und verpackt es in einen einfach zu bedienenden, zugänglichen Service. Die Möglichkeit, einen vollwertigen KI-Agenten über WhatsApp zu steuern, ohne eine einzige Zeile Code schreiben zu müssen, ist revolutionär und senkt die Einstiegshürde für die Nutzung von KI-Agenten drastisch.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Zero-Setup für OpenClaw; 24/7 Cloud-Betrieb; Steuerung via WhatsApp, Telegram & Discord; persistentes Gedächtnis"
+        }
+      ],
+      "url": "https://clawi.ai"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-02-22.md"
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rogerbasler.github.io/ki-tool-analysen/sitemap.xml

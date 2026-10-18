@@ -10,34 +10,34 @@
           "name": "Talanoa",
           "kategorie": "Text",
           "bewertung": 8.2,
-          "kurzbeschreibung": "Lokaler E-Mail-Client mit KI für Suche, Zusammenfassungen und Antwortentwürfe"
+          "kurzbeschreibung": "Lokaler E-Mail-Client mit KI für Suche, Zusammenfassungen und Antwortentwürfe."
         },
         {
           "name": "Canvora",
           "kategorie": "Design",
           "bewertung": 7.8,
-          "kurzbeschreibung": "Markenkonforme Visuals und Slides aus Text, URLs und Dokumenten mit MCP-Anbindung"
+          "kurzbeschreibung": "Markenkonforme Visuals und Slides aus Text, URLs und Dokumenten mit MCP-Anbindung."
         },
         {
           "name": "Caldera",
           "kategorie": "Data / Wissen",
           "bewertung": 7.9,
-          "kurzbeschreibung": "Open-Source-Obsidian-Plugin für lokalen Vault, gezieltes Publizieren und Digital Gardens"
+          "kurzbeschreibung": "Open-Source-Obsidian-Plugin für lokalen Vault, gezieltes Publizieren und Digital Gardens."
         },
         {
           "name": "Articos v3.2",
           "kategorie": "Recherche",
           "bewertung": 7.4,
-          "kurzbeschreibung": "Synthetische Nutzerforschung mit MCP-Server, Credit-Logik und Zielgruppen-Workflow"
+          "kurzbeschreibung": "Synthetische Nutzerforschung mit MCP-Server, Credit-Logik und Zielgruppen-Workflow."
         },
         {
           "name": "WEXTL",
           "kategorie": "Agents",
           "bewertung": 7.7,
-          "kurzbeschreibung": "Visueller Builder für KI-Agenten und Freigabe-gesteuerte Workflow-Automation"
+          "kurzbeschreibung": "Visueller Builder für KI-Agenten und Freigabe-gesteuerte Workflow-Automation."
         }
       ],
-      "highlights": "Talanoa (8,2/10) und Caldera (7,9/10): Lokale Datenhaltung und gezielte Veröffentlichung machen Produktivität ohne zusätzliche Inhalts-Cloud greifbar.",
+      "highlights": "Talanoa (8,2/10): Lokale E-Mail-KI mit verständlichem Free Tier und klarer Datenminimierung.",
       "trend": "Die neue KI-Produktqualität liegt nicht nur im Output, sondern im kontrollierbaren Kontext: lokale Daten, sichtbare Freigaben, präzise Datenwege und ein klarer Ausstiegsweg werden zum Entscheidungskriterium."
     },
     {
@@ -50,34 +50,34 @@
           "name": "Claude Sonnet 5.5",
           "kategorie": "Text",
           "bewertung": 8.8,
-          "kurzbeschreibung": "Schnelleres Modell für klar abgegrenzte Wissens- und Umsetzungsarbeit"
+          "kurzbeschreibung": "Schnelleres Modell für klar abgegrenzte Wissens- und Umsetzungsarbeit."
         },
         {
           "name": "Suno Speech Beta",
           "kategorie": "Design",
           "bewertung": 7.4,
-          "kurzbeschreibung": "Gesprochene Audios mit passendem, originärem Musikbett als ein Track"
+          "kurzbeschreibung": "Gesprochene Audios mit originärem Musikbett als zusammenhängender Track."
         },
         {
           "name": "Strands Decider 2B",
           "kategorie": "Data / Wissen",
           "bewertung": 8.2,
-          "kurzbeschreibung": "Open-Source-Entscheidungsmodell für lokale Triage, Routing und Guardrails"
+          "kurzbeschreibung": "Open-Source-Entscheidungsmodell für lokale Triage, Routing und Guardrails."
         },
         {
           "name": "Slashspace 3.3",
           "kategorie": "Recherche",
           "bewertung": 7.8,
-          "kurzbeschreibung": "Local-first Canvas für Multi-Modell-Recherche, Quellen und Orchestrierung"
+          "kurzbeschreibung": "Local-first Canvas für Multi-Modell-Recherche, Quellen und Orchestrierung."
         },
         {
           "name": "Dots by OpenAI",
           "kategorie": "Agents",
           "bewertung": 7.0,
-          "kurzbeschreibung": "Dauerhafte Cloud-Agenten mit App-Verbindungen, Regeln und Aktivitätsansicht"
+          "kurzbeschreibung": "Dauerhafte Cloud-Agenten mit App-Verbindungen, Regeln und Aktivitätsansicht."
         }
       ],
-      "highlights": "Claude Sonnet 5.5 (8,8/10) und Strands Decider 2B (8,2/10): Kontrollierbare Ausführung entsteht aus schnellen Modellen, klaren Entscheidungsgrenzen und prüfbaren Konfidenzen.",
+      "highlights": "Claude Sonnet 5.5 (8,8/10): Stark für klar abgegrenzte Arbeit, aber nur mit sauberem Daten- und Review-Prozess.",
       "trend": "Der Wert verlagert sich von der einmaligen Antwort in die kontrollierbare Ausführung: lokale Routineentscheidungen, lokale Datenhaltung, klare Rechte und menschliche Freigaben werden zur Produktqualität."
     },
     {
@@ -90,34 +90,34 @@
           "name": "Claude Docs",
           "kategorie": "Text",
           "bewertung": 8.5,
-          "kurzbeschreibung": "Dokumentmodus im Claude-Workspace mit direkter Bearbeitung und Export"
+          "kurzbeschreibung": "Dokumentmodus im Claude-Workspace mit direkter Bearbeitung und Export."
         },
         {
-          "name": "Arrow 2 von QuiverAI",
+          "name": "Arrow 2",
           "kategorie": "Design",
           "bewertung": 8.0,
-          "kurzbeschreibung": "Editierbare SVG-Generierung, Vektorisierung und Animation mit produktionsnaher API"
+          "kurzbeschreibung": "Editierbare SVG-Generierung, Vektorisierung und Animation mit produktionsnaher API."
         },
         {
-          "name": "Jev von TypeSafe AI",
+          "name": "Jev",
           "kategorie": "Data / Wissen",
           "bewertung": 8.0,
-          "kurzbeschreibung": "Schnelle typisierte Entscheidungen mit Konfidenz für Software-Automatisierung"
+          "kurzbeschreibung": "Typisierte Entscheidungen mit Konfidenz für Software-Automatisierung."
         },
         {
           "name": "Sakana Marlin",
           "kategorie": "Recherche",
           "bewertung": 8.0,
-          "kurzbeschreibung": "Deep-Research-Agent mit Belegprüfung und editierbarem PowerPoint-Export"
+          "kurzbeschreibung": "Deep-Research-Agent mit Belegprüfung und editierbarem PowerPoint-Export."
         },
         {
           "name": "Octop",
           "kategorie": "Agents",
           "bewertung": 8.2,
-          "kurzbeschreibung": "MIT-lizenzierte, selbstgehostete Multi-Agent-Plattform für kontrollierte Workflows"
+          "kurzbeschreibung": "MIT-lizenzierte, selbstgehostete Multi-Agent-Plattform für kontrollierte Workflows."
         }
       ],
-      "highlights": "Claude Docs (8,5/10) und Octop (8,2/10): Dokumente und Agenten werden dort interessant, wo Kontext, Rechte und Datenpfade steuerbar bleiben.",
+      "highlights": "Claude Docs (8,5/10): Ein starker Dokument-Workflow im KI-Chat, aber nur mit klarer Daten- und Review-Governance produktiv.",
       "trend": "Von KI-Ausgabe zu überprüfbarer Arbeitsoberfläche: Editierbare Artefakte, Quellenzugang, Konfidenzwerte und selbstbestimmter Betrieb werden zur eigentlichen Produktqualität."
     },
     {
@@ -129,35 +129,35 @@
         {
           "name": "Typewise Nova",
           "kategorie": "Text",
-          "bewertung": 8,
-          "kurzbeschreibung": "KI-Operator für kontrollierte End-to-End-Bearbeitung im Kundenservice"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "KI-Operator für Kundenservice mit kontrollierter End-to-End-Bearbeitung."
         },
         {
           "name": "Suno v6",
           "kategorie": "Design",
-          "bewertung": 8,
-          "kurzbeschreibung": "Generative Musik mit Edit-, Mashup- und Multimodal-Workflows"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Generative Musik mit gezielteren Edit-, Mashup- und Multimodal-Workflows."
         },
         {
           "name": "AI Toolbox 3.0",
           "kategorie": "Data / Wissen",
-          "bewertung": 8,
-          "kurzbeschreibung": "Volltextsuche, Ordner und Export für ChatGPT, Gemini, Claude und Grok"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Volltextsuche, Ordner und Export für ChatGPT, Gemini, Claude und Grok."
         },
         {
           "name": "Scira",
           "kategorie": "Recherche",
-          "bewertung": 8,
-          "kurzbeschreibung": "Quellengestützte Recherche mit vielen Suchmodi und offenem Code"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Quellengestützte Recherche mit vielen Suchmodi und offenem Code."
         },
         {
           "name": "OpenAI Agents API",
           "kategorie": "Agents",
-          "bewertung": 8,
-          "kurzbeschreibung": "Verwaltete Agenten-Infrastruktur für Sessions, Tools und Sub-Agenten"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Verwaltete Agenten-Infrastruktur für langlebige Sessions, Tools und Sub-Agenten."
         }
       ],
-      "highlights": "Typewise Nova, Suno v6, AI Toolbox 3.0, Scira und OpenAI Agents API (je 8/10): Steuerbarkeit von Datenfluss, Kosten und Freigaben wird zum Produktmerkmal.",
+      "highlights": "OpenAI Agents API (8,0/10): Verwaltete Sessions, Sandbox und Sub-Agenten senken den Infrastrukturaufwand, bleiben aber US-resident und ohne Zero Data Retention.",
       "trend": "Vom einzelnen KI-Output zum kontrollierbaren Arbeitssystem: Quellen, Rechte, Kostenlimiten und menschliche Freigaben entscheiden über den realen Wert."
     },
     {
@@ -170,34 +170,34 @@
           "name": "Claude Fable 5.1",
           "kategorie": "Text",
           "bewertung": 8.7,
-          "kurzbeschreibung": "Text- und Wissensarbeit mit günstigerem wiederverwendbarem Kontext und Enterprise-Retention-Update"
+          "kurzbeschreibung": "Anspruchsvolle Text- und Wissensarbeit mit günstigerem wiederverwendbarem Kontext."
         },
         {
           "name": "Atlas von World Labs",
           "kategorie": "Design",
           "bewertung": 7.8,
-          "kurzbeschreibung": "Räumlich gesteuerte Bild-, Video- und 3D-Generierung für kreative Konzeptarbeit im Early Access"
+          "kurzbeschreibung": "Räumlich gesteuerte Bild-, Video- und 3D-Generierung für kreative Konzeptarbeit."
         },
         {
           "name": "HubSpot AEO + AI Search Sensor",
           "kategorie": "Data / Wissen",
           "bewertung": 8.2,
-          "kurzbeschreibung": "Sichtbarkeit in KI-Antworten mit Quellen-, Prompt- und Branchenkontext"
+          "kurzbeschreibung": "Messbare Sichtbarkeit in KI-Antworten mit Quellen-, Prompt- und Branchenkontext."
         },
         {
           "name": "Articos",
           "kategorie": "Recherche",
           "bewertung": 7.5,
-          "kurzbeschreibung": "Synthetische User-Research für schnelle Hypothesen zu Messaging, UX und Angebot"
+          "kurzbeschreibung": "Synthetische User-Research für schnelle Hypothesen zu Messaging, UX und Angebot."
         },
         {
           "name": "Ritto AI",
           "kategorie": "Agents",
           "bewertung": 6.8,
-          "kurzbeschreibung": "Wiederkehrende Bildschirmarbeit einmal vormachen und kontrolliert als Batch wiederholen"
+          "kurzbeschreibung": "Wiederkehrende Bildschirmarbeit einmal vormachen, kontrolliert als Batch wiederholen."
         }
       ],
-      "highlights": "Claude Fable 5.1 (8.7/10): Günstigerer wiederverwendbarer Kontext und die Retention-Architektur stärken kontrollierbare Wissensarbeit.",
+      "highlights": "Claude Fable 5.1 (8,7/10): Höhere Leistung, günstigere Cache-Reads und kundengesteuerte Retention bringen Text-KI näher an kontrollierbare Wissensarbeit.",
       "trend": "KI-Qualität entsteht zunehmend durch Steuerbarkeit: Datenfluss, Raumkontext, Quellen und menschliche Freigaben werden zum eigentlichen Produktmerkmal."
     },
     {
@@ -210,34 +210,34 @@
           "name": "Claude mit Memory",
           "kategorie": "Text",
           "bewertung": 8.5,
-          "kurzbeschreibung": "Kontrollierbarer, geteilter Arbeitskontext über Claude Chat und Cowork hinweg"
+          "kurzbeschreibung": "Editierbarer Arbeitskontext über Chat und Cowork hinweg."
         },
         {
           "name": "Midjourney V8.2 Edit Model",
           "kategorie": "Design",
           "bewertung": 8.5,
-          "kurzbeschreibung": "Instruktionsbasierte Bildbearbeitung mit bis zu vier Referenzbildern"
+          "kurzbeschreibung": "Gezielte Bildbearbeitung mit Anweisungen und bis zu vier Referenzen."
         },
         {
           "name": "PageIndex SDK Local",
           "kategorie": "Data / Wissen",
           "bewertung": 8.5,
-          "kurzbeschreibung": "Lokal ausführbares, reasoning-basiertes Dokumentenretrieval mit Seitenzitaten"
+          "kurzbeschreibung": "Lokal ausführbares Dokumentenretrieval mit nachvollziehbaren Seitenzitaten."
         },
         {
           "name": "Lenz",
           "kategorie": "Recherche",
-          "bewertung": 8,
-          "kurzbeschreibung": "Mehrstufige, quellenbasierte Faktenprüfung für KI-generierte Behauptungen"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Mehrstufige Faktenprüfung mit Quellenpfad für KI-generierte Behauptungen."
         },
         {
           "name": "Construct Computer",
           "kategorie": "Agents",
-          "bewertung": 8,
-          "kurzbeschreibung": "Agentischer Arbeitsbereich mit persistentem Cloud-Computer und nachvollziehbaren Abläufen"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Persistenter Agenten-Workspace mit Cloud-Computer und Aktivitätsprotokoll."
         }
       ],
-      "highlights": "PageIndex SDK Local (8.5/10): Private Dokumentenarbeit wird durch lokalen Index, eigene Modellschlüssel und Seitenzitate deutlich steuerbarer.",
+      "highlights": "PageIndex SDK Local (8,5/10): Lokale Indizes, eigene Modellschlüssel und Seitenzitate bringen Dokumenten-KI näher an eine prüfbare Wissensarbeit.",
       "trend": "KI-Tools verlagern ihren Wert von der einzelnen Antwort in den kontrollierbaren Arbeitskontext: editierbarer Speicher, nachvollziehbare Quellen, lokale Datenhaltung und persistente Workspaces."
     },
     {
@@ -249,35 +249,35 @@
         {
           "name": "ChatGPT for Teens",
           "kategorie": "Text",
-          "bewertung": 8,
-          "kurzbeschreibung": "Lernorientierte Text-KI mit zusätzlichen Schutzmechanismen für Jugendliche"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Lernorientierte Text-KI mit zusätzlichen Schutzmechanismen für Jugendliche."
         },
         {
           "name": "ElevenLabs AI Caption Generator",
           "kategorie": "Design",
-          "bewertung": 9,
-          "kurzbeschreibung": "Zeitlich synchronisierte Untertitel als schneller, editierbarer Produktionsschritt"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Zeitlich synchronisierte Untertitel als schneller, editierbarer Produktionsschritt."
         },
         {
           "name": "Databricks Genie One",
           "kategorie": "Data / Wissen",
-          "bewertung": 8,
-          "kurzbeschreibung": "Governte Antworten und Folgeaktionen auf Unternehmensdaten in natürlicher Sprache"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Governte Antworten und Folgeaktionen auf Unternehmensdaten in natürlicher Sprache."
         },
         {
           "name": "ChatPlayground AI",
           "kategorie": "Recherche",
-          "bewertung": 7,
-          "kurzbeschreibung": "Mehrere KI-Modelle vergleichen, Widersprüche sehen und Recherchefragen besser stellen"
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Mehrere KI-Modelle vergleichen, Widersprüche sehen und Recherchefragen besser stellen."
         },
         {
           "name": "Berd",
           "kategorie": "Agents",
-          "bewertung": 8,
-          "kurzbeschreibung": "Quelloffener Desktop-Workspace für lokale Projekte, Skills und spezialisierte Agenten"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Quelloffener Desktop-Workspace für lokale Projekte, Skills und spezialisierte Agenten."
         }
       ],
-      "highlights": "ElevenLabs AI Caption Generator (9/10): Produktionsreife Untertitelung trifft auf den Wochenfokus kontrollierbarer KI-Kontexte.",
+      "highlights": "ElevenLabs AI Caption Generator (9/10) & kontrollierbare KI-Kontexte",
       "trend": "Kontext, Rechte, Datenflüsse und Review-Schleifen werden zum eigentlichen Qualitätsmerkmal von KI-Tools."
     },
     {
@@ -289,36 +289,76 @@
         {
           "name": "Writer Agent + effizientes Harness",
           "kategorie": "Text",
-          "bewertung": 8,
-          "kurzbeschreibung": "Agentische Textarbeit mit Fokus auf Kostenkontrolle, Kontext und Governance"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Agentische Textarbeit mit Fokus auf Kostenkontrolle, Kontext und Governance."
         },
         {
           "name": "Grok Imagine Image 2.0",
           "kategorie": "Design",
-          "bewertung": 8,
-          "kurzbeschreibung": "Bildgenerierung und präzise Editierung für produktionsnahe Kreativarbeit"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Bildgenerierung und präzise Editierung für produktionsnahe Kreativarbeit."
         },
         {
           "name": "Muse Glimmer",
           "kategorie": "Data / Wissen",
-          "bewertung": 9,
-          "kurzbeschreibung": "Open-Weights-Modell für lokale Wissensassistenten, Tool Use und agentische Workflows"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Open-Weights-Modell für lokale Wissensassistenten, Tool Use und agentische Workflows."
         },
         {
           "name": "Perplexity Computer for Builders",
           "kategorie": "Recherche",
-          "bewertung": 8,
-          "kurzbeschreibung": "Recherche- und Ausführungsworkflow über Code, Produktdaten, Zahlungen und Telemetrie"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Recherche- und Ausführungsworkflow über Code, Produktdaten, Zahlungen und Telemetrie."
         },
         {
           "name": "Claude Code Auto Mode",
           "kategorie": "Agents",
-          "bewertung": 9,
-          "kurzbeschreibung": "Länger laufende Coding-Agents mit risikobasierter Sicherheitsprüfung"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Länger laufende Coding-Agents mit risikobasierter Sicherheitsprüfung statt Klick-Marathon."
         }
       ],
-      "highlights": "Muse Glimmer & Claude Code Auto Mode (9/10): Lokale Souveränität und kontrollierte Agentenautonomie werden produktionsreif.",
+      "highlights": "Muse Glimmer & Claude Code Auto Mode (9/10)",
       "trend": "Von Einzelausgaben zu kontrollierbaren Workflows: Kosten, Rechte, Kontext und Sicherheitsmechanismen werden zur eigentlichen Produktqualität."
+    },
+    {
+      "kw": 30,
+      "jahr": 2026,
+      "datum": "2026-07-26",
+      "url": "archiv/2026/kw30-2026-07-26.html",
+      "tools": [
+        {
+          "name": "Substack Pangram AI Detection",
+          "kategorie": "Text",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Ein in Substack integriertes Tool zur Erkennung von KI-generierten Texten."
+        },
+        {
+          "name": "FLUX 3 (Black Forest Labs)",
+          "kategorie": "Design",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "FLUX 3 ist das neue multimodale Foundation-Modell des deutschen Start-ups Black Forest Labs."
+        },
+        {
+          "name": "Gemini 3.6 Flash (Google)",
+          "kategorie": "Data / Wissen",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Googles neues Effizienz-Modell mit 1M Token Kontext, 17% weniger Output-Token und gesenktem Preis."
+        },
+        {
+          "name": "Perplexity Computer Brain",
+          "kategorie": "Recherche",
+          "bewertung": 10.0,
+          "kurzbeschreibung": "Selbstverbesserndes Gedächtnis-System für den Perplexity Computer-Agenten."
+        },
+        {
+          "name": "HubSpot Agent Hub & Agent Builder",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Zentraler Workspace in HubSpot für KI-Agenten in Marketing, Sales und Service."
+        }
+      ],
+      "highlights": "Perplexity Brain (10/10): Selbstverbesserndes Gedächtnis verwandelt KI-Recherche in einen echten digitalen Mitarbeiter.",
+      "trend": ""
     },
     {
       "kw": 29,
@@ -329,31 +369,31 @@
         {
           "name": "Inkling von Thinking Machines",
           "kategorie": "Text",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Open-Weights-Modell für multimodale Text-, Bild- und Audio-Workflows"
         },
         {
           "name": "Google Vids",
           "kategorie": "Design",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Workspace-Videoeditor mit Gemini Omni Flash und Personal Avatars"
         },
         {
           "name": "NVIDIA Nemotron 3 Embed",
-          "kategorie": "Data",
-          "bewertung": 9,
+          "kategorie": "Data / Wissen",
+          "bewertung": 9.0,
           "kurzbeschreibung": "Offene Embedding-Modelle für RAG, semantische Suche und Agent Memory"
         },
         {
           "name": "Context.dev",
           "kategorie": "Recherche",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Web-Kontext-API für Scraping, Crawling und strukturierte Extraktion"
         },
         {
           "name": "Osaurus",
           "kategorie": "Agents",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Native macOS-Agenten mit lokalen Modellen und optionalen Cloud-Providern"
         }
       ],
@@ -369,35 +409,35 @@
         {
           "name": "Shadow",
           "kategorie": "Text",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Echtzeit-Assistent für Calls, Follow-ups und Meeting-To-dos"
         },
         {
           "name": "Aaavatar",
           "kategorie": "Design",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Local-first Mac-App für konsistente Team-Portraits"
         },
         {
           "name": "Kanwas",
-          "kategorie": "Data",
-          "bewertung": 8,
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.0,
           "kurzbeschreibung": "Gemeinsamer Kontext-Workspace für Produktteams und Agenten"
         },
         {
           "name": "AnySearch",
           "kategorie": "Recherche",
-          "bewertung": 7,
+          "bewertung": 7.0,
           "kurzbeschreibung": "Search-API-Infrastruktur für KI-Agenten und vertikale Datenquellen"
         },
         {
           "name": "Mindra",
           "kategorie": "Agents",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Multi-Agent-Orchestrierung für operative Workflows"
         }
       ],
-      "highlights": "Aaavatar und Shadow (8/10): Local-first Datenschutz trifft Echtzeit-Ausführung in Meetings.",
+      "highlights": "Aaavatar und Shadow (8/10): Aaavatar setzt mit local-first Portraitbearbeitung einen starken Datenschutz-Massstab, Shadow verschiebt Meeting-KI von Notizen zu echter Ausführung.",
       "trend": "Von isolierten Prompts zu kontextfähigen Arbeitssystemen: Echtzeit-Ausführung, Teamwissen, agentische Recherche und operative Orchestrierung."
     },
     {
@@ -409,35 +449,35 @@
         {
           "name": "Postwise AI",
           "kategorie": "Text",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Social-Writing und Scheduling für X, LinkedIn und Threads"
         },
         {
           "name": "Flowstep 1.0",
           "kategorie": "Design",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "AI Design Engineer für editierbare UI-Flows und Figma-Übergabe"
         },
         {
           "name": "Exmergo Viz",
-          "kategorie": "Data",
-          "bewertung": 7,
+          "kategorie": "Data / Wissen",
+          "bewertung": 7.0,
           "kurzbeschreibung": "KI-Dashboards aus CSV, Excel und Datenbanken per natürlicher Sprache"
         },
         {
           "name": "Web of Science Research Intelligence",
           "kategorie": "Recherche",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "AI-native Research Intelligence für Funding, Strategie und Impact"
         },
         {
           "name": "Claude Financial Services Agents",
           "kategorie": "Agents",
-          "bewertung": 9,
+          "bewertung": 9.0,
           "kurzbeschreibung": "Zehn Agent-Templates für Pitchbooks, KYC, Marktanalyse und Finance Operations"
         }
       ],
-      "highlights": "Claude Financial Services Agents (9/10): Agenten werden regulierungstauglicher durch Templates, Connectors, Auditability und Human-in-the-Loop.",
+      "highlights": "Claude Financial Services Agents (9/10): Agenten werden regulierungstauglicher, weil Templates, Connectors, Auditability und Human-in-the-Loop zusammen gedacht werden.",
       "trend": "Von Chatbot zu Workflow-Schicht: KI-Tools docken direkt an Social Publishing, UI-Design, Datenanalyse, Research Intelligence und Finanzprozesse an."
     },
     {
@@ -450,17 +490,17 @@
           "name": "Genspark for Word",
           "kategorie": "Text",
           "bewertung": 9,
-          "kurzbeschreibung": "KI-Agenten nativ in Microsoft 365 — Draften, Editieren und Recherchieren direkt in Word"
+          "kurzbeschreibung": "KI-Agenten nativ in Microsoft 365, Draften, Editieren und Recherchieren direkt in Word"
         },
         {
           "name": "Bitgrain",
           "kategorie": "Design",
           "bewertung": 8,
-          "kurzbeschreibung": "Leichtgewichtiges Design-Studio im Browser — Fokus auf Texturen und Dithering"
+          "kurzbeschreibung": "Leichtgewichtiges Design-Studio im Browser, Fokus auf Texturen und Dithering"
         },
         {
           "name": "TrafficClaw",
-          "kategorie": "Data",
+          "kategorie": "Data / Wissen",
           "bewertung": 8,
           "kurzbeschreibung": "Google Analytics Alternative mit KI-Chat und Echtzeit-3D-Globus"
         },
@@ -478,7 +518,7 @@
         }
       ],
       "highlights": "Genspark for Word (9/10) & Buda (9/10): KI-Agenten werden nahtlos in den Arbeitsalltag integriert und übernehmen komplexe, mehrstufige Aufgaben.",
-      "trend": "Agentic Workflows in Standard-Tools — KI verlässt die isolierten Chat-Interfaces und wird direkt in Microsoft Office, Design-Software und Analytics-Dashboards eingebettet."
+      "trend": "Agentic Workflows in Standard-Tools, KI verlässt die isolierten Chat-Interfaces und wird direkt in Microsoft Office, Design-Software und Analytics-Dashboards eingebettet."
     },
     {
       "kw": 17,
@@ -489,36 +529,36 @@
         {
           "name": "Chronicle",
           "kategorie": "Text",
-          "bewertung": 8,
-          "kurzbeschreibung": "Cursor für Slides — KI-Präsentationen auf Enterprise-Niveau mit Agentic Workflows"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Cursor für Slides, KI-Präsentationen auf Enterprise-Niveau mit Agentic Workflows"
         },
         {
           "name": "ChatGPT Images 2.0",
           "kategorie": "Design",
-          "bewertung": 9,
-          "kurzbeschreibung": "Erstes Bildgenerierungsmodell mit Thinking — fehlerfreier Text, Web-Browsing, präzise Kontrolle"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Erstes Bildgenerierungsmodell mit Thinking, fehlerfreier Text, Web-Browsing, präzise Kontrolle"
         },
         {
           "name": "DeepSeek V4",
-          "kategorie": "Data",
-          "bewertung": 9,
-          "kurzbeschreibung": "1,6T Open-Source-Parameter, 1M Kontext als Standard — Frontier-Qualität zu Bruchteilspreisen"
+          "kategorie": "Data / Wissen",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "1,6T Open-Source-Parameter, 1M Kontext als Standard, Frontier-Qualität zu Bruchteilspreisen"
         },
         {
           "name": "Gemini Deep Research Max",
           "kategorie": "Recherche",
-          "bewertung": 9,
-          "kurzbeschreibung": "MCP-Support + native Charts + Gemini 3.1 Pro — autonome Recherche auf Enterprise-Niveau"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "MCP-Support + native Charts + Gemini 3.1 Pro, autonome Recherche auf Enterprise-Niveau"
         },
         {
           "name": "OpenAI Workspace Agents",
           "kategorie": "Agents",
-          "bewertung": 9,
-          "kurzbeschreibung": "Codex-Agenten für Teams — dauerhaft laufend, Slack-integriert, Enterprise-Controls"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Codex-Agenten für Teams, dauerhaft laufend, Slack-integriert, Enterprise-Controls"
         }
       ],
-      "highlights": "ChatGPT Images 2.0 (9/10) & DeepSeek V4 (9/10): Thinking-Bildgenerierung trifft Open-Source-Frontier — zwei Releases, die den Markt neu kalibrieren",
-      "trend": "KI-Agenten werden Teaminfrastruktur — OpenAI Workspace Agents, Gemini Deep Research Max und DeepSeek V4 zeigen: Autonome Systeme laufen jetzt dauerhaft, nicht nur auf Abruf"
+      "highlights": "ChatGPT Images 2.0 (9/10) & DeepSeek V4 (9/10): Thinking-Bildgenerierung trifft Open-Source-Frontier, zwei Releases, die den Markt neu kalibrieren",
+      "trend": "KI-Agenten werden Teaminfrastruktur, OpenAI Workspace Agents, Gemini Deep Research Max und DeepSeek V4 zeigen: Autonome Systeme laufen jetzt dauerhaft, nicht nur auf Abruf"
     },
     {
       "kw": 16,
@@ -530,35 +570,35 @@
           "name": "Fathom 3.0",
           "kategorie": "Text",
           "bewertung": 9,
-          "kurzbeschreibung": "Bot-freie Meeting-KI — Aufzeichnung ohne sichtbaren Teilnehmer, CRM-Sync, Account-weite Insights"
+          "kurzbeschreibung": "Bot-freie Meeting-KI, Aufzeichnung ohne sichtbaren Teilnehmer, CRM-Sync, Account-weite Insights"
         },
         {
           "name": "Figma for Agents",
           "kategorie": "Design",
           "bewertung": 10,
-          "kurzbeschreibung": "MCP-Server verbindet KI-Agenten mit Design-Systemen — bidirektionale Code-Canvas-Workflows"
+          "kurzbeschreibung": "MCP-Server verbindet KI-Agenten mit Design-Systemen, bidirektionale Code-Canvas-Workflows"
         },
         {
           "name": "Google Gemma 4",
-          "kategorie": "Data",
+          "kategorie": "Data / Wissen",
           "bewertung": 9,
-          "kurzbeschreibung": "Multimodales Open-Source-Modell lokal — 256K Kontext, Text/Bild/Audio/Video, 100% DSGVO-konform"
+          "kurzbeschreibung": "Multimodales Open-Source-Modell lokal, 256K Kontext, Text/Bild/Audio/Video, 100% DSGVO-konform"
         },
         {
           "name": "Perplexity Computer (Personal CFO)",
           "kategorie": "Recherche",
           "bewertung": 8,
-          "kurzbeschreibung": "KI-Agent mit Echtzeit-Bankdaten — Ausgabenanalyse, Budget-Planung, Net-Worth-Tracking via Plaid"
+          "kurzbeschreibung": "KI-Agent mit Echtzeit-Bankdaten, Ausgabenanalyse, Budget-Planung, Net-Worth-Tracking via Plaid"
         },
         {
           "name": "Claude Opus 4.7",
           "kategorie": "Agents",
           "bewertung": 10,
-          "kurzbeschreibung": "87.6% SWE-bench Verified, 1M Token Kontext ohne Aufpreis, 3.3x bessere Vision — der neue Massstab"
+          "kurzbeschreibung": "87.6% SWE-bench Verified, 1M Token Kontext ohne Aufpreis, 3.3x bessere Vision, der neue Massstab"
         }
       ],
       "highlights": "Figma for Agents (10/10) & Claude Opus 4.7 (10/10): Figma schliesst die Design-Code-Lücke, Anthropic setzt den neuen Massstab für Agentic Coding",
-      "trend": "Agentic Workflows werden produktionsreif — KI-Agenten greifen auf Design-Systeme, Bankkonten und Codebases zu und liefern deploybare Ergebnisse"
+      "trend": "Agentic Workflows werden produktionsreif, KI-Agenten greifen auf Design-Systeme, Bankkonten und Codebases zu und liefern deploybare Ergebnisse"
     },
     {
       "kw": 15,
@@ -570,34 +610,34 @@
           "name": "UPDF 2.5",
           "kategorie": "Text",
           "bewertung": 8.5,
-          "kurzbeschreibung": "Welterster PDF-Editor mit autonomen KI-Agenten — 10+ spezialisierte Agenten für Research, Legal, Finance"
+          "kurzbeschreibung": "Welterster PDF-Editor mit autonomen KI-Agenten, 10+ spezialisierte Agenten für Research, Legal, Finance"
         },
         {
           "name": "Google Veo 3.1 Lite",
           "kategorie": "Design",
-          "bewertung": 9,
-          "kurzbeschreibung": "KI-Video für $0.05 pro Clip — 50% günstiger als Vorgänger, 720p, via Gemini API"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "KI-Video für $0.05 pro Clip, 50% günstiger als Vorgänger, 720p, via Gemini API"
         },
         {
           "name": "Gemini Notebooks + NotebookLM",
-          "kategorie": "Data",
+          "kategorie": "Data / Wissen",
           "bewertung": 9.5,
-          "kurzbeschreibung": "Persönliche Wissensdatenbank direkt in Gemini — persistente Projekte, Quellen-Sync, kein Modell-Training"
+          "kurzbeschreibung": "Persönliche Wissensdatenbank direkt in Gemini, persistente Projekte, Quellen-Sync, kein Modell-Training"
         },
         {
           "name": "Gemini Interactive Simulations",
           "kategorie": "Recherche",
-          "bewertung": 9,
-          "kurzbeschreibung": "3D-Modelle und interaktive Physik-Simulationen direkt im Chat — show me statt statischer Diagramme"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "3D-Modelle und interaktive Physik-Simulationen direkt im Chat, \"show me\" statt statischer Diagramme"
         },
         {
           "name": "Claude Managed Agents",
           "kategorie": "Agents",
           "bewertung": 9.5,
-          "kurzbeschreibung": "Vollständig gehostete Agent-Infrastruktur von Anthropic — Public Beta, $0.08/Session-Stunde, 10x schnellere Entwicklung"
+          "kurzbeschreibung": "Vollständig gehostete Agent-Infrastruktur von Anthropic, Public Beta, $0.08/Session-Stunde, 10x schnellere Entwicklung"
         }
       ],
-      "highlights": "Gemini Notebooks + NotebookLM (9.5/10) & Claude Managed Agents (9.5/10): Google revolutioniert Wissensmanagement, Anthropic revolutioniert Agent-Infrastruktur",
+      "highlights": "Gemini Notebooks + NotebookLM (9.5/10) & Claude Managed Agents (9.5/10): Zwei gleichwertige Top-Picks, Google revolutioniert Wissensmanagement, Anthropic revolutioniert Agent-Infrastruktur",
       "trend": "KI-Video wird erschwinglich (Veo 3.1 Lite $0.05/Clip) & Paradigmenwechsel zu dynamischen, generativen Interfaces"
     },
     {
@@ -610,34 +650,34 @@
           "name": "Atomic Chat",
           "kategorie": "Text",
           "bewertung": 8.5,
-          "kurzbeschreibung": "Open-Source ChatGPT-Alternative — 1.000+ KI-Modelle vollständig offline auf dem Mac, zero data exfiltration"
+          "kurzbeschreibung": "Open-Source ChatGPT-Alternative, 1.000+ KI-Modelle vollständig offline auf dem Mac, zero data exfiltration"
         },
         {
           "name": "Noon",
           "kategorie": "Design",
           "bewertung": 7.5,
-          "kurzbeschreibung": "Das erste KI-native Design-Tool auf Production-Code — $44M Funding, aus dem Stealth-Modus"
+          "kurzbeschreibung": "Das erste KI-native Design-Tool auf Production-Code, $44M Funding, aus dem Stealth-Modus"
         },
         {
           "name": "Google Gemma 4",
-          "kategorie": "Data",
+          "kategorie": "Data / Wissen",
           "bewertung": 9.5,
-          "kurzbeschreibung": "Frontier Open-Source-KI unter Apache 2.0 — von Raspberry Pi bis H100, DSGVO-konform on-premise"
+          "kurzbeschreibung": "Frontier Open-Source-KI unter Apache 2.0, von Raspberry Pi bis H100, DSGVO-konform on-premise"
         },
         {
           "name": "Perplexity Computer for Taxes",
           "kategorie": "Recherche",
           "bewertung": 7.8,
-          "kurzbeschreibung": "Erster agentischer Steuer-Assistent — IRS-Formulare ausfüllen, Erklärungen prüfen, Abzüge optimieren"
+          "kurzbeschreibung": "Erster agentischer Steuer-Assistent, IRS-Formulare ausfüllen, Erklärungen prüfen, Abzüge optimieren"
         },
         {
           "name": "Holo3 by H Company",
           "kategorie": "Agents",
           "bewertung": 9.2,
-          "kurzbeschreibung": "State-of-the-Art Computer-Use-Agent — 78,85% OSWorld, Open Source Apache 2.0, europäisches Unternehmen"
+          "kurzbeschreibung": "State-of-the-Art Computer-Use-Agent, 78,85% OSWorld, Open Source Apache 2.0, europäisches Unternehmen"
         }
       ],
-      "highlights": "Google Gemma 4 (9.5/10): Historischer Meilenstein — Frontier Open-Source-KI unter Apache 2.0, vollständig DSGVO-konform on-premise betreibbar",
+      "highlights": "Google Gemma 4 (9.5/10): Historischer Meilenstein, Frontier Open-Source-KI unter Apache 2.0, von Raspberry Pi bis H100, vollständig DSGVO-konform on-premise betreibbar",
       "trend": "Open-Source überholt Cloud-KI: Gemma 4 und Holo3 zeigen, dass frontier-nahe KI-Qualität jetzt on-premise, kostenlos und ohne Lizenzrisiko verfügbar ist"
     },
     {
@@ -650,7 +690,7 @@
           "name": "Pendium",
           "kategorie": "Text",
           "bewertung": 8.5,
-          "kurzbeschreibung": "AI Visibility Platform — Sichtbarkeit in ChatGPT, Claude und Gemini monitoren und optimieren"
+          "kurzbeschreibung": "AI Visibility Platform, Sichtbarkeit in ChatGPT, Claude und Gemini monitoren und optimieren"
         },
         {
           "name": "Omma by Spline",
@@ -660,15 +700,15 @@
         },
         {
           "name": "Littlebird",
-          "kategorie": "Data",
+          "kategorie": "Data / Wissen",
           "bewertung": 8.8,
-          "kurzbeschreibung": "Kontextbezogener Mac-KI-Assistent — versteht kontinuierlich Bildschirm und Meetings"
+          "kurzbeschreibung": "Kontextbezogener Mac-KI-Assistent, versteht kontinuierlich Bildschirm und Meetings"
         },
         {
           "name": "Claude Computer Use",
           "kategorie": "Recherche",
           "bewertung": 9.5,
-          "kurzbeschreibung": "Anthropic gibt Claude direkten Computer-Zugriff — KI steuert Desktop-Apps autonom"
+          "kurzbeschreibung": "Anthropic gibt Claude direkten Computer-Zugriff, KI steuert Desktop-Apps autonom"
         },
         {
           "name": "Agentplace",
@@ -684,13 +724,13 @@
       "kw": 12,
       "jahr": 2026,
       "datum": "2026-03-22",
-      "url": "archiv/2026/kw13-2026-03-29.html",
+      "url": "archiv/2026/kw12-2026-03-22.html",
       "tools": [
         {
           "name": "Fathom Commentary Writer",
           "kategorie": "Text",
           "bewertung": 8.5,
-          "kurzbeschreibung": "KI-Finanzkommentar mit symbolischer Attribution — jede Zahl bis zur Quelle nachverfolgbar"
+          "kurzbeschreibung": "KI-Finanzkommentar mit symbolischer Attribution, jede Zahl bis zur Quelle nachverfolgbar"
         },
         {
           "name": "Gamma Imagine",
@@ -700,24 +740,24 @@
         },
         {
           "name": "Genie by Databox",
-          "kategorie": "Data",
+          "kategorie": "Data / Wissen",
           "bewertung": 8.8,
-          "kurzbeschreibung": "KI-Analyst für Business-Daten — Natural Language Queries über eigene Metriken und KPIs"
+          "kurzbeschreibung": "KI-Analyst für Business-Daten, Natural Language Queries über eigene Metriken und KPIs"
         },
         {
-          "name": "Perplexity Comet iOS",
+          "name": "Perplexity Comet für iOS",
           "kategorie": "Recherche",
           "bewertung": 9.2,
-          "kurzbeschreibung": "KI-nativer Browser jetzt auf iPhone — Deep Research, Voice Mode und Agentic Browsing"
+          "kurzbeschreibung": "KI-nativer Browser jetzt auf iPhone, Deep Research, Voice Mode und Agentic Browsing"
         },
         {
           "name": "Skyvern",
           "kategorie": "Agents",
-          "bewertung": 9,
-          "kurzbeschreibung": "Open-Source Browser-Automatisierung mit LLMs und Computer Vision — selbst hostbar"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Open-Source Browser-Automatisierung mit LLMs und Computer Vision, selbst hostbar"
         }
       ],
-      "highlights": "Gamma Imagine (9.5/10) führt eine Woche an, in der KI-Tools tief in bestehende Workflows integriert werden",
+      "highlights": "Gamma Imagine (9.5/10): Grösster Design-KI-Launch des Jahres, 100M Nutzer, $2.1B Bewertung, und jetzt ein vollständiges Design-Canvas via Texteingabe",
       "trend": "Agentic Workflows und kontextbewusste KI-Tools ersetzen allgemeine Chatbots in spezialisierten Anwendungsfällen"
     },
     {
@@ -740,9 +780,9 @@
         },
         {
           "name": "OrangeLabs",
-          "kategorie": "Data",
+          "kategorie": "Data / Wissen",
           "bewertung": 7.9,
-          "kurzbeschreibung": "Talk to your data — Dokumente, CSVs und Websuche in einem Analyse-Workspace"
+          "kurzbeschreibung": "Talk to your data, Dokumente, CSVs und Websuche in einem Analyse-Workspace"
         },
         {
           "name": "Citable",
@@ -757,139 +797,139 @@
           "kurzbeschreibung": "AI Video Sales Agent für personalisierte Produktdemos und Lead-Qualifizierung"
         }
       ],
-      "highlights": "Naoma AI (8.8/10) führt eine Woche an, in der vertikale KI-Tools mit klarem ROI statt allgemeiner Modell-Hypes dominieren",
+      "highlights": "Naoma AI: Stärkstes Tool der Woche, AI Video Sales Agent mit klarer Revenue-Logik und solider Datenschutzkommunikation (8.8/10)",
       "trend": "Spezialisierte KI-Produkte mit klarer Umsatz- oder Produktivitätslogik setzen sich gegenüber allgemeinen Assistenten durch"
     },
     {
       "kw": 10,
       "jahr": 2026,
       "datum": "2026-03-08",
-      "url": "archiv/kw10-2026.html",
+      "url": "archiv/2026/kw10-2026-03-08.html",
       "tools": [
         {
           "name": "GPT-5.4",
           "kategorie": "Text",
-          "bewertung": 9,
-          "kurzbeschreibung": "OpenAIs neues Flaggschiff — \"Thinking\"-Layer, 83% GDPval, 1.05M Token Kontext"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "OpenAIs neues Flaggschiff, \"Thinking\"-Layer, 83% GDPval, 1.05M Token Kontext"
         },
         {
           "name": "Variant",
           "kategorie": "Design",
           "bewertung": 8.5,
-          "kurzbeschreibung": "Endlose Designs per Scroll — kein Canvas, kein Figma, kein Prompt-Engineering nötig"
+          "kurzbeschreibung": "Endlose Designs per Scroll, kein Canvas, kein Figma, kein Prompt-Engineering nötig"
         },
         {
           "name": "Parsewise",
-          "kategorie": "Data",
+          "kategorie": "Data / Wissen",
           "bewertung": 8.5,
-          "kurzbeschreibung": "Cursor für Dokumente — KI-Agenten analysieren tausende PDFs mit Quellennachweis"
+          "kurzbeschreibung": "Cursor für Dokumente, KI-Agenten analysieren tausende PDFs auf einmal mit Quellennachveis"
         },
         {
           "name": "Heywa",
           "kategorie": "Recherche",
-          "bewertung": 8,
-          "kurzbeschreibung": "Visuelle Stories statt Text-Wände — KI-Recherche als interaktive Mini-App"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Visuelle Stories statt Text-Wände, KI-Recherche als interaktive Mini-App"
         },
         {
           "name": "Luma Agents",
           "kategorie": "Agents",
-          "bewertung": 9,
-          "kurzbeschreibung": "$15M-Kampagne in 40h für $20K — kreative End-to-End-Agents mit Unified Intelligence"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "$15M-Kampagne in 40h für $20K, kreative End-to-End-Agents mit Unified Intelligence"
         }
       ],
-      "highlights": "GPT-5.4 & Luma Agents (9.0/10) — Stars der Woche",
+      "highlights": "GPT-5.4: Neues Flaggschiff von OpenAI, 83% auf GDPval, \"Thinking\"-Layer, $20/Monat (Plus) (9.0/10)",
       "trend": "Kreative Agents übernehmen End-to-End-Workflows, Paradigmenwechsel in Design und Recherche-UX"
     },
     {
       "kw": 9,
       "jahr": 2026,
       "datum": "2026-03-01",
-      "url": "archiv/kw09-2026.html",
+      "url": "archiv/2026/kw09-2026-03-01.html",
       "tools": [
         {
           "name": "Mercury 2",
           "kategorie": "Text",
-          "bewertung": 9,
-          "kurzbeschreibung": "Weltschnellstes Reasoning-LLM — Diffusion-Architektur, 1.009 Token/Sek"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Weltschnellstes Reasoning-LLM, Diffusion-Architektur mit 1.009 Token/Sek und 4x günstigeren Preisen"
         },
         {
           "name": "QuiverAI (Arrow-1)",
           "kategorie": "Design",
           "bewertung": 8.5,
-          "kurzbeschreibung": "Erstes KI-Modell für Vektorgrafiken — editierbare SVGs, Platz 1 SVG Arena"
+          "kurzbeschreibung": "Erstes KI-Modell für Vektorgrafiken, editierbare SVGs aus Text-Prompts, Platz 1 auf SVG Arena"
         },
         {
           "name": "Supaboard",
-          "kategorie": "Data",
-          "bewertung": 8,
-          "kurzbeschreibung": "#1 Product Hunt Feb 2026 — Datenanalyse auf Englisch, 600+ Integrationen"
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Daten auf Englisch befragen, #1 Product Hunt Februar 2026, 600+ Integrationen, kein SQL nötig"
         },
         {
           "name": "Perplexity Computer",
           "kategorie": "Recherche",
           "bewertung": 8.5,
-          "kurzbeschreibung": "19 KI-Modelle orchestriert — autonomer Multi-Modell-Agent"
+          "kurzbeschreibung": "19 KI-Modelle orchestriert, autonomer Multi-Modell-Agent für komplexe Workflows, $200/Monat"
         },
         {
           "name": "Notion Custom Agents",
           "kategorie": "Agents",
           "bewertung": 8.5,
-          "kurzbeschreibung": "24/7 autonome KI-Agenten in Notion — kostenlos bis Mai 2026"
+          "kurzbeschreibung": "24/7 autonome KI-Agenten direkt in Notion, kostenlos bis Mai 2026, kein Coding nötig"
         }
       ],
-      "highlights": "Mercury 2 (9/10) — Weltschnellstes Reasoning-Modell mit Diffusion-Architektur",
+      "highlights": "Mercury 2: Weltschnellstes Reasoning-Modell, 1.009 Token/Sek, 4x günstiger als Claude Haiku (9/10)",
       "trend": "Orchestrierung von Modellen und Demokratisierung von KI-Agenten"
     },
     {
       "kw": 8,
       "jahr": 2026,
       "datum": "2026-02-22",
-      "url": "archiv/kw08-2026.html",
+      "url": "archiv/2026/kw08-2026-02-22.html",
       "tools": [
         {
           "name": "Claude Sonnet 4.6",
           "kategorie": "Text",
           "bewertung": 9.5,
-          "kurzbeschreibung": "Opus-Level-Intelligenz zum Sonnet-Preis — neues Standardmodell"
+          "kurzbeschreibung": "Opus-Level-Intelligenz zum Sonnet-Preis, neues Standardmodell von Anthropic"
         },
         {
           "name": "Moda",
           "kategorie": "Design",
           "bewertung": 8.5,
-          "kurzbeschreibung": "KI-Design mit vollständig editierbarem Canvas"
+          "kurzbeschreibung": "KI-Design mit vollständig editierbarem Canvas, endlich kein Neustart bei jeder Änderung"
         },
         {
           "name": "Boost.space v5",
-          "kategorie": "Data",
-          "bewertung": 8,
-          "kurzbeschreibung": "Shared Context Layer für KI-Agenten & Automatisierungen"
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Shared Context für KI-Agenten, das gemeinsame Gehirn für alle Automatisierungen"
         },
         {
           "name": "Figr AI",
           "kategorie": "Recherche",
-          "bewertung": 8,
-          "kurzbeschreibung": "Product-aware KI für UX-Research und Design"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Product-aware KI für UX, analysiert echte Apps und denkt durch Design-Entscheidungen"
         },
         {
           "name": "Clawi.ai",
           "kategorie": "Agents",
-          "bewertung": 8,
-          "kurzbeschreibung": "OpenClaw in der Cloud — Zero-Setup KI-Agent"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "OpenClaw in der Cloud, leistungsstarker KI-Agent ohne Server-Setup, über WhatsApp steuerbar"
         }
       ],
-      "highlights": "Claude Sonnet 4.6 (9.5/10) — Opus-Intelligenz zum Sonnet-Preis",
+      "highlights": "Claude Sonnet 4.6: Opus-Intelligenz zum Sonnet-Preis (9.5/10)",
       "trend": "Leistung wird demokratisiert, Tools werden spezialisierter"
     },
     {
       "kw": 5,
       "jahr": 2026,
       "datum": "2026-02-01",
-      "url": "archiv/kw05-2026.html",
+      "url": "archiv/2026/kw05-2026-02-01.html",
       "tools": [
         {
           "name": "OpenAI Prism",
           "kategorie": "Text",
-          "bewertung": 9,
+          "bewertung": 9.0,
           "kurzbeschreibung": "KI-nativer Workspace für wissenschaftliches Schreiben mit GPT-5.2"
         },
         {
@@ -900,20 +940,20 @@
         },
         {
           "name": "Pandada AI",
-          "kategorie": "Data",
+          "kategorie": "Data / Wissen",
           "bewertung": 8.5,
           "kurzbeschreibung": "KI-gestützte Datenanalyse ohne Programmierkenntnisse"
         },
         {
           "name": "The Prompting Company",
           "kategorie": "Recherche",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "SEO für das KI-Zeitalter - Optimierung für ChatGPT-Zitate"
         },
         {
           "name": "Agentic Vision in Gemini",
           "kategorie": "Agents",
-          "bewertung": 9,
+          "bewertung": 9.0,
           "kurzbeschreibung": "Google Major Update für agentenähnliche visuelle Interaktion"
         }
       ],
@@ -924,37 +964,37 @@
       "kw": 4,
       "jahr": 2026,
       "datum": "2026-01-25",
-      "url": "archiv/kw04-2026-correct.html",
+      "url": "archiv/2026/kw04-2026-01-25.html",
       "tools": [
         {
           "name": "ContentPod",
           "kategorie": "Text",
-          "bewertung": 8,
-          "kurzbeschreibung": "Voice-First Content Creation Platform"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Voice-First Content Creation Platform, Sprechen statt Schreiben"
         },
         {
           "name": "HouseGPTs",
           "kategorie": "Design",
-          "bewertung": 7,
-          "kurzbeschreibung": "AI-Powered Home Design Platform"
+          "bewertung": 7.0,
+          "kurzbeschreibung": "AI-Powered Home Design Platform, fotorealistische Innendesigns in Sekunden"
         },
         {
           "name": "Pandada AI",
-          "kategorie": "Data",
-          "bewertung": 8,
-          "kurzbeschreibung": "Natural Language Data Analysis Platform"
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Natural Language Data Analysis Platform, Daten in Sprache fragen"
         },
         {
           "name": "NBot AI",
           "kategorie": "Recherche",
-          "bewertung": 7,
-          "kurzbeschreibung": "Personal AI Radar for Content Curation"
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Personal AI Radar for Content Curation, 24/7 Web-Monitoring kostenlos"
         },
         {
           "name": "Smart Calendars AI v2.5",
           "kategorie": "Agents",
-          "bewertung": 8,
-          "kurzbeschreibung": "Agentic AI Calendar Assistant"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Agentic AI Calendar Assistant, Termine durch Sprechen, Fotografieren oder Einfügen"
         }
       ],
       "highlights": "ContentPod, Pandada AI & Smart Calendars AI (8/10)",
@@ -964,80 +1004,80 @@
       "kw": 3,
       "jahr": 2026,
       "datum": "2026-01-18",
-      "url": "archiv/kw03-2026.html",
+      "url": "archiv/2026/kw03-2026-01-18.html",
       "tools": [
         {
           "name": "TranslateGemma",
           "kategorie": "Text",
-          "bewertung": 8.5,
-          "kurzbeschreibung": "Googles Open-Source-Übersetzungsmodelle (55 Sprachen)"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Googles Open-Source-Antwort auf DeepL"
         },
         {
           "name": "GLM-Image",
           "kategorie": "Design",
-          "bewertung": 8,
-          "kurzbeschreibung": "Hybrid-Bildgenerator mit präzisem Text-Rendering"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Die Open-Source-Revolution im Text-Rendering"
         },
         {
           "name": "NotebookLM Data Tables",
-          "kategorie": "Data",
-          "bewertung": 8,
-          "kurzbeschreibung": "Automatische Tabellenextraktion aus Notizen"
+          "kategorie": "Data / Wissen",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Googles automatischer Daten-Strukturierer"
         },
         {
           "name": "Xpoz MCP",
           "kategorie": "Recherche",
-          "bewertung": 8.5,
-          "kurzbeschreibung": "Claude AI Direktzugriff auf Social-Media-Plattformen"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Social Media Intelligence für KI-Agenten"
         },
         {
           "name": "Claude Code MCP Tool Search",
           "kategorie": "Agents",
-          "bewertung": 9,
-          "kurzbeschreibung": "Skalierungsdurchbruch für KI-Agenten"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Die Lösung für das Skalierungsproblem von KI-Agenten"
         }
       ],
-      "highlights": "Claude Code MCP Tool Search (9/10) — Skalierungsdurchbruch für KI-Agenten",
+      "highlights": "TranslateGemma, GLM-Image & Claude Code MCP Tool Search (9/10)",
       "trend": "Open Source & Agenten-Skalierung"
     },
     {
       "kw": 2,
       "jahr": 2026,
       "datum": "2026-01-11",
-      "url": "archiv/index_kw02_2026.html",
+      "url": "archiv/2026/kw02-2026-01-11.html",
       "tools": [
         {
           "name": "Gemini 3 in Gmail",
           "kategorie": "Text",
-          "bewertung": 8.5,
-          "kurzbeschreibung": "Gemini 3 Integration für 3 Milliarden Gmail-Nutzer"
+          "bewertung": 9.0,
+          "kurzbeschreibung": "AI-Powered E-Mail-Produktivität für 3 Milliarden Nutzer"
         },
         {
           "name": "ConceptViz",
           "kategorie": "Design",
-          "bewertung": 8,
-          "kurzbeschreibung": "KI-gestützte Konzept-Visualisierung"
+          "bewertung": 7.0,
+          "kurzbeschreibung": "KI-Diagramm-Generator für STEM-Bildung"
         },
         {
           "name": "ChatGPT Health",
-          "kategorie": "Data",
-          "bewertung": 7.5,
-          "kurzbeschreibung": "Gesundheitsassistent auf GPT-Basis"
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Personalisierte Gesundheitsberatung mit KI"
         },
         {
           "name": "TubeYakker",
           "kategorie": "Recherche",
-          "bewertung": 7.5,
-          "kurzbeschreibung": "YouTube-Content-Analyse und Zusammenfassung"
+          "bewertung": 8.0,
+          "kurzbeschreibung": "YouTube-Playlists in durchsuchbares Wissen verwandeln"
         },
         {
           "name": "Owl Browser",
           "kategorie": "Agents",
-          "bewertung": 7,
-          "kurzbeschreibung": "KI-gesteuerter autonomer Browser-Agent"
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Undetectable Browser-Automatisierung"
         }
       ],
-      "highlights": "Gemini 3 in Gmail (8.5/10) — KI für 3 Milliarden Nutzer",
+      "highlights": "Star der Woche: Gemini 3 in Gmail (9/10)",
       "trend": "KI-Integration in bestehende Produktivitätstools"
     },
     {
@@ -1049,36 +1089,196 @@
         {
           "name": "Punchd",
           "kategorie": "Text",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Conversion-optimierte Headlines auf Knopfdruck"
         },
         {
           "name": "Nano Banana",
           "kategorie": "Design",
-          "bewertung": 9,
+          "bewertung": 9.0,
           "kurzbeschreibung": "Revolutionäre Bildgenerierung mit Character Consistency"
         },
         {
           "name": "Yonoo",
-          "kategorie": "Data",
-          "bewertung": 7,
+          "kategorie": "Data / Wissen",
+          "bewertung": 7.0,
           "kurzbeschreibung": "Der Smart-Router für 8 Frontier-Modelle"
         },
         {
           "name": "Quantera.ai",
           "kategorie": "Recherche",
-          "bewertung": 8,
+          "bewertung": 8.0,
           "kurzbeschreibung": "Enterprise-Grade Finanzrecherche für Institutionen"
         },
         {
           "name": "Mnexium AI",
           "kategorie": "Agents",
-          "bewertung": 9,
+          "bewertung": 9.0,
           "kurzbeschreibung": "Das persistente Gedächtnis für KI-Agenten"
         }
       ],
-      "highlights": "Nano Banana & Mnexium AI (9/10) - Stars der Woche",
+      "highlights": "Stars der Woche: Nano Banana & Mnexium AI (9/10)",
       "trend": "Spezialisierung, Infrastruktur & User Experience"
+    },
+    {
+      "kw": 52,
+      "jahr": 2025,
+      "datum": "2025-12-28",
+      "url": "archiv/2025/kw52-2025-12-28.html",
+      "tools": [
+        {
+          "name": "Sequenzy",
+          "kategorie": "Text",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "\"Cursor\" für Email-Marketing"
+        },
+        {
+          "name": "Reve AI",
+          "kategorie": "Design",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Die Revolution der Bildbearbeitung"
+        },
+        {
+          "name": "Scanned.to",
+          "kategorie": "Data / Wissen",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "OCR mit perfektem Layout"
+        },
+        {
+          "name": "FireCrawl /agent",
+          "kategorie": "Recherche",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Web Scraping ohne URLs"
+        },
+        {
+          "name": "Macroscope",
+          "kategorie": "Agents",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Der autonome Code-Reviewer"
+        }
+      ],
+      "highlights": "Star der Woche: Reve AI (9/10)",
+      "trend": ""
+    },
+    {
+      "kw": 51,
+      "jahr": 2025,
+      "datum": "2025-12-21",
+      "url": "archiv/2025/kw51-2025-12-21.html",
+      "tools": [
+        {
+          "name": "Tonemark",
+          "kategorie": "Text",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Authentische KI-Texte in Ihrem persönlichen Stil"
+        },
+        {
+          "name": "Reve AI",
+          "kategorie": "Design",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Layout Representation für präzise Bildbearbeitung"
+        },
+        {
+          "name": "DocsRouter",
+          "kategorie": "Data / Wissen",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Unified API für 100+ OCR-Modelle"
+        },
+        {
+          "name": "SiteSignal",
+          "kategorie": "Recherche",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "AI Search Visibility & AEO-Monitoring"
+        },
+        {
+          "name": "Incredible.one",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Autonome Agenten für Deep Work mit Agent MAX"
+        }
+      ],
+      "highlights": "Stars der Woche: SiteSignal & Incredible.one (9/10)",
+      "trend": ""
+    },
+    {
+      "kw": 49,
+      "jahr": 2025,
+      "datum": "2025-12-07",
+      "url": "archiv/2025/kw49-2025-12-07.html",
+      "tools": [
+        {
+          "name": "Proofly",
+          "kategorie": "Text",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "On-Device AI Proofreader"
+        },
+        {
+          "name": "Bloom",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "AI Brand Asset Generator"
+        },
+        {
+          "name": "Nume",
+          "kategorie": "Data / Wissen",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "AI CFO für Startups"
+        },
+        {
+          "name": "Exa",
+          "kategorie": "Recherche",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "AI Search Engine für Agents"
+        },
+        {
+          "name": "Notis",
+          "kategorie": "Agents",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Autonomous AI Agent"
+        }
+      ],
+      "highlights": "Star der Woche: Proofly & Nume (9/10)",
+      "trend": ""
+    },
+    {
+      "kw": 48,
+      "jahr": 2025,
+      "datum": "2025-12-01",
+      "url": "archiv/2025/kw48-2025-12-01.html",
+      "tools": [
+        {
+          "name": "Contenov",
+          "kategorie": "Text",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "SEO-Content-Brief-Automatisierung"
+        },
+        {
+          "name": "Alai",
+          "kategorie": "Design",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "AI-Präsentationstool mit 4 Design-Optionen"
+        },
+        {
+          "name": "TwelveLabs Marengo 3.0",
+          "kategorie": "Data / Wissen",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "Enterprise Video-Understanding"
+        },
+        {
+          "name": "DeepSeek v3.2",
+          "kategorie": "Recherche",
+          "bewertung": 10.0,
+          "kurzbeschreibung": "Open-Source Reasoning AI"
+        },
+        {
+          "name": "Taskade Genesis",
+          "kategorie": "Agents",
+          "bewertung": 9.0,
+          "kurzbeschreibung": "\"One Prompt = One App\" Plattform"
+        }
+      ],
+      "highlights": "Star der Woche: DeepSeek v3.2 (10/10)",
+      "trend": ""
     }
   ]
 }

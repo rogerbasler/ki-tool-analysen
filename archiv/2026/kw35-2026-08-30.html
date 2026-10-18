@@ -1,389 +1,224 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KI-Tool-Analysen | Wöchentliche Reviews KW 34/2026</title>
-    <meta name="description" content="Wöchentliche Analysen der Top 5 KI-Tools mit detaillierten Reviews, Pricing und Datenschutz-Bewertungen.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KW 35/2026: Claude mit Memory, Midjourney V8.2 Edit Model, PageIndex SDK Local, Lenz, Construct Computer | KI-Tool-Analysen</title>
+<meta name="description" content="Diese Woche verschiebt sich der Wert von KI weg von der einzelnen Antwort hin zum kontrollierbaren Arbeitskontext. Claude macht Memory editierbar, Midjourney Bildänderungen gezielter, PageIndex Dokumentwissen lokal ausführbar, Lenz Behauptungen prüfbar und Construct mehrstufige Arbeit persistent. Di">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://rogerbasler.github.io/ki-tool-analysen/archiv/2026/kw35-2026-08-30.html">
+<link rel="alternate" type="application/rss+xml" title="KI-Tool-Analysen" href="../../feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KI-Tool-Analysen">
+<meta property="og:title" content="KW 35/2026: Claude mit Memory, Midjourney V8.2 Edit Model, PageIndex SDK Local, Lenz, Construct Computer | KI-Tool-Analysen">
+<meta property="og:description" content="Diese Woche verschiebt sich der Wert von KI weg von der einzelnen Antwort hin zum kontrollierbaren Arbeitskontext. Claude macht Memory editierbar, Midjourney Bildänderungen gezielter, PageIndex Dokumentwissen lokal ausführbar, Lenz Behauptungen prüfbar und Construct mehrstufige Arbeit persistent. Di">
+<meta property="og:url" content="https://rogerbasler.github.io/ki-tool-analysen/archiv/2026/kw35-2026-08-30.html">
+<meta property="og:locale" content="de_CH">
+<meta property="og:image" content="https://rogerbasler.github.io/ki-tool-analysen/assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css?v=202610180633">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "KI-Tool-Analysen KW 35/2026", "datePublished": "2026-08-30", "inLanguage": "de-CH", "author": {"@type": "Person", "name": "Roger Basler de Roca", "url": "https://fragroger.ai"}, "url": "https://rogerbasler.github.io/ki-tool-analysen/archiv/2026/kw35-2026-08-30.html", "about": [{"@type": "SoftwareApplication", "name": "Claude mit Memory", "applicationCategory": "Text", "url": "https://www.anthropic.com/claude"}, {"@type": "SoftwareApplication", "name": "Midjourney V8.2 Edit Model", "applicationCategory": "Design", "url": "https://www.midjourney.com/"}, {"@type": "SoftwareApplication", "name": "PageIndex SDK Local", "applicationCategory": "Data / Wissen", "url": "https://pageindex.ai/"}, {"@type": "SoftwareApplication", "name": "Lenz", "applicationCategory": "Recherche", "url": "https://lenz.io/"}, {"@type": "SoftwareApplication", "name": "Construct Computer", "applicationCategory": "Agents", "url": "https://construct.computer/"}]}</script>
 </head>
 <body>
-    <!-- Cyberpunk Background Effects -->
-    <div class="cyber-grid"></div>
-    <div class="cyber-scanline"></div>
+<a class="skip" href="#main">Zum Inhalt</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../../" aria-label="KI-Tool-Analysen, Startseite">
+      <span class="brand-mark"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></span>
+      <span class="brand-sub">KI-Tool-Analysen</span>
+    </a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="../../" >Diese Woche</a>
+      <a href="../../archiv.html" class="active" aria-current="page">Archiv</a>
+      <a href="../../methode.html" >Methode</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+<section class="hero">
+  <p class="kicker"><span class="badge quiet">Archiv</span>KW 35/2026 · 30. August 2026</p>
+  <h1 class="hero-title"><span class="line">5 KI-Tools</span><span class="line outline">der Woche</span></h1>
+  <p class="hero-sub">Text, Design, Data / Wissen, Recherche und Agents: je ein Tool, geprüft auf Nutzen, Kosten und Datenschutz.</p>
+<div class="hero-actions"><a class="btn ghost" href="../../">Zur aktuellen Woche →</a><a class="btn ghost" href="../../archiv.html">Alle Wochen</a></div></section>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <div class="logo-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 5L35 12.5V27.5L20 35L5 27.5V12.5L20 5Z" stroke="#00ff9d" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="20" r="8" fill="#00ff9d"/>
-                            <path d="M20 12V28M12 20H28" stroke="#ffffff" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <div class="logo-text">
-                        <h1>KI-TOOL-ANALYSEN</h1>
-                        <p class="tagline">Weekly Deep Dive Reviews</p>
-                    </div>
-                </div>
-                <div class="header-stats">
-                    <div class="stat">
-                        <span class="stat-value">KW 34</span>
-                        <span class="stat-label">Kalenderwoche</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-value">5</span>
-                        <span class="stat-label">Tools/Woche</span>
-                    </div>
-                    <a href="archiv.html" class="stat" style="text-decoration: none; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 15px rgba(0,255,157,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                        <span class="stat-value">📚</span>
-                        <span class="stat-label">Archiv</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+<section class="summary" aria-labelledby="summary-title">
+  <h2 class="section-label" id="summary-title">Die Woche in Kürze</h2>
+  <p>Diese Woche verschiebt sich der Wert von KI weg von der einzelnen Antwort hin zum kontrollierbaren Arbeitskontext. Claude macht Memory editierbar, Midjourney Bildänderungen gezielter, PageIndex Dokumentwissen lokal ausführbar, Lenz Behauptungen prüfbar und Construct mehrstufige Arbeit persistent. Die produktive Frage lautet nicht &#34;Was kann die KI?&#34;, sondern &#34;Was kann ich nachvollziehen, begrenzen und wiederverwenden?&#34;</p>
+<ul class="highlights"><li>PageIndex SDK Local (8,5/10): Lokale Indizes, eigene Modellschlüssel und Seitenzitate bringen Dokumenten-KI näher an eine prüfbare Wissensarbeit.</li><li>Trend: Editierbarer Speicher, sichtbare Quellen, lokaler Storage und einsehbare Agentenarbeit werden zum eigentlichen Qualitätsmerkmal.</li><li>Praxisregel: Datenschutz ist kein Footer-Link. Sichtbarkeit, Datenfluss, Rechte und Freigaben müssen vor dem ersten Produktivtest stehen.</li></ul></section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <div class="container">
-            <!-- Latest Analysis Section -->
-            <section class="latest-section">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-icon">▶</span>
-                        Aktuelle Analyse
-                    </h2>
-                    <div class="section-meta">
-                        <span class="date">23.08.2026</span>
-                        <span class="badge badge-live">LIVE</span>
-                    </div>
-                </div>
+<nav class="jump" aria-label="Zu den Tools springen">
+<a href="#claude-mit-memory">Text: Claude mit Memory<span class="score">8,5</span></a><a href="#midjourney-v8-2-edit-model">Design: Midjourney V8.2 Edit Model<span class="score">8,5</span></a><a href="#pageindex-sdk-local">Data / Wissen: PageIndex SDK Local<span class="score">8,5</span></a><a href="#lenz">Recherche: Lenz<span class="score">8</span></a><a href="#construct-computer">Agents: Construct Computer<span class="score">8</span></a></nav>
 
-                <!-- Summary Card -->
-                <div class="summary-card">
-                    <h3 class="summary-title">Wöchentliche Zusammenfassung</h3>
-                    <p class="summary-text">
-                        Diese Woche geht es weniger um den nächsten Modell-Showcase als um kontrollierbare Arbeitskontexte. ChatGPT for Teens zeigt, wie Text-KI Lernpfade statt Abkürzungen fördern kann. ElevenLabs reduziert die Untertitelung auf einen editierbaren Produktionsschritt, während Genie One Antworten an Governance und Unternehmensdaten bindet. ChatPlayground macht Widersprüche sichtbar, Berd bringt Agenten wieder näher an lokale Projekte und eigene Regeln.
-                    </p>
-                    <div class="summary-highlights">
-                        <div class="highlight">
-                            <span class="highlight-icon">⭐</span>
-                            <span class="highlight-text">ElevenLabs AI Caption Generator (9/10) & kontrollierbare KI-Kontexte</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight-icon">🚀</span>
-                            <span class="highlight-text">Trend: Von einzelnen KI-Antworten zu begrenzten Kontexten, überprüfbaren Datenflüssen und klaren Berechtigungen</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight-icon">💡</span>
-                            <span class="highlight-text">Paradigmenwechsel: Von All-in-One zu spezialisierten Lösungen</span>
-                        </div>
-                    </div>
-                </div>
+<article class="tool" id="claude-mit-memory">
+  <div class="tool-head">
+    <p class="tool-cat"><span class="cat-num">01</span>Text</p>
+    <h2><a href="https://www.anthropic.com/claude" target="_blank" rel="noopener">Claude mit Memory</a></h2>
+    <div class="rating top" aria-label="Relevanz 8,5 von 10">
+      <span class="rating-num">8,5<small>/10</small></span>
+      <span class="rating-bar"><span style="width: 85.0%"></span></span>
+      <span class="rating-label">Relevanz</span>
+    </div>
+  </div>
+<p class="tool-lead">Editierbarer Arbeitskontext über Chat und Cowork hinweg.</p><div class="tool-desc"><p>Anthropic hat am 25. August die Memory-Funktion von Claude über Chat und Cowork hinweg zusammengeführt. Claude kann damit Arbeitskontext zwischen diesen Oberflächen behalten. Entscheidend ist nicht das Erinnern allein, sondern die Kontrollschicht: Gespeicherte Themen sind unter &#34;Settings &gt; Memory&#34; sichtbar, editierbar und löschbar. Themen wie Gesundheit oder Überzeugungen werden nur einbezogen, wenn Nutzende dies aktiv erlauben. Memory ist für Free, Pro und Max standardmässig aktiviert, für Team und Enterprise standardmässig deaktiviert.</p><p>Zielgruppe sind Wissensarbeiter:innen, Einzelunternehmer:innen und Teams, die wiederkehrende Schreib-, Analyse- oder Projektarbeit nicht bei jedem Gespräch neu einordnen wollen. Das eigentliche Problem ist nicht fehlender Modellkontext, sondern der Verlust von Arbeitslogik zwischen einzelnen Sitzungen. Genau dort setzt die Funktion an.</p></div>
+  <div class="block">
+    <h3>Nutzungsszenarien</h3>
+    <ul><li><strong>Projektbriefings:</strong> Wiederkehrende Zielgruppen, Sprachregeln und Entscheide als überprüfbarer Kontext</li><li><strong>Redaktion:</strong> Themencluster, Quellenstandards und Formatvorgaben über Recherche- und Schreibschritte hinweg nutzen</li><li><strong>Beratung:</strong> Vorläufige Hypothesen und offene Punkte pro Mandat in einem kontrollierten Themenbereich halten</li><li><strong>Persönliche Wissensarbeit:</strong> Lernziele, Begriffserklärungen und bevorzugte Darstellungsformen merken lassen</li></ul>
+  </div>
 
-                <!-- Tools Grid -->
-                <div class="tools-grid">
+  <div class="facts">
+<div class="fact"><h3>Pricing</h3><p>Die persönliche Nutzung beginnt mit Free für 0 USD. Pro kostet 17 USD pro Monat bei jährlicher Zahlung oder 20 USD monatlich. Max beginnt bei 100 USD monatlich. Für Teams gelten Standard-Sitze zu 20 USD jährlich abgerechnet pro Person und Monat oder 25 USD monatlich; Premium-Sitze kosten 100 bzw. 125 USD. Enterprise wird mit 20 USD pro Sitz zuzüglich nutzungsabhängiger API-Kosten ausgewiesen. Die Preise verstehen sich ohne anwendbare Steuern; Nutzungsgrenzen gelten auch in Bezahlplänen.</p><ul><li><strong>Free:</strong> 0 USD</li><li><strong>Pro:</strong> 17 USD jährlich oder 20 USD monatlich</li><li><strong>Max:</strong> ab 100 USD monatlich</li><li><strong>Team Standard:</strong> 20 USD jährlich oder 25 USD monatlich pro Sitz</li><li><strong>Team Premium:</strong> 100 USD jährlich oder 125 USD monatlich pro Sitz</li><li><strong>Enterprise:</strong> 20 USD pro Sitz plus API-Nutzung</li></ul></div><div class="fact"><h3>Datenschutz</h3><p>Anthropic beschreibt sich für Business-Angebote als Auftragsverarbeiter unter den jeweiligen Kundenvereinbarungen. Die öffentliche Privacy Policy für persönliche Dienste nennt Übermittlungen auf Server in den USA und weitere Länder ausserhalb des EWR und des Vereinigten Königreichs. Für internationale Transfers werden unter anderem Standardvertragsklauseln genannt. Bei persönlichen Konten können Ein- und Ausgaben zur Verbesserung der Modelle verwendet werden, sofern kein Opt-out erfolgt. Für Team und Enterprise ist Modelltraining laut Preisübersicht standardmässig deaktiviert.</p><p>Ein klassisches Self-Hosting der Claude-Modelle bietet Anthropic nicht an. Für regulierte Einsätze sind deshalb DPA, gewählte Bereitstellungsform, Datenresidenz und Connector-Berechtigungen vor dem Pilot verbindlich zu klären. Eine Community-Diskussion berichtet zugleich über irritierende Veränderungen und verlorene Memory-Zusammenfassungen im Umfeld anderer Modellupdates. Das beweist keinen Fehler der neuen Funktion, zeigt aber: Projektkontext braucht Export- und Backup-Disziplin, nicht nur Vertrauen in eine Memory-Schaltfläche.</p></div>  </div>
 
-                    <!-- Tool: ChatGPT for Teens -->
-                    <div class="tool-card" data-category="text">
-                        <div class="tool-header">
-                            <div class="tool-category">
-                                <span class="category-icon">📝</span>
-                                <span class="category-label">TEXT</span>
-                            </div>
-                            <div class="tool-rating">
-                                <span class="rating-value">8.0</span>
-                                <span class="rating-label">/10</span>
-                            </div>
-                        </div>
+  <div class="pros-cons">
+<div class="block pros"><h3>Stärken</h3><ul><li>Claude bietet einen sichtbaren und korrigierbaren Kontext statt einer vollständig unsichtbaren Personalisierung. Die standardmässige Deaktivierung in Team und Enterprise ist ein sinnvoller Governance-Startpunkt. Für textintensive, wiederkehrende Arbeit kann die Funktion Reibung deutlich reduzieren, ohne dass sich jede Arbeitsbeziehung in immer längere Prompt-Vorlagen verwandelt.</li></ul></div><div class="block cons"><h3>Schwächen</h3><ul><li>Die Funktion bleibt cloudbasiert und die tatsächliche Datenverarbeitung kann internationale Transfers einschliessen. Nutzungsgrenzen bleiben auch in kostenpflichtigen Stufen bestehen. Ausserdem ist editierbarer Speicher kein Nachweis dafür, dass jedes Detail in jeder Antwort korrekt gewichtet wird. Kontextmanagement braucht weiterhin klare Projektordner, Quellen und menschliche Prüfung.</li></ul></div>  </div>
 
-                        <h3 class="tool-name">ChatGPT for Teens</h3>
-                        <p class="tool-tagline">Lernorientierte Text-KI mit zusätzlichen Schutzmechanismen für Jugendliche.</p>
+  <div class="verdict"><h3>Einschätzung für die Praxis</h3><p>Claude mit Memory ist eine sehr gute Wahl für wiederkehrende Text- und Wissensarbeit, wenn der gespeicherte Kontext bewusst gepflegt wird. Starten sollte man mit einem abgegrenzten Arbeitsbereich, klaren Speicherregeln und regelmässigem Aufräumen. Die Konsequenz daraus ist: Memory steigert Produktivität dann, wenn Organisation vor Personalisierung kommt.</p></div>
 
-                        <div class="tool-description">
-                            <p>OpenAI bündelt Study Mode, Quizze, Lernvisualisierungen und Elternfunktionen in einer automatisch zugewiesenen Erfahrung für 13- bis 17-Jährige. Der Wert liegt nicht in der schnellen Antwort, sondern im schrittweisen Lernen und kritischen Prüfen.</p>
-                        </div>
+  <div class="tool-links">
+<a class="btn" href="https://www.anthropic.com/claude" target="_blank" rel="noopener">Claude mit Memory öffnen →</a><a class="more" href="../../archiv/2026/kw35-2026-08-30-analyse.html#claude-mit-memory">In der Vollanalyse lesen</a>  </div>
+</article>
+<article class="tool" id="midjourney-v8-2-edit-model">
+  <div class="tool-head">
+    <p class="tool-cat"><span class="cat-num">02</span>Design</p>
+    <h2><a href="https://www.midjourney.com/" target="_blank" rel="noopener">Midjourney V8.2 Edit Model</a></h2>
+    <div class="rating top" aria-label="Relevanz 8,5 von 10">
+      <span class="rating-num">8,5<small>/10</small></span>
+      <span class="rating-bar"><span style="width: 85.0%"></span></span>
+      <span class="rating-label">Relevanz</span>
+    </div>
+  </div>
+<p class="tool-lead">Gezielte Bildbearbeitung mit Anweisungen und bis zu vier Referenzen.</p><div class="tool-desc"><p>Midjourney hat am 27. August den öffentlichen Test seines ersten V8.2-Edit-Modells gestartet und zwei Tage später ein Qualitätsupdate dafür veröffentlicht. Das Edit-Modell bearbeitet Bilder anhand natürlicher Anweisungen, kann bis zu vier Bildreferenzen einbeziehen, bestimmte Bildbereiche verändern und die Arbeitsfläche erweitern. Zudem lässt es sich mit Personalisierung, Moodboards und Style References verwenden. Midjourney weist selbst auf verbleibende Edge Cases hin.</p><p>Die Zielgruppe sind Kreativteams, Content-Produzent:innen, Markenverantwortliche und visuelle Generalist:innen, die Bildvarianten nicht mehr nur generieren, sondern gezielt weiterentwickeln wollen. Der entscheidende Unterschied liegt in der Verschiebung von &#34;noch einmal neu&#34; zu &#34;an diesem Motiv gezielt weiterarbeiten&#34;.</p></div>
+  <div class="block">
+    <h3>Nutzungsszenarien</h3>
+    <ul><li><strong>Kampagnenmotive:</strong> Motiv an saisonale Botschaft, neues Produkt oder anderes Format anpassen</li><li><strong>Editorial Design:</strong> Einzelne Bildelemente austauschen und den Bildausschnitt für unterschiedliche Kanäle erweitern</li><li><strong>Moodboard-Produktion:</strong> Mehrere Referenzbilder als visuelle Leitplanken nutzen</li><li><strong>Produktinszenierung:</strong> Hintergrund oder bestimmte Bereiche eines Produktmotivs ändern</li></ul>
+  </div>
 
-                        <div class="tool-features">
-                            <div class="feature">
-                                <span class="feature-icon">💰</span>
-                                <div class="feature-content">
-                                    <strong>Pricing:</strong> Kein separater Teen-Preis. Zugang über ChatGPT Free; höhere Limits über allgemeine Bezahlpläne, regional prüfen.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🔒</span>
-                                <div class="feature-content">
-                                    <strong>Datenschutz:</strong> US-Cloud mit europäischer Privacy Policy. Keine Self-Hosting-Option; Datenkontrollen bei persönlichen Konten aktiv prüfen.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">✨</span>
-                                <div class="feature-content">
-                                    <strong>Praxis:</strong> Für Prüfungsvorbereitung, Verständnischecks, Entwürfe und KI-Literacy, immer mit Quellenprüfung und klaren Schulregeln.
-                                </div>
-                            </div>
-                        </div>
+  <div class="facts">
+<div class="fact"><h3>Pricing</h3><p>Midjourney führt vier kostenpflichtige Abos. Basic kostet 10 USD pro Monat, Standard 30 USD, Pro 60 USD und Mega 120 USD. Bei jährlicher Zahlung sinkt der effektive Monatsbetrag um 20 Prozent auf 8, 24, 48 beziehungsweise 96 USD. Einen dauerhaft verfügbaren Free Tier gibt es nicht. Stealth Mode, der Kreationen privat hält, ist nur in Pro und Mega enthalten.</p><ul><li><strong>Basic:</strong> 10 USD</li><li><strong>Standard:</strong> 30 USD</li><li><strong>Pro:</strong> 60 USD</li><li><strong>Mega:</strong> 120 USD</li></ul></div><div class="fact"><h3>Datenschutz</h3><p>Midjourney veröffentlicht keinen konkreten Serverstandort. Die Privacy Policy erfasst unter anderem eingegebene Prompts und hochgeladene Inhalte und beschreibt internationale Datenübermittlungen. Für Personen im EWR, in der Schweiz und im Vereinigten Königreich nennt Midjourney die Standardvertragsklauseln als Schutzmechanismus. Eine Self-Hosting-Option besteht nicht.</p><p>Die zentrale praktische Einschränkung ist nicht juristisch, sondern operativ: Private Bildarbeit setzt mindestens Pro oder Mega voraus. Eine Community-Diskussion bewertet V8.2 als detailreicher und schneller auf ein brauchbares Bild zielend, kritisiert jedoch weniger Freiraum für surreal-künstlerische Ergebnisse und einen stärker wörtlichen Stil. Das ist kein Urteil über alle Anwendungsfälle, aber ein guter Gegencheck zur Marketingkurve.</p></div>  </div>
 
-                        <div class="tool-verdict">
-                            <strong>Fazit:</strong> 8/10. Ein sinnvoller Lernbegleiter mit besseren Leitplanken als ein Standard-Chat. Er ersetzt weder Fachperson noch Quellenkritik.
-                        </div>
+  <div class="pros-cons">
+<div class="block pros"><h3>Stärken</h3><ul><li>Das Update stärkt die steuerbare Bearbeitung innerhalb eines bereits überzeugenden Bildworkflows. Die Kombination aus Anweisung, mehreren Referenzen, Inpainting und Outpainting reduziert die Zahl der Wiederholungen. Für Markenarbeit sind Moodboards und Style References besonders nützlich, weil sie Stil als wiederverwendbare Arbeitsgrundlage behandeln.</li></ul></div><div class="block cons"><h3>Schwächen</h3><ul><li>Es gibt keinen permanenten kostenlosen Einstieg und keine Self-Hosting-Option. Private Kreationen kosten mindestens den Pro-Tarif. Die Dokumentation beschreibt den Funktionsumfang, aber der Teststatus und die ausdrücklich genannten Edge Cases verlangen weiterhin einen echten Qualitätscheck vor Veröffentlichung.</li></ul></div>  </div>
 
-                        <div class="tool-links">
-                            <a href="https://openai.com/index/chatgpt-for-teens/" class="tool-link" target="_blank">
-                                <span>Website besuchen</span>
-                                <span class="link-icon">→</span>
-                            </a>
-                        </div>
-                    </div>
+  <div class="verdict"><h3>Einschätzung für die Praxis</h3><p>Midjourney V8.2 Edit Model ist sehr empfehlenswert für Teams, die aus einem bestehenden Motiv mehrere kontrollierte Varianten entwickeln wollen. Es eignet sich besonders für visuelle Serienproduktion, solange Referenzmaterial, Markenrichtlinien und der finale Freigabeprozess sauber organisiert sind. Es ersetzt nicht den Art Director, aber es reduziert dessen langweiligste Wiederholungen.</p></div>
 
-                    <!-- Tool: ElevenLabs AI Caption Generator -->
-                    <div class="tool-card" data-category="design">
-                        <div class="tool-header">
-                            <div class="tool-category">
-                                <span class="category-icon">🎨</span>
-                                <span class="category-label">DESIGN</span>
-                            </div>
-                            <div class="tool-rating">
-                                <span class="rating-value">9.0</span>
-                                <span class="rating-label">/10</span>
-                            </div>
-                        </div>
+  <div class="tool-links">
+<a class="btn" href="https://www.midjourney.com/" target="_blank" rel="noopener">Midjourney V8.2 Edit Model öffnen →</a><a class="more" href="../../archiv/2026/kw35-2026-08-30-analyse.html#midjourney-v8-2-edit-model">In der Vollanalyse lesen</a>  </div>
+</article>
+<article class="tool" id="pageindex-sdk-local">
+  <div class="tool-head">
+    <p class="tool-cat"><span class="cat-num">03</span>Data / Wissen</p>
+    <h2><a href="https://pageindex.ai/" target="_blank" rel="noopener">PageIndex SDK Local</a></h2>
+    <div class="rating top" aria-label="Relevanz 8,5 von 10">
+      <span class="rating-num">8,5<small>/10</small></span>
+      <span class="rating-bar"><span style="width: 85.0%"></span></span>
+      <span class="rating-label">Relevanz</span>
+    </div>
+  </div>
+<p class="tool-lead">Lokal ausführbares Dokumentenretrieval mit nachvollziehbaren Seitenzitaten.</p><div class="tool-desc"><p>PageIndex hat am 27. August eine wesentliche Erweiterung seines SDK angekündigt: Der vollständige reasoning-basierte RAG-Workflow kann lokal laufen. Teams können Baumindizes erstellen, Dokumente lokal speichern, lange Dokumente abfragen und Seitenzitate erzeugen. Der lokale Modus verwendet den eigenen Modellanbieter und API-Schlüssel und benötigt keine Vektordatenbank.</p><p>RAG bezeichnet einen Abrufprozess, bei dem ein Modell vor seiner Antwort relevante Dokumentstellen beizieht. PageIndex organisiert Dokumente als hierarchischen Baum und lässt ein Modell über diese Struktur nach passenden Abschnitten suchen. Die Methode ist für textlastige PDFs gedacht, etwa Berichte, Regulatorik, technische Handbücher oder Lehrmaterialien.</p></div>
+  <div class="block">
+    <h3>Nutzungsszenarien</h3>
+    <ul><li><strong>Geschäftsberichte:</strong> Lange Jahres- und Quartalsberichte lokal indexieren und mit Seitenzitaten befragen</li><li><strong>Regulatorische Dokumente:</strong> Vorschriften, Richtlinien und Vertragswerke in einem lokalen Wissensworkflow abfragen</li><li><strong>Technische Dokumentation:</strong> Handbücher und Spezifikationen in eine interne Abfrageoberfläche einbinden</li><li><strong>Fachausbildung:</strong> Textlastige Lernunterlagen strukturiert erschliessen</li></ul>
+  </div>
 
-                        <h3 class="tool-name">ElevenLabs AI Caption Generator</h3>
-                        <p class="tool-tagline">Zeitlich synchronisierte Untertitel als schneller, editierbarer Produktionsschritt.</p>
+  <div class="facts">
+<div class="fact"><h3>Pricing</h3><p>PageIndex veröffentlicht auf der untersuchten Website keinen öffentlich ausgezeichneten Tarifvergleich und keinen verlässlichen permanenten Free Tier. Die Produktseite bietet einen Zugang zum Testen und eine Demo-Anfrage, doch es wurden keine offiziellen, allgemein sichtbaren Planpreise dokumentiert.</p><ul><li><strong>Free Tier:</strong> Kein öffentlich spezifizierter dauerhafter Tarif auf der geprüften Produktseite</li><li><strong>Selbstbedienungspläne:</strong> Keine offiziell sichtbaren Preise im geprüften Webauftritt</li><li><strong>Enterprise:</strong> Kontakt- beziehungsweise Demo-Prozess vorhanden; Preis nicht öffentlich ausgewiesen</li><li><strong>Zusatzkosten:</strong> Lokaler Modus benötigt einen eigenen Modell-API-Schlüssel; dessen Nutzungskosten fallen beim gewählten Anbieter an</li></ul></div><div class="fact"><h3>Datenschutz</h3><p>Hinter PageIndex steht Vectify AI Limited mit Sitz in England und Wales. Laut Privacy Policy werden Daten in den USA und im Vereinigten Königreich gespeichert; für Transfers ausserhalb des Vereinigten Königreichs und der EU werden zusätzliche Schutzmassnahmen genannt. Die Richtlinie verweist auf Rechte unter der DSGVO. Sie erklärt zugleich, dass anonymisierte Daten unbegrenzt genutzt und an andere Unternehmen verkauft werden können. Das betrifft nach Darstellung der Policy anonymisierte Informationen, bleibt aber ein Punkt für die Datenklassifizierung.</p><p>Die lokale SDK-Option reduziert den Umfang der durch PageIndex verwalteten Speicherung bei Index und Dokumenten deutlich, beseitigt aber nicht die Verantwortung für den gewählten Modellanbieter. PageIndex unterscheidet klar: Lokale Speicherung und Indexierung bleiben lokal, der Chat-Modellzugang läuft mit dem eigenen API-Schlüssel. Eine vollständige On-Premise-Architektur inklusive Modellbetrieb ist damit nicht automatisch gegeben.</p></div>  </div>
 
-                        <div class="tool-description">
-                            <p>ElevenLabs erstellt aus MP4, MOV und MKV präzise Untertitel mit Wort-Timing, Sprecherzuordnung und Unterstützung für mehr als 90 Sprachen. Für Content-Teams wird aus einem mühsamen Nachgang ein kontrollierbarer Workflow.</p>
-                        </div>
+  <div class="pros-cons">
+<div class="block pros"><h3>Stärken</h3><ul><li>Die Kombination aus lokaler Speicherung, natürlicher Dokumentstruktur und Seitenzitaten trifft ein echtes Problem professioneller Wissensarbeit: Antworten sollen nicht nur plausibel klingen, sondern auf eine Seite im Dokument zeigen. Für textlastige Inhalte kann der Verzicht auf Chunking und Vektordatenbank die Architektur vereinfachen.</li></ul></div><div class="block cons"><h3>Schwächen</h3><ul><li>Öffentliche Preis- und Plantransparenz ist derzeit unzureichend. Der lokale Modus benötigt technische Kompetenz und einen eigenen Modellzugang. Die Privacy Policy erlaubt die Nutzung und den Verkauf anonymisierter Daten, was bei hochsensiblen Dokumenten eine interne Prüfung der tatsächlichen Datenwege verlangt.</li></ul></div>  </div>
 
-                        <div class="tool-features">
-                            <div class="feature">
-                                <span class="feature-icon">💰</span>
-                                <div class="feature-content">
-                                    <strong>Pricing:</strong> Free mit 10'000 Credits; Starter 6 USD, Creator 22 USD, Pro 99 USD. Abrechnung über Credits und Videominuten.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🔒</span>
-                                <div class="feature-content">
-                                    <strong>Datenschutz:</strong> US-Anbieter mit Privacy Policy und DPA. Reguläres Self-Hosting fehlt; private Deployments nennt ElevenLabs nur für Enterprise.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">✨</span>
-                                <div class="feature-content">
-                                    <strong>Praxis:</strong> Stark für Reels, Podcasts, Bildungs- und Eventvideos. Namen, Fachbegriffe und Sprecherwechsel vor Veröffentlichung prüfen.
-                                </div>
-                            </div>
-                        </div>
+  <div class="verdict"><h3>Einschätzung für die Praxis</h3><p>PageIndex SDK Local ist sehr relevant für Organisationen, die dokumentenbasierte Antworten mit Quellenbezug und lokaler Kontrolle benötigen. Der richtige Pilot startet mit einer klar abgegrenzten Dokumentklasse und nicht mit dem gesamten Fileshare. So zeigt sich rasch, ob Seitenzitate, Abrufqualität und externe Modellkosten den erwarteten Nutzen liefern.</p></div>
 
-                        <div class="tool-verdict">
-                            <strong>Fazit:</strong> 9/10. Praktische Entlastung mit hoher Produktionsreife. Die KI spart Tipparbeit, nicht den finalen Qualitätsentscheid.
-                        </div>
+  <div class="tool-links">
+<a class="btn" href="https://pageindex.ai/" target="_blank" rel="noopener">PageIndex SDK Local öffnen →</a><a class="more" href="../../archiv/2026/kw35-2026-08-30-analyse.html#pageindex-sdk-local">In der Vollanalyse lesen</a>  </div>
+</article>
+<article class="tool" id="lenz">
+  <div class="tool-head">
+    <p class="tool-cat"><span class="cat-num">04</span>Recherche</p>
+    <h2><a href="https://lenz.io/" target="_blank" rel="noopener">Lenz</a></h2>
+    <div class="rating" aria-label="Relevanz 8 von 10">
+      <span class="rating-num">8<small>/10</small></span>
+      <span class="rating-bar"><span style="width: 80.0%"></span></span>
+      <span class="rating-label">Relevanz</span>
+    </div>
+  </div>
+<p class="tool-lead">Mehrstufige Faktenprüfung mit Quellenpfad für KI-generierte Behauptungen.</p><div class="tool-desc"><p>Lenz ist eine KI-gestützte Faktenprüfungsplattform für Aussagen, die nicht unbelegt im Arbeitsprozess stehen bleiben dürfen. Das Tool extrahiert überprüfbare Behauptungen aus Text, prüft sie über mehrere Schritte und liefert einen dokumentierten Befund. Laut Produktseite kommen acht Modelle über fünf Stufen zum Einsatz, ergänzt durch eine konträre Modell-Debatte, drei unabhängige Prüfer und einen vollständigen Zitationspfad. Die API-Funktionen reichen von Behauptungsextraktion über Schnellbewertung bis zur vertieften Verifizierung und Folgefragen.</p><p>Lenz erreichte bei Product Hunt am 27. August Rang 3 des Tages mit 255 Punkten. Der Launch ist damit zeitlich klar im Berichtsfenster verankert. Die Punktezahl ist ein Nachfrage-Signal, keine wissenschaftliche Validierung der Prüfgüte.</p></div>
+  <div class="block">
+    <h3>Nutzungsszenarien</h3>
+    <ul><li><strong>Content-Freigabe:</strong> Fakten in Entwürfen vor Veröffentlichung markieren und prüfen</li><li><strong>Produktkommunikation:</strong> Leistungsversprechen und Marktzahlen gegen Quellen prüfen</li><li><strong>KI-Qualitätssicherung:</strong> Antworten eines eigenen KI-Workflows als Prüfauftrag übergeben</li><li><strong>Analytische Briefings:</strong> Zentrale Behauptungen eines Briefings samt Quellenpfad sichtbar machen</li></ul>
+  </div>
 
-                        <div class="tool-links">
-                            <a href="https://elevenlabs.io/caption-generator" class="tool-link" target="_blank">
-                                <span>Website besuchen</span>
-                                <span class="link-icon">→</span>
-                            </a>
-                        </div>
-                    </div>
+  <div class="facts">
+<div class="fact"><h3>Pricing</h3><p>Lenz bietet einen klar ausgewiesenen Free Tier ohne Kreditkarte. Er umfasst 1.000 Extraktionen pro Tag und 100 Credits pro Monat. Plus kostet 7,99 USD, Developer 99 USD und Scale 399 USD pro Monat. Enterprise ist individuell. Die Credits entsprechen unterschiedlichen Prüfungen: Im Free Plan etwa 100 schnelle Bewertungen, zehn vollständige Verifizierungen oder 100 Folgefragen.</p><ul><li><strong>Free:</strong> 0 USD</li><li><strong>Plus:</strong> 7,99 USD</li><li><strong>Developer:</strong> 99 USD</li><li><strong>Scale:</strong> 399 USD</li><li><strong>Enterprise:</strong> Auf Anfrage</li></ul></div><div class="fact"><h3>Datenschutz</h3><p>Lenz speichert eingereichte Behauptungen und Analyseergebnisse. Neue Prüfberichte sind standardmässig öffentlich, lassen sich jedoch einzeln oder als Standard auf privat setzen. Das ist kein Nebendetail, sondern eine voreingestellte Veröffentlichungspolitik. Texte werden zur Analyse an Modellanbieter weitergegeben. Lenz nennt Google Cloud als Infrastruktur und beschreibt Verarbeitung und Speicherung personenbezogener Daten in den USA. Für internationale Transfers verweist die Richtlinie auf EU-US Data Privacy Framework und Standardvertragsklauseln.</p><p>Self-Hosting wird nicht angeboten. Für die Einbindung in bestehende Systeme stehen API und MCP-Zugang bereit, doch beim Einsatz vertraulicher Inhalte muss die Standard-Sichtbarkeit vor dem ersten Test zwingend auf &#34;Private&#34; gesetzt und der Datenfluss zu Modellanbietern rechtlich geprüft werden.</p></div>  </div>
 
-                    <!-- Tool: Databricks Genie One -->
-                    <div class="tool-card" data-category="data">
-                        <div class="tool-header">
-                            <div class="tool-category">
-                                <span class="category-icon">📊</span>
-                                <span class="category-label">DATA / WISSEN</span>
-                            </div>
-                            <div class="tool-rating">
-                                <span class="rating-value">8.0</span>
-                                <span class="rating-label">/10</span>
-                            </div>
-                        </div>
+  <div class="pros-cons">
+<div class="block pros"><h3>Stärken</h3><ul><li>Lenz löst ein echtes Problem generativer Arbeit: Die Behauptung wird zum prüfbaren Objekt statt zum dekorierten Satz mit Quellen-Optik. Die mehrstufige Architektur und der vollständige Quellenpfad geben Teams eine bessere Grundlage, um Annahmen, Belege und Unsicherheit sichtbar zu machen. Das Free Tier ist für einen ernsthaften Test ausreichend.</li></ul></div><div class="block cons"><h3>Schwächen</h3><ul><li>Das Tool ist cloudbasiert, verarbeitet Inhalte mit Drittmodell-Anbietern und speichert Behauptungen sowie Analysen. Die öffentliche Voreinstellung für neue Prüfberichte ist für vertrauliche Arbeit ungeeignet. Als junges Produkt besitzt es zudem noch keine breite, langjährige Praxisbasis.</li></ul></div>  </div>
 
-                        <h3 class="tool-name">Databricks Genie One</h3>
-                        <p class="tool-tagline">Governte Antworten und Folgeaktionen auf Unternehmensdaten in natürlicher Sprache.</p>
+  <div class="verdict"><h3>Einschätzung für die Praxis</h3><p>Lenz ist sehr nützlich als Kontrollschicht für veröffentlichungsrelevante Aussagen und KI-generierte Texte. Es sollte nicht als Wahrheitsmaschine behandelt werden, sondern als strukturierter Anlass, Quellen und Gegenargumente offenzulegen. Die Regel für den Einsatz ist simpel: Sensible Inhalte zuerst privat schalten, dann prüfen, danach entscheidet ein Mensch.</p></div>
 
-                        <div class="tool-description">
-                            <p>Genie One verbindet Fragen, Daten- und Wissenszugriff sowie agentische Folgeaktionen. Über Unity Catalog sollen bestehende Berechtigungen bis auf Zeilen- und Spaltenebene respektiert werden. Das ist für Unternehmen relevanter als ein weiterer hübscher Prompt.</p>
-                        </div>
+  <div class="tool-links">
+<a class="btn" href="https://lenz.io/" target="_blank" rel="noopener">Lenz öffnen →</a><a class="more" href="../../archiv/2026/kw35-2026-08-30-analyse.html#lenz">In der Vollanalyse lesen</a>  </div>
+</article>
+<article class="tool" id="construct-computer">
+  <div class="tool-head">
+    <p class="tool-cat"><span class="cat-num">05</span>Agents</p>
+    <h2><a href="https://construct.computer/" target="_blank" rel="noopener">Construct Computer</a></h2>
+    <div class="rating" aria-label="Relevanz 8 von 10">
+      <span class="rating-num">8<small>/10</small></span>
+      <span class="rating-bar"><span style="width: 80.0%"></span></span>
+      <span class="rating-label">Relevanz</span>
+    </div>
+  </div>
+<p class="tool-lead">Persistenter Agenten-Workspace mit Cloud-Computer und Aktivitätsprotokoll.</p><div class="tool-desc"><p>Construct Computer positioniert sich als KI-Arbeitskraft für Einzelunternehmer:innen und kleine Teams. Nach eigener Beschreibung erhält jeder Nutzer einen realen Linux-Cloud-Computer. Die Plattform verbindet Agenten, Dateien, Workflows, Tools, App-Anbindungen und einen einsehbaren Speicher in einem Workspace. Sie kann Hintergrund- und geplante Aufgaben ausführen, Arbeitsschritte protokollieren und abgebrochene Arbeit auf dem vorhandenen Zwischenstand fortsetzen.</p><p>Construct war in der Launchwoche bei Product Hunt auf Rang 1 des Tages mit 368 Punkten. Der Launch-Beleg ist stark, die betriebliche Reife muss sich jedoch erst über mehrere Monate und reale Prozesslast beweisen.</p></div>
+  <div class="block">
+    <h3>Nutzungsszenarien</h3>
+    <ul><li><strong>Wiederkehrende Marktbeobachtung:</strong> Rechercheauftrag mit Quellenanforderungen und fester Struktur planen</li><li><strong>Interne Reportings:</strong> Dateien aus dem Workspace analysieren, Bericht vorbereiten und Aktivität dokumentieren</li><li><strong>Operative Vorbereitung:</strong> Daten aus verbundenen Anwendungen zusammenführen und einen kontrollierten Entwurf erzeugen</li><li><strong>Prototyping:</strong> Kleine interne Werkzeuge und Skripte aus einer fachlichen Aufgabe heraus erstellen</li></ul>
+  </div>
 
-                        <div class="tool-features">
-                            <div class="feature">
-                                <span class="feature-icon">💰</span>
-                                <div class="feature-content">
-                                    <strong>Pricing:</strong> Nutzungsbasiert statt fixer Monatspauschale. Kostenloser Einstieg laut Produktseite, Compute- und Plattformkosten vorab budgetieren.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🔒</span>
-                                <div class="feature-content">
-                                    <strong>Datenschutz:</strong> Cloud-native auf AWS, Azure und Google Cloud. Governance über Unity Catalog; Datenresidenz und Modellendpunkte vor dem Pilot festlegen.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">✨</span>
-                                <div class="feature-content">
-                                    <strong>Praxis:</strong> Für Self-Service-Analysen, governte Wissensabfragen, Briefings und Datenfragen in Slack oder Teams.
-                                </div>
-                            </div>
-                        </div>
+  <div class="facts">
+<div class="fact"><h3>Pricing</h3><p>Construct bietet einen siebentägigen Test. Lite kostet 9 USD monatlich oder 7,50 USD bei jährlicher Zahlung, Starter 59 bzw. 39 USD und Pro 299 bzw. 199 USD. Lite umfasst bis zu zwei Agenten, maximal 50 Schritte pro Aufgabe und eine Laufzeit von fünf Minuten. Starter erhöht Umfang und Laufzeit, Pro umfasst tiefe Läufe bis 1.000 Schritte, BYOK und bis zu 15 Agenten. Enterprise wird individuell mit SSO, privater Bereitstellung und individuellem MCP-Angebot verhandelt.</p><ul><li><strong>Lite:</strong> 9 USD</li><li><strong>Starter:</strong> 59 USD</li><li><strong>Pro:</strong> 299 USD</li><li><strong>Enterprise:</strong> Auf Anfrage</li></ul></div><div class="fact"><h3>Datenschutz</h3><p>Construct nennt Cloudflare als zentrale Plattforminfrastruktur und führt unter anderem Composio, Sentry, PostHog und Dodo Payments als beteiligte Dienstleister auf. Workspace-Dateien liegen in Cloudflare R2, Chat-Sitzungen in Cloudflare Durable Objects, und eigene BYOK- sowie Bot-Zugangsdaten werden laut Policy mit AES-GCM verschlüsselt. Arbeitsbereiche, Speicher, Dateien und Aktivitätshistorie bleiben bestehen, solange das Konto aktiv ist, und sollen bei Kontoschliessung gelöscht werden.</p><p>Die Privacy Policy enthält keine klare, allgemeine Aussage zur DSGVO-Konformität oder zum konkreten Verarbeitungsstandort. Sie beschreibt zudem umfangreiche Analysefunktionen für die öffentliche Website, einschliesslich nicht maskiertem Session Replay. Das ist nicht automatisch ein Ausschlussgrund, aber eine rote Flagge für eine leichtfertige Nutzung mit vertraulichen Daten. Private Bereitstellung wird für Enterprise genannt, die technischen und vertraglichen Details müssen vor einer Beschaffung geklärt werden.</p></div>  </div>
 
-                        <div class="tool-verdict">
-                            <strong>Fazit:</strong> 8/10. Stark für Organisationen mit reifer Datenbasis. Ohne Begriffsmodell, saubere Zugriffsrechte und Kostenkontrolle automatisiert es vor allem Missverständnisse.
-                        </div>
+  <div class="pros-cons">
+<div class="block pros"><h3>Stärken</h3><ul><li>Construct verbindet persistenten Workspace, Agenten, Tools und Aktivitätsprotokoll in einer Weise, die über eine einzelne Chat-Antwort hinausgeht. Besonders wertvoll ist das Prinzip, begonnene Arbeit nicht bei einem Fehler zu verlieren. Die sichtbare Memory- und Activity-Schicht kann die sonst typische Black Box agentischer Abläufe reduzieren.</li></ul></div><div class="block cons"><h3>Schwächen</h3><ul><li>Der Lite-Tarif ist für komplexe Aufgaben eng begrenzt; der Sprung zu Pro ist erheblich. Das Produkt ist neu und hat noch wenig Langzeitbelege. Hinzu kommen offene Fragen zu Standort, DSGVO-Absicherung und Analytics-Umfang. Agenten dürfen zudem keine Freigabe für irreversible externe Handlungen erhalten, nur weil ihr Dashboard nett aussieht.</li></ul></div>  </div>
 
-                        <div class="tool-links">
-                            <a href="https://www.databricks.com/product/genie" class="tool-link" target="_blank">
-                                <span>Website besuchen</span>
-                                <span class="link-icon">→</span>
-                            </a>
-                        </div>
-                    </div>
+  <div class="verdict"><h3>Einschätzung für die Praxis</h3><p>Construct eignet sich für einen eng geführten Pilot mit wiederkehrender Recherche, internen Reports oder vorbereitenden Workflows. Starten sollte man mit Leserechten, einer kleinen Datenklasse, klaren Laufzeitgrenzen und einem obligatorischen Review vor jeder externen Aktion. Die Kernfrage lautet nicht &#34;Kann der Agent arbeiten?&#34;, sondern &#34;Kann das Team jede relevante Wirkung nachvollziehen und stoppen?&#34;</p></div>
 
-                    <!-- Tool: ChatPlayground AI -->
-                    <div class="tool-card" data-category="research">
-                        <div class="tool-header">
-                            <div class="tool-category">
-                                <span class="category-icon">🔍</span>
-                                <span class="category-label">RECHERCHE</span>
-                            </div>
-                            <div class="tool-rating">
-                                <span class="rating-value">7.0</span>
-                                <span class="rating-label">/10</span>
-                            </div>
-                        </div>
+  <div class="tool-links">
+<a class="btn" href="https://construct.computer/" target="_blank" rel="noopener">Construct Computer öffnen →</a><a class="more" href="../../archiv/2026/kw35-2026-08-30-analyse.html#construct-computer">In der Vollanalyse lesen</a>  </div>
+</article>
 
-                        <h3 class="tool-name">ChatPlayground AI</h3>
-                        <p class="tool-tagline">Mehrere KI-Modelle vergleichen, Widersprüche sehen und Recherchefragen besser stellen.</p>
+<section class="full-analysis">
+  <p>Die ausführliche Fassung mit allen Recherchenotizen.</p>
+  <div class="hero-actions" style="margin:0">
+<a class="btn" href="../../archiv/2026/kw35-2026-08-30-analyse.html">Vollanalyse lesen</a><a class="btn ghost" href="../../archiv/data/ki-tool-analysen-2026-08-30.md">Markdown herunterladen</a>  </div>
+</section>
 
-                        <div class="tool-description">
-                            <p>ChatPlayground sendet einen Prompt parallel an ausgewählte Modelle und stellt die Antworten nebeneinander. Diese Perspektivvielfalt hilft, Gegenargumente und offene Punkte sichtbar zu machen. Modellmehrheit ist keine Wahrheit, aber sie ist ein brauchbarer Warnhinweis.</p>
-                        </div>
-
-                        <div class="tool-features">
-                            <div class="feature">
-                                <span class="feature-icon">💰</span>
-                                <div class="feature-content">
-                                    <strong>Pricing:</strong> Begrenzter Testzugang; Pro ab 15 USD und Unlimited ab 25 USD pro Monat bei Jahreszahlung. Checkout bleibt verbindlich.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🔒</span>
-                                <div class="feature-content">
-                                    <strong>Datenschutz:</strong> US-Betreiber, keine klar auffindbare DPA oder Self-Hosting-Option. Keine vertraulichen Inputs ohne dokumentierte Datenflussprüfung.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">✨</span>
-                                <div class="feature-content">
-                                    <strong>Praxis:</strong> Für Recherche, Argumentenchecks, Dokumentensichtung und Prompt-Qualität. Jede auffällige Antwort braucht eine Primärquelle.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tool-verdict">
-                            <strong>Fazit:</strong> 7/10. Stark als Werkzeug gegen vorschnelle Sicherheit. Für regulierte Inhalte ist die Compliance-Dokumentation zu dünn.
-                        </div>
-
-                        <div class="tool-links">
-                            <a href="https://www.chatplayground.ai/" class="tool-link" target="_blank">
-                                <span>Website besuchen</span>
-                                <span class="link-icon">→</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Tool: Berd -->
-                    <div class="tool-card" data-category="agents">
-                        <div class="tool-header">
-                            <div class="tool-category">
-                                <span class="category-icon">🤖</span>
-                                <span class="category-label">AGENTS</span>
-                            </div>
-                            <div class="tool-rating">
-                                <span class="rating-value">8.0</span>
-                                <span class="rating-label">/10</span>
-                            </div>
-                        </div>
-
-                        <h3 class="tool-name">Berd</h3>
-                        <p class="tool-tagline">Quelloffener Desktop-Workspace für lokale Projekte, Skills und spezialisierte Agenten.</p>
-
-                        <div class="tool-description">
-                            <p>Berd von Block organisiert Projekte, Chats, Agenten und Skills in einem lokalen Workspace. Eigene Ordner, Repositories und Modellanbieter lassen sich anbinden. Damit rückt die Datensouveränität wieder näher an den Rechner, vorausgesetzt die Rechte sind sauber gesetzt.</p>
-                        </div>
-
-                        <div class="tool-features">
-                            <div class="feature">
-                                <span class="feature-icon">💰</span>
-                                <div class="feature-content">
-                                    <strong>Pricing:</strong> Die Open-Source-App ist kostenlos. Kosten entstehen über angebundene Modellanbieter, API-Schlüssel, Infrastruktur und Betrieb.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🔒</span>
-                                <div class="feature-content">
-                                    <strong>Datenschutz:</strong> Lokaler Fokus und offener Quellcode ermöglichen eigene Betriebsformen. Externe Provider und Tools können trotzdem Daten abziehen.
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">✨</span>
-                                <div class="feature-content">
-                                    <strong>Praxis:</strong> Für technische Teams mit abgegrenzten Projektordnern, wiederkehrenden Skills und einem vorsichtigen Start mit Leserechten.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tool-verdict">
-                            <strong>Fazit:</strong> 8/10. Ein guter Gegenentwurf zum beliebigen Chatfenster. Einrichtung und Berechtigungskonzept verlangen allerdings technische Reife.
-                        </div>
-
-                        <div class="tool-links">
-                            <a href="https://berd.xyz/" class="tool-link" target="_blank">
-                                <span>Website besuchen</span>
-                                <span class="link-icon">→</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>KI-Tool-Analysen</h3>
-                <p>Wöchentliche Deep-Dive-Reviews der interessantesten KI-Tools mit detaillierten Analysen zu Pricing, Features und Datenschutz.</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Updates</h3>
-                <p>Jeden Samstag neue Analysen</p>
-                <p>5 Tools pro Woche</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Kategorien</h3>
-                <p>📝 Text • 🎨 Design • 📊 Data • 🔍 Recherche • 🤖 Agents</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 KI-Tool-Analysen | Erstellt von Roger Basler de Roca</p>
-        </div>
-    </footer>
+<nav class="week-nav" aria-label="Weitere Wochen">
+<a href="../../archiv/2026/kw34-2026-08-23.html">← KW 34/2026</a><a href="../../archiv/2026/kw36-2026-09-06.html">KW 36/2026 →</a></nav>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand"><span class="brand-hash">#</span>frag<span class="brand-blue">Roger</span></p>
+        <p class="foot-line">Jeden Sonntag fünf KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz.</p>
+        <p class="foot-small">Eine Publikation von <a href="https://fragroger.ai" rel="noopener">Roger Basler de Roca</a>. Weitere wöchentliche Einordnung: <a href="https://news.fragroger.ai" rel="noopener">KI Power Update</a>.</p>
+      </div>
+      <div class="foot-disclaimer">
+        <p class="foot-title">Hinweis</p>
+        <p>Recherche, Auswahl und Texte entstehen mit Unterstützung von KI-Systemen und werden automatisiert veröffentlicht. Preise, Funktionen und Datenschutzangaben ändern sich laufend; massgebend sind die aktuellen Unterlagen der Anbieter. Die Analysen sind keine Rechts- oder Kaufberatung.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <nav class="foot-nav" aria-label="Weitere Seiten">
+        <a href="../../archiv.html">Archiv</a>
+        <a href="../../methode.html">Methode</a>
+        <a href="../../feed.xml">RSS</a>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
+      </nav>
+      <p>&copy; 2026 Roger Basler de Roca</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

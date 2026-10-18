@@ -1,0 +1,166 @@
+{
+  "kw": 19,
+  "jahr": 2026,
+  "datum": "2026-05-10",
+  "zusammenfassung": "Diese Woche verschiebt sich der Markt sichtbar von isolierten Generatoren zu KI-Systemen, die in echte Arbeitsprozesse eingebettet werden. Postwise und Flowstep zeigen, wie Einzelpersonen und kleine Teams schneller publizieren und visualisieren. Exmergo Viz demokratisiert Datenanalyse, verlangt aber saubere Governance. Web of Science Research Intelligence und Claude Financial Services Agents zeigen die Enterprise-Seite: kuratierte Daten, nachvollziehbare Workflows und kontrollierbare Agenten werden zum Standard. Das eigentliche Problem ist nicht mehr, ob KI etwas kann, sondern ob sie es im richtigen Prozess verantwortbar tun darf.",
+  "highlights": [
+    "Claude Financial Services Agents (9/10): Agenten werden regulierungstauglicher, weil Templates, Connectors, Auditability und Human-in-the-Loop zusammen gedacht werden.",
+    "Trend: Von Chatbot zu Workflow-Schicht. KI-Tools docken direkt an Social Publishing, UI-Design, Datenanalyse, Research Intelligence und Finanzprozesse an.",
+    "Prüfpunkt der Woche: Datenschutz ist kein Anhang. Datenresidenz, Trainingsnutzung und Review-Prozesse entscheiden über Praxistauglichkeit."
+  ],
+  "trend": "Von Chatbot zu Workflow-Schicht: KI-Tools docken direkt an Social Publishing, UI-Design, Datenanalyse, Research Intelligence und Finanzprozesse an.",
+  "tools": [
+    {
+      "name": "Postwise AI",
+      "kategorie": "Text",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Social-Writing und Scheduling für X, LinkedIn und Threads",
+      "beschreibung": "• Name des Tools: Postwise AI\n\n• Kategorie: Text\n\n• URL: https://postwise.ai\n\n• Kurzbeschreibung: Postwise AI ist ein Schreib- und Scheduling-Tool für X, LinkedIn und Threads. Es richtet sich an Creator, Berater:innen, Gründer:innen und B2B-Marketing-Teams, die kontinuierlich veröffentlichen wollen, ohne jeden Post manuell aufzubauen.\n\n• Relevanzbewertung: 8/10\n\nPostwise wurde im ToolCrush-Roundup vom 9. Mai 2026 als eines von fünf Tools genannt, die sich aktuell praktisch testen lassen. Der Kernnutzen liegt nicht im blossen Generieren von Text, sondern in der Verbindung aus Hook-Generierung, Ghostwriting, Scheduling und Social-Account-Management. Für professionelle Wissensarbeiter:innen ist das relevant, weil Reichweite nicht nur aus Ideen entsteht, sondern aus publizistischer Kadenz. Ziemlich unromantisch, aber leider wahr.",
+      "nutzungsszenarien": [
+        "Thought Leadership: Eine Beraterin plant eine Woche LinkedIn-Posts zu KI-Governance, ohne jeden Beitrag einzeln neu zu formulieren.",
+        "Founder-Led Sales: Ein Gründer erstellt X-Threads zu Produktupdates und terminiert sie über mehrere Wochen.",
+        "Content Recycling: Ein Blogartikel wird in mehrere Social Posts mit unterschiedlichen Hooks übersetzt.",
+        "Team-Kommunikation: Ein kleines Marketing-Team verwaltet mehrere Social Accounts in einem konsistenten Ton.",
+        "Analytics: Bestehende Beiträge werden über das Dashboard ausgewertet, um erfolgreiche Formate stärker zu nutzen."
+      ],
+      "staerken": [
+        "Postwise ist klar fokussiert. Es versucht nicht, ein komplettes Marketing-Betriebssystem zu sein, sondern löst den Engpass der regelmässigen Veröffentlichung auf X, LinkedIn und Threads. Die Limits sind transparent, die Free Trial senkt die Einstiegshürde und der Nutzen ist für Einzelpersonen und kleine Teams sofort verständlich."
+      ],
+      "schwaechen": [
+        "Die Datenschutzinformationen bleiben vergleichsweise generisch. Zudem ist die Plattform stark auf textbasierte Social-Media-Kanäle zugeschnitten. Wer Instagram, TikTok oder komplexe Multiformat-Kampagnen priorisiert, braucht zusätzliche Tools."
+      ],
+      "pricing": "Postwise bietet gemäss offizieller Pricing-Seite drei Pläne mit einer 7-tägigen Free Trial an. Einen dauerhaft kostenlosen Plan weist die Pricing-Seite nicht aus.\n\n• Basic: USD 37 / Monat\n\n• Boss: USD 59 / Monat\n\n• Unlimited: USD 97 / Monat",
+      "datenschutz": "Die Privacy Policy nennt die Verarbeitung von Accountdaten, Geräte- und Logdaten, Zahlungsdaten sowie operativen Plattformdaten. Die personenbezogenen Daten werden gemäss Policy im Vereinigten Königreich oder dort verarbeitet, wo Partner, Affiliates und Drittanbieter Einrichtungen betreiben. Für Transfers aus dem EWR werden Standardvertragsklauseln oder andere anerkannte Schutzmechanismen erwähnt.\n\nDer entscheidende Punkt: Postwise ist für öffentlichkeitsnahes Content-Management geeignet, aber nicht für vertrauliche Strategieentwürfe, unveröffentlichte Finanzdaten oder sensitive Kundendaten. Eine explizite Aussage zur Nicht-Nutzung von Prompts für Modelltraining habe ich in der geprüften Privacy Policy nicht gefunden. Für Roger-Content: okay. Für M&A-Pre-Reads: eher nein, sonst wird aus Thought Leadership schnell Thought Leakage.",
+      "einschaetzung": "Postwise ist empfehlenswert für Personen, die bereits klare Positionen und Inhalte haben, aber an Frequenz und Distribution scheitern. Das Tool ersetzt keine Strategie. Es macht nur sichtbar, ob überhaupt eine da ist. Der entscheidende Unterschied liegt in der Nutzung: Als Publishing-System ist es stark, als Denkmaschine sollte man es nicht missverstehen.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Stark für konstante LinkedIn- und X-Kommunikation. Der Nutzen liegt weniger im einzelnen AI-Post, sondern in der publizistischen Kadenz."
+        }
+      ],
+      "url": "https://postwise.ai"
+    },
+    {
+      "name": "Flowstep 1.0",
+      "kategorie": "Design",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "AI Design Engineer für editierbare UI-Flows und Figma-Übergabe",
+      "beschreibung": "• Name des Tools: Flowstep 1.0\n\n• Kategorie: Design\n\n• URL: https://flowstep.ai\n\n• Kurzbeschreibung: Flowstep ist ein AI Design Engineer, der aus Prompts, Referenzen oder Produktanforderungen editierbare UI-Screens erzeugt, diese auf einer Canvas weiterbearbeiten lässt und Designs nach Figma kopierbar macht.\n\n• Relevanzbewertung: 8/10\n\nFlowstep 1.0 wurde am 5. Mai 2026 auf Product Hunt als \"AI design engineer. Design & ship real UI\" gelistet. Die Website beschreibt Flowstep als Tool, das aus natürlichsprachlichen Beschreibungen in Sekunden UI-Screens generiert, manuelles oder AI-gestütztes Editieren ermöglicht und Designs direkt nach Figma kopierbar macht.",
+      "nutzungsszenarien": [
+        "Produktideen validieren: Ein Product Manager erstellt in Minuten erste Screens für ein SaaS-Dashboard.",
+        "UX-Workshops: Teams visualisieren mehrere Varianten während eines Workshops, statt abstrakt über Features zu reden.",
+        "Übergabe an Design: Grobe UI-Konzepte werden nach Figma kopiert und dort durch Designer:innen verfeinert.",
+        "Founder-MVP: Ein kleines Team erstellt eine erste Interface-Story, bevor Entwickler:innen Zeit investieren.",
+        "PRD-Visualisierung: Ein Product Requirements Document wird als Referenz hochgeladen, um daraus konkrete Screens zu erzeugen."
+      ],
+      "staerken": [
+        "Flowstep sitzt in einem relevanten Zwischenraum: Es ersetzt nicht Figma, sondern verkürzt den Weg von Idee zu prüfbarer UI. Das ist gerade für Product Manager, technische Gründer:innen und kleine Teams wertvoll. Der GDPR-nahe Unternehmenssitz in Estland und die Nicht-Training-Aussage sind im europäischen Kontext positiv."
+      ],
+      "schwaechen": [
+        "Die Qualität von AI-generierten UI-Entwürfen hängt stark von Kontext und Prompt ab. Ohne Designsystem, Zielgruppe und Produktlogik entstehen schnell hübsche Oberflächen, die fachlich wenig tragen. Ausserdem ist der Starter-Plan mit 80 Messages pro Monat für aktive Teams eher knapp."
+      ],
+      "pricing": "Flowstep hat ein einfaches Preismodell mit Free Tier, Starter und Enterprise.\n\n• Free: USD 0 / Monat\n\n• Starter: USD 15 / Monat\n\n• Enterprise: Custom",
+      "datenschutz": "FlowstepDesign OÜ sitzt in Tallinn, Estland, und verarbeitet personenbezogene Daten nach DSGVO und estnischem Recht. Die Privacy Policy nennt Prompts, Designs, Bilder, PDFs und Projektmaterialien als User Content. Wichtig ist die klare Aussage, dass Flowstep persönliche Daten nicht zum Training von AI-Modellen nutzt und dies auch AI-Providern nicht erlaubt. Internationale Transfers ausserhalb des EWR werden mit Standardvertragsklauseln abgesichert.\n\nFlowstep verarbeitet personenbezogene Daten nach GDPR und nutzt persönliche Daten nicht zum Training von AI-Modellen.",
+      "einschaetzung": "Flowstep ist kein Ersatz für strategisches Produktdesign. Es ist ein Beschleuniger für frühe visuelle Klärung. Was oft unterschätzt wird: Ein schneller Screen ist kein gutes Produkt. Aber ein schneller Screen kann eine schlechte Idee früher entlarven. Und das ist betriebswirtschaftlich meist wertvoller als der nächste Workshop mit acht Klebezettelfarben.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Hilft Teams, Ideen schneller visuell zu prüfen. Besonders stark für MVP-Skizzen, Workshop-Visualisierung und frühe Produktentscheidungen."
+        }
+      ],
+      "url": "https://flowstep.ai"
+    },
+    {
+      "name": "Exmergo Viz",
+      "kategorie": "Data / Wissen",
+      "bewertung": 7.0,
+      "kurzbeschreibung": "KI-Dashboards aus CSV, Excel und Datenbanken per natürlicher Sprache",
+      "beschreibung": "• Name des Tools: Exmergo Viz\n\n• Kategorie: Data / Wissen\n\n• URL: https://www.exmergo.com\n\n• Kurzbeschreibung: Exmergo Viz ist ein KI-gestütztes Datenvisualisierungs-Tool, das Rohdaten aus Dateien und Datenbanken in interaktive Dashboards übersetzt und per natürlicher Sprache abfragbar macht.\n\n• Relevanzbewertung: 7/10\n\nExmergo Viz wurde auf There’s An AI For That mit Initial Release am 7. Mai 2026 gelistet. Das Tool unterstützt strukturierte Dateien wie CSV und Excel, Datenbankverbindungen, natürliche Sprachabfragen, Live-Analyse und automatische Visualisierungen. Für Teams ohne Data-Engineering-Kapazität ist das ein pragmatischer Ansatz: weniger BI-Setup, schneller erste Erkenntnis.",
+      "nutzungsszenarien": [
+        "Marketing-Performance: Kampagnendaten aus CSV werden in Dashboards mit Fragen wie \"Welche Kanäle liefern den besten ROI?\" analysiert.",
+        "Recruiting: ATS-Exporte werden zu Time-to-Hire- und Source-of-Hire-Auswertungen verdichtet.",
+        "Startup-Reporting: Gründer:innen erstellen Investor-Ready-Dashboards aus einfachen Finanz- oder Nutzungsdaten.",
+        "Supply Chain: Einkaufs- und Lieferdaten werden auf Trends, Engpässe und Ausreisser geprüft.",
+        "Ad-hoc-Analyse: Teams explorieren Daten ohne SQL- oder BI-Spezialist:innen."
+      ],
+      "staerken": [
+        "Exmergo Viz adressiert einen realen Engpass: Viele Organisationen besitzen Daten, aber keine sauberen Analyseprozesse. Die Kombination aus Upload, Natural-Language-Query und Visualisierung senkt die Einstiegsschwelle deutlich. Besonders stark ist die transparente Erklärung, was an AI-Partner übermittelt wird und was nicht."
+      ],
+      "schwaechen": [
+        "Die Datenresidenz ist für europäische Unternehmen im Standardbetrieb ein ernsthafter Prüfpunkt. Auch die Nutzung von Daten-Samples für AI-Verarbeitung kann bei sensiblen Daten problematisch sein. Die offizielle Pricing-Seite war nicht stabil auslesbar, was für eine professionelle Beschaffung unschön ist."
+      ],
+      "pricing": "There’s An AI For That weist Exmergo Viz als Freemium-Tool mit bezahlten Optionen ab USD 16/Monat aus. Die offizielle Pricing-Seite war in der Extraktion dynamisch nicht zuverlässig lesbar. Deshalb sollte der genaue Planumfang vor Kaufabschluss nochmals direkt im Account geprüft werden.\n\n• Free / Freemium: Nicht abschliessend öffentlich verifiziert\n\n• Paid: Ab USD 16 / Monat laut TAAFT\n\n• Enterprise: Custom",
+      "datenschutz": "Die Privacy Policy ist erfreulich konkret. Exmergo nutzt Google Cloud Platform für Hosting und Datenspeicherung, Google bzw. Gemini als AI-Partner, Google Analytics und Stripe. Rohdaten werden laut Policy nicht vollständig an AI-Partner gesendet. Für AI-Funktionen werden jedoch Prompts, Gesprächsverlauf, Schema, Daten-Samples und aggregierte Resultate verarbeitet.\n\nKritisch ist der Unterschied nach Plan: Für Free-, Pro- und Ultra-Nutzer werden Daten in den USA verarbeitet und gespeichert. Enterprise-Kunden können eine spezifische geografische Datenhaltung, etwa in der EU, vereinbaren. Zudem können bei kostenlosen Plänen Prompts, Daten-Schemata und Daten-Samples zur Verbesserung der AI-Agenten genutzt werden; bei paid subscriptions soll dies nicht geschehen.",
+      "einschaetzung": "Exmergo Viz ist spannend für nicht-sensitive operative Daten und schnelle explorative Analysen. Für personenbezogene, medizinische, finanzielle oder strategisch kritische Daten sollte man entweder den Enterprise-Plan mit EU-Datenhaltung prüfen oder ein anderes Setup wählen. Die Konsequenz daraus ist: Exmergo kann Erkenntnisse demokratisieren, aber nur, wenn Governance nicht nachträglich in Panik erfunden wird.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Senkt die Hürde für operative Datenanalyse. Teams können erste Visualisierungen erstellen, ohne SQL, BI-Setup oder Data-Engineering-Projekt."
+        }
+      ],
+      "url": "https://www.exmergo.com"
+    },
+    {
+      "name": "Web of Science Research Intelligence",
+      "kategorie": "Recherche",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "AI-native Research Intelligence für Funding, Strategie und Impact",
+      "beschreibung": "• Name des Tools: Web of Science Research Intelligence\n\n• Kategorie: Recherche\n\n• URL: Produktseite bei Clarivate\n\n• Kurzbeschreibung: Eine AI-native Research-Intelligence-Plattform für Forschungseinrichtungen, Research Offices und Bibliotheken, die Funding, Kooperationen, Emerging Topics und Impact-Analysen auf kuratierten Daten verbindet.\n\n• Relevanzbewertung: 8/10\n\nClarivate kündigte den globalen Launch von Web of Science Research Intelligence am 6. Mai 2026 an. Die Plattform verbindet kuratierte Daten über Publikationen, Patente, Fördermittel, Policy-Dokumente, klinische Studien und weitere Quellen. Der Anspruch ist nicht \"schnellere Antworten\", sondern nachvollziehbare, entscheidungsfähige Research Intelligence.",
+      "nutzungsszenarien": [
+        "Funding-Strategie: Research Offices identifizieren passende Fördermöglichkeiten zu institutionellen Prioritäten.",
+        "Kollaborationsaufbau: Forschende finden Expert:innen und strategische Kooperationsnetzwerke.",
+        "Emerging Topics: Institutionen erkennen neue Forschungsfelder und verbinden sie mit Funding und Impact.",
+        "Impact Reporting: Bibliotheksteams und Hochschulleitungen erstellen nachvollziehbare Berichte zur Forschungsleistung.",
+        "Strategieplanung: Fakultäten analysieren Stärken, Lücken und Wirkung entlang des Forschungslebenszyklus."
+      ],
+      "staerken": [
+        "Die Stärke liegt in der Datenbasis. Im Gegensatz zu generischen Research-Chatbots basiert das Tool auf kuratierten Quellen wie Web of Science Core Collection, Derwent Innovations Index, Cortellis Clinical Trials Intelligence und Pivot-RP. Für institutionelle Entscheidungen ist das entscheidend, weil Fehler nicht nur peinlich, sondern förderpolitisch teuer werden können."
+      ],
+      "schwaechen": [
+        "Der Zugang ist klar institutionell. Für kleine Unternehmen, einzelne Researcher oder Beratungen ist das Tool vermutlich zu schwergewichtig und zu teuer. Zudem bleibt die tatsächliche AI-Transparenz im Alltag erst im Praxistest bewertbar."
+      ],
+      "pricing": "Clarivate veröffentlicht für Web of Science Research Intelligence kein Self-Serve-Pricing. Das Tool ist nach aktueller Quellenlage ein institutionelles Enterprise-Produkt mit Angebot über Sales bzw. bestehende Clarivate-Verträge. Einen Free Tier gibt es öffentlich nicht.\n\n• Institution / Enterprise: Custom\n\n• Free Tier: Nicht öffentlich ausgewiesen",
+      "datenschutz": "Clarivate verweist auf sein Privacy Center und agiert als globaler Anbieter für Forschungs-, IP- und Life-Science-Intelligence. Konkrete Angaben zu Datenresidenz, Auftragsverarbeitung und Subprozessoren sollten bei dieser Plattform vertraglich geprüft werden, insbesondere bei Hochschulen im EU- oder Schweizer Kontext. Positiv ist der methodische Fokus auf kuratierte, publisher-neutrale Daten und traceable Outputs, wie im Launch-Artikel beschrieben.",
+      "einschaetzung": "Für Universitäten, Hochschulen und Forschungsinstitutionen ist Web of Science Research Intelligence eines der substanzielleren Tools dieser Woche. Der entscheidende Unterschied liegt in der Verankerung auf überprüfbaren Daten. Für Unternehmen ausserhalb des Forschungsbetriebs ist der Nutzen begrenzt, ausser sie arbeiten stark mit wissenschaftlicher Kooperation, Funding oder Impact-Nachweisen.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Stark, weil Outputs auf kuratierten Quellen wie Web of Science Core Collection, Derwent Innovations Index, Cortellis Clinical Trials Intelligence und Pivot-RP basieren."
+        }
+      ],
+      "url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/web-of-science-research-intelligence/"
+    },
+    {
+      "name": "Claude Financial Services Agents",
+      "kategorie": "Agents",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "Zehn Agent-Templates für Pitchbooks, KYC, Marktanalyse und Finance Operations",
+      "beschreibung": "• Name des Tools: Claude Financial Services Agents\n\n• Kategorie: Agents\n\n• URL: Anthropic: Agents for financial services\n\n• Kurzbeschreibung: Anthropic veröffentlichte zehn ready-to-run Agent Templates für Finanzdienstleister, darunter Pitch Builder, KYC Screener, Market Researcher und Month-End Closer. Die Agents laufen als Plugins in Claude Cowork / Claude Code oder als Cookbooks für Claude Managed Agents.\n\n• Relevanzbewertung: 9/10\n\nAnthropic stellte am 5. Mai 2026 zehn Agent-Templates für Finanzdienstleistungen vor. Die Templates kombinieren Skills, Connectors und Subagents. Sie sollen Aufgaben wie Pitchbooks, KYC-Prüfungen, Financial Modeling, Marktanalyse, Valuation Review oder Monatsabschluss beschleunigen. Besonders relevant ist die Integration in Microsoft Excel, PowerPoint, Word und Outlook sowie in Datenanbieter wie FactSet, S&P Capital IQ, PitchBook, Morningstar, Guidepoint, IBISWorld und weitere Quellen.",
+      "nutzungsszenarien": [
+        "Investment Banking: Der Pitch Builder erstellt Zielkundenlisten, Comps-Modelle und erste Pitchbook-Strukturen.",
+        "Compliance: Der KYC Screener sammelt Entity Files, prüft Dokumente und bereitet Eskalationen vor.",
+        "Asset Management: Der Earnings Reviewer liest Transkripte und Filings, aktualisiert Modelle und markiert relevante Thesis-Änderungen.",
+        "Finance Operations: Der Month-End Closer unterstützt Close-Checklisten, Journal Entries und Reporting.",
+        "Research: Der Market Researcher beobachtet Sektoren, Emittenten, News, Filings und Broker Research."
+      ],
+      "staerken": [
+        "Die Stärke liegt in der Prozessnähe. Anthropic adressiert nicht generische Agentenfantasie, sondern konkrete Aufgaben in Banken, Asset Management, Versicherungen und Fintech. Die Verbindung aus Office-Integration, Datenconnectors, Auditability und Managed-Agent-Infrastruktur ist für regulierte Branchen deutlich relevanter als ein weiterer Chatbot mit PowerPoint-Laune."
+      ],
+      "schwaechen": [
+        "Die Lösung ist stark auf grosse Finanzorganisationen zugeschnitten. Kleine Unternehmen werden die Komplexität kaum ausschöpfen. Zudem besteht die Gefahr, dass Agenten bestehende schlechte Prozesse schneller machen, statt sie zu verbessern. Das eigentliche Problem ist nicht der Agent, sondern die Qualität der Daten, Berechtigungen und Kontrollpunkte."
+      ],
+      "pricing": "Die Agenten sind nicht als simples Einzeltool zu verstehen, sondern hängen an Claude Cowork, Claude Code und Claude Managed Agents. Die allgemeine Claude-Preisseite nennt Free, Pro, Max, Team, Enterprise und API-Preise.\n\n• Claude Free: USD 0\n\n• Claude Pro: USD 17 / Monat jährlich oder USD 20 monatlich\n\n• Claude Max: Ab USD 100 / Monat\n\n• Claude Team: USD 20 / Seat / Monat jährlich oder USD 25 monatlich\n\n• Claude Enterprise: USD 20 / Seat plus Nutzung zu API-Raten\n\n• Managed Agents: USD 0.08 pro Session-Hour plus Tokenkosten",
+      "datenschutz": "Anthropic beschreibt Verschlüsselung in Transit und at Rest, eingeschränkten Mitarbeiterzugriff und SCCs für Transfers ausserhalb von EEA/UK. Für Team wird \"No model training on your content by default\" genannt, Enterprise ergänzt Audit Logs, Custom Data Retention Controls, Network-Level Access Control und IP Allowlisting. Für Finanzdienstleister ist das wichtig, aber nicht ausreichend: Der praktische Einsatz muss in bestehende Policies, DLP, Berechtigungen, Datenklassifizierung und Freigabeprozesse eingebettet werden.\n\nDie Agents sind so konzipiert, dass Menschen im Review- und Approval-Loop bleiben, bevor Ergebnisse an Kund:innen gehen, eingereicht oder umgesetzt werden.",
+      "einschaetzung": "Für regulierte Finanzorganisationen ist dies der stärkste Agent-Launch der Woche. Nicht, weil jeder Agent sofort fehlerfrei arbeitet, sondern weil Anthropic den richtigen Rahmen setzt: Templates, Connectors, Managed Runtime, Audit Logs und Human-in-the-Loop. Die Konsequenz daraus ist: Agenten werden nicht durch Magie produktiv, sondern durch Prozessarchitektur. Langweilig? Vielleicht. Entscheidend? Absolut.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Die Templates adressieren konkrete regulierte Workflows: Pitch Builder, KYC Screener, Market Researcher, Earnings Reviewer, Month-End Closer und weitere."
+        }
+      ],
+      "url": "https://www.anthropic.com/news/finance-agents"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-05-10.md"
+}

@@ -1,0 +1,140 @@
+{
+  "kw": 5,
+  "jahr": 2026,
+  "datum": "2026-02-01",
+  "zusammenfassung": "In dieser Woche standen vor allem fundamentale Weiterentwicklungen und neue Plattformen im Fokus, die weniger auf einzelne Features als auf die Schaffung neuer Arbeitsweisen abzielen. OpenAI startete mit Prism eine kostenlose, KI-gestützte Plattform für wissenschaftliches Schreiben, die das Potenzial hat, die akademische Zusammenarbeit zu revolutionieren. Gleichzeitig treibt Google mit Agentic Vision in Gemini die Evolution von reiner Bilderkennung zu einem agentischen, interaktiven Prozess voran. Im Bereich der Datenanalyse überzeugte Pandada AI auf Product Hunt durch seinen Ansatz, auch unstrukturierte Daten für professionelle Reports zugänglich zu machen.",
+  "highlights": [
+    "OpenAI Prism & Agentic Vision in Gemini (9/10)",
+    "Trend: KI-native Arbeitsumgebungen und agentenähnliche Systeme",
+    "Paradigmenwechsel: Von All-in-One zu spezialisierten Lösungen"
+  ],
+  "trend": "KI-native Arbeitsumgebungen und agentenähnliche Systeme",
+  "tools": [
+    {
+      "name": "OpenAI Prism",
+      "kategorie": "Text",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "KI-nativer Workspace für wissenschaftliches Schreiben mit GPT-5.2",
+      "beschreibung": "• Name des Tools: OpenAI Prism\n\n• Kategorie: Text\n\n• Kurzbeschreibung: Ein kostenloser, KI-nativer Workspace für Wissenschaftler, um Forschungsarbeiten in einer kollaborativen LaTeX-Umgebung zu schreiben, unterstützt von GPT-5.2.\n\n• Zielgruppe: Wissenschaftler, Forscher, Akademiker, Studenten und alle, die wissenschaftliche Paper in LaTeX verfassen.",
+      "nutzungsszenarien": [
+        "Verfassen von Forschungsarbeiten: Ein Forscherteam kann gemeinsam in Echtzeit an einem Paper arbeiten, wobei GPT-5.2 hilft, komplexe Abschnitte zu formulieren, Gleichungen zu erstellen und den Text zu überarbeiten.",
+        "Literaturrecherche: Ein Doktorand kann während des Schreibens relevante Paper aus arXiv suchen und direkt als Zitate in den Text einfügen, wobei die KI hilft, die neuen Erkenntnisse in den Kontext der eigenen Arbeit zu setzen.",
+        "Konvertierung von Notizen: Eine handgeschriebene Gleichung oder ein Diagramm von einem Whiteboard kann abfotografiert und von Prism direkt in sauberen LaTeX-Code umgewandelt werden, was Stunden an manueller Arbeit spart.",
+        "Peer-Review-Prozess: Gutachter können Kommentare und Änderungsvorschläge direkt im Dokument hinterlassen, und Autoren können diese mithilfe der KI effizient einarbeiten.",
+        "Lehre und Ausbildung: Professoren können Studenten eine zugängliche, cloud-basierte LaTeX-Umgebung zur Verfügung stellen, ohne dass lokale Installationen erforderlich sind, und den Schreibprozess direkt begleiten."
+      ],
+      "staerken": [
+        "Kostenlos und unlimitiert: Keine Kostenbarriere für die Nutzung, unbegrenzte Projekte und Mitarbeiter.",
+        "State-of-the-Art KI: Direkte Integration von GPT-5.2, dem fortschrittlichsten OpenAI-Modell für wissenschaftliches Reasoning.",
+        "All-in-One-Workflow: Vereint Schreiben, Editieren, Kompilieren, Referenzmanagement und Kollaboration in einer einzigen Plattform.",
+        "Keine Installation: Als Cloud-Service entfallen komplexe lokale LaTeX-Installationen und Versionskonflikte.",
+        "Kontextbewusstsein: Die KI versteht die gesamte Struktur des Dokuments, inklusive Formeln und Zitaten."
+      ],
+      "schwaechen": [
+        "Abhängigkeit von OpenAI: Nutzer sind vollständig von der OpenAI-Infrastruktur und deren Verfügbarkeit abhängig.",
+        "Datenschutzbedenken: Die Verarbeitung sensibler Forschungsdaten auf US-Servern kann für manche Institutionen problematisch sein.",
+        "Potenzial für Missbrauch: Kritiker befürchten eine Zunahme von minderwertigen, KI-generierten ---"
+      ],
+      "pricing": "OpenAI Prism ist vollständig kostenlos für alle Nutzer mit einem persönlichen ChatGPT-Account. Dies beinhaltet unbegrenzte Projekte und unbegrenzte Kollaborateure. Für die Zukunft ist geplant, erweiterte KI-Funktionen über kostenpflichtige ChatGPT-Pläne (Business, Enterprise) anzubieten.",
+      "datenschutz": "• Policies: Unterliegt der allgemeinen OpenAI Privacy Policy. -\n\n• DSGVO-Konformität: OpenAI bietet ein Data Processing Addendum (DPA) an und hat Mechanismen für DSGVO-Anfragen. Die Datenübertragung in die USA ist durch Standardvertragsklauseln (SCCs) abgedeckt. -\n\n• Self-Hosting: Nein, Prism ist ein reiner Cloud-Service. -",
+      "einschaetzung": "OpenAI Prism könnte die wissenschaftliche Zusammenarbeit revolutionieren, indem es die Barrieren von LaTeX senkt und KI-Unterstützung nahtlos integriert. Die kostenlose Verfügbarkeit macht es besonders attraktiv für Studierende und Forscher.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Native Integration von GPT-5.2, arXiv-Suche und Echtzeit-Kollaboration in einer LaTeX-Umgebung"
+        }
+      ],
+      "url": "https://openai.com/index/introducing-prism/"
+    },
+    {
+      "name": "AirMusic v1.1",
+      "kategorie": "Design",
+      "bewertung": 7.5,
+      "kurzbeschreibung": "KI-Musikgenerator mit royalty-free Lizenzierung",
+      "beschreibung": "• Highlights:\n\n• Erlaubt Gemini, wie ein menschlicher Agent zu agieren, der nicht nur sieht, was auf einem Bildschirm passiert, sondern auch Aktionen ausführt.\n\n• Kann komplexe Aufgaben in Web-Interfaces automatisieren.\n\n• Bietet Entwicklern neue Möglichkeiten zur Erstellung von KI-Agenten.",
+      "nutzungsszenarien": [
+        "YouTube-Videos: Ein Vlogger benötigt einen energiegeladenen, elektronischen Track für sein neuestes Reisevideo. Mit dem Prompt \"upbeat electronic travel vlog music\" generiert AirMusic in wenigen Sekunden einen passenden Song.",
+        "Podcast-Intro: Ein Podcaster sucht ein kurzes, einprägsames Jingle für seine Show. Er summt eine einfache Melodie in sein Mikrofon, und AirMusic entwickelt daraus ein professionell klingendes Intro.",
+        "App-Hintergrundmusik: Ein Spieleentwickler braucht atmosphärische Lo-Fi-Musik für sein neues Mobile Game. Er kann verschiedene Stimmungen und Tempi ausprobieren, bis er den perfekten Loop gefunden hat.",
+        "Social-Media-Reels: Ein Marketing-Team möchte ein Instagram Reel mit einem trendigen Hip-Hop-Beat unterlegen. Statt teure Lizenzen zu kaufen, generieren sie einen einzigartigen, lizenzfreien Track.",
+        "Präsentationen: Ein Manager möchte seine Unternehmenspräsentation mit einer dezenten, motivierenden Hintergrundmusik unterlegen, um die Aufmerksamkeit des Publikums zu halten."
+      ],
+      "staerken": [
+        "Schnelligkeit: Generiert Musik in Sekundenschnelle, was den kreativen Prozess erheblich beschleunigt.",
+        "Lizenzfrei: Alle generierten Songs sind lizenzfrei und können kommerziell genutzt werden (ab Creator-Plan), was rechtliche Unsicherheiten beseitigt.",
+        "Vielseitigkeit: Unterstützt Text-Prompts, Referenz-Melodien und eine breite Palette an Genres und Stimmungen.",
+        "Hohe Qualität: Die generierte Musik klingt professionell und ist von menschlich komponierten Stücken kaum zu unterscheiden.",
+        "Voice Cloning: Der Pro-Plan bietet die Möglichkeit, eigene Stimmen zu klonen, was für personalisierte Inhalte nützlich ist."
+      ],
+      "schwaechen": [
+        "Limitierungen im Free-Plan: Der kostenlose Plan ist mit 10 Generationen pro Monat und einer maximalen Länge von 30 Sekunden stark eingeschränkt und nur für nicht-kommerzielle Zwecke gedacht.",
+        "Abhängigkeit von der KI: Die Qualität und Originalität der Musik hängt vollständig vom zugrundeliegenden KI-Modell ab.",
+        "Potenzielle Ähnlichkeit: Bei häufiger Nutzung könnten sich generierte Stücke ähneln, was die Einzigartigkeit beeinträchtigen kann.",
+        "Keine manuelle Bearbeitung: Das Tool bietet keine detaillierten manuellen Bearbeitungsmöglichkeiten wie eine traditionelle DAW (Digital Audio Workstation). 3. Pandada AI (Data / Wissensmanagement)"
+      ],
+      "pricing": "Teil der Google Gemini-API, die Kosten hängen von der Nutzung ab.",
+      "datenschutz": "• Policies: AirMusic gibt an, dass hochgeladene Audiodateien und Kreationen niemals geteilt oder für das Training verwendet werden. -\n\n• DSGVO-Konformität: Die Privacy Policy erwähnt die Rechte von EU-Bürgern unter der DSGVO, wie das Recht auf Auskunft und Löschung. -\n\n• Self-Hosting: Nein, AirMusic ist ein reiner Cloud-Service. -",
+      "einschaetzung": "Ein fundamentaler Fortschritt in der KI-Agenten-Technologie, der die Art und Weise, wie wir mit Software interagieren, verändern könnte.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Royalty-free Lizenzierung für kommerzielle Nutzung, auch im kostenlosen Plan"
+        }
+      ],
+      "url": "https://airmusic.ai/"
+    },
+    {
+      "name": "Pandada AI",
+      "kategorie": "Data / Wissen",
+      "bewertung": 8.5,
+      "kurzbeschreibung": "KI-gestützte Datenanalyse ohne Programmierkenntnisse",
+      "beschreibung": "Pandada AI ist eine Datenanalyse-Plattform, die es Benutzern ermöglicht, strukturierte und unstrukturierte Daten zu analysieren und zu visualisieren, ohne Code schreiben zu müssen. Die Plattform bietet eine intuitive Drag-and-Drop-Oberfläche und automatisierte Dashboard-Erstellung.",
+      "pricing": "Freemium-Modell mit kostenlosem Basis-Plan und kostenpflichtigen Plänen für erweiterte Funktionen.",
+      "einschaetzung": "Ein vielversprechendes Tool für Unternehmen und Einzelpersonen, die Daten analysieren müssen, aber nicht über die technischen Ressourcen verfügen.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Verarbeitung unstrukturierter Daten (PDFs, Bilder) und automatische Insight-Generierung"
+        }
+      ],
+      "datenschutz": "DSGVO-konform, Daten werden verschlüsselt gespeichert, keine Weitergabe an Dritte (8/10)",
+      "url": "https://pandada.ai/"
+    },
+    {
+      "name": "The Prompting Company",
+      "kategorie": "Recherche",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "SEO für das KI-Zeitalter - Optimierung für ChatGPT-Zitate",
+      "beschreibung": "• Highlights:\n\n• SEO für das KI-Zeitalter.\n\n• Analysiert, wie und warum bestimmte Quellen in KI-Antworten zitiert werden.\n\n• Bietet Tools zur Optimierung von Inhalten für eine bessere Sichtbarkeit in KI-Systemen.",
+      "pricing": "Vorerst in einer geschlossenen Beta-Phase, Preisgestaltung noch nicht veröffentlicht.",
+      "einschaetzung": "Ein potenziell bahnbrechendes Tool für Marketing- und SEO-Experten, das eine völlig neue Disziplin eröffnen könnte.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Pionier im Bereich \"AI Search Optimization\" - eine völlig neue Disziplin"
+        }
+      ],
+      "datenschutz": "Keine Informationen verfügbar (N/A)",
+      "url": "https://www.producthunt.com/products/the-prompting-company"
+    },
+    {
+      "name": "Agentic Vision in Gemini",
+      "kategorie": "Agents",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "Google Major Update für agentenähnliche visuelle Interaktion",
+      "beschreibung": "• Highlights:\n\n• Erlaubt Gemini, wie ein menschlicher Agent zu agieren, der nicht nur sieht, was auf einem Bildschirm passiert, sondern auch Aktionen ausführt.\n\n• Kann komplexe Aufgaben in Web-Interfaces automatisieren.\n\n• Bietet Entwicklern neue Möglichkeiten zur Erstellung von KI-Agenten.",
+      "pricing": "Teil der Google Gemini-API, die Kosten hängen von der Nutzung ab.",
+      "einschaetzung": "Ein fundamentaler Fortschritt in der KI-Agenten-Technologie, der die Art und Weise, wie wir mit Software interagieren, verändern könnte.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Ermöglicht KI-Agenten, komplexe Aufgaben in Web-Interfaces zu automatisieren"
+        }
+      ],
+      "datenschutz": "Google Cloud-Datenschutzrichtlinien, DSGVO-konform (7/10)",
+      "url": "https://blog.google/technology/ai/google-gemini-ai-update-january-2026/"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-02-01.md"
+}

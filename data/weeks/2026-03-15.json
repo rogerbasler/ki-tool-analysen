@@ -1,0 +1,101 @@
+{
+  "kw": 11,
+  "jahr": 2026,
+  "datum": "2026-03-15",
+  "zusammenfassung": "KW 11/2026 markiert den Übergang von allgemeinen KI-Assistenten zu vertikalen Arbeitswerkzeugen mit klarer ROI-Logik. Naoma AI zeigt, wie KI-Agenten direkt in den Vertriebsprozess eingreifen und aus Website-Traffic sofort personalisierte Produktdemos machen. Citable macht einen neuen Wachstumsvektor sichtbar: die Präsenz von Marken in Antworten von ChatGPT, Perplexity und anderen KI-Systemen. OrangeLabs demokratisiert den Zugriff auf Daten, Dokumente und Webrecherche über einen günstigen Analyse-Workspace. Teract professionalisiert den Aufbau persönlicher Sichtbarkeit über mehrere Netzwerke hinweg. Und Canva Magic Layers demonstriert, wie etablierte Plattformen KI nicht als Zusatz, sondern als natürliche Erweiterung des bestehenden Kreativ-Workflows integrieren.",
+  "highlights": [
+    "Naoma AI: Stärkstes Tool der Woche, AI Video Sales Agent mit klarer Revenue-Logik und solider Datenschutzkommunikation (8.8/10)",
+    "Trend: Vertikale KI-Tools verdrängen Generalisten, Gewinner sind Produkte mit direkter Umsatz- oder Produktivitätswirkung",
+    "Marktsignal: Datenschutztransparenz wird 2026 zum echten Produktmerkmal, besonders für DACH-Teams und B2B-Beschaffung"
+  ],
+  "trend": "Spezialisierte KI-Produkte mit klarer Umsatz- oder Produktivitätslogik setzen sich gegenüber allgemeinen Assistenten durch",
+  "tools": [
+    {
+      "name": "Teract",
+      "kategorie": "Text",
+      "bewertung": 8.3,
+      "kurzbeschreibung": "AI Reputation Coach für LinkedIn, X, Reddit und weitere Plattformen",
+      "beschreibung": "Teract nennt sich selbst einen AI Reputation Coach und richtet sich an Gründer, Berater und Führungskräfte, die auf Plattformen wie LinkedIn, X, Reddit, Medium oder Product Hunt systematisch Sichtbarkeit aufbauen wollen. Das Tool lernt den Tonfall des Nutzers, identifiziert relevante Diskussionen und generiert Vorschläge für Kommentare oder Posts. Anders als viele Social-AI-Tools setzt Teract bewusst nicht auf Automatisierung, sondern auf assistiertes Schreiben, das vom Nutzer manuell geprüft und veröffentlicht wird.\n\nDas Pricing ist transparent und niedrigschwellig. Es gibt einen kostenlosen Einstieg mit 10 einmaligen Generierungen, dazu einen Creator-Plan für $14.99 pro Monat und einen Pro-Plan für $29.99 pro Monat. Für Solopreneure oder Personal-Branding-getriebene Fachleute ist das ein fairer Einstiegspreis.\n\n• Preis-Leistung: Stark für Einzelanwender\n\n• Plattformabdeckung: Acht Netzwerke inklusive Reddit und Product Hunt\n\n• Bedienlogik: Assistent statt Autoposter\n\n• Datenschutz: Offen beschrieben, aber mit sensiblen Berechtigungen\n\n• Gesamturteil: Sehr relevantes Tool für sichtbarkeitsgetriebene Experten\n\nDie Datenschutzseite ist zugleich Stärke und Warnhinweis. Positiv ist, dass Teract recht klar erklärt, welche Browser-Permissions und welche Datenströme nötig sind. Kritisch bleibt, dass für die AI-Coach-Funktion Browserverlaufselemente lokal gespeichert und bei Briefings an die Server gesendet werden können. Für viele Nutzer ist das funktional sinnvoll; für datenschutzsensible Umgebungen ist es jedoch ein klares Thema, das vor Einführung geprüft werden sollte.\n\n\"Up to 500 recent article visits (URL, title, timestamp, and domain) are stored locally in your browser.\", Teract Privacy Policy",
+      "einschaetzung": "Teract ist eines der praktischsten neuen Tools dieser Woche für alle, deren Geschäft stark an digitaler Sichtbarkeit hängt. Der Wert ist unmittelbar nachvollziehbar, der Einstieg günstig und die manuelle Publishing-Logik reduziert Plattformrisiken. Gleichzeitig ist das Produkt nur dann ein Fit, wenn Nutzer den erforderlichen Grad an Browser- und Kontextzugriff akzeptieren.",
+      "pricing": "Free: $0 (10 einmalige Generierungen). Creator: $14.99/Monat. Pro: $29.99/Monat. Jährliche Rabatte verfügbar.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Lernt die eigene Stimme, findet relevante Konversationen über 8 Plattformen, generiert Kommentare und Posts, setzt bewusst auf Assistenz statt Autoposting."
+        }
+      ],
+      "datenschutz": "Öffentliche Privacy Policy vorhanden; erklärt Browser-Permissions transparent. Kritisch für sensible Nutzer: Browserverlaufsdaten können lokal gespeichert und für Briefings serverseitig verarbeitet werden. (6.5/10)",
+      "url": "https://www.teract.ai/"
+    },
+    {
+      "name": "Canva Magic Layers",
+      "kategorie": "Design",
+      "bewertung": 8.4,
+      "kurzbeschreibung": "Kontextbezogene KI-Bildbearbeitung direkt im Canva-Workflow",
+      "beschreibung": "Mit Magic Layers zeigt Canva, dass Innovation im KI-Markt nicht nur von Start-ups kommt. Das Update erweitert die bestehende Canva-Umgebung um eine kontextbezogene Bildbearbeitung, bei der Objekte und Ebenen intelligenter erkannt, verändert und in kreative Workflows eingebunden werden. Gerade für Marketer, Content-Teams und kleine Unternehmen ist das relevant, weil es keine neue Plattform erfordert, sondern die Produktivität im bereits etablierten Design-Ökosystem erhöht.\n\nDer entscheidende Vorteil liegt in der Distributionsmacht: Canva muss keine neue Kategorie erfinden, sondern kann KI-Funktionen sofort in bestehende Gewohnheiten integrieren. Dadurch hat Magic Layers für viele Nutzer eine geringere Einstiegshürde als spezialisierte Design-Neustarts. Die Innovation ist vielleicht weniger radikal als bei reinen AI-Nativen, aber in der Praxis oft wirksamer, weil sie sofort in bestehende Teamprozesse passt.\n\n• Innovationsgrad: Hoch innerhalb eines etablierten Ökosystems\n\n• Adoptionshürde: Niedrig für bestehende Canva-Nutzer\n\n• Preislogik: Im Canva-Ökosystem verankert\n\n• Datenschutz: Besser einschätzbar als bei Frühphasen-Start-ups\n\n• Gesamturteil: Sehr starker pragmatischer Wochenkandidat",
+      "einschaetzung": "Magic Layers ist weniger ein isoliertes Tool als ein Signal dafür, wohin der Markt geht: KI-Funktionen werden in bestehende Arbeitsumgebungen eingebettet, statt Nutzer in immer neue Spezial-Interfaces zu zwingen. Für viele Teams dürfte genau das der produktivere Weg sein.",
+      "pricing": "Bestandteil des Canva-Ökosystems; konkrete Verfügbarkeit abhängig vom jeweiligen Canva-Plan und Funktionsrollout.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "KI-gestützte Layer- und Objekterkennung direkt in vertrauten Design-Workflows; niedrige Adoptionshürde für bestehende Teams."
+        }
+      ],
+      "datenschutz": "Deutlich besser einschätzbar als bei vielen Frühphasen-Start-ups, da Canva als etablierter Anbieter dokumentierte Unternehmensprozesse und Policies mitbringt. (7.5/10)",
+      "url": "https://www.canva.com/newsroom/news/magic-layers/"
+    },
+    {
+      "name": "OrangeLabs",
+      "kategorie": "Data / Wissen",
+      "bewertung": 7.9,
+      "kurzbeschreibung": "Talk to your data, Dokumente, CSVs und Websuche in einem Analyse-Workspace",
+      "beschreibung": "OrangeLabs verspricht mit dem Slogan \"Talk to your data\" eine niedrigschwellige Schnittstelle zu Dokumenten, CSVs und Webrecherche. Funktional liegt das Produkt zwischen leichtgewichtiger BI, Dokumenten-Chat und AI-Analyst. Die Preisstruktur wirkt zunächst attraktiv: Ein kostenloser Plan, dazu Starter für $12, Pro für $49 und Enterprise für $299 pro Monat. Gerade der Starter-Einstieg ist bemerkenswert niedrig im Vergleich zu vielen vertikalen AI-Tools dieser Woche.\n\nFunktional spricht OrangeLabs vor allem Nutzer an, die ohne komplexe Data-Stack-Einführung mit Dateien und strukturierten Informationen arbeiten möchten. Laut offizieller Preisansicht gehören dazu Dokumenten-Uploads, AI-gestützte Analyse, sichere Websuche und in höheren Plänen API-Zugang, Integrationen und E-Mail-Parsing. Das ist attraktiv für Solo-Analysten, kleine Teams oder frühe datengetriebene Workflows.\n\n• Free: $0\n\n• Starter: $12\n\n• Pro: $49\n\n• Enterprise: $299\n\nDie entscheidende Schwäche ist die schwer verifizierbare Datenschutzlage. In dieser Session leitete die Privacy-Route nicht zu einer lesbaren Richtlinie, sondern auf eine Login-Ansicht um. Für ein Tool, das mit hochgeladenen Dokumenten und Daten arbeitet, ist das ein erheblicher Vertrauensnachteil. Selbst wenn intern gute Standards existieren sollten, fehlt die für professionelle Beschaffung notwendige öffentliche Nachvollziehbarkeit.",
+      "einschaetzung": "OrangeLabs ist preislich attraktiv und funktional interessant, insbesondere für Teams, die einen unkomplizierten \"Chat mit Daten\"-Ansatz suchen. Der günstige Einstieg macht das Produkt testenswert. Für sensible Unternehmensdaten ist derzeit jedoch Vorsicht angebracht, solange die Datenschutz- und Compliance-Kommunikation öffentlich nicht klarer zugänglich ist.",
+      "pricing": "Free: $0/forever. Starter: $12/Monat. Pro: $49/Monat. Enterprise: $299/Monat.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Dokumenten-Uploads, AI-gestützte Analyse, sichere Websuche, CSV-Arbeit, API-Zugang und Integrationen in höheren Plänen."
+        }
+      ],
+      "datenschutz": "Öffentliche Privacy-Informationen waren in dieser Analyse nicht belastbar zugänglich, was bei einem datenorientierten Produkt ein klares Vertrauensdefizit darstellt. (4.5/10)",
+      "url": "https://www.orangelabs.im/"
+    },
+    {
+      "name": "Citable",
+      "kategorie": "Recherche",
+      "bewertung": 8.1,
+      "kurzbeschreibung": "GEO-/AI-Visibility-Plattform für Markenpräsenz in KI-Antworten",
+      "beschreibung": "Citable besetzt eine der derzeit spannendsten neuen Kategorien: Generative Engine Optimization (GEO) beziehungsweise AI Visibility Tracking. Das Tool verspricht, sichtbar zu machen, wie ChatGPT, Perplexity, Gemini, Claude oder Grok eine Marke in Antworten darstellen, in welchen Persona-Kontexten sie auftaucht und wo inhaltliche Lücken gegenüber Wettbewerbern bestehen. In einer Welt, in der Kaufentscheidungen zunehmend durch KI-Antworten vorgefiltert werden, ist das eine hochrelevante Fragestellung.\n\nCitable ist dabei weniger ein klassisches SEO-Tool als eine Analyse- und Massnahmenplattform für Markenwahrnehmung in KI-Systemen. Besonders interessant ist der Persona-Ansatz: Nicht nur die Frage, ob eine Marke erwähnt wird, sondern für wen und in welchem Kontext. Das ist strategisch wertvoll für B2B-Marketing, Produktmarketing und Agenturen, die AI-Sichtbarkeit als neue Ebene der organischen Reichweite verstehen.\n\n• Audit: $99\n\n• Navigate: $299\n\n• Grow: $799\n\n• Scale: Custom\n\nDie Pricing-Struktur ist klar und für B2B-Teams grundsätzlich nachvollziehbar, aber nicht günstig. Schon der Audit-Plan beginnt bei $99 pro Monat, während die sinnvolle operative Nutzung schnell in die höheren Stufen führt. Für Start-ups in sehr früher Phase kann das hoch sein; für Agenturen und Wachstums-Teams ist es dagegen vertretbar, wenn daraus messbare Sichtbarkeits- oder Pipeline-Effekte entstehen.\n\nDie grösste Schwäche in dieser Analyse liegt in der öffentlichen Datenschutztransparenz. Die Privacy-Seite war in dieser Recherche-Session nicht zuverlässig auslesbar, sodass eine belastbare Detailprüfung öffentlich nicht möglich war. Für DACH-Teams ist das nicht ideal, weil gerade ein Tool, das Wettbewerbs- und Sichtbarkeitsdaten verarbeitet, vertrauensseitig besonders sauber auftreten sollte.",
+      "einschaetzung": "Citable ist strategisch hochinteressant und trifft einen realen Markttrend. Noch ist die Kategorie jung, aber die Grundannahme ist überzeugend: Marken müssen nicht nur für Google, sondern auch für KI-Antwortsysteme optimieren. Wer AI-Visibility bereits als Wachstumsdisziplin betrachtet, findet hier eines der relevantesten Werkzeuge der Woche. Die operative Substanz wirkt stark, die öffentliche Compliance-Kommunikation sollte aber besser werden.",
+      "pricing": "Audit: $99/Monat. Navigate: $299/Monat. Grow: $799/Monat. Scale: Custom. Jährlich laut Anbieter 20 % günstiger.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Persona-basierte AI-Visibility, Wettbewerbsanalyse, Analysen über mehrere KI-Plattformen und Action Engine für Content-Priorisierung."
+        }
+      ],
+      "datenschutz": "Öffentlich war die Privacy-Seite in dieser Recherche nicht verlässlich auslesbar. Für DACH-Beschaffung ist diese mangelnde Transparenz ein klarer Minuspunkt. (4.5/10)",
+      "url": "https://getcitable.com/"
+    },
+    {
+      "name": "Naoma AI",
+      "kategorie": "Agents",
+      "bewertung": 8.8,
+      "kurzbeschreibung": "AI Video Sales Agent für personalisierte Produktdemos und Lead-Qualifizierung",
+      "beschreibung": "Naoma AI positioniert sich als AI Video Sales Agent, der personalisierte Produktdemos in Echtzeit durchführt, Leads qualifiziert und die gewonnenen Erkenntnisse automatisch in CRM-Prozesse zurückführt. Auf der Produktseite betont das Unternehmen insbesondere 24/7-Verfügbarkeit, Mehrsprachigkeit, Hyperpersonalisierung und CRM-Integration. Das ist für B2B-SaaS-Teams interessant, die zwar bereits Nachfrage haben, aber menschliche Demo-Kapazität nur begrenzt skalieren können.\n\nBesonders stark ist die klare Zielgruppenfokussierung. Naoma spricht nicht beliebige KMU an, sondern Teams mit bereits relevantem Inbound-Volumen und nennenswerter Demo-Frequenz. Auf der Pricing-Seite nennt das Unternehmen als Idealprofil 20.000+ monatliche Website-Besucher und 100+ Demos pro Monat. Bezahlt wird nicht pauschal pro Sitzplatz, sondern auf Basis von \"engaged demos\", also tatsächlich durchlaufenen Demo-Erlebnissen. Das ist vertrieblich schlüssig, weil die Preislogik direkt an ein Ergebnis gekoppelt wird.\n\n• Produktreife: Hoch für klaren B2B-Use-Case\n\n• Pricing: Kein klassisches Self-Serve, sondern Angebotsmodell\n\n• Datenschutz: Vergleichsweise transparent\n\n• DACH-Eignung: Gut für Mid-Market/Enterprise, weniger für kleine Teams\n\n• Gesamturteil: Sehr starkes Vertikalprodukt mit echter Umsatzlogik\n\nDatenschutzseitig wirkt Naoma im Vergleich zu vielen Frühphasen-Tools erfreulich strukturiert. Die Privacy Policy nennt explizit GDPR-Bezug, Vercel Analytics nur mit Consent, Standard Contractual Clauses sowie weitere Mechanismen für internationale Datentransfers. Zusätzlich werden Betroffenenrechte, Retention-Logik und Sicherheitsmassnahmen nachvollziehbar erläutert. Für europäische Teams ist das kein Garant für risikofreie Einführung, aber ein deutlich professionellerer Ausgangspunkt als bei vielen jungen AI-SaaS-Produkten.\n\n\"We are committed to protecting your privacy and handling your personal data transparently and securely.\", Naoma Privacy Policy",
+      "einschaetzung": "Naoma ist in dieser Woche eines der überzeugendsten Produkte, weil es nicht nur technologisch interessant, sondern unmittelbar umsatzrelevant ist. Wer bereits Demo-Nachfrage hat, aber menschliche Sales-Kapazität nicht beliebig ausbauen kann, sollte dieses Tool ernsthaft prüfen. Die Hürde liegt weniger in der Technologie als im klaren Mid-Market-/Enterprise-Fokus. Für Start-ups ohne nennenswerten Inbound dürfte das Produkt dagegen zu früh kommen.",
+      "pricing": "Kein klassischer Self-Serve-Tarif; individuelles Angebotsmodell auf Basis von \"engaged demos\". Aktuelle Setup-Aktion: $3,500 auf $0 reduziert.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Live-Konversationsdemos, Hyperpersonalisierung, 33 Sprachen, CRM-Integration, Lead-Qualifizierung, Avatar-Optionen, klarer Fokus auf Demo-Conversions statt Terminbuchung."
+        }
+      ],
+      "datenschutz": "Öffentliche Privacy Policy mit GDPR-Bezug, Consent-basierter Analytics-Nutzung, SCCs und weiteren Transfermechanismen. Für ein junges Produkt bemerkenswert professionell dokumentiert. (8.0/10)",
+      "url": "https://www.naoma.ai/"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)",
+  "markdown": "archiv/data/ki-tool-analysen-2026-03-15.md"
+}

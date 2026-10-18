@@ -1,0 +1,100 @@
+{
+  "kw": 29,
+  "jahr": 2026,
+  "datum": "2026-07-19",
+  "zusammenfassung": "Diese Woche zeigt, dass der Wert von KI weniger in einzelnen Demo-Features liegt als in der Kontrolle über Modell, Wissen und Ausführung. Inkling und NVIDIA Nemotron 3 Embed öffnen zentrale Modell- und Retrieval-Schichten, Google Vids integriert Video enger in bestehende Arbeitsabläufe, Context.dev strukturiert Webdaten und Osaurus bringt Agenten lokal auf den Mac. Für Entscheider:innen bleibt die Reihenfolge nüchtern: Datenfluss klären, einen eng begrenzten Pilot wählen, Qualität und Kosten messen.",
+  "highlights": [
+    "NVIDIA Nemotron 3 Embed (9/10): Offene Retrieval-Modelle machen aus Dokumenten und Code eine steuerbare Wissensschicht.",
+    "Trend: Von der KI-Funktion zur kontrollierbaren Infrastruktur: Open Weights, lokale Ausführung, Retrieval und nachvollziehbare Datenzugänge werden zur operativen Grundlage.",
+    "Paradigmenwechsel: Von All-in-One zu spezialisierten Lösungen"
+  ],
+  "trend": "Von der KI-Funktion zur kontrollierbaren Infrastruktur: Open Weights, lokale Ausführung, Retrieval und nachvollziehbare Datenzugänge werden zur operativen Grundlage.",
+  "tools": [
+    {
+      "name": "Inkling von Thinking Machines",
+      "kategorie": "Text",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Open-Weights-Modell für multimodale Text-, Bild- und Audio-Workflows",
+      "beschreibung": "Inkling ist ein am 15.07.2026 veröffentlichtes Mixture-of-Experts-Modell mit offenen Gewichten, bis zu 1 Million Tokens Kontext und Text-, Bild- sowie Audioeingaben. Es richtet sich an Teams, die Modelle für Fachdomänen, Tool-Nutzung und agentisches Coding anpassen wollen.",
+      "einschaetzung": "Stark für technisch reife Teams mit klarer Evaluations- und Datengovernance. Für Standardtexte ist es ein Baukasten, nicht das bequemste Fertigprodukt.",
+      "pricing": "Tinker rechnet je 1 Mio. Tokens ab: Inkling 64K kostet $1.87 Prefill, $4.68 Sample und $5.61 Training. Checkpoint-Speicher: $0.10 pro GB/Monat. Kein allgemeines Free Tier publiziert.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "975 Mrd. Gesamtparameter, 41 Mrd. aktive Parameter, multimodale Eingaben und kontrollierbarer Denkaufwand. Der Nutzen liegt in Anpassbarkeit, nicht in einem Allzweckversprechen."
+        }
+      ],
+      "datenschutz": "Anbieter in den USA. Die Privacy Notice nennt Log- und Nutzungsdaten sowie Dienstleister. EU-Hosting und eine explizite DSGVO-Positionierung sind nicht öffentlich zugesagt; offene Gewichte ermöglichen grundsätzlich eigenen Betrieb.",
+      "url": "https://thinkingmachines.ai/inkling/"
+    },
+    {
+      "name": "Google Vids",
+      "kategorie": "Design",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Workspace-Videoeditor mit Gemini Omni Flash und Personal Avatars",
+      "beschreibung": "Google Vids erhielt am 16.07.2026 Gemini Omni Flash und Personal Avatars. Teams können Videos mit Text- und Bildreferenzen erstellen, per natürlicher Sprache überarbeiten und wiederkehrende Schulungs-, Produkt- oder Enablement-Inhalte effizienter produzieren.",
+      "einschaetzung": "Sinnvoll für bestehende Workspace-Teams, die wiederkehrende Kommunikationsvideos produktionsnah erstellen wollen. Avatar-Funktionen erst nach sauberer Governance aktivieren.",
+      "pricing": "In Workspace Business enthalten: CHF 8.40 / 16.80 / 26.40 flexibel oder CHF 7 / 14 / 22 im Annual/Fixed-Term-Plan für Starter, Standard und Plus. 14 Tage Free Trial; Enterprise auf Anfrage.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Schrittweise Video-Bearbeitung per natürlicher Sprache. Personal Avatars entstehen aus Selfie und kurzer Stimmaufnahme; KI-Videos erhalten ein SynthID-Wasserzeichen."
+        }
+      ],
+      "datenschutz": "Workspace-DPA adressiert EU-DSGVO und Schweizer Datenschutzrecht. Konkrete Datenregionen hängen aber von Plan, Vertrag und Konfiguration ab. Für Avatare braucht es eine klare Einwilligungs- und Löschregel.",
+      "url": "https://workspace.google.com/products/vids/"
+    },
+    {
+      "name": "NVIDIA Nemotron 3 Embed",
+      "kategorie": "Data / Wissen",
+      "bewertung": 9.0,
+      "kurzbeschreibung": "Offene Embedding-Modelle für RAG, semantische Suche und Agent Memory",
+      "beschreibung": "NVIDIA veröffentlichte Nemotron 3 Embed am 16.07.2026. Die Modellfamilie liefert Embeddings für RAG, Code Retrieval, mehrsprachige Suche und Agent Memory, damit Dokumente, Code und Wissensbestände zuverlässiger auffindbar werden.",
+      "einschaetzung": "Sehr relevant für Teams, deren KI an der Qualität des Wissenszugriffs steht oder fällt. Ein Pilot sollte Retrieval-Qualität, Latenz, Kosten und Zugriffskontrolle messbar machen.",
+      "pricing": "Offene Gewichte, Datensätze und Rezepte. Auf NVIDIA Build war ein Free Endpoint sichtbar, eine vollständige öffentliche Tarifmatrix für gehostete Produktivnutzung jedoch nicht. Self-Hosting verursacht Infrastrukturkosten.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Speziell für Retrieval-Aufgaben statt generischem Chat. NVIDIA nennt für den 8B-Checkpoint Platz 1 im RTEB-Leaderboard; das bleibt eine Herstellerangabe, die im eigenen Datenbestand zu prüfen ist."
+        }
+      ],
+      "datenschutz": "Eigener Betrieb bietet die höchste Datenkontrolle. Für gehostete Endpoints sind Region, Input-/Output-Protokollierung und DPA vor dem Einsatz sensibler Daten separat zu klären.",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-embed-1b"
+    },
+    {
+      "name": "Context.dev",
+      "kategorie": "Recherche",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Web-Kontext-API für Scraping, Crawling und strukturierte Extraktion",
+      "beschreibung": "Context.dev liefert Webdaten als Markdown, validiertes JSON, Crawlergebnis oder Brand-Information für KI-Anwendungen. Der Product-Hunt-Launch vom 02.07.2026 erreichte Rang 1 des Tages und Rang 2 der Woche; die aktuelle Auswahl beruht auf dieser frühen, positiven Rezeption und klar veröffentlichten Preisen.",
+      "einschaetzung": "Stark für Entwicklerteams mit öffentlichem oder freigegebenem Webdatenbestand. Für personenbezogene oder vertrauliche Daten zuerst Datenfluss, URL-Rechte und Vertrag prüfen.",
+      "pricing": "Free $0 mit 500 Credits bei Business-E-Mail, Developer $25 mit 10'000, Pro $149 mit 200'000 und Scale $499 mit 1 Mio. Credits. Enterprise ab 2 Mio. Credits individuell; jährlich zwei Monate gratis.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Eine API für Scraping, Crawl, Dokument-zu-Markdown, Search, schema-validierte Extraktion, Monitoring und Brand Intelligence. Das reduziert Infrastrukturaufwand bei KI-gestützter Recherche."
+        }
+      ],
+      "datenschutz": "Server in den USA; Daten können in die USA und weitere Länder übermittelt werden. Keine öffentlich klare EU-Region, kein DPA und keine Self-Hosting-Option in der geprüften Dokumentation.",
+      "url": "https://www.context.dev/"
+    },
+    {
+      "name": "Osaurus",
+      "kategorie": "Agents",
+      "bewertung": 8.0,
+      "kurzbeschreibung": "Native macOS-Agenten mit lokalen Modellen und optionalen Cloud-Providern",
+      "beschreibung": "Osaurus 0.22.6 erschien am 18.07.2026 und erweitert die native Apple-Silicon-App um bessere Tool- und Installationsabläufe. Die App verbindet lokale Modelle mit Agenten, Dateioperationen, Folder Watchers, Wissenskollektionen und optionalen Cloud-Modellen.",
+      "einschaetzung": "Ein glaubwürdiger Pilot für lokale Agentenarbeit auf Apple Silicon. Mit Testordner, minimalen Berechtigungen und reversiblen Aufgaben starten, bevor ein Agent freie Hand bekommt.",
+      "pricing": "Kostenlos und MIT-lizenziert, laut Produktseite ohne Abonnements, Usage Caps oder eigenes Billing. Kosten können durch Hardware und optional verwendete Cloud-Modelle entstehen.",
+      "felder": [
+        {
+          "label": "Besonderheit",
+          "text": "Lokale Modelle über Ollama, MLX und LM Studio mit Agenten, Sprachsteuerung, Dateioperationen, Browser-Plugins, parallelen Jobs und Folder Watchers in einer Mac-App."
+        }
+      ],
+      "datenschutz": "Bei lokalen Modellen bleiben Prompts, Chats, Dateien und Provider-Keys laut Policy auf dem Mac. Cloud-Aufrufe gehen an den gewählten Provider. Diagnose-Telemetrie ist optional und EU-Hosting nicht pauschal zugesagt.",
+      "url": "https://osaurus.ai/"
+    }
+  ],
+  "quelle": "Manus-Archiv (migriert)"
+}
