@@ -1,0 +1,322 @@
+{
+  "stand": "2026-10-22",
+  "titel": "KI-Transkription",
+  "untertitel": "17 Tools für Meetings und Interviews, geordnet nach Datenschutz",
+  "lead": "Meeting-Transkription mit KI ist in der Schweiz und der EU zulässig, solange alle Teilnehmenden informiert sind und einwilligen. Welches Tool passt, entscheidet sich weniger an der Erkennungsqualität als an der Frage, wo Audio und Text verarbeitet werden und wem der Anbieter gehört.",
+  "kernpunkte": [
+    "Stimme ist ein Personendatum, bei biometrischer Auswertung ein besonders schützenswertes. Die Einwilligung aller Teilnehmenden ist Pflicht, nicht nur die des Organisators.",
+    "Massgebend ist der Sitz des Anbieters, nicht nur der Serverstandort. US-Konzerne mit EU-Servern unterliegen weiterhin dem CLOUD Act.",
+    "Lokale Tools ersparen Auftragsverarbeitungsvertrag (AVV) und Drittlandtransfer. Sie verlagern die Verantwortung auf die Sicherheit des eigenen Geräts.",
+    "Ein sichtbarer Meeting-Bot schafft Transparenz, ersetzt aber keine aktiv eingeholte Einwilligung."
+  ],
+  "guide": {
+    "url": "https://transcribe.fragroger.ai/",
+    "label": "Zum vollständigen Datenschutz-Guide",
+    "text": "Rechtsvergleich DSG und DSGVO, Speicherregeln, Teams und Zoom im Detail sowie eine Checkliste für vor, während und nach dem Meeting."
+  },
+  "fokus_titel": "Im Fokus",
+  "fokus_intro": "Zwei Ergänzungen dieser Aktualisierung: noScribe für sensible Interviews ohne Cloud und Sally für mehrsprachige Meetings mit Hosting in Deutschland.",
+  "fokus": [
+    {
+      "kategorie": "Transkription",
+      "name": "noScribe",
+      "url": "https://noscribe.de/en/",
+      "bewertung": 8.3,
+      "signal": "Neu in der Übersicht. Version 0.7 unterstützt Macs mit Apple Silicon ab macOS 14.",
+      "kurzbeschreibung": "Kostenlose Open-Source-Desktop-App, die Interviews und andere sensible Aufnahmen vollständig auf dem eigenen Computer transkribiert.",
+      "beschreibung": "noScribe stammt vom Soziologen Dr. Kai Dröge und wurde für qualitative Forschungsinterviews entwickelt. Die App kombiniert das Spracherkennungsmodell Whisper von OpenAI mit Pyannote für die Sprechererkennung. Beide Modelle laufen lokal, eine Internetverbindung braucht es nach der Installation nicht.\n\nZum Paket gehört ein Editor, der Text und Audio synchron abspielt. Damit lassen sich Erkennungsfehler direkt an der Stelle im Gespräch korrigieren. noScribe ist kein Meeting-Bot: Es verarbeitet vorhandene Audiodateien, nicht laufende Videocalls.",
+      "nutzungsszenarien": [
+        "Forschung: Qualitative Interviews transkribieren, ohne Rohdaten an einen Clouddienst zu geben.",
+        "Beratung und Coaching: Vertrauliche Gespräche nachträglich verschriftlichen und mit Zeitmarken prüfen.",
+        "HR: Strukturierte Bewerbungs- oder Austrittsgespräche dokumentieren, sofern alle eingewilligt haben.",
+        "Journalismus: Hintergrundgespräche mit Quellenschutz lokal auswerten.",
+        "Verwaltung: Protokollentwürfe aus Sitzungsaufnahmen erstellen, wenn Cloud-Tools ausgeschlossen sind."
+      ],
+      "pricing": "Kostenlos und quelloffen unter GPL-3.0. Das Projekt nimmt freiwillige Spenden über Ko-fi entgegen. Es gibt keine kostenpflichtigen Pläne. Achtung: Die Domain noscribe.ai verkauft kostenpflichtige Dienste und gehört nicht zum Projekt.",
+      "datenschutz": "Die Verarbeitung läuft vollständig auf dem eigenen Gerät, ein Server des Anbieters ist nicht beteiligt. Damit entfallen Auftragsverarbeitungsvertrag und Drittlandtransfer. DSGVO und DSG gelten trotzdem: Informationspflicht und Einwilligung der Aufgenommenen bleiben bestehen, und das Gerät mit den Aufnahmen muss verschlüsselt und zugriffsgeschützt sein. Self-Hosting ist der Normalfall, die App wird lokal installiert.",
+      "staerken": [
+        "Datenhoheit: Audio und Transkript verlassen den Rechner nicht.",
+        "Kosten: Kostenlos, ohne Nutzungslimit und ohne Konto.",
+        "Prüfbarkeit: Offener Quellcode auf GitHub, nachvollziehbare Modelle.",
+        "Korrektur: Editor mit Audio-Abgleich spart Zeit bei der Nachbearbeitung.",
+        "Breite: Windows, macOS und Linux, rund 60 Sprachen, Dialekte werden ordentlich erkannt."
+      ],
+      "schwaechen": [
+        "Tempo: Eine Stunde Audio braucht rund 1 bis 3 Stunden Rechenzeit, auf älteren Geräten länger. Eine NVIDIA-Grafikkarte beschleunigt deutlich.",
+        "Kein Live-Betrieb: Keine Meeting-Integration, keine KI-Zusammenfassung, keine Aufgabenerkennung.",
+        "Installation: Rund 3 GB Download; Version 0.7 läuft nur auf Apple-Silicon-Macs, Intel-Macs brauchen Version 0.6.",
+        "Qualität je Sprache: Am besten bei Spanisch, Italienisch, Englisch, Portugiesisch und Deutsch, bei anderen Sprachen schwankend."
+      ],
+      "einschaetzung": "noScribe ist die naheliegende Wahl, wenn Datenschutz wichtiger ist als Geschwindigkeit: Forschung, Beratung mit Berufsgeheimnis, Personalgespräche. Für den Alltag mit vielen Meetings ist es zu langsam und zu manuell. Ein sinnvoller Test: drei Aufnahmen mit unterschiedlicher Tonqualität transkribieren und die Korrekturzeit im Editor messen. Liegt sie unter der Zeit fürs Abtippen, lohnt sich der Umstieg.",
+      "quellen": [
+        "Dröge, K. (o. D.). noScribe: AI-powered audio transcription. https://noscribe.de/en/",
+        "Dröge, K. (o. D.). noScribe [Software, Version 0.7]. GitHub. https://github.com/kaixxx/noScribe"
+      ]
+    },
+    {
+      "kategorie": "Transkription",
+      "name": "Sally",
+      "url": "https://www.sally.io/de/",
+      "bewertung": 8.4,
+      "signal": "Transkription in 103 Sprachen, Übersetzung von Transkript und Zusammenfassung per Knopfdruck.",
+      "kurzbeschreibung": "KI-Meeting-Assistent aus Mannheim, der Online-, Hybrid- und Präsenzmeetings transkribiert, zusammenfasst und in über 100 Sprachen übersetzt.",
+      "beschreibung": "Sally, betrieben von der Aliru GmbH, tritt als Bot in Zoom, Google Meet, Microsoft Teams und Webex bei oder nimmt Präsenzgespräche per App auf. Transkribiert wird in der gesprochenen Sprache, mit Sprecherzuordnung und Zeitmarken. Transkript und Zusammenfassung lassen sich danach in eine andere der 103 Sprachen übertragen.\n\nFür Teams im DACH-Raum relevant: Sally gibt an, auf Dialekte wie Schweizerdeutsch, Bairisch und Österreichisch trainiert zu sein, und erlaubt ein eigenes Vokabular für Firmen-, Produkt- und Fachbegriffe. Die Angabe von 98,8 Prozent Genauigkeit im Enterprise-Plan ist eine Herstellerzahl ohne veröffentlichte Methodik.",
+      "nutzungsszenarien": [
+        "Internationale Teams: Meeting auf Deutsch führen, Zusammenfassung auf Englisch oder Spanisch an Partner verteilen.",
+        "Vertrieb: Kundengespräche protokollieren und Aufgaben über Zapier, Make oder n8n ins CRM übergeben.",
+        "Schweizer KMU: Sitzungen mit Schweizerdeutsch und eigenem Fachvokabular erfassen.",
+        "Projektmanagement: Entscheidungen und Aufgaben aus wiederkehrenden Meetings ordnerweise per KI-Chat durchsuchen.",
+        "Regulierte Branchen: Enterprise-Plan mit On-Premise-Betrieb oder eigenem Sprachmodell einsetzen."
+      ],
+      "pricing": "Preise pro Person und Monat bei jährlicher Zahlung, exklusive MwSt.: Starter 8 EUR (1'200 Minuten pro Monat), Pro 34 EUR (unbegrenzte Minuten, eigene Prompts, KI-Chat), Enterprise 68 EUR (zusätzlich On-Premise und Optimierung für mehrsprachige Meetings). Monatliche Preise sind nicht publiziert, jährliche Zahlung ist bis zu 50 Prozent günstiger. Alle Pläne lassen sich 30 Tage kostenlos und ohne Kreditkarte testen; einen dauerhaften Gratisplan gibt es nicht.",
+      "datenschutz": "Daten liegen auf Servern von Hetzner in Deutschland, die KI-Verarbeitung läuft auf einem eigenen Sprachmodell in deutschen Rechenzentren. Sally schliesst Drittlandtransfers aus, Kundendaten sind vertraglich vom Modelltraining ausgenommen. Verschlüsselung mit AES-256 im Speicher und TLS 1.3 bei der Übertragung, ISO 27001:2022 extern auditiert (gültig bis Mai 2028), jährliche Penetrationstests. Ein AVV nach Art. 28 DSGVO lässt sich online abschliessen; Löschregeln sind pro Workspace einstellbar, nach Vertragsende werden Daten innert 30 Tagen gelöscht. Für die Schweiz gilt: kein US-Anbieter, kein CLOUD Act, Datenbekanntgabe nach Deutschland ist unter dem DSG zulässig. Self-Hosting gibt es als On-Premise-Option im Enterprise-Plan. Einzelne Funktionen nutzen weitere Unterauftragsverarbeiter, deren Liste im Help Center steht.",
+      "staerken": [
+        "Hosting: Server und Sprachmodell in Deutschland, kein Drittlandtransfer.",
+        "Sprachen: 103 Sprachen mit Übersetzung von Transkript und Zusammenfassung.",
+        "Dialekt und Fachsprache: Schweizerdeutsch-Training und eigenes Vokabular.",
+        "Integration: Zoom, Teams, Meet, Webex sowie Zapier, Make, n8n, Power Automate und MCP.",
+        "Governance: ISO 27001, Online-AVV, einstellbare Löschfristen, On-Premise-Option."
+      ],
+      "schwaechen": [
+        "Sichtbarer Bot: Er ersetzt keine Einwilligung, die muss vor jedem Meeting eingeholt werden.",
+        "Preisbild: Nur Jahrespreise publiziert, kein dauerhafter Gratisplan.",
+        "Genauigkeit: 90,3 bis 98,8 Prozent je Plan ohne öffentliche Testmethodik.",
+        "Mehrsprachige Meetings: Gemischte Sprachen im selben Gespräch sind auf der Website nur über Kundenstimmen belegt, nicht als dokumentierte Funktion."
+      ],
+      "einschaetzung": "Sally passt zu Schweizer und deutschen KMU, die Meetings mit externen Partnern in mehreren Sprachen führen und eine Cloud-Lösung ohne US-Bezug wollen. Wichtig ist der Ablauf vor dem Meeting: Ankündigung, Einwilligung, Hinweis auf den Bot. Für den Test lohnt sich ein Monat mit drei typischen Meetingarten, darunter eines mit Schweizerdeutsch und eines mit gemischten Sprachen. Gemessen werden Korrekturaufwand, Qualität der Übersetzung und die Zeit bis zum versandfertigen Protokoll.",
+      "links": [
+        {
+          "label": "Transkription in 103 Sprachen",
+          "url": "https://www.sally.io/de/meeting/ki-transkription-verschiedene-sprachen"
+        }
+      ],
+      "quellen": [
+        "Aliru GmbH. (o. D.). KI-Transkription in 103 Sprachen. Sally. https://www.sally.io/de/meeting/ki-transkription-verschiedene-sprachen",
+        "Aliru GmbH. (o. D.). Preise. Sally. https://www.sally.io/de/preise",
+        "Aliru GmbH. (o. D.). DSGVO und Sicherheit. Sally. https://www.sally.io/de/dsgvo-und-sicherheit"
+      ]
+    }
+  ],
+  "gruppen_titel": "Alle Tools nach Datenschutzniveau",
+  "spalten": {
+    "name": "Tool",
+    "platform": "Plattform",
+    "server": "Server",
+    "audio": "Audio gespeichert?",
+    "price": "Preis",
+    "special": "Besonderheit",
+    "risk": "Risiko",
+    "conditions": "Bedingungen für den Einsatz"
+  },
+  "gruppen": [
+    {
+      "id": "lokal",
+      "titel": "Gruppe A: Lokal auf dem Gerät",
+      "badge": "Maximaler Datenschutz",
+      "intro": "Die Verarbeitung läuft vollständig auf dem Gerät. Kein Cloud-Risiko, kein AVV, kein Drittlandtransfer.",
+      "tools": [
+        {
+          "name": "Notiq",
+          "platform": "iOS (iPhone, iPad)",
+          "audio": "Ja, lokal mit AES-256",
+          "price": "Kostenlos",
+          "special": "Kein Konto, keine Cloud, vollständig offline",
+          "url": "https://notiq-ai.app"
+        },
+        {
+          "name": "Whisper Notes",
+          "platform": "iOS, Mac",
+          "audio": "Nein, nur Text lokal",
+          "price": "rund 6.99 USD einmalig",
+          "special": "Keine Server, keine Analytics, vollständig offline",
+          "url": "https://whispernotes.app"
+        },
+        {
+          "name": "Speakwise",
+          "platform": "iOS (iPhone, iPad)",
+          "audio": "Ja, lokal, kein Training",
+          "price": "Freemium",
+          "special": "On-Device, nie für KI-Training genutzt",
+          "url": "https://speakwiseapp.com"
+        },
+        {
+          "name": "MacWhisper",
+          "platform": "iOS, Mac",
+          "audio": "Ja, lokal",
+          "price": "Gratis (Basis)",
+          "special": "Lokale Whisper-Modelle, Cloud-Option kostenpflichtig",
+          "url": "https://goodsnooze.gumroad.com/l/macwhisper"
+        },
+        {
+          "name": "noScribe",
+          "platform": "Windows, macOS (Apple Silicon), Linux",
+          "audio": "Ja, nur lokal",
+          "price": "Kostenlos (Open Source)",
+          "special": "Whisper und Pyannote, Sprechererkennung, Editor mit Audio-Abgleich, rund 60 Sprachen",
+          "url": "https://noscribe.de/en/",
+          "neu": true,
+          "fokus": "noscribe"
+        }
+      ]
+    },
+    {
+      "id": "schweiz",
+      "titel": "Gruppe B: Schweizer Cloud",
+      "badge": "DSG-konform",
+      "intro": "Verarbeitung auf Schweizer Servern, kein CLOUD-Act-Risiko. AVV nach DSG empfohlen.",
+      "hinweis": "töggl.ch schliesst die Verarbeitung von Daten im Anwendungsbereich der DSGVO in den AGB aus. Nur für Meetings mit Personen in der Schweiz einsetzen.",
+      "tools": [
+        {
+          "name": "Meeting Metrics",
+          "platform": "Web, iOS, Android",
+          "server": "Schweiz (St. Gallen)",
+          "audio": "Ja, Schweizer Server",
+          "price": "Freemium (5 Meetings gratis)",
+          "special": "Swiss made, Schweizerdeutsch, kein CLOUD Act",
+          "url": "https://meetingmetrics.ai"
+        },
+        {
+          "name": "töggl.ch",
+          "platform": "Web-App",
+          "server": "Schweiz",
+          "audio": "Ja, Schweizer Server, kein Training",
+          "price": "Freemium (Credits)",
+          "special": "Starke Dialekterkennung; nur für den Schweizer Markt",
+          "url": "https://töggl.ch"
+        }
+      ]
+    },
+    {
+      "id": "eu",
+      "titel": "Gruppe C: EU-Cloud",
+      "badge": "DSGVO-konform mit AVV",
+      "intro": "Europäischer Anbieter, Server in der EU, kein Schrems-II-Risiko. AVV nach Art. 28 DSGVO abschliessen.",
+      "tools": [
+        {
+          "name": "tl;dv",
+          "platform": "iOS, Android, Web",
+          "server": "EWR (GCP, Hetzner)",
+          "audio": "Ja, AES-256, EU-Server",
+          "price": "Freemium (Pro rund 25 USD/Mt.)",
+          "special": "SOC 2 Typ 1, KI-Hosting EU oder USA wählbar, sichtbarer Bot",
+          "url": "https://tldv.io"
+        },
+        {
+          "name": "Bliro",
+          "platform": "iOS (Präsenz), Desktop",
+          "server": "Frankfurt, München",
+          "audio": "Nein, kein Audio gespeichert",
+          "price": "Abo auf Anfrage",
+          "special": "Made in Germany, Echtzeit-Transkript im Arbeitsspeicher, kein Bot",
+          "url": "https://bliro.io"
+        },
+        {
+          "name": "Jamie AI",
+          "platform": "iOS, macOS, Windows",
+          "server": "Frankfurt",
+          "audio": "Nein, nach Transkription gelöscht",
+          "price": "Freemium (Pro rund 24 EUR/Mt.)",
+          "special": "Kein Bot, ISO 27001, DORA",
+          "url": "https://meetjamie.ai"
+        },
+        {
+          "name": "Sally",
+          "platform": "iOS, Android, Web",
+          "server": "Deutschland (Hetzner)",
+          "audio": "Ja, AES-256, Löschregeln je Workspace",
+          "price": "Ab 8 EUR/Mt. (jährlich), 30 Tage gratis",
+          "special": "ISO 27001:2022, eigenes Sprachmodell in DE, kein KI-Training, 103 Sprachen, sichtbarer Bot",
+          "url": "https://www.sally.io/de/meeting/ki-transkription-verschiedene-sprachen",
+          "aktualisiert": true,
+          "fokus": "sally"
+        },
+        {
+          "name": "HappyScribe",
+          "platform": "Web, iOS, Android",
+          "server": "Barcelona, EU",
+          "audio": "Ja, EU-Server",
+          "price": "Freemium (Pro ab rund 17 EUR/Mt.)",
+          "special": "SOC 2 Typ II, ISO 27001, 150+ Sprachen, Kalender-Beitritt",
+          "url": "https://happyscribe.com"
+        },
+        {
+          "name": "Klang.ai",
+          "platform": "Web, Desktop",
+          "server": "Frankreich (Scaleway), Schweden (Elastx)",
+          "audio": "Ja, EU-Server, kein Modelltraining",
+          "price": "Freemium (Abo)",
+          "special": "Schwedischer Anbieter ohne US-Bezug, Unterauftragsverarbeiter mit Zero Data Retention",
+          "url": "https://klang.ai/de/ki-meeting-protokoll/"
+        }
+      ]
+    },
+    {
+      "id": "selbst",
+      "titel": "Gruppe D: Selbst gehostet",
+      "badge": "Maximale Kontrolle",
+      "intro": "Betrieb auf eigener Infrastruktur. Volle Kontrolle, volle Verantwortung für Sicherheit und Updates.",
+      "tools": [
+        {
+          "name": "Nextcloud Talk",
+          "platform": "iOS, Android",
+          "server": "Eigener Server",
+          "audio": "Ja, auf eigenem Server",
+          "price": "Kostenlos (Open Source)",
+          "special": "Integrierte Einwilligungsfunktion, von deutschen Datenschutzbehörden empfohlen",
+          "url": "https://nextcloud.com"
+        }
+      ]
+    },
+    {
+      "id": "usa",
+      "titel": "Gruppe E: US-Anbieter",
+      "badge": "Nur mit SCC und TIA",
+      "intro": "Verarbeitung in den USA. Nach Schrems II sind Standardvertragsklauseln (SCC) und eine Transfer-Folgenabschätzung (TIA) Pflicht. Für sensible Meetings nicht empfohlen.",
+      "risiko": true,
+      "tools": [
+        {
+          "name": "Otter.ai",
+          "platform": "iOS, Android, Web",
+          "server": "AWS USA",
+          "risk": "CLOUD Act; Klage 2025 wegen fehlender Einwilligung von Teilnehmenden",
+          "conditions": "DPF-zertifiziert, SCC verfügbar, kein EU-Hosting",
+          "url": "https://otter.ai"
+        },
+        {
+          "name": "Fireflies.ai",
+          "platform": "iOS, Android, Web",
+          "server": "AWS USA",
+          "risk": "CLOUD Act; EU-Hosting nur Enterprise",
+          "conditions": "EU-Hosting auf Anfrage, SCC und TIA nötig, sichtbarer Bot",
+          "url": "https://fireflies.ai"
+        },
+        {
+          "name": "Fathom AI",
+          "platform": "iOS, Android, Web",
+          "server": "USA",
+          "risk": "CLOUD Act; kein EU-Hosting bekannt",
+          "conditions": "DPF-zertifiziert, sichtbarer Bot, SCC und TIA nötig",
+          "url": "https://fathom.video"
+        }
+      ]
+    }
+  ],
+  "empfehlungen_titel": "Welches Tool für welchen Fall",
+  "empfehlungen": [
+    "Maximaler Datenschutz (Behörden, Gesundheit, Recht): Notiq, Whisper Notes oder noScribe, vollständig lokal.",
+    "Forschungs- und Personalinterviews: noScribe mit Sprechererkennung und Editor.",
+    "Meetings mit Schweizerdeutsch: Meeting Metrics; töggl.ch nur bei rein Schweizer Teilnehmenden.",
+    "Mehrsprachige Teams mit EU-Hosting: Sally (103 Sprachen, Server in Deutschland) oder HappyScribe (150+ Sprachen).",
+    "Kein sichtbarer Bot gewünscht: Jamie AI oder Bliro, mündliche Ankündigung bleibt Pflicht.",
+    "Eigene Infrastruktur: Nextcloud Talk."
+  ],
+  "hinweis_quelle": "Tabellen basieren auf dem Guide von transcribe.fragroger.ai (Stand September 2026). Sally und noScribe wurden am 22. Oktober 2026 auf den Anbieterseiten neu geprüft. Preise und Bedingungen ändern sich, massgebend sind die Unterlagen der Anbieter.",
+  "quellen": [
+    "Aliru GmbH. (o. D.). DSGVO und Sicherheit. Sally. https://www.sally.io/de/dsgvo-und-sicherheit",
+    "Aliru GmbH. (o. D.). KI-Transkription in 103 Sprachen. Sally. https://www.sally.io/de/meeting/ki-transkription-verschiedene-sprachen",
+    "Aliru GmbH. (o. D.). Preise. Sally. https://www.sally.io/de/preise",
+    "Basler de Roca, R. (2026). KI-Transkription von Meetings: 16 datenschutzkonforme Apps im Vergleich. https://transcribe.fragroger.ai/",
+    "Dröge, K. (o. D.). noScribe [Software, Version 0.7]. GitHub. https://github.com/kaixxx/noScribe",
+    "Dröge, K. (o. D.). noScribe: AI-powered audio transcription. https://noscribe.de/en/"
+  ]
+}

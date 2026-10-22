@@ -1,0 +1,55 @@
+<article class="tool" id="{{ t.anchor }}">
+  <div class="tool-head">
+    <p class="tool-cat"><span class="cat-num">{{ '%02d' % idx }}</span>{{ cat(t.kategorie) }}</p>
+    <h2>{% if t.url %}<a href="{{ t.url }}" target="_blank" rel="noopener">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}</h2>
+    {% if t.bewertung is not none %}
+    <div class="rating{% if week and t.bewertung == week.top_score %} top{% endif %}" aria-label="{{ T.relevance }} {{ fmt(t.bewertung) }} {{ T.relevance_of }}">
+      <span class="rating-num">{{ fmt(t.bewertung) }}<small>/10</small></span>
+      <span class="rating-bar"><span style="width: {{ (t.bewertung * 10)|round(0) }}%"></span></span>
+      <span class="rating-label">{{ T.relevance }}</span>
+    </div>
+    {% endif %}
+  </div>
+  {% if t.kurzbeschreibung %}<p class="tool-lead">{{ t.kurzbeschreibung }}</p>{% endif %}
+  {% if t.signal %}<p class="tool-signal"><span>{{ T.this_week }}</span> {{ t.signal }}</p>{% endif %}
+  {% if t.beschreibung %}<div class="tool-desc">{{ t.beschreibung|rich }}</div>{% endif %}
+
+  {% if t.nutzungsszenarien %}
+  <div class="block">
+    <h3>{{ T.scenarios }}</h3>
+    <ul>{% for s in t.nutzungsszenarien %}<li>{{ s|lead_bold }}</li>{% endfor %}</ul>
+  </div>
+  {% endif %}
+
+  {% if t.pricing or t.datenschutz or t.felder %}
+  <div class="facts">
+    {% if t.pricing %}<div class="fact"><h3>{{ T.pricing }}</h3>{{ t.pricing|rich }}</div>{% endif %}
+    {% if t.datenschutz %}<div class="fact"><h3>{{ T.data_protection }}</h3>{{ t.datenschutz|rich }}</div>{% endif %}
+    {% for f in t.felder or [] %}<div class="fact"><h3>{{ f.label }}</h3>{{ f.text|rich }}</div>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if t.staerken or t.schwaechen %}
+  <div class="pros-cons">
+    {% if t.staerken %}<div class="block pros"><h3>{{ T.strengths }}</h3><ul>{% for s in t.staerken %}<li>{{ s|lead_bold }}</li>{% endfor %}</ul></div>{% endif %}
+    {% if t.schwaechen %}<div class="block cons"><h3>{{ T.weaknesses }}</h3><ul>{% for s in t.schwaechen %}<li>{{ s|lead_bold }}</li>{% endfor %}</ul></div>{% endif %}
+  </div>
+  {% endif %}
+
+  {% if t.einschaetzung %}
+  <div class="verdict"><h3>{{ T.verdict }}</h3>{{ t.einschaetzung|rich }}</div>
+  {% endif %}
+
+  <div class="tool-links">
+    {% if t.url %}<a class="btn" href="{{ t.url }}" target="_blank" rel="noopener">{{ T.open_pre }}{{ t.name }} {{ T.open_post }}</a>{% endif %}
+    {% for l in t.links or [] %}<a class="more" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} →</a>{% endfor %}
+    {% if week and week.partial %}<a class="more" href="{{ partial_href }}#{{ t.anchor }}" lang="de">{{ T.partial_link }}</a>
+    {% elif analysis_href %}<a class="more" href="{{ analysis_href }}{% if t.anchor in analysis_anchors %}#{{ t.anchor }}{% endif %}">{{ T.read_full }}</a>{% endif %}
+  </div>
+  {% if t.quellen %}
+  <details class="tool-sources">
+    <summary>{{ T.sources }} ({{ t.quellen|length }})</summary>
+    <ol>{% for q in t.quellen %}<li>{{ q|source }}</li>{% endfor %}</ol>
+  </details>
+  {% endif %}
+</article>

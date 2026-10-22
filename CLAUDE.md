@@ -54,6 +54,14 @@ Die Website wird ausschliesslich aus `data/weeks/*.json` (DE) und `data/weeks/en
 
 9. **Abschluss**: kurze Meldung mit KW, den fünf Tools samt Bewertung und den Links https://tools.fragroger.ai und https://tools.fragroger.ai/en/.
 
+## Themenseite Transkription
+
+`data/themen/transkription.json` (DE, Struktur, Bewertungen, Quellen) und `data/themen/transkription.en.json` (EN-Texte)
+erzeugen `transkription.html` und `en/transcription.html`. Wenn ein Wochen-Tool ein Transkriptions- oder Meeting-Tool ist
+oder ein Tool aus dieser Liste ein wesentliches Update erhält (Preise, Hosting, Zertifikate), die Zeile in der passenden
+Gruppe ergänzen oder anpassen, `"stand"` auf das heutige Datum setzen und beide Sprachdateien nachführen.
+Gruppen: lokal, schweiz, eu, selbst, usa. Ausführliche Gründe und Rechtsvergleich stehen auf https://transcribe.fragroger.ai/.
+
 ## Schema `data/weeks/YYYY-MM-DD.json`
 
 ```json

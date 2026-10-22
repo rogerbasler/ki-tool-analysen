@@ -343,6 +343,47 @@ def render_page(lang, key, section, title, desc, heading, body, alternates, kick
     write(rel, env.get_template("page.html").render(**ctx))
 
 
+def load_topic(name):
+    """Themenseite: DE-Datei liefert Struktur, URLs, Bewertungen, Quellen; EN-Datei die Texte."""
+    de = json.load(open(os.path.join(ROOT, f"data/themen/{name}.json"), encoding="utf-8"))
+    out = {"de": de}
+    en_path = os.path.join(ROOT, f"data/themen/{name}.en.json")
+    if os.path.exists(en_path):
+        ov = json.load(open(en_path, encoding="utf-8"))
+        en = copy.deepcopy(de)
+        for k, v in ov.items():
+            if k not in ("fokus", "gruppen", "guide"):
+                en[k] = v
+        en["guide"] = {**de["guide"], **ov.get("guide", {})}
+        ovf = {f["name"]: f for f in ov.get("fokus", [])}
+        for t in en["fokus"]:
+            t.update({k: v for k, v in ovf.get(t["name"], {}).items() if k != "name"})
+        ovg = {g["id"]: g for g in ov.get("gruppen", [])}
+        for g in en["gruppen"]:
+            o = ovg.get(g["id"], {})
+            for k in ("titel", "badge", "intro", "hinweis"):
+                if k in o:
+                    g[k] = o[k]
+            for x in g["tools"]:
+                x.update(o.get("tools", {}).get(x["name"], {}))
+        out["en"] = en
+    for t in out["de"]["fokus"] + (out["en"]["fokus"] if "en" in out else []):
+        t["anchor"] = slug(t["name"])
+    return out
+
+
+def render_topic(name):
+    topics = load_topic(name)
+    alt = {l: PATHS[l]["transcription"] for l in topics}
+    for lang, topic in topics.items():
+        rel = PATHS[lang]["transcription"]
+        tt = T[lang]
+        ctx = base_ctx(lang, rel, "transcription", tt["topic_page_title"], tt["topic_desc"], alt,
+                       topic=topic, stand_text=date_text(topic["stand"], lang), guide_url=topic["guide"]["url"])
+        write(rel, env.get_template("topic.html").render(**ctx))
+    return list(alt.values())
+
+
 def render_redirect(rel, target_rel, label):
     url = href(root_for(rel), target_rel)
     write(rel, f"""<!DOCTYPE html>
@@ -455,6 +496,8 @@ def main():
         sitemap += [PATHS[l][k] for k in ("home", "archive", "method", "imprint", "privacy")]
     render_page("de", None, "none", "Seite nicht gefunden | KI-Tool-Analysen", "Diese Seite gibt es nicht.",
                 "Seite nicht gefunden", legal.NOT_FOUND, {x: PATHS[x]["home"] for x in LANGS}, kicker="404", noindex=True, rel="404.html")
+
+    sitemap += render_topic("transkription")
 
     by_date = {w["datum"]: w for w in de_weeks}
     redirects = json.load(open(os.path.join(ROOT, "data/legacy-redirects.json"), encoding="utf-8"))

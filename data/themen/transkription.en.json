@@ -1,0 +1,132 @@
+{
+  "titel": "AI transcription",
+  "untertitel": "17 tools for meetings and interviews, ordered by data protection",
+  "lead": "AI meeting transcription is permitted in Switzerland and the EU as long as all participants are informed and consent. Which tool fits depends less on recognition quality than on where audio and text are processed and who owns the provider.",
+  "kernpunkte": [
+    "A voice is personal data, and sensitive personal data when analysed biometrically. Consent from all participants is required, not only from the organiser.",
+    "The provider's seat matters, not only the server location. US companies with EU servers remain subject to the CLOUD Act.",
+    "Local tools remove the need for a data processing agreement (DPA) and third-country transfers. They shift responsibility to the security of your own device.",
+    "A visible meeting bot creates transparency but does not replace actively obtained consent."
+  ],
+  "guide": {
+    "label": "Full data protection guide (German)",
+    "text": "Legal comparison of the Swiss FADP and the GDPR, storage rules, Teams and Zoom in detail, and a checklist for before, during and after the meeting."
+  },
+  "fokus_titel": "In focus",
+  "fokus_intro": "Two additions in this update: noScribe for sensitive interviews without a cloud, and Sally for multilingual meetings hosted in Germany.",
+  "fokus": [
+    {
+      "name": "noScribe",
+      "signal": "New in the overview. Version 0.7 supports Apple Silicon Macs running macOS 14 or later.",
+      "kurzbeschreibung": "Free open-source desktop app that transcribes interviews and other sensitive recordings entirely on your own computer.",
+      "beschreibung": "noScribe was created by the sociologist Dr Kai Dröge for qualitative research interviews. It combines OpenAI's Whisper speech recognition model with Pyannote for speaker detection. Both models run locally; no internet connection is needed after installation.\n\nThe package includes an editor that plays text and audio in sync, so recognition errors can be corrected at the exact point in the conversation. noScribe is not a meeting bot: it processes existing audio files, not live video calls.",
+      "nutzungsszenarien": [
+        "Research: transcribe qualitative interviews without handing raw data to a cloud service.",
+        "Consulting and coaching: put confidential conversations into writing afterwards and check them against timestamps.",
+        "HR: document structured job or exit interviews, provided everyone has consented.",
+        "Journalism: analyse background interviews locally to protect sources.",
+        "Public administration: draft minutes from meeting recordings where cloud tools are ruled out."
+      ],
+      "pricing": "Free and open source under GPL-3.0. The project accepts voluntary donations via Ko-fi. There are no paid plans. Note: the domain noscribe.ai sells paid services and is not part of the project.",
+      "datenschutz": "Processing runs entirely on your own device; no provider server is involved. This removes the need for a DPA and third-country transfers. The GDPR and the Swiss FADP still apply: the duty to inform and the consent of those recorded remain, and the device holding the recordings must be encrypted and access-protected. Self-hosting is the default, as the app is installed locally.",
+      "staerken": [
+        "Data sovereignty: audio and transcript never leave the computer.",
+        "Cost: free, with no usage limit and no account.",
+        "Auditability: open source code on GitHub, transparent models.",
+        "Correction: the editor with audio alignment saves time in post-editing.",
+        "Reach: Windows, macOS and Linux, around 60 languages, dialects are recognised reasonably well."
+      ],
+      "schwaechen": [
+        "Speed: one hour of audio takes around 1 to 3 hours of processing, longer on older machines. An NVIDIA graphics card speeds this up considerably.",
+        "No live use: no meeting integration, no AI summary, no task detection.",
+        "Installation: around 3 GB download; version 0.7 runs only on Apple Silicon Macs, Intel Macs need version 0.6.",
+        "Quality by language: best for Spanish, Italian, English, Portuguese and German, variable for other languages."
+      ],
+      "einschaetzung": "noScribe is the obvious choice when data protection matters more than speed: research, consulting under professional secrecy, HR conversations. For everyday use with many meetings it is too slow and too manual. A sensible test: transcribe three recordings of different audio quality and measure the correction time in the editor. If it is shorter than typing them up, the switch pays off."
+    },
+    {
+      "name": "Sally",
+      "signal": "Transcription in 103 languages, with translation of transcript and summary at the push of a button.",
+      "kurzbeschreibung": "AI meeting assistant from Mannheim that transcribes, summarises and translates online, hybrid and in-person meetings in more than 100 languages.",
+      "beschreibung": "Sally, operated by Aliru GmbH, joins Zoom, Google Meet, Microsoft Teams and Webex as a bot or records in-person conversations via its app. Transcription happens in the spoken language, with speaker attribution and timestamps. Transcript and summary can then be translated into any of the 103 languages.\n\nRelevant for teams in Switzerland, Germany and Austria: Sally states that it is trained on dialects such as Swiss German, Bavarian and Austrian German, and supports a custom vocabulary for company, product and technical terms. The 98.8 percent accuracy figure for the Enterprise plan is a vendor claim without a published methodology.",
+      "nutzungsszenarien": [
+        "International teams: hold the meeting in German, send the summary to partners in English or Spanish.",
+        "Sales: record customer calls and pass tasks to the CRM via Zapier, Make or n8n.",
+        "Swiss SMEs: capture meetings held in Swiss German with your own technical vocabulary.",
+        "Project management: search decisions and tasks from recurring meetings by folder using the AI chat.",
+        "Regulated sectors: use the Enterprise plan with on-premise operation or your own language model."
+      ],
+      "pricing": "Prices per person per month with annual billing, excluding VAT: Starter 8 EUR (1,200 minutes per month), Pro 34 EUR (unlimited minutes, custom prompts, AI chat), Enterprise 68 EUR (adds on-premise operation and optimisation for multilingual meetings). Monthly prices are not published; annual billing is up to 50 percent cheaper. All plans can be tested free for 30 days without a credit card; there is no permanent free plan.",
+      "datenschutz": "Data is stored on Hetzner servers in Germany, and AI processing runs on Sally's own language model in German data centres. Sally rules out third-country transfers, and customer data is contractually excluded from model training. Encryption uses AES-256 at rest and TLS 1.3 in transit; ISO 27001:2022 is externally audited (valid until May 2028), with annual penetration tests. A DPA under Art. 28 GDPR can be concluded online; deletion rules are configurable per workspace, and data is deleted within 30 days after the contract ends. For Switzerland: no US provider, no CLOUD Act, and disclosing data to Germany is permitted under the FADP. Self-hosting is available as an on-premise option in the Enterprise plan. Some features use further sub-processors, listed in the Help Center.",
+      "staerken": [
+        "Hosting: servers and language model in Germany, no third-country transfer.",
+        "Languages: 103 languages with translation of transcript and summary.",
+        "Dialect and jargon: Swiss German training and custom vocabulary.",
+        "Integration: Zoom, Teams, Meet, Webex plus Zapier, Make, n8n, Power Automate and MCP.",
+        "Governance: ISO 27001, online DPA, configurable deletion periods, on-premise option."
+      ],
+      "schwaechen": [
+        "Visible bot: it does not replace consent, which must be obtained before every meeting.",
+        "Pricing: only annual prices published, no permanent free plan.",
+        "Accuracy: 90.3 to 98.8 percent depending on plan, without a public test methodology.",
+        "Multilingual meetings: mixed languages within one conversation are supported on the website only by customer testimonials, not as a documented feature."
+      ],
+      "einschaetzung": "Sally suits Swiss and German SMEs that hold meetings with external partners in several languages and want a cloud solution without a US connection. What matters is the routine before each meeting: announcement, consent, notice of the bot. For a test, use one month with three typical meeting types, including one in Swiss German and one with mixed languages. Measure correction effort, translation quality and the time until the minutes are ready to send.",
+      "links": [
+        {"label": "Transcription in 103 languages (German)", "url": "https://www.sally.io/de/meeting/ki-transkription-verschiedene-sprachen"}
+      ]
+    }
+  ],
+  "gruppen_titel": "All tools by level of data protection",
+  "spalten": {"name": "Tool", "platform": "Platform", "server": "Server", "audio": "Audio stored?", "price": "Price", "special": "Notable", "risk": "Risk", "conditions": "Conditions for use"},
+  "gruppen": [
+    {"id": "lokal", "titel": "Group A: Local on the device", "badge": "Maximum data protection",
+     "intro": "Processing runs entirely on the device. No cloud risk, no DPA, no third-country transfer.",
+     "tools": {
+       "Notiq": {"platform": "iOS (iPhone, iPad)", "audio": "Yes, locally with AES-256", "price": "Free", "special": "No account, no cloud, fully offline"},
+       "Whisper Notes": {"platform": "iOS, Mac", "audio": "No, text only, stored locally", "price": "around 6.99 USD one-off", "special": "No servers, no analytics, fully offline"},
+       "Speakwise": {"platform": "iOS (iPhone, iPad)", "audio": "Yes, locally, no training", "price": "Freemium", "special": "On-device, never used for AI training"},
+       "MacWhisper": {"platform": "iOS, Mac", "audio": "Yes, locally", "price": "Free (basic)", "special": "Local Whisper models, paid cloud option"},
+       "noScribe": {"platform": "Windows, macOS (Apple Silicon), Linux", "audio": "Yes, locally only", "price": "Free (open source)", "special": "Whisper and Pyannote, speaker detection, editor with audio alignment, around 60 languages"}
+     }},
+    {"id": "schweiz", "titel": "Group B: Swiss cloud", "badge": "FADP-compliant",
+     "intro": "Processing on Swiss servers, no CLOUD Act risk. A DPA under the FADP is recommended.",
+     "hinweis": "töggl.ch excludes processing data within the scope of the GDPR in its terms. Use it only for meetings with people in Switzerland.",
+     "tools": {
+       "Meeting Metrics": {"platform": "Web, iOS, Android", "server": "Switzerland (St. Gallen)", "audio": "Yes, Swiss servers", "price": "Freemium (5 meetings free)", "special": "Swiss made, Swiss German, no CLOUD Act"},
+       "töggl.ch": {"platform": "Web app", "server": "Switzerland", "audio": "Yes, Swiss servers, no training", "price": "Freemium (credits)", "special": "Strong dialect recognition; Swiss market only"}
+     }},
+    {"id": "eu", "titel": "Group C: EU cloud", "badge": "GDPR-compliant with a DPA",
+     "intro": "European provider, servers in the EU, no Schrems II risk. Conclude a DPA under Art. 28 GDPR.",
+     "tools": {
+       "tl;dv": {"platform": "iOS, Android, Web", "server": "EEA (GCP, Hetzner)", "audio": "Yes, AES-256, EU servers", "price": "Freemium (Pro around 25 USD/month)", "special": "SOC 2 Type 1, AI hosting in EU or US selectable, visible bot"},
+       "Bliro": {"platform": "iOS (in person), desktop", "server": "Frankfurt, Munich", "audio": "No audio stored", "price": "Subscription on request", "special": "Made in Germany, real-time transcript in memory, no bot"},
+       "Jamie AI": {"platform": "iOS, macOS, Windows", "server": "Frankfurt", "audio": "No, deleted after transcription", "price": "Freemium (Pro around 24 EUR/month)", "special": "No bot, ISO 27001, DORA"},
+       "Sally": {"platform": "iOS, Android, Web", "server": "Germany (Hetzner)", "audio": "Yes, AES-256, deletion rules per workspace", "price": "From 8 EUR/month (annual), 30 days free", "special": "ISO 27001:2022, own language model in Germany, no AI training, 103 languages, visible bot"},
+       "HappyScribe": {"platform": "Web, iOS, Android", "server": "Barcelona, EU", "audio": "Yes, EU servers", "price": "Freemium (Pro from around 17 EUR/month)", "special": "SOC 2 Type II, ISO 27001, 150+ languages, joins via calendar"},
+       "Klang.ai": {"platform": "Web, desktop", "server": "France (Scaleway), Sweden (Elastx)", "audio": "Yes, EU servers, no model training", "price": "Freemium (subscription)", "special": "Swedish provider without US ties, sub-processors with zero data retention"}
+     }},
+    {"id": "selbst", "titel": "Group D: Self-hosted", "badge": "Maximum control",
+     "intro": "Runs on your own infrastructure. Full control, full responsibility for security and updates.",
+     "tools": {
+       "Nextcloud Talk": {"platform": "iOS, Android", "server": "Own server", "audio": "Yes, on your own server", "price": "Free (open source)", "special": "Built-in consent feature, recommended by German data protection authorities"}
+     }},
+    {"id": "usa", "titel": "Group E: US providers", "badge": "Only with SCCs and a TIA",
+     "intro": "Processing in the US. After Schrems II, standard contractual clauses (SCCs) and a transfer impact assessment (TIA) are mandatory. Not recommended for sensitive meetings.",
+     "tools": {
+       "Otter.ai": {"platform": "iOS, Android, Web", "server": "AWS USA", "risk": "CLOUD Act; 2025 lawsuit over missing consent from participants", "conditions": "DPF-certified, SCCs available, no EU hosting"},
+       "Fireflies.ai": {"platform": "iOS, Android, Web", "server": "AWS USA", "risk": "CLOUD Act; EU hosting only for Enterprise", "conditions": "EU hosting on request, SCCs and TIA required, visible bot"},
+       "Fathom AI": {"platform": "iOS, Android, Web", "server": "USA", "risk": "CLOUD Act; no known EU hosting", "conditions": "DPF-certified, visible bot, SCCs and TIA required"}
+     }}
+  ],
+  "empfehlungen_titel": "Which tool for which case",
+  "empfehlungen": [
+    "Maximum data protection (public sector, healthcare, law): Notiq, Whisper Notes or noScribe, fully local.",
+    "Research and HR interviews: noScribe with speaker detection and editor.",
+    "Meetings in Swiss German: Meeting Metrics; töggl.ch only when all participants are in Switzerland.",
+    "Multilingual teams with EU hosting: Sally (103 languages, servers in Germany) or HappyScribe (150+ languages).",
+    "No visible bot wanted: Jamie AI or Bliro; a verbal announcement is still required.",
+    "Own infrastructure: Nextcloud Talk."
+  ],
+  "hinweis_quelle": "The tables are based on the guide at transcribe.fragroger.ai (as of September 2026). Sally and noScribe were re-checked on the providers' websites on 22 October 2026. Prices and terms change; the providers' documentation is authoritative."
+}

@@ -18,7 +18,7 @@ um. In den Pages-Einstellungen "Enforce HTTPS" aktivieren, sobald das Zertifikat
 Pro Woche genau ein Tool in jeder der fünf Kategorien Text, Design, Data / Wissen, Recherche und Agents.
 Jede Analyse enthält Kurzbeschreibung, Nutzungsszenarien, Pricing, Datenschutz (Serverstandort, DSGVO/DSG,
 Self-Hosting), Stärken, Schwächen, Einschätzung für die Praxis und eine Relevanzbewertung von 1 bis 10.
-Jede Ausgabe erscheint auf Deutsch und Englisch. Das Archiv reicht zurück bis KW 48/2025 und ist nach Tool, Kategorie, Jahr und Bewertung durchsuchbar.
+Jede Ausgabe erscheint auf Deutsch und Englisch. Dazu kommt die Themenseite "KI-Transkription" mit 17 Tools nach Datenschutzniveau. Das Archiv reicht zurück bis KW 48/2025 und ist nach Tool, Kategorie, Jahr und Bewertung durchsuchbar.
 
 ## Betrieb
 

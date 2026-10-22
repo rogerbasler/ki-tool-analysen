@@ -15,9 +15,9 @@ MONTHS = {
 }
 
 PATHS = {
-    "de": {"home": "index.html", "archive": "archiv.html", "method": "methode.html", "imprint": "impressum.html",
+    "de": {"home": "index.html", "archive": "archiv.html", "transcription": "transkription.html", "method": "methode.html", "imprint": "impressum.html",
            "privacy": "datenschutz.html", "feed": "feed.xml"},
-    "en": {"home": "en/index.html", "archive": "en/archive.html", "method": "en/method.html", "imprint": "en/imprint.html",
+    "en": {"home": "en/index.html", "archive": "en/archive.html", "transcription": "en/transcription.html", "method": "en/method.html", "imprint": "en/imprint.html",
            "privacy": "en/privacy.html", "feed": "en/feed.xml"},
 }
 
@@ -46,7 +46,10 @@ def score(v, lang="de"):
 T = {
     "de": {
         "html_lang": "de-CH", "locale": "de_CH", "site": "KI-Tool-Analysen",
-        "skip": "Zum Inhalt", "nav_current": "Diese Woche", "nav_archive": "Archiv", "nav_method": "Methode",
+        "skip": "Zum Inhalt", "nav_current": "Diese Woche", "nav_archive": "Archiv", "nav_method": "Methode", "nav_transcription": "Transkription",
+        "topic_badge": "Spezial", "topic_updated": "Aktualisiert am", "topic_essentials": "Das Wichtigste", "topic_new": "Neu", "topic_changed": "Aktualisiert", "topic_details": "Analyse lesen",
+        "topic_page_title": "KI-Transkription: 17 Tools im Datenschutz-Check | KI-Tool-Analysen",
+        "topic_desc": "KI-Transkriptions- und Meeting-Tools nach Datenschutzniveau: lokal, Schweizer Cloud, EU-Cloud, selbst gehostet, US-Anbieter. Mit Analysen zu Sally und noScribe.",
         "home_label": "KI-Tool-Analysen, Startseite",
         "footer_line": "Jeden Sonntag fünf KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz.",
         "footer_by": "Eine Publikation von", "footer_more": "Weitere wöchentliche Einordnung:",
@@ -88,7 +91,10 @@ T = {
     },
     "en": {
         "html_lang": "en", "locale": "en_GB", "site": "AI Tool Reviews",
-        "skip": "Skip to content", "nav_current": "This week", "nav_archive": "Archive", "nav_method": "Method",
+        "skip": "Skip to content", "nav_current": "This week", "nav_archive": "Archive", "nav_method": "Method", "nav_transcription": "Transcription",
+        "topic_badge": "Special", "topic_updated": "Updated on", "topic_essentials": "Key points", "topic_new": "New", "topic_changed": "Updated", "topic_details": "Read review",
+        "topic_page_title": "AI transcription: 17 tools checked for data protection | AI Tool Reviews",
+        "topic_desc": "AI transcription and meeting tools by level of data protection: local, Swiss cloud, EU cloud, self-hosted, US providers. With reviews of Sally and noScribe.",
         "home_label": "AI Tool Reviews, home",
         "footer_line": "Every Sunday, five AI tools assessed for value, cost and data protection.",
         "footer_by": "Published by", "footer_more": "Weekly AI news in context:",
