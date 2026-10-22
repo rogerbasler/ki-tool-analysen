@@ -5,7 +5,7 @@
 {% block content %}
 <section class="hero">
   <p class="kicker">{% if is_latest %}<span class="badge">{{ T.badge_new }}</span>{% else %}<span class="badge quiet">{{ T.badge_archive }}</span>{% endif %}{{ T.week }} {{ '%02d' % week.kw }}/{{ week.jahr }} · {{ week.date_text }}</p>
-  <h1 class="hero-title"><span class="line">{{ T.hero_1 }}</span><span class="line outline">{{ T.hero_2 }}</span></h1>
+  <h1 class="hero-title"><span class="line">{{ T.hero_1.format(n=week.tools|length) }}</span><span class="line outline">{{ T.hero_2 }}</span></h1>
   <p class="hero-sub">{{ T.hero_sub }}</p>
   {% if not is_latest %}<div class="hero-actions"><a class="btn ghost" href="{{ nav.home }}">{{ T.to_current }}</a><a class="btn ghost" href="{{ nav.archive }}">{{ T.all_weeks }}</a></div>{% endif %}
 </section>

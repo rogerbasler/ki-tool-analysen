@@ -12,15 +12,16 @@ OWNER = {
 
 METHOD = """
 <h2>Warum diese Übersicht</h2>
-<p>Jede Woche erscheinen Hunderte neue KI-Tools. Die meisten verschwinden wieder, einige verändern Arbeitsabläufe. Für Entscheider:innen zählt nicht die Menge, sondern die Frage, welches Werkzeug ein reales Problem löst, was es kostet und wohin die Daten fliessen. Diese Seite beantwortet das einmal pro Woche für fünf Tools.</p>
+<p>Jede Woche erscheinen Hunderte neue KI-Tools. Die meisten verschwinden wieder, einige verändern Arbeitsabläufe. Für Entscheider:innen zählt nicht die Menge, sondern die Frage, welches Werkzeug ein reales Problem löst, was es kostet und wohin die Daten fliessen. Diese Seite beantwortet das einmal pro Woche für sechs Tools.</p>
 
-<h2>Fünf feste Kategorien</h2>
+<h2>Sechs feste Kategorien</h2>
 <ul>
 <li><strong>Text:</strong> Schreiben, Kommunikation, Übersetzung, Content.</li>
 <li><strong>Design:</strong> Bild, Video, Audio, Präsentationen, UI.</li>
 <li><strong>Data / Wissen:</strong> Analyse, Wissensmanagement, Datenaufbereitung.</li>
 <li><strong>Recherche:</strong> Suche, Reasoning, Quellenarbeit.</li>
 <li><strong>Agents:</strong> Automatisierung, Workflows, autonome Ausführung.</li>
+<li><strong>Transkription:</strong> Meetings, Interviews und Sprachaufnahmen in Text überführen, zusammenfassen und übersetzen. Seit Oktober 2026. Der rechtliche Rahmen für Aufnahmen in der Schweiz und der EU steht im <a href="https://transcribe.fragroger.ai/" rel="noopener">Datenschutz-Guide zur KI-Transkription</a>.</li>
 </ul>
 <p>Pro Kategorie wird genau ein Tool gewählt. Gibt es in einer Kategorie keine relevante Neuerscheinung, rückt ein bestehendes Tool mit einem wichtigen Update nach. Die Auswahl wechselt von Woche zu Woche; Vergleiche zwischen Tools gibt es bewusst nicht.</p>
 
@@ -50,7 +51,7 @@ IMPRINT = """
 <p>{name}<br>{company}<br>{street}<br>{city}<br>{country_l}</p>
 <p>E-Mail: <a href="mailto:{email}">{email}</a><br>Web: <a href="{web}">{web}</a></p>
 <h2>Was diese Seite ist</h2>
-<p>Die KI-Tool-Analysen sind eine wöchentliche, redaktionell kuratierte Übersicht über neue und aktualisierte KI-Werkzeuge. Jeden Sonntag erscheinen fünf Analysen in den Kategorien Text, Design, Data / Wissen, Recherche und Agents.</p>
+<p>Die KI-Tool-Analysen sind eine wöchentliche, redaktionell kuratierte Übersicht über neue und aktualisierte KI-Werkzeuge. Jeden Sonntag erscheinen sechs Analysen in den Kategorien Text, Design, Data / Wissen, Recherche, Agents und Transkription.</p>
 <h2>Haftungsausschluss</h2>
 <p>Die Inhalte werden mit Sorgfalt erstellt. Recherche, Auswahl und Texte entstehen jedoch mit Unterstützung von KI-Systemen und werden automatisiert veröffentlicht. Für Richtigkeit, Vollständigkeit und Aktualität wird keine Gewähr übernommen. Preise, Funktionen und Datenschutzangaben der Anbieter ändern sich laufend; massgebend sind deren aktuelle Unterlagen. Haftungsansprüche wegen Schäden materieller oder immaterieller Art, die aus der Nutzung oder Nichtnutzung der Informationen entstehen, sind ausgeschlossen, soweit gesetzlich zulässig. Die Inhalte sind keine Rechts-, Kauf- oder sonstige Beratung.</p>
 <h2>Links auf Drittseiten</h2>
@@ -76,15 +77,16 @@ PRIVACY = """
 
 METHOD_EN = """
 <h2>Why this overview exists</h2>
-<p>Hundreds of new AI tools appear every week. Most disappear again; a few change how work gets done. For decision-makers the volume does not matter. What matters is which tool solves a real problem, what it costs and where the data goes. This page answers that once a week for five tools.</p>
+<p>Hundreds of new AI tools appear every week. Most disappear again; a few change how work gets done. For decision-makers the volume does not matter. What matters is which tool solves a real problem, what it costs and where the data goes. This page answers that once a week for six tools.</p>
 
-<h2>Five fixed categories</h2>
+<h2>Six fixed categories</h2>
 <ul>
 <li><strong>Text:</strong> writing, communication, translation, content.</li>
 <li><strong>Design:</strong> image, video, audio, presentations, UI.</li>
 <li><strong>Data / Knowledge:</strong> analysis, knowledge management, data preparation.</li>
 <li><strong>Research:</strong> search, reasoning, working with sources.</li>
 <li><strong>Agents:</strong> automation, workflows, autonomous execution.</li>
+<li><strong>Transcription:</strong> turning meetings, interviews and voice recordings into text, summaries and translations. Since October 2026. The legal framework for recordings in Switzerland and the EU is covered in the <a href="https://transcribe.fragroger.ai/" rel="noopener">data protection guide to AI transcription</a> (German, French, Italian).</li>
 </ul>
 <p>Exactly one tool is chosen per category. If a category has no relevant new release, an existing tool with an important update takes its place. The selection changes every week; tools are deliberately not compared with each other.</p>
 
@@ -114,7 +116,7 @@ IMPRINT_EN = """
 <p>{name}<br>{company}<br>{street}<br>{city}<br>{country_l}</p>
 <p>Email: <a href="mailto:{email}">{email}</a><br>Web: <a href="{web}">{web}</a></p>
 <h2>What this site is</h2>
-<p>AI Tool Reviews is a weekly, editorially curated overview of new and updated AI tools. Every Sunday five reviews appear in the categories text, design, data / knowledge, research and agents.</p>
+<p>AI Tool Reviews is a weekly, editorially curated overview of new and updated AI tools. Every Sunday six reviews appear in the categories text, design, data / knowledge, research, agents and transcription.</p>
 <h2>Disclaimer</h2>
 <p>The content is prepared with care. Research, selection and texts are, however, produced with the help of AI systems and published automatically. No guarantee is given for accuracy, completeness or timeliness. Providers' prices, features and privacy terms change constantly; their current documentation is authoritative. Liability claims for material or immaterial damage arising from the use or non-use of the information are excluded to the extent permitted by law. The content is not legal, purchasing or other advice.</p>
 <h2>Links to third-party sites</h2>

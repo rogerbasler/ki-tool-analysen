@@ -35,6 +35,18 @@
           "kategorie": "Agents",
           "bewertung": 7.7,
           "kurzbeschreibung": "Visueller Builder für KI-Agenten und Freigabe-gesteuerte Workflow-Automation."
+        },
+        {
+          "name": "noScribe",
+          "kategorie": "Transkription",
+          "bewertung": 8.3,
+          "kurzbeschreibung": "Kostenlose Open-Source-Desktop-App, die Interviews und andere sensible Aufnahmen vollständig auf dem eigenen Computer transkribiert."
+        },
+        {
+          "name": "Sally",
+          "kategorie": "Transkription",
+          "bewertung": 8.4,
+          "kurzbeschreibung": "KI-Meeting-Assistent aus Mannheim, der Online-, Hybrid- und Präsenzmeetings transkribiert, zusammenfasst und in über 100 Sprachen übersetzt."
         }
       ],
       "highlights": "Talanoa (8,2/10): Lokale E-Mail-KI mit verständlichem Free Tier und klarer Datenminimierung.",

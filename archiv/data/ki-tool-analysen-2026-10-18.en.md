@@ -10,6 +10,7 @@ This week the value of AI shifts from the single output to the controllable work
 - Talanoa (8.2/10): local email AI with an understandable free tier and clear data minimisation.
 - Trend: controllable context becomes product quality. Local data, explicit approvals and precise data flows count for more than the loudest launch.
 - Rule of thumb: prove a small workflow first, with test data, minimal permissions, a budget limit and human approval.
+- New: transcription category. To start with, Sally (8.4/10) for multilingual meetings hosted in Germany and noScribe (8.3/10) for sensitive interviews without a cloud.
 
 **Trend:** The new quality of AI products lies in the controllable context as much as in the output: local data, visible approvals, precise data flows and a clear exit path become the deciding criteria.
 
@@ -20,6 +21,8 @@ This week the value of AI shifts from the single output to the controllable work
 | Data / Knowledge | Caldera | 7.9/10 |
 | Research | Articos v3.2 | 7.4/10 |
 | Agents | WEXTL | 7.7/10 |
+| Transcription | noScribe | 8.3/10 |
+| Transcription | Sally | 8.4/10 |
 
 ---
 
@@ -272,3 +275,121 @@ No self-hosting option is documented. GDPR legal bases and data subject rights a
 WEXTL is an interesting candidate for teams that want to introduce automation with visible control points. The first pilot should be deliberately plain: one data source, one decision, one approval, one target system. Use test data, allow only minimal permissions and after two weeks review exceptions, cost per run and manual interventions. Only once these three figures are clean is the bigger agent story worth telling.
 
 **Relevance rating:** 7.7/10
+
+---
+
+## 6. noScribe
+
+**Category:** Transcription  
+**Relevance rating:** 8.3/10  
+**Website:** https://noscribe.de/en/  
+**Signal this week:** Added on 22 October 2026. Version 0.7 supports Apple Silicon Macs running macOS 14 or later.
+
+### Short description
+
+Free open-source desktop app that transcribes interviews and other sensitive recordings entirely on your own computer.
+
+noScribe was created by the sociologist Dr Kai Dröge for qualitative research interviews. It combines OpenAI's Whisper speech recognition model with Pyannote for speaker detection. Both models run locally; no internet connection is needed after installation.
+
+The package includes an editor that plays text and audio in sync, so recognition errors can be corrected at the exact point in the conversation. noScribe is not a meeting bot: it processes existing audio files, not live video calls.
+
+### Use cases
+
+- Research: transcribe qualitative interviews without handing raw data to a cloud service.
+- Consulting and coaching: put confidential conversations into writing afterwards and check them against timestamps.
+- HR: document structured job or exit interviews, provided everyone has consented.
+- Journalism: analyse background interviews locally to protect sources.
+- Public administration: draft minutes from meeting recordings where cloud tools are ruled out.
+
+### Pricing
+
+Free and open source under GPL-3.0. The project accepts voluntary donations via Ko-fi. There are no paid plans. Note: the domain noscribe.ai sells paid services and is not part of the project.
+
+### Data protection
+
+Processing runs entirely on your own device; no provider server is involved. This removes the need for a DPA and third-country transfers. The GDPR and the Swiss FADP still apply: the duty to inform and the consent of those recorded remain, and the device holding the recordings must be encrypted and access-protected. Self-hosting is the default, as the app is installed locally.
+
+### Strengths
+
+- Data sovereignty: audio and transcript never leave the computer.
+- Cost: free, with no usage limit and no account.
+- Auditability: open source code on GitHub, transparent models.
+- Correction: the editor with audio alignment saves time in post-editing.
+- Reach: Windows, macOS and Linux, around 60 languages, dialects are recognised reasonably well.
+
+### Weaknesses
+
+- Speed: one hour of audio takes around 1 to 3 hours of processing, longer on older machines. An NVIDIA graphics card speeds this up considerably.
+- No live use: no meeting integration, no AI summary, no task detection.
+- Installation: around 3 GB download; version 0.7 runs only on Apple Silicon Macs, Intel Macs need version 0.6.
+- Quality by language: best for Spanish, Italian, English, Portuguese and German, variable for other languages.
+
+### Practical assessment
+
+noScribe is the obvious choice when data protection matters more than speed: research, consulting under professional secrecy, HR conversations. For everyday use with many meetings it is too slow and too manual. A sensible test: transcribe three recordings of different audio quality and measure the correction time in the editor. If it is shorter than typing them up, the switch pays off.
+
+**Relevance rating:** 8.3/10
+
+---
+
+## 7. Sally
+
+**Category:** Transcription  
+**Relevance rating:** 8.4/10  
+**Website:** https://www.sally.io/de/  
+**Signal this week:** Added on 22 October 2026. Transcription in 103 languages, with translation of transcript and summary at the push of a button.
+
+### Short description
+
+AI meeting assistant from Mannheim that transcribes, summarises and translates online, hybrid and in-person meetings in more than 100 languages.
+
+Sally, operated by Aliru GmbH, joins Zoom, Google Meet, Microsoft Teams and Webex as a bot or records in-person conversations via its app. Transcription happens in the spoken language, with speaker attribution and timestamps. Transcript and summary can then be translated into any of the 103 languages.
+
+Relevant for teams in Switzerland, Germany and Austria: Sally states that it is trained on dialects such as Swiss German, Bavarian and Austrian German, and supports a custom vocabulary for company, product and technical terms. The 98.8 percent accuracy figure for the Enterprise plan is a vendor claim without a published methodology.
+
+### Use cases
+
+- International teams: hold the meeting in German, send the summary to partners in English or Spanish.
+- Sales: record customer calls and pass tasks to the CRM via Zapier, Make or n8n.
+- Swiss SMEs: capture meetings held in Swiss German with your own technical vocabulary.
+- Project management: search decisions and tasks from recurring meetings by folder using the AI chat.
+- Regulated sectors: use the Enterprise plan with on-premise operation or your own language model.
+
+### Pricing
+
+Prices per person per month with annual billing, excluding VAT: Starter 8 EUR (1,200 minutes per month), Pro 34 EUR (unlimited minutes, custom prompts, AI chat), Enterprise 68 EUR (adds on-premise operation and optimisation for multilingual meetings). Monthly prices are not published; annual billing is up to 50 percent cheaper. All plans can be tested free for 30 days without a credit card; there is no permanent free plan.
+
+### Data protection
+
+Data is stored on Hetzner servers in Germany, and AI processing runs on Sally's own language model in German data centres. Sally rules out third-country transfers, and customer data is contractually excluded from model training. Encryption uses AES-256 at rest and TLS 1.3 in transit; ISO 27001:2022 is externally audited (valid until May 2028), with annual penetration tests. A DPA under Art. 28 GDPR can be concluded online; deletion rules are configurable per workspace, and data is deleted within 30 days after the contract ends. For Switzerland: no US provider, no CLOUD Act, and disclosing data to Germany is permitted under the FADP. Self-hosting is available as an on-premise option in the Enterprise plan. Some features use further sub-processors, listed in the Help Center.
+
+### Strengths
+
+- Hosting: servers and language model in Germany, no third-country transfer.
+- Languages: 103 languages with translation of transcript and summary.
+- Dialect and jargon: Swiss German training and custom vocabulary.
+- Integration: Zoom, Teams, Meet, Webex plus Zapier, Make, n8n, Power Automate and MCP.
+- Governance: ISO 27001, online DPA, configurable deletion periods, on-premise option.
+
+### Weaknesses
+
+- Visible bot: it does not replace consent, which must be obtained before every meeting.
+- Pricing: only annual prices published, no permanent free plan.
+- Accuracy: 90.3 to 98.8 percent depending on plan, without a public test methodology.
+- Multilingual meetings: mixed languages within one conversation are supported on the website only by customer testimonials, not as a documented feature.
+
+### Practical assessment
+
+Sally suits Swiss and German SMEs that hold meetings with external partners in several languages and want a cloud solution without a US connection. What matters is the routine before each meeting: announcement, consent, notice of the bot. For a test, use one month with three typical meeting types, including one in Swiss German and one with mixed languages. Measure correction effort, translation quality and the time until the minutes are ready to send.
+
+**Relevance rating:** 8.4/10
+
+---
+
+## Sources
+
+- Aliru GmbH. (o. D.). DSGVO und Sicherheit. Sally. https://www.sally.io/de/dsgvo-und-sicherheit
+- Aliru GmbH. (o. D.). KI-Transkription in 103 Sprachen. Sally. https://www.sally.io/de/meeting/ki-transkription-verschiedene-sprachen
+- Aliru GmbH. (o. D.). Preise. Sally. https://www.sally.io/de/preise
+- Dröge, K. (o. D.). noScribe [Software, Version 0.7]. GitHub. https://github.com/kaixxx/noScribe
+- Dröge, K. (o. D.). noScribe: AI-powered audio transcription. https://noscribe.de/en/

@@ -94,6 +94,7 @@
   q.addEventListener('input', apply); year.addEventListener('change', apply); minscore.addEventListener('change', apply);
   var params = new URLSearchParams(location.search);
   if (params.get('q')) q.value = params.get('q');
+  if (params.get('cat')) { chips.forEach(function (c) { if (c.getAttribute('data-cat') === params.get('cat')) c.click(); }); }
   apply();
 })();
 </script>

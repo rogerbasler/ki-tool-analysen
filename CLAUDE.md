@@ -2,7 +2,7 @@
 
 Dieses Repo ist die Website https://tools.fragroger.ai (Deutsch) und https://tools.fragroger.ai/en/ (Englisch),
 ausgeliefert über GitHub Pages (Branch `master`, Datei `CNAME`).
-Jeden Sonntagmorgen erscheint eine neue Ausgabe mit fünf KI-Tools. Herausgeber ist Roger Basler de Roca (#fragRoger).
+Jeden Sonntagmorgen erscheint eine neue Ausgabe mit sechs KI-Tools. Herausgeber ist Roger Basler de Roca (#fragRoger).
 Die Website wird ausschliesslich aus `data/weeks/*.json` (DE) und `data/weeks/en/*.json` (EN) gebaut. Generierte HTML-Dateien nie von Hand bearbeiten.
 
 ## Ablauf eines Wochenlaufs
@@ -21,7 +21,11 @@ Die Website wird ausschliesslich aus `data/weeks/*.json` (DE) und `data/weeks/en
    Rechercheprotokoll speichern unter `research/kwNN-YYYY-source-scan.md` (Kandidat, Kategorie, Quelle, Datum, Signal).
 
 3. **Auswahl**
-   - Pro Kategorie genau ein Tool: Text, Design, Data / Wissen, Recherche, Agents.
+   - Pro Kategorie genau ein Tool: Text, Design, Data / Wissen, Recherche, Agents, Transkription.
+   - Transkription umfasst Meeting-Assistenten, Diktat-, Interview- und Untertitel-Tools (Audio zu Text, Zusammenfassung, Übersetzung).
+     Beim Datenschutz zusätzlich festhalten: Wird Audio gespeichert, gibt es einen sichtbaren Bot, wo läuft die Spracherkennung.
+     Den rechtlichen Rahmen (Einwilligung aller Teilnehmenden) kennt https://transcribe.fragroger.ai/; dort gelistete Tools dürfen
+     gewählt werden, wenn sie in der Woche ein relevantes Update hatten.
    - Nur Tools, die in der Woche neu erschienen, signifikant aktualisiert oder stark erwähnt wurden.
      Gibt es keine relevante Neuerscheinung, ein bestehendes Tool mit wichtigem Update wählen und das Update im Feld `signal` benennen.
    - Kein Tool aus den letzten sechs Ausgaben wiederholen (der Validator prüft das).
@@ -52,15 +56,7 @@ Die Website wird ausschliesslich aus `data/weeks/*.json` (DE) und `data/weeks/en
    git push origin master    # bei Konflikt: git pull --rebase origin master, neu bauen, erneut pushen
    ```
 
-9. **Abschluss**: kurze Meldung mit KW, den fünf Tools samt Bewertung und den Links https://tools.fragroger.ai und https://tools.fragroger.ai/en/.
-
-## Themenseite Transkription
-
-`data/themen/transkription.json` (DE, Struktur, Bewertungen, Quellen) und `data/themen/transkription.en.json` (EN-Texte)
-erzeugen `transkription.html` und `en/transcription.html`. Wenn ein Wochen-Tool ein Transkriptions- oder Meeting-Tool ist
-oder ein Tool aus dieser Liste ein wesentliches Update erhält (Preise, Hosting, Zertifikate), die Zeile in der passenden
-Gruppe ergänzen oder anpassen, `"stand"` auf das heutige Datum setzen und beide Sprachdateien nachführen.
-Gruppen: lokal, schweiz, eu, selbst, usa. Ausführliche Gründe und Rechtsvergleich stehen auf https://transcribe.fragroger.ai/.
+9. **Abschluss**: kurze Meldung mit KW, den sechs Tools samt Bewertung und den Links https://tools.fragroger.ai und https://tools.fragroger.ai/en/.
 
 ## Schema `data/weeks/YYYY-MM-DD.json`
 
@@ -128,7 +124,8 @@ kein "according to", kein "[1]", keine Konstruktion "not only ..., but", keine d
 Archivwochen vor KW 43/2026 haben `"umfang": "uebersicht"`: nur Zusammenfassung und Kurzbeschreibungen sind übersetzt,
 die englische Seite verweist für die Details auf die deutsche Fassung.
 
-Reihenfolge der Tools: Text, Design, Data / Wissen, Recherche, Agents. `bewertung` ist eine Zahl von 1 bis 10 (eine Nachkommastelle erlaubt).
+Gültige Werte für `kategorie`: Text, Design, Data / Wissen, Recherche, Agents, Transkription (genau sechs Tools, je eines).
+Reihenfolge der Tools: Text, Design, Data / Wissen, Recherche, Agents, Transkription. `bewertung` ist eine Zahl von 1 bis 10 (eine Nachkommastelle erlaubt).
 In Listen wird ein Präfix bis zum ersten Doppelpunkt fett dargestellt ("Vertrieb: ...").
 
 ## Schreibregeln (verbindlich)

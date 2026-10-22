@@ -1,6 +1,6 @@
 # KI-Tool-Analysen
 
-Jeden Sonntag fünf KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz. Eine Publikation von
+Jeden Sonntag sechs KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz. Eine Publikation von
 Roger Basler de Roca (#fragRoger).
 
 - Website: https://tools.fragroger.ai (Deutsch) und https://tools.fragroger.ai/en/ (English)
@@ -15,10 +15,10 @@ um. In den Pages-Einstellungen "Enforce HTTPS" aktivieren, sobald das Zertifikat
 
 ## Inhalt
 
-Pro Woche genau ein Tool in jeder der fünf Kategorien Text, Design, Data / Wissen, Recherche und Agents.
+Pro Woche genau ein Tool in jeder der sechs Kategorien Text, Design, Data / Wissen, Recherche, Agents und Transkription (seit Oktober 2026; zuvor fünf Kategorien).
 Jede Analyse enthält Kurzbeschreibung, Nutzungsszenarien, Pricing, Datenschutz (Serverstandort, DSGVO/DSG,
 Self-Hosting), Stärken, Schwächen, Einschätzung für die Praxis und eine Relevanzbewertung von 1 bis 10.
-Jede Ausgabe erscheint auf Deutsch und Englisch. Dazu kommt die Themenseite "KI-Transkription" mit 17 Tools nach Datenschutzniveau. Das Archiv reicht zurück bis KW 48/2025 und ist nach Tool, Kategorie, Jahr und Bewertung durchsuchbar.
+Jede Ausgabe erscheint auf Deutsch und Englisch. Das Archiv reicht zurück bis KW 48/2025 und ist nach Tool, Kategorie, Jahr und Bewertung durchsuchbar.
 
 ## Betrieb
 

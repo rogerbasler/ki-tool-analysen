@@ -34,7 +34,6 @@
     <nav class="nav" aria-label="Navigation">
       <a href="{{ nav.home }}" {% if section == 'current' %}class="active" aria-current="page"{% endif %}>{{ T.nav_current }}</a>
       <a href="{{ nav.archive }}" {% if section == 'archive' %}class="active" aria-current="page"{% endif %}>{{ T.nav_archive }}</a>
-      <a href="{{ nav.transcription }}" {% if section == 'transcription' %}class="active" aria-current="page"{% endif %}>{{ T.nav_transcription }}</a>
       <a href="{{ nav.method }}" {% if section == 'method' %}class="active" aria-current="page"{% endif %}>{{ T.nav_method }}</a>
     </nav>
     <div class="langs" aria-label="Sprache / Language">
@@ -61,7 +60,6 @@
     <div class="foot-bottom">
       <nav class="foot-nav" aria-label="{{ T.more_pages }}">
         <a href="{{ nav.archive }}">{{ T.nav_archive }}</a>
-        <a href="{{ nav.transcription }}">{{ T.nav_transcription }}</a>
         <a href="{{ nav.method }}">{{ T.nav_method }}</a>
         <a href="{{ nav.feed }}">RSS</a>
         <a href="{{ nav.imprint }}">{{ T.imprint }}</a>

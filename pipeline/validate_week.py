@@ -11,7 +11,7 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CATEGORIES = ["Text", "Design", "Data / Wissen", "Recherche", "Agents"]
+CATEGORIES = ["Text", "Design", "Data / Wissen", "Recherche", "Agents", "Transkription"]
 
 # Stilregeln (Schweizer Orthografie, keine Floskeln, keine Inline-Quellen)
 FORBIDDEN = [
@@ -127,8 +127,8 @@ def main(path):
         E(f"Zusammenfassung hat {n} Sätze, verlangt sind 3 bis 5")
 
     tools = w.get("tools", [])
-    if len(tools) != 5:
-        E(f"{len(tools)} Tools statt 5")
+    if len(tools) != len(CATEGORIES):
+        E(f"{len(tools)} Tools statt {len(CATEGORIES)}")
     cats = [t.get("kategorie") for t in tools]
     if sorted(cats, key=lambda c: CATEGORIES.index(c) if c in CATEGORIES else 9) != CATEGORIES:
         E(f"Kategorien müssen genau einmal vorkommen: {cats}")

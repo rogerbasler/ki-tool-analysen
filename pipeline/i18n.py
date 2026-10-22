@@ -3,10 +3,10 @@ import datetime as dt
 
 LANGS = ["de", "en"]
 
-CATEGORIES = ["Text", "Design", "Data / Wissen", "Recherche", "Agents"]
+CATEGORIES = ["Text", "Design", "Data / Wissen", "Recherche", "Agents", "Transkription"]
 CAT_LABEL = {
     "de": {c: c for c in CATEGORIES},
-    "en": {"Text": "Text", "Design": "Design", "Data / Wissen": "Data / Knowledge", "Recherche": "Research", "Agents": "Agents"},
+    "en": {"Text": "Text", "Design": "Design", "Data / Wissen": "Data / Knowledge", "Recherche": "Research", "Agents": "Agents", "Transkription": "Transcription"},
 }
 
 MONTHS = {
@@ -15,9 +15,9 @@ MONTHS = {
 }
 
 PATHS = {
-    "de": {"home": "index.html", "archive": "archiv.html", "transcription": "transkription.html", "method": "methode.html", "imprint": "impressum.html",
+    "de": {"home": "index.html", "archive": "archiv.html", "method": "methode.html", "imprint": "impressum.html",
            "privacy": "datenschutz.html", "feed": "feed.xml"},
-    "en": {"home": "en/index.html", "archive": "en/archive.html", "transcription": "en/transcription.html", "method": "en/method.html", "imprint": "en/imprint.html",
+    "en": {"home": "en/index.html", "archive": "en/archive.html", "method": "en/method.html", "imprint": "en/imprint.html",
            "privacy": "en/privacy.html", "feed": "en/feed.xml"},
 }
 
@@ -46,20 +46,17 @@ def score(v, lang="de"):
 T = {
     "de": {
         "html_lang": "de-CH", "locale": "de_CH", "site": "KI-Tool-Analysen",
-        "skip": "Zum Inhalt", "nav_current": "Diese Woche", "nav_archive": "Archiv", "nav_method": "Methode", "nav_transcription": "Transkription",
-        "topic_badge": "Spezial", "topic_updated": "Aktualisiert am", "topic_essentials": "Das Wichtigste", "topic_new": "Neu", "topic_changed": "Aktualisiert", "topic_details": "Analyse lesen",
-        "topic_page_title": "KI-Transkription: 17 Tools im Datenschutz-Check | KI-Tool-Analysen",
-        "topic_desc": "KI-Transkriptions- und Meeting-Tools nach Datenschutzniveau: lokal, Schweizer Cloud, EU-Cloud, selbst gehostet, US-Anbieter. Mit Analysen zu Sally und noScribe.",
+        "skip": "Zum Inhalt", "nav_current": "Diese Woche", "nav_archive": "Archiv", "nav_method": "Methode",
         "home_label": "KI-Tool-Analysen, Startseite",
-        "footer_line": "Jeden Sonntag fünf KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz.",
+        "footer_line": "Jeden Sonntag sechs KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz.",
         "footer_by": "Eine Publikation von", "footer_more": "Weitere wöchentliche Einordnung:",
         "news_url": "https://news.fragroger.ai/",
         "disclaimer_title": "Hinweis",
         "disclaimer": "Recherche, Auswahl und Texte entstehen mit Unterstützung von KI-Systemen und werden automatisiert veröffentlicht. Preise, Funktionen und Datenschutzangaben ändern sich laufend; massgebend sind die aktuellen Unterlagen der Anbieter. Die Analysen sind keine Rechts- oder Kaufberatung.",
         "imprint": "Impressum", "privacy": "Datenschutz", "more_pages": "Weitere Seiten",
         "week": "KW", "badge_new": "Neu", "badge_archive": "Archiv",
-        "hero_1": "5 KI-Tools", "hero_2": "der Woche",
-        "hero_sub": "Text, Design, Data / Wissen, Recherche und Agents: je ein Tool, geprüft auf Nutzen, Kosten und Datenschutz.",
+        "hero_1": "{n} KI-Tools", "hero_2": "der Woche",
+        "hero_sub": "Text, Design, Data / Wissen, Recherche, Agents und Transkription: je ein Tool, geprüft auf Nutzen, Kosten und Datenschutz.",
         "to_current": "Zur aktuellen Woche →", "all_weeks": "Alle Wochen",
         "summary": "Die Woche in Kürze", "trend": "Trend", "jump": "Zu den Tools springen",
         "relevance": "Relevanz", "relevance_of": "von 10", "this_week": "Diese Woche:",
@@ -71,7 +68,7 @@ T = {
         "read_full_btn": "Vollanalyse lesen", "download_md": "Markdown herunterladen", "more_weeks": "Weitere Wochen",
         "partial_note": "", "partial_link": "",
         "archive_kicker": "Archiv", "archive_title": "Alle Wochen, alle Tools",
-        "archive_sub": "Seit Dezember 2025 jede Woche fünf Tools. Suche nach Namen, Einsatzzweck oder Stichwort, filtere nach Kategorie und Jahr.",
+        "archive_sub": "Seit Dezember 2025 jede Woche eine Auswahl neuer Tools, seit Oktober 2026 mit der Kategorie Transkription. Suche nach Namen, Einsatzzweck oder Stichwort, filtere nach Kategorie und Jahr.",
         "stat_weeks": "Wochen", "stat_tools": "Tool-Analysen", "stat_avg": "Ø Relevanz",
         "search": "Suche", "search_ph": "Tool oder Stichwort suchen, z. B. Agent, lokal, Präsentation",
         "filter": "Filter", "all": "Alle", "all_years": "Alle Jahre", "year": "Jahr", "min_score": "Mindestbewertung",
@@ -79,7 +76,7 @@ T = {
         "count_filtered": "{t} Tools in {w} Wochen", "count_all": "{w} Wochen im Archiv",
         "archive_page_title": "Archiv | KI-Tool-Analysen",
         "archive_desc": "Alle wöchentlichen KI-Tool-Analysen seit Dezember 2025, durchsuchbar nach Tool, Kategorie und Jahr.",
-        "week_desc": "Die fünf KI-Tools der KW {kw}/{jahr}: {names}.",
+        "week_desc": "Die KI-Tools der KW {kw}/{jahr}: {names}.",
         "analysis_title": "Vollanalyse KW {kw}/{jahr} | KI-Tool-Analysen", "analysis_desc": "Ausführliche Analyse der KI-Tools der KW {kw}/{jahr}.",
         "analysis_kicker": "Vollanalyse", "analysis_heading": "Die ausführliche Fassung", "to_week": "Zur Wochenübersicht",
         "analysis_note": "Diese Fassung stammt aus dem Archiv und wird unverändert wiedergegeben.",
@@ -91,20 +88,17 @@ T = {
     },
     "en": {
         "html_lang": "en", "locale": "en_GB", "site": "AI Tool Reviews",
-        "skip": "Skip to content", "nav_current": "This week", "nav_archive": "Archive", "nav_method": "Method", "nav_transcription": "Transcription",
-        "topic_badge": "Special", "topic_updated": "Updated on", "topic_essentials": "Key points", "topic_new": "New", "topic_changed": "Updated", "topic_details": "Read review",
-        "topic_page_title": "AI transcription: 17 tools checked for data protection | AI Tool Reviews",
-        "topic_desc": "AI transcription and meeting tools by level of data protection: local, Swiss cloud, EU cloud, self-hosted, US providers. With reviews of Sally and noScribe.",
+        "skip": "Skip to content", "nav_current": "This week", "nav_archive": "Archive", "nav_method": "Method",
         "home_label": "AI Tool Reviews, home",
-        "footer_line": "Every Sunday, five AI tools assessed for value, cost and data protection.",
+        "footer_line": "Every Sunday, six AI tools assessed for value, cost and data protection.",
         "footer_by": "Published by", "footer_more": "Weekly AI news in context:",
         "news_url": "https://news.fragroger.ai/en/",
         "disclaimer_title": "Note",
         "disclaimer": "Research, selection and texts are produced with the help of AI systems and published automatically. Prices, features and privacy terms change constantly; the providers' current documentation is authoritative. The reviews are not legal or purchasing advice.",
         "imprint": "Imprint", "privacy": "Privacy", "more_pages": "More pages",
         "week": "Week", "badge_new": "New", "badge_archive": "Archive",
-        "hero_1": "5 AI tools", "hero_2": "of the week",
-        "hero_sub": "Text, design, data / knowledge, research and agents: one tool each, checked for value, cost and data protection.",
+        "hero_1": "{n} AI tools", "hero_2": "of the week",
+        "hero_sub": "Text, design, data / knowledge, research, agents and transcription: one tool each, checked for value, cost and data protection.",
         "to_current": "To the current week →", "all_weeks": "All weeks",
         "summary": "The week in brief", "trend": "Trend", "jump": "Jump to the tools",
         "relevance": "Relevance", "relevance_of": "out of 10", "this_week": "This week:",
@@ -117,7 +111,7 @@ T = {
         "partial_note": "This issue dates from before the English edition launched in October 2026. Summaries and short descriptions are translated; the detailed reviews are available in German.",
         "partial_link": "Detailed review in German",
         "archive_kicker": "Archive", "archive_title": "All weeks, all tools",
-        "archive_sub": "Five tools every week since December 2025. Search by name, use case or keyword, filter by category and year.",
+        "archive_sub": "A selection of new tools every week since December 2025, with the transcription category since October 2026. Search by name, use case or keyword, filter by category and year.",
         "stat_weeks": "Weeks", "stat_tools": "Tool reviews", "stat_avg": "Avg. relevance",
         "search": "Search", "search_ph": "Search tools or keywords, e.g. agent, local, presentation",
         "filter": "Filter", "all": "All", "all_years": "All years", "year": "Year", "min_score": "Minimum rating",
@@ -125,7 +119,7 @@ T = {
         "count_filtered": "{t} tools in {w} weeks", "count_all": "{w} weeks in the archive",
         "archive_page_title": "Archive | AI Tool Reviews",
         "archive_desc": "All weekly AI tool reviews since December 2025, searchable by tool, category and year.",
-        "week_desc": "The five AI tools of week {kw}/{jahr}: {names}.",
+        "week_desc": "The AI tools of week {kw}/{jahr}: {names}.",
         "analysis_title": "", "analysis_desc": "", "analysis_kicker": "", "analysis_heading": "", "to_week": "", "analysis_note": "",
         "method_title": "Method | AI Tool Reviews", "method_desc": "How the weekly AI tool reviews are produced: sources, categories, rating.",
         "method_heading": "How the reviews are made", "method_kicker": "Method",
