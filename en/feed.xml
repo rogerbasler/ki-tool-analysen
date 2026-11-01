@@ -7,6 +7,13 @@
   <description>Every Sunday, six AI tools assessed for value, cost and data protection.</description>
   <language>en</language>
   <item>
+    <title>Week 44/2026: Gemini Dateibearbeitung, Runway App Studio, Claude Legal Artifacts, TheySaid 4.0, SAP Joule Studio, Granola Voice Typing</title>
+    <link>https://tools.fragroger.ai/en/archive/2026/week44-2026-11-01.html</link>
+    <guid isPermaLink="true">https://tools.fragroger.ai/en/archive/2026/week44-2026-11-01.html</guid>
+    <pubDate>Sun, 01 Nov 2026 06:00:00 +0000</pubDate>
+    <description><![CDATA[<p>This week AI moves out of the chat window and into the working tools companies already own: documents, templates, business processes. The mechanism is the same everywhere: a workflow that has been built once is frozen and handed on as a tool, whether it is a Runway app, a legal tracker in Claude or an agent in SAP Joule Studio. Control therefore shifts from the individual prompt to the act of sharing: whoever shares an app or an agent sets the models, data access and costs for everyone who uses it. At the same time, training rights, data regions and per-step prices are often only clearly settled in enterprise contracts. Whoever distributes AI across the organisation is making governance decisions, whether they intend to or not.</p><ul><li><strong>Text: Gemini Dateibearbeitung</strong> (7.8/10). Feature of the Gemini app that creates texts, PDFs, spreadsheets and slide decks in the chat, shows them in a preview and lets users revise them directly.</li><li><strong>Design: Runway App Studio</strong> (7.6/10). No-code builder in Runway with which creative and marketing teams build and share their own small apps for image, video and audio production.</li><li><strong>Data / Knowledge: Claude Legal Artifacts</strong> (7.4/10). Ready-made, adaptable trackers and dashboards in Claude for legal departments and law firms, for example for contract review, matter overviews and regulatory monitoring.</li><li><strong>Research: TheySaid 4.0</strong> (7/10). Platform for user testing, AI-moderated interviews and surveys that now also uses synthetic test users, for product, UX and marketing teams.</li><li><strong>Agents: SAP Joule Studio</strong> (7.9/10). SAP development environment in which business and IT teams build, test and run AI agents for SAP processes, with or without code.</li><li><strong>Transcription: Granola Voice Typing</strong> (7.3/10). Dictation feature of the meeting notes service Granola: hold the Fn key, speak, and cleaned-up text appears in any Mac app.</li></ul>]]></description>
+  </item>
+  <item>
     <title>Week 42/2026: Talanoa, Canvora, Caldera, Articos v3.2, WEXTL, noScribe, Sally</title>
     <link>https://tools.fragroger.ai/en/archive/2026/week42-2026-10-18.html</link>
     <guid isPermaLink="true">https://tools.fragroger.ai/en/archive/2026/week42-2026-10-18.html</guid>
@@ -208,13 +215,6 @@
     <guid isPermaLink="true">https://tools.fragroger.ai/en/archive/2025/week52-2025-12-28.html</guid>
     <pubDate>Sun, 28 Dec 2025 06:00:00 +0000</pubDate>
     <description><![CDATA[<p>The last week of 2025 brought AI tools that go well beyond incremental improvements. Instead of single features, fully integrated, autonomous systems that transform entire workflows are now in focus. Reve AI rethinks image editing with layout representation, Sequenzy is &quot;Cursor for email marketing&quot;, FireCrawl /agent makes URLs optional, Macroscope reviews code autonomously, and Scanned.to reconstructs document layouts accurately.</p><ul><li><strong>Text: Sequenzy</strong> (8/10). &quot;Cursor&quot; for email marketing</li><li><strong>Design: Reve AI</strong> (9/10). A new approach to image editing</li><li><strong>Data / Knowledge: Scanned.to</strong> (7/10). OCR with accurate layout</li><li><strong>Research: FireCrawl /agent</strong> (8/10). Web scraping without URLs</li><li><strong>Agents: Macroscope</strong> (8/10). The autonomous code reviewer</li></ul>]]></description>
-  </item>
-  <item>
-    <title>Week 51/2025: Tonemark, Reve AI, DocsRouter, SiteSignal, Incredible.one</title>
-    <link>https://tools.fragroger.ai/en/archive/2025/week51-2025-12-21.html</link>
-    <guid isPermaLink="true">https://tools.fragroger.ai/en/archive/2025/week51-2025-12-21.html</guid>
-    <pubDate>Sun, 21 Dec 2025 06:00:00 +0000</pubDate>
-    <description><![CDATA[<p>This week marks a turning point: from assistants to autonomous systems. AI is maturing and taking on complex tasks on its own. Tonemark shows how AI can sound authentic, Reve AI brings precise control to image editing, DocsRouter greatly simplifies OCR integration, SiteSignal defines a new discipline (AEO), and Incredible.one stands for autonomous agents.</p><ul><li><strong>Text: Tonemark</strong> (8/10). Authentic AI texts in your personal style</li><li><strong>Design: Reve AI</strong> (7/10). Layout representation for precise image editing</li><li><strong>Data / Knowledge: DocsRouter</strong> (8/10). Unified API for 100+ OCR models</li><li><strong>Research: SiteSignal</strong> (9/10). AI search visibility and AEO monitoring</li><li><strong>Agents: Incredible.one</strong> (9/10). Autonomous agents for deep work with Agent MAX</li></ul>]]></description>
   </item>
 </channel>
 </rss>

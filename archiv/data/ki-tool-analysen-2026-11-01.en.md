@@ -1,0 +1,380 @@
+# AI Tool Reviews, week 44/2026
+
+**Date:** 1 November 2026  
+**Research period:** 25 October to 1 November 2026
+
+## Weekly summary
+
+This week AI moves out of the chat window and into the working tools companies already own: documents, templates, business processes. The mechanism is the same everywhere: a workflow that has been built once is frozen and handed on as a tool, whether it is a Runway app, a legal tracker in Claude or an agent in SAP Joule Studio. Control therefore shifts from the individual prompt to the act of sharing: whoever shares an app or an agent sets the models, data access and costs for everyone who uses it. At the same time, training rights, data regions and per-step prices are often only clearly settled in enterprise contracts. Whoever distributes AI across the organisation is making governance decisions, whether they intend to or not.
+
+- SAP Joule Studio (7.9/10): For SAP customers in the DACH region the most tangible step from assistance to agents, with a free runtime until the end of December for selected customers.
+- Gemini Dateibearbeitung (7.8/10): Documents, PDFs and spreadsheets are created and revised inside the chat, at no extra cost for all users.
+- Granola Voice Typing (7.3/10): Free dictation on the Mac; audio from successful dictations is not stored, but speech recognition runs in the cloud in the US.
+- Rule of thumb: Before an AI app or agent is shared, put three things in writing: which data it sees, who bears the costs and who approves its outputs.
+
+**Trend:** AI is turning from a personal tool into a shared operating resource, and every shared app or agent turns a productivity question into a governance question.
+
+| Category | Tool | Relevance |
+|---|---|---:|
+| Text | Gemini Dateibearbeitung | 7.8/10 |
+| Design | Runway App Studio | 7.6/10 |
+| Data / Knowledge | Claude Legal Artifacts | 7.4/10 |
+| Research | TheySaid 4.0 | 7/10 |
+| Agents | SAP Joule Studio | 7.9/10 |
+| Transcription | Granola Voice Typing | 7.3/10 |
+
+---
+
+## 1. Gemini Dateibearbeitung
+
+**Category:** Text  
+**Relevance rating:** 7.8/10  
+**Website:** https://gemini.google.com/  
+**Signal this week:** On 29 October 2026 Google enabled preview and direct editing of documents, PDFs, presentations and spreadsheets in the Gemini app, for all users in every language in which the app is available.
+
+### Short description
+
+Feature of the Gemini app that creates texts, PDFs, spreadsheets and slide decks in the chat, shows them in a preview and lets users revise them directly.
+
+Since April 2026 Gemini has been able to create files such as Google Docs, Word and Excel files, PDFs or Markdown. The new part is the second step: the file appears as a preview in the chat and can be edited directly in full screen. Highlighted passages can be rewritten or questioned without regenerating the whole file.
+
+How a file leaves the chat depends on its format. Slides open in Google Slides or download as PPTX or PDF, spreadsheets go to Google Sheets, and documents and PDFs are uploaded to Google Drive. PDFs can be edited on the web and on mobile, all other formats in the browser only for now. Administrators get no separate switch: the feature comes with the Gemini app or not at all.
+
+### Use cases
+
+- Management: Generate a draft strategy paper and sharpen it section by section in the chat.
+- Sales: Create a quotation template as a PDF, highlight individual passages and have them reworded for a specific industry.
+- Controlling: Set up a spreadsheet with scenarios and continue the calculations in Google Sheets.
+- Communications: Sketch a slide deck, check the layout and export it as PPTX for the presentation.
+
+### Pricing
+
+The feature is included in all plans, including the free one. Personal plans in Switzerland: Free CHF 0, AI Plus CHF 5, AI Pro CHF 17, AI Ultra from CHF 100 and CHF 170 per month (US: USD 0, 4.99, 19.99, 99.99 and 199.99). Business: Gemini Enterprise Business from USD 21 per user per month, Standard and Plus from USD 30. Google Workspace edition prices could not be read at the time of retrieval and are not stated here.
+
+### Data protection
+
+For users in the EEA and Switzerland the provider is Google Ireland Limited. Personal accounts: with activity saving switched on, chats are used for training, a sample is reviewed by humans and kept for up to three years; the default deletion period is 18 months. Personal accounts are therefore unsuitable for confidential business data. Work accounts from Workspace Business Starter upwards: no human review, no training. Google offers the Cloud Data Processing Addendum with reference to the GDPR and the Swiss FADP. US or EU data regions for prompts and responses are available from Business Standard (storage), processing within the region only with Enterprise Plus or an add-on. There is no self-hosting.
+
+### Strengths
+
+- Friction: Drafting, revision and export stay in one window.
+- Access: No surcharge on any plan, including the free plan.
+- Formats: Docs, Sheets, slides, PDF, Markdown, text, code and LaTeX.
+- Business accounts: No training and no human review from Business Starter upwards, DPA available.
+
+### Weaknesses
+
+- Control: No dedicated admin switch, only the whole Gemini app can be turned off.
+- Mobile: Apart from PDFs, files can only be edited in the browser.
+- Personal accounts: Training and human review are on by default.
+- Data region: Processing in the EU only with the most expensive editions or add-ons.
+
+### Practical assessment
+
+For teams already working with Google Workspace the feature is an obvious gain for drafts, quotations and spreadsheets. It requires a work account with Gemini as a core service; personal accounts do not belong in business processes. A sensible test: create three recurring document types through Gemini for one week and measure how much rework is still needed in Word or Docs.
+
+**Relevance rating:** 7.8/10
+
+---
+
+## 2. Runway App Studio
+
+**Category:** Design  
+**Relevance rating:** 7.6/10  
+**Website:** https://runway.com/  
+**Signal this week:** On 26 October 2026 Runway introduced App Studio, available on all paid plans at no extra cost.
+
+### Short description
+
+No-code builder in Runway with which creative and marketing teams build and share their own small apps for image, video and audio production.
+
+In App Studio users describe in plain language the tool they need, for example an app for product photos in the brand style. Runway writes, tests and publishes an app with its own interface. Changes can be previewed before publishing and rolled back to earlier versions. Existing agent sessions or workflows can also be converted into an app.
+
+The core idea is freezing: prompt, model chain and settings are fixed, and colleagues only see the inputs they need. Apps use Runway's image, video and audio models as well as brand kits and stored assets. They stay private until they are shared with the team, a project or via a public link. Anyone using an app needs a Runway account and pays with their own credits.
+
+### Use cases
+
+- Marketing: Build a product photo app with a fixed brand style that the whole team can use without prompting skills.
+- Agency: Give clients a frozen app for producing variants of a campaign visual.
+- Architecture: Generate visualisations in consistent lighting and style from design images.
+- Communications: Provide an app for short social videos with a fixed length, tone and end card.
+
+### Pricing
+
+App Studio costs nothing extra; building, running and hosting consume credits. Free: USD 0, 125 one-time credits, no app building. Standard: USD 15 per month (USD 12 billed annually), 625 credits. Pro: USD 35 (USD 28), 2,250 credits. Max: USD 95 (USD 76), 9,500 credits. Enterprise: price on request. Example costs: Gen-4.5 video 60 credits per 5 seconds, Gen-4 image at 1080p 8 credits.
+
+### Data protection
+
+The provider is Runway AI, Inc. in New York, and New York law applies. Data is processed in the US and other countries, hosted on AWS and GCP with no region named. The terms of 23 October 2026 grant Runway a perpetual licence to inputs and outputs, explicitly including training its own models; an opt-out is not documented outside Enterprise. For Enterprise: no training, a DPA with EU standard contractual clauses and a Swiss variant, SOC 2 Type II and ISO 27001. GDPR- and FADP-compliant use with customer data is therefore realistic only under an Enterprise contract. There is no self-hosting.
+
+### Strengths
+
+- Standardisation: Proven workflows become tools that non-specialists can use.
+- Versioning: Preview and rollback to earlier versions before every release.
+- Cost allocation: Each app shows its consumption, external users pay with their own credits.
+- Admin control: Enterprise can switch App Studio off, block public links and disable models.
+
+### Weaknesses
+
+- Training rights: Outside Enterprise, inputs and outputs may be used for training.
+- Closed system: Only Runway models and assets, no external interfaces or code export documented.
+- Account requirement: Every person using an app needs their own Runway account.
+- Liability: Whoever publishes an app is responsible for privacy notices and user consent.
+
+### Practical assessment
+
+App Studio suits marketing and creative teams that want to standardise recurring image and video tasks. Work with their own product or customer data should only begin under an Enterprise contract. A sensible test: build a single app for the most common image request, use it internally for two weeks and measure credits per usable result.
+
+**Relevance rating:** 7.6/10
+
+---
+
+## 3. Claude Legal Artifacts
+
+**Category:** Data / Knowledge  
+**Relevance rating:** 7.4/10  
+**Website:** https://claude.com/solutions/legal  
+**Signal this week:** On 28 October 2026 Anthropic published a gallery of artifacts for legal work, alongside more than 60 legal connectors added since May.
+
+### Short description
+
+Ready-made, adaptable trackers and dashboards in Claude for legal departments and law firms, for example for contract review, matter overviews and regulatory monitoring.
+
+Artifacts are interactive applications that Claude builds and that are shared within a team. The new legal gallery brings six core templates: citation check, comparison of several jurisdictions, matter board, deviations from the contract playbook, a timeline of upcoming regulation and tabular contract review with a link to the relevant clause. Templates from partners such as Harvey, Goodwin and PwC are added.
+
+The templates are filled with an organisation's own data and connectors, for example from document management or contract systems. Sharing happens within the organisation with roles for viewing, commenting and editing; administrators control external sharing. Legal judgement stays with the lawyers, Claude does the first pass.
+
+### Use cases
+
+- Legal department: Check incoming contracts against the in-house playbook and route deviations to the responsible person.
+- Compliance: Order upcoming regulation on a timeline by impact.
+- Law firm: Bring open matters from engagement letters and emails together on one board.
+- Due diligence: Compare key clauses across many contracts in a table, with a jump to the source.
+
+### Pricing
+
+No separate price for the legal gallery is documented; artifacts and connectors are included in all plans. Free USD 0, Pro USD 20 per month (USD 17 billed annually), Max USD 100, Team Standard USD 25 per user per month (USD 20 annually), Team Premium USD 125 (USD 100), Enterprise USD 20 per user per month on an annual contract with at least 20 seats, plus usage at API rates. The rollout runs through sales and partners.
+
+### Data protection
+
+On Team and Enterprise plans Anthropic does not train on customer data by default. The DPA is part of the commercial terms and contains EU standard contractual clauses as well as provisions for Switzerland. Certifications: SOC 2 Type II, ISO 27001, ISO 42001. Enterprise can set retention periods from 30 days. Where Team and Enterprise data in claude.ai is stored is not documented; EU data residency is only available via cloud platforms such as AWS Bedrock, where artifacts do not run. For professionals bound by confidentiality this remains an open point under the GDPR and the FADP. There is no self-hosting.
+
+### Strengths
+
+- Starting point: Six practical templates instead of an empty chat.
+- Traceability: Results link to the source in the document.
+- Integration: More than 60 legal connectors, including document and contract systems.
+- Access rights: Roles, sharing within the organisation and admin control over external sharing.
+
+### Weaknesses
+
+- Data residency: No documented EU storage for artifacts in claude.ai.
+- Coarse control: Connectors for artifacts can only be switched on or off for the whole organisation.
+- Jurisdiction: Templates and partner content are strongly geared towards US law.
+- Logging: Edits and comments are not yet captured in the compliance interface.
+
+### Practical assessment
+
+For legal departments of mid-sized companies already using Claude Team or Enterprise, the templates offer a quick entry into structured contract work. Before use with client data, storage location and professional secrecy need to be clarified. A sensible test: run the tabular contract review on ten contracts that have already been reviewed and measure the hit rate and time saved against the in-house review.
+
+**Relevance rating:** 7.4/10
+
+---
+
+## 4. TheySaid 4.0
+
+**Category:** Research  
+**Relevance rating:** 7/10  
+**Website:** https://www.theysaid.io/  
+**Signal this week:** TheySaid 4.0 was Product of the Day on Product Hunt on 27 October 2026. New are synthetic test users and tests launched directly from AI design tools.
+
+### Short description
+
+Platform for user testing, AI-moderated interviews and surveys that now also uses synthetic test users, for product, UX and marketing teams.
+
+TheySaid has an AI set up, moderate, transcribe and analyse studies: usability tests, live interviews, surveys and in-product prompts. Test users come from a panel, from the company's own customers or, new, from a model. The synthetic test users are based on more than 100,000 hours of usability sessions and are further trained on the customer's data. Every AI response is labelled as synthetic and can be compared side by side with human responses.
+
+Version 4.0 ties testing to the development workflow. Prototypes from tools such as Lovable or Replit can be tested directly, and a ticket moved to design done can trigger a test automatically. The findings are posted back to the ticket. The effectiveness figures, such as 89 per cent of issues found by synthetic versus 90 per cent by human testers, come from the vendor's own studies.
+
+### Use cases
+
+- Product development: Have synthetic test users check a prototype for major obstacles before development starts.
+- Marketing: Assess two versions of a landing page with real and synthetic responses side by side.
+- Customer service: Trigger a short AI-moderated survey among existing customers after a change.
+- Management: Back an investment decision with a quick preliminary study before commissioning an agency.
+
+### Pricing
+
+Free tier available: USD 0 with one active AI project and 50 responses per month. Survey plans: Essential USD 49, Pro USD 149, Team from USD 499 per month. Prices for user testing could not be retrieved from the official page and are treated as not documented here. For the launch TheySaid offers ten free synthetic tests.
+
+### Data protection
+
+The contracting party is TheySaid, Inc.; registered address and hosting region are not documented, the infrastructure runs on Google Cloud. Survey data is used to train the AI by default, based on legitimate interest; an objection in the settings only applies going forward. Transfers to the US rely on standard contractual clauses or the EU-US Data Privacy Framework. The Swiss FADP is not mentioned. A DPA exists but could not be retrieved; AI subprocessors are not documented. Statements on ISO 27001 contradict each other across pages, SOC 2 is stated. Recordings of voice, video and screen require the consent of the test users. Self-hosting is not documented.
+
+### Strengths
+
+- Speed: Synthetic tests deliver results in minutes instead of days.
+- Transparency: Synthetic responses are labelled and comparable with human ones.
+- Integration: Tests can be triggered from tickets and prototyping tools, findings flow back.
+- Entry: Free plan without a credit card.
+
+### Weaknesses
+
+- Evidence: Effectiveness figures come only from the vendor's own studies, independent validation is missing.
+- Training: Customer data is used for training by default.
+- Documentation: Contradictory statements on certifications, limits and availability across pages.
+- Limits: The makers themselves say synthetic test users perform worse on personal and emotional decisions.
+
+### Practical assessment
+
+TheySaid suits teams that currently decide without any user evidence; synthetic tests lower the threshold for testing early. They do not replace conversations with real customers, as the makers themselves say. A sensible test: repeat a study already run with humans synthetically and compare which findings match. Switch off training on your own data in the settings beforehand.
+
+**Relevance rating:** 7/10
+
+---
+
+## 5. SAP Joule Studio
+
+**Category:** Agents  
+**Relevance rating:** 7.9/10  
+**Website:** https://www.sap.com/products/artificial-intelligence/joule-studio.html  
+**Signal this week:** At SAP TechEd in Berlin on 27 October 2026 SAP extended Joule Studio: more than 70 AI models, n8n workflows for early adopters, new monitoring of cost and behaviour, and a free agent runtime until the end of December 2026 for selected customers.
+
+### Short description
+
+SAP development environment in which business and IT teams build, test and run AI agents for SAP processes, with or without code.
+
+Joule Studio is where companies build their own agents for their SAP landscape. A goal is described in plain language, and requirements, a code scaffold, tests and a preview are generated from it. Developers can continue in VS Code or Cursor. The agents run in isolated environments on a runtime operated by SAP and access the business data they are authorised for.
+
+New is Joule Work, a layer that distributes multi-step tasks across agents, apps and data and uses open protocols such as MCP and A2A. An Enterprise AI Gateway is to bundle authentication, policies, costs and logging of all AI traffic. The gateway and new knowledge graph functions only become generally available from the first quarter of 2027.
+
+### Use cases
+
+- Finance: Build an agent that reconciles open items and submits deviations for approval.
+- Procurement: Check purchase requisitions against framework contracts and route exceptions to the responsible person.
+- HR: Answer standard requests on holidays, expenses or certificates with access to SuccessFactors.
+- IT: Connect existing n8n workflows to SAP agents once access from the early adopter programme opens.
+
+### Pricing
+
+No public price and no general free tier. Development and testing are free within a fair-use limit, and running custom agents on the SAP runtime is free until the end of December 2026 for selected customers. After that, billing is consumption-based: in AI Units per agent step or in BTP credits. A price per AI Unit in CHF, USD or EUR is not published.
+
+### Data protection
+
+SAP commits not to pass customer data on for training language models. A DPA is concluded with all customers, transfers outside the EU and EEA rely on standard contractual clauses, and subprocessors with locations are listed in the SAP Trust Center. This provides the basis for GDPR-compliant use; the Swiss FADP is not explicitly mentioned on the data protection page. In which data centre regions Joule Studio runs, for example Frankfurt or Zurich, is not documented. There is no self-hosting or on-premises operation, but local SAP systems can be connected.
+
+### Strengths
+
+- Proximity to core business: Agents work directly with SAP processes and authorisations.
+- Model choice: More than 70 models in one environment.
+- Governance: Monitoring of behaviour, model usage and costs, an AI gateway is announced.
+- Entry: Free runtime until the end of December 2026 for selected customers.
+
+### Weaknesses
+
+- Prerequisites: Only usable with a BTP account, configured Joule and SAP Cloud Identity Services.
+- Price clarity: Three billing routes and no public unit prices; the German-speaking SAP user group DSAG is calling for early cost transparency.
+- Availability: Key parts only from the first quarter of 2027 or for early adopters only.
+- Region: Data centre location for Joule Studio is not documented.
+
+### Practical assessment
+
+For companies with SAP S/4HANA Cloud and BTP, Joule Studio is the obvious route to agents in core processes, because data and authorisations already sit there. Anyone using the free runtime should obtain the follow-on costs in writing before January. A sensible test: build a single, narrowly defined agent with human approval, for example for invoice discrepancies, and log steps and AI Units per case.
+
+**Relevance rating:** 7.9/10
+
+---
+
+## 6. Granola Voice Typing
+
+**Category:** Transcription  
+**Relevance rating:** 7.3/10  
+**Website:** https://www.granola.ai/voice-typing  
+**Signal this week:** On 29 October 2026 Granola launched a dictation feature for the Mac, free and without a word limit; Windows and iOS are to follow.
+
+### Short description
+
+Dictation feature of the meeting notes service Granola: hold the Fn key, speak, and cleaned-up text appears in any Mac app.
+
+Voice Typing turns speech into text and inserts it wherever the cursor is, in email, CRM or a document. Filler words and repetitions are removed, punctuation, paragraphs and lists are added. The wording is kept; the tool does not answer or carry out commands. Optionally Granola reads the text around the cursor to spell names and technical terms correctly; password fields are excluded.
+
+Dictation is separate from Granola's core function, meeting notes. These capture the microphone and system audio directly on the device, without a bot in the call. Other participants therefore cannot see that notes are being taken. German is supported for meeting transcription; no language list has been published for dictation.
+
+### Use cases
+
+- Management: Dictate email replies between two appointments instead of typing.
+- Sales: Speak call notes straight into the CRM while the conversation is fresh.
+- Consulting: Dictate structured drafts for reports and revise them afterwards.
+- Meetings: Take notes in internal meetings without a visible bot, after all participants have given consent.
+
+### Pricing
+
+Voice Typing is free on all plans. Basic: USD 0, no transcription limit, notes older than 30 days are hidden. Business: USD 14 per user per month, monthly only. Enterprise: from USD 35 per user per month with admin controls and SSO from 50 seats. Figures from the help centre; the pricing page itself could not be retrieved.
+
+### Data protection
+
+Audio stored: audio from successful dictations is not kept, failed dictations stay encrypted on the Mac for 24 hours; meeting audio is deleted after transcription. Visible bot: no, neither for dictation nor for meetings, so obtaining participants' consent rests entirely with the user. Speech recognition: in the cloud with unnamed transcription providers, an internet connection is required. Notes are stored on AWS in the US, there is no EU region. On free and Business plans anonymised data may be used for model improvement by default, an opt-out is available; dictations are not used for training by the providers. The standard DPA contains EU standard contractual clauses, the UK addendum and Swiss clauses; SOC 2 Type II is in place. Under the GDPR and the FADP this is sufficient for non-critical content with the DPA and opt-out, but not for professional secrets. Self-hosting is not documented.
+
+### Strengths
+
+- Cost: Dictation without a word limit, free on all plans.
+- Audio: Successful dictations leave no audio recording behind.
+- Quality: Cleaned-up text with punctuation and lists, technical terms are learned from context.
+- Contract: Standard DPA with Swiss clauses and SOC 2 Type II.
+
+### Weaknesses
+
+- Platform: Mac only and in beta for now, with no date for Windows and mobile.
+- Language: No language list for dictation, German not explicitly confirmed.
+- Data path: Speech recognition in the cloud, storage in the US, transcription provider not named.
+- Screen context: Reads text from the active app by default; switching it off also disables style adjustment.
+
+### Practical assessment
+
+Voice Typing pays off for executives on the Mac who write a lot and have little time. It is not suitable for confidential content such as personnel cases, client or health data because of US storage and an unnamed recognition service. A sensible test: dictate only emails and CRM notes for one week, consciously switch the screen context feature on or off and measure correction time. For meeting notes: inform all participants beforehand and obtain their consent.
+
+**Relevance rating:** 7.3/10
+
+---
+
+## Sources
+
+- Ameling, M. (2026, 13. Mai). Announcing New Joule Studio for Enterprise Scale Agentic Development. SAP News Center. https://news.sap.com/2026/05/new-joule-studio-enterprise-scale-agentic-development/
+- Anthropic. (2025, 24. Februar). Data Processing Addendum. https://www.anthropic.com/legal/data-processing-addendum
+- Anthropic. (2026, 28. Oktober). Introducing artifacts for legal work with Claude. https://claude.com/blog/introducing-artifacts-for-legal-work
+- Anthropic. (o. D.). Artifacts admin guide for Team and Enterprise plans. https://support.claude.com/en/articles/16994751-artifacts-admin-guide-for-team-and-enterprise-plans
+- Anthropic. (o. D.). Claude for Legal. https://claude.com/solutions/legal
+- Anthropic. (o. D.). Plans & Pricing. https://claude.com/pricing
+- Anthropic. (o. D.). Regional Compliance. https://claude.com/regional-compliance
+- Artificial Lawyer. (2026, 28. Oktober). Anthropic Increases Legal Vertical Push With Artifacts. https://artificiallawyer.com/2026/10/28/anthropic-increases-legal-vertical-push-with-artifacts
+- BornCity. (2026, 27. Oktober). Joule Studio: SAP öffnet Entwicklern den Zugriff auf über 70 KI-Modelle. https://borncity.com/news/joule-studio-sap-oeffnet-entwicklern-den-zugriff-auf-ueber-70-ki-modelle/
+- Google. (2026, 26. Oktober). Gemini Apps Privacy Hub. https://support.google.com/gemini/answer/13594961?hl=en
+- Google. (2026, 26. Oktober). Google Workspace Data Regions. https://knowledge.workspace.google.com/admin/compliance/data-covered-by-data-regions
+- Google. (2026, 29. Oktober). Create, preview, and edit files directly in the Gemini app. Google Workspace Updates. https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html
+- Google. (2026, 29. Oktober). You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini. https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/
+- Google. (o. D.). Google AI Pro und Ultra (Schweiz). https://gemini.google/ch/subscriptions/?hl=de
+- Google. (o. D.). Use Gemini Apps with a work or school Google Account. https://support.google.com/gemini/answer/14620100?hl=en
+- Granola. (2026, 17. Juli). Data Processing Addendum. https://docs.granola.ai/help-center/policies/data-processing-addendum
+- Granola. (2026, 8. September). Privacy Policy. https://docs.granola.ai/help-center/policies/privacy-policy
+- Granola. (o. D.). Dictation history and privacy. https://docs.granola.ai/help-center/voice-typing/dictation-history-and-privacy
+- Granola. (o. D.). Security, privacy and data FAQs. https://docs.granola.ai/help-center/consent-security-privacy/security-privacy-data-faqs
+- Granola. (o. D.). Subscriptions and billing. https://docs.granola.ai/help-center/managing-your-account/subscriptions-and-billing
+- Granola. (o. D.). Voice typing: voice-to-text dictation in any app. https://www.granola.ai/voice-typing
+- Mehta, I. (2026, 29. Oktober). Granola crunches up a dictation feature to compete with Wispr. TechCrunch. https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/
+- Plumb, T. (2026, 27. Oktober). SAP wants Joule to run business workflows, not just answer questions. CIO. https://www.cio.com/article/4240684/sap-wants-joule-to-run-business-workflows-not-just-answer-questions.html
+- Product Hunt. (2026, 27. Oktober). TheySaid 4.0: See how users will react, right where you build. https://www.producthunt.com/products/theysaid
+- Runway. (2026, 23. Oktober). Privacy Policy. https://runway.com/privacy-policy
+- Runway. (2026, 23. Oktober). Terms of Use. https://runway.com/terms-of-use
+- Runway. (2026, 26. Oktober). Introducing Runway App Studio. https://runway.com/news/introducing-runway-app-studio
+- Runway. (2026, August). Data Security & Privacy. https://runway.com/data-security
+- Runway. (o. D.). Customer Data Processing Addendum. https://runway.com/customer-data-processing-addendum.pdf
+- Runway. (o. D.). Pricing. https://runway.com/pricing
+- SAP. (2026, 27. Oktober). SAP Empowers AI Developers to Build What Matters and Turn Intent into Autonomous Execution. https://news.sap.com/2026/10/sap-teched-ai-developers-build-what-matters-autonomous-execution/
+- SAP. (o. D.). Data protection and privacy. SAP Trust Center. https://www.sap.com/uk/about/trust-center/data-privacy.html
+- SAP. (o. D.). Evaluating the Commercial Models for Agents. SAP Learning. https://learning.sap.com/courses/selling-sap-business-ai/analyzing-the-commercial-model-for-sap-joule-for-developers
+- SAP. (o. D.). SAP Business AI packages and pricing. https://www.sap.com/uk/products/artificial-intelligence/pricing.html
+- TheySaid. (o. D.). AI Survey Pricing. https://www.theysaid.io/survey-pricing
+- TheySaid. (o. D.). AI User Testing. https://www.theysaid.io/ai-user-testing
+- TheySaid. (o. D.). Privacy Policy. https://www.theysaid.io/privacy
+- TheySaid. (o. D.). Security. https://www.theysaid.io/security
+- TheySaid. (o. D.). What's new in TheySaid 4.0. https://www.theysaid.io/v4

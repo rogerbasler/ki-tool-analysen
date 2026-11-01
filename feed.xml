@@ -7,6 +7,13 @@
   <description>Jeden Sonntag sechs KI-Tools, eingeordnet nach Nutzen, Kosten und Datenschutz.</description>
   <language>de-ch</language>
   <item>
+    <title>KW 44/2026: Gemini Dateibearbeitung, Runway App Studio, Claude Legal Artifacts, TheySaid 4.0, SAP Joule Studio, Granola Voice Typing</title>
+    <link>https://tools.fragroger.ai/archiv/2026/kw44-2026-11-01.html</link>
+    <guid isPermaLink="true">https://tools.fragroger.ai/archiv/2026/kw44-2026-11-01.html</guid>
+    <pubDate>Sun, 01 Nov 2026 06:00:00 +0000</pubDate>
+    <description><![CDATA[<p>KI wandert in dieser Woche aus dem Chatfenster in die Arbeitsmittel, die Unternehmen bereits besitzen: Dokumente, Vorlagen, Geschäftsprozesse. Der Mechanismus ist überall derselbe: Ein einmal gebauter Ablauf wird eingefroren und als Werkzeug weitergegeben, sei es eine Runway-App, ein Legal-Tracker in Claude oder ein Agent in SAP Joule Studio. Damit verschiebt sich die Kontrolle vom einzelnen Prompt zur Freigabe: Wer eine App oder einen Agenten teilt, legt Modelle, Datenzugriffe und Kosten für alle Nutzenden fest. Gleichzeitig bleiben Trainingsrechte, Datenregionen und Preise je Schritt oft nur in Enterprise-Verträgen sauber geregelt. Wer KI im Betrieb verteilt, entscheidet über Governance, ob er es will oder nicht.</p><ul><li><strong>Text: Gemini Dateibearbeitung</strong> (7,8/10). Funktion der Gemini-App, mit der Texte, PDFs, Tabellen und Foliensätze im Chat erzeugt, in einer Vorschau angezeigt und direkt überarbeitet werden.</li><li><strong>Design: Runway App Studio</strong> (7,6/10). No-Code-Baukasten in Runway, mit dem Kreativ- und Marketingteams eigene kleine Apps für Bild-, Video- und Audioproduktion bauen und teilen.</li><li><strong>Data / Wissen: Claude Legal Artifacts</strong> (7,4/10). Vorgefertigte, anpassbare Tracker und Dashboards in Claude für Rechtsabteilungen und Kanzleien, etwa für Vertragsprüfung, Mandatsübersicht und Regulierungsmonitoring.</li><li><strong>Recherche: TheySaid 4.0</strong> (7/10). Plattform für Nutzertests, KI-moderierte Interviews und Umfragen, die neu auch synthetische Testpersonen einsetzt, für Produkt-, UX- und Marketingteams.</li><li><strong>Agents: SAP Joule Studio</strong> (7,9/10). Entwicklungsumgebung von SAP, in der Fach- und IT-Teams KI-Agenten für SAP-Prozesse ohne oder mit Code bauen, testen und betreiben.</li><li><strong>Transkription: Granola Voice Typing</strong> (7,3/10). Diktatfunktion des Meeting-Notizdienstes Granola: Fn-Taste halten, sprechen, und bereinigter Text erscheint in jeder Mac-App.</li></ul>]]></description>
+  </item>
+  <item>
     <title>KW 42/2026: Talanoa, Canvora, Caldera, Articos v3.2, WEXTL, noScribe, Sally</title>
     <link>https://tools.fragroger.ai/archiv/2026/kw42-2026-10-18.html</link>
     <guid isPermaLink="true">https://tools.fragroger.ai/archiv/2026/kw42-2026-10-18.html</guid>
@@ -208,13 +215,6 @@
     <guid isPermaLink="true">https://tools.fragroger.ai/archiv/2025/kw52-2025-12-28.html</guid>
     <pubDate>Sun, 28 Dec 2025 06:00:00 +0000</pubDate>
     <description><![CDATA[<p>Die letzte Woche des Jahres 2025 war geprägt von hochinnovativen KI-Tools, die weit über inkrementelle Verbesserungen hinausgehen. Statt einzelner Features stehen nun voll integrierte, autonome Systeme im Fokus, die ganze Arbeitsabläufe transformieren. Reve AI revolutioniert Bildbearbeitung mit Layout Representation, Sequenzy ist &quot;Cursor für Email-Marketing&quot;, FireCrawl /agent macht URLs optional, Macroscope reviewed Code autonom, und Scanned.to rekonstruiert Dokument-Layouts perfekt.</p><ul><li><strong>Text: Sequenzy</strong> (8/10). &quot;Cursor&quot; für Email-Marketing</li><li><strong>Design: Reve AI</strong> (9/10). Die Revolution der Bildbearbeitung</li><li><strong>Data / Wissen: Scanned.to</strong> (7/10). OCR mit perfektem Layout</li><li><strong>Recherche: FireCrawl /agent</strong> (8/10). Web Scraping ohne URLs</li><li><strong>Agents: Macroscope</strong> (8/10). Der autonome Code-Reviewer</li></ul>]]></description>
-  </item>
-  <item>
-    <title>KW 51/2025: Tonemark, Reve AI, DocsRouter, SiteSignal, Incredible.one</title>
-    <link>https://tools.fragroger.ai/archiv/2025/kw51-2025-12-21.html</link>
-    <guid isPermaLink="true">https://tools.fragroger.ai/archiv/2025/kw51-2025-12-21.html</guid>
-    <pubDate>Sun, 21 Dec 2025 06:00:00 +0000</pubDate>
-    <description><![CDATA[<p>Diese Woche markiert einen Wendepunkt: Von Assistenten zu autonomen Systemen. KI wird erwachsen und übernimmt komplexe Aufgaben selbstständig. Tonemark zeigt, wie KI authentisch klingen kann, Reve AI revolutioniert Bildbearbeitung mit präziser Kontrolle, DocsRouter vereinfacht OCR-Integration drastisch, SiteSignal definiert eine neue Disziplin (AEO), und Incredible.one repräsentiert die Zukunft mit autonomen Agenten.</p><ul><li><strong>Text: Tonemark</strong> (8/10). Authentische KI-Texte in Ihrem persönlichen Stil</li><li><strong>Design: Reve AI</strong> (7/10). Layout Representation für präzise Bildbearbeitung</li><li><strong>Data / Wissen: DocsRouter</strong> (8/10). Unified API für 100+ OCR-Modelle</li><li><strong>Recherche: SiteSignal</strong> (9/10). AI Search Visibility &amp; AEO-Monitoring</li><li><strong>Agents: Incredible.one</strong> (9/10). Autonome Agenten für Deep Work mit Agent MAX</li></ul>]]></description>
   </item>
 </channel>
 </rss>

@@ -1,6 +1,52 @@
 {
   "analysen": [
     {
+      "kw": 44,
+      "jahr": 2026,
+      "datum": "2026-11-01",
+      "url": "archiv/2026/kw44-2026-11-01.html",
+      "tools": [
+        {
+          "name": "Gemini Dateibearbeitung",
+          "kategorie": "Text",
+          "bewertung": 7.8,
+          "kurzbeschreibung": "Funktion der Gemini-App, mit der Texte, PDFs, Tabellen und Foliensätze im Chat erzeugt, in einer Vorschau angezeigt und direkt überarbeitet werden."
+        },
+        {
+          "name": "Runway App Studio",
+          "kategorie": "Design",
+          "bewertung": 7.6,
+          "kurzbeschreibung": "No-Code-Baukasten in Runway, mit dem Kreativ- und Marketingteams eigene kleine Apps für Bild-, Video- und Audioproduktion bauen und teilen."
+        },
+        {
+          "name": "Claude Legal Artifacts",
+          "kategorie": "Data / Wissen",
+          "bewertung": 7.4,
+          "kurzbeschreibung": "Vorgefertigte, anpassbare Tracker und Dashboards in Claude für Rechtsabteilungen und Kanzleien, etwa für Vertragsprüfung, Mandatsübersicht und Regulierungsmonitoring."
+        },
+        {
+          "name": "TheySaid 4.0",
+          "kategorie": "Recherche",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Plattform für Nutzertests, KI-moderierte Interviews und Umfragen, die neu auch synthetische Testpersonen einsetzt, für Produkt-, UX- und Marketingteams."
+        },
+        {
+          "name": "SAP Joule Studio",
+          "kategorie": "Agents",
+          "bewertung": 7.9,
+          "kurzbeschreibung": "Entwicklungsumgebung von SAP, in der Fach- und IT-Teams KI-Agenten für SAP-Prozesse ohne oder mit Code bauen, testen und betreiben."
+        },
+        {
+          "name": "Granola Voice Typing",
+          "kategorie": "Transkription",
+          "bewertung": 7.3,
+          "kurzbeschreibung": "Diktatfunktion des Meeting-Notizdienstes Granola: Fn-Taste halten, sprechen, und bereinigter Text erscheint in jeder Mac-App."
+        }
+      ],
+      "highlights": "SAP Joule Studio (7,9/10): Für SAP-Kund:innen im DACH-Raum der greifbarste Schritt von Assistenz zu Agenten, mit Gratis-Laufzeit bis Ende Dezember für ausgewählte Kund:innen.",
+      "trend": "KI wird vom persönlichen Werkzeug zum geteilten Betriebsmittel, und mit jeder geteilten App oder jedem Agenten wird aus einer Produktivitätsfrage eine Governance-Frage."
+    },
+    {
       "kw": 42,
       "jahr": 2026,
       "datum": "2026-10-18",
