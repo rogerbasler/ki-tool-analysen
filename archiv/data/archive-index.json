@@ -1,6 +1,52 @@
 {
   "analysen": [
     {
+      "kw": 45,
+      "jahr": 2026,
+      "datum": "2026-11-08",
+      "url": "archiv/2026/kw45-2026-11-08.html",
+      "tools": [
+        {
+          "name": "ChatGPT Chat und Work",
+          "kategorie": "Text",
+          "bewertung": 7.4,
+          "kurzbeschreibung": "ChatGPT-Desktop-App, in der ein Gespräch ohne Moduswechsel zu einer mehrstufigen Arbeitsaufgabe wird, für Wissensarbeitende in Unternehmen."
+        },
+        {
+          "name": "Google Vids mit Omni 1.2 Flash",
+          "kategorie": "Design",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Videoeditor in Google Workspace, der kurze KI-Clips aus Text und Referenzbildern erzeugt und eigene Aufnahmen per Anweisung bearbeitet, für interne Kommunikation und Marketing."
+        },
+        {
+          "name": "Google Forms mit Gemini",
+          "kategorie": "Data / Wissen",
+          "bewertung": 7.7,
+          "kurzbeschreibung": "Auswertungsfunktion im Antworten-Tab von Google Forms, die Umfrageergebnisse mit ausgeführtem Python-Code analysiert und nächste Schritte vorschlägt, für alle, die Kunden- oder Mitarbeitendenbefragungen durchführen."
+        },
+        {
+          "name": "Elicit Research Agent",
+          "kategorie": "Recherche",
+          "bewertung": 7.5,
+          "kurzbeschreibung": "Rechercheagent für wissenschaftliche und regulatorische Evidenz, der Fachartikel, Patente und Behördendaten systematisch durchsucht und als Tabelle oder Bericht ausgibt, für Forschung, Innovation und Regulatory Affairs."
+        },
+        {
+          "name": "Perplexity Teammates",
+          "kategorie": "Agents",
+          "bewertung": 7.6,
+          "kurzbeschreibung": "Dauerhaft laufende KI-Agenten, die eine feste Rolle übernehmen, Aufgaben nach Zeitplan oder Auslöser erledigen und sich in Slack ansprechen lassen, für Teams mit wiederkehrender Wissens- und Routinearbeit."
+        },
+        {
+          "name": "ElevenLabs Scribe v2 Realtime",
+          "kategorie": "Transkription",
+          "bewertung": 7.2,
+          "kurzbeschreibung": "Spracherkennungsdienst für Echtzeit- und Dateitranskription per API mit über 90 Sprachen, für Unternehmen, die Transkription in eigene Anwendungen wie Callcenter, Meeting- oder Diktatlösungen einbauen."
+        }
+      ],
+      "highlights": "Google Forms mit Gemini (7,7/10): Umfrageauswertung mit nachvollziehbaren Zahlen aus ausgeführtem Code, in Workspace-Plänen ab Business Standard ohne Zusatzkosten.",
+      "trend": "Aus Assistenten werden Mitarbeitende auf Zeit, und mit jedem dauerhaft laufenden Agenten wird die Rechtevergabe zur eigentlichen Führungsaufgabe."
+    },
+    {
       "kw": 44,
       "jahr": 2026,
       "datum": "2026-11-01",
