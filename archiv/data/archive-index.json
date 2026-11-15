@@ -1,6 +1,52 @@
 {
   "analysen": [
     {
+      "kw": 46,
+      "jahr": 2026,
+      "datum": "2026-11-15",
+      "url": "archiv/2026/kw46-2026-11-15.html",
+      "tools": [
+        {
+          "name": "Claude Fable 5.2",
+          "kategorie": "Text",
+          "bewertung": 7.8,
+          "kurzbeschreibung": "Sprachmodell von Anthropic für anspruchsvolle Analyse-, Schreib- und Agentenaufgaben über mehrere Stunden, für Fachleute und Unternehmen mit langen, offenen Arbeitsaufträgen."
+        },
+        {
+          "name": "Adobe Firefly Creative Agent",
+          "kategorie": "Design",
+          "bewertung": 7.9,
+          "kurzbeschreibung": "KI-Agent in Adobe Firefly und den Creative-Cloud-Programmen, der Gestaltungs- und Produktionsaufgaben auf Zuruf ausführt, für Marketing-, Design- und Videoteams."
+        },
+        {
+          "name": "digna Agentic",
+          "kategorie": "Data / Wissen",
+          "bewertung": 7.4,
+          "kurzbeschreibung": "Datenqualitäts- und Datenbeobachtungsplattform aus Österreich mit KI-Agenten, die Fragen zur Verlässlichkeit von Unternehmensdaten in Alltagssprache beantworten, für Data-Teams, Controlling und regulierte Branchen."
+        },
+        {
+          "name": "Google AI Mode mit Gemini 4 Hydrogen",
+          "kategorie": "Recherche",
+          "bewertung": 6.9,
+          "kurzbeschreibung": "KI-Modus der Google Suche, der komplexe Fragen in Teilfragen zerlegt, parallel sucht und eine zusammengefasste Antwort mit Links liefert, für alle, die Recherchen im Arbeitsalltag beschleunigen wollen."
+        },
+        {
+          "name": "Imagine Enterprise",
+          "kategorie": "Agents",
+          "bewertung": 6.4,
+          "kurzbeschreibung": "Agentenplattform von IBM Consulting auf dem Microsoft-Technologiestapel, die Branchenprozesse in Banken, Versicherungen und Handel mit vorgefertigten und massgeschneiderten Agenten automatisiert, für Grossunternehmen in regulierten Branchen."
+        },
+        {
+          "name": "Otter.ai",
+          "kategorie": "Transkription",
+          "bewertung": 6.6,
+          "kurzbeschreibung": "Meeting-Assistent, der Gespräche in Zoom, Teams und Google Meet aufzeichnet, transkribiert und zusammenfasst, für Teams und Führungskräfte mit vielen Besprechungen."
+        }
+      ],
+      "highlights": "Adobe Firefly Creative Agent (7,9/10): Markenvorgaben einmal hinterlegen, Plan vor der Ausführung prüfen, Ergebnisse direkt in Premiere, InDesign und Illustrator weiterbearbeiten.",
+      "trend": "Agenten wandern in bestehende Systeme, und die Wahl des Werkzeugs wird zur Wahl der Datenwege."
+    },
+    {
       "kw": 45,
       "jahr": 2026,
       "datum": "2026-11-08",

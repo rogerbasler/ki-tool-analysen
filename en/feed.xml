@@ -7,6 +7,13 @@
   <description>Every Sunday, six AI tools assessed for value, cost and data protection.</description>
   <language>en</language>
   <item>
+    <title>Week 46/2026: Claude Fable 5.2, Adobe Firefly Creative Agent, digna Agentic, Google AI Mode mit Gemini 4 Hydrogen, Imagine Enterprise, Otter.ai</title>
+    <link>https://tools.fragroger.ai/en/archive/2026/week46-2026-11-15.html</link>
+    <guid isPermaLink="true">https://tools.fragroger.ai/en/archive/2026/week46-2026-11-15.html</guid>
+    <pubDate>Sun, 15 Nov 2026 06:00:00 +0000</pubDate>
+    <description><![CDATA[<p>This week AI agents are moving to where the work already lives: into creative software, the database, the search box and the existing cloud contract. The mechanism is simple: whoever plugs into existing data and tools saves the migration, but also inherits the data paths of the host system. Adobe routes partner models from Google and OpenAI through Firefly, Claude Fable 5.2 requires 30 days of retention without exception, Otter stores data only in the USA, while digna runs its checks inside the customer&#x27;s own database. The procurement question therefore shifts from what a model can do to whose infrastructure it computes on. An agent is only as trustworthy as the place where it reads your data.</p><ul><li><strong>Text: Claude Fable 5.2</strong> (7.8/10). Anthropic language model for demanding analysis, writing and agent tasks lasting several hours, aimed at professionals and companies with long, open-ended assignments.</li><li><strong>Design: Adobe Firefly Creative Agent</strong> (7.9/10). AI agent in Adobe Firefly and the Creative Cloud apps that carries out design and production tasks on request, for marketing, design and video teams.</li><li><strong>Data / Knowledge: digna Agentic</strong> (7.4/10). Austrian data quality and data observability platform with AI agents that answer questions about the reliability of company data in plain language, for data teams, controlling and regulated industries.</li><li><strong>Research: Google AI Mode mit Gemini 4 Hydrogen</strong> (6.9/10). AI Mode in Google Search, which breaks complex questions into sub-questions, searches in parallel and returns a combined answer with links, for anyone who wants faster research in daily work.</li><li><strong>Agents: Imagine Enterprise</strong> (6.4/10). IBM Consulting agent platform on the Microsoft technology stack that automates industry processes in banking, insurance and retail with pre-built and custom agents, for large companies in regulated industries.</li><li><strong>Transcription: Otter.ai</strong> (6.6/10). Meeting assistant that records, transcribes and summarises conversations in Zoom, Teams and Google Meet, for teams and managers with many meetings.</li></ul>]]></description>
+  </item>
+  <item>
     <title>Week 45/2026: ChatGPT Chat und Work, Google Vids mit Omni 1.2 Flash, Google Forms mit Gemini, Elicit Research Agent, Perplexity Teammates, ElevenLabs Scribe v2 Realtime</title>
     <link>https://tools.fragroger.ai/en/archive/2026/week45-2026-11-08.html</link>
     <guid isPermaLink="true">https://tools.fragroger.ai/en/archive/2026/week45-2026-11-08.html</guid>
@@ -208,13 +215,6 @@
     <guid isPermaLink="true">https://tools.fragroger.ai/en/archive/2026/week02-2026-01-11.html</guid>
     <pubDate>Sun, 11 Jan 2026 06:00:00 +0000</pubDate>
     <description><![CDATA[<p>The second calendar week of 2026 brings new tools across sectors, from productivity boosts in everyday applications to highly specialised tools for developers and scientists. Google and OpenAI extend their lead with significant updates to their flagship products, while independent developers launch strong niche solutions.</p><ul><li><strong>Text: Gemini 3 in Gmail</strong> (9/10). AI-powered email productivity for three billion users</li><li><strong>Design: ConceptViz</strong> (7/10). AI diagram generator for STEM education</li><li><strong>Data / Knowledge: ChatGPT Health</strong> (8/10). Personalised health guidance with AI</li><li><strong>Research: TubeYakker</strong> (8/10). Turning YouTube playlists into searchable knowledge</li><li><strong>Agents: Owl Browser</strong> (7/10). Undetectable browser automation</li></ul>]]></description>
-  </item>
-  <item>
-    <title>Week 01/2026: Punchd, Nano Banana, Yonoo, Quantera.ai, Mnexium AI</title>
-    <link>https://tools.fragroger.ai/en/archive/2026/week01-2026-01-04.html</link>
-    <guid isPermaLink="true">https://tools.fragroger.ai/en/archive/2026/week01-2026-01-04.html</guid>
-    <pubDate>Sun, 04 Jan 2026 06:00:00 +0000</pubDate>
-    <description><![CDATA[<p>The first calendar week of 2026 brings a wave of new AI tools. A systematic review of more than ten leading sources identified over 80 new AI tools. The five most promising were selected for in-depth analysis. The week is defined by specialisation, infrastructure and user experience.</p><ul><li><strong>Text: Punchd</strong> (8/10). Conversion-optimised headlines at the push of a button</li><li><strong>Design: Nano Banana</strong> (9/10). Image generation with character consistency</li><li><strong>Data / Knowledge: Yonoo</strong> (7/10). The smart router for eight frontier models</li><li><strong>Research: Quantera.ai</strong> (8/10). Enterprise-grade financial research for institutions</li><li><strong>Agents: Mnexium AI</strong> (9/10). Persistent memory for AI agents</li></ul>]]></description>
   </item>
 </channel>
 </rss>

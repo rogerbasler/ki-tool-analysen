@@ -1,0 +1,388 @@
+# AI Tool Reviews, week 46/2026
+
+**Date:** 15 November 2026  
+**Research period:** 8 to 15 November 2026
+
+## Weekly summary
+
+This week AI agents are moving to where the work already lives: into creative software, the database, the search box and the existing cloud contract. The mechanism is simple: whoever plugs into existing data and tools saves the migration, but also inherits the data paths of the host system. Adobe routes partner models from Google and OpenAI through Firefly, Claude Fable 5.2 requires 30 days of retention without exception, Otter stores data only in the USA, while digna runs its checks inside the customer's own database. The procurement question therefore shifts from what a model can do to whose infrastructure it computes on. An agent is only as trustworthy as the place where it reads your data.
+
+- Adobe Firefly Creative Agent (7.9/10): store brand rules once, review the plan before it runs, keep editing results directly in Premiere, InDesign and Illustrator.
+- Claude Fable 5.2 (7.8/10): built for long analysis and agent tasks, API price cut by 20 per cent, but 30 days of retention with no exceptions.
+- digna Agentic (7.4/10): data quality questions in plain language, answered from checks that run inside your own database.
+- Rule of thumb: before any agent pilot, settle three questions in writing: where does it compute, which third-party models see the data, and how long are inputs stored.
+
+**Trend:** Agents are moving into existing systems, and choosing a tool has become choosing a data path.
+
+| Category | Tool | Relevance |
+|---|---|---:|
+| Text | Claude Fable 5.2 | 7.8/10 |
+| Design | Adobe Firefly Creative Agent | 7.9/10 |
+| Data / Knowledge | digna Agentic | 7.4/10 |
+| Research | Google AI Mode mit Gemini 4 Hydrogen | 6.9/10 |
+| Agents | Imagine Enterprise | 6.4/10 |
+| Transcription | Otter.ai | 6.6/10 |
+
+---
+
+## 1. Claude Fable 5.2
+
+**Category:** Text  
+**Relevance rating:** 7.8/10  
+**Website:** https://www.anthropic.com/claude-fable-and-mythos-5-2  
+**Signal this week:** On 9 November 2026 Anthropic released Claude Fable 5.2, the successor to Fable 5.1 from September. The API price drops by around 20 per cent, and the model is available on all paid plans and via AWS, Google Cloud and Microsoft Foundry.
+
+### Short description
+
+Anthropic language model for demanding analysis, writing and agent tasks lasting several hours, aimed at professionals and companies with long, open-ended assignments.
+
+Fable 5.2 is designed for tasks where a result only emerges after many intermediate steps: multi-stage research, financial and market analysis, or work delivered as a finished document, spreadsheet or presentation. The model handles up to one million tokens of context, which is several hundred pages at once, and writes answers of up to 128,000 tokens. It reasons before every answer; this step-by-step thinking can be set at five levels, but cannot be switched off.
+
+As an agent, Fable 5.2 can work for hours without intervention, coordinate several sub-agents and operate a computer. Anthropic itself still recommends the faster Opus 5.5 for everyday work and positions Fable for the hardest assignments. The published performance figures come from the vendor and have not been independently verified.
+
+### Use cases
+
+- Strategy: have a market analysis built from annual reports, studies and internal figures and delivered as a finished document.
+- Finance: load several sets of annual accounts and prepare deviations with reasons in a spreadsheet.
+- Legal and compliance: check long sets of contracts for contradictions and missing clauses.
+- Agents: delegate a research task lasting several hours and only approve the result.
+
+### Pricing
+
+Free tier: not available on the free plan. Pro: USD 20 per month, Fable only through separately purchased usage credits. Max: USD 100 per month, Fable up to half of the weekly allowance. Team Standard: USD 25 per person per month, Fable via credits; Team Premium: USD 125 per person per month. Enterprise: USD 20 per seat per year plus usage at API rates, from 20 seats. API: USD 8 per million input tokens and USD 40 per million output tokens, batch at half price.
+
+### Data protection
+
+Server location: via the Anthropic API only global or US processing; EU or Swiss data residency is not available. Google Cloud offers an EU endpoint at a 10 per cent surcharge, while Amazon Bedrock offers only global processing for Fable 5.2. Retention: inputs and outputs are stored for 30 days on every platform, zero data retention is excluded, and flagged content is kept for up to two years. Training: on Team, Enterprise and the API, customer data is not used for training by default; on individual plans only if the model improvement setting is switched on. Anthropic cites SOC 2 Type II, ISO 27001 and ISO 42001 and offers a DPA. For GDPR and the Swiss FADP, the EU endpoint on Google Cloud with a DPA is the documented route; statements on the Swiss FADP are not documented. Self-hosting is not possible.
+
+### Strengths
+
+- Long tasks: one million tokens of context and agent sessions lasting several hours.
+- Price: API around 20 per cent cheaper than its predecessor, batch at half price.
+- Availability: offered through the three major cloud providers, so it fits into existing contracts.
+- Certifications: SOC 2 Type II, ISO 27001 and ISO 42001.
+
+### Weaknesses
+
+- Retention: 30 days of storage without exception, no zero data retention.
+- Data location: no EU or Swiss data residency via the Anthropic API.
+- Cost: on Pro and Team Standard only via extra credits, uses up allowances quickly.
+- Behaviour: sometimes ends long tasks early with a to-do list; reasoning cannot be switched off.
+
+### Practical assessment
+
+Fable 5.2 pays off for teams with few but difficult assignments: due diligence, market studies, complex evaluations. For routine texts it is too slow and too expensive. Personal data and confidential documents should only reach the model through the EU endpoint on Google Cloud with a DPA. A sensible test: have Fable redo a completed analysis from last quarter and check effort, cost and error rate against the original result.
+
+**Relevance rating:** 7.8/10
+
+---
+
+## 2. Adobe Firefly Creative Agent
+
+**Category:** Design  
+**Relevance rating:** 7.9/10  
+**Website:** https://www.adobe.com/products/firefly.html  
+**Signal this week:** At Adobe MAX on 10 November 2026, Adobe extended Creative Agent to Premiere, Illustrator, InDesign, After Effects and Frame.io, and added brand settings, a plan mode, a model selector and always-on background agents to the Firefly assistant.
+
+### Short description
+
+AI agent in Adobe Firefly and the Creative Cloud apps that carries out design and production tasks on request, for marketing, design and video teams.
+
+Creative Agent takes instructions in plain language and carries them out as a sequence of steps, for example: create ten social media formats from one product photo, or match colour and exposure across an entire Premiere sequence. Teams can now store formats, colours, brand guidelines and characters once. In plan mode, the agent sets out its steps before running them, and the plan can be changed. A model selector decides whether Adobe's own Firefly models or partner models from Google, OpenAI, Kling and others do the work.
+
+Also new are background agents in preview that take over recurring tasks such as sorting assets or quality checks, and Firefly Graph for repeatable workflows. Results remain editable as layers and sequences. Almost all agent features are labelled beta or preview; local MCP interfaces that let third-party agents edit project files will only follow in early 2027.
+
+### Use cases
+
+- Campaigns: transfer a key visual into every channel format using the stored brand rules.
+- Video: have effects and colour corrections applied to every clip of a sequence in Premiere.
+- E-commerce: generate variants from a product photo with the product ad quick action.
+- Asset management: let a background agent sort new files and check them for format errors.
+- Approval: have the brand manager review the agent's plan before a larger job.
+
+### Pricing
+
+Free tier: Firefly Free with limited daily generations, only in selected regions. Firefly Standard: USD 9.99 per month with 2000 credits; Pro: USD 19.99 with 4000 credits; Pro Plus: USD 49.99 with 10,000 credits including Firefly Graph; Premium: USD 199.99 with 50,000 credits. Creative Cloud Pro: USD 69.99 per month. The agent requires no separate subscription, but individual actions consume credits; the cost per action is not documented and is described as an introductory rate. CHF prices are not documented.
+
+### Data protection
+
+Training: Adobe states that it does not train Firefly on user content; partners are contractually bound not to train either. With partner models, the prompt and input files go to Google, OpenAI or other providers; their retention and processing location are not documented. Server location: Creative Cloud for enterprise runs on AWS in North America, Europe and Japan, with the storage region fixed per account; identity and licensing data sits in the USA. Policies: DPA available, transfers based on standard contractual clauses and the EU-US and Swiss-US Data Privacy Framework. Certifications: SOC 2 Type 2, ISO 27001, CSA STAR Level 2. Content Credentials label AI-generated files. GDPR and Swiss FADP: with an enterprise contract, an EU storage region and a restriction to Firefly models, the assessment is manageable; partner models need a separate review. Self-hosting is not possible.
+
+### Strengths
+
+- Integration: the agent works directly in Premiere, InDesign, Illustrator, After Effects and Frame.io.
+- Control: plan mode shows the steps before execution, admins control which models are allowed.
+- Brand consistency: formats, colours and guidelines can be stored permanently.
+- Legal cover: no training on customer data, indemnification for Firefly output under enterprise contracts.
+
+### Weaknesses
+
+- Maturity: almost all agent features are beta or preview.
+- Cost transparency: credit use per action is not published and described as provisional.
+- Partner models: data goes to third parties, and the commercial safety promise does not automatically apply there.
+- Languages: optimised only for English, French, German and Japanese.
+
+### Practical assessment
+
+For marketing departments already working in Creative Cloud, Creative Agent is the obvious entry point into agent-based production, because results stay in familiar file formats. Before rollout, IT should decide which partner models are allowed and confirm the EU storage region. A sensible test: transfer a running campaign into all formats in plan mode with the stored brand rules, and log time spent and credits used.
+
+**Relevance rating:** 7.9/10
+
+---
+
+## 3. digna Agentic
+
+**Category:** Data / Knowledge  
+**Relevance rating:** 7.4/10  
+**Website:** https://www.digna.ai/  
+**Signal this week:** On 14 November 2026 the Vienna-based vendor digna presented digna Agentic: an MCP server connects the data quality platform to ChatGPT, Claude, Gemini or open-source models. It also added reconciliation of report figures against source systems and a free choice of where the analysis runs.
+
+### Short description
+
+Austrian data quality and data observability platform with AI agents that answer questions about the reliability of company data in plain language, for data teams, controlling and regulated industries.
+
+digna monitors data in data warehouses such as Snowflake, Databricks, Teradata, Oracle, SQL Server, PostgreSQL and BigQuery. Instead of maintaining hundreds of rules by hand, the system learns what metrics normally look like and reports outliers, late or missing loads and changed table structures. The checks run as queries inside the customer's database; only statistical metrics leave it.
+
+With digna Agentic, users can ask questions such as: were there quality problems on Monday, and has this happened before? Each answer points to a specific check with date and value. If the agent cannot answer, it is meant to say what is missing instead of guessing. MCP (Model Context Protocol) is an open standard that lets AI assistants access external systems. The new features are initially available to existing customers.
+
+### Use cases
+
+- Controlling: before monthly reporting, ask whether all loads were complete and on time.
+- Regulated reporting: automatically reconcile figures in a report with the source system and flag deviations.
+- Data team: narrow down the cause of an anomaly by looking at earlier, similar incidents.
+- Business units: check without SQL skills whether a metric rests on reliable data.
+
+### Pricing
+
+Pricing model: base fee plus a price per monitored table and module, with no fees per query or alert. Actual prices are not publicly readable; offers are made via demo and contact. A free tier or trial is not documented. Whether digna Agentic or the MCP server costs extra is not documented.
+
+### Data protection
+
+Server location: runs in the customer's own cloud, own data centre or as a Docker installation; digna also mentions an EU-hosted SaaS option without naming provider or region. Checks run in the customer database, only metrics leave it, and the digna team states it has no access to customer data. Agents: customers choose the AI model themselves; with a US-hosted model, query results leave the customer's environment, and exactly which data is not documented. Policies: privacy policy via iubenda; DPA and trust centre are not documented, nor are certifications such as ISO 27001 or SOC 2. GDPR and Swiss FADP: the vendor is based in Vienna, and with self-hosting the data stays in the customer's own infrastructure, which simplifies the assessment; responsibility for the connected AI model lies with the customer. Self-hosting: yes.
+
+### Strengths
+
+- Data sovereignty: checks run in your own database, self-hosting possible.
+- Traceability: every agent answer points to a check, date and value.
+- Vendor location: European vendor based in Vienna with a public sector reference.
+- Predictable cost: billing per table without usage-based fees.
+
+### Weaknesses
+
+- Transparency: no public prices, no trial.
+- Documentation: scope, permissions and authentication of the MCP server are not documented.
+- Evidence: no security certifications documented.
+- Target group: requires a data warehouse and is initially enabled only for existing customers.
+
+### Practical assessment
+
+digna Agentic is aimed at mid-sized and large companies, banks, insurers and public administrations whose reporting rests on a data warehouse and whose data must not leave the organisation. The value lies less in the chat than in the evidence: anyone who distrusts a figure gets a dated check instead of a guess. Before deployment, clarify which query results go to the chosen AI model; with a locally run open-source model, everything stays internal. A sensible test: recreate a known data error from recent months and check whether the agent finds it with the correct cause.
+
+**Relevance rating:** 7.4/10
+
+---
+
+## 4. Google AI Mode mit Gemini 4 Hydrogen
+
+**Category:** Research  
+**Relevance rating:** 6.9/10  
+**Website:** https://www.google.com/search?udm=50  
+**Signal this week:** On 12 November 2026 Google released Gemini 4 Hydrogen and made it the default model in AI Mode in Google Search, globally for all users; the model also answers harder questions in AI Overviews.
+
+### Short description
+
+AI Mode in Google Search, which breaks complex questions into sub-questions, searches in parallel and returns a combined answer with links, for anyone who wants faster research in daily work.
+
+AI Mode has been available in Germany, Austria and Switzerland since October 2025. With Hydrogen it runs on a new default model that Google calls the biggest model upgrade to Search so far. The method is called query fan-out: a question is split into subtopics, each is searched at the same time, and the answer combines the results with a wider selection of links. The model handles multi-part questions, typos and precise instructions better, and answers more often contain tables and structured layouts.
+
+For custom research workflows, Hydrogen is also available through the Gemini API, with one million tokens of context and grounding in Google Search. In the search box itself there is no control over the source list, no export and no record of which model produced an answer. A country list for the switch is not documented; Google speaks of a global rollout.
+
+### Use cases
+
+- Market monitoring: ask a multi-part question about vendors, prices and regulation in one step.
+- Preparation: before a client meeting, have industry developments summarised with links to the sources.
+- Purchasing: describe product requirements and receive a structured overview of possible solutions.
+- Custom applications: build an internal research assistant with search grounding via the API.
+
+### Pricing
+
+Free tier: AI Mode in Google Search is free. The stronger Gemini 4 Carbon model in AI Mode requires a Google AI Ultra subscription; its price is not documented here. Gemini API: free tier with rate limits; standard USD 1.50 per million input tokens and USD 7.50 per million output tokens, batch at half price. The price for search grounding via the API is not documented.
+
+### Data protection
+
+Training: Google uses queries and feedback in AI Mode to improve its models; human reviewers see data disconnected from the account. An opt-out specific to AI Mode is not documented. History can be deleted. Server location: not documented for consumer Search; self-hosting is not possible. Workspace: whether AI Mode for Workspace accounts in Europe falls under the Workspace DPA is not documented. API: on the paid tier there is no training, and processing falls under the Data Processing Addendum; requests with search grounding are stored for 30 days. GDPR and Swiss FADP: free AI Mode is unsuitable for confidential company or personal data; a DPA exists only for paid API, Vertex or Workspace contracts.
+
+### Strengths
+
+- Access: usable in Google Search without an account or cost, including in German.
+- Breadth: splits questions into sub-questions and returns more links per answer.
+- Structure: answers with tables and organised layouts.
+- Extensible: the same model via API with search grounding for custom applications.
+
+### Weaknesses
+
+- Traceability: no control over sources, no export, no model log.
+- Data protection: queries feed into model improvement, no documented opt-out.
+- Unclear rollout: no country or language list for the switch.
+- Performance claims: speed and quality figures come from the vendor.
+
+### Practical assessment
+
+AI Mode with Hydrogen suits quick orientation in daily work, not research that must be documented. For due diligence, legal questions or studies, checking every linked source remains mandatory. Companies should set one rule: no client names, contract details or internal figures in free search. A sensible test: rerun five research tasks from last week and count how many core statements can actually be verified through the links provided.
+
+**Relevance rating:** 6.9/10
+
+---
+
+## 5. Imagine Enterprise
+
+**Category:** Agents  
+**Relevance rating:** 6.4/10  
+**Website:** https://www.ibm.com/consulting/imagine-enterprise  
+**Signal this week:** On 10 November 2026 IBM and Microsoft jointly announced Imagine Enterprise, a platform for building, running and governing AI agents for industry-specific processes, with more than 6000 pre-built agents and assets.
+
+### Short description
+
+IBM Consulting agent platform on the Microsoft technology stack that automates industry processes in banking, insurance and retail with pre-built and custom agents, for large companies in regulated industries.
+
+Imagine Enterprise combines IBM Consulting Advantage, IBM Consulting's delivery platform with Process Studio, Context Studio and Advantage Core, with Microsoft Foundry, Copilot Studio and GitHub Copilot. Data, identities, security and AI governance run through Fabric, Entra, Purview, Defender and Azure. At launch there are frameworks for financial services, insurance and retail; manufacturing, energy, the public sector and mobility are to follow, with no dates given.
+
+The platform is set up as a consulting offer: IBM Consulting builds and runs the agents for clients or develops them jointly, and engineers from both companies work on site in qualifying engagements. How many of the 6000 assets are actually agents is not documented. The announcement gives no concrete task examples, availability status or regions.
+
+### Use cases
+
+- Insurance: connect agents to existing core systems without replacing them.
+- Banking: move agent pilots into production with governance and monitoring.
+- Retail: use the industry framework as a starting point for custom process agents.
+- Microsoft environment: govern agents with existing Entra identities and Purview policies.
+
+### Pricing
+
+Prices are not published. Access is through a consulting engagement with IBM Consulting; there is no free tier or trial. Licence and agent limits are not documented.
+
+### Data protection
+
+Server location: built on Microsoft Azure; specific regions and EU or Swiss data residency are not documented for Imagine Enterprise. Governance: Entra for identities, Purview for data and AI governance, Defender for security, plus controls and observability; details are missing. Training on customer data, DPA and certifications are not documented for the platform. GDPR and Swiss FADP: with two vendors and external engineers working on client systems, the roles of controller, processor and sub-processor and any transfers to third countries must be settled by contract; there is no documentation on this. Self-hosting or on-premises deployment is not documented; only unspecified self-management options are mentioned.
+
+### Strengths
+
+- Governance: builds on existing Microsoft tools for identity, security and compliance.
+- Industry focus: frameworks for banking, insurance and retail.
+- Delivery: engineers from both companies support the path from pilot to production.
+- Existing estate: agents connect to existing systems instead of replacing them.
+
+### Weaknesses
+
+- Transparency: no prices, no regions, no availability status.
+- Dependency: tight coupling to the Microsoft stack and to IBM Consulting.
+- Target group: consulting-led, unsuitable for SMEs, no self-service trial.
+- Unclear figure: the 6000 assets mix agents and other material.
+
+### Practical assessment
+
+Imagine Enterprise is relevant for banks, insurers and large retailers that already rely on Microsoft and want to move agent pilots into production but lack the delivery capacity. It is a consulting product, not a tool to try out. Before talks with IBM, data region, contractual roles and an exit scenario should be fixed as mandatory criteria. A sensible start: define a clearly limited process with a measurable outcome as the pilot, and cap the term of the engagement in the contract.
+
+**Relevance rating:** 6.4/10
+
+---
+
+## 6. Otter.ai
+
+**Category:** Transcription  
+**Relevance rating:** 6.6/10  
+**Website:** https://otter.ai/  
+**Signal this week:** On 10 November 2026 Otter.ai announced 27 new languages, including German, which is available now. A total of 31 languages are to be supported; automatic language switching within a meeting has been announced but is not yet available.
+
+### Short description
+
+Meeting assistant that records, transcribes and summarises conversations in Zoom, Teams and Google Meet, for teams and managers with many meetings.
+
+Otter sends an assistant into online meetings that records, transcribes, captures slides as images and then delivers a summary and action list. A desktop app for Mac and Windows captures audio from any application. The AI chat answers questions across all previous meetings, and since April 2026 also with data from Gmail, Google Drive, Notion, Jira and Salesforce.
+
+New is support for German, Italian, Dutch, Polish and other languages on all plans at no extra cost, including summaries, action items, speaker identification and search. Otter uses its own speech recognition models for this. Swiss German is not mentioned. An accuracy figure exists only for English; for German it is not documented.
+
+### Use cases
+
+- Leadership: minute weekly team meetings in German and collect open tasks automatically.
+- Sales: summarise client calls and transfer follow-up tasks to the CRM.
+- International teams: transcribe meetings in German, French and Italian on the same platform.
+- Knowledge work: find decisions from earlier meetings through the AI chat.
+
+### Pricing
+
+Free tier: Basic with 300 minutes per month, a maximum of 30 minutes per conversation and three file imports in total. Pro: USD 16.99 per month or USD 8.33 per month billed annually, 1200 minutes. Business: USD 30 per person per month or USD 19.99 billed annually, unlimited meeting minutes, up to 25 members. Enterprise: price on request, SSO from 100 licences, HIPAA as an add-on.
+
+### Data protection
+
+Audio stored: yes, with no fixed period; deleted conversations stay in the trash for 30 days. Visible bot: yes, the assistant appears in the participant list and joins automatically via the connected calendar; when recording via browser or desktop app, no notice to other participants is documented. Obtaining consent from all participants is the user's responsibility. Speech recognition: in Otter's cloud with its own models. Server location: USA on AWS; EU data residency is not documented; Anthropic and OpenAI are listed as sub-processors for AI features. Training: Otter trains on de-identified recordings and transcripts, and no opt-out is documented. Policies: SOC 2 Type 2, DPA as an appendix to the terms of service, certification under the EU-US and Swiss-US Data Privacy Framework. A class action over recordings without consent is pending in the USA, and core claims were allowed to proceed in August 2026. GDPR and Swiss FADP: defensible only with a signed DPA, automatic joining switched off and consent from all participants. Self-hosting is not possible.
+
+### Strengths
+
+- Languages: German and other European languages on all plans at no extra cost.
+- Features: transcript, summary, action items and search across all meetings.
+- Integration: Zoom, Teams, Meet, desktop app and connections to CRM and knowledge systems.
+- Entry point: free plan available for testing.
+
+### Weaknesses
+
+- Data location: USA only, no EU option documented.
+- Training: use of de-identified recordings with no documented opt-out.
+- Consent: automatic joining via calendar and a pending class action in the USA.
+- Maturity: in-meeting language switching and 14 languages only announced, no accuracy figures for German.
+
+### Practical assessment
+
+With German, Otter becomes properly usable for teams in German-speaking Europe for the first time, but data protection remains the hurdle. Use is conceivable for internal meetings without sensitive content and with informed participants, not for conversations with clients or on HR or health topics. IT should switch off automatic calendar joining centrally. A sensible test: on the free plan, record three internal meetings in standard German and one with a Swiss accent and check the error rate and quality of the action list, after obtaining consent from all participants.
+
+**Relevance rating:** 6.6/10
+
+---
+
+## Sources
+
+- Adobe. (2025, 17. November). Cross-border data transfers. https://adobe.com/privacy/eudatatransfers
+- Adobe. (2026, 10. November). Adobe Firefly expands [Pressemitteilung]. https://news.adobe.com/news/2026/11/adobe-firefly-expands
+- Adobe. (2026, 10. November). Adobe powers a new era of creativity, bringing agents and tools to creatives wherever and however they create. https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity
+- Adobe. (2026, 10. November). Adobe transforms Creative Cloud tools [Pressemitteilung]. https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools
+- Adobe. (2026, 16. September). Creative Cloud for enterprise data centers. https://www.adobe.com/trust/creative-cloud-hosting-locations.html
+- Adobe. (2026, 28. September). Firefly AI Assistant FAQ. https://helpx.adobe.com/ca/firefly/web/firefly-ai-assistant/ai-assistant-faq.html
+- Adobe. (2026, 3. November). Partner models in Firefly Creative Production for enterprise. https://helpx.adobe.com/firefly/web/work-with-enterprise-features/creative-production/partner-models-in-firefly-creative-production-for-enterprise.html
+- Adobe. (o. D.). Adobe Firefly plans. https://www.adobe.com/products/firefly/plans.html
+- Adobe. (o. D.). Adobe's approach to generative AI. https://www.adobe.com/fireflyapproach
+- Amazon Web Services. (2026, 9. November). Introducing Claude Fable 5.2 on AWS. https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/
+- Anthropic. (2026, 9. November). Claude Fable 5.2 and Claude Mythos 5.2. https://www.anthropic.com/claude-fable-and-mythos-5-2
+- Anthropic. (o. D.). Claude Fable 5.2: Model overview. https://platform.claude.com/docs/en/models/fable-5-2/overview
+- Anthropic. (o. D.). Data residency. https://platform.claude.com/docs/en/manage-claude/data-residency
+- Anthropic. (o. D.). Data retention practices for Covered Models. https://support.claude.com/en/articles/15425996-data-retention-practices-for-covered-models
+- Anthropic. (o. D.). Plans and pricing. https://claude.com/pricing
+- Anthropic. (o. D.). Regional compliance. https://claude.com/regional-compliance
+- Anthropic. (o. D.). What's new in Claude Fable 5.2. https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2
+- Carleton College. (2026, 26. März). An uninvited guest: What you should know about Otter.ai's notetaker. https://www.carleton.edu/ai/blog/an-uninvited-guest-what-you-should-know-about-otter-ais-notetaker/
+- Cuofano, G. (2026, 10. November). IBM, Microsoft pool 6,000 agents as IBM signings fall 3.7%. FourWeekMBA. https://fourweekmba.com/ai-ibm-microsoft-pool-6000-agents-as-ibm-signings-fall-3-7/
+- digna. (2025, 28. Oktober). Why European enterprises need a sovereign data quality and observability platform. https://www.digna.ai/european-data-quality-observability-digna-2025
+- digna. (o. D.). digna Agentic: Introduction. https://docs.digna.ai/platform/agentic/Introduction/
+- digna. (o. D.). Impressum. https://www.digna.ai/impressum
+- digna. (o. D.). ITSV customer story. https://www.digna.ai/customer-stories/itsv
+- digna. (o. D.). Pricing. https://www.digna.ai/pricing
+- digna. (o. D.). Privacy Policy. https://www.iubenda.com/privacy-policy/34024961
+- Google. (2025, 20. November). Gemini API Additional Terms of Service. https://ai.google.dev/gemini-api/terms-archive/terms_11_20_25
+- Google. (2026, 12. November). Build with Gemini 4 Hydrogen. https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/
+- Google. (2026, 12. November). Introducing Gemini 4 Hydrogen. https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/
+- Google. (o. D.). Mit dem KI-Modus in der Google Suche KI-basierte Antworten erhalten. https://support.google.com/websearch/answer/16011537
+- Haralu, K. (2026, 11. November). IBM, Microsoft launch agentic AI platform with over 6,000 AI agents. Analytics India Magazine. https://analyticsindiamag.com/ai-news/ibm-microsoft-launch-agentic-ai-platform-with-over-6000-ai-agents
+- Holland, M. (2026, 10. November). Microsoft, IBM team up on AI agent platform. CIO Dive. https://www.ciodive.com/news/microsoft-ibm-team-up-ai-agent-platform/874152/
+- IBM. (2026, 10. November). IBM and Microsoft announce a new AI agent platform designed for industry-specific transformation [Pressemitteilung]. https://newsroom.ibm.com/2026-11-10-ibm-and-microsoft-announce-a-new-ai-agent-platform-designed-for-industry-specific-transformation
+- IBM. (o. D.). Imagine Enterprise. https://www.ibm.com/consulting/imagine-enterprise
+- Mid-East.Info. (2026, 14. November). digna introduces agentic AI to make enterprise data easier to understand. https://mid-east.info/digna-introduces-agentic-ai-to-make-enterprise-data-easier-to-understand/
+- mobiflip. (2025, 8. Oktober). Google startet KI-Modus in Deutschland, Österreich und der Schweiz. https://www.mobiflip.de/google-startet-ki-modus-in-deutschland-oesterreich-und-der-schweiz/
+- Otter.ai. (2025, 19. September). Software Services Agreement. https://otter.ai/software-services-agreement
+- Otter.ai. (2026, 10. November). Otter.ai announces its biggest multilingual leap yet: 27 new languages and multilingual capabilities. https://otter.ai/blog/otter-ai-announces-its-biggest-multilingual-leap-yet-27-new-languages-and-multilingual-capabilities
+- Otter.ai. (2026, 16. Juni). Privacy Policy. https://otter.ai/privacy-policy
+- Otter.ai. (2026, 31. März). Subprocessors. https://otter.ai/subprocessors
+- Otter.ai. (o. D.). Pricing. https://otter.ai/pricing
+- Otter.ai. (o. D.). Privacy and Security. https://otter.ai/privacy-security
+- Schwartz, B. (2026, 12. November). Google Search gets massive upgrade with Gemini 4 Hydrogen. Search Engine Roundtable. https://www.seroundtable.com/google-search-gemini-4-hydrogen-42526.html
+- SD Times. (2026, 9. November). Anthropic introduces Claude Fable 5.2, Mythos 5.2. https://sdtimes.com/ai/anthropic-introduces-claude-fable-5-2-mythos-5-2/
+- TechCrunch. (2026, 9. November). Otter.ai can now follow conversations across 30 languages. https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/
+- United States District Court for the Northern District of California. (2026, 13. August). Order granting in part and denying in part motion to dismiss, In re Otter.AI Privacy Litigation, No. 25-cv-06911-EKL. https://storage.courtlistener.com/recap/gov.uscourts.cand.454675/gov.uscourts.cand.454675.68.0.pdf
+- VentureBeat. (2026, 12. November). Google launches Gemini 4 Hydrogen: A faster, smarter, pricier Flash successor. https://venturebeat.com/technology/google-launches-gemini-4-hydrogen-a-faster-smarter-pricier-flash-successor
