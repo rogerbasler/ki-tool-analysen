@@ -49,11 +49,11 @@ As an agent, Fable 5.2 can work for hours without intervention, coordinate sever
 
 ### Pricing
 
-Free tier: not available on the free plan. Pro: USD 20 per month, Fable only through separately purchased usage credits. Max: USD 100 per month, Fable up to half of the weekly allowance. Team Standard: USD 25 per person per month, Fable via credits; Team Premium: USD 125 per person per month. Enterprise: USD 20 per seat per year plus usage at API rates, from 20 seats. API: USD 8 per million input tokens and USD 40 per million output tokens, batch at half price.
+Free tier: not available on the free plan. Pro: USD 20 per month; whether Fable runs only on extra credits there or up to half of the weekly allowance is documented inconsistently (the announcement and the help page differ). Max: USD 100 per month, Fable up to half of the weekly allowance. Team Standard: USD 25 per person per month, with the same ambiguity as Pro; Team Premium: USD 125 per person per month. Enterprise: USD 20 per seat per year plus usage at API rates, from 20 seats. API: USD 8 per million input tokens and USD 40 per million output tokens, batch at half price.
 
 ### Data protection
 
-Server location: via the Anthropic API only global or US processing; EU or Swiss data residency is not available. Google Cloud offers an EU endpoint at a 10 per cent surcharge, while Amazon Bedrock offers only global processing for Fable 5.2. Retention: inputs and outputs are stored for 30 days on every platform, zero data retention is excluded, and flagged content is kept for up to two years. Training: on Team, Enterprise and the API, customer data is not used for training by default; on individual plans only if the model improvement setting is switched on. Anthropic cites SOC 2 Type II, ISO 27001 and ISO 42001 and offers a DPA. For GDPR and the Swiss FADP, the EU endpoint on Google Cloud with a DPA is the documented route; statements on the Swiss FADP are not documented. Self-hosting is not possible.
+Server location: via the Anthropic API only global or US processing; EU or Swiss data residency is not available. Google Cloud offers an EU endpoint at a 10 per cent surcharge, while Amazon Bedrock offers only global processing for Fable 5.2. Retention: inputs and outputs are stored for 30 days on every platform, zero data retention is available only to eligible enterprise customers with Anthropic's express approval, and flagged content is kept for up to two years. Training: on Team, Enterprise and the API, customer data is not used for training by default; on individual plans only if the model improvement setting is switched on. Anthropic cites SOC 2 Type II, ISO 27001 and ISO 42001 and offers a DPA. For GDPR and the Swiss FADP, the EU endpoint on Google Cloud with a DPA is the documented route; statements on the Swiss FADP are not documented. Self-hosting is not possible.
 
 ### Strengths
 
@@ -64,9 +64,9 @@ Server location: via the Anthropic API only global or US processing; EU or Swiss
 
 ### Weaknesses
 
-- Retention: 30 days of storage without exception, no zero data retention.
+- Retention: 30 days of storage, zero data retention only by exception for enterprise.
 - Data location: no EU or Swiss data residency via the Anthropic API.
-- Cost: on Pro and Team Standard only via extra credits, uses up allowances quickly.
+- Cost: included allowances on Pro and Team Standard are documented inconsistently, and Fable uses up allowances quickly.
 - Behaviour: sometimes ends long tasks early with a to-do list; reasoning cannot be switched off.
 
 ### Practical assessment
@@ -143,7 +143,7 @@ Austrian data quality and data observability platform with AI agents that answer
 
 digna monitors data in data warehouses such as Snowflake, Databricks, Teradata, Oracle, SQL Server, PostgreSQL and BigQuery. Instead of maintaining hundreds of rules by hand, the system learns what metrics normally look like and reports outliers, late or missing loads and changed table structures. The checks run as queries inside the customer's database; only statistical metrics leave it.
 
-With digna Agentic, users can ask questions such as: were there quality problems on Monday, and has this happened before? Each answer points to a specific check with date and value. If the agent cannot answer, it is meant to say what is missing instead of guessing. MCP (Model Context Protocol) is an open standard that lets AI assistants access external systems. The new features are initially available to existing customers.
+With digna Agentic, users can ask questions such as: were there quality problems on Monday, and has this happened before? Each answer points to a specific check with date and value. If the agent cannot answer, it is meant to say what is missing instead of guessing. MCP (Model Context Protocol) is an open standard that lets AI assistants access external systems. The agent can also act: on request it creates data sources, datasets, rules and schedules once the user agrees. It signs in with a person's API key and receives exactly that person's permissions. It does not see table rows, only configuration, statistics and check results. digna Agentic has been available as a beta since release 2026.11, initially for existing customers.
 
 ### Use cases
 
@@ -158,7 +158,7 @@ Pricing model: base fee plus a price per monitored table and module, with no fee
 
 ### Data protection
 
-Server location: runs in the customer's own cloud, own data centre or as a Docker installation; digna also mentions an EU-hosted SaaS option without naming provider or region. Checks run in the customer database, only metrics leave it, and the digna team states it has no access to customer data. Agents: customers choose the AI model themselves; with a US-hosted model, query results leave the customer's environment, and exactly which data is not documented. Policies: privacy policy via iubenda; DPA and trust centre are not documented, nor are certifications such as ISO 27001 or SOC 2. GDPR and Swiss FADP: the vendor is based in Vienna, and with self-hosting the data stays in the customer's own infrastructure, which simplifies the assessment; responsibility for the connected AI model lies with the customer. Self-hosting: yes.
+Server location: runs in the customer's own cloud, own data centre or as a Docker installation; digna also mentions an EU-hosted SaaS option without naming provider or region. Checks run in the customer database, only metrics leave it, and the digna team states it has no access to customer data. Agents: customers choose the AI model themselves; the MCP server runs inside the customer's own installation and passes configuration, statistics and check results to the model, but no table rows; with a US-hosted model, this information, including descriptions of data sources and attributes, leaves the customer's environment. Policies: privacy policy via iubenda, whose content could not be retrieved; DPA and trust centre are not documented, nor are certifications such as ISO 27001 or SOC 2. GDPR and Swiss FADP: the vendor is based in Vienna, and with self-hosting the data stays in the customer's own infrastructure, which simplifies the assessment; responsibility for the connected AI model lies with the customer. Self-hosting: yes.
 
 ### Strengths
 
@@ -170,13 +170,13 @@ Server location: runs in the customer's own cloud, own data centre or as a Docke
 ### Weaknesses
 
 - Transparency: no public prices, no trial.
-- Documentation: scope, permissions and authentication of the MCP server are not documented.
+- Maturity: digna Agentic is in beta, and the individual MCP functions are not listed.
 - Evidence: no security certifications documented.
 - Target group: requires a data warehouse and is initially enabled only for existing customers.
 
 ### Practical assessment
 
-digna Agentic is aimed at mid-sized and large companies, banks, insurers and public administrations whose reporting rests on a data warehouse and whose data must not leave the organisation. The value lies less in the chat than in the evidence: anyone who distrusts a figure gets a dated check instead of a guess. Before deployment, clarify which query results go to the chosen AI model; with a locally run open-source model, everything stays internal. A sensible test: recreate a known data error from recent months and check whether the agent finds it with the correct cause.
+digna Agentic is aimed at mid-sized and large companies, banks, insurers and public administrations whose reporting rests on a data warehouse and whose data must not leave the organisation. The value lies less in the chat than in the evidence: anyone who distrusts a figure gets a dated check instead of a guess. Because the agent can change rules and schedules, it should run under its own account with narrowly scoped permissions; with a locally run open-source model, everything stays internal. A sensible test: recreate a known data error from recent months and check whether the agent finds it with the correct cause.
 
 **Relevance rating:** 7.4/10
 
@@ -247,11 +247,11 @@ IBM Consulting agent platform on the Microsoft technology stack that automates i
 
 Imagine Enterprise combines IBM Consulting Advantage, IBM Consulting's delivery platform with Process Studio, Context Studio and Advantage Core, with Microsoft Foundry, Copilot Studio and GitHub Copilot. Data, identities, security and AI governance run through Fabric, Entra, Purview, Defender and Azure. At launch there are frameworks for financial services, insurance and retail; manufacturing, energy, the public sector and mobility are to follow, with no dates given.
 
-The platform is set up as a consulting offer: IBM Consulting builds and runs the agents for clients or develops them jointly, and engineers from both companies work on site in qualifying engagements. How many of the 6000 assets are actually agents is not documented. The announcement gives no concrete task examples, availability status or regions.
+The platform is set up as a consulting offer: IBM Consulting builds and runs the agents for clients or develops them jointly, and engineers from both companies work on site in qualifying engagements. How many of the 6000 assets are actually agents is not documented. As an example, IBM and Microsoft describe an agent that triages insurance claims and routes them to adjusters by authority level. Every action, decision and escalation is logged, and latency, cost and token usage can be viewed continuously. Rules define what an agent may do on its own, what needs human approval and when it must escalate. Neither the announcement nor the product page states availability, regions or prices.
 
 ### Use cases
 
-- Insurance: connect agents to existing core systems without replacing them.
+- Insurance: triage claims and route them to adjusters by authority level.
 - Banking: move agent pilots into production with governance and monitoring.
 - Retail: use the industry framework as a starting point for custom process agents.
 - Microsoft environment: govern agents with existing Entra identities and Purview policies.
@@ -262,11 +262,11 @@ Prices are not published. Access is through a consulting engagement with IBM Con
 
 ### Data protection
 
-Server location: built on Microsoft Azure; specific regions and EU or Swiss data residency are not documented for Imagine Enterprise. Governance: Entra for identities, Purview for data and AI governance, Defender for security, plus controls and observability; details are missing. Training on customer data, DPA and certifications are not documented for the platform. GDPR and Swiss FADP: with two vendors and external engineers working on client systems, the roles of controller, processor and sub-processor and any transfers to third countries must be settled by contract; there is no documentation on this. Self-hosting or on-premises deployment is not documented; only unspecified self-management options are mentioned.
+Server location: built on Microsoft Azure; specific regions and EU or Swiss data residency are not documented for Imagine Enterprise. Governance: Entra for identities, Purview for data and AI governance, Defender and Sentinel for security, plus logs of every agent action and rules for human approval. Training on customer data, DPA and certifications are not documented for the platform. GDPR and Swiss FADP: with two vendors and external engineers working on client systems, the roles of controller, processor and sub-processor and any transfers to third countries must be settled by contract; there is no documentation on this. Self-hosting or on-premises deployment is not documented; only unspecified self-management options are mentioned.
 
 ### Strengths
 
-- Governance: builds on existing Microsoft tools for identity, security and compliance.
+- Governance: a log of every agent action, approval rules and Microsoft tools for identity and security.
 - Industry focus: frameworks for banking, insurance and retail.
 - Delivery: engineers from both companies support the path from pilot to production.
 - Existing estate: agents connect to existing systems instead of replacing them.
@@ -350,7 +350,7 @@ With German, Otter becomes properly usable for teams in German-speaking Europe f
 - Adobe. (o. D.). Adobe Firefly plans. https://www.adobe.com/products/firefly/plans.html
 - Adobe. (o. D.). Adobe's approach to generative AI. https://www.adobe.com/fireflyapproach
 - Amazon Web Services. (2026, 9. November). Introducing Claude Fable 5.2 on AWS. https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/
-- Anthropic. (2026, 9. November). Claude Fable 5.2 and Claude Mythos 5.2. https://www.anthropic.com/claude-fable-and-mythos-5-2
+- Anthropic. (2026, 9. November). Introducing Claude Fable 5.2 and Claude Mythos 5.2. https://www.anthropic.com/claude-fable-and-mythos-5-2
 - Anthropic. (o. D.). Claude Fable 5.2: Model overview. https://platform.claude.com/docs/en/models/fable-5-2/overview
 - Anthropic. (o. D.). Data residency. https://platform.claude.com/docs/en/manage-claude/data-residency
 - Anthropic. (o. D.). Data retention practices for Covered Models. https://support.claude.com/en/articles/15425996-data-retention-practices-for-covered-models
@@ -360,19 +360,20 @@ With German, Otter becomes properly usable for teams in German-speaking Europe f
 - Carleton College. (2026, 26. März). An uninvited guest: What you should know about Otter.ai's notetaker. https://www.carleton.edu/ai/blog/an-uninvited-guest-what-you-should-know-about-otter-ais-notetaker/
 - Cuofano, G. (2026, 10. November). IBM, Microsoft pool 6,000 agents as IBM signings fall 3.7%. FourWeekMBA. https://fourweekmba.com/ai-ibm-microsoft-pool-6000-agents-as-ibm-signings-fall-3-7/
 - digna. (2025, 28. Oktober). Why European enterprises need a sovereign data quality and observability platform. https://www.digna.ai/european-data-quality-observability-digna-2025
-- digna. (o. D.). digna Agentic: Introduction. https://docs.digna.ai/platform/agentic/Introduction/
+- digna. (2026, 27. Oktober). digna Agentic: AI agents for data quality. https://docs.digna.ai/platform/agentic/Introduction/
 - digna. (o. D.). Impressum. https://www.digna.ai/impressum
 - digna. (o. D.). ITSV customer story. https://www.digna.ai/customer-stories/itsv
 - digna. (o. D.). Pricing. https://www.digna.ai/pricing
 - digna. (o. D.). Privacy Policy. https://www.iubenda.com/privacy-policy/34024961
 - Google. (2025, 20. November). Gemini API Additional Terms of Service. https://ai.google.dev/gemini-api/terms-archive/terms_11_20_25
-- Google. (2026, 12. November). Build with Gemini 4 Hydrogen. https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/
+- Google. (2026, 12. November). Gemini 4 Hydrogen: Everyday coding and agentic workflows for developers. https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/
 - Google. (2026, 12. November). Introducing Gemini 4 Hydrogen. https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/
 - Google. (o. D.). Mit dem KI-Modus in der Google Suche KI-basierte Antworten erhalten. https://support.google.com/websearch/answer/16011537
 - Haralu, K. (2026, 11. November). IBM, Microsoft launch agentic AI platform with over 6,000 AI agents. Analytics India Magazine. https://analyticsindiamag.com/ai-news/ibm-microsoft-launch-agentic-ai-platform-with-over-6000-ai-agents
 - Holland, M. (2026, 10. November). Microsoft, IBM team up on AI agent platform. CIO Dive. https://www.ciodive.com/news/microsoft-ibm-team-up-ai-agent-platform/874152/
 - IBM. (2026, 10. November). IBM and Microsoft announce a new AI agent platform designed for industry-specific transformation [Pressemitteilung]. https://newsroom.ibm.com/2026-11-10-ibm-and-microsoft-announce-a-new-ai-agent-platform-designed-for-industry-specific-transformation
-- IBM. (o. D.). Imagine Enterprise. https://www.ibm.com/consulting/imagine-enterprise
+- IBM. (2026, 10. November). Imagine Enterprise. https://www.ibm.com/consulting/imagine-enterprise
+- McGuire, C., & Slim, L. (2026, 10. November). The digital workforce: Why the next competitive frontier isn't AI, it's how you operationalize it. IBM. https://www.ibm.com/new/announcements/the-digital-workforce-why-the-next-competitive-frontier-isn-t-ai-it-s-how-you-operationalize-it
 - Mid-East.Info. (2026, 14. November). digna introduces agentic AI to make enterprise data easier to understand. https://mid-east.info/digna-introduces-agentic-ai-to-make-enterprise-data-easier-to-understand/
 - mobiflip. (2025, 8. Oktober). Google startet KI-Modus in Deutschland, Österreich und der Schweiz. https://www.mobiflip.de/google-startet-ki-modus-in-deutschland-oesterreich-und-der-schweiz/
 - Otter.ai. (2025, 19. September). Software Services Agreement. https://otter.ai/software-services-agreement

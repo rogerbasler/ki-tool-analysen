@@ -59,3 +59,26 @@ Text: Claude Fable 5.2. Design: Adobe Firefly Creative Agent. Data / Wissen: dig
 
 - Anthropic-Ankündigungsseite, beide Google-Blogbeiträge zu Hydrogen, die IBM-Produktseite, die digna-Startseite, die digna-Dokumentation und die digna-Datenschutzerklärung waren nicht abrufbar. Die Angaben stützen sich auf Dokumentationen, Hilfeseiten und Fachpresse.
 - digna-Pressemitteilung nur als Abdruck auf Mid-East.Info gefunden.
+
+## Nachrecherche (15. November 2026, zweiter Durchgang)
+
+| Quelle | Ergebnis |
+|---|---|
+| Product Hunt Wochenranking KW 46 | Gelesen, ohne Tagesdaten. Unter anderem Claude Meetings, Nod by n8n, TK by Medium, Databox CLI. |
+| Ben's Bites | Gelesen. Beiträge vom 3. bis 12.11. sind Essays, kein Tool-Launch. |
+| AI Breakfast | Gelesen. Schlagzeilen 9. bis 13.11. sind Nachrichten, keine Tools. |
+| There's An AI For That | Gelesen, ohne Daten pro Tool. |
+| Futurepedia.io | Gelesen. Datierte Einträge 11. bis 14.11.: ChatGPT Wallet, Databricks Genie Subagents, Gemini Multi-Step Tasks, ElevenLabs Routines, ElevenAI, Google Rambler, Databricks Codex Data Science Plugin. |
+| Toolify.ai, TopAI.tools | Weiterhin nicht abrufbar (Fehler der Website). |
+| The AI Citizen | Gelesen. Letzter Beitrag 2.9.2026. |
+| AI-Weekly | Gelesen. Ausgabe 543 vom 13.11.2026, Meldung zu Imagine Enterprise bestätigt. |
+| The Batch | Gelesen. Ausgabe vom 13.11. ohne klaren Tool-Launch. |
+| The Sequence | Gelesen. Letzte Ausgabe 5.11. |
+| AI Tidbits | Weiterleitung auf aitidbits.ai, nicht gefolgt. |
+| Anthropic-Ankündigung Fable 5.2 | Gelesen. Abweichende Angaben zu Pro und Team Standard (Inklusivkontingent) sowie Zero Data Retention für berechtigte Enterprise-Kund:innen; in der Analyse ergänzt. |
+| Google-Blog Build with Gemini 4 Hydrogen | Gelesen. Titel korrigiert. Der Einführungsbeitrag lieferte einen Serverfehler. |
+| IBM-Produktseite und IBM-Blog Imagine Enterprise | Gelesen. Beispiel Schadenbearbeitung, Protokollierung und Freigaberegeln ergänzt. |
+| digna-Startseite und Dokumentation digna Agentic | Gelesen. Beta seit Release 2026.11, Agent kann Konfiguration ändern, keine Tabellenzeilen an das Modell; ergänzt. |
+| digna-Datenschutzerklärung (iubenda) | Abruf durch robots.txt gesperrt. |
+
+Die Auswahl der sechs Tools bleibt unverändert: Keine der neu gelesenen Quellen nennt in einer Kategorie einen klar relevanteren Kandidaten mit gesichertem Datum.
