@@ -1,6 +1,52 @@
 {
   "analysen": [
     {
+      "kw": 47,
+      "jahr": 2026,
+      "datum": "2026-11-22",
+      "url": "archiv/2026/kw47-2026-11-22.html",
+      "tools": [
+        {
+          "name": "GPT-6.2 Astra und Sol",
+          "kategorie": "Text",
+          "bewertung": 8.2,
+          "kurzbeschreibung": "Zwei neue Sprachmodelle in ChatGPT: Astra für anspruchsvolle Fach- und Analyseaufgaben, Sol für die tägliche Arbeit, für Wissensarbeiter:innen und Teams, die Dokumente, Folien und Tabellen erstellen."
+        },
+        {
+          "name": "HeyGen Avatar 6",
+          "kategorie": "Design",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Videomodell, das aus einem Foto oder einer kurzen Aufnahme einen sprechenden Avatar erzeugt, für Kommunikation, Schulung und Marketing ohne Filmdreh."
+        },
+        {
+          "name": "Cloudflare Clairic",
+          "kategorie": "Data / Wissen",
+          "bewertung": 7.6,
+          "kurzbeschreibung": "Spezialisiertes Modell, das aus Texten, Bildern und PDFs typisierte Werte wie Beträge, Daten oder Kategorien mit Konfidenzangabe ausliest, für Teams, die Belege, Verträge oder Formulare automatisiert verarbeiten."
+        },
+        {
+          "name": "Gemini Notebook interaktive Seiten",
+          "kategorie": "Recherche",
+          "bewertung": 7.3,
+          "kurzbeschreibung": "Funktion im Recherche- und Schreibassistenten Gemini Notebook, die aus hochgeladenen Quellen und Notizen interaktive Webseiten wie Zeitachsen, Dashboards oder Tracker erzeugt, für Teams, die Rechercheergebnisse weitergeben."
+        },
+        {
+          "name": "Proton Lumo Desktop",
+          "kategorie": "Agents",
+          "bewertung": 8.4,
+          "kurzbeschreibung": "Datenschutzorientierter KI-Assistent des Genfer Anbieters Proton als Desktop-App, der auf Dateien, Proton Mail und Drittdienste zugreift und Aufgaben zeitgesteuert ausführt, für Unternehmer:innen und Teams mit hohen Vertraulichkeitsanforderungen."
+        },
+        {
+          "name": "Wispr Flow Notetaker",
+          "kategorie": "Transkription",
+          "bewertung": 7.1,
+          "kurzbeschreibung": "Meeting-Assistent der Diktat-App Wispr Flow, der auf Mac und Windows Online-Meetings und neu auf dem iPhone Gespräche vor Ort aufnimmt, transkribiert und zusammenfasst, ohne einen Bot in das Meeting zu schicken."
+        }
+      ],
+      "highlights": "Proton Lumo Desktop (8,4/10): Ein Assistent mit Zugriff auf Dateien, Mail und Drittdienste, bei dem jede Aktion einzeln erlaubt, freigabepflichtig oder gesperrt ist, betrieben unter Schweizer Recht.",
+      "trend": "KI-Werkzeuge rücken an Dateien, Gespräche und Personen heran, und die Rechtevergabe wird zur wichtigsten Führungsaufgabe beim Einsatz."
+    },
+    {
       "kw": 46,
       "jahr": 2026,
       "datum": "2026-11-15",
