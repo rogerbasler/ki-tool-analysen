@@ -50,6 +50,11 @@ Die Website wird ausschliesslich aus `data/weeks/*.json` (DE) und `data/weeks/en
 7. **Bauen**: `python3 pipeline/build_site.py`. Das erzeugt Startseite, Wochenseite, Archiv, Feed, Sitemap und
    die vollständigen Markdown-Analysen unter `archiv/data/ki-tool-analysen-$DATUM.md` und `...-$DATUM.en.md`. Die Vorwoche bleibt automatisch im Archiv.
 
+7b. **Instagram-Stories**: `python3 pipeline/make_stories.py data/weeks/$DATUM.json` erzeugt drei Stories (1080 x 1920 PNG plus ZIP)
+   unter `/home/claude/stories/$DATUM/` (ausserhalb des Repos, nicht committen): Titel mit Trend, Übersicht der sechs Tools mit Bewertung,
+   Praxisregel mit Link. Jede PNG ansehen; meldet das Skript eine Warnung zum sicheren Bereich, Texte kürzen und neu erzeugen.
+   Die Stories gehen nur an Roger (Chat, Push, E-Mail an ihn selbst), sie werden nicht automatisch auf Instagram gepostet.
+
 8. **Veröffentlichen**
    ```bash
    git add -A
