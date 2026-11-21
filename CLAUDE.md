@@ -10,6 +10,7 @@ Die Website wird ausschliesslich aus `data/weeks/*.json` (DE) und `data/weeks/en
 1. **Vorbereiten**
    - `pip install --break-system-packages -r pipeline/requirements.txt` (falls Jinja2/Markdown fehlen)
    - Datum = heutiger Sonntag (Europe/Zurich), `DATUM=YYYY-MM-DD`, KW = ISO-Kalenderwoche dieses Datums.
+     Läuft der Wochenlauf an einem anderen Tag (z. B. vorgezogen am Samstag), gilt der nächstfolgende Sonntag als Datum; recherchiert wird über die sieben Tage bis heute.
    - Existiert `data/weeks/$DATUM.json` bereits, ist die Woche erledigt: nichts tun, kurz melden, Ende.
    - Letzte Ausgaben ansehen, damit sich keine Tools wiederholen: `ls data/weeks | tail -6` und die Tool-Namen darin.
 
