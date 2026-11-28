@@ -1,6 +1,52 @@
 {
   "analysen": [
     {
+      "kw": 48,
+      "jahr": 2026,
+      "datum": "2026-11-29",
+      "url": "archiv/2026/kw48-2026-11-29.html",
+      "tools": [
+        {
+          "name": "Gemini 4 Neon",
+          "kategorie": "Text",
+          "bewertung": 8.3,
+          "kurzbeschreibung": "Sprachmodell von Google für anspruchsvolle Text-, Analyse- und Dokumentenarbeit, verfügbar in der Gemini-App ab Google AI Pro, über die Gemini API und auf Google Cloud."
+        },
+        {
+          "name": "Canva MCP",
+          "kategorie": "Design",
+          "bewertung": 7.8,
+          "kurzbeschreibung": "Schnittstelle, über die KI-Assistenten wie Claude, ChatGPT, Gemini oder Copilot im Canva-Konto der Nutzer:innen bearbeitbare Designs erstellen, anpassen und exportieren."
+        },
+        {
+          "name": "Carry",
+          "kategorie": "Data / Wissen",
+          "bewertung": 7.0,
+          "kurzbeschreibung": "Browser-Erweiterung, die Chats, Projekte und Dateien aus ChatGPT, Claude, Gemini und Grok als Markdown-Dateien in einem lokalen Ordner sichert und durchsuchbar macht."
+        },
+        {
+          "name": "Exa Websets V2",
+          "kategorie": "Recherche",
+          "bewertung": 6.8,
+          "kurzbeschreibung": "Recherchewerkzeug, das aus einer Beschreibung in Alltagssprache geprüfte Listen von Unternehmen, Personen, Produkten oder Fachartikeln aus dem offenen Web erstellt."
+        },
+        {
+          "name": "Claude Ship",
+          "kategorie": "Agents",
+          "bewertung": 7.4,
+          "kurzbeschreibung": "Agenten von Anthropic für Softwareteams auf den Plänen Claude Team und Enterprise, die Codeänderungen auf GitHub prüfen, Fehler in der Pipeline beheben und Routineänderungen nach festgelegten Regeln freigeben."
+        },
+        {
+          "name": "MacWhisper 16.0",
+          "kategorie": "Transkription",
+          "bewertung": 8.0,
+          "kurzbeschreibung": "Mac-App, die Audio- und Videodateien transkribiert, Online-Meetings ohne Bot aufzeichnet und systemweites Diktat bietet, mit Spracherkennung auf dem eigenen Gerät."
+        }
+      ],
+      "highlights": "Gemini 4 Neon (8,3/10): Ein Modell für lange Dokumente mit einem Kontextfenster von gut einer Million Tokens, auf Google Cloud mit EU-Verarbeitung, für USD 3 und USD 15 pro Million Tokens.",
+      "trend": "KI-Werkzeuge erhalten Schreibrechte, und die Kontrolle wandert in Regeldateien und auf den eigenen Rechner."
+    },
+    {
       "kw": 47,
       "jahr": 2026,
       "datum": "2026-11-22",
