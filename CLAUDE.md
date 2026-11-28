@@ -53,7 +53,10 @@ Die Website wird ausschliesslich aus `data/weeks/*.json` (DE) und `data/weeks/en
 7b. **Instagram-Stories**: `python3 pipeline/make_stories.py data/weeks/$DATUM.json` erzeugt drei Stories (1080 x 1920 PNG plus ZIP)
    unter `/home/claude/stories/$DATUM/` (ausserhalb des Repos, nicht committen): Titel mit Trend, Übersicht der sechs Tools mit Bewertung,
    Praxisregel mit Link. Jede PNG ansehen; meldet das Skript eine Warnung zum sicheren Bereich, Texte kürzen und neu erzeugen.
-   Die Stories gehen nur an Roger (Chat, Push, E-Mail an ihn selbst), sie werden nicht automatisch auf Instagram gepostet.
+   Die Stories gehen an Roger (Chat, E-Mail an ihn selbst) und werden über die Meta Business Suite auf dem Instagram-Konto @fragroger
+   gepostet (von Roger am 28.11.2026 freigegeben; nie auf einem anderen Konto). Auf Story 3 den Link https://tools.fragroger.ai als
+   Link-Sticker setzen, wenn der Dialog das anbietet. Nach erfolgreichem Posten aller drei Stories `data/instagram/$DATUM.posted`
+   anlegen und committen; fehlt diese Datei, gilt die Woche als nicht gepostet und der nächste Lauf holt es nach. Nie doppelt posten.
 
 8. **Veröffentlichen**
    ```bash
